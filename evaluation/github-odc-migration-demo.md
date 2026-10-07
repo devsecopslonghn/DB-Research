@@ -10,8 +10,8 @@ Entry point cho engineer mới là [demo/README.md](../demo/README.md). [PR #1](
 | --- | --- | --- |
 | Ba release, manifest/policy/allowlist, scripts, workflows, docs | IMPLEMENTED | [Customer-profile](../demo/customer-profile/), [scripts](../scripts/db_demo/), [workflows](../.github/workflows/) |
 | Manifest, policy, ordering, hashes, envelope, redaction, report và API boundaries | LOCAL TESTED | 34 unit tests PASS; [initial checks](../evidence/github-odc-demo-20261008/local-checks.json) ghi 33 tests trước live observation, [final checks](../evidence/github-odc-demo-20261008/final-local-checks.json) thêm regression cho child chờ khi parent chưa approve |
-| PR validation, packages cho cả ba release, fixture reports | GITHUB ACTIONS TESTED | Run 37668628709 SUCCESS trên implementation SHA `848e0923f3c8e2ef854298184232352ea68ed9ce`; gồm 33 tests tại SHA đó |
-| Markdown/JSON fixture report workflow | GITHUB ACTIONS TESTED | Run 37668628840 SUCCESS; evidence source FIXTURE, runtime_proven false |
+| PR validation, packages cho cả ba release, fixture reports | GITHUB ACTIONS TESTED | Run 37670646281 SUCCESS trên final code SHA `7c14a7a70ecd300efe3ea467967bbe2671781ee8`; log xác nhận 34 tests PASS |
+| Markdown/JSON fixture report workflow | GITHUB ACTIONS TESTED | Run 37670646303 SUCCESS trên cùng final code SHA; evidence source FIXTURE, runtime_proven false |
 | Network từ GitHub-hosted runner | GITHUB ACTIONS TESTED | [Probe](../evidence/github-odc-demo-20261008/runner-connectivity.json): HTTP 200, REACHABLE_UNAUTHENTICATED, authentication NOT_ATTEMPTED |
 | ODC login/inventory/create/lookup/task result/approval state | ODC RUNTIME TESTED | Local requester tạo batch 2000015 bằng CLI mới; [receipt](../evidence/github-odc-demo-20261008/odc-receipt.json) không có collection errors |
 | Oracle owner và object namespace trước migration | ORACLE RUNTIME TESTED, read-only | [Preflight](../evidence/github-odc-demo-20261008/oracle-preflight.json): đúng owner, chưa có sáu object demo tại cả bốn target |
@@ -24,10 +24,14 @@ Entry point cho engineer mới là [demo/README.md](../demo/README.md). [PR #1](
 
 [Captured metadata](../evidence/github-odc-demo-20261008/github-actions-implementation.json) giữ PR number/URL/branch/head commit, run IDs/conclusions, jobs/steps và artifact IDs/digests/expiry. Hai run dưới đây kiểm tra implementation SHA `848e0923f3c8e2ef854298184232352ea68ed9ce`; các commit bổ sung evidence/report regression có checks riêng trên PR. Không gán run của SHA này cho SHA khác.
 
+[Final code capture](../evidence/github-odc-demo-20261008/github-actions-final-code.json) ghi PR head/code SHA `7c14a7a70ecd300efe3ea467967bbe2671781ee8`, hai run SUCCESS, 34 tests trong log và regression pending-parent thực sự chạy. Commit sau capture chỉ bổ sung tài liệu/metadata; final PR head/checks có thể xem tại PR. Batch ODC vẫn gắn original release source SHA 848e092, không được đổi sang SHA mới để giả provenance.
+
 | Workflow | Run / conclusion | Job | Artifact |
 | --- | --- | --- | --- |
 | db-validate.yml | [37668628709](https://github.com/devsecopslonghn/DB-Research/actions/runs/37668628709), SUCCESS | [validate 112954292202](https://github.com/devsecopslonghn/DB-Research/actions/runs/37668628709/job/112954292202), SUCCESS | [db-demo-validation-37668628709 / 11502754605](https://github.com/devsecopslonghn/DB-Research/actions/runs/37668628709/artifacts/11502754605) |
 | db-report.yml | [37668628840](https://github.com/devsecopslonghn/DB-Research/actions/runs/37668628840), SUCCESS | [fixture-report 112954292409](https://github.com/devsecopslonghn/DB-Research/actions/runs/37668628840/job/112954292409), SUCCESS; live-source-guard/live-report SKIPPED theo thiết kế PR | [db-demo-report-fixture-37668628840 / 11503429204](https://github.com/devsecopslonghn/DB-Research/actions/runs/37668628840/artifacts/11503429204) |
+| db-validate.yml, final code | [37670646281](https://github.com/devsecopslonghn/DB-Research/actions/runs/37670646281), SUCCESS | [validate 112961228477](https://github.com/devsecopslonghn/DB-Research/actions/runs/37670646281/job/112961228477), SUCCESS, 34 tests | [db-demo-validation-37670646281 / 11504666821](https://github.com/devsecopslonghn/DB-Research/actions/runs/37670646281/artifacts/11504666821) |
+| db-report.yml, final code | [37670646303](https://github.com/devsecopslonghn/DB-Research/actions/runs/37670646303), SUCCESS | [fixture-report 112961230741](https://github.com/devsecopslonghn/DB-Research/actions/runs/37670646303/job/112961230741), SUCCESS; live jobs SKIPPED | [db-demo-report-fixture-37670646303 / 11505555575](https://github.com/devsecopslonghn/DB-Research/actions/runs/37670646303/artifacts/11505555575) |
 
 Artifacts giữ 30 ngày; metadata ghi expiry cụ thể. Outputs quan trọng đã tải xuống và giữ trong [evidence index](../evidence/github-odc-demo-20261008/README.md): validation, GitHub envelope, fixture Markdown/JSON và network probe. [Artifact verification](../evidence/github-odc-demo-20261008/artifact-verification.json) xác nhận downloaded bundles đúng hashes và committed source, ghi outcomes của cả ba fixture.
 

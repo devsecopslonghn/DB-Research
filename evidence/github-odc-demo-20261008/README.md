@@ -5,6 +5,7 @@ Giữ riêng bằng chứng mới khỏi historical POC và retention evidence. 
 - [local-readiness.json](local-readiness.json): requester authentication, bốn target live và retention baseline; không cluster mutation.
 - [local-checks.json](local-checks.json): initial 33 tests và checks; [final-local-checks.json](final-local-checks.json): checks sau report regression, 34 tests.
 - [github-actions-implementation.json](github-actions-implementation.json): PR #1, implementation SHA, hai SUCCESS runs, jobs/steps, artifact IDs/digests/expiry.
+- [github-actions-final-code.json](github-actions-final-code.json): final code/PR head SHA 7c14a7a, hai SUCCESS runs, 34 tests được xác nhận bằng log; commit capture tiếp theo chỉ sửa docs/metadata.
 - [github-validation-report.md](github-validation-report.md), [JSON](github-validation-report.json): validation output tải từ Actions artifact.
 - [github-release-envelope.json](github-release-envelope.json), [fixture report Markdown](github-fixture-migration-report.md), [JSON](github-fixture-migration-report.json): output thực của GitHub run; report vẫn FIXTURE, không phải ODC execution proof.
 - [artifact-verification.json](artifact-verification.json): downloaded bundles khớp committed hashes, outcomes của ba fixture; [payload-comparison.json](payload-comparison.json): local handoff và CI cùng payload, khác actor/run provenance.
