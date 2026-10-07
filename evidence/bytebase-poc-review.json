@@ -1,0 +1,174 @@
+{
+  "observed_at": "2026-10-04T07:24:44.675947+00:00",
+  "case": "P04_REPRO_20261004",
+  "status": "FAIL",
+  "scope": "Fresh current runtime reproduction, not a reclassification of historical P04.",
+  "plan": "projects/bbpoc-20261004/plans/119",
+  "sha256": "16329397e6eaae74971c8008b5ba825a3ee7dc48d665ca177391c88834d69f3c",
+  "sql": "UPDATE POC_ORDERS SET NOTE='P04_NO_WHERE';",
+  "plan_check": {
+    "name": "projects/bbpoc-20261004/plans/119/planCheckRun",
+    "status": "DONE",
+    "results": [
+      {
+        "status": "ERROR",
+        "title": "STATEMENT_WHERE_REQUIRE_UPDATE_DELETE",
+        "content": "WHERE clause is required for UPDATE statement.",
+        "code": 202,
+        "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV",
+        "type": "STATEMENT_ADVISE",
+        "sqlReviewReport": {
+          "startPosition": {
+            "line": 1
+          }
+        }
+      },
+      {
+        "status": "SUCCESS",
+        "title": "OK",
+        "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV",
+        "type": "STATEMENT_SUMMARY_REPORT"
+      }
+    ],
+    "createTime": "2026-10-04T06:58:16.543578Z"
+  },
+  "check_completed_before_issue": true,
+  "issue_create_http": 200,
+  "before": {
+    "time": "2026-10-04T06:58:22.527741+00:00",
+    "schema": "BBPOC_20261004_DEV",
+    "sql": "SELECT ORDER_ID,NOTE FROM POC_ORDERS ORDER BY ORDER_ID",
+    "successful": true,
+    "columns": [
+      "ORDER_ID",
+      "NOTE"
+    ],
+    "rows": [
+      [
+        1,
+        "SQL-06 package"
+      ],
+      [
+        801,
+        "SQL-08 begin; end; block"
+      ],
+      [
+        802,
+        "SQL-08 declare; begin; end;"
+      ]
+    ]
+  },
+  "execution": {
+    "stages": [
+      {
+        "name": "projects/bbpoc-20261004/plans/119/rollout/stages/develop",
+        "environment": "environments/develop",
+        "tasks": [
+          {
+            "name": "projects/bbpoc-20261004/plans/119/rollout/stages/develop/tasks/122",
+            "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV",
+            "status": "DONE",
+            "type": "DATABASE_MIGRATE",
+            "updateTime": "2026-10-04T06:58:24.867930Z"
+          }
+        ]
+      }
+    ],
+    "issue": {
+      "name": "projects/bbpoc-20261004/issues/119",
+      "creator": "users/bbpoc-20261004-requester@drgdevlab.com",
+      "createTime": "2026-10-04T06:58:21.127511Z",
+      "updateTime": "2026-10-04T06:58:22.810287Z",
+      "status": "DONE",
+      "approvalStatus": "SKIPPED",
+      "plan": "projects/bbpoc-20261004/plans/119"
+    },
+    "task_runs": [
+      {
+        "name": "projects/bbpoc-20261004/plans/119/rollout/stages/develop/tasks/122/taskRuns/125",
+        "creator": "users/bbpoc-20261004-executor@drgdevlab.com",
+        "status": "DONE",
+        "createTime": "2026-10-04T06:58:22.875773Z",
+        "startTime": "2026-10-04T06:58:22.911329Z",
+        "updateTime": "2026-10-04T06:58:24.867930Z"
+      }
+    ],
+    "attempts": [
+      {
+        "time": "2026-10-04T06:58:22.908744+00:00",
+        "actor": "executor",
+        "stage": "projects/bbpoc-20261004/plans/119/rollout/stages/develop",
+        "http_status": 200
+      }
+    ],
+    "log_events": [
+      {
+        "task_run": "projects/bbpoc-20261004/plans/119/rollout/stages/develop/tasks/122/taskRuns/125",
+        "events": [
+          {
+            "type": "TRANSACTION_CONTROL",
+            "logTime": "2026-10-04T06:58:24.406426Z",
+            "transaction": {
+              "type": "BEGIN"
+            }
+          },
+          {
+            "type": "COMMAND_EXECUTE",
+            "logTime": "2026-10-04T06:58:24.408713Z",
+            "statement_range": {
+              "end": 41
+            },
+            "outcome": {
+              "logTime": "2026-10-04T06:58:24.636890Z",
+              "affectedRows": "3",
+              "allAffectedRows": [
+                "3"
+              ]
+            }
+          },
+          {
+            "type": "TRANSACTION_CONTROL",
+            "logTime": "2026-10-04T06:58:24.752565Z",
+            "transaction": {
+              "type": "COMMIT"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "postcheck": {
+    "time": "2026-10-04T06:58:26.187553+00:00",
+    "schema": "BBPOC_20261004_DEV",
+    "sql": "SELECT ORDER_ID,NOTE FROM POC_ORDERS ORDER BY ORDER_ID",
+    "successful": true,
+    "columns": [
+      "ORDER_ID",
+      "NOTE"
+    ],
+    "rows": [
+      [
+        1,
+        "P04_NO_WHERE"
+      ],
+      [
+        801,
+        "P04_NO_WHERE"
+      ],
+      [
+        802,
+        "P04_NO_WHERE"
+      ]
+    ]
+  },
+  "project_policy": {
+    "requireIssueApproval": true,
+    "requirePlanCheckNoError": true,
+    "enforceSqlReview": true,
+    "allowSelfApproval": false
+  },
+  "executor_roles": [
+    "projectReleaser"
+  ],
+  "override_flags_sent": false
+}

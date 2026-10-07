@@ -1,0 +1,2472 @@
+[
+  {
+    "sha": "b08e5c8a773ee4ab5ea4ab7cf6f7a16c55d6994e",
+    "node_id": "C_kwDOADIQK9oAKGIwOGU1YzhhNzczZWU0YWI1ZWE0YWI3Y2Y2ZjdhMTZjNTVkNjk5NGU",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2026-09-26T17:21:16Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2026-09-26T17:21:16Z"
+      },
+      "message": "Restore latest Perl in coverage.yml\n\nTurns out 5.42 produces the `malloc_consolidate()` error sometimes, too.\nSo go back to the latest and content ourselves to just re-run the\nworkflow when it fails on that error.",
+      "tree": {
+        "sha": "cf55ec8c66553d314edd89bbea89e4ab32fa95b9",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/cf55ec8c66553d314edd89bbea89e4ab32fa95b9"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/b08e5c8a773ee4ab5ea4ab7cf6f7a16c55d6994e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmq3/zkACgkQkt9idPjI\ngfEHmQ//WFLVOmviFIzP9SjE8bIhZzNcnTkbvUan6WR6i3sQtDDikE/vjbcwXvqo\nFvTs6XtFW4Xab3S3hU6KRjH1iY828yH/TK0nnhga1iwrG2fpXtLxeCX4Pfbbg+iJ\nHb94QYNmoU/FP2XA+z6V7dxdSd4ZfRuCL0TIE3WQU+bAtSAAwVprQp/4fvLg3T2O\nMU4VziVOwDPYCjZzeVyY9Cr75k6e3AGKNCckr6gJd6WxkOZhcjadp3/lbla5nIIz\nddrnsiFjFePpwJFJ0anTE7molR99r/3nPt1LfCE0bC3KWe2zJ8swtadoRhXZQURC\namw8f23b6m6FTJvDEiMCAdCT+B9Zbetx1Fl5V5lBXgVNzPsHD5r2o/+d/TpHS1Kq\n9igvylK/tBCnqX8gfMddkFg2Houf0G8yhneha4ngj+WePW916cDYMMA4jEtuidjH\njIkEyFQGOgXotCIm510jcniQgMKjIdJ2YhI2i8qU6IST/Xa5YNPMOq7sRpY8yYDN\nme9mlgFhplvq7A2rUu1d1bSS993q0j/p2BaFsetHIN0Bjuf4sTe1TdOgIC7tXOXl\n7Wl5PohaPeEHou6FnhGiI2wt5aCHq65sGM4nOIbNmxYbRKoHosdq4fGhJPOIj250\nAtuU5SXvgxtJ0tFz4gsoH5AKfbnZ54Id3sW3R9rcx/7K85ssVG0=\n=6IQs\n-----END PGP SIGNATURE-----",
+        "payload": "tree cf55ec8c66553d314edd89bbea89e4ab32fa95b9\nparent 9a3c09c6e6f4916ba9529bab378381abd627775a\nauthor David E. Wheeler <david@justatheory.com> 1790443276 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1790443276 -0400\n\nRestore latest Perl in coverage.yml\n\nTurns out 5.42 produces the `malloc_consolidate()` error sometimes, too.\nSo go back to the latest and content ourselves to just re-run the\nworkflow when it fails on that error.\n",
+        "verified_at": "2026-09-26T17:22:08Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/b08e5c8a773ee4ab5ea4ab7cf6f7a16c55d6994e",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/b08e5c8a773ee4ab5ea4ab7cf6f7a16c55d6994e",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/b08e5c8a773ee4ab5ea4ab7cf6f7a16c55d6994e/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9a3c09c6e6f4916ba9529bab378381abd627775a",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/9a3c09c6e6f4916ba9529bab378381abd627775a",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/9a3c09c6e6f4916ba9529bab378381abd627775a"
+      }
+    ]
+  },
+  {
+    "sha": "9a3c09c6e6f4916ba9529bab378381abd627775a",
+    "node_id": "C_kwDOADIQK9oAKDlhM2MwOWM2ZTZmNDkxNmJhOTUyOWJhYjM3ODM4MWFiZDYyNzc3NWE",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2026-09-26T16:41:48Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2026-09-26T16:41:48Z"
+      },
+      "message": "Require Perl 5.16\n\nDrop support for Perl 5.10 (long since untested), 5.12, and 5.16.\nFrankly anything less than 5.18 is a PITA, as demonstrated by the fixes\nin 6fc9790 and here, but [cpanm stats] show that 5.16 still has about 2%\nusage (still supported by some older RedHats, as noted in #923), so it\nseems sensible to keep it for now.\n\nTake advantage of dropping those older Perls to eliminate various\nworkarounds to support them:\n\n*   Fixing the shebang line in `inc/Module/Build/Sqitch.pm`\n*   Quoting to avoid File::Copy warnings\n*   Finding the home directory on Windows\n*   Suppressing a warning in `t/command.t`\n*   Using `local $@` in `throws_ok`\n\nWhile at it, refactor `run()` to try to convince test coverage that,\nyes, it is actually covered.\n\n  [cpanm stats]: https://cpanmetadb.plackperl.org/versions/",
+      "tree": {
+        "sha": "402ef923f81df715ecfb44560d331f762c539394",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/402ef923f81df715ecfb44560d331f762c539394"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/9a3c09c6e6f4916ba9529bab378381abd627775a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmq39cwACgkQkt9idPjI\ngfGB1g//SZ9BQQpjPLZ7WXVVZwwZQBKKnyTcCmPLnfzQA3bDRUUmZue8ByEzckhj\n6KNwN/OcMATQpc7jF3iKmyv1CMcL3ujdfP36W3hmqFIq9/WfZnwXDSZz9gDq/Fgr\n8lN+wnXdTFkVXhYksi480VZMQOhha9gsH0VtsUuPYf6Gnbj87L3Uaq7DDUDbEiao\nMM1/fahev4o65qf2TPcLw/nVWhR6bAHH5FKKdUzfsxfelX2uAhyHZGeCR/hVWOLu\nl8I2QUfBym0K1mJ/9mjVb+j9aA1Xb/QLnbEU4LVvUBrVoGva00zQVYJi7JgZs63n\n+Usg0Vq+HHoWEbiV6zCtVC971Zt/2s3QU7hiqh62btM4QbElGsdBhNvEckxnmpZk\nLIOnUq18UVUl95zK6mVQs+869gq+oY5KYM9vxQM9UT1xtgsaZRVtbMz8+NKCZ3/6\n+V041xGCJEPvc7KgGCCzML1eGHU4dZCJcqZkQEC3gwA32kl7epJLr0t2VBZLo81s\nvRclBKjnVe0geD310UKLrg2Y9aYFMWoorPFBoRunTGNtWA4RI38M+iQIq7MzX/t0\nHsx9MDCdmdFw+OxcHQwjTXOCO5/9b8xqk8LfgJyOE1p/eZ+ge8czk8XkZ7hMheBW\nPMKwBvRGfG8EFsCuoJUQXiltYa3UnrGUWxWrwtKn2YA8DRqu14Y=\n=5c0A\n-----END PGP SIGNATURE-----",
+        "payload": "tree 402ef923f81df715ecfb44560d331f762c539394\nparent 7cb467d147557267bd16d7e9fe6886ed797253ab\nauthor David E. Wheeler <david@justatheory.com> 1790440908 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1790440908 -0400\n\nRequire Perl 5.16\n\nDrop support for Perl 5.10 (long since untested), 5.12, and 5.16.\nFrankly anything less than 5.18 is a PITA, as demonstrated by the fixes\nin 6fc9790 and here, but [cpanm stats] show that 5.16 still has about 2%\nusage (still supported by some older RedHats, as noted in #923), so it\nseems sensible to keep it for now.\n\nTake advantage of dropping those older Perls to eliminate various\nworkarounds to support them:\n\n*   Fixing the shebang line in `inc/Module/Build/Sqitch.pm`\n*   Quoting to avoid File::Copy warnings\n*   Finding the home directory on Windows\n*   Suppressing a warning in `t/command.t`\n*   Using `local $@` in `throws_ok`\n\nWhile at it, refactor `run()` to try to convince test coverage that,\nyes, it is actually covered.\n\n  [cpanm stats]: https://cpanmetadb.plackperl.org/versions/\n",
+        "verified_at": "2026-09-26T16:41:54Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/9a3c09c6e6f4916ba9529bab378381abd627775a",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/9a3c09c6e6f4916ba9529bab378381abd627775a",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/9a3c09c6e6f4916ba9529bab378381abd627775a/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7cb467d147557267bd16d7e9fe6886ed797253ab",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/7cb467d147557267bd16d7e9fe6886ed797253ab",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/7cb467d147557267bd16d7e9fe6886ed797253ab"
+      }
+    ]
+  },
+  {
+    "sha": "7cb467d147557267bd16d7e9fe6886ed797253ab",
+    "node_id": "C_kwDOADIQK9oAKDdjYjQ2N2QxNDc1NTcyNjdiZDE2ZDdlOWZlNjg4NmVkNzk3MjUzYWI",
+    "commit": {
+      "author": {
+        "name": "Homer Xing",
+        "email": "homer.hsing@gmail.com",
+        "date": "2026-07-23T17:36:12Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2026-07-23T17:36:12Z"
+      },
+      "message": "Add Simplified Chinese translation\n\nAnd also report when the Snowflake workflow has no access to secrets.\n\nReviewed-by: Dianjin Wang <wangdianjin@gmail.com>\nSigned-off-by: David E. Wheeler <david@justatheory.com>",
+      "tree": {
+        "sha": "c46da1ad0a5f039beaea27f04527029fe7ea62e0",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/c46da1ad0a5f039beaea27f04527029fe7ea62e0"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/7cb467d147557267bd16d7e9fe6886ed797253ab",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmpiUS8ACgkQkt9idPjI\ngfHW9A/+LRLPmTh8rDyHh4KatfaNxKdk1m3RgqFJaku6v0pR4vdx59HA/xqICw4q\nDZiBLJl+TBtbWvI4D5sFtb2pgvXb6tQzp3D3mrse2fmBn3qqZzHz3iHpHmX3+rK1\njsxwswJ4SQdLNdPVhRRJfRGB0Gc03hT/EHj8dARbRWiCXy5ZH82Iw1Ctcca3/AJO\nU62n6JPKXtf40KEvc54Yf47rtnxlVgdA75lHFahgWXELhEBh3kV3K89vBoRFl97y\nBYU2lYJ6nQIq5uxNgdsMR6gOlSVWOn1RtWnZ8Gm237Pgwtu7tkzXu6hyjqrZ47Py\nHqte0Ljb3Z5tqlpa39Zam07tKNmxO4opEY+WF9p5h6wtswqN3rKdbTMnSMnWdwQH\nJFdpzZmAJpxsEKXqah37LdO8imaOON5eOyoLUtBMk5+Dty3TNHO4OxsiwBgvHHE6\nWMbaEG+/vl7VxhhT/kp43pX2inhM3a/QuoeIpVV0Q8UEgLph/w40qRUhuCyunQzQ\n97+sf4Z+fD7lwgLARST4M+4ekyGeDeMAc+VhQ6tUF2EiOvrdOXKEW/I5J9FOkM64\nvaeUrAM3iCI1+axE8VFy8fs2eM5BDk/Klxi+5LzdPvKqxDfd/euAgS376wMf0igi\naQQ0MTCquSaWg++hjCNYsmOND4SS//Ztmcri94n8Eg5VXFdo+Dg=\n=stMR\n-----END PGP SIGNATURE-----",
+        "payload": "tree c46da1ad0a5f039beaea27f04527029fe7ea62e0\nparent 6fc9790f21134b0b52f7fb2aa18b8d834dadbc6c\nauthor Homer Xing <homer.hsing@gmail.com> 1784828172 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1784828172 -0400\n\nAdd Simplified Chinese translation\n\nAnd also report when the Snowflake workflow has no access to secrets.\n\nReviewed-by: Dianjin Wang <wangdianjin@gmail.com>\nSigned-off-by: David E. Wheeler <david@justatheory.com>\n",
+        "verified_at": "2026-07-23T17:36:55Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/7cb467d147557267bd16d7e9fe6886ed797253ab",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/7cb467d147557267bd16d7e9fe6886ed797253ab",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/7cb467d147557267bd16d7e9fe6886ed797253ab/comments",
+    "author": {
+      "login": "homerhsing",
+      "id": 133982,
+      "node_id": "MDQ6VXNlcjEzMzk4Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/133982?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/homerhsing",
+      "html_url": "https://github.com/homerhsing",
+      "followers_url": "https://api.github.com/users/homerhsing/followers",
+      "following_url": "https://api.github.com/users/homerhsing/following{/other_user}",
+      "gists_url": "https://api.github.com/users/homerhsing/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/homerhsing/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/homerhsing/subscriptions",
+      "organizations_url": "https://api.github.com/users/homerhsing/orgs",
+      "repos_url": "https://api.github.com/users/homerhsing/repos",
+      "events_url": "https://api.github.com/users/homerhsing/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/homerhsing/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6fc9790f21134b0b52f7fb2aa18b8d834dadbc6c",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/6fc9790f21134b0b52f7fb2aa18b8d834dadbc6c",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/6fc9790f21134b0b52f7fb2aa18b8d834dadbc6c"
+      }
+    ]
+  },
+  {
+    "sha": "6fc9790f21134b0b52f7fb2aa18b8d834dadbc6c",
+    "node_id": "C_kwDOADIQK9oAKDZmYzk3OTBmMjExMzRiMGI1MmY3ZmIyYWExOGI4ZDgzNGRhZGJjNmM",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2026-07-13T00:48:04Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2026-07-13T00:48:04Z"
+      },
+      "message": "Don't unmock till done testing `$@`; fix tests\n\nIt seems like a recent change caused `$mock_engine->unmock('run_verify')`\nto reset `$@`, causing the tests that followed it to fail. Move the\nunmock call to after the `$@`-using tests.` Thanks @eserte for the\nreport (resolves #921).\n\nAlso update the test workflows for changes to recent release of `cpm`.\nChange them to use the new argument `--top-level-phase\nconfigure,build,test,runtime`; otherwise `cpm` defaults to installing\ndevelopment modules, too (see skaji/cpm#310).\n\nAlso work around `cpm` and related modules dropping support for Perl\nversions prior to 5.24 by installing the last versions to support Perl\n5.22 and earlier in the \"\ud83e\uddc5 Perl\" workflow (see\nshogo82148/actions-setup-perl#2662). This requires using a variable for\nthe `cpm` arguments to support both versions, and requires a further\nworkaround on Perl 5.16 and earlier. And cease testing Perls before 5.24\non Windows, where things just don't work well at all.\n\nUpdate the CockroachDB versions to include 26.2 and drop 21 and 22, as\ntheir DockerHub images have been deleted. Work around a test failure on\n26.2 returning a `NOTICE` as an error for some reason, too.",
+      "tree": {
+        "sha": "cb2a58a3a442c9a0c326e829ceba2f98ed4dc0f8",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/cb2a58a3a442c9a0c326e829ceba2f98ed4dc0f8"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/6fc9790f21134b0b52f7fb2aa18b8d834dadbc6c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmpUNcsACgkQkt9idPjI\ngfG0ew/+KK1XpWHjAOX2SVolGyoQo1G6t0lXboaluwtXAajRh0dGxDsYSYZ2O6/P\n2bxELhTwgYr0BwBGQ+iThBAdtxlKtS6VTfWXBVYXt4znrtkqod3QfU1gXax/05yF\nPlJQDvEWMOgZ4lMQTuMup/RHm7C2m1Pq3BrpwINFl1rwZf7fPYtpYc+k9/bnT3zV\n3Wl27EA9sQ3jjhfm5cFOsGsYUR4Vapd3WaKVqoRJrpTCQjpVhISi0wu3jhOmKMOB\nEUDFN7Ra+RRSG8OLHjA5QXLM1TTvUCqN3gm8RTycL+T4YSfantOHkI4xk0o94tjX\nGoGAR1rjA6sULLk02AkkUUUnlPD0nKNTWFINckwrU+vHz+x8T5pVTCdkn2V318Ba\nNBrg84wsSyL+GVbbsEJmNkfV8jfylGGDk4mWEJ4aMElhJpMSRivpZRcVRt3jtUDT\nISrjUYJCuTT+sUMmpnFAje7XsjumQliJdu5boGMx+JsGdJhmH2zakAQD2/teUyCZ\nZA8i+XKfofTtbvUz7yTIfe/N5Tpksg+Sw69mEHtfKu2qcR8WrgCY/zQ9NVOvlAs7\nP1eoZnAG2MfcqrS3HoX7CYWsfp+5TIsVzf4EjTF5Hg9FyIfh4E7kCW0soWKAoxkE\nsBEcGfVzGPHs3iQyAFJEma9sZpyDR8yJp9sZfVjOtZUtMn64ybY=\n=JKBj\n-----END PGP SIGNATURE-----",
+        "payload": "tree cb2a58a3a442c9a0c326e829ceba2f98ed4dc0f8\nparent 0ab857e3bb5060e6feda0dd3e05ebb04f7aac85b\nauthor David E. Wheeler <david@justatheory.com> 1783903684 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1783903684 -0400\n\nDon't unmock till done testing `$@`; fix tests\n\nIt seems like a recent change caused `$mock_engine->unmock('run_verify')`\nto reset `$@`, causing the tests that followed it to fail. Move the\nunmock call to after the `$@`-using tests.` Thanks @eserte for the\nreport (resolves #921).\n\nAlso update the test workflows for changes to recent release of `cpm`.\nChange them to use the new argument `--top-level-phase\nconfigure,build,test,runtime`; otherwise `cpm` defaults to installing\ndevelopment modules, too (see skaji/cpm#310).\n\nAlso work around `cpm` and related modules dropping support for Perl\nversions prior to 5.24 by installing the last versions to support Perl\n5.22 and earlier in the \"\ud83e\uddc5 Perl\" workflow (see\nshogo82148/actions-setup-perl#2662). This requires using a variable for\nthe `cpm` arguments to support both versions, and requires a further\nworkaround on Perl 5.16 and earlier. And cease testing Perls before 5.24\non Windows, where things just don't work well at all.\n\nUpdate the CockroachDB versions to include 26.2 and drop 21 and 22, as\ntheir DockerHub images have been deleted. Work around a test failure on\n26.2 returning a `NOTICE` as an error for some reason, too.\n",
+        "verified_at": "2026-07-13T00:48:18Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/6fc9790f21134b0b52f7fb2aa18b8d834dadbc6c",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/6fc9790f21134b0b52f7fb2aa18b8d834dadbc6c",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/6fc9790f21134b0b52f7fb2aa18b8d834dadbc6c/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0ab857e3bb5060e6feda0dd3e05ebb04f7aac85b",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/0ab857e3bb5060e6feda0dd3e05ebb04f7aac85b",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/0ab857e3bb5060e6feda0dd3e05ebb04f7aac85b"
+      }
+    ]
+  },
+  {
+    "sha": "0ab857e3bb5060e6feda0dd3e05ebb04f7aac85b",
+    "node_id": "C_kwDOADIQK9oAKDBhYjg1N2UzYmI1MDYwZTZmZWRhMGRkM2UwNWViYjA0ZjdhYWM4NWI",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2026-01-25T21:20:39Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2026-01-25T21:20:39Z"
+      },
+      "message": "Start ClickHouse after deleting files\n\nThe coverage workflow started complaining of a shortness of disk space\nbefore it got to clearing the disk space. The likely culprit is the\nservices, which all start before the steps have a chance to clear space.\n\nSo move starting the ClickHouse server in coverage workflow from\n`services` to `steps`. This requires that it always map ports 8123 and\n9000, rather than let the runner find ports, but it seems to work, and\nhas worked for CockroachDB, which follows the same pattern for some\ntime.\n\nWhile at it, remove the `-t` option from the call to\n`apt.postgresql.org.sh` in the Postgres installation script, as it fails\nto work properly with Postgres 18.\n\nAdd \"Installing X\" output to each of the install scripts, to make it\neasier, in the future, to see which ones have run in the \"Setup Clients\"\nstep of the coverage workflow.\n\nFix the SQLite version string for 2026, now that there is a first\nrelease.",
+      "tree": {
+        "sha": "c2b52b40ef8423ba09fc3dc9a5173bd62f493a0a",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/c2b52b40ef8423ba09fc3dc9a5173bd62f493a0a"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/0ab857e3bb5060e6feda0dd3e05ebb04f7aac85b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAml2iS8ACgkQkt9idPjI\ngfGmSRAAiGhIriBDOUXLQBCWegjaLME0g/TqNWt+OzqJRzaqGfKcOH2DLPz63+9X\nRZFalLvNWNZNgrvF74qJRuD5geu5cZWUPvYXW9h7W5SUSe9HMGNBEj1Is2+O/Xv6\n1h+cbO8HoplJdh1sxZD3YEF0P0BPgbbeZXSTQ+ZAOb89Vwuy8CjZZey0lJZ9pjHa\nvzJR95X4Z+k1/HG+lgBdMUwOQJrskNQ/gBQA/Q1k9LxMmde4mhRRlLVDrEVVTl8d\nTzeiN0l6SX3P1j9/qSsTKeiZNNqVCOdfDiNFadq+GqfWDSEy/4BHD1p0n0jaj+o1\ny7qbhPWSpoJicGUtg0BXZwLbmLQfgcxJfCJcpT/pG6by6MQSCMaFKZ9YXP1phG/M\nk46woz3Ms4s73njZH40aROuz0uiuE5UdvV7p15r47C9ZIWhZv94b42fEZKHWlFIJ\n+u8O8JVyRysb3ufEdFGdD7N5Fzg5Ucfp+cBM3Bq7Wf24BgMus798AdAVQ45U8HR9\npHZkBWjdFFRmF3mwdm1wN8zTjhuSjY716AXqmvnHBnK5AH7t8Wvdi4ZYJiMSWPTu\na25w+atLv6tWiTxRjM0lCJSI/hWrW+j8ZJvyZHhsHdAF2ex1vShBDvGhLK9Nj4pL\nimmbxkUVPsOwCCop5EaNGgdhJDmt3wuvucGzYV1iwdvg64wHQM0=\n=68NK\n-----END PGP SIGNATURE-----",
+        "payload": "tree c2b52b40ef8423ba09fc3dc9a5173bd62f493a0a\nparent 42b7192f8ffabfbda79db329f1240a9390458edd\nauthor David E. Wheeler <david@justatheory.com> 1769376039 -0500\ncommitter David E. Wheeler <david@justatheory.com> 1769376039 -0500\n\nStart ClickHouse after deleting files\n\nThe coverage workflow started complaining of a shortness of disk space\nbefore it got to clearing the disk space. The likely culprit is the\nservices, which all start before the steps have a chance to clear space.\n\nSo move starting the ClickHouse server in coverage workflow from\n`services` to `steps`. This requires that it always map ports 8123 and\n9000, rather than let the runner find ports, but it seems to work, and\nhas worked for CockroachDB, which follows the same pattern for some\ntime.\n\nWhile at it, remove the `-t` option from the call to\n`apt.postgresql.org.sh` in the Postgres installation script, as it fails\nto work properly with Postgres 18.\n\nAdd \"Installing X\" output to each of the install scripts, to make it\neasier, in the future, to see which ones have run in the \"Setup Clients\"\nstep of the coverage workflow.\n\nFix the SQLite version string for 2026, now that there is a first\nrelease.\n",
+        "verified_at": "2026-01-25T21:20:53Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/0ab857e3bb5060e6feda0dd3e05ebb04f7aac85b",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/0ab857e3bb5060e6feda0dd3e05ebb04f7aac85b",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/0ab857e3bb5060e6feda0dd3e05ebb04f7aac85b/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "42b7192f8ffabfbda79db329f1240a9390458edd",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/42b7192f8ffabfbda79db329f1240a9390458edd",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/42b7192f8ffabfbda79db329f1240a9390458edd"
+      }
+    ]
+  },
+  {
+    "sha": "42b7192f8ffabfbda79db329f1240a9390458edd",
+    "node_id": "C_kwDOADIQK9oAKDQyYjcxOTJmOGZmYWJmYmRhNzlkYjMyOWYxMjQwYTkzOTA0NThlZGQ",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2026-01-06T18:28:21Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2026-01-06T18:28:21Z"
+      },
+      "message": "Increment to v1.6.2-dev",
+      "tree": {
+        "sha": "c2d8297d718c02378c59aaf93a8d0bc38091b938",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/c2d8297d718c02378c59aaf93a8d0bc38091b938"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/42b7192f8ffabfbda79db329f1240a9390458edd",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmldVEUACgkQkt9idPjI\ngfE0ig/7B5jSAxoZIGM9yVIccm4xaNg0rrJ5mCC3vJ9YM8XVCMOWJ3xpdZLe0U02\n579LH3KV8Ax/kq/NP3ctllt9L0hC/c3KAoJj/XzKaUDQoQMpHzhan1EG3y1Tuk3P\nnUaaQJmk4KRGw7ieuDVe1jUFDnAcq0Opoa3rVsY4iChX6XvfqVZY4z7RV2aqofMd\nS2JifOfpvdSaLSVLXRX6bvlTXUpcrwM7R/Hp6X5U/7qcJ/qUoOYncyvgjujN//vi\nXcAvr2jJTLZddsKDJvlnL3JnXTUVko0SRrAOk6SXWf0GByHhK4TXa4qg7oIOunfM\nknUFlNGOjrHPa0B7dJaQ3lQ+ik8vXmu8iLcwwi5m/1mXX/6p5SkQ6zZmNif2wlis\nFoLeonKuNlRpDHHx8/AJwiC2LUVsVfodS+rnFoFnRcTgJKiZq5mG7aFVSjMilpem\nnGgKjN/DWChxSKBMQaKHPytNS1DvlDpyU1GO61YAr2oamEuoqJU67YA8nId5MmhM\nxSyQ14Xf60zhj56PrkXa6CbBNLMz9dz5w+0t7bs50i3Qr8XYkxDgFdH/OlJGY63E\nShK+v3Kq7EZKFAKuuCTUg3plzcELFx/LUnm8rwnu7Un3YVpIxL5Gj6UGlstDoNjn\nx1PKZEwAYfW7ZBCPzs5a4OVqkywpzbGsSwCIB7uAkSISaQAveck=\n=OJOn\n-----END PGP SIGNATURE-----",
+        "payload": "tree c2d8297d718c02378c59aaf93a8d0bc38091b938\nparent ce0550c45ade3527d0c7f981c934e1ea4bdd6c19\nauthor David E. Wheeler <david@justatheory.com> 1767724101 -0500\ncommitter David E. Wheeler <david@justatheory.com> 1767724101 -0500\n\nIncrement to v1.6.2-dev\n",
+        "verified_at": "2026-01-06T18:28:33Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/42b7192f8ffabfbda79db329f1240a9390458edd",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/42b7192f8ffabfbda79db329f1240a9390458edd",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/42b7192f8ffabfbda79db329f1240a9390458edd/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ce0550c45ade3527d0c7f981c934e1ea4bdd6c19",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/ce0550c45ade3527d0c7f981c934e1ea4bdd6c19",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/ce0550c45ade3527d0c7f981c934e1ea4bdd6c19"
+      }
+    ]
+  },
+  {
+    "sha": "ce0550c45ade3527d0c7f981c934e1ea4bdd6c19",
+    "node_id": "C_kwDOADIQK9oAKGNlMDU1MGM0NWFkZTM1MjdkMGM3Zjk4MWM5MzRlMWVhNGJkZDZjMTk",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2026-01-06T18:05:14Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2026-01-06T18:05:14Z"
+      },
+      "message": "Merge develop for v1.6.1",
+      "tree": {
+        "sha": "48a8fa6707ff1a4b0a64ee2d03ce67f5b9debf12",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/48a8fa6707ff1a4b0a64ee2d03ce67f5b9debf12"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/ce0550c45ade3527d0c7f981c934e1ea4bdd6c19",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmldTtoACgkQkt9idPjI\ngfE1fA//UAkzrdp5GhFwW+uHkh5bYqZASKmCtHXBMZdwj6iXC/BEjdX2f4ZcUfRX\nlOLJXi0A0OCkvz5F6mQVzd5FBFkSBhvx4ktwPURXniVtUg40+Vn5FGK1zi+QJJx3\nSgnr/+/ugtZv8KI89JRnqzZwikfn7AcmvLc3+0xxwIZ6zH1dXr4POfq8kUeiQfWm\nEX/URvGDCdaJeV03GApHtfHXmGKsMfEeLQzun9ZV8hRb/82Yyqry1oYSbHStGaLC\nV+hd+nXGWu5PyUuwl91qHwjzAHFufpuRhcwz3fsIFnUcjC5frGKVDpxsKWAVwnn1\n1JSZ+NCyIAit9KBMiZU6tP2LqNnAhrQFANGbO6WOzNJ1XAhrDzIxEZ9o9BD7oQvN\n6C1lIBOStDVJanE01HTjy+wxF2cGqvfjWGvaRFgq/hDcUhpzyZ+Ssuy3uvlIefO2\nB43w2EIMdAFm4D1H1X3hTx62Y/0tF0L7P01nL4EWKFwInolNyJNWtVQqsXnaz3TK\nLEGkd2r8UhAXiMcz7egGk8rxuqIpjRVktQkfmrBF/Bz0SBzkLAqHmRbsGJ1gNNz/\n8wPAE3SYhn00WJnCZToV1f1Z+osNoJJOm+11jt41iGCFvmMFPMvSKumTcoEZqFjS\nZntjJNG5tL+k5TDXwm/83Cj6kOGsEqOZK84nr2PgfD1usK/e0iI=\n=wtvS\n-----END PGP SIGNATURE-----",
+        "payload": "tree 48a8fa6707ff1a4b0a64ee2d03ce67f5b9debf12\nparent ab5f89d006ce43583b558cd0d96b98ba183860cf\nparent 8a42914dd63385118d37b408f33b65b44b19c628\nauthor David E. Wheeler <david@justatheory.com> 1767722714 -0500\ncommitter David E. Wheeler <david@justatheory.com> 1767722714 -0500\n\nMerge develop for v1.6.1\n",
+        "verified_at": "2026-01-06T18:05:27Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/ce0550c45ade3527d0c7f981c934e1ea4bdd6c19",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/ce0550c45ade3527d0c7f981c934e1ea4bdd6c19",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/ce0550c45ade3527d0c7f981c934e1ea4bdd6c19/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ab5f89d006ce43583b558cd0d96b98ba183860cf",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/ab5f89d006ce43583b558cd0d96b98ba183860cf",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/ab5f89d006ce43583b558cd0d96b98ba183860cf"
+      },
+      {
+        "sha": "8a42914dd63385118d37b408f33b65b44b19c628",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/8a42914dd63385118d37b408f33b65b44b19c628",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/8a42914dd63385118d37b408f33b65b44b19c628"
+      }
+    ]
+  },
+  {
+    "sha": "8a42914dd63385118d37b408f33b65b44b19c628",
+    "node_id": "C_kwDOADIQK9oAKDhhNDI5MTRkZDYzMzg1MTE4ZDM3YjQwOGYzM2I2NWI0NGIxOWM2Mjg",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2026-01-06T18:01:39Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2026-01-06T18:01:39Z"
+      },
+      "message": "Prepare for v1.6.1 release\n\n*   Update translation dictionaries\n*   Update copyright statements\n*   Remove `-dev` from version\n*   Timestamp Changelog and sqitch.spec\n*   Restore the release workflow on version tag",
+      "tree": {
+        "sha": "48a8fa6707ff1a4b0a64ee2d03ce67f5b9debf12",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/48a8fa6707ff1a4b0a64ee2d03ce67f5b9debf12"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/8a42914dd63385118d37b408f33b65b44b19c628",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmldThQACgkQkt9idPjI\ngfEwew/+K4xUC06HoqzBT/OuqRbJa9yPWkESj0R++5XkJS5pRpDw08V20XD/BbLX\nQmpyFubh5RIrs29fCX/UouMxMH+EEtw9+Yp/YjwYBmBethMQBrJT/ke527Dw/nB/\nL4/03eOj27cm/cSNmLIzW8EXXurIHf1RYpT1oO+6r3EZumwlUxdWkV0WQ2cucSBa\nkZ8cdARGKLaZhhPrzKMnSZyHnoPTSV4R1WBZ3Sn4cgQrbjHVt+38cVrTp5kNB9Ri\nBTYlKz2ppX6UqKTu8pQtLYHt4GjRd/A2iOsQMOW8iC19ctvxP+0Vdaub983vIZFZ\nsm+5k7MBs1kftJ3I7ZzmALa1MpwCNlIL5O9lY/4CxwpbdXoSGa4A+/bW/hFJ3GA3\ncBXMAMGS3m6ZvQQOrlVlkKWq2JAxvc+1w0gn3GmTWpIbCq9JJsZCwdRziYQhaCWS\nI2l+EpaGp3EgAtOi/kP2iGtYzPi+ckW7vgWb4Cr6HUHolCjpqa9txHdiucA9GMzS\nscFsbDfrTQy9SlTgFbDmzqfpfbljxrIyUZxGG2Im7FC9nQvzqL/EFom3DpTqJAKy\n3+cAO5rkYqvqPZa9kFwSgTA15/zgS33ZTtR3RJvJt8FtqElFWz7Cyw+cpf91YtKu\nN0tSMKAnWLz/SZpl6cL+3ZJWVMSNQoCKhV8N3XgK/f8yNmyxBbs=\n=hzs6\n-----END PGP SIGNATURE-----",
+        "payload": "tree 48a8fa6707ff1a4b0a64ee2d03ce67f5b9debf12\nparent ff121ca2701b8b7cc710789eadd494da6ce3e49e\nauthor David E. Wheeler <david@justatheory.com> 1767722499 -0500\ncommitter David E. Wheeler <david@justatheory.com> 1767722499 -0500\n\nPrepare for v1.6.1 release\n\n*   Update translation dictionaries\n*   Update copyright statements\n*   Remove `-dev` from version\n*   Timestamp Changelog and sqitch.spec\n*   Restore the release workflow on version tag\n",
+        "verified_at": "2026-01-06T18:03:27Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/8a42914dd63385118d37b408f33b65b44b19c628",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/8a42914dd63385118d37b408f33b65b44b19c628",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/8a42914dd63385118d37b408f33b65b44b19c628/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ff121ca2701b8b7cc710789eadd494da6ce3e49e",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/ff121ca2701b8b7cc710789eadd494da6ce3e49e",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/ff121ca2701b8b7cc710789eadd494da6ce3e49e"
+      }
+    ]
+  },
+  {
+    "sha": "ff121ca2701b8b7cc710789eadd494da6ce3e49e",
+    "node_id": "C_kwDOADIQK9oAKGZmMTIxY2EyNzAxYjhiN2NjNzEwNzg5ZWFkZDQ5NGRhNmNlM2U0OWU",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2026-01-06T17:01:23Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2026-01-06T17:01:23Z"
+      },
+      "message": "Upgrade engine test versions, driers, and clients\n\n*   Upgrade Exasol clients to v 25.2.5/25.2.6\n*   Exasol dropped the v7 Docker image\n*   Upgrade ClickHouse clients to v1.5.0\n*   Upgrade Oracle clients to v23\n*   Upgrade Snowflake ODBC driver to 3.13.0\n*   Add SQLite v3.51 (and remove unnecessary `$` on on arithmetic variables)\n*   Add ClickHouse 25.10-25.12\n*   Upgrade latest Cockroach to 25.4\n*   Upgrade latest Exasol to 2025.2\n*   Add MariaDB 12.1\n*   Add Yugabyte 2025.2\n\nAlso disable Perl versions broken by shogo82148/actions-setup-perl#2310\non Windows.",
+      "tree": {
+        "sha": "3690566fc340b961042f0f16e021ec6e47e31ee3",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/3690566fc340b961042f0f16e021ec6e47e31ee3"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/ff121ca2701b8b7cc710789eadd494da6ce3e49e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmldP+MACgkQkt9idPjI\ngfHz5RAAgIEdbM5wORYwCjBCUUdiCEMVU9oXlg/C74P9e4bNdeG4HfQGtAa1zeTn\nqawfqbiyZcloLRVh1D4KoSz+UGggzy6WpY4x3CCk4+0jkfj7sRdzTSWItUi8SoKe\nTzQBQN5JSDfj7kkyJZx8uTUNkoKPIuDSX+y6lg8/gLQFbs45P/e+k54DbAGhh0Eq\n4pLzymtmjbB2l5SOhTEfmfGk4cqVVZb5Sa8oikJbmTL+w96CoCYYCEqFvewg/v1S\ngkdqtkiknSMI/8dZ8dtN346hUNMFqboF2EEHyhzBTtcbn7sZQ5QpnIqxfB+uEo38\nSZf2vPAYAdES/4hRxgqxcZ7wZ24Fg53m720H9WdrRwsVf0HMtEaRQgiXpyZ45tyB\nzNhRcoVqNJriunfETIPPK4n1U2Zpnm/hNww/AvUYe+uTk2sbv5Ldz5qVS8lX8rCl\ncFX9v1Dgfjj5Nz3IKIJn/6ti8e2xRloAaLwGDfjbB5f2qsqarOTH53lCTw6Yb6rR\ns6z6AKwKSb+mboNZ3mlK8AVIL6QTFqzNVt8PhH1MHgt1lO8ks8MgB+3wV4eohx30\nTw+HQ9p5b8klGBW2ZldQr0JmMHvX3AmuUutpWBx2G/PEnCQ97bWTLkR9ZOHY4y03\nE8rOEEcmOdTPQMDQnHOM4s/NkDjXl6MoV0oL7xQHgHWs8IuxZ5E=\n=4YBW\n-----END PGP SIGNATURE-----",
+        "payload": "tree 3690566fc340b961042f0f16e021ec6e47e31ee3\nparent 4f04e7bffc556c6276c99490c4e2eadb46060f5a\nauthor David E. Wheeler <david@justatheory.com> 1767718883 -0500\ncommitter David E. Wheeler <david@justatheory.com> 1767718883 -0500\n\nUpgrade engine test versions, driers, and clients\n\n*   Upgrade Exasol clients to v 25.2.5/25.2.6\n*   Exasol dropped the v7 Docker image\n*   Upgrade ClickHouse clients to v1.5.0\n*   Upgrade Oracle clients to v23\n*   Upgrade Snowflake ODBC driver to 3.13.0\n*   Add SQLite v3.51 (and remove unnecessary `$` on on arithmetic variables)\n*   Add ClickHouse 25.10-25.12\n*   Upgrade latest Cockroach to 25.4\n*   Upgrade latest Exasol to 2025.2\n*   Add MariaDB 12.1\n*   Add Yugabyte 2025.2\n\nAlso disable Perl versions broken by shogo82148/actions-setup-perl#2310\non Windows.\n",
+        "verified_at": "2026-01-06T17:01:28Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/ff121ca2701b8b7cc710789eadd494da6ce3e49e",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/ff121ca2701b8b7cc710789eadd494da6ce3e49e",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/ff121ca2701b8b7cc710789eadd494da6ce3e49e/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4f04e7bffc556c6276c99490c4e2eadb46060f5a",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/4f04e7bffc556c6276c99490c4e2eadb46060f5a",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/4f04e7bffc556c6276c99490c4e2eadb46060f5a"
+      }
+    ]
+  },
+  {
+    "sha": "4f04e7bffc556c6276c99490c4e2eadb46060f5a",
+    "node_id": "C_kwDOADIQK9oAKDRmMDRlN2JmZmM1NTZjNjI3NmM5OTQ5MGM0ZTJlYWRiNDYwNjBmNWE",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-10-29T14:57:01Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-10-29T14:57:01Z"
+      },
+      "message": "Always specify host name for ClickHouse registry\n\nDefault to \"localhost\" if it's not set to align with the behavior of the\nClickHouse client, and to avoid URI::db::_odbc returning\n`dbi:ODBC:DSN=sqitch;Driver=ClickHouse`, which won't exist.\n\nAlso test ClickHouse 25.9 and remove irrelevant pod.",
+      "tree": {
+        "sha": "d6306dbdaa57f68dcfbbd81025c97071bb586cae",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/d6306dbdaa57f68dcfbbd81025c97071bb586cae"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/4f04e7bffc556c6276c99490c4e2eadb46060f5a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmkCKz0ACgkQkt9idPjI\ngfEL3Q//R6+ck2pENFF0x/XgRe3U9mhoiKOp+PnVfHO99NvkHTTX8OSLXNaMg0MA\nmqxZxwESOVleozplaovnk1RrShW2GNWTpCTv+q1WW6nysoll/ZLyVsBcl2s9Jngu\nhoDBAsErNkubd+7SeT23CqEbhP9A6oCHOIQJL66mOrbS+BgXMWuFmLBXoAoJgAd3\nf5DFqMq2PdBJQogoEHMQI7YAPRiPftaak6r9A3shXZc7Tfjg7bVRdE47IwCldIkl\neik3HB9T2NgqFAdeyHMdkQUh0DjNe13/TPjzkI60C94zpEadrJNSp4tOz3UN6vqf\ntomDrA/godglpNdpato3u8u/WWpmccWulSbeqMiB09KXssc2OfivJHBMLShUi97S\nI9kBfurKFEUyVn4GJcg45Vil7tZNYpacJDebPsCvmM0vXk1QMd94SAZan3EdVpi6\nOhu5VdsZOZo2mNXkOOh6+AlJpn2FFpyxJqOvRfv5VTJ8cfRK+AAfKLIq4RzzKGvE\nHX8lNnlLqNiLZgxZHrwspEECl9VSvCxFloonk1I+x8WMM1eixShmEto9qjPIHQrX\nbLdwqPuZ8Zrna3p+ngUjR9njhIRnckzMtuJ7v+6oJBAb7+0aU3E3ywZ64ymQrXdu\nqYDDo+TIKUDF15tbQGe9rensnE9m8whIplCRyQltGSXghVVv41U=\n=InJ5\n-----END PGP SIGNATURE-----",
+        "payload": "tree d6306dbdaa57f68dcfbbd81025c97071bb586cae\nparent a6e0379ba4576c822976873909ebc89b0095f4e0\nauthor David E. Wheeler <david@justatheory.com> 1761749821 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1761749821 -0400\n\nAlways specify host name for ClickHouse registry\n\nDefault to \"localhost\" if it's not set to align with the behavior of the\nClickHouse client, and to avoid URI::db::_odbc returning\n`dbi:ODBC:DSN=sqitch;Driver=ClickHouse`, which won't exist.\n\nAlso test ClickHouse 25.9 and remove irrelevant pod.\n",
+        "verified_at": "2025-10-29T14:57:24Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/4f04e7bffc556c6276c99490c4e2eadb46060f5a",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/4f04e7bffc556c6276c99490c4e2eadb46060f5a",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/4f04e7bffc556c6276c99490c4e2eadb46060f5a/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a6e0379ba4576c822976873909ebc89b0095f4e0",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/a6e0379ba4576c822976873909ebc89b0095f4e0",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/a6e0379ba4576c822976873909ebc89b0095f4e0"
+      }
+    ]
+  },
+  {
+    "sha": "a6e0379ba4576c822976873909ebc89b0095f4e0",
+    "node_id": "C_kwDOADIQK9oAKGE2ZTAzNzliYTQ1NzZjODIyOTc2ODczOTA5ZWJjODliMDA5NWY0ZTA",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-10-29T14:31:45Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-10-29T14:31:45Z"
+      },
+      "message": "Fix a couple pastoes in sqitchtutorial-sqlite.pod",
+      "tree": {
+        "sha": "785df1509481bed76ec29210efb0274a26e473eb",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/785df1509481bed76ec29210efb0274a26e473eb"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/a6e0379ba4576c822976873909ebc89b0095f4e0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmkCJVEACgkQkt9idPjI\ngfEOPQ//VGwihcG+xAO5s6RlgbZng75B/RgvbjBcgkCARkTRMm5UHgTmgJlbjsWX\noURQSrGLuB4WzpYFb9RISvqFq3EjlzAPz5MEwmOKJFobpcy0WeX0JBYapSmQoRAr\n+m7+3zcCS/0AJFWnGYA3qn0CQHI4T/syJPMHvtcNjDuLmKEFP8RAuyl2N1GIbGqa\nJJ1BwjfoEDWm8oqlvE4ZfVFdv35Akn+MG7PeDdlcciJL1gQfnpa57wK1oEWH2r24\niOHhAPOcaz+FcLx+rG6Vjpcn8Kkc0teQHVQlWya9d0ZQeCUK85x2RdoDjUN9zTku\nsYRJPLTBNQGop0s2qNDVyIV8ZHjaZunjljzBoO1ls6Olf7ppl1EOOUA7M7crZl0m\n2WItckA9TXXKp9E4tLZFcUxjkDs1BkA06FtJ9eWlJKlKcBttYGr8BhmyLjU3vSt1\nptyvvg6IrA9rZGdPrx1SrwJfpAXTJ9Rs7SFh0CqIVWHirJKN6qEMQ4kJ4V9nY70H\nmSQ7x6GCdSCVZFhYXDL0+UNjQTrAluefISzXYVUtwngX2FseeZ6h4apkbrKO6Oi0\nN1SJ63v+wN6tYIYDg69S9LvEfihn7T2S1L43PfUglsOI1F+Gsc0Af78Zyb1Asrra\nTFgUd06Xb3zrSuuoZpmfnzRsURrLZ2htJcIzTh/WvE7/KHFh0xI=\n=IlLK\n-----END PGP SIGNATURE-----",
+        "payload": "tree 785df1509481bed76ec29210efb0274a26e473eb\nparent 953360e580453a69f6c68617e59522a4a5a99250\nauthor David E. Wheeler <david@justatheory.com> 1761748305 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1761748305 -0400\n\nFix a couple pastoes in sqitchtutorial-sqlite.pod\n",
+        "verified_at": "2025-10-29T14:31:49Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/a6e0379ba4576c822976873909ebc89b0095f4e0",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/a6e0379ba4576c822976873909ebc89b0095f4e0",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/a6e0379ba4576c822976873909ebc89b0095f4e0/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "953360e580453a69f6c68617e59522a4a5a99250",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/953360e580453a69f6c68617e59522a4a5a99250",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/953360e580453a69f6c68617e59522a4a5a99250"
+      }
+    ]
+  },
+  {
+    "sha": "953360e580453a69f6c68617e59522a4a5a99250",
+    "node_id": "C_kwDOADIQK9oAKDk1MzM2MGU1ODA0NTNhNjlmNmM2ODYxN2U1OTUyMmE0YTVhOTkyNTA",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-10-06T22:28:11Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-10-06T22:28:11Z"
+      },
+      "message": "Update release notes",
+      "tree": {
+        "sha": "d1aa856e2834617ab87563600804ef0a7e79eec2",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/d1aa856e2834617ab87563600804ef0a7e79eec2"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/953360e580453a69f6c68617e59522a4a5a99250",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjkQnsACgkQkt9idPjI\ngfGw0A/+L43pDj4hvv09dcpa6k6HY7mefgJ/7wfUmJQDhH1PABLl2xpZ/rYCrVzI\nrHDUSSjmx392k1jTBTCW2t9kg79Tq3Mi+eJqMidpk879Zfb7M/jJdhZrGU54Yb3J\nbYdw2jExX0dDGSF4EEDWpcDGNDjlvJgZwAHINHzP0dqhQyTMZS0eLo8IYhSmc9C6\nqlgOp2e0OvmShzbG8HEW1jLhE0rifdoHa9qtVO0AZpGC9HzgMmyR2ihjqwgp5pMP\nhW5gw0Yhq1ovbubZcS6+xE4GAbIdwP+hDxLtkeElsygXoeHkZI+LQcpX3dDR1YvO\nSV7IBLkYSbCW7U0ggdXEq/yCiMShTGsx3g8vPj2t47+0CM074YfD7PESxeoCcrdk\nBFvTdcya9v+INY4VrcLBQS5rxWN9PEr1yAEZTZFdq6m35y97HQxKbrvAl+lf7+Ut\n5uAO6blxwMyQJFEogvEa3FFFjBq3Vx/9GSVSCuVYiI1V9fPVr49914qZnWFj0ymk\ncPWt3egaPV+5b+UlJ1kKDxjna4knY+AlVWR3Lzs81ClEiK115INylP3GYkgyh/PB\n+4ntMxtGA42HfpXjqCaq0n7PfRvkGJmVnHcrbFUu7jDF6sKW1vGq3Nhhg3CK824o\nwYqToQq+JB8Py4upvQ6dEHBdOMYD/C/09nqC81IFVQha+ipJeGg=\n=y07l\n-----END PGP SIGNATURE-----",
+        "payload": "tree d1aa856e2834617ab87563600804ef0a7e79eec2\nparent 03a6ffb8c4b5de784e2be7dfe60992cd996780c3\nauthor David E. Wheeler <david@justatheory.com> 1759789691 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1759789691 -0400\n\nUpdate release notes\n",
+        "verified_at": "2025-10-06T22:28:14Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/953360e580453a69f6c68617e59522a4a5a99250",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/953360e580453a69f6c68617e59522a4a5a99250",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/953360e580453a69f6c68617e59522a4a5a99250/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "03a6ffb8c4b5de784e2be7dfe60992cd996780c3",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/03a6ffb8c4b5de784e2be7dfe60992cd996780c3",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/03a6ffb8c4b5de784e2be7dfe60992cd996780c3"
+      }
+    ]
+  },
+  {
+    "sha": "03a6ffb8c4b5de784e2be7dfe60992cd996780c3",
+    "node_id": "C_kwDOADIQK9oAKDAzYTZmZmI4YzRiNWRlNzg0ZTJiZTdkZmU2MDk5MmNkOTk2NzgwYzM",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-10-06T14:52:30Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-10-06T14:52:30Z"
+      },
+      "message": "Increment to v1.6.1\n\nAnd always run the release workflow but only release on tag in order to\navoid most unexpected errors at release time.",
+      "tree": {
+        "sha": "c5f421b3e316581abdb3529006491b7a5746325d",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/c5f421b3e316581abdb3529006491b7a5746325d"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/03a6ffb8c4b5de784e2be7dfe60992cd996780c3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjj164ACgkQkt9idPjI\ngfEo0w//QPlX+x6glqwK2vKNLTYh6KAG28wl9XHxEQwY49SaBXKbmq2376XLneMT\n+iRDfKN21bs/0HwSFgKzScZtqFu5lDEyyQSpsuVYww0SA0a03HY4qHA9AIMtv4nf\nWMPnd/AJgPnQbYe275dSrBpvtUTkCIcJIjsjt4+G+u+bbOEDt/XkdFlOZI+H+ZDl\n1uM0I9P3ZH2FvH2w2Qd8X99Tbj0I4FBO8Ly1X6LFfpG1V3vYxXtiJEEfTM5XAvBc\nKaWFVPzNvoktfEXIfODLFJweeTkmAwzrcXVEfovEVvwo/ozUTFtHac4E1CRbfKJv\n0qMQXvJ+CBVO4mHIn788yv6ICCbs82W6wdrziL6B8aRZgcaGV/ut69twUBu9J8bV\n6u6REODQdUlKjc4pbwesJIwWhrALFbH/VWFBb67Wu/A2VYJBJD3bWmqCiXpN5PH4\n2x7IlQUjlQBJOJD6nN8T1F+1RUQLEC32JwagqU3wW/E7gA0yJQIj/J3zqiU6HHMS\npWPaViUu769RYbm6hb/kaKl4SKMgOgZhLdxewLnktMR8t1rHuGk/Jwd+qu4UuYEa\nXbWZxZGv7rTK5waKgtzGK1NOFzyBZj+edfLf14aG9ryG/4zAA7pJLPe1iewzj1Tq\nqs9ibtGjfjRc/9QJVuKLgDbSFs78tdgu4dLMOOJhV2BfMIBXJ18=\n=iOuP\n-----END PGP SIGNATURE-----",
+        "payload": "tree c5f421b3e316581abdb3529006491b7a5746325d\nparent ab5f89d006ce43583b558cd0d96b98ba183860cf\nauthor David E. Wheeler <david@justatheory.com> 1759762350 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1759762350 -0400\n\nIncrement to v1.6.1\n\nAnd always run the release workflow but only release on tag in order to\navoid most unexpected errors at release time.\n",
+        "verified_at": "2025-10-06T14:52:40Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/03a6ffb8c4b5de784e2be7dfe60992cd996780c3",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/03a6ffb8c4b5de784e2be7dfe60992cd996780c3",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/03a6ffb8c4b5de784e2be7dfe60992cd996780c3/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ab5f89d006ce43583b558cd0d96b98ba183860cf",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/ab5f89d006ce43583b558cd0d96b98ba183860cf",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/ab5f89d006ce43583b558cd0d96b98ba183860cf"
+      }
+    ]
+  },
+  {
+    "sha": "ab5f89d006ce43583b558cd0d96b98ba183860cf",
+    "node_id": "C_kwDOADIQK9oAKGFiNWY4OWQwMDZjZTQzNTgzYjU1OGNkMGQ5NmI5OGJhMTgzODYwY2Y",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-10-06T14:25:29Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-10-06T14:25:29Z"
+      },
+      "message": "Update cpanfile with XML::Tiny and YAML::Tiny\n\nAnd make sure they're installed for testing.",
+      "tree": {
+        "sha": "eb8b8573989969cc9075ea311de075080d24c34d",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/eb8b8573989969cc9075ea311de075080d24c34d"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/ab5f89d006ce43583b558cd0d96b98ba183860cf",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjj0XAACgkQkt9idPjI\ngfHdew//XuP8CA1SmB0AJ066vYGXr1oaVzB6W/0Msbqhi0cWHu3M5mQ38U85vYkY\nSzL9iId8etPsvImwWfmf+inohT/KByIfYhY5LmvxsIGuIX5LMtauLR8Q8qwKf0RG\nzyVSCIr+c8vhKfpHUaxgajFqP45L9K/NEb7evzRML+cx9s7sjgTLApUmoI3KufIR\ngUPakb6rnXZ+XrWG6cUQGCVwaoYbhw6yl6tjM3kb5ya4RlDrJlQ9zubdct5Bo1xR\nCeicXmfiwcnrgYI4f5UewqS93i95U3NfAxkFXN7pgi5SiX6Tp+NNOAvSiFPS/ME2\n4qKCdUhVBlRAEVCEMqQIbN9eQIlPKnJsTnJhekE6sJ8xF5Lkjh70uITq3oxOHokh\nyO8fSkCPoXEtk7NRGaZGmLi72RaoqP3e4gr/JXwihMdRZiWZyrQJsSla9hVT+XXk\ntm4G6KB08Jw7wNYq7AZ0LXAv3Vt2UKyefVTJH0GkuePPUMg0lGCLGNZ8EkARO9OU\nx+DNH0glgQ4qxljm5M/zBnheTmH2Qh+SHJgAUQQbE4t+CAcDIU4wCOy6qQd+6euV\nb5jWXY7tqU6TNKq824rAyykH8NtpiKKho40W/3xt6mx6SEUs8sy/HLA4gOKtXdv8\nkzRYtT79mbMvpZncH0FbIm/yXZAFQJkto9Ugt9bP4nCBz0opJOo=\n=Ryi6\n-----END PGP SIGNATURE-----",
+        "payload": "tree eb8b8573989969cc9075ea311de075080d24c34d\nparent 722b9808b4da299096c079953ac0c17e87bb1bf2\nauthor David E. Wheeler <david@justatheory.com> 1759760729 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1759760729 -0400\n\nUpdate cpanfile with XML::Tiny and YAML::Tiny\n\nAnd make sure they're installed for testing.\n",
+        "verified_at": "2025-10-06T14:26:31Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/ab5f89d006ce43583b558cd0d96b98ba183860cf",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/ab5f89d006ce43583b558cd0d96b98ba183860cf",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/ab5f89d006ce43583b558cd0d96b98ba183860cf/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "722b9808b4da299096c079953ac0c17e87bb1bf2",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/722b9808b4da299096c079953ac0c17e87bb1bf2",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/722b9808b4da299096c079953ac0c17e87bb1bf2"
+      }
+    ]
+  },
+  {
+    "sha": "722b9808b4da299096c079953ac0c17e87bb1bf2",
+    "node_id": "C_kwDOADIQK9oAKDcyMmI5ODA4YjRkYTI5OTA5NmMwNzk5NTNhYzBjMTdlODdiYjFiZjI",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-10-06T13:46:13Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-10-06T13:46:13Z"
+      },
+      "message": "Merge develop for v1.6.0",
+      "tree": {
+        "sha": "aac24cc58fcc19908b61863c39b21853e84ce7dd",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/aac24cc58fcc19908b61863c39b21853e84ce7dd"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/722b9808b4da299096c079953ac0c17e87bb1bf2",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjjyCYACgkQkt9idPjI\ngfHolQ//XeLKbDoXfGJUeZsvC8N12kS1EWtw7mJxzpEPytYkyyc5WXhThFjJiIx0\ns1LFXIgjfZ3LkZvTBc85Lkon4LAFW/DveX/28sIkipLrJqkaoIEp+3yp72OHVBTV\nrRWEfu7im68O2/ExIKAowdrRe6yNLVXnSetgXNvKJCyAemO5x7M/M3w8+ZzLywN+\nntlruBIJMVntjvv16znVqZuD7X+M0CQnA2zaFIRMiH3+8iQ9g6bi34a6rhKe8a0G\n070Bxe7BFdbrKEWUYuZB9foCi0JlU2ShIHAVXmdOI4JTMHLg04x0kSApY1Wjl/cp\n4wufdplLRsENX4oM+CJ/WdR+uyN/vxLypbIn9NQBN+FH9J+F2ZmDA5wdmbP4sDAP\nQH87F5Lgrp7sArROcoeg9PN/WNFQJvUILJrGPEKDaVItX32rVMaP2whP5AYHl6pZ\n0hJehIZvz/Ub+3Yy+x8ShR76z/afNU7QoFSVfFWQl027m6GRzfbWWBchGl7GRhQT\njA3Q4uPk6WSZtLTmqL52NesMB18qcg2Fv6DpjlXGJtHwxFN51sqzw0pXX+r7IruR\n/8rp3B2vFqZOiRTzORCNS6SHmol45UKzcq9MUQJiciL+E0rkMn2jX6xvdTA8or+t\neQzTZcW/R4Yga0oty4i21KwW9FNfJR24KitEveWhwg0xsbq7w50=\n=/fel\n-----END PGP SIGNATURE-----",
+        "payload": "tree aac24cc58fcc19908b61863c39b21853e84ce7dd\nparent e1dabb8d5863308f0619d580bcdd738fe5460022\nparent afad97b12f6945c764c439d8744c8ce970d47d70\nauthor David E. Wheeler <david@justatheory.com> 1759758373 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1759758373 -0400\n\nMerge develop for v1.6.0\n",
+        "verified_at": "2025-10-06T13:46:35Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/722b9808b4da299096c079953ac0c17e87bb1bf2",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/722b9808b4da299096c079953ac0c17e87bb1bf2",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/722b9808b4da299096c079953ac0c17e87bb1bf2/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e1dabb8d5863308f0619d580bcdd738fe5460022",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/e1dabb8d5863308f0619d580bcdd738fe5460022",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/e1dabb8d5863308f0619d580bcdd738fe5460022"
+      },
+      {
+        "sha": "afad97b12f6945c764c439d8744c8ce970d47d70",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/afad97b12f6945c764c439d8744c8ce970d47d70",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/afad97b12f6945c764c439d8744c8ce970d47d70"
+      }
+    ]
+  },
+  {
+    "sha": "afad97b12f6945c764c439d8744c8ce970d47d70",
+    "node_id": "C_kwDOADIQK9oAKGFmYWQ5N2IxMmY2OTQ1Yzc2NGM0MzlkODc0NGM4Y2U5NzBkNDdkNzA",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-10-06T02:40:41Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-10-06T02:40:41Z"
+      },
+      "message": "Refine SQLite version regex",
+      "tree": {
+        "sha": "aac24cc58fcc19908b61863c39b21853e84ce7dd",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/aac24cc58fcc19908b61863c39b21853e84ce7dd"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/afad97b12f6945c764c439d8744c8ce970d47d70",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjjLCkACgkQkt9idPjI\ngfGlDg//UqMd9zfl8CfPp23V+mMAzEnGB6KXAPZERAwgflPq1W6PV3cOWfAOfWeq\ng0y8/e65Ba1lD/5Ixi3EXmkVdbVOyWSDbPQZCabPFLh9txae1MlT9rq5ydp5CNYU\nRGQBNbE8KdGYSroCA/R1xDikVlmAMizlX9OH6xsaZHqTGhqTk6ZxsRMQlaUbBA9W\nAoOev6QdRSQAOyu37BvZq9Quaijcd/q7JkCyhkpx5eetICtfQ5bJv67PsPiPEjOP\nAiAml9jh8g20cHhfZeGVpmNXfnB6JkYlqBizWZQkxq5v7BTkBG8B5BAmo7oWYbIc\nFLkPZWvtVQb8SO0uf+h6hTjaLj09xrpvj4BhVx63VbyH4R2pBCRI4ronxdtC+zAR\n5feeTyI4e/oKiltQBxvAkHBdmz/0qaQj7HHtm+Gydmo4ZzUd1Ragmjx70JWeXg/1\nXra0mbaqf8zqEqRqoJG09w5lt5uKDpPd56dNdO37NU3RFYLuvrWKI8VjVYSsSA+K\nl0DQGOSMWJJqKiwNdV9VDvjEssHxte6o2cMGUu15bi5RkZTF9VQjPYQ3LgGbMc2U\n29bAQLH5AVMZVbYwWOmKXvJMqSqcsXoY54oZMi0Oz9/zGsKIZkUDTFudJCddf/qn\nOSzsl+l5yB2fWER9G+aeJMYr4jwB2RwxcBC94MEQlOiv+H6X9qU=\n=0ftZ\n-----END PGP SIGNATURE-----",
+        "payload": "tree aac24cc58fcc19908b61863c39b21853e84ce7dd\nparent d2fb026ae9844446a4f62cbb75e8a57baebe4022\nauthor David E. Wheeler <david@justatheory.com> 1759718441 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1759718441 -0400\n\nRefine SQLite version regex\n",
+        "verified_at": "2025-10-06T02:40:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/afad97b12f6945c764c439d8744c8ce970d47d70",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/afad97b12f6945c764c439d8744c8ce970d47d70",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/afad97b12f6945c764c439d8744c8ce970d47d70/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d2fb026ae9844446a4f62cbb75e8a57baebe4022",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/d2fb026ae9844446a4f62cbb75e8a57baebe4022",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/d2fb026ae9844446a4f62cbb75e8a57baebe4022"
+      }
+    ]
+  },
+  {
+    "sha": "d2fb026ae9844446a4f62cbb75e8a57baebe4022",
+    "node_id": "C_kwDOADIQK9oAKGQyZmIwMjZhZTk4NDQ0NDZhNGY2MmNiYjc1ZThhNTdiYWViZTQwMjI",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-10-01T01:37:55Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-10-01T01:37:55Z"
+      },
+      "message": "Increment to and timestamp v1.6.0\n\nUpdate the translation dictionaries and remove the inline email address\nfrom `Sqitch.pm` that `gettext` now warns about.",
+      "tree": {
+        "sha": "f61a9d4516ca02dfd4d82083e03eea0c2fad4449",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/f61a9d4516ca02dfd4d82083e03eea0c2fad4449"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/d2fb026ae9844446a4f62cbb75e8a57baebe4022",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjchfMACgkQkt9idPjI\ngfEiMRAAg/eRiGKE2QiALAuWkmgOrJ8DbDPDZiGap8Hbqh5hqgPS+VHHrJT1Hk8U\nxUQzUsQ7t0OOuCMB2ianl1I5Q2h/6nx8XHAxQAp7GPDUMaljhxGqnz+/IoOvf4Ru\nfoBA/CcMtJLrXhsAKabz1qG7GjfNjaguS3yXrEyzchP2gbacVhWC+EAh4YhUp0IW\nE6dKHrvb5e+kEbM5ZnUKct3c6qKLYksQ706upnBR6DymSIafLazE+jWHZd9jxFX4\nLi6dV1xN7pUdSd/VTjOTobMcsrAI8g5OP32TU4vrXogmc3GfKAEGu382o4WjTl+v\nYlhgf7sBeZCfPcphQ2avzMu4H96RKJNayo5W9O9V/6GS2cQ8YtrdHwwwGcx9B/jC\nhUflYD6OHl8R+fot/ItkpFxRs4CYtcQp7j8Fa3kIEEUR9TmWHpyloA0SD4SwXABo\nDrEJwYNar8VSDgz8spsar/lWeS6qPczBrjelYDl9aLEZdkaJZiJqBhngdy3k/dzz\ngVIkRJ18wVnx0UYrSGhfB2OHsHQB8quw1mv0QaMJYo7yQeu2TMNZcXDBZWCsyZ4l\n0V/XxqThag/ZiprFExLK9X9hgE5Ytam9Ng0sTsPMewaayOOw0OWrf7m53SlqYGfC\npBGuqEmj/lYpchno6z8jIZ6G/1J/F1zdaDoN9sZU8pJe0++SfrA=\n=TjQg\n-----END PGP SIGNATURE-----",
+        "payload": "tree f61a9d4516ca02dfd4d82083e03eea0c2fad4449\nparent c0c25f77cb8d1ac863a5e48a317757f61180f4d9\nauthor David E. Wheeler <david@justatheory.com> 1759282675 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1759282675 -0400\n\nIncrement to and timestamp v1.6.0\n\nUpdate the translation dictionaries and remove the inline email address\nfrom `Sqitch.pm` that `gettext` now warns about.\n",
+        "verified_at": "2025-10-01T01:38:00Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/d2fb026ae9844446a4f62cbb75e8a57baebe4022",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/d2fb026ae9844446a4f62cbb75e8a57baebe4022",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/d2fb026ae9844446a4f62cbb75e8a57baebe4022/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c0c25f77cb8d1ac863a5e48a317757f61180f4d9",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/c0c25f77cb8d1ac863a5e48a317757f61180f4d9",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/c0c25f77cb8d1ac863a5e48a317757f61180f4d9"
+      }
+    ]
+  },
+  {
+    "sha": "c0c25f77cb8d1ac863a5e48a317757f61180f4d9",
+    "node_id": "C_kwDOADIQK9oAKGMwYzI1Zjc3Y2I4ZDFhYzg2M2E1ZTQ4YTMxNzc1N2Y2MTE4MGY0ZDk",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-28T22:45:44Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-28T22:45:44Z"
+      },
+      "message": "Just install the ClickHouse app\n\nRather than all the Apt stuff, which comes with more extras than we\nneed. Also create variables for the ODBC version.",
+      "tree": {
+        "sha": "3b227e811c50564eec766d12c25dfcdff3db86f1",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/3b227e811c50564eec766d12c25dfcdff3db86f1"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/c0c25f77cb8d1ac863a5e48a317757f61180f4d9",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjZupgACgkQkt9idPjI\ngfFZbw/8Dsxl2YbUs6j7kS5tz+tTjcjQzch99y2TGLNf1EQfU7zxKqx1XWVAXsjz\nDxEBdlyu4+ZqQ7B6H1yX16TrArDgplO/E3gw+YuSM2AJs+R791xCz7bqyFmgOSb2\npcZgKVF64tUZiMOH2vQkn58+iqTFucegIYrHSljpYHMhBuClcSS+v3D/OCf9b1qb\nwOFvxZi4nrI+qx12H/KopxU+aeM7gSfA+O4mvvBuKdtEQCmnNxRob8T5IVJWy8Ha\nD0D1MZnAJfpbH88Lelm4mpsuXWn9H5YlC6GkzZRMzv41PYcto/QD2oTc00rL5YcJ\nkxka6CB72aEWuV8auC9WOwooax1c0BVHFgMtD69wkN+3QrSi76eAWTIXyUhZHN1P\nY3+NjbRY67A/1uwDW9pd8vUpqKKhYyDzBkXUjMH9B3st9RwsZVuxQiXRMVTdnUTn\nUjS93C5AhzN+6q89eQls5FmNqx86cSNDTAh55/+Y4TcPYkWmO8mQD/PoEgPSf2K+\n3ofP3k/K/rQ+8kRazBxx1v2p9VznPNp3Bg3+O/cr4gnlbbtFFAQwcb/MdvXmDjSl\nrPGXebIjugvXh/DjxgqhgL5hzFZ+XDWNPjedzzStprTpojgqc5aU6HQ16/kZyF5E\nSkstq1oFO/3wXCYo+eXKpvcmVTUC+BZpeU9nI6X4ZCCs6v97twY=\n=B3Yg\n-----END PGP SIGNATURE-----",
+        "payload": "tree 3b227e811c50564eec766d12c25dfcdff3db86f1\nparent dbf7aaf2356961ca5b0e645359596692703ac2c0\nauthor David E. Wheeler <david@justatheory.com> 1759099544 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1759099544 -0400\n\nJust install the ClickHouse app\n\nRather than all the Apt stuff, which comes with more extras than we\nneed. Also create variables for the ODBC version.\n",
+        "verified_at": "2025-09-28T22:45:48Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/c0c25f77cb8d1ac863a5e48a317757f61180f4d9",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/c0c25f77cb8d1ac863a5e48a317757f61180f4d9",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/c0c25f77cb8d1ac863a5e48a317757f61180f4d9/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dbf7aaf2356961ca5b0e645359596692703ac2c0",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/dbf7aaf2356961ca5b0e645359596692703ac2c0",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/dbf7aaf2356961ca5b0e645359596692703ac2c0"
+      }
+    ]
+  },
+  {
+    "sha": "dbf7aaf2356961ca5b0e645359596692703ac2c0",
+    "node_id": "C_kwDOADIQK9oAKGRiZjdhYWYyMzU2OTYxY2E1YjBlNjQ1MzU5NTk2NjkyNzAzYWMyYzA",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-21T19:59:26Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-26T16:50:22Z"
+      },
+      "message": "Adjust workflow `push` and `pull_request` triggers\n\nThe `branches` limitation on pull requests effectively did nothing,\nbecause they're always submitted against `develop` or `main`, and the\ntrigger is for the branch to be merged into, not from. So remove the\n`branches` bit from `pull_request`.\n\nLimit running most tests on branches as before, but remove `main`. With\nthe current pull request process, everything should work properly in\ndevelop before merging to main, do don't bother with main Do, however,\nstill run them on `develop`, even though most changes will come through\npull requests where tests must have passed, to preserve an extra layer\nof quality protection.",
+      "tree": {
+        "sha": "c16cae9512c9efb5e17f7123025f320100f6ac98",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/c16cae9512c9efb5e17f7123025f320100f6ac98"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/dbf7aaf2356961ca5b0e645359596692703ac2c0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjWxE4ACgkQkt9idPjI\ngfE9cA//fdb8SvyDTieeoeTiegBX4Ofl9ZXvUuey+EDHVHhErqy6NAuRxPX2eTER\nYpqkhyjgNxJpvf8TqOf6F6VlM8NpVB6dPkk2c7O4yUqLjNgWxHnBKKfh9KuIe5w1\nVqHghh/5GpJMDObjdOpqhaWpOuovP9mnvNhP5mQJp+GBDnDnF0KuMlEYUD7Wynqz\nw8gqoJMGAq0fZqtqOhHCJsfUnZl995/v5gl/wNpiqQsCQAh/bBtAOKpKTd3hQt/m\nfgg7TTiEmXNF43OwYsduNI7MEypHctEW3xWtEB16LAGORD/WUHpMdZ5v2beokugg\nUAR2lbx/aMJSZnj1Th/5fEL6yRUd9Urp2uqHUXOlZLcIpPyMW/LWkrwN3dMwJ40l\nTiVtEabBh3YmnDNpvK+O4ggr9dVs6dNaGaLffm8gkkg3sunbTdkjuc08aVQR8atl\nM24eRSuf4GQEHIIhxMfOMbureZdotBet700P4jJZPxPIfUIWYsxbMfx5ff71nD1c\nRiIknfT3CUsSbfpPoETuHD702UOLWZqysWk0gI1bIEGeYf9uKJQ9E2FW3t8sQTWk\nr2Bk+u72KQZXx15Nerwk40CefVSVl/151p8U3cAsYN7aBRW8WnA3otxSkGvHa3m5\nk8B1ZR3aBf0CvMAG/X4rg/EZw1DhJiv6IIDL+PrABWa+idEyD70=\n=Z1BL\n-----END PGP SIGNATURE-----",
+        "payload": "tree c16cae9512c9efb5e17f7123025f320100f6ac98\nparent 266b6932b0da46b28ac5f20b031d86cafa9db13c\nauthor David E. Wheeler <david@justatheory.com> 1758484766 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1758905422 -0400\n\nAdjust workflow `push` and `pull_request` triggers\n\nThe `branches` limitation on pull requests effectively did nothing,\nbecause they're always submitted against `develop` or `main`, and the\ntrigger is for the branch to be merged into, not from. So remove the\n`branches` bit from `pull_request`.\n\nLimit running most tests on branches as before, but remove `main`. With\nthe current pull request process, everything should work properly in\ndevelop before merging to main, do don't bother with main Do, however,\nstill run them on `develop`, even though most changes will come through\npull requests where tests must have passed, to preserve an extra layer\nof quality protection.\n",
+        "verified_at": "2025-09-26T16:50:35Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/dbf7aaf2356961ca5b0e645359596692703ac2c0",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/dbf7aaf2356961ca5b0e645359596692703ac2c0",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/dbf7aaf2356961ca5b0e645359596692703ac2c0/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "266b6932b0da46b28ac5f20b031d86cafa9db13c",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/266b6932b0da46b28ac5f20b031d86cafa9db13c",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/266b6932b0da46b28ac5f20b031d86cafa9db13c"
+      }
+    ]
+  },
+  {
+    "sha": "266b6932b0da46b28ac5f20b031d86cafa9db13c",
+    "node_id": "C_kwDOADIQK9oAKDI2NmI2OTMyYjBkYTQ2YjI4YWM1ZjIwYjAzMWQ4NmNhZmE5ZGIxM2M",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-26T14:27:13Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-26T14:27:13Z"
+      },
+      "message": "Search for `clickhouse` and `clickhouse-client`\n\nBare `clickhouse` is the canonical name, and `clickhouse-client` should\ngenerally be a symlink, but some packages, like the [clickhouse-client\nApt package], just have `clickhouse-client`. This is a bad assumption\nand should not be the default.\n\nSo search the path for both and return the first one found. Raise an\nerror if neither is found. Adopt and generalize the error message\npreviously used by the Firebird engine.\n\nIn passing, update the error regular expression to match more generally.\nPreviously it matched unixODBC-specific errors, which did not work on\nmacOS using the [clickhouse-odbc Homebrew formula], which uses iODBC. So\nswitch to an error message that comes only from the ClickHouse server.\n\n  [clickhouse-client Apt package]: https://packages.debian.org/bullseye/clickhouse-client\n  [clickhouse-odbc Homebrew formula]: https://formulae.brew.sh/formula/clickhouse-odbc#default",
+      "tree": {
+        "sha": "5c5f73b9dbf74b8c448ddc8b202106c9ff6e9287",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/5c5f73b9dbf74b8c448ddc8b202106c9ff6e9287"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/266b6932b0da46b28ac5f20b031d86cafa9db13c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjWosEACgkQkt9idPjI\ngfHDzg/+NiFontlGVfrAzc+JiZ1LYzBIteSwswe64K/xv5rjCNyARsPUcTLXnhnE\nGPur7LLyWB8S3fDF/iC9Du2H3NT2be6GNa1bLQYGhdCN0FibikEeby4PMZWT3LMQ\nCYgSzEhqSHLfD4pBI62zHQeWgkgjMPNFb6Xsm5Qr6au50CHyBjrBAtZRBRp1DRP+\nFtnSjSVRbr7HB7QoGoFrJ9+dlfLL7QTiDh91dwnORG01UBNkINmUb3BrSEkNjM/D\nofnzyYhdy3CZuLrMYhWi2SbJreA0uY7Mi70v4+mGCKCmTj/SUkq+VjC/BcW2RH8R\nIVQq+lRmwmSWcQ9DM/PXhHIAZsGcojkJivkkPfh47qXks9WyinmsfhZOumlgJOI6\nYuhc1T04291us9vcyCLXCqOuEijUPcUL00pYO3UJw64sa4qN0AHKl/JmffKu3n83\nkKisaCf6aNH+xgOoUXdgJE0kwqooAkirYtRxCMmInnNS/ckuRjiLRd/M5xi7gqjM\njyJsQ9NxagilfvER+i04um46DIKvL0a5TgJBxqkdNyB5WQUQn2ZztEyzB0OBhZMY\nW9+A8l0kRlHCjuF8B7ua1fVeesSyhqYseyb5JV5ODPBfi0JYkMXN38zkJgSFDpU/\n0yGLnrstmNN0OvRwzIxLigZ6XclZFC95+KGC96dXayccZnQygUY=\n=lHAE\n-----END PGP SIGNATURE-----",
+        "payload": "tree 5c5f73b9dbf74b8c448ddc8b202106c9ff6e9287\nparent b44bb66bc50479b6bde50ecf092987e1350e1fc2\nauthor David E. Wheeler <david@justatheory.com> 1758896833 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1758896833 -0400\n\nSearch for `clickhouse` and `clickhouse-client`\n\nBare `clickhouse` is the canonical name, and `clickhouse-client` should\ngenerally be a symlink, but some packages, like the [clickhouse-client\nApt package], just have `clickhouse-client`. This is a bad assumption\nand should not be the default.\n\nSo search the path for both and return the first one found. Raise an\nerror if neither is found. Adopt and generalize the error message\npreviously used by the Firebird engine.\n\nIn passing, update the error regular expression to match more generally.\nPreviously it matched unixODBC-specific errors, which did not work on\nmacOS using the [clickhouse-odbc Homebrew formula], which uses iODBC. So\nswitch to an error message that comes only from the ClickHouse server.\n\n  [clickhouse-client Apt package]: https://packages.debian.org/bullseye/clickhouse-client\n  [clickhouse-odbc Homebrew formula]: https://formulae.brew.sh/formula/clickhouse-odbc#default\n",
+        "verified_at": "2025-09-26T14:27:17Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/266b6932b0da46b28ac5f20b031d86cafa9db13c",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/266b6932b0da46b28ac5f20b031d86cafa9db13c",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/266b6932b0da46b28ac5f20b031d86cafa9db13c/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b44bb66bc50479b6bde50ecf092987e1350e1fc2",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/b44bb66bc50479b6bde50ecf092987e1350e1fc2",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/b44bb66bc50479b6bde50ecf092987e1350e1fc2"
+      }
+    ]
+  },
+  {
+    "sha": "b44bb66bc50479b6bde50ecf092987e1350e1fc2",
+    "node_id": "C_kwDOADIQK9oAKGI0NGJiNjZiYzUwNDc5YjZiZGU1MGVjZjA5Mjk4N2UxMzUwZTFmYzI",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-25T21:39:33Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-25T21:39:33Z"
+      },
+      "message": "Add support for ClickHouse client config files\n\nFollow as closely as possible the process for merging configurations\nused by the ClickHouse CLI itself. That means:\n\n*   Searching for the appropriate configuration files and stopping on\n    the first one found\n*   Supporting both XML and YAML configuration file formats\n*   Merging host-specific configuration into root-level configuration\n\nUse YAML::Tiny and XML::Tiny to handle the parsing of both formats. Use\na corpus of example configurations from the ClickHouse source code and\ndocumentation to ensure both work. It turns out that installing\nXML::LibXML is not easy on Windows, but XML::Tiny works without issue,\nso go with it.\n\nUse the configuration to update the deployment URL, username, and\npassword as appropriate. Enforce a secure connection if the\nconfiguration file calls for it, uses the encrypted port, or specifies a\nClickHouse cloud domain. Map configuration variables to ODBC parameters\nwhere equivalents exist.\n\nThe reverse isn't supported, alas, as the ClickHouse CLI doesn't have\noptions or environment variables for TLS client config, and it doesn't\nseem sensible to try to write one. Better to work toward getting better\noption support into the CLI.\n\nThis support for reading ClickHouse client configuration allows Sqitch\nto support TLS client authentication. Update the `sqitch-authentication`\nto document this support.\n\nMove most instances of home directory detection to App::Sqitch::Config\nto reduce duplication and to allow it to be mocked for testing.\n\nWhile at it, remove defaulting the username to the system username, as\nClickHouse does not work that way, instead falling back on \"default\"\nwhen no username is provided.",
+      "tree": {
+        "sha": "0e71af852d3860fb786a911b1655d6e951a5d38e",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/0e71af852d3860fb786a911b1655d6e951a5d38e"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/b44bb66bc50479b6bde50ecf092987e1350e1fc2",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjVtpUACgkQkt9idPjI\ngfG/tw/7BxhY1erUFAuqQ4yFdroccxnVR0jdynZMfVFBHimcMYPj9WIPxVqxgfja\n3S7ZfbLyxIoPaiDK9SZ6+h1xrJCdM6Ua8KArImFycGG/iKxS50quzr4kHbaluEhm\nB/tdAN5Lghxc3YRtgiPmzEYTslsC679EpxUzxQR75CVqAYXL9mQ/Z0OGBscMeQ91\nqkUrBXmCdWwW/cy3x60PCaGQQtyrzpBLwwsOXDzermtxVkIFbC3jZ2bNzOqtWtM3\nzpdzc/GHrpeoLwiyPH/f6SLKB4i/L2tyNqyzhiFkfnxT5LIM3iG9GLM+1u6JUQTu\nxy5TS8oApKwbS8rhiLFYdnvBu09rw4xmDQ9glviT0WX4D7pdD5HxwDA0tpCbITIJ\nS+SKzz3HgMRO+RJR5pc6hoFzyhdToasvh06ioeiXyrPLo4lhIPyE7qzG9NT8fCyL\nGBQtmz8lFevvfjkv4FnEaJIqgyz7PcmDb5A5GO0k7p1/YFZy18Njwt1Q+BBzyPIa\nR7FsG1ihrb4RYVcVMWHLL8wUrzBi79QD3EBCIt5wIlIMwp7YDfNMd5twaPvpRzzb\nWhsE3/NXfrXOGp7Vr8YdEYFi29dgwaKQEoS7jZev8Bn413a82dj5zu7f98Wr2GHm\neXgePgK/0io78nV84/zXKLzOLlcSCYlj+WSn0oV09VfjrZNaQRA=\n=EsAk\n-----END PGP SIGNATURE-----",
+        "payload": "tree 0e71af852d3860fb786a911b1655d6e951a5d38e\nparent acd5019972647aaf39a7cfdd1ece5eb65ac6ef75\nauthor David E. Wheeler <david@justatheory.com> 1758836373 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1758836373 -0400\n\nAdd support for ClickHouse client config files\n\nFollow as closely as possible the process for merging configurations\nused by the ClickHouse CLI itself. That means:\n\n*   Searching for the appropriate configuration files and stopping on\n    the first one found\n*   Supporting both XML and YAML configuration file formats\n*   Merging host-specific configuration into root-level configuration\n\nUse YAML::Tiny and XML::Tiny to handle the parsing of both formats. Use\na corpus of example configurations from the ClickHouse source code and\ndocumentation to ensure both work. It turns out that installing\nXML::LibXML is not easy on Windows, but XML::Tiny works without issue,\nso go with it.\n\nUse the configuration to update the deployment URL, username, and\npassword as appropriate. Enforce a secure connection if the\nconfiguration file calls for it, uses the encrypted port, or specifies a\nClickHouse cloud domain. Map configuration variables to ODBC parameters\nwhere equivalents exist.\n\nThe reverse isn't supported, alas, as the ClickHouse CLI doesn't have\noptions or environment variables for TLS client config, and it doesn't\nseem sensible to try to write one. Better to work toward getting better\noption support into the CLI.\n\nThis support for reading ClickHouse client configuration allows Sqitch\nto support TLS client authentication. Update the `sqitch-authentication`\nto document this support.\n\nMove most instances of home directory detection to App::Sqitch::Config\nto reduce duplication and to allow it to be mocked for testing.\n\nWhile at it, remove defaulting the username to the system username, as\nClickHouse does not work that way, instead falling back on \"default\"\nwhen no username is provided.\n",
+        "verified_at": "2025-09-25T21:39:38Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/b44bb66bc50479b6bde50ecf092987e1350e1fc2",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/b44bb66bc50479b6bde50ecf092987e1350e1fc2",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/b44bb66bc50479b6bde50ecf092987e1350e1fc2/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "acd5019972647aaf39a7cfdd1ece5eb65ac6ef75",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/acd5019972647aaf39a7cfdd1ece5eb65ac6ef75",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/acd5019972647aaf39a7cfdd1ece5eb65ac6ef75"
+      }
+    ]
+  },
+  {
+    "sha": "acd5019972647aaf39a7cfdd1ece5eb65ac6ef75",
+    "node_id": "C_kwDOADIQK9oAKGFjZDUwMTk5NzI2NDdhYWYzOWE3Y2ZkZDFlY2U1ZWI2NWFjNmVmNzU",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-25T20:46:16Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-25T20:46:16Z"
+      },
+      "message": "Add a tutorial for ClickHouse\n\nModeled on the MySQL tutorial (for lack of schema support) and Firebird\ntutorial (for lack of user-defined functions). Also tweak the format of\nthe lists of tutorials in all the tutorials, and fix a few minor typos.",
+      "tree": {
+        "sha": "93abe31fb98c080a81519c83ed7d6e0f01b56265",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/93abe31fb98c080a81519c83ed7d6e0f01b56265"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/acd5019972647aaf39a7cfdd1ece5eb65ac6ef75",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjVqiAACgkQkt9idPjI\ngfEvxg/7BOGVSVze+IR4CQxFAgAE2DbE3Y5RHK3040GtSeNCfJJgIcDG5Z58/AyF\nPGK97wQrIVXYWN9ZCVb7JIJV51Z6Lj26S3uuxIz8z4RyIZm29+Zrah3nW6uidH3z\nNgr9AQfP45KKoxL9KLUK51BOxPyDg+v2sMALWdk4+08GflYQfNHwR1hW7f4X8RIR\nLGEdcXPVskkBLGwWTiVlQ4WB4dxOJ67zeFv8aPyqxNstjL6ZJ/Fm+wmLWM/u+rE9\nuvwOVbUvMnL4fpSx/u58mWljwBvfhTWVsYxlZMVAWa+diPAJRhoB1FWGMh4bHtsy\nC61zhsPdnmCqhQQ5byScH9FQi8xR/FRZnW0Isl/zhDq4q0VMXccZ0Y15pjZi2Bez\ndSDl5A79wukrAFNn6L5cuQK8ypS/VgUFadC0eUgVKiF9hJOWE+TP7GSaiPHIkDAY\nxc9Wza19EdsTYNh+n2qg+Xqz9UtWzjcHNHwFmCCleLRQnb0kSem6TU0V570uW2Q5\ncUGH/0X3ixo2WrsbMsWtZIEziJn5UbGHR2RBZAtp/DsRUMzjf0NEAtZAjWUNLfaU\nRmsmvyFD6ReQmEQj1/q7z9r2jjqbaLbEdKrru4yRBvNCcMkPLpWdzikBWspmdsTQ\nxn7xKG9EucvdcSZlAPImFj0R7MonzocG36UHUGuTj/csB74P/is=\n=MqxG\n-----END PGP SIGNATURE-----",
+        "payload": "tree 93abe31fb98c080a81519c83ed7d6e0f01b56265\nparent f8482bc271f4dc704b95ba6904dfcb196f90ab1f\nauthor David E. Wheeler <david@justatheory.com> 1758833176 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1758833176 -0400\n\nAdd a tutorial for ClickHouse\n\nModeled on the MySQL tutorial (for lack of schema support) and Firebird\ntutorial (for lack of user-defined functions). Also tweak the format of\nthe lists of tutorials in all the tutorials, and fix a few minor typos.\n",
+        "verified_at": "2025-09-25T20:46:36Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/acd5019972647aaf39a7cfdd1ece5eb65ac6ef75",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/acd5019972647aaf39a7cfdd1ece5eb65ac6ef75",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/acd5019972647aaf39a7cfdd1ece5eb65ac6ef75/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f8482bc271f4dc704b95ba6904dfcb196f90ab1f",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/f8482bc271f4dc704b95ba6904dfcb196f90ab1f",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/f8482bc271f4dc704b95ba6904dfcb196f90ab1f"
+      }
+    ]
+  },
+  {
+    "sha": "f8482bc271f4dc704b95ba6904dfcb196f90ab1f",
+    "node_id": "C_kwDOADIQK9oAKGY4NDgyYmMyNzFmNGRjNzA0Yjk1YmE2OTA0ZGZjYjE5NmY5MGFiMWY",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-23T20:48:00Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-23T20:48:00Z"
+      },
+      "message": "Add ClickHouse to README, record variable support\n\nAdd ClickHouse to `README.md` and reformat the badge table at the top of\nthe file to include ClickHouse and the MariaDB tests broken out in\n16d3838 by adding a new column.\n\nReplace the Pod MySQL-copied Pod in `clickhouse.pm` to document the\nsupported version, URL parameters, and methods.\n\nAdd ClickHouse to the various manual pages:\n\n*   Update all documentation links to pages for each engine that\n    supports variables so that each is on a single line, and add\n    ClickHouse to the list.\n*   Add `clickhouse` to the list of supported engines in\n    `sqitch-add.pod`, `sqitch-engine.pod`, `sqitch-init.pod`,\n    `sqitch-target.pod`, and `sqitch.pod`\n*   Note the ClickHouse authentication options in\n    `sqitch-authentication.pod`\n*   Document the ClickHouse environment variables in\n    `sqitch-environment.pod`\n*   Add `<engine.clickhouse.registry` to the list of registry\n    configurations in `sqitch-config.pod`",
+      "tree": {
+        "sha": "b0f06fef75c8fe8de3590461f65248bd0dbf522f",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/b0f06fef75c8fe8de3590461f65248bd0dbf522f"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/f8482bc271f4dc704b95ba6904dfcb196f90ab1f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjTB4AACgkQkt9idPjI\ngfEGQA//eBAGCTi041ysD1J/Li6vy5v3Gy9IGAzyetr00stjHKtLnyjjGEnrxVks\nnXEgOv4HLrR4ni8FSxPe4DbdzRsY5BlY8vrp488M9rTDsyJoNc1lU2fVho3wPifH\nCJDqyzzac+qsfG83eaLrQXHVCfSskf7Wo3FH7bmScboO3aKidRfe7AJSL74whzy/\nCuxLYS84qpbfEZplM+tEjrl1WhLLHS6R9x8PwAFyZLDOSTA9I01L/zCRQ5PzFVg4\nnGBC4JnR6cndmMqev5W9rfuhg/vmp4RcNSRdIAeJ1MtarPYXyDzV0ZqRhdKqgzco\nvLY73E2ds3uRgkQSZanGJ6V++4FV1KHq8RE+3vZrprWFoURAt9eYw+b6l34u8xcT\nhqh9SmN1SYa7EspNvQIV+3mOnILqFzcMBfjuEUpFGrAcex/5FfSZpJ/LVKCtPkIi\n0ES0JXoZW1lFFREL5eXfqH57ETDdn1ZBzRfYdDfu8AVNAERgZUBwYh/yXmCe7c3a\nG71MR68efFjA/rRdCgbM0sOKqaG5WAenNjXqdA3lEBMuc6Q2lcdReQ9llSLm2spo\n0jz+X8qyDEEZoS6IQ3iott04v/W2cRgbRyulGourFRq+Ybfjufb+0gnztxyNkJUL\n+vDGYoMPsKs56KbMAWppXsykFvCDPuWOUrU1efs1zvh+2Rg6Nto=\n=cYqZ\n-----END PGP SIGNATURE-----",
+        "payload": "tree b0f06fef75c8fe8de3590461f65248bd0dbf522f\nparent b5bd77d2d617bb4492a07e0fcf9cb56d83f2cd07\nauthor David E. Wheeler <david@justatheory.com> 1758660480 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1758660480 -0400\n\nAdd ClickHouse to README, record variable support\n\nAdd ClickHouse to `README.md` and reformat the badge table at the top of\nthe file to include ClickHouse and the MariaDB tests broken out in\n16d3838 by adding a new column.\n\nReplace the Pod MySQL-copied Pod in `clickhouse.pm` to document the\nsupported version, URL parameters, and methods.\n\nAdd ClickHouse to the various manual pages:\n\n*   Update all documentation links to pages for each engine that\n    supports variables so that each is on a single line, and add\n    ClickHouse to the list.\n*   Add `clickhouse` to the list of supported engines in\n    `sqitch-add.pod`, `sqitch-engine.pod`, `sqitch-init.pod`,\n    `sqitch-target.pod`, and `sqitch.pod`\n*   Note the ClickHouse authentication options in\n    `sqitch-authentication.pod`\n*   Document the ClickHouse environment variables in\n    `sqitch-environment.pod`\n*   Add `<engine.clickhouse.registry` to the list of registry\n    configurations in `sqitch-config.pod`\n",
+        "verified_at": "2025-09-23T20:48:07Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/f8482bc271f4dc704b95ba6904dfcb196f90ab1f",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/f8482bc271f4dc704b95ba6904dfcb196f90ab1f",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/f8482bc271f4dc704b95ba6904dfcb196f90ab1f/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b5bd77d2d617bb4492a07e0fcf9cb56d83f2cd07",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/b5bd77d2d617bb4492a07e0fcf9cb56d83f2cd07",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/b5bd77d2d617bb4492a07e0fcf9cb56d83f2cd07"
+      }
+    ]
+  },
+  {
+    "sha": "b5bd77d2d617bb4492a07e0fcf9cb56d83f2cd07",
+    "node_id": "C_kwDOADIQK9oAKGI1YmQ3N2QyZDYxN2JiNDQ5MmEwN2UwZmNmOWNiNTZkODNmMmNkMDc",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-17T21:05:58Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-18T17:46:26Z"
+      },
+      "message": "Add CI for ClickHouse\n\nAdd `.github/workflows/clickhouse.yml` to fully test ClickHouse on all\nsupported versions. Currently only 25.8 is supported, as it's the only\nversion that supports `UPDATE` and `DELETE`, which Sqitch requires.\n\nAlso add a ClickHouse service and test variables to\n`.github/workflows/coverage.yml` to ensure complete code coverage.\n\nOther tweaks:\n\n*   Remove `t/odbc/clickhouse.ini`, as it is not needed\n*   Tweak the PostgreSQL and SQLite install scripts to programmatically\n    find the latest versions of their respective downloads when no\n    explicit version is passed. PostgreSQL was defaulting to 14!",
+      "tree": {
+        "sha": "0501f3f4803ddd0c3e6922859818cf9ec13ce3e1",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/0501f3f4803ddd0c3e6922859818cf9ec13ce3e1"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/b5bd77d2d617bb4492a07e0fcf9cb56d83f2cd07",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjMRXIACgkQkt9idPjI\ngfEq9RAApwzL5rkw7wjfK4UIyLxUJ3DxWd2K3VpHM1U+sMON8KV5llYDWyDhvthM\nNI588TGmmPftMz6e6ywCo1egr+X8ypDjePBZERlMZ/4oDjgXtVyHOmrU6P2T1FLz\nEcxl6tTisjZeMpaA53+xMTWS0S+L26SmRDQBOUTboBSEJefJLwJol3p3eI+nNYC7\n7ivzgK+Xvck1C4buxADsk+RO4xhLZa4hRKWcnY53YGtYUOjPcRQjQrCPvwOZcRQx\n67DUi5CxflgAyxGgV2b3nnuqekm241lCBsuWrQ6gdCTdBsw+qKVDCAgnCxPcECxk\n4cQjH9FDp77Xwa4mDsbRlw+LRaJrH/DUOIeGyir7VxbZ8ZHiZ1yfignMv7Y+AIdY\nc3t78QjDkRYV9GL/GcBzdUEcq+bVTE+psPReoVuq7g6SYqA+BWQ7zqM3JqInhOZa\nlWvZZOYWZIu/gDGbKebctyB2vMSfx+gyJ+8zpe+5u/lc0T8LtwJkVV6lR1W9sj0t\nYehwdk6P6jRVHUVM3lXuSRYyYT51ImvzqeyEmBjQ7bZxgPOIOeUgslYbzX75Tx0G\n9wPmqYmLi77t8UD580FOF2vtVLUfglXexDvfe36Sxri9anVcI/MVko4Q31RXsIET\nShczF+LIuiSMUwFUNj/d3DI6SgSuTywci6ZYHzjnQdrGWiGqKMc=\n=tKJb\n-----END PGP SIGNATURE-----",
+        "payload": "tree 0501f3f4803ddd0c3e6922859818cf9ec13ce3e1\nparent 9dd621aa1b2302e36ba3a7d91fc0194473bdf77f\nauthor David E. Wheeler <david@justatheory.com> 1758143158 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1758217586 -0400\n\nAdd CI for ClickHouse\n\nAdd `.github/workflows/clickhouse.yml` to fully test ClickHouse on all\nsupported versions. Currently only 25.8 is supported, as it's the only\nversion that supports `UPDATE` and `DELETE`, which Sqitch requires.\n\nAlso add a ClickHouse service and test variables to\n`.github/workflows/coverage.yml` to ensure complete code coverage.\n\nOther tweaks:\n\n*   Remove `t/odbc/clickhouse.ini`, as it is not needed\n*   Tweak the PostgreSQL and SQLite install scripts to programmatically\n    find the latest versions of their respective downloads when no\n    explicit version is passed. PostgreSQL was defaulting to 14!\n",
+        "verified_at": "2025-09-18T18:17:57Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/b5bd77d2d617bb4492a07e0fcf9cb56d83f2cd07",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/b5bd77d2d617bb4492a07e0fcf9cb56d83f2cd07",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/b5bd77d2d617bb4492a07e0fcf9cb56d83f2cd07/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9dd621aa1b2302e36ba3a7d91fc0194473bdf77f",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/9dd621aa1b2302e36ba3a7d91fc0194473bdf77f",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/9dd621aa1b2302e36ba3a7d91fc0194473bdf77f"
+      }
+    ]
+  },
+  {
+    "sha": "9dd621aa1b2302e36ba3a7d91fc0194473bdf77f",
+    "node_id": "C_kwDOADIQK9oAKDlkZDYyMWFhMWIyMzAyZTM2YmEzYTdkOTFmYzAxOTQ0NzNiZGY3N2Y",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-18T17:45:21Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-18T17:45:21Z"
+      },
+      "message": "Add NativePort, ClickHouse query params, tests\n\nAdd processing of variables to the ClickHouse `cli` method. This allows\none to use variables in ClickHouse client scripts.\n\nAdd a custom URL query parameter, `NativePort`, because the CLI uses the\nClickHouse \"native\" port, while the ODBC driver uses an HTTP port. If\nboth are using the defaults (9000 or 9440 for the CLI and 8123 or 8443\nfor ODBC) it all works, but if the HTTP port is different, only ODBC can\nuse it. So in addition to the HTTP port specified in the `db:clickhouse`\nURL, which impacts only ODBC, the `NativePort` param only impacts the\nCLI.\n\nOther changes:\n\n*   Fix a failing test by adding `clickhouse` to the list of engines in\n    App::Sqitch::Command\n*   Fix a failing test on windows by accounting CLI executable\n    extensions (e.g., `.exe`)\n*   Add tests for ClickHouse `_parse_array` and fix an issue with\n    encoding\n*   Add a few more tests to reach 100% code coverage\n*   Remove unneeded fractional seconds copied from `mysql.t` and not\n    needed for ClickHouse\n*   Add a couple new terms to the spelling list in\n    `xt/release/pod-spelling.t`",
+      "tree": {
+        "sha": "5d08bd62fdd06cc6dafbf230a4f84ca6d3dbaa2d",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/5d08bd62fdd06cc6dafbf230a4f84ca6d3dbaa2d"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/9dd621aa1b2302e36ba3a7d91fc0194473bdf77f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjMRWsACgkQkt9idPjI\ngfE6JA//Uw2HSWQ/l+mhxdsyg91eYlIfDJOIZ+Ei08WvW7/em061z6B6ZloJbmj7\nxJ7QpjIpAh9AkMZRFI1gEmM4pkzSIuOKskwN7OZhH5bHgal3VxXLNZEIWjM2LJvc\nE2SaNUurNR1MhXyNLpH1Wy/AKrP+2pj6fRx2eV3njvaF1PmwONZVv0GidTZy5x6o\nnTp35YohFDi6tpgRIKcPPE6eAzro1roWBsXV3fVcgDhbnIncySmWSxzcZau4nF/i\nA9/h/UzrZXexcLNb0gul5clORmA0xqLhgjHtqpedozD/drwlE2sY66FDaZoT5ADW\n2HF6Ry7ZhhCDPIhc+qnSO1GbK7kP5wijHeYiDPwC43Y4t1vu7or2n0IbudxerwL9\nGlOL0R4+YuVL7s2EKIusydwD7IHQAUtuGZ6g+AMep5A7g7foeqUQlMeNIVpoa0Xu\njbBbenrii3lem2nuwhmHXDZG4RCodptH6kMyQazKHDa3L4vo2rh9tbJ7sjQVSBc3\nYGiUcYcQOV+6abXmpDbeHiSWNm3aMKLBcq2p1ojLhX24v9ZuHRxzHRauY/jKvStJ\nGNICJlTixG1/r47vK+Gsx5dM5a8FD2ejvA6MMJR8lln69v+HpiWEHvoCv3/IK2fz\nWHRXSLi0XK0gLpOdAW6vk8q51QvmDJeV8zRqijxW7SP9z/r3bbM=\n=yooN\n-----END PGP SIGNATURE-----",
+        "payload": "tree 5d08bd62fdd06cc6dafbf230a4f84ca6d3dbaa2d\nparent c477e10501edcf6f113bade1cf27ad33d1f5fdfa\nauthor David E. Wheeler <david@justatheory.com> 1758217521 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1758217521 -0400\n\nAdd NativePort, ClickHouse query params, tests\n\nAdd processing of variables to the ClickHouse `cli` method. This allows\none to use variables in ClickHouse client scripts.\n\nAdd a custom URL query parameter, `NativePort`, because the CLI uses the\nClickHouse \"native\" port, while the ODBC driver uses an HTTP port. If\nboth are using the defaults (9000 or 9440 for the CLI and 8123 or 8443\nfor ODBC) it all works, but if the HTTP port is different, only ODBC can\nuse it. So in addition to the HTTP port specified in the `db:clickhouse`\nURL, which impacts only ODBC, the `NativePort` param only impacts the\nCLI.\n\nOther changes:\n\n*   Fix a failing test by adding `clickhouse` to the list of engines in\n    App::Sqitch::Command\n*   Fix a failing test on windows by accounting CLI executable\n    extensions (e.g., `.exe`)\n*   Add tests for ClickHouse `_parse_array` and fix an issue with\n    encoding\n*   Add a few more tests to reach 100% code coverage\n*   Remove unneeded fractional seconds copied from `mysql.t` and not\n    needed for ClickHouse\n*   Add a couple new terms to the spelling list in\n    `xt/release/pod-spelling.t`\n",
+        "verified_at": "2025-09-18T18:17:57Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/9dd621aa1b2302e36ba3a7d91fc0194473bdf77f",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/9dd621aa1b2302e36ba3a7d91fc0194473bdf77f",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/9dd621aa1b2302e36ba3a7d91fc0194473bdf77f/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c477e10501edcf6f113bade1cf27ad33d1f5fdfa",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/c477e10501edcf6f113bade1cf27ad33d1f5fdfa",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/c477e10501edcf6f113bade1cf27ad33d1f5fdfa"
+      }
+    ]
+  },
+  {
+    "sha": "c477e10501edcf6f113bade1cf27ad33d1f5fdfa",
+    "node_id": "C_kwDOADIQK9oAKGM0NzdlMTA1MDFlZGNmNmYxMTNiYWRlMWNmMjdhZDMzZDFmNWZkZmE",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-17T21:50:12Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-17T21:50:12Z"
+      },
+      "message": "Get all tests passing for ClickHouse\n\nNot too many workarounds the most significant workaround is to parse\narray values, since DBD::ODBC doesn't yet support them. DBIEngine was\nalready doing some parsing for engines without arrays, splitting on\nwhitespace. So add the `_parse_array` method and override it in the\nClickHouse engine. Fortunately, ClickHouse arrays appear to be\nsyntactically equivalent to Perl arrays, so it just `eval`s the arrays.\nA little hinky, but simple. This workaround can be ripped out once\nclickHouse/clickhouse-odbc#525 is fixed or some other driver ships that\nbetter integrates with the DBI.\n\nOther changes:\n\n*   Turn on `odbc_utf8_on` so we get proper Unicode encoding decoding\n*   Always use literals in OFFSET and LIMIT\n*   Override `log_revert_change`to select arrays rather than delimited\n    strings\n*   Work around ClickHouse returning default values rather than `NULL`s\n    from empty CTEs in `changes_requiring_change` and\n    `name_for_change_id`. The former also requires explicit column\n    names, otherwise it includes the table aliases in the names.\n*   Override `log_new_tags` to query for existing tags before inserting\n    new ones. The `INSERT` with a `JOIN` did not work in ClickHouse.\n*   ClickHouse requires a `WHERE` clause for `DELETE` and `UPDATE`\n    expressions, so throw in `WHERE `1=1` where the test suite deletes\n    or updates all rows.",
+      "tree": {
+        "sha": "58466783558d3d14b9bcba4eb556fbccba5c1b72",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/58466783558d3d14b9bcba4eb556fbccba5c1b72"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/c477e10501edcf6f113bade1cf27ad33d1f5fdfa",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjLLRQACgkQkt9idPjI\ngfF2eBAAhAe102LkGrQikxLS/7ZJbB15FnjBHsF5tFtIqq9VEM1iZhiI6erNN9N9\nDSYV9D7OR1ulQolAL0eli9x7/vE5beDvlQjUtYh4ezoXnrnQwn8sOx2tIxw/H0QH\nEVs29kxs+zrjOv3psbKki5aagRhhiFlnQAIHr0L6pKWhQ2RWsC9xN39e8N/TKh9m\nqgF6UX9V6JGRSF4xChxOnb4WO824HP+FgqiwfCTK7YFJ8Q6OcWv6o+beQ7BUq+k/\nlZIsBNUyFLdYKz50jpbGyQE+KzUxZzYBl8/H/iQKREm7LSgHcpkoZH+TzRuQlrl7\ne1m6uk3dsgaTHIC+qek1wNiimTObDvLfVSJbbTGe5nPA+0jipQdVqbZaWINBYMbk\niCPd/95Qb0oSmF0Iu57z1NAcS/nhbU6UlXqAO6UnWS+082O7eXV+o3f9qB9OvaCM\nkjWo/k0LT2977sJeLhxLigAEyfwvnUOdE2JXubpb9y/tl7U1GsKC4MnCeOKyXKWt\nOtxoS9Nr6gDaf4jAN5bQTfNTayHj/pmApgB5JfQKeVqP5/HXFDsqCtMeNTyX+8D/\nkYjzIVgGMYA2K54HkDVqZ/bcmuxjXXSMoSOfvTugB8bsOg3m/tU8JXv1H0v8MwY+\nS95I5RtasgjBPB3jj28miwYnz1Glk4aD/Bko2JeA0e+/Ly8H5kk=\n=ny7I\n-----END PGP SIGNATURE-----",
+        "payload": "tree 58466783558d3d14b9bcba4eb556fbccba5c1b72\nparent f26d80c77ba267d92c255fa600e852b0cf338756\nauthor David E. Wheeler <david@justatheory.com> 1758145812 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1758145812 -0400\n\nGet all tests passing for ClickHouse\n\nNot too many workarounds the most significant workaround is to parse\narray values, since DBD::ODBC doesn't yet support them. DBIEngine was\nalready doing some parsing for engines without arrays, splitting on\nwhitespace. So add the `_parse_array` method and override it in the\nClickHouse engine. Fortunately, ClickHouse arrays appear to be\nsyntactically equivalent to Perl arrays, so it just `eval`s the arrays.\nA little hinky, but simple. This workaround can be ripped out once\nclickHouse/clickhouse-odbc#525 is fixed or some other driver ships that\nbetter integrates with the DBI.\n\nOther changes:\n\n*   Turn on `odbc_utf8_on` so we get proper Unicode encoding decoding\n*   Always use literals in OFFSET and LIMIT\n*   Override `log_revert_change`to select arrays rather than delimited\n    strings\n*   Work around ClickHouse returning default values rather than `NULL`s\n    from empty CTEs in `changes_requiring_change` and\n    `name_for_change_id`. The former also requires explicit column\n    names, otherwise it includes the table aliases in the names.\n*   Override `log_new_tags` to query for existing tags before inserting\n    new ones. The `INSERT` with a `JOIN` did not work in ClickHouse.\n*   ClickHouse requires a `WHERE` clause for `DELETE` and `UPDATE`\n    expressions, so throw in `WHERE `1=1` where the test suite deletes\n    or updates all rows.\n",
+        "verified_at": "2025-09-17T21:51:41Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/c477e10501edcf6f113bade1cf27ad33d1f5fdfa",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/c477e10501edcf6f113bade1cf27ad33d1f5fdfa",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/c477e10501edcf6f113bade1cf27ad33d1f5fdfa/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f26d80c77ba267d92c255fa600e852b0cf338756",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/f26d80c77ba267d92c255fa600e852b0cf338756",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/f26d80c77ba267d92c255fa600e852b0cf338756"
+      }
+    ]
+  },
+  {
+    "sha": "f26d80c77ba267d92c255fa600e852b0cf338756",
+    "node_id": "C_kwDOADIQK9oAKGYyNmQ4MGM3N2JhMjY3ZDkyYzI1NWZhNjAwZTg1MmIwY2YzMzg3NTY",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-09T22:58:28Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-16T15:56:51Z"
+      },
+      "message": "Get more tests passing; arrays broken\n\nTurn on lightweight updates and deletes for all the tables and add a few\ncustomized ClickHouse queries.",
+      "tree": {
+        "sha": "e09a97e09c7bd5295b98ec669892738f5c0530d6",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/e09a97e09c7bd5295b98ec669892738f5c0530d6"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/f26d80c77ba267d92c255fa600e852b0cf338756",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjJiMMACgkQkt9idPjI\ngfG19Q/9G27S4QURN1Q0qkCfi8gus4nC5W2xqXLJ1zI7QhbPIYqLfe/QThVsFtkq\nyuKB5Eh56rMmekKFdTRuJxjsh1vW8nLZZYtKs8xfoTMhUEmoUSdhc4XFWSvZQovG\nY59EnOGHMqr2nT/kS8bevpeoawtcBeh59GFMfAQfDrpe6XHzidhccrteGW+WbLWx\nPRZv+RD5xr77+9N2B5LWKhr8/oTxlPitl96n2BhzT0Cusgku/vvhKTr2NAmuh2s2\n5aYRg/MLMLK41dcZjhxFtlsvnYiVNZ30+gv10FFwh+hIgpf7RzHHa3aybzaasnhJ\niT2FM52iduHR14YKf75bKQac2W0gu85uCP8b7EB6HZukP42U8AAX+B97k2p4l8Mz\n1Zyx2sxoNlk+0OeJNcZM4vWqLMhu0Z3pYAoMMqVrhsnXNs8B7fb/iGaCMpiIbmhQ\nIUdjpVpeZ3KoPQxeaKZgE/WN6+B01UZs1pCa60LXi/yGoAGuMZ8SGyAPfi0eCbLm\nMMoh4JnoO2dVnH5ZYng0SiDOkQoBSAe5qU1kD2WE86iIMIXPpKOS33X8c8GoFJE6\n6GurZf/e6hdvOGLr12AKJZ+NX8m3cHVymjU+kuvrq6t/maZMSEz/i+xtjsgRG0jk\nq8Xq8oiB7UqJnh2a98CL91i2DAUJEE/ZBhrQpZZSepgPmGd/i/U=\n=8A/1\n-----END PGP SIGNATURE-----",
+        "payload": "tree e09a97e09c7bd5295b98ec669892738f5c0530d6\nparent df087a1d291888badf2fdbba846b71a99a9d97db\nauthor David E. Wheeler <david@justatheory.com> 1757458708 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1758038211 -0400\n\nGet more tests passing; arrays broken\n\nTurn on lightweight updates and deletes for all the tables and add a few\ncustomized ClickHouse queries.\n",
+        "verified_at": "2025-09-16T15:59:33Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/f26d80c77ba267d92c255fa600e852b0cf338756",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/f26d80c77ba267d92c255fa600e852b0cf338756",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/f26d80c77ba267d92c255fa600e852b0cf338756/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "df087a1d291888badf2fdbba846b71a99a9d97db",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/df087a1d291888badf2fdbba846b71a99a9d97db",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/df087a1d291888badf2fdbba846b71a99a9d97db"
+      }
+    ]
+  },
+  {
+    "sha": "df087a1d291888badf2fdbba846b71a99a9d97db",
+    "node_id": "C_kwDOADIQK9oAKGRmMDg3YTFkMjkxODg4YmFkZjJmZGJiYTg0NmI3MWE5OWE5ZDk3ZGI",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-09T20:28:04Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-16T15:56:51Z"
+      },
+      "message": "Add ClickHouse upgrades and get registry working",
+      "tree": {
+        "sha": "b147c3e118e6fb695d843df2d8355b694473b9f2",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/b147c3e118e6fb695d843df2d8355b694473b9f2"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/df087a1d291888badf2fdbba846b71a99a9d97db",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjJiMMACgkQkt9idPjI\ngfEqfw//ULFQxPsUHh3w2L3DojyB7po9uKvBFD8MCmBVasYalDHrK1Tcq/EESfvK\n39HyVMbgePcUfP8Hpo01OPFILKQEeVYUDlHbnMmOiKln1CrQuE6eegZYoomp2bW9\npRzudKr0dJewXnaA28US14m9yM+VUOhn74fZEOAKMqjSuGfhWRn3P1+w+pK1Pg3f\n90KAxyPATbU5aTyvOjXzU2lMqv29FiwwQ7yJEBEh7JA75FgRldKW/EjvgVQdyvQf\noT1gVp9X+ZAK3XEo7pqGnlYD0QS1LPoilt5S40azVwdLXcaEQypfz51MajuibxM5\nSJVSixz9NUKKTVi5LovNixpmG3dvwnh8hPe2xnXxwLLG/YLf6j2VL0Td5i8E4DHI\nrVr8X9rH9rWU+CJ7FC8+xLkDknscNJ/x49yTAOPI8v5NJZyFA8r+h9otME7IPikn\nCeLnY1hrLY/um4aZud0qfaUA3ZBRIdHTlIRAGbc023Y4SUq7KqLkjfWNsUNtCi1V\nHARKOV/aqGPrJqHXiWDkL//GpqwIbHaewwsoB6w0dz1+vGiT3YhHFmGdh22m8C8d\n8jsfDl4pyu+3+4OmlslCtDqi0y3C8bTCRwfk1/1XvYcS9m9re7V9zseKF6puP8Rq\n437iX+/dQ2un+wJGJrTa18cWt6FRz7PT1UJ1js6gDomqhDI/z0E=\n=rBVC\n-----END PGP SIGNATURE-----",
+        "payload": "tree b147c3e118e6fb695d843df2d8355b694473b9f2\nparent bf71aa465a6886845ba520441b742411beb95d01\nauthor David E. Wheeler <david@justatheory.com> 1757449684 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1758038211 -0400\n\nAdd ClickHouse upgrades and get registry working\n",
+        "verified_at": "2025-09-16T15:59:33Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/df087a1d291888badf2fdbba846b71a99a9d97db",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/df087a1d291888badf2fdbba846b71a99a9d97db",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/df087a1d291888badf2fdbba846b71a99a9d97db/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bf71aa465a6886845ba520441b742411beb95d01",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/bf71aa465a6886845ba520441b742411beb95d01",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/bf71aa465a6886845ba520441b742411beb95d01"
+      }
+    ]
+  },
+  {
+    "sha": "bf71aa465a6886845ba520441b742411beb95d01",
+    "node_id": "C_kwDOADIQK9oAKGJmNzFhYTQ2NWE2ODg2ODQ1YmE1MjA0NDFiNzQyNDExYmViOTVkMDE",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-08T22:08:52Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-16T15:56:51Z"
+      },
+      "message": "Start clickhouse.pm",
+      "tree": {
+        "sha": "30a35fb40859624834340f44abd6b36d723d8605",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/30a35fb40859624834340f44abd6b36d723d8605"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/bf71aa465a6886845ba520441b742411beb95d01",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjJiMMACgkQkt9idPjI\ngfEbjw/+P05rsslx4nRO3GwKvGqO9NaWhYBCi5/yr/9dbE8KKONP5uD9ypegyiPi\nH8ML1coDGe2ujoT4McmzWrVLSJ2bpttSRz+Ex0zgcssKcN3mDhwpQLxjZJPS16Fb\nHDwC/Gmbb3tn7S7Gd1SX5C30QFHPze1YBVLeIcpO4B1q10Plj0tzd4IQJ5pAYtyT\nplfesDR1gC4nZn3sWduY1DatXZVxM5TPIO5z+MGn0h3GoJbjx5Tk/2S8uKPGjmgV\n5oX9SY8uFHFHNMDEiyyTxQhoP18FMreFhU5oXS1GRWyK9puOD1yZHMQqhFfEGL3p\nZaZpyStkuQGqKCWTXyipyloIMX/fDZvnrqz6EVwERnTk3kuog2bx+SzXiwrWXRxX\nvpRPvJ1Q8qows+QMuA9F2XTbAsZ0lgpAAT0AxdBlTYWlPSFyf2xv5HmfUIsAIwvb\nKU1NXpVZ6Q+IJIm/yqsmob6kP54JOHuGIfuzz8W3Xxlsuq4xTbw5kyBdnjksjMdO\nrNSqlWb/UdCU5sXaY7rkq/ixabMBvNdzwJ0dgx/Ynir0WbmL7rhaGk5moR5Lvq2H\nWQDuag7RpQANnwc34EefS+8LkO/X/A7/6h59jXIe57ZBGFhBH96fD9P1j5TXYEhl\nijj1BAq2+sY56F+3QXMaLGzfP+wAB6cm8qRZI3ZUg6yf2mT+8Y4=\n=2Xyh\n-----END PGP SIGNATURE-----",
+        "payload": "tree 30a35fb40859624834340f44abd6b36d723d8605\nparent cc8322a227b2317f43783e474e27e68f3eb460e6\nauthor David E. Wheeler <david@justatheory.com> 1757369332 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1758038211 -0400\n\nStart clickhouse.pm\n",
+        "verified_at": "2025-09-16T15:59:33Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/bf71aa465a6886845ba520441b742411beb95d01",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/bf71aa465a6886845ba520441b742411beb95d01",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/bf71aa465a6886845ba520441b742411beb95d01/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cc8322a227b2317f43783e474e27e68f3eb460e6",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/cc8322a227b2317f43783e474e27e68f3eb460e6",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/cc8322a227b2317f43783e474e27e68f3eb460e6"
+      }
+    ]
+  },
+  {
+    "sha": "cc8322a227b2317f43783e474e27e68f3eb460e6",
+    "node_id": "C_kwDOADIQK9oAKGNjODMyMmEyMjdiMjMxN2Y0Mzc4M2U0NzRlMjdlNjhmM2ViNDYwZTY",
+    "commit": {
+      "author": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-08T17:17:34Z"
+      },
+      "committer": {
+        "name": "David E. Wheeler",
+        "email": "david@justatheory.com",
+        "date": "2025-09-16T15:56:50Z"
+      },
+      "message": "Port registry schema to ClickHouse",
+      "tree": {
+        "sha": "37ccb5fdf325fda1c2ccc4829c8e8666b6e73dc4",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/git/trees/37ccb5fdf325fda1c2ccc4829c8e8666b6e73dc4"
+      },
+      "url": "https://api.github.com/repos/sqitchers/sqitch/git/commits/cc8322a227b2317f43783e474e27e68f3eb460e6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEd+KfmbOQis6ZycGGkt9idPjIgfEFAmjJiMMACgkQkt9idPjI\ngfG68w/7BULsoD2IDCsxhoTY7EuftbktAweaIi2rjqUvBjZZ0OkffghdUu8jdycO\nYxd5FUU5gRycPqdpKapK5t7PrTJ8l9NNhPMJnZKVWH7rq2/fe/FUBBRtfp9kPDA1\nMt7HqcvAiOw9ACDsuQ5bP15OWsLBbxNgzo+bovPJ1bW/FYiprN3Z8U8o0mbDNex3\nvq5Yw5K+llyl/Tpy4O9zc0U58QOx0oIdd/PeExFLQnP45jALVeCKpEBrqvNAxwN+\nTkt8gGpvJtmNNZ8daB9zc6yz82qGdnQb7kZ0RbtUc9tAY3Teqnv9z3uUudleIAxz\nFMpXEZ0/Kuy98jzNOxeEijJxFb+W5JMetMRjNLpEFSsLg+IYY7kuwYU+e4YmRdg5\nzlsWoPrH80iJaaa/cJKNGG5nd+OnB633ufLfdnjyXICXgSE15Put7k7SDoGQ57eJ\n+RbA9KLxAKfjo+wiVGx753JmXTn3ZnJ5I0ZrfWBRr8aw7XaMTR87/1Z2fbAJjHoD\njrYC6NW2gKZYSaK+BXLTCt4BLhfCeuYp2bOO7CWB3JbXgzRKUuxapPS6emtVzHI0\nWQdVLi2vALndf5QrL3uVSi3TxhCPz1ekBC09IHE2BraBs4OyYfZf/DhiK7q2Cz1a\nMyUsSC9BX9sHBDHstMaEQNGd5BRy0TcCn4oFVB4shwY0O+yY8xA=\n=mX4n\n-----END PGP SIGNATURE-----",
+        "payload": "tree 37ccb5fdf325fda1c2ccc4829c8e8666b6e73dc4\nparent 16d3838e125ecf56a74efa072e098dd29f3795ae\nauthor David E. Wheeler <david@justatheory.com> 1757351854 -0400\ncommitter David E. Wheeler <david@justatheory.com> 1758038210 -0400\n\nPort registry schema to ClickHouse\n",
+        "verified_at": "2025-09-16T15:59:33Z"
+      }
+    },
+    "url": "https://api.github.com/repos/sqitchers/sqitch/commits/cc8322a227b2317f43783e474e27e68f3eb460e6",
+    "html_url": "https://github.com/sqitchers/sqitch/commit/cc8322a227b2317f43783e474e27e68f3eb460e6",
+    "comments_url": "https://api.github.com/repos/sqitchers/sqitch/commits/cc8322a227b2317f43783e474e27e68f3eb460e6/comments",
+    "author": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "theory",
+      "id": 46604,
+      "node_id": "MDQ6VXNlcjQ2NjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46604?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/theory",
+      "html_url": "https://github.com/theory",
+      "followers_url": "https://api.github.com/users/theory/followers",
+      "following_url": "https://api.github.com/users/theory/following{/other_user}",
+      "gists_url": "https://api.github.com/users/theory/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/theory/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/theory/subscriptions",
+      "organizations_url": "https://api.github.com/users/theory/orgs",
+      "repos_url": "https://api.github.com/users/theory/repos",
+      "events_url": "https://api.github.com/users/theory/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/theory/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "16d3838e125ecf56a74efa072e098dd29f3795ae",
+        "url": "https://api.github.com/repos/sqitchers/sqitch/commits/16d3838e125ecf56a74efa072e098dd29f3795ae",
+        "html_url": "https://github.com/sqitchers/sqitch/commit/16d3838e125ecf56a74efa072e098dd29f3795ae"
+      }
+    ]
+  }
+]

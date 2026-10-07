@@ -1,0 +1,26 @@
+[
+  {
+    "image": "docker.io/oceanbase/odc:4.4.1_bp1",
+    "url": "https://registry-1.docker.io/v2/oceanbase/odc/manifests/4.4.1_bp1",
+    "retrieved_at": "2026-10-04T13:37:50.925736+00:00",
+    "response_digest": "sha256:ee8ee48edea2907b1b2c11eac54c8603e554bdcc570eb11b0b1f9cef2ead040d",
+    "body_digest": "sha256:ee8ee48edea2907b1b2c11eac54c8603e554bdcc570eb11b0b1f9cef2ead040d",
+    "matches_worker_digest": true,
+    "file": "evaluation/research-round-2/coordinator/registry/oceanbase__odc__4.4.1_bp1.json",
+    "media_type": "application/vnd.docker.distribution.manifest.list.v2+json",
+    "evidence_type": "PUBLIC_REGISTRY_METADATA",
+    "no_layers_fetched": true
+  },
+  {
+    "image": "docker.io/bladepipe/cgdm-alone:4.3.0",
+    "url": "https://registry-1.docker.io/v2/bladepipe/cgdm-alone/manifests/4.3.0",
+    "retrieved_at": "2026-10-04T13:37:50.903392+00:00",
+    "response_digest": "sha256:510df19d9291d98887600cb77093f00bc7d05c6f59cb7549fadb8e7c57ad92ee",
+    "body_digest": "sha256:510df19d9291d98887600cb77093f00bc7d05c6f59cb7549fadb8e7c57ad92ee",
+    "matches_worker_digest": true,
+    "file": "evaluation/research-round-2/coordinator/registry/bladepipe__cgdm-alone__4.3.0.json",
+    "media_type": "application/vnd.oci.image.index.v1+json",
+    "evidence_type": "PUBLIC_REGISTRY_METADATA",
+    "no_layers_fetched": true
+  }
+]

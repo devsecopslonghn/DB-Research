@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/oceanbase/odc",
+  "commit": "d517c0f27971642fb0cd7565fd61ab2309875ec3",
+  "local_checkout": "evidence/product-model/sources/oceanbase__odc",
+  "image_tag_under_evaluation": "oceanbase/odc:4.4.1_bp1",
+  "image_platform_manifest_sha256": "sha256:7b6e563a9cf523dca76781b5aab98a371dcfa979b1e17b11f1ba3373df685dc9",
+  "image_platform": "linux/amd64",
+  "image_to_source_commit_mapping_established": false,
+  "hash_algorithm": "SHA-256",
+  "files": [
+    {"path": "server/odc-service/src/main/java/com/oceanbase/odc/service/flow/task/DatabaseChangeThread.java", "sha256": "46308c7a8e96476f7bcde25841382e3ce2c50bedd6ee3872df6c04b9b7d09613"},
+    {"path": "server/odc-service/src/main/java/com/oceanbase/odc/service/session/OdcStatementCallBack.java", "sha256": "31eedeea2a64c9bf02839f86106cec337e6168634e6ad312547e76bb1d78673a"},
+    {"path": "server/odc-service/src/main/java/com/oceanbase/odc/service/flow/FlowPermissionHelper.java", "sha256": "4a4e4874c1cb711afb302e1a84af55afe132b6b845ee6fba6b8cd63b3cb4be88"},
+    {"path": "server/odc-service/src/main/java/com/oceanbase/odc/service/flow/FlowInstanceService.java", "sha256": "505d3953a5d26b785349540ab6b2aed267f91c3092378483999c5f2fc972ca7c"},
+    {"path": "server/odc-service/src/main/java/com/oceanbase/odc/service/db/DBPLService.java", "sha256": "d2168a7d0a841d2dfecad1d5e75a03ccc16ca2f2ff01a87ae95049e9655bcaf0"},
+    {"path": "server/odc-service/src/main/java/com/oceanbase/odc/service/flow/FlowTaskInstanceService.java", "sha256": "88021d674d93f5c5e3e3d9a0843119e69de29e96f3dfaef229939f6c4351f0f1"},
+    {"path": "server/odc-service/src/main/java/com/oceanbase/odc/service/flow/task/model/DatabaseChangeParameters.java", "sha256": "f40d3f0055160ec5160754b38534bb017e604f620c903e5e03d2dfc32f31307b"},
+    {"path": "server/odc-core/src/main/java/com/oceanbase/odc/core/migrate/Migrates.java", "sha256": "db42d010ba3d2f441ac79d22a3e085d096566267043645a7a9989c89ad04c7e0"},
+    {"path": "server/odc-core/src/main/java/com/oceanbase/odc/core/migrate/SqlMigrator.java", "sha256": "b09f74056a1c219f4c15a9035bfee239cfac241bdf016db8c918961c0c8346f0"},
+    {"path": "server/odc-core/src/main/java/com/oceanbase/odc/core/migrate/JdbcMigrator.java", "sha256": "928d237e4b84c4b833aebb8a2928519f476759e4878cfcf9609baa6a3d9e9487"}
+  ]
+}

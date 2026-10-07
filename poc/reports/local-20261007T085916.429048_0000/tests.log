@@ -1,0 +1,35 @@
+test_engine_pin_mismatch_never_invoked (test_engine.EngineBoundaryTests) ... ok
+test_raw_output_is_discarded_and_secret_is_not_command_argument (test_engine.EngineBoundaryTests) ... ok
+test_timeout_and_skip_are_unknown (test_engine.EngineBoundaryTests) ... ok
+test_unapproved_proprietary_driver_never_invoked (test_engine.EngineBoundaryTests) ... ok
+test_compile_errors_veto_valid_status (test_oracle_verifier.OracleVerificationTests) ... ok
+test_compile_warning_is_retained_separately (test_oracle_verifier.OracleVerificationTests) ... ok
+test_invalid_dictionary_status_vetoes_success (test_oracle_verifier.OracleVerificationTests) ... ok
+test_missing_object_or_observer_visibility_is_not_verified (test_oracle_verifier.OracleVerificationTests) ... ok
+test_wrong_data_effect_fails_even_when_object_valid (test_oracle_verifier.OracleVerificationTests) ... ok
+test_approval_hash_and_self_approval (test_workflow.WorkflowTests) ... ok
+test_changed_content_and_verification_under_same_identity (test_workflow.WorkflowTests) ... ok
+test_changed_target_rejects_before_oracle (test_workflow.WorkflowTests) ... ok
+test_concurrent_admission (test_workflow.WorkflowTests) ... ok
+test_duplicate_never_executes_twice (test_workflow.WorkflowTests) ... ok
+test_failure_instrumentation_requires_explicit_policy (test_workflow.WorkflowTests) ... ok
+test_git_bytes_and_dirty_working_tree (test_workflow.WorkflowTests) ... ok
+test_hash_mismatch (test_workflow.WorkflowTests) ... ok
+test_html_escaping_and_no_raw_sql_in_events (test_workflow.WorkflowTests) ... ok
+test_illegal_transitions (test_workflow.WorkflowTests) ... ok
+test_invalid_object_vetoes_engine_success_and_holds_schema (test_workflow.WorkflowTests) ... ok
+test_no_requester_or_reviewer_execution (test_workflow.WorkflowTests) ... ok
+test_partial_cannot_be_overridden_by_valid_objects (test_workflow.WorkflowTests) ... ok
+test_permissive_state_file_rejected (test_workflow.WorkflowTests) ... ok
+test_previous_exact_migrations_are_retained_for_flyway_validation (test_workflow.WorkflowTests) ... ok
+test_process_loss_persists_unknown_and_no_replay (test_workflow.WorkflowTests) ... ok
+test_read_only_reconciliation_never_dispatches_or_changes_unknown_to_success (test_workflow.WorkflowTests) ... ok
+test_revoked_review_actor_rejects_before_oracle (test_workflow.WorkflowTests) ... ok
+test_sqlite_tampering_detected (test_workflow.WorkflowTests) ... ok
+test_sqlplus_not_silently_stripped (test_workflow.WorkflowTests) ... ok
+test_unknown_target_and_free_form_inputs (test_workflow.WorkflowTests) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.381s
+
+OK

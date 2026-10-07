@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-10-07T17:18:31.471667+00:00",
+  "practical_poc": "GO",
+  "scope": "Governed internal pilot using demonstrated configuration; not current restored baseline or production-wide estate",
+  "previous_parity_score": 83,
+  "updated_parity_score": 86,
+  "parity_band": "moderate gap",
+  "score_delta": {
+    "result_history": {
+      "before": 6,
+      "after": 9,
+      "weight": 10,
+      "reason": "Fresh successful/failed result, statement, log and attachment retrieval survives ordinary replacement; native versioned migration history remains weaker"
+    }
+  },
+  "unchanged_scores": {
+    "inventory": 10,
+    "sql_change_ux": 9,
+    "review": 8,
+    "approval": 9,
+    "oracle_execution": 13,
+    "multi_env_rollout": 9,
+    "audit_rbac": 8,
+    "api_ci_integration": 4,
+    "operational_simplicity": 7
+  },
+  "product_workflow": "PASS under demonstrated approval/dispatch policy",
+  "oracle_compatibility": "PASS on observed Oracle 26ai/TCPS adapter path",
+  "operational_retention": "PASS for fresh tickets under tested single-replica configuration; original baseline FAIL preserved",
+  "migration_version_semantics": "PARTIAL REPLACEMENT; native Flyway equivalence not demonstrated",
+  "production_hardening": "NOT_PROVED; HIGH risk remains",
+  "additional_custom_platform_code_required": false,
+  "existing_tcps_adapter_required": true,
+  "gitops_permanent_applied": false,
+  "bounded_correction_rounds": 0
+}

@@ -1,0 +1,77 @@
+{
+  "artifact_sha256": "5a044b1946129660fecf944585d159f3200c1a8c6a1d3afe189312a614bf793b",
+  "database_identity": {
+    "con_name": "UNCONFIRMED",
+    "db_name": "UNCONFIRMED",
+    "db_unique_name": "UNCONFIRMED"
+  },
+  "engine": "Flyway Community",
+  "engine_sha256": "971d79cfebe8d6caa38dae3676dadbf222d40767385f436b87293a4894d1475a",
+  "engine_version": "13.9.0",
+  "execution_options": {
+    "automatic_retry": false,
+    "baseline": false,
+    "clean": false,
+    "create_schemas": false,
+    "loss_after_engine_success": false,
+    "placeholder_replacement": false
+  },
+  "expected": {
+    "effects": [],
+    "invocations": [
+      {
+        "clob_input": "abc",
+        "expected_number": 3,
+        "function": "OSS_POC_CLOB_LEN"
+      }
+    ],
+    "objects": [
+      {
+        "name": "OSS_POC_CLOB_LEN",
+        "type": "FUNCTION"
+      }
+    ]
+  },
+  "git_commit": "5cd65de50572e050f9077104c0fb5eebbc84fd9f",
+  "migration_version": "1",
+  "oracle_driver": {
+    "approved": false,
+    "coordinate": "com.oracle.database.jdbc:ojdbc11:21.18.0.0",
+    "license": "Oracle Free Use Terms and Conditions (FUTC); not OSS",
+    "sha256": "UNCONFIRMED"
+  },
+  "release_id": "LOCAL_PREVIEW_ONLY",
+  "requested_by": "LOCAL_FIXTURE_REQUESTER",
+  "schema": "OSS_POC_WRITER",
+  "service_or_pdb": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com / PDB UNCONFIRMED",
+  "target": {
+    "database_identity": {
+      "con_name": "UNCONFIRMED",
+      "db_name": "UNCONFIRMED",
+      "db_unique_name": "UNCONFIRMED"
+    },
+    "enabled": false,
+    "history_table": "oss_poc_history",
+    "host": "adb.ap-mumbai-1.oraclecloud.com",
+    "observer_secret_env": "OSS_POC_OBSERVER_PASSWORD",
+    "observer_user": "OSS_POC_OBSERVER",
+    "oracle_version": "UNCONFIRMED",
+    "port": 1521,
+    "schema": "OSS_POC_WRITER",
+    "service_name": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+    "service_or_pdb": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com / PDB UNCONFIRMED",
+    "tls": true,
+    "writer_secret_env": "OSS_POC_WRITER_PASSWORD",
+    "writer_user": "OSS_POC_WRITER"
+  },
+  "target_id": "oracle-lab",
+  "reviewed_by": "LOCAL_FIXTURE_REVIEWER",
+  "approved_by": "LOCAL_FIXTURE_REVIEWER",
+  "executor": null,
+  "start_time": null,
+  "end_time": null,
+  "status": "APPROVED",
+  "verification_status": "NOT_RUN",
+  "evidence": {},
+  "approval_binding_sha256": "cab65fe684b4f7a6da278ad9123c38dcf2d7e761cc57765f747f8525c81dc1fa"
+}

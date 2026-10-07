@@ -1,0 +1,164 @@
+{
+  "timestamp": "2026-10-07T08:59:16.429048+00:00",
+  "scope": "LOCAL_ONLY; no Oracle connection or authenticated CI approval",
+  "status": "PASS",
+  "tests_run": 30,
+  "tests": [
+    {
+      "case_id": "test_engine.EngineBoundaryTests.test_engine_pin_mismatch_never_invoked",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_engine.EngineBoundaryTests.test_raw_output_is_discarded_and_secret_is_not_command_argument",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_engine.EngineBoundaryTests.test_timeout_and_skip_are_unknown",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_engine.EngineBoundaryTests.test_unapproved_proprietary_driver_never_invoked",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_oracle_verifier.OracleVerificationTests.test_compile_errors_veto_valid_status",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_oracle_verifier.OracleVerificationTests.test_compile_warning_is_retained_separately",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_oracle_verifier.OracleVerificationTests.test_invalid_dictionary_status_vetoes_success",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_oracle_verifier.OracleVerificationTests.test_missing_object_or_observer_visibility_is_not_verified",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_oracle_verifier.OracleVerificationTests.test_wrong_data_effect_fails_even_when_object_valid",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_approval_hash_and_self_approval",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_changed_content_and_verification_under_same_identity",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_changed_target_rejects_before_oracle",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_concurrent_admission",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_duplicate_never_executes_twice",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_failure_instrumentation_requires_explicit_policy",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_git_bytes_and_dirty_working_tree",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_hash_mismatch",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_html_escaping_and_no_raw_sql_in_events",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_illegal_transitions",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_invalid_object_vetoes_engine_success_and_holds_schema",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_no_requester_or_reviewer_execution",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_partial_cannot_be_overridden_by_valid_objects",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_permissive_state_file_rejected",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_previous_exact_migrations_are_retained_for_flyway_validation",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_process_loss_persists_unknown_and_no_replay",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_read_only_reconciliation_never_dispatches_or_changes_unknown_to_success",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_revoked_review_actor_rejects_before_oracle",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_sqlite_tampering_detected",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_sqlplus_not_silently_stripped",
+      "status": "PASS"
+    },
+    {
+      "case_id": "test_workflow.WorkflowTests.test_unknown_target_and_free_form_inputs",
+      "status": "PASS"
+    }
+  ],
+  "test_log": "tests.log",
+  "engine": "Flyway Community",
+  "engine_version_readback": "OSS_POC_VERSION=13.9.0",
+  "engine_sha256": "96b39e1a05786bbb1c3bf7b219fb3b6d71117caffa4c12d65ffa0413b05cad64",
+  "oracle_driver_bundled": false,
+  "oracle_version": "UNCONFIRMED",
+  "parser_status": "PASS",
+  "parser_observed_statements": {
+    "T1_function.sql": 2,
+    "T2_invalid.sql": 2,
+    "T6_partial.sql": 3,
+    "T7_lost_result.sql": 2,
+    "release-small.sql": 11
+  },
+  "artifacts": {
+    "poc/fixtures/T1_function.sql": {
+      "sha256": "5a044b1946129660fecf944585d159f3200c1a8c6a1d3afe189312a614bf793b",
+      "expected_statements": 2
+    },
+    "poc/fixtures/T2_invalid.sql": {
+      "sha256": "752f844d79eb57e4710203ef0b45cfc96ad6c02dcce4f1cbd4c1d51009e20ff0",
+      "expected_statements": 2
+    },
+    "poc/fixtures/T6_partial.sql": {
+      "sha256": "e43968e5c27d5d5838f02ee928ae4f5949d201f344fdf62030c1c69643340fb9",
+      "expected_statements": 3
+    },
+    "poc/fixtures/T7_lost_result.sql": {
+      "sha256": "92f767dcbbbf4d416b116f87d388ac17402741131e18e11fb0c37feaa675c998",
+      "expected_statements": 2
+    },
+    "evaluation/workloads/release-small.sql": {
+      "sha256": "a762e67ee079f51319f7697e8fe5eb8c75ae17e9a456e557ec02329cee9f593c",
+      "expected_statements": 11
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "scope": "Final read-only review",
+  "status": "PASS",
+  "existing_research_document_verifier": {
+    "errors": [],
+    "relative_links": 815,
+    "tables": 242,
+    "source_snapshots": 38,
+    "source_references": 183,
+    "screenshot_hashes": 11
+  },
+  "poc_relative_links": 49,
+  "changed_existing_files": [
+    "README.md",
+    "evaluation/README.md"
+  ],
+  "historical_baseline_cases_workloads_unchanged": true,
+  "engine_checksum_matches_latest_test_record": true,
+  "oracle_execution_run": false,
+  "jenkins_job_deployed": false
+}

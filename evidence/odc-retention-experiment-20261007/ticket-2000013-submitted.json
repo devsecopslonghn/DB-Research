@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-07T17:06:49.619086+00:00",
+  "request": {
+    "databaseId": 1000069,
+    "taskType": "ASYNC",
+    "executionStrategy": "MANUAL",
+    "description": "app=odc-retention-poc; release=20261007-R1; ref=supported-config",
+    "parameters": {
+      "sqlContent": "SELECT 'P7_RETENTION_CONFIG_SUCCESS' AS MARKER FROM DUAL;\n",
+      "timeoutMillis": 120000,
+      "errorStrategy": "ABORT",
+      "generateRollbackPlan": false,
+      "queryLimit": 100,
+      "delimiter": ";",
+      "retryTimes": 0,
+      "markAsFailedWhenAnyErrorsHappened": true
+    }
+  },
+  "response": {
+    "contents": [
+      {
+        "affectedRows": null,
+        "approvable": false,
+        "completeTime": null,
+        "createTime": null,
+        "creator": null,
+        "database": null,
+        "description": null,
+        "executionStrategy": null,
+        "executionTime": null,
+        "id": 2000013,
+        "nodeList": null,
+        "parameters": null,
+        "progressPercentage": 0.0,
+        "project": null,
+        "projectId": null,
+        "status": null,
+        "type": "ASYNC"
+      }
+    ]
+  }
+}

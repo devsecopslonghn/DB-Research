@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "scope": "Local installed package isolation; no Oracle or CI authentication",
+  "command": "python -I -m poc.runner --help",
+  "hostile_workspace_package_ignored": true,
+  "hostile_pythonpath_ignored": true,
+  "return_code": 0
+}

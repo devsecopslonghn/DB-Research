@@ -1,0 +1,59 @@
+{
+  "timestamp": "2026-10-07T10:28:03.614449+00:00",
+  "request": {
+    "databaseId": 1000069,
+    "taskType": "MULTIPLE_ASYNC",
+    "executionStrategy": "MANUAL",
+    "description": "app=odc-adoption-poc; release=20261007-B1; ref=native-four-stage",
+    "parameters": {
+      "sqlContent": "CREATE TABLE P7_BATCH_HAPPY (ID NUMBER PRIMARY KEY, NOTE VARCHAR2(60));\n",
+      "timeoutMillis": 120000,
+      "errorStrategy": "ABORT",
+      "generateRollbackPlan": false,
+      "queryLimit": 100,
+      "delimiter": ";",
+      "retryTimes": 0,
+      "markAsFailedWhenAnyErrorsHappened": true,
+      "projectId": 1,
+      "orderedDatabaseIds": [
+        [
+          1000069
+        ],
+        [
+          1000122
+        ],
+        [
+          1000184
+        ],
+        [
+          1000218
+        ]
+      ],
+      "manualTimeoutMillis": 3600000,
+      "autoErrorStrategy": "ABORT"
+    }
+  },
+  "response": {
+    "contents": [
+      {
+        "affectedRows": null,
+        "approvable": false,
+        "completeTime": null,
+        "createTime": null,
+        "creator": null,
+        "database": null,
+        "description": null,
+        "executionStrategy": null,
+        "executionTime": null,
+        "id": 2000003,
+        "nodeList": null,
+        "parameters": null,
+        "progressPercentage": 0.0,
+        "project": null,
+        "projectId": null,
+        "status": null,
+        "type": "MULTIPLE_ASYNC"
+      }
+    ]
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "observed_at": "2026-10-04T07:19:48.157276+00:00",
+  "scope": "Bytebase 3.22.1/FREE; Oracle 26ai 23.26.4.1.0; API/UI và Thin TCPS độc lập, ngày 04/10/2026. DEV/SIT/UAT/mockPROD cùng DB vật lý.",
+  "acceptance_source": "poc/ORACLE-POC.md",
+  "criteria_preserved": true,
+  "cases": [
+    {
+      "id": "MODEL-01",
+      "title": "Project ownership",
+      "criterion": "Applications/projects and their database targets have stable identities.",
+      "status": "PASS",
+      "summary": "Project và năm target POC có resource name ổn định trong API, UI và các hậu kiểm."
+    },
+    {
+      "id": "MODEL-02",
+      "title": "Estate inventory",
+      "criterion": "Register Oracle instances, services, databases/schemas, and environments centrally.",
+      "status": "PASS",
+      "summary": "Đăng ký năm project-owned Oracle instance/database/schema. DEV/SIT/UAT/mockPROD có environment. Cùng một DB vật lý."
+    },
+    {
+      "id": "MODEL-03",
+      "title": "Change identity",
+      "criterion": "Retain a stable change/release identifier and exact SQL artifact.",
+      "status": "PASS",
+      "summary": "Native VERSIONED release giữ version, sheet SHA-256, plan/issue/taskRun và revision liên kết. SQL lấy từ API khớp artifact."
+    },
+    {
+      "id": "MODEL-04",
+      "title": "Actor records",
+      "criterion": "Retain requester, approver, executor, database account, and timestamps separately.",
+      "status": "PARTIAL",
+      "summary": "Requester, release creator, executor và timestamp tách riêng. Tài khoản Oracle theo schema. Approver thực sự không có vì FREE SKIPPED."
+    },
+    {
+      "id": "MODEL-05",
+      "title": "Review",
+      "criterion": "Review the exact SQL intended for the selected Oracle targets.",
+      "status": "PASS",
+      "summary": "Review gắn với đúng SQL và target. P04 mới phát hiện ERROR trước issue nhưng execution enforcement vẫn FAIL riêng."
+    },
+    {
+      "id": "MODEL-06",
+      "title": "Approval scope",
+      "criterion": "Bind approval to the artifact and target set. Record any later change.",
+      "status": "BLOCKED",
+      "summary": "FREE bỏ qua approval template: approvalStatus SKIPPED. Không thể nghiệm thu approval binding."
+    },
+    {
+      "id": "MODEL-07",
+      "title": "Environment rollout",
+      "criterion": "Run the same approved change through DEV, SIT, UAT, and PROD in the accepted order.",
+      "status": "FAIL",
+      "summary": "Native rollout có bốn stage và cùng artifact. API chạy staging trước; staging DONE trước SIT/UAT. Không bắt buộc thứ tự."
+    },
+    {
+      "id": "MODEL-08",
+      "title": "Manual continuation",
+      "criterion": "Stop between stages. Resume only through an authorized action.",
+      "status": "PASS",
+      "summary": "Sau DEV DONE, SIT NOT_STARTED và chưa có bảng. Requester tiếp tục bị 403; executor tiếp tục tạo đúng bảng/hàng."
+    },
+    {
+      "id": "MODEL-09",
+      "title": "Failed stage",
+      "criterion": "Apply the accepted stop policy. Do not continue automatically after an uncertain result.",
+      "status": "PASS",
+      "summary": "DEV FAILED với ORA-00942; SIT giữ NOT_STARTED trước thao tác thủ công. Stage sau không tự chạy. Explicit executor vẫn được lên lịch sau lỗi."
+    },
+    {
+      "id": "MODEL-10",
+      "title": "History and logs",
+      "criterion": "Display per-target status, execution records, errors, and central audit.",
+      "status": "PARTIAL",
+      "summary": "Task/target/log/time và lỗi Oracle đọc được. Audit search/export bị 403 FEATURE_AUDIT_LOG TEAM. Chưa kiểm retention."
+    },
+    {
+      "id": "MODEL-11",
+      "title": "Estate permissions",
+      "criterion": "Prevent unauthorized project, target, approval, and execution actions. Verify inherited project access, Participant grants, expiry, and denied Oracle cross-schema access.",
+      "status": "PARTIAL",
+      "summary": "Có project role, query/write denial, conditional grant hết hạn, revoke và Oracle cross-schema denial. Approval actions bị FREE chặn."
+    },
+    {
+      "id": "MODEL-12",
+      "title": "Release readiness",
+      "criterion": "Identify every missing release, checksum, ledger, locking, and recovery capability.",
+      "status": "PASS",
+      "summary": "Đã phân biệt native release/revision, checksum WARNING, target ledger chưa có, dedup/concurrency quan sát được và recovery chưa đủ."
+    },
+    {
+      "id": "SQL-01",
+      "title": "CREATE TABLE",
+      "criterion": "Procedure: Deploy a table with primary key, number, varchar, and timestamp columns. Acceptance: Table exists. One successful target entry and one linked central result exist.",
+      "status": "PARTIAL",
+      "summary": "UI chạy CREATE thành công; bảng/PK/type đúng và revision trung tâm liên kết. Không có target migration ledger trong schema."
+    },
+    {
+      "id": "SQL-02",
+      "title": "ALTER TABLE",
+      "criterion": "Procedure: Add a column and a named constraint in a new migration. Acceptance: Both objects exist. Version order and ledger are correct.",
+      "status": "PARTIAL",
+      "summary": "Cột STATUS và constraint tồn tại; native version kế tiếp có revision. Chưa có ledger phía Oracle target."
+    },
+    {
+      "id": "SQL-03",
+      "title": "INSERT/UPDATE",
+      "criterion": "Procedure: Insert a row, update its value, and verify the final value. Acceptance: The row changes once. Replay does not increase the row count or value.",
+      "status": "PASS",
+      "summary": "Sau INSERT/UPDATE, hàng 1 có amount=150. Replay cùng version skip; hậu kiểm trước/sau replay không đổi."
+    },
+    {
+      "id": "SQL-04",
+      "title": "Procedure",
+      "criterion": "Procedure: Deploy a procedure with internal semicolons and an executable body. Acceptance: Procedure is VALID. Invocation changes the expected row.",
+      "status": "PASS",
+      "summary": "Procedure VALID. Invocation chuyển STATUS thành PAID."
+    },
+    {
+      "id": "SQL-05",
+      "title": "Function",
+      "criterion": "Procedure: Deploy a function with a numeric return value. Acceptance: Function is VALID. SELECT from DUAL returns the expected value.",
+      "status": "PASS",
+      "summary": "Function VALID. POC_ADD_TAX(100)=110."
+    },
+    {
+      "id": "SQL-06",
+      "title": "Package",
+      "criterion": "Procedure: Deploy a specification and body with initialization code. Acceptance: Both objects are VALID. Package invocation succeeds.",
+      "status": "PASS",
+      "summary": "Package/spec/body VALID; invocation đổi NOTE và initialization trả 42."
+    },
+    {
+      "id": "SQL-07",
+      "title": "Trigger",
+      "criterion": "Procedure: Deploy a row trigger that uses :NEW and :OLD. Acceptance: Trigger is VALID. One event produces one expected effect.",
+      "status": "PASS",
+      "summary": "Trigger VALID; một UPDATE tạo một audit event 150→200."
+    },
+    {
+      "id": "SQL-08",
+      "title": "Anonymous PL/SQL",
+      "criterion": "Procedure: Execute BEGIN/END and DECLARE/BEGIN/END forms. Acceptance: Each block executes once. Internal semicolons remain intact.",
+      "status": "PASS",
+      "summary": "Hai block anonymous chạy; marker 801/802 mỗi loại một hàng."
+    },
+    {
+      "id": "SQL-09",
+      "title": "Slash delimiter",
+      "criterion": "Procedure: Deploy procedural bodies with a slash on a separate line. Acceptance: The parser uses the slash as a client delimiter. Oracle does not receive a bare slash statement.",
+      "status": "PASS",
+      "summary": "Body PL/SQL với slash riêng dòng chạy thành công. Không có lỗi bare slash; log có statement ranges."
+    },
+    {
+      "id": "SQL-10",
+      "title": "SQLPlus commands",
+      "criterion": "Procedure: Evaluate PROMPT, SET DEFINE, DEFINE, SPOOL, @, @@, and WHENEVER directives. Acceptance: Required commands work through a supported execution path. Unsupported commands fail clearly before execution.",
+      "status": "PARTIAL",
+      "summary": "Bundle SQLPlus FAILED ORA-01008; marker 1001 không có. Chưa kiểm từng directive, thông báo pre-execution hoặc đường native SQLPlus."
+    },
+    {
+      "id": "SQL-11",
+      "title": "Invalid compilation",
+      "criterion": "Procedure: Deploy syntactically accepted PL/SQL with a compilation error. Acceptance: The result reports invalid compilation. ALL_ERRORS identifies the error. The release is not reported as fully successful.",
+      "status": "FAIL",
+      "summary": "Plan 109/task DONE và UI Deployed; Oracle procedure INVALID, hai USER_ERRORS, gồm PLS-00201."
+    },
+    {
+      "id": "SQL-12",
+      "title": "Oracle literal forms",
+      "criterion": "Procedure: Use q-quoted text, comment markers in strings, quoted identifiers, and nested blocks. Acceptance: The parser preserves the exact body and statement boundaries.",
+      "status": "PASS",
+      "summary": "Ba giá trị q-quote, comment marker trong chuỗi và quoted identifier giữ nguyên."
+    },
+    {
+      "id": "REC-01",
+      "title": "Intentional failure",
+      "criterion": "Procedure: Add a statement that references a missing table. Acceptance: Execution stops according to policy. The central result contains the exact failed migration and Oracle error.",
+      "status": "PASS",
+      "summary": "Fixture missing-table FAILED với ORA-00942 và file/version/range trong log. Hàng 1101 không xuất hiện tại thời điểm lỗi."
+    },
+    {
+      "id": "REC-02",
+      "title": "Normal replay",
+      "criterion": "Procedure: Submit a previously successful versioned migration again. Acceptance: The engine skips the migration. The platform records the replay request without changing target state.",
+      "status": "PASS",
+      "summary": "Nộp lại native version đã thành công: task DONE nhưng không chạy lại DML. Hậu kiểm paired trước/sau không đổi."
+    },
+    {
+      "id": "REC-03",
+      "title": "Retry after failure",
+      "criterion": "Procedure: Retry REC-01 after an approved correction and target inspection. Acceptance: Recovery follows a documented decision. The platform does not repeat committed work without review.",
+      "status": "PARTIAL",
+      "summary": "Hậu kiểm 1101=0 rồi tạo version sửa riêng; chạy thành công 1101=1. FREE không có phê duyệt correction thật."
+    },
+    {
+      "id": "REC-04",
+      "title": "Partial DDL",
+      "criterion": "Procedure: Execute CREATE TABLE, then an invalid ALTER TABLE in one migration. Acceptance: The created table remains visible. The platform reports partial or uncertain state. Automatic replay is blocked.",
+      "status": "PARTIAL",
+      "summary": "CREATE được commit; ALTER lỗi ORA-00904 và task FAILED. POC_PARTIAL còn tồn tại. Chưa chứng minh partial-state fencing hoặc cấm mọi replay."
+    },
+    {
+      "id": "REC-05",
+      "title": "Crash after target commit",
+      "criterion": "Procedure: Stop the process after DDL commits and before target history success is recorded. Acceptance: Restart detects an uncertain result. An operator reconciles objects and history before resuming.",
+      "status": "NOT_RUN",
+      "summary": "Chưa có crash barrier trước commit và worker restart được kiểm soát."
+    },
+    {
+      "id": "REC-06",
+      "title": "Crash after target history",
+      "criterion": "Procedure: Stop the worker after the successful target ledger row and before central success recording. Acceptance: Restart reads target success and repairs central state. No SQL replay occurs.",
+      "status": "NOT_RUN",
+      "summary": "Chưa có commit barrier và phép crash giữa Oracle commit với central revision."
+    },
+    {
+      "id": "REC-07",
+      "title": "Network interruption",
+      "criterion": "Procedure: Interrupt the connection before execution, during execution, and after commit acknowledgement. Acceptance: The result distinguishes known failure from uncertain outcome. Recovery checks target history and object state.",
+      "status": "NOT_RUN",
+      "summary": "Chưa cắt network sau commit bằng proxy có checkpoint."
+    },
+    {
+      "id": "REC-08",
+      "title": "Checksum change",
+      "criterion": "Procedure: Change the content of a successful migration without changing its ID. Acceptance: Validation fails before new SQL executes. An authorized repair cannot be silent.",
+      "status": "FAIL",
+      "summary": "Đổi SQL giữ native version: check có WARNING Applied file has been modified và hai SHA. Task vẫn DONE/skip. Không đạt yêu cầu validation FAIL."
+    },
+    {
+      "id": "REC-09",
+      "title": "Concurrent runners",
+      "criterion": "Procedure: Submit two releases for the same target schema simultaneously. Acceptance: Only one migration execution holds the target lock. Both central jobs have accurate results.",
+      "status": "PARTIAL",
+      "summary": "Hai native API plan cùng version chạy đồng thời: cả hai DONE, một effect/một SESSION_ID. Chưa quan sát lock holder hoặc hai runner CI độc lập."
+    },
+    {
+      "id": "REC-10",
+      "title": "Duplicate API request",
+      "criterion": "Procedure: Send the same approved execution request twice. Acceptance: Stable request identity prevents duplicate work. Both API responses link to the same execution decision.",
+      "status": "PARTIAL",
+      "summary": "Hai tasks:batchRun cùng task trả 200/200; một taskRun, một effect. Identity dedup đạt tiểu ca; FREE approval SKIPPED nên chưa nghiệm thu approved execution đầy đủ."
+    },
+    {
+      "id": "REC-11",
+      "title": "Central restart",
+      "criterion": "Procedure: Restart the central service while the worker continues. Acceptance: The platform reconciles the durable job and target state without duplicate execution.",
+      "status": "NOT_RUN",
+      "summary": "Chưa có controlled multi-replica failover và fencing."
+    },
+    {
+      "id": "REC-12",
+      "title": "Stale lock",
+      "criterion": "Procedure: Stop a worker while it holds migration or platform locks. Acceptance: Recovery distinguishes a dead worker from a slow worker. An operator can release a proven stale lock.",
+      "status": "NOT_RUN",
+      "summary": "Chưa restore target từ backup và reconcile revision với trạng thái target."
+    },
+    {
+      "id": "GOV-01",
+      "title": "WHO / WHAT / WHERE / WHEN / HOW / RESULT",
+      "criterion": "A query returns requester, approver, executor, SQL artifact, target, times, trigger, and result.",
+      "status": "PARTIAL",
+      "summary": "Join release/plan/issue/taskRun trả requester, creator, executor, hash, target, time, local job, result. Thiếu approver thật trên FREE."
+    },
+    {
+      "id": "GOV-02",
+      "title": "Approval binding",
+      "criterion": "Changing the artifact, target, environment, or release version invalidates the previous approval.",
+      "status": "BLOCKED",
+      "summary": "Không có approval template trên FREE để kiểm invalidate khi đổi SQL, target, environment hoặc version."
+    },
+    {
+      "id": "GOV-03",
+      "title": "Separation of duties",
+      "criterion": "An unauthorized requester cannot approve or execute their own production change. Document administrator powers separately.",
+      "status": "PARTIAL",
+      "summary": "Requester/CI rollout execute 403. SQL console ban đầu vẫn cho UPDATE vì sqlEditorUser. Đổi requester thành projectDeveloper+sqlEditorReadUser: UPDATE bị permission_denied, SELECT còn hoạt động. FREE approval chưa nghiệm thu."
+    },
+    {
+      "id": "GOV-04",
+      "title": "Environment promotion",
+      "criterion": "Higher environments receive the same immutable artifact after required lower-environment success.",
+      "status": "FAIL",
+      "summary": "Staging/mockPROD task120 DONE 06:53:11Z; SIT DONE 06:53:27Z, UAT DONE 06:53:56Z. API chấp nhận staging khi lower stages chưa thành công."
+    },
+    {
+      "id": "GOV-05",
+      "title": "CI identity",
+      "criterion": "GitLab and Jenkins triggers retain a named service principal and the initiating job reference.",
+      "status": "PARTIAL",
+      "summary": "Named service account tạo plan/issue qua API, giữ principal và local job reference. Chưa chạy job GitLab/Jenkins thật."
+    },
+    {
+      "id": "GOV-06",
+      "title": "Backup and restore",
+      "criterion": "Restored metadata, artifacts, and keys remain readable. Reconciliation detects target changes after the backup.",
+      "status": "NOT_RUN",
+      "summary": "Chưa có CI runner bị ngắt và resume từ checkpoint có controlled identity."
+    },
+    {
+      "id": "GOV-07",
+      "title": "Multiple replicas",
+      "criterion": "Concurrent API servers cannot dispatch duplicate target execution.",
+      "status": "NOT_RUN",
+      "summary": "Chưa có runner reassignment/failover với fencing."
+    },
+    {
+      "id": "GOV-08",
+      "title": "Secret handling",
+      "criterion": "Logs and stored results contain no database passwords or secret-manager credentials.",
+      "status": "PARTIAL",
+      "summary": "Known-secret scan trên task evidence và asset công bố không thấy bí mật. Không thể kiểm audit payload/export đầy đủ trên FREE."
+    },
+    {
+      "id": "GOV-09",
+      "title": "Audit export",
+      "criterion": "Audit export preserves actor, artifact hash, target, time, trigger, and result after log rotation.",
+      "status": "BLOCKED",
+      "summary": "Audit search/export trả 403 TEAM feature. UI ghi Pro. Chưa có export hoặc rotation proof; không tự bật trial."
+    }
+  ],
+  "counts": {
+    "PASS": 17,
+    "PARTIAL": 14,
+    "BLOCKED": 3,
+    "FAIL": 4,
+    "NOT_RUN": 7
+  }
+}

@@ -1,0 +1,1342 @@
+[
+  {
+    "sha": "67b2cc2864df1ce0d1f1f87dfd9d14ded792fe88",
+    "node_id": "C_kwDOQclzzNoAKDY3YjJjYzI4NjRkZjFjZTBkMWYxZjg3ZGZkOWQxNGRlZDc5MmZlODg",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-12-25T08:06:04Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-12-25T08:06:04Z"
+      },
+      "message": "\u65b0\u589e\u6279\u91cf\u5408\u5e76\u529f\u80fd",
+      "tree": {
+        "sha": "2a5ce053935767e8003a29e74ffd438ad8cee013",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/2a5ce053935767e8003a29e74ffd438ad8cee013"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/67b2cc2864df1ce0d1f1f87dfd9d14ded792fe88",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/67b2cc2864df1ce0d1f1f87dfd9d14ded792fe88",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/67b2cc2864df1ce0d1f1f87dfd9d14ded792fe88",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/67b2cc2864df1ce0d1f1f87dfd9d14ded792fe88/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "2a012e78c40cfa34a61cf713bb1cf0e79ca33d07",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/2a012e78c40cfa34a61cf713bb1cf0e79ca33d07",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/2a012e78c40cfa34a61cf713bb1cf0e79ca33d07"
+      }
+    ]
+  },
+  {
+    "sha": "2a012e78c40cfa34a61cf713bb1cf0e79ca33d07",
+    "node_id": "C_kwDOQclzzNoAKDJhMDEyZTc4YzQwY2ZhMzRhNjFjZjcxM2JiMWNmMGU3OWNhMzNkMDc",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-12-17T08:36:07Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-12-17T08:36:07Z"
+      },
+      "message": "\u65b0\u589e\u529f\u80fd\uff1a\u70b9\u51fb\u5408\u5e76\u660e\u7ec6\u8868\u7684\u7248\u672c\u5217\uff0c\u5de6\u4fa7\u6811\u548c\u53f3\u4fa7\u9884\u89c8\u533a\u57df \u540c\u6b65\u66f4\u65b0\u663e\u793a\u5185\u5bb9",
+      "tree": {
+        "sha": "08f7bd6950a29ac3e555f0cd971775f976e31216",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/08f7bd6950a29ac3e555f0cd971775f976e31216"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/2a012e78c40cfa34a61cf713bb1cf0e79ca33d07",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/2a012e78c40cfa34a61cf713bb1cf0e79ca33d07",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/2a012e78c40cfa34a61cf713bb1cf0e79ca33d07",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/2a012e78c40cfa34a61cf713bb1cf0e79ca33d07/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "d465e0fce20926113ba285dfefd24585ac599695",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/d465e0fce20926113ba285dfefd24585ac599695",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/d465e0fce20926113ba285dfefd24585ac599695"
+      }
+    ]
+  },
+  {
+    "sha": "d465e0fce20926113ba285dfefd24585ac599695",
+    "node_id": "C_kwDOQclzzNoAKGQ0NjVlMGZjZTIwOTI2MTEzYmEyODVkZmVmZDI0NTg1YWM1OTk2OTU",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-12-17T08:01:09Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-12-17T08:01:09Z"
+      },
+      "message": "\u4fee\u590d\u9996\u6b21\u5408\u5e76\u65f6\u672a\u521b\u5efahistory\u8868\u7684bug",
+      "tree": {
+        "sha": "4ccd9f01f903484c4d98daedf422d93b880b8729",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/4ccd9f01f903484c4d98daedf422d93b880b8729"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/d465e0fce20926113ba285dfefd24585ac599695",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/d465e0fce20926113ba285dfefd24585ac599695",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/d465e0fce20926113ba285dfefd24585ac599695",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/d465e0fce20926113ba285dfefd24585ac599695/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "b31dd2641a3249176bc9c216f2dc982871162ef9",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/b31dd2641a3249176bc9c216f2dc982871162ef9",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/b31dd2641a3249176bc9c216f2dc982871162ef9"
+      }
+    ]
+  },
+  {
+    "sha": "b31dd2641a3249176bc9c216f2dc982871162ef9",
+    "node_id": "C_kwDOQclzzNoAKGIzMWRkMjY0MWEzMjQ5MTc2YmM5YzIxNmYyZGM5ODI4NzExNjJlZjk",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-28T05:10:40Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-28T05:10:40Z"
+      },
+      "message": "\u5b8c\u5584\u6587\u6863",
+      "tree": {
+        "sha": "294c1d936353f67ab91fb87ee59e7762b4fbc496",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/294c1d936353f67ab91fb87ee59e7762b4fbc496"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/b31dd2641a3249176bc9c216f2dc982871162ef9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/b31dd2641a3249176bc9c216f2dc982871162ef9",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/b31dd2641a3249176bc9c216f2dc982871162ef9",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/b31dd2641a3249176bc9c216f2dc982871162ef9/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "f342fba1287606758da55b8272557c550a69f45d",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/f342fba1287606758da55b8272557c550a69f45d",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/f342fba1287606758da55b8272557c550a69f45d"
+      }
+    ]
+  },
+  {
+    "sha": "f342fba1287606758da55b8272557c550a69f45d",
+    "node_id": "C_kwDOQclzzNoAKGYzNDJmYmExMjg3NjA2NzU4ZGE1NWI4MjcyNTU3YzU1MGE2OWY0NWQ",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T11:09:20Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T11:09:20Z"
+      },
+      "message": "\u91cd\u6784",
+      "tree": {
+        "sha": "2b2b9dacd09bf1e3bc174621036557abb072dd5c",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/2b2b9dacd09bf1e3bc174621036557abb072dd5c"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/f342fba1287606758da55b8272557c550a69f45d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/f342fba1287606758da55b8272557c550a69f45d",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/f342fba1287606758da55b8272557c550a69f45d",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/f342fba1287606758da55b8272557c550a69f45d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "a61346b18ade8a9802dcf61600156f426a581fa7",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/a61346b18ade8a9802dcf61600156f426a581fa7",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/a61346b18ade8a9802dcf61600156f426a581fa7"
+      }
+    ]
+  },
+  {
+    "sha": "a61346b18ade8a9802dcf61600156f426a581fa7",
+    "node_id": "C_kwDOQclzzNoAKGE2MTM0NmIxOGFkZThhOTgwMmRjZjYxNjAwMTU2ZjQyNmE1ODFmYTc",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T10:32:35Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T10:32:35Z"
+      },
+      "message": "\u91cd\u6784",
+      "tree": {
+        "sha": "9dce7062e79260d601030312e1bdbbd89a6fc2a8",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/9dce7062e79260d601030312e1bdbbd89a6fc2a8"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/a61346b18ade8a9802dcf61600156f426a581fa7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/a61346b18ade8a9802dcf61600156f426a581fa7",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/a61346b18ade8a9802dcf61600156f426a581fa7",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/a61346b18ade8a9802dcf61600156f426a581fa7/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "7c451caeb2f6c6814e193de33625081da25e193d",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/7c451caeb2f6c6814e193de33625081da25e193d",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/7c451caeb2f6c6814e193de33625081da25e193d"
+      }
+    ]
+  },
+  {
+    "sha": "7c451caeb2f6c6814e193de33625081da25e193d",
+    "node_id": "C_kwDOQclzzNoAKDdjNDUxY2FlYjJmNmM2ODE0ZTE5M2RlMzM2MjUwODFkYTI1ZTE5M2Q",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T07:06:47Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T07:06:47Z"
+      },
+      "message": "fix bugs",
+      "tree": {
+        "sha": "ce3d1bbb203e55339c89ef33104133d7f8174433",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/ce3d1bbb203e55339c89ef33104133d7f8174433"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/7c451caeb2f6c6814e193de33625081da25e193d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/7c451caeb2f6c6814e193de33625081da25e193d",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/7c451caeb2f6c6814e193de33625081da25e193d",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/7c451caeb2f6c6814e193de33625081da25e193d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "866bcdd8f2ec6751f2860a6d1b078d0875c472ff",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/866bcdd8f2ec6751f2860a6d1b078d0875c472ff",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/866bcdd8f2ec6751f2860a6d1b078d0875c472ff"
+      }
+    ]
+  },
+  {
+    "sha": "866bcdd8f2ec6751f2860a6d1b078d0875c472ff",
+    "node_id": "C_kwDOQclzzNoAKDg2NmJjZGQ4ZjJlYzY3NTFmMjg2MGE2ZDFiMDc4ZDA4NzVjNDcyZmY",
+    "commit": {
+      "author": {
+        "name": "DaiJ",
+        "email": "daijiang@apegeek.com",
+        "date": "2025-11-27T07:05:12Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2025-11-27T07:05:12Z"
+      },
+      "message": "Update ai-config.json",
+      "tree": {
+        "sha": "bc641fcda0764016eb5dbfccdbd904eba49cf3dc",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/bc641fcda0764016eb5dbfccdbd904eba49cf3dc"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/866bcdd8f2ec6751f2860a6d1b078d0875c472ff",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpJ/goCRC1aQ7uu5UhlAAAfYIQABHeJ7zHd0cWskwoniCaUWyx\noVX5sEuj+lrJgao3hhwqH7bp9BeACfFat3HN2F4xG+A1ZDzQ2BpnWBJXyG4GUFR0\njZosmywHIB7J09fI4ERXPOpsZ1mk3bnX5GSbBqGEkXzMafY/rJ3SWhqynlRKy+wX\nr+YtCxlgTfm5M0QQnwMfCoZ00B5szif4NX+0XOLHZfCeRJ6lMTNFHyjslPo30MUj\nYvFNiAPtDJ+52IL/SLab83ficzatOx/n4MtVRuFhqC5DngOIripz1wEI3OYV0jIa\nuo4D5xrv4GXviUPniAgYchf8KSImHXEn28Jr0h05lMID5k9fSZAx4Q4oShmnznuQ\najweku26Ejbsv8qxKFSV/CI54vKdzzL3U/M/HsQl9kmM9XIy2P5NERVqshOWDhHx\nuwZ3vP6qwyNzWcl27LXl9KNYVFmkoaPDnU5pfW5yYbVaDtEmFTKMgoxL+TTDPtal\nAUbPpomZdw0P51ptN9beyW/jDDbwAAJovbhYJzxtHHhv0Sst+SnnjFU7C3phu/0l\nazDMdHoznvBCR6ILVenZ5kFh7SEZJBtv4fo1Rt6rJRDngIhvN3qOwCo3bk4g332a\ngdS3FvhTnG/B4p8Nm90CindorzMu+szxCz0CR0Iw4+LeruLKHNkimPkfhM275Jxr\nbEvBt+2VRj6wLytTyV9n\n=E+dH\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree bc641fcda0764016eb5dbfccdbd904eba49cf3dc\nparent 37a243ece13c0e23c7f41c0282bc7144f9b554fd\nauthor DaiJ <daijiang@apegeek.com> 1764227112 +0800\ncommitter GitHub <noreply@github.com> 1764227112 +0800\n\nUpdate ai-config.json",
+        "verified_at": "2025-11-27T07:05:12Z"
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/866bcdd8f2ec6751f2860a6d1b078d0875c472ff",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/866bcdd8f2ec6751f2860a6d1b078d0875c472ff",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/866bcdd8f2ec6751f2860a6d1b078d0875c472ff/comments",
+    "author": {
+      "login": "apegeek",
+      "id": 13404589,
+      "node_id": "MDQ6VXNlcjEzNDA0NTg5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13404589?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/apegeek",
+      "html_url": "https://github.com/apegeek",
+      "followers_url": "https://api.github.com/users/apegeek/followers",
+      "following_url": "https://api.github.com/users/apegeek/following{/other_user}",
+      "gists_url": "https://api.github.com/users/apegeek/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/apegeek/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/apegeek/subscriptions",
+      "organizations_url": "https://api.github.com/users/apegeek/orgs",
+      "repos_url": "https://api.github.com/users/apegeek/repos",
+      "events_url": "https://api.github.com/users/apegeek/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/apegeek/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "37a243ece13c0e23c7f41c0282bc7144f9b554fd",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/37a243ece13c0e23c7f41c0282bc7144f9b554fd",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/37a243ece13c0e23c7f41c0282bc7144f9b554fd"
+      }
+    ]
+  },
+  {
+    "sha": "37a243ece13c0e23c7f41c0282bc7144f9b554fd",
+    "node_id": "C_kwDOQclzzNoAKDM3YTI0M2VjZTEzYzBlMjNjN2Y0MWMwMjgyYmM3MTQ0ZjliNTU0ZmQ",
+    "commit": {
+      "author": {
+        "name": "DaiJ",
+        "email": "daijiang@apegeek.com",
+        "date": "2025-11-27T07:04:34Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2025-11-27T07:04:34Z"
+      },
+      "message": "Update db-config.json",
+      "tree": {
+        "sha": "576369d0a40d900a631342695052af673f7ded43",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/576369d0a40d900a631342695052af673f7ded43"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/37a243ece13c0e23c7f41c0282bc7144f9b554fd",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpJ/gCCRC1aQ7uu5UhlAAAYZAQAGI1naa7YkqEMEVtZ0SMcC7S\nz21mjK97V5nLeVZAdhwT/nVvxopVhz6XIik3YU5TiDNwMjc+PinnQNGa2bSBMgXi\nvvZQRcWrzetUJ+YyXeozFymPvAxvyv0TjvQ0Ll6igSsR30oyoufBOw1suQbY9p77\nxjYcEcqLU4kwvB74C2eDR4UFNZ/8vbWkTgCsUxMgf9AwLj1ViHGybNvvsYX+l1G1\nlefKUJ5eOAFesfK2+1PkLJWF2u9mHnr/iqLasPLfZ57+JPTPCk38QqUfpPJpqkWx\nuPbFNNeZvOhA8AeUgivC3D4rVvEUO4PpAic7sN7mj3GroULiVUncyrQ2C6oxzTkZ\nZlDYoj7GqM7XAOYXE/jisXj0bXfJ1XyiTaxo9bTf5Zp9B0YuHTIfR/wL6zWIsb63\nyhpRJCOl3gOsCoJiyE+0FLM+SOMjhHCgSB3eG3x+GKqiEya2mHANo3QCkOFzfCus\nTdzkly6mN+NpX9AIOMggQiU2j8/RS06AC7FQiwd7VwuAQjJPNooDCMHfm3vt7e55\np6ngGeuNCH99EmwVSHphrMwfvYC8Fv13KRSuzZXXPgCy+XyaCJuBrZ+smchQ+/s1\nXxa1NGPl7X4eWSREFt0XTmN1H7IhUzeYMEUI7JkWNau65hLzHESDl6HYt3eWQbeC\nGauJoj8pGU825wIc5vKy\n=9XJ+\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 576369d0a40d900a631342695052af673f7ded43\nparent 58759ba2148868d1eeeec7f8d80bc6341b8b2244\nauthor DaiJ <daijiang@apegeek.com> 1764227074 +0800\ncommitter GitHub <noreply@github.com> 1764227074 +0800\n\nUpdate db-config.json",
+        "verified_at": "2025-11-27T07:04:34Z"
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/37a243ece13c0e23c7f41c0282bc7144f9b554fd",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/37a243ece13c0e23c7f41c0282bc7144f9b554fd",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/37a243ece13c0e23c7f41c0282bc7144f9b554fd/comments",
+    "author": {
+      "login": "apegeek",
+      "id": 13404589,
+      "node_id": "MDQ6VXNlcjEzNDA0NTg5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13404589?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/apegeek",
+      "html_url": "https://github.com/apegeek",
+      "followers_url": "https://api.github.com/users/apegeek/followers",
+      "following_url": "https://api.github.com/users/apegeek/following{/other_user}",
+      "gists_url": "https://api.github.com/users/apegeek/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/apegeek/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/apegeek/subscriptions",
+      "organizations_url": "https://api.github.com/users/apegeek/orgs",
+      "repos_url": "https://api.github.com/users/apegeek/repos",
+      "events_url": "https://api.github.com/users/apegeek/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/apegeek/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "58759ba2148868d1eeeec7f8d80bc6341b8b2244",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/58759ba2148868d1eeeec7f8d80bc6341b8b2244",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/58759ba2148868d1eeeec7f8d80bc6341b8b2244"
+      }
+    ]
+  },
+  {
+    "sha": "58759ba2148868d1eeeec7f8d80bc6341b8b2244",
+    "node_id": "C_kwDOQclzzNoAKDU4NzU5YmEyMTQ4ODY4ZDFlZWVlYzdmOGQ4MGJjNjM0MWI4YjIyNDQ",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T06:59:17Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T06:59:17Z"
+      },
+      "message": "fix bugs",
+      "tree": {
+        "sha": "a8af2a15d4fb3f56e18b6bbdcc6acefbd4e43ffb",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/a8af2a15d4fb3f56e18b6bbdcc6acefbd4e43ffb"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/58759ba2148868d1eeeec7f8d80bc6341b8b2244",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/58759ba2148868d1eeeec7f8d80bc6341b8b2244",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/58759ba2148868d1eeeec7f8d80bc6341b8b2244",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/58759ba2148868d1eeeec7f8d80bc6341b8b2244/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "d722d460c630f3178d11f2b3e6f8d19af31aa721",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/d722d460c630f3178d11f2b3e6f8d19af31aa721",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/d722d460c630f3178d11f2b3e6f8d19af31aa721"
+      }
+    ]
+  },
+  {
+    "sha": "d722d460c630f3178d11f2b3e6f8d19af31aa721",
+    "node_id": "C_kwDOQclzzNoAKGQ3MjJkNDYwYzYzMGYzMTc4ZDExZjJiM2U2ZjhkMTlhZjMxYWE3MjE",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T06:43:49Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T06:43:49Z"
+      },
+      "message": "fix bugs",
+      "tree": {
+        "sha": "1302bcc9d35e0420d3a7472402636e3420625994",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/1302bcc9d35e0420d3a7472402636e3420625994"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/d722d460c630f3178d11f2b3e6f8d19af31aa721",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/d722d460c630f3178d11f2b3e6f8d19af31aa721",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/d722d460c630f3178d11f2b3e6f8d19af31aa721",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/d722d460c630f3178d11f2b3e6f8d19af31aa721/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "f238cc52771f0043fba0e674918d5411ec4d2197",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/f238cc52771f0043fba0e674918d5411ec4d2197",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/f238cc52771f0043fba0e674918d5411ec4d2197"
+      }
+    ]
+  },
+  {
+    "sha": "f238cc52771f0043fba0e674918d5411ec4d2197",
+    "node_id": "C_kwDOQclzzNoAKGYyMzhjYzUyNzcxZjAwNDNmYmEwZTY3NDkxOGQ1NDExZWM0ZDIxOTc",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T06:20:11Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T06:20:11Z"
+      },
+      "message": "fix bugs",
+      "tree": {
+        "sha": "65c52c1cfcce2fdc4fc0234e0988e3972a3fa348",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/65c52c1cfcce2fdc4fc0234e0988e3972a3fa348"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/f238cc52771f0043fba0e674918d5411ec4d2197",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/f238cc52771f0043fba0e674918d5411ec4d2197",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/f238cc52771f0043fba0e674918d5411ec4d2197",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/f238cc52771f0043fba0e674918d5411ec4d2197/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "e776a9469aee344cc852a1545f25607f6e90f76d",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/e776a9469aee344cc852a1545f25607f6e90f76d",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/e776a9469aee344cc852a1545f25607f6e90f76d"
+      }
+    ]
+  },
+  {
+    "sha": "e776a9469aee344cc852a1545f25607f6e90f76d",
+    "node_id": "C_kwDOQclzzNoAKGU3NzZhOTQ2OWFlZTM0NGNjODUyYTE1NDVmMjU2MDdmNmU5MGY3NmQ",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T06:13:06Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T06:13:06Z"
+      },
+      "message": "fix bugs",
+      "tree": {
+        "sha": "5edfdef9eb05f479cfc4d6a301959fd4978a19d6",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/5edfdef9eb05f479cfc4d6a301959fd4978a19d6"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/e776a9469aee344cc852a1545f25607f6e90f76d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/e776a9469aee344cc852a1545f25607f6e90f76d",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/e776a9469aee344cc852a1545f25607f6e90f76d",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/e776a9469aee344cc852a1545f25607f6e90f76d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "37e8adeac3b10cb7b3539653176292475fe6123a",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/37e8adeac3b10cb7b3539653176292475fe6123a",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/37e8adeac3b10cb7b3539653176292475fe6123a"
+      }
+    ]
+  },
+  {
+    "sha": "37e8adeac3b10cb7b3539653176292475fe6123a",
+    "node_id": "C_kwDOQclzzNoAKDM3ZThhZGVhYzNiMTBjYjdiMzUzOTY1MzE3NjI5MjQ3NWZlNjEyM2E",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:55:31Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:55:31Z"
+      },
+      "message": "fix bugs",
+      "tree": {
+        "sha": "d829c7def523af234a0d3167ef0cac3e1c62d192",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/d829c7def523af234a0d3167ef0cac3e1c62d192"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/37e8adeac3b10cb7b3539653176292475fe6123a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/37e8adeac3b10cb7b3539653176292475fe6123a",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/37e8adeac3b10cb7b3539653176292475fe6123a",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/37e8adeac3b10cb7b3539653176292475fe6123a/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "2a3d2033cbaa3022399f1bb9263b34d21e1bab15",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/2a3d2033cbaa3022399f1bb9263b34d21e1bab15",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/2a3d2033cbaa3022399f1bb9263b34d21e1bab15"
+      }
+    ]
+  },
+  {
+    "sha": "2a3d2033cbaa3022399f1bb9263b34d21e1bab15",
+    "node_id": "C_kwDOQclzzNoAKDJhM2QyMDMzY2JhYTMwMjIzOTlmMWJiOTI2M2IzNGQyMWUxYmFiMTU",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:52:42Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:52:42Z"
+      },
+      "message": "fix bugs",
+      "tree": {
+        "sha": "1da5624aac94b07509b8aca9d200d90ff78e7c7d",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/1da5624aac94b07509b8aca9d200d90ff78e7c7d"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/2a3d2033cbaa3022399f1bb9263b34d21e1bab15",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/2a3d2033cbaa3022399f1bb9263b34d21e1bab15",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/2a3d2033cbaa3022399f1bb9263b34d21e1bab15",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/2a3d2033cbaa3022399f1bb9263b34d21e1bab15/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "299726d397cb22840c313b2e611c43f59620c2ac",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/299726d397cb22840c313b2e611c43f59620c2ac",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/299726d397cb22840c313b2e611c43f59620c2ac"
+      }
+    ]
+  },
+  {
+    "sha": "299726d397cb22840c313b2e611c43f59620c2ac",
+    "node_id": "C_kwDOQclzzNoAKDI5OTcyNmQzOTdjYjIyODQwYzMxM2IyZTYxMWM0M2Y1OTYyMGMyYWM",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:50:25Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:50:25Z"
+      },
+      "message": "fix bugs",
+      "tree": {
+        "sha": "a4db38da7068087219def5f58adaaa40020de32f",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/a4db38da7068087219def5f58adaaa40020de32f"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/299726d397cb22840c313b2e611c43f59620c2ac",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/299726d397cb22840c313b2e611c43f59620c2ac",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/299726d397cb22840c313b2e611c43f59620c2ac",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/299726d397cb22840c313b2e611c43f59620c2ac/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "b97708fd5d704ff8bf20b96fb111ad906346fa1d",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/b97708fd5d704ff8bf20b96fb111ad906346fa1d",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/b97708fd5d704ff8bf20b96fb111ad906346fa1d"
+      }
+    ]
+  },
+  {
+    "sha": "b97708fd5d704ff8bf20b96fb111ad906346fa1d",
+    "node_id": "C_kwDOQclzzNoAKGI5NzcwOGZkNWQ3MDRmZjhiZjIwYjk2ZmIxMTFhZDkwNjM0NmZhMWQ",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:43:37Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:43:37Z"
+      },
+      "message": "fix bugs",
+      "tree": {
+        "sha": "e8b2ea3bee740970792987baea77b128f758cefe",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/e8b2ea3bee740970792987baea77b128f758cefe"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/b97708fd5d704ff8bf20b96fb111ad906346fa1d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/b97708fd5d704ff8bf20b96fb111ad906346fa1d",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/b97708fd5d704ff8bf20b96fb111ad906346fa1d",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/b97708fd5d704ff8bf20b96fb111ad906346fa1d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "d0cbbbd4c04536877bea0980a8ef73a446eb9ec9",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/d0cbbbd4c04536877bea0980a8ef73a446eb9ec9",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/d0cbbbd4c04536877bea0980a8ef73a446eb9ec9"
+      }
+    ]
+  },
+  {
+    "sha": "d0cbbbd4c04536877bea0980a8ef73a446eb9ec9",
+    "node_id": "C_kwDOQclzzNoAKGQwY2JiYmQ0YzA0NTM2ODc3YmVhMDk4MGE4ZWY3M2E0NDZlYjllYzk",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:37:56Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:37:56Z"
+      },
+      "message": "fix bugs",
+      "tree": {
+        "sha": "ce57d52a1e69eda44a528dbf47ffde40bc3b0056",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/ce57d52a1e69eda44a528dbf47ffde40bc3b0056"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/d0cbbbd4c04536877bea0980a8ef73a446eb9ec9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/d0cbbbd4c04536877bea0980a8ef73a446eb9ec9",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/d0cbbbd4c04536877bea0980a8ef73a446eb9ec9",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/d0cbbbd4c04536877bea0980a8ef73a446eb9ec9/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "8784185b2cdca0e98f6bd60f1839db7099c123f3",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/8784185b2cdca0e98f6bd60f1839db7099c123f3",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/8784185b2cdca0e98f6bd60f1839db7099c123f3"
+      }
+    ]
+  },
+  {
+    "sha": "8784185b2cdca0e98f6bd60f1839db7099c123f3",
+    "node_id": "C_kwDOQclzzNoAKDg3ODQxODViMmNkY2EwZTk4ZjZiZDYwZjE4MzlkYjcwOTljMTIzZjM",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:36:43Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:36:43Z"
+      },
+      "message": "fix bugs",
+      "tree": {
+        "sha": "c616a2587b07167b71fcc6ee02e8397c211b01d1",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/c616a2587b07167b71fcc6ee02e8397c211b01d1"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/8784185b2cdca0e98f6bd60f1839db7099c123f3",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/8784185b2cdca0e98f6bd60f1839db7099c123f3",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/8784185b2cdca0e98f6bd60f1839db7099c123f3",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/8784185b2cdca0e98f6bd60f1839db7099c123f3/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "fbb29f9b1bf86d7333581dd80d112f981f845e6c",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/fbb29f9b1bf86d7333581dd80d112f981f845e6c",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/fbb29f9b1bf86d7333581dd80d112f981f845e6c"
+      }
+    ]
+  },
+  {
+    "sha": "fbb29f9b1bf86d7333581dd80d112f981f845e6c",
+    "node_id": "C_kwDOQclzzNoAKGZiYjI5ZjliMWJmODZkNzMzMzU4MWRkODBkMTEyZjk4MWY4NDVlNmM",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:35:40Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:35:40Z"
+      },
+      "message": "fix bugs",
+      "tree": {
+        "sha": "dfdfacf77a8dd875019cb8daf4018734808ddd43",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/dfdfacf77a8dd875019cb8daf4018734808ddd43"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/fbb29f9b1bf86d7333581dd80d112f981f845e6c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/fbb29f9b1bf86d7333581dd80d112f981f845e6c",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/fbb29f9b1bf86d7333581dd80d112f981f845e6c",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/fbb29f9b1bf86d7333581dd80d112f981f845e6c/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "2914a0b644215035d64656061871ff4e8edfa812",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/2914a0b644215035d64656061871ff4e8edfa812",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/2914a0b644215035d64656061871ff4e8edfa812"
+      }
+    ]
+  },
+  {
+    "sha": "2914a0b644215035d64656061871ff4e8edfa812",
+    "node_id": "C_kwDOQclzzNoAKDI5MTRhMGI2NDQyMTUwMzVkNjQ2NTYwNjE4NzFmZjRlOGVkZmE4MTI",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:34:17Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:34:17Z"
+      },
+      "message": "fix bugs",
+      "tree": {
+        "sha": "1c3084c7d7fab98524755d86211d7b9cc85f6059",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/1c3084c7d7fab98524755d86211d7b9cc85f6059"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/2914a0b644215035d64656061871ff4e8edfa812",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/2914a0b644215035d64656061871ff4e8edfa812",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/2914a0b644215035d64656061871ff4e8edfa812",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/2914a0b644215035d64656061871ff4e8edfa812/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "ef416febcc03e94ce84a4248d50edf2b8e717a73",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/ef416febcc03e94ce84a4248d50edf2b8e717a73",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/ef416febcc03e94ce84a4248d50edf2b8e717a73"
+      }
+    ]
+  },
+  {
+    "sha": "ef416febcc03e94ce84a4248d50edf2b8e717a73",
+    "node_id": "C_kwDOQclzzNoAKGVmNDE2ZmViY2MwM2U5NGNlODRhNDI0OGQ1MGVkZjJiOGU3MTdhNzM",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:32:09Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:32:09Z"
+      },
+      "message": "fix bugs",
+      "tree": {
+        "sha": "64a75d988d06ccd8590db5636aaf214ccbe50ae5",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/64a75d988d06ccd8590db5636aaf214ccbe50ae5"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/ef416febcc03e94ce84a4248d50edf2b8e717a73",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/ef416febcc03e94ce84a4248d50edf2b8e717a73",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/ef416febcc03e94ce84a4248d50edf2b8e717a73",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/ef416febcc03e94ce84a4248d50edf2b8e717a73/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "ec7b3fccd90e363863e3c3e62dbdccdfa7ebf384",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/ec7b3fccd90e363863e3c3e62dbdccdfa7ebf384",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/ec7b3fccd90e363863e3c3e62dbdccdfa7ebf384"
+      }
+    ]
+  },
+  {
+    "sha": "ec7b3fccd90e363863e3c3e62dbdccdfa7ebf384",
+    "node_id": "C_kwDOQclzzNoAKGVjN2IzZmNjZDkwZTM2Mzg2M2UzYzNlNjJkYmRjY2RmYTdlYmYzODQ",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:30:36Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:30:36Z"
+      },
+      "message": "fix bugs",
+      "tree": {
+        "sha": "e1a2db3de1e2662c550e6bc4e3e91fb3b3e44d9c",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/e1a2db3de1e2662c550e6bc4e3e91fb3b3e44d9c"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/ec7b3fccd90e363863e3c3e62dbdccdfa7ebf384",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/ec7b3fccd90e363863e3c3e62dbdccdfa7ebf384",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/ec7b3fccd90e363863e3c3e62dbdccdfa7ebf384",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/ec7b3fccd90e363863e3c3e62dbdccdfa7ebf384/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "88a648708967a6e89fe8b6a59943db87bdfaf350",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/88a648708967a6e89fe8b6a59943db87bdfaf350",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/88a648708967a6e89fe8b6a59943db87bdfaf350"
+      }
+    ]
+  },
+  {
+    "sha": "88a648708967a6e89fe8b6a59943db87bdfaf350",
+    "node_id": "C_kwDOQclzzNoAKDg4YTY0ODcwODk2N2E2ZTg5ZmU4YjZhNTk5NDNkYjg3YmRmYWYzNTA",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:25:34Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T05:25:34Z"
+      },
+      "message": "fix bugs",
+      "tree": {
+        "sha": "9f8bde0439eab560b3f2a115478322c499164fa1",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/9f8bde0439eab560b3f2a115478322c499164fa1"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/88a648708967a6e89fe8b6a59943db87bdfaf350",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/88a648708967a6e89fe8b6a59943db87bdfaf350",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/88a648708967a6e89fe8b6a59943db87bdfaf350",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/88a648708967a6e89fe8b6a59943db87bdfaf350/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "456241f3b45c24492c7809bd6a84f3cfc1c2f921",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/456241f3b45c24492c7809bd6a84f3cfc1c2f921",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/456241f3b45c24492c7809bd6a84f3cfc1c2f921"
+      }
+    ]
+  },
+  {
+    "sha": "456241f3b45c24492c7809bd6a84f3cfc1c2f921",
+    "node_id": "C_kwDOQclzzNoAKDQ1NjI0MWYzYjQ1YzI0NDkyYzc4MDliZDZhODRmM2NmYzFjMmY5MjE",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T03:40:03Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T03:40:03Z"
+      },
+      "message": "update",
+      "tree": {
+        "sha": "61eae60c7b19a4ce9564d70922e92bebc69de7ea",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/61eae60c7b19a4ce9564d70922e92bebc69de7ea"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/456241f3b45c24492c7809bd6a84f3cfc1c2f921",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/456241f3b45c24492c7809bd6a84f3cfc1c2f921",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/456241f3b45c24492c7809bd6a84f3cfc1c2f921",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/456241f3b45c24492c7809bd6a84f3cfc1c2f921/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "ae11af8dd503cf85013a7d0c84f3a1aa2ef57756",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/ae11af8dd503cf85013a7d0c84f3a1aa2ef57756",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/ae11af8dd503cf85013a7d0c84f3a1aa2ef57756"
+      }
+    ]
+  },
+  {
+    "sha": "ae11af8dd503cf85013a7d0c84f3a1aa2ef57756",
+    "node_id": "C_kwDOQclzzNoAKGFlMTFhZjhkZDUwM2NmODUwMTNhN2QwYzg0ZjNhMWFhMmVmNTc3NTY",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T03:31:40Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T03:31:40Z"
+      },
+      "message": "update",
+      "tree": {
+        "sha": "3c8ba8a690c4813d04a3a85d4201bcbc9ef33d59",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/3c8ba8a690c4813d04a3a85d4201bcbc9ef33d59"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/ae11af8dd503cf85013a7d0c84f3a1aa2ef57756",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/ae11af8dd503cf85013a7d0c84f3a1aa2ef57756",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/ae11af8dd503cf85013a7d0c84f3a1aa2ef57756",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/ae11af8dd503cf85013a7d0c84f3a1aa2ef57756/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "322785eecb752520edd04530eb64189de5ede17d",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/322785eecb752520edd04530eb64189de5ede17d",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/322785eecb752520edd04530eb64189de5ede17d"
+      }
+    ]
+  },
+  {
+    "sha": "322785eecb752520edd04530eb64189de5ede17d",
+    "node_id": "C_kwDOQclzzNoAKDMyMjc4NWVlY2I3NTI1MjBlZGQwNDUzMGViNjQxODlkZTVlZGUxN2Q",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T03:18:43Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T03:18:43Z"
+      },
+      "message": "update",
+      "tree": {
+        "sha": "8697d5657a08034c9b4b8661357dc6b0c211593a",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/8697d5657a08034c9b4b8661357dc6b0c211593a"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/322785eecb752520edd04530eb64189de5ede17d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/322785eecb752520edd04530eb64189de5ede17d",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/322785eecb752520edd04530eb64189de5ede17d",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/322785eecb752520edd04530eb64189de5ede17d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "22f165da9700e83dddf442b6e38c53bac5da5c6a",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/22f165da9700e83dddf442b6e38c53bac5da5c6a",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/22f165da9700e83dddf442b6e38c53bac5da5c6a"
+      }
+    ]
+  },
+  {
+    "sha": "22f165da9700e83dddf442b6e38c53bac5da5c6a",
+    "node_id": "C_kwDOQclzzNoAKDIyZjE2NWRhOTcwMGU4M2RkZGY0NDJiNmUzOGM1M2JhYzVkYTVjNmE",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T02:31:02Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T02:31:02Z"
+      },
+      "message": "update",
+      "tree": {
+        "sha": "f9ea0b96fe612aa455d63633b6d59fc851246a35",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/f9ea0b96fe612aa455d63633b6d59fc851246a35"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/22f165da9700e83dddf442b6e38c53bac5da5c6a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/22f165da9700e83dddf442b6e38c53bac5da5c6a",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/22f165da9700e83dddf442b6e38c53bac5da5c6a",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/22f165da9700e83dddf442b6e38c53bac5da5c6a/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "5bd0c1a416600fe359d2e3324cbfbf479d6d9cc4",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/5bd0c1a416600fe359d2e3324cbfbf479d6d9cc4",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/5bd0c1a416600fe359d2e3324cbfbf479d6d9cc4"
+      }
+    ]
+  },
+  {
+    "sha": "5bd0c1a416600fe359d2e3324cbfbf479d6d9cc4",
+    "node_id": "C_kwDOQclzzNoAKDViZDBjMWE0MTY2MDBmZTM1OWQyZTMzMjRjYmZiZjQ3OWQ2ZDljYzQ",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T02:27:18Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T02:27:18Z"
+      },
+      "message": "update",
+      "tree": {
+        "sha": "22a4eb85cb4e935b33ac6d23f5514a34d1155e4e",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/22a4eb85cb4e935b33ac6d23f5514a34d1155e4e"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/5bd0c1a416600fe359d2e3324cbfbf479d6d9cc4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/5bd0c1a416600fe359d2e3324cbfbf479d6d9cc4",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/5bd0c1a416600fe359d2e3324cbfbf479d6d9cc4",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/5bd0c1a416600fe359d2e3324cbfbf479d6d9cc4/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "9ce4f179b91add9111c2428d99c0573273e21c63",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/9ce4f179b91add9111c2428d99c0573273e21c63",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/9ce4f179b91add9111c2428d99c0573273e21c63"
+      }
+    ]
+  },
+  {
+    "sha": "9ce4f179b91add9111c2428d99c0573273e21c63",
+    "node_id": "C_kwDOQclzzNoAKDljZTRmMTc5YjkxYWRkOTExMWMyNDI4ZDk5YzA1NzMyNzNlMjFjNjM",
+    "commit": {
+      "author": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T02:23:57Z"
+      },
+      "committer": {
+        "name": "daijiang",
+        "email": "daijiang@hopechart.com",
+        "date": "2025-11-27T02:23:57Z"
+      },
+      "message": "update",
+      "tree": {
+        "sha": "69915295b90cb4aa47351560db98954e9042fdd9",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/git/trees/69915295b90cb4aa47351560db98954e9042fdd9"
+      },
+      "url": "https://api.github.com/repos/apegeek/schema-pilot/git/commits/9ce4f179b91add9111c2428d99c0573273e21c63",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/9ce4f179b91add9111c2428d99c0573273e21c63",
+    "html_url": "https://github.com/apegeek/schema-pilot/commit/9ce4f179b91add9111c2428d99c0573273e21c63",
+    "comments_url": "https://api.github.com/repos/apegeek/schema-pilot/commits/9ce4f179b91add9111c2428d99c0573273e21c63/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "cf19c81efa7ea6e0cec876d1ef81a82f46241216",
+        "url": "https://api.github.com/repos/apegeek/schema-pilot/commits/cf19c81efa7ea6e0cec876d1ef81a82f46241216",
+        "html_url": "https://github.com/apegeek/schema-pilot/commit/cf19c81efa7ea6e0cec876d1ef81a82f46241216"
+      }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-07T10:31:47.539676+00:00",
+  "request": {
+    "databaseId": 1000069,
+    "taskType": "ASYNC",
+    "executionStrategy": "MANUAL",
+    "description": "app=odc-adoption-poc; release=20261007-D-failure; ref=retention",
+    "parameters": {
+      "sqlContent": "SELECT ID FROM P7_RETENTION_MISSING_TABLE;\n",
+      "timeoutMillis": 120000,
+      "errorStrategy": "ABORT",
+      "generateRollbackPlan": false,
+      "queryLimit": 100,
+      "delimiter": ";",
+      "retryTimes": 0,
+      "markAsFailedWhenAnyErrorsHappened": true
+    }
+  },
+  "response": {
+    "contents": [
+      {
+        "affectedRows": null,
+        "approvable": false,
+        "completeTime": null,
+        "createTime": null,
+        "creator": null,
+        "database": null,
+        "description": null,
+        "executionStrategy": null,
+        "executionTime": null,
+        "id": 2000007,
+        "nodeList": null,
+        "parameters": null,
+        "progressPercentage": 0.0,
+        "project": null,
+        "projectId": null,
+        "status": null,
+        "type": "ASYNC"
+      }
+    ]
+  }
+}

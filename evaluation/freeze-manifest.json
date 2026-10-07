@@ -1,0 +1,18 @@
+{
+  "revision": "oracle-common-v1",
+  "research_revision": "round-2",
+  "frozen_at": "2026-10-04T13:51:51.943967+00:00",
+  "execution_status": "NOT_RUN",
+  "previous_snapshot": "history/t00-t04/freeze-manifest.json",
+  "files": {
+    "context.md": "57e6e0762d164042466b5df0a1b9b6b3418d4f1eeb519d917559b5e070e98513",
+    "criteria.csv": "195a75bc6b19f8c61629249c27cbe1bbe799b16439552ea9077418a89053cd5c",
+    "candidates.csv": "ae982db4fb231b5274ba84c11330d6c355840ba8494e1bba1589f73569c37b72",
+    "feature-matrix.csv": "f04787c51aa319a5572ecd598f77221bc23b4d2bebbdedcd885b204a28d08943",
+    "shortlist.md": "06c385fb94339d819acc1fafd5de1ff4de91eb806a8bb17209bd1711668b93a9",
+    "benchmark-spec.md": "2e18eba717fc889cf2cca1cac8c9f37bea0505746e6c5f64f447b31bd72f9754",
+    "benchmark-config.json": "6e8c5a19933ab08d14decd157a31dfe01cc96ba75c730a6c8227d9fef5c5227b",
+    "workloads/manifest.json": "e4bc34d32e35ee6ab9016014eafe86d1c617553def99d82235ec875d782bae05",
+    "report.md": "5ccf7e726aa9b3c879b4ed35865739ca818f0ef4172c494e2278a61a5d722ad9"
+  }
+}

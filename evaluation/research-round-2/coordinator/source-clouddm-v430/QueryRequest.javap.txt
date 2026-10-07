@@ -1,0 +1,519 @@
+Compiled from "QueryRequest.java"
+public class com.clougence.clouddm.sdk.execute.session.QueryRequest implements java.lang.Cloneable {
+  private long index;
+
+  private java.lang.String batchId;
+
+  private java.lang.String queryId;
+
+  private java.lang.String queryBody;
+
+  private java.util.List<com.clougence.clouddm.sdk.execute.session.QueryArg> queryArgs;
+
+  private int bodyStartCodeLine;
+
+  private java.util.Set<com.clougence.clouddm.sdk.sql.parser.SplitQueryType> queryTypes;
+
+  private java.lang.Long dsId;
+
+  private com.clougence.clouddm.base.metadata.ds.DataSourceType dsType;
+
+  private java.util.List<com.clougence.clouddm.sdk.sql.analysis.behavior.BehaviorRelation> relations;
+
+  private com.clougence.clouddm.sdk.service.secrules.Requester requester;
+
+  private java.util.Date requestTime;
+
+  private boolean usingValueProcess;
+
+  private java.util.Map<java.lang.String, com.clougence.clouddm.sdk.execute.session.result.ColumnConfig> columnList;
+
+  private boolean useCallable;
+
+  private boolean useExplain;
+
+  private boolean useCompile;
+
+  private boolean hasRewrite;
+
+  private java.util.List<java.lang.String> rewriteTag;
+
+  private java.lang.String originalBody;
+
+  private com.clougence.clouddm.sdk.execute.session.QueryResultConf resultConf;
+
+  public com.clougence.clouddm.sdk.execute.session.QueryRequest();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_0
+       6: putfield      #7                  // Field useCallable:Z
+       9: aload_0
+      10: iconst_0
+      11: putfield      #13                 // Field useExplain:Z
+      14: aload_0
+      15: iconst_0
+      16: putfield      #16                 // Field useCompile:Z
+      19: aload_0
+      20: iconst_0
+      21: putfield      #19                 // Field hasRewrite:Z
+      24: return
+
+  public com.clougence.clouddm.sdk.execute.session.QueryRequest clone();
+    Code:
+       0: new           #8                  // class com/clougence/clouddm/sdk/execute/session/QueryRequest
+       3: dup
+       4: invokespecial #22                 // Method "<init>":()V
+       7: astore_1
+       8: aload_1
+       9: aload_0
+      10: getfield      #23                 // Field index:J
+      13: putfield      #23                 // Field index:J
+      16: aload_1
+      17: aload_0
+      18: getfield      #27                 // Field batchId:Ljava/lang/String;
+      21: putfield      #27                 // Field batchId:Ljava/lang/String;
+      24: aload_1
+      25: aload_0
+      26: getfield      #31                 // Field queryId:Ljava/lang/String;
+      29: putfield      #31                 // Field queryId:Ljava/lang/String;
+      32: aload_1
+      33: aload_0
+      34: getfield      #34                 // Field queryBody:Ljava/lang/String;
+      37: putfield      #34                 // Field queryBody:Ljava/lang/String;
+      40: aload_1
+      41: aload_0
+      42: getfield      #37                 // Field bodyStartCodeLine:I
+      45: putfield      #37                 // Field bodyStartCodeLine:I
+      48: aload_0
+      49: getfield      #41                 // Field queryArgs:Ljava/util/List;
+      52: ifnull        89
+      55: aload_1
+      56: aload_0
+      57: getfield      #41                 // Field queryArgs:Ljava/util/List;
+      60: invokeinterface #45,  1           // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+      65: invokedynamic #51,  0             // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+      70: invokeinterface #55,  2           // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+      75: invokestatic  #61                 // Method java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
+      78: invokeinterface #67,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+      83: checkcast     #46                 // class java/util/List
+      86: putfield      #41                 // Field queryArgs:Ljava/util/List;
+      89: aload_0
+      90: getfield      #71                 // Field queryTypes:Ljava/util/Set;
+      93: ifnull        111
+      96: aload_1
+      97: new           #75                 // class java/util/LinkedHashSet
+     100: dup
+     101: aload_0
+     102: getfield      #71                 // Field queryTypes:Ljava/util/Set;
+     105: invokespecial #77                 // Method java/util/LinkedHashSet."<init>":(Ljava/util/Collection;)V
+     108: putfield      #71                 // Field queryTypes:Ljava/util/Set;
+     111: aload_0
+     112: getfield      #80                 // Field relations:Ljava/util/List;
+     115: ifnull        129
+     118: aload_1
+     119: aload_0
+     120: getfield      #80                 // Field relations:Ljava/util/List;
+     123: invokestatic  #83                 // InterfaceMethod java/util/List.copyOf:(Ljava/util/Collection;)Ljava/util/List;
+     126: putfield      #80                 // Field relations:Ljava/util/List;
+     129: aload_1
+     130: aload_0
+     131: getfield      #87                 // Field dsId:Ljava/lang/Long;
+     134: putfield      #87                 // Field dsId:Ljava/lang/Long;
+     137: aload_1
+     138: aload_0
+     139: getfield      #91                 // Field dsType:Lcom/clougence/clouddm/base/metadata/ds/DataSourceType;
+     142: putfield      #91                 // Field dsType:Lcom/clougence/clouddm/base/metadata/ds/DataSourceType;
+     145: aload_1
+     146: aload_0
+     147: getfield      #95                 // Field requester:Lcom/clougence/clouddm/sdk/service/secrules/Requester;
+     150: putfield      #95                 // Field requester:Lcom/clougence/clouddm/sdk/service/secrules/Requester;
+     153: aload_1
+     154: aload_0
+     155: getfield      #99                 // Field requestTime:Ljava/util/Date;
+     158: putfield      #99                 // Field requestTime:Ljava/util/Date;
+     161: aload_1
+     162: aload_0
+     163: getfield      #103                // Field usingValueProcess:Z
+     166: putfield      #103                // Field usingValueProcess:Z
+     169: aload_0
+     170: getfield      #106                // Field columnList:Ljava/util/Map;
+     173: ifnull        191
+     176: aload_1
+     177: new           #110                // class java/util/LinkedHashMap
+     180: dup
+     181: aload_0
+     182: getfield      #106                // Field columnList:Ljava/util/Map;
+     185: invokespecial #112                // Method java/util/LinkedHashMap."<init>":(Ljava/util/Map;)V
+     188: putfield      #106                // Field columnList:Ljava/util/Map;
+     191: aload_1
+     192: aload_0
+     193: getfield      #7                  // Field useCallable:Z
+     196: putfield      #7                  // Field useCallable:Z
+     199: aload_1
+     200: aload_0
+     201: getfield      #13                 // Field useExplain:Z
+     204: putfield      #13                 // Field useExplain:Z
+     207: aload_1
+     208: aload_0
+     209: getfield      #16                 // Field useCompile:Z
+     212: putfield      #16                 // Field useCompile:Z
+     215: aload_1
+     216: aload_0
+     217: getfield      #19                 // Field hasRewrite:Z
+     220: putfield      #19                 // Field hasRewrite:Z
+     223: aload_0
+     224: getfield      #115                // Field rewriteTag:Ljava/util/List;
+     227: ifnull        245
+     230: aload_1
+     231: new           #118                // class java/util/ArrayList
+     234: dup
+     235: aload_0
+     236: getfield      #115                // Field rewriteTag:Ljava/util/List;
+     239: invokespecial #120                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     242: putfield      #115                // Field rewriteTag:Ljava/util/List;
+     245: aload_1
+     246: aload_0
+     247: getfield      #121                // Field originalBody:Ljava/lang/String;
+     250: putfield      #121                // Field originalBody:Ljava/lang/String;
+     253: aload_1
+     254: aload_0
+     255: getfield      #124                // Field resultConf:Lcom/clougence/clouddm/sdk/execute/session/QueryResultConf;
+     258: ifnonnull     265
+     261: aconst_null
+     262: goto          272
+     265: aload_0
+     266: getfield      #124                // Field resultConf:Lcom/clougence/clouddm/sdk/execute/session/QueryResultConf;
+     269: invokevirtual #128                // Method com/clougence/clouddm/sdk/execute/session/QueryResultConf.clone:()Lcom/clougence/clouddm/sdk/execute/session/QueryResultConf;
+     272: putfield      #124                // Field resultConf:Lcom/clougence/clouddm/sdk/execute/session/QueryResultConf;
+     275: aload_1
+     276: areturn
+
+  public boolean hasQueryType(com.clougence.clouddm.sdk.sql.parser.SplitQueryType);
+    Code:
+       0: aload_0
+       1: getfield      #71                 // Field queryTypes:Ljava/util/Set;
+       4: ifnull        24
+       7: aload_0
+       8: getfield      #71                 // Field queryTypes:Ljava/util/Set;
+      11: aload_1
+      12: invokeinterface #134,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+      17: ifeq          24
+      20: iconst_1
+      21: goto          25
+      24: iconst_0
+      25: ireturn
+
+  public void addRewriteTag(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #115                // Field rewriteTag:Ljava/util/List;
+       4: ifnull        21
+       7: aload_0
+       8: getfield      #115                // Field rewriteTag:Ljava/util/List;
+      11: aload_1
+      12: invokeinterface #140,  2          // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+      17: ifeq          21
+      20: return
+      21: aload_0
+      22: getfield      #115                // Field rewriteTag:Ljava/util/List;
+      25: ifnonnull     38
+      28: new           #118                // class java/util/ArrayList
+      31: dup
+      32: invokespecial #141                // Method java/util/ArrayList."<init>":()V
+      35: goto          49
+      38: new           #118                // class java/util/ArrayList
+      41: dup
+      42: aload_0
+      43: getfield      #115                // Field rewriteTag:Ljava/util/List;
+      46: invokespecial #120                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+      49: astore_2
+      50: aload_2
+      51: aload_1
+      52: invokeinterface #142,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      57: pop
+      58: aload_0
+      59: aload_2
+      60: putfield      #115                // Field rewriteTag:Ljava/util/List;
+      63: return
+
+  public long getIndex();
+    Code:
+       0: aload_0
+       1: getfield      #23                 // Field index:J
+       4: lreturn
+
+  public java.lang.String getBatchId();
+    Code:
+       0: aload_0
+       1: getfield      #27                 // Field batchId:Ljava/lang/String;
+       4: areturn
+
+  public java.lang.String getQueryId();
+    Code:
+       0: aload_0
+       1: getfield      #31                 // Field queryId:Ljava/lang/String;
+       4: areturn
+
+  public java.lang.String getQueryBody();
+    Code:
+       0: aload_0
+       1: getfield      #34                 // Field queryBody:Ljava/lang/String;
+       4: areturn
+
+  public java.util.List<com.clougence.clouddm.sdk.execute.session.QueryArg> getQueryArgs();
+    Code:
+       0: aload_0
+       1: getfield      #41                 // Field queryArgs:Ljava/util/List;
+       4: areturn
+
+  public int getBodyStartCodeLine();
+    Code:
+       0: aload_0
+       1: getfield      #37                 // Field bodyStartCodeLine:I
+       4: ireturn
+
+  public java.util.Set<com.clougence.clouddm.sdk.sql.parser.SplitQueryType> getQueryTypes();
+    Code:
+       0: aload_0
+       1: getfield      #71                 // Field queryTypes:Ljava/util/Set;
+       4: areturn
+
+  public java.lang.Long getDsId();
+    Code:
+       0: aload_0
+       1: getfield      #87                 // Field dsId:Ljava/lang/Long;
+       4: areturn
+
+  public com.clougence.clouddm.base.metadata.ds.DataSourceType getDsType();
+    Code:
+       0: aload_0
+       1: getfield      #91                 // Field dsType:Lcom/clougence/clouddm/base/metadata/ds/DataSourceType;
+       4: areturn
+
+  public java.util.List<com.clougence.clouddm.sdk.sql.analysis.behavior.BehaviorRelation> getRelations();
+    Code:
+       0: aload_0
+       1: getfield      #80                 // Field relations:Ljava/util/List;
+       4: areturn
+
+  public com.clougence.clouddm.sdk.service.secrules.Requester getRequester();
+    Code:
+       0: aload_0
+       1: getfield      #95                 // Field requester:Lcom/clougence/clouddm/sdk/service/secrules/Requester;
+       4: areturn
+
+  public java.util.Date getRequestTime();
+    Code:
+       0: aload_0
+       1: getfield      #99                 // Field requestTime:Ljava/util/Date;
+       4: areturn
+
+  public boolean isUsingValueProcess();
+    Code:
+       0: aload_0
+       1: getfield      #103                // Field usingValueProcess:Z
+       4: ireturn
+
+  public java.util.Map<java.lang.String, com.clougence.clouddm.sdk.execute.session.result.ColumnConfig> getColumnList();
+    Code:
+       0: aload_0
+       1: getfield      #106                // Field columnList:Ljava/util/Map;
+       4: areturn
+
+  public boolean isUseCallable();
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field useCallable:Z
+       4: ireturn
+
+  public boolean isUseExplain();
+    Code:
+       0: aload_0
+       1: getfield      #13                 // Field useExplain:Z
+       4: ireturn
+
+  public boolean isUseCompile();
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field useCompile:Z
+       4: ireturn
+
+  public boolean isHasRewrite();
+    Code:
+       0: aload_0
+       1: getfield      #19                 // Field hasRewrite:Z
+       4: ireturn
+
+  public java.util.List<java.lang.String> getRewriteTag();
+    Code:
+       0: aload_0
+       1: getfield      #115                // Field rewriteTag:Ljava/util/List;
+       4: areturn
+
+  public java.lang.String getOriginalBody();
+    Code:
+       0: aload_0
+       1: getfield      #121                // Field originalBody:Ljava/lang/String;
+       4: areturn
+
+  public com.clougence.clouddm.sdk.execute.session.QueryResultConf getResultConf();
+    Code:
+       0: aload_0
+       1: getfield      #124                // Field resultConf:Lcom/clougence/clouddm/sdk/execute/session/QueryResultConf;
+       4: areturn
+
+  public void setIndex(long);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: putfield      #23                 // Field index:J
+       5: return
+
+  public void setBatchId(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #27                 // Field batchId:Ljava/lang/String;
+       5: return
+
+  public void setQueryId(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #31                 // Field queryId:Ljava/lang/String;
+       5: return
+
+  public void setQueryBody(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #34                 // Field queryBody:Ljava/lang/String;
+       5: return
+
+  public void setQueryArgs(java.util.List<com.clougence.clouddm.sdk.execute.session.QueryArg>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #41                 // Field queryArgs:Ljava/util/List;
+       5: return
+
+  public void setBodyStartCodeLine(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #37                 // Field bodyStartCodeLine:I
+       5: return
+
+  public void setQueryTypes(java.util.Set<com.clougence.clouddm.sdk.sql.parser.SplitQueryType>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #71                 // Field queryTypes:Ljava/util/Set;
+       5: return
+
+  public void setDsId(java.lang.Long);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #87                 // Field dsId:Ljava/lang/Long;
+       5: return
+
+  public void setDsType(com.clougence.clouddm.base.metadata.ds.DataSourceType);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #91                 // Field dsType:Lcom/clougence/clouddm/base/metadata/ds/DataSourceType;
+       5: return
+
+  public void setRelations(java.util.List<com.clougence.clouddm.sdk.sql.analysis.behavior.BehaviorRelation>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #80                 // Field relations:Ljava/util/List;
+       5: return
+
+  public void setRequester(com.clougence.clouddm.sdk.service.secrules.Requester);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #95                 // Field requester:Lcom/clougence/clouddm/sdk/service/secrules/Requester;
+       5: return
+
+  public void setRequestTime(java.util.Date);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #99                 // Field requestTime:Ljava/util/Date;
+       5: return
+
+  public void setUsingValueProcess(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #103                // Field usingValueProcess:Z
+       5: return
+
+  public void setColumnList(java.util.Map<java.lang.String, com.clougence.clouddm.sdk.execute.session.result.ColumnConfig>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #106                // Field columnList:Ljava/util/Map;
+       5: return
+
+  public void setUseCallable(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #7                  // Field useCallable:Z
+       5: return
+
+  public void setUseExplain(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #13                 // Field useExplain:Z
+       5: return
+
+  public void setUseCompile(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #16                 // Field useCompile:Z
+       5: return
+
+  public void setHasRewrite(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #19                 // Field hasRewrite:Z
+       5: return
+
+  public void setRewriteTag(java.util.List<java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #115                // Field rewriteTag:Ljava/util/List;
+       5: return
+
+  public void setOriginalBody(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #121                // Field originalBody:Ljava/lang/String;
+       5: return
+
+  public void setResultConf(com.clougence.clouddm.sdk.execute.session.QueryResultConf);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #124                // Field resultConf:Lcom/clougence/clouddm/sdk/execute/session/QueryResultConf;
+       5: return
+
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+    Code:
+       0: aload_0
+       1: invokevirtual #145                // Method clone:()Lcom/clougence/clouddm/sdk/execute/session/QueryRequest;
+       4: areturn
+}

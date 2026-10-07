@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scope": "LOCAL_ONLY; synthetic identities; no Oracle connection or authenticated Jenkins approval",
+  "freeze_exit": 0,
+  "review_exit": 0,
+  "approve_exit": 0,
+  "execute_exit": 2,
+  "execution_rejected_before_oracle": true,
+  "reason": "Oracle FUTC driver exception unapproved",
+  "report_status": "APPROVED (local policy fixture only)",
+  "verification_status": "NOT_RUN"
+}

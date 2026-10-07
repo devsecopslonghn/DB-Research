@@ -1,0 +1,20 @@
+{
+  "targets": {
+    "oracle-lab": {
+      "enabled": false,
+      "database_identity": {"db_name": "UNCONFIRMED", "db_unique_name": "UNCONFIRMED", "con_name": "UNCONFIRMED"},
+      "service_or_pdb": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com / PDB UNCONFIRMED",
+      "schema": "OSS_POC_WRITER",
+      "host": "adb.ap-mumbai-1.oraclecloud.com",
+      "port": 1521,
+      "service_name": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+      "oracle_version": "UNCONFIRMED",
+      "writer_user": "OSS_POC_WRITER",
+      "observer_user": "OSS_POC_OBSERVER",
+      "writer_secret_env": "OSS_POC_WRITER_PASSWORD",
+      "observer_secret_env": "OSS_POC_OBSERVER_PASSWORD",
+      "tls": true,
+      "history_table": "oss_poc_history"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-10-07T17:11:59.343977+00:00",
+  "phase": "after ordinary replacement, before rollback",
+  "downloads": [
+    {
+      "ticket_id": 2000013,
+      "artifact": "attachment",
+      "http_status": 200,
+      "bytes": 796,
+      "sha256": "12529738d626459c8118f1ace1f4c75423cf84ffa6ac4e76234278f2a3abfaa9",
+      "path": "evidence/odc-retention-experiment-20261007/downloads/ticket-2000013.zip"
+    },
+    {
+      "ticket_id": 2000013,
+      "artifact": "log_download",
+      "http_status": 200,
+      "bytes": 897,
+      "sha256": "f3aef103873c001c10dd9a40886581c295d8268a1d0c06579987cf87cca06738",
+      "path": "evidence/odc-retention-experiment-20261007/downloads/ticket-2000013.log"
+    },
+    {
+      "ticket_id": 2000014,
+      "artifact": "attachment",
+      "http_status": 200,
+      "bytes": 457,
+      "sha256": "02e9e52a19f4398608919319bdee7630d7da1fe442bb132765bccfaa64802548",
+      "path": "evidence/odc-retention-experiment-20261007/downloads/ticket-2000014.zip"
+    },
+    {
+      "ticket_id": 2000014,
+      "artifact": "log_download",
+      "http_status": 200,
+      "bytes": 1136,
+      "sha256": "94645b7cadbd33ef1882fa659881564ca3dca6d6fdabfef3eed863057b51e209",
+      "path": "evidence/odc-retention-experiment-20261007/downloads/ticket-2000014.log"
+    }
+  ]
+}

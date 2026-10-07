@@ -1,0 +1,413 @@
+{
+  "observed_at": "2026-10-04T01:10:12.046414+00:00",
+  "rule_id": 1,
+  "rule_scope": "ENVIRONMENT_NAME = POCPROD",
+  "flow_id": 1000023,
+  "artifact_sha256": "64fc9afc35183e99ed70895b1a53e478a7ec66cf69cb948377e18441e61d6209",
+  "sql": "CREATE TABLE POC_GOV_MANUAL (ID NUMBER PRIMARY KEY);",
+  "probes": [
+    {
+      "actor": "odc_poc_requester",
+      "operation": "approve",
+      "http_status": 404,
+      "successful": false,
+      "error_code": "NotFound"
+    },
+    {
+      "actor": "odc_poc_requester",
+      "operation": "tasks/execute",
+      "http_status": 404,
+      "successful": false,
+      "error_code": "NotFound"
+    },
+    {
+      "actor": "odc_poc_requester",
+      "phase": "after Owner and DBA approval",
+      "operation": "approve",
+      "http_status": 404,
+      "successful": false,
+      "error_code": "NotFound"
+    },
+    {
+      "actor": "odc_poc_requester",
+      "phase": "after Owner and DBA approval",
+      "operation": "tasks/execute",
+      "http_status": 200,
+      "successful": true,
+      "error_code": null
+    }
+  ],
+  "flow_initial": {
+    "id": 1000023,
+    "status": "PRE_CHECK_EXECUTING",
+    "createTime": 1791076208000,
+    "completeTime": 1791076209000,
+    "description": "POC manual OWNER DBA approval | local-job odc-ui-20261004",
+    "executionStrategy": "MANUAL",
+    "riskLevel": {
+      "approvalFlowConfig": null,
+      "approvalFlowConfigId": 4,
+      "description": "High Risk Level",
+      "id": 4,
+      "level": 3,
+      "name": "High Risk Level",
+      "organizationId": 1,
+      "style": "RED"
+    },
+    "affectedRows": null,
+    "progressPercentage": 0.0,
+    "creator": {
+      "id": 10000,
+      "accountName": "odc_poc_requester",
+      "name": "POC requester"
+    },
+    "project_id": 1,
+    "database_id": 1000218,
+    "nodes": [
+      {
+        "id": 1000111,
+        "type": null,
+        "status": "EXECUTING",
+        "name": null,
+        "startTime": null,
+        "completeTime": null,
+        "nodeType": "SERVICE_TASK"
+      }
+    ]
+  },
+  "after_approvals": {
+    "id": 1000023,
+    "status": "WAIT_FOR_EXECUTION",
+    "createTime": 1791076208000,
+    "completeTime": 1791076392000,
+    "description": "POC manual OWNER DBA approval | local-job odc-ui-20261004",
+    "executionStrategy": "MANUAL",
+    "riskLevel": {
+      "approvalFlowConfig": null,
+      "approvalFlowConfigId": 4,
+      "description": "High Risk Level",
+      "id": 4,
+      "level": 3,
+      "name": "High Risk Level",
+      "organizationId": 1,
+      "style": "RED"
+    },
+    "affectedRows": 0,
+    "progressPercentage": 0.0,
+    "creator": {
+      "id": 10000,
+      "accountName": "odc_poc_requester",
+      "name": "POC requester"
+    },
+    "project_id": 1,
+    "database_id": 1000218,
+    "nodes": [
+      {
+        "id": 1000111,
+        "type": null,
+        "status": "COMPLETED",
+        "name": null,
+        "startTime": null,
+        "completeTime": 1791076214000,
+        "nodeType": "SERVICE_TASK"
+      },
+      {
+        "id": 1000112,
+        "type": null,
+        "status": "COMPLETED",
+        "name": null,
+        "startTime": null,
+        "completeTime": 1791076373000,
+        "nodeType": "APPROVAL_TASK"
+      },
+      {
+        "id": 1000113,
+        "type": null,
+        "status": "COMPLETED",
+        "name": null,
+        "startTime": null,
+        "completeTime": 1791076392000,
+        "nodeType": "APPROVAL_TASK"
+      },
+      {
+        "id": 1000113,
+        "type": null,
+        "status": "PENDING",
+        "name": null,
+        "startTime": null,
+        "completeTime": null,
+        "nodeType": "SERVICE_TASK"
+      }
+    ]
+  },
+  "flow_final": {
+    "id": 1000023,
+    "status": "EXECUTION_SUCCEEDED",
+    "createTime": 1791076208000,
+    "completeTime": 1791076425000,
+    "description": "POC manual OWNER DBA approval | local-job odc-ui-20261004",
+    "executionStrategy": "MANUAL",
+    "riskLevel": {
+      "approvalFlowConfig": null,
+      "approvalFlowConfigId": 4,
+      "description": "High Risk Level",
+      "id": 4,
+      "level": 3,
+      "name": "High Risk Level",
+      "organizationId": 1,
+      "style": "RED"
+    },
+    "affectedRows": 0,
+    "progressPercentage": 100.0,
+    "creator": {
+      "id": 10000,
+      "accountName": "odc_poc_requester",
+      "name": "POC requester"
+    },
+    "project_id": 1,
+    "database_id": 1000218,
+    "nodes": [
+      {
+        "id": 1000111,
+        "type": null,
+        "status": "COMPLETED",
+        "name": null,
+        "startTime": null,
+        "completeTime": 1791076214000,
+        "nodeType": "SERVICE_TASK"
+      },
+      {
+        "id": 1000112,
+        "type": null,
+        "status": "COMPLETED",
+        "name": null,
+        "startTime": null,
+        "completeTime": 1791076373000,
+        "nodeType": "APPROVAL_TASK"
+      },
+      {
+        "id": 1000113,
+        "type": null,
+        "status": "COMPLETED",
+        "name": null,
+        "startTime": null,
+        "completeTime": 1791076392000,
+        "nodeType": "APPROVAL_TASK"
+      },
+      {
+        "id": 1000113,
+        "type": null,
+        "status": "COMPLETED",
+        "name": null,
+        "startTime": null,
+        "completeTime": 1791076425000,
+        "nodeType": "SERVICE_TASK"
+      }
+    ]
+  },
+  "node_actors": [
+    {
+      "nodeType": "SERVICE_TASK",
+      "taskType": "PRE_CHECK",
+      "status": "COMPLETED",
+      "autoApprove": null,
+      "operator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "createTime": 1791076208000,
+      "completeTime": 1791076214000
+    },
+    {
+      "nodeType": "APPROVAL_TASK",
+      "taskType": null,
+      "status": "COMPLETED",
+      "autoApprove": false,
+      "operator": {
+        "accountName": "odc_poc_approver",
+        "id": 10001,
+        "name": "POC approver",
+        "roleNames": []
+      },
+      "createTime": 1791076208000,
+      "completeTime": 1791076373000
+    },
+    {
+      "nodeType": "APPROVAL_TASK",
+      "taskType": null,
+      "status": "COMPLETED",
+      "autoApprove": false,
+      "operator": {
+        "accountName": "odc_poc_executor",
+        "id": 10002,
+        "name": "POC executor",
+        "roleNames": []
+      },
+      "createTime": 1791076208000,
+      "completeTime": 1791076392000
+    },
+    {
+      "nodeType": "SERVICE_TASK",
+      "taskType": "ASYNC",
+      "status": "COMPLETED",
+      "autoApprove": null,
+      "operator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "createTime": 1791076208000,
+      "completeTime": 1791076425000
+    }
+  ],
+  "api_approval_probe": {
+    "flow_id": 1000028,
+    "sql": "SELECT COUNT(*) AS TABLE_ROWS FROM POC_GOV_MANUAL;",
+    "artifact_sha256": "c2cedbc02566e916bb5a813ff0b326d4faa2f0a9da00440dd18766e0c051d0e7",
+    "probes": [
+      {
+        "phase": "APPROVING",
+        "actor": "odc_poc_requester",
+        "operation": "approve",
+        "http_status": 404,
+        "successful": false,
+        "error_code": "NotFound"
+      },
+      {
+        "phase": "APPROVING",
+        "actor": "odc_poc_requester",
+        "operation": "tasks/execute",
+        "http_status": 404,
+        "successful": false,
+        "error_code": "NotFound"
+      }
+    ],
+    "created_via": "API",
+    "flow_final": {
+      "id": 1000028,
+      "status": "EXECUTION_SUCCEEDED",
+      "createTime": 1791077553000,
+      "completeTime": 1791077569000,
+      "description": "POC API manual approval verification",
+      "executionStrategy": "MANUAL",
+      "riskLevel": {
+        "approvalFlowConfig": null,
+        "approvalFlowConfigId": 4,
+        "description": "High Risk Level",
+        "id": 4,
+        "level": 3,
+        "name": "High Risk Level",
+        "organizationId": 1,
+        "style": "RED"
+      },
+      "affectedRows": 0,
+      "progressPercentage": 100.0,
+      "creator": {
+        "id": 10000,
+        "accountName": "odc_poc_requester",
+        "name": "POC requester"
+      },
+      "project_id": 1,
+      "database_id": 1000218,
+      "nodes": [
+        {
+          "id": 1000136,
+          "type": null,
+          "status": "COMPLETED",
+          "name": null,
+          "startTime": null,
+          "completeTime": 1791077558000,
+          "nodeType": "SERVICE_TASK"
+        },
+        {
+          "id": 1000137,
+          "type": null,
+          "status": "COMPLETED",
+          "name": null,
+          "startTime": null,
+          "completeTime": 1791077559000,
+          "nodeType": "APPROVAL_TASK"
+        },
+        {
+          "id": 1000138,
+          "type": null,
+          "status": "COMPLETED",
+          "name": null,
+          "startTime": null,
+          "completeTime": 1791077560000,
+          "nodeType": "APPROVAL_TASK"
+        },
+        {
+          "id": 1000138,
+          "type": null,
+          "status": "COMPLETED",
+          "name": null,
+          "startTime": null,
+          "completeTime": 1791077569000,
+          "nodeType": "SERVICE_TASK"
+        }
+      ]
+    },
+    "node_actors": [
+      {
+        "nodeType": "SERVICE_TASK",
+        "taskType": "PRE_CHECK",
+        "status": "COMPLETED",
+        "operator": {
+          "accountName": "odc_poc_requester",
+          "id": 10000,
+          "name": "POC requester",
+          "roleNames": []
+        },
+        "autoApprove": null,
+        "createTime": 1791077553000,
+        "completeTime": 1791077558000
+      },
+      {
+        "nodeType": "APPROVAL_TASK",
+        "taskType": null,
+        "status": "COMPLETED",
+        "operator": {
+          "accountName": "odc_poc_approver",
+          "id": 10001,
+          "name": "POC approver",
+          "roleNames": []
+        },
+        "autoApprove": false,
+        "createTime": 1791077553000,
+        "completeTime": 1791077559000
+      },
+      {
+        "nodeType": "APPROVAL_TASK",
+        "taskType": null,
+        "status": "COMPLETED",
+        "operator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "autoApprove": false,
+        "createTime": 1791077553000,
+        "completeTime": 1791077560000
+      },
+      {
+        "nodeType": "SERVICE_TASK",
+        "taskType": "ASYNC",
+        "status": "COMPLETED",
+        "operator": {
+          "accountName": "odc_poc_requester",
+          "id": 10000,
+          "name": "POC requester",
+          "roleNames": []
+        },
+        "autoApprove": null,
+        "createTime": 1791077553000,
+        "completeTime": 1791077569000
+      }
+    ]
+  }
+}

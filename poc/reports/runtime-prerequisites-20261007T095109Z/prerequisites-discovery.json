@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-10-07T09:44:56.404772+00:00",
+  "scope": "Nonsecret prerequisite discovery only; no Oracle connection/write, Jenkins job update or borrowed product credentials",
+  "runtime_authorized": true,
+  "approved_target": "NOT_SUPPLIED",
+  "credential_references": "NOT_SUPPLIED",
+  "named_CI_actors": "NOT_SUPPLIED",
+  "approved_Git_source": "NOT_SUPPLIED",
+  "JDBC_exception": "AWAITING_USER_DECISION",
+  "engine": {
+    "version": "13.9.0",
+    "sha256": "971d79cfebe8d6caa38dae3676dadbf222d40767385f436b87293a4894d1475a",
+    "matches_retained_pin": true
+  },
+  "driver": {
+    "coordinate": "com.oracle.database.jdbc:ojdbc11:21.18.0.0",
+    "cached": true,
+    "sha256": "93cc999edf194a0a56bd7bb28e8df8e3ed4850a3db57280d03192619d6a068b7",
+    "license_names": [
+      "Oracle Free Use Terms and Conditions (FUTC)"
+    ],
+    "approved": false
+  },
+  "Jenkins": {
+    "current_context": "k8s-admin-public",
+    "namespace": "jenkins",
+    "pod": "jenkins-0",
+    "ready": true,
+    "authorization_strategy": "hudson.security.FullControlOnceLoggedInAuthorizationStrategy",
+    "realm": "hudson.security.HudsonPrivateSecurityRealm",
+    "controller_executors": 0,
+    "protected_pipeline_boundary": "NOT_ESTABLISHED; authenticated users receive full control",
+    "POC_job_found": false,
+    "job_configs_inspected_by_name": 24,
+    "agents": [
+      {
+        "name": "192.168.100.100",
+        "executors": 1,
+        "mode": "NORMAL",
+        "labels": "oracal ansible-playbook terraform ansible java17-codeql docker"
+      },
+      {
+        "name": "140.245.7.241",
+        "executors": 1,
+        "mode": "NORMAL",
+        "labels": "oracal ansible-playbook terraform ansible"
+      }
+    ],
+    "restricted_agent": "NOT_ESTABLISHED; neither configured agent has oracle-oss-poc label",
+    "kubernetes_agent_templates": [],
+    "job_reference_markers": [],
+    "authorization_primary_reference": "https://www.jenkins.io/doc/book/security/access-control/"
+  },
+  "remaining_execution_gates": [
+    "Approved isolated schema and separate writer/observer references; identity/grants/TLS and no prior unknown work",
+    "Explicit FUTC driver connectivity exception",
+    "Named independent requester/reviewer/executor and authorized recovery owner",
+    "Protected Jenkins definition and restricted persistent agent, credential binding, retention and backup",
+    "Approved Git source/commit for frozen fixtures"
+  ]
+}

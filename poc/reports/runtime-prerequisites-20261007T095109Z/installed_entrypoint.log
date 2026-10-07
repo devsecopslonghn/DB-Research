@@ -1,0 +1,11 @@
+usage: __main__.py [-h]
+                   {freeze,approve,execute,reconcile,close-hold,report,review,recover-orphans,probe}
+                   ...
+
+Trusted single-target POC runner; connection configuration is operator-owned.
+
+positional arguments:
+  {freeze,approve,execute,reconcile,close-hold,report,review,recover-orphans,probe}
+
+optional arguments:
+  -h, --help            show this help message and exit

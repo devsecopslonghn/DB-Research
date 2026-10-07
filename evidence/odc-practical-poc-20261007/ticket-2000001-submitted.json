@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-07T10:25:42.420247+00:00",
+  "request": {
+    "databaseId": 1000218,
+    "taskType": "ASYNC",
+    "executionStrategy": "MANUAL",
+    "description": "app=odc-adoption-poc; release=20261007-A1; ref=practical-poc-A1",
+    "parameters": {
+      "sqlContent": "CREATE TABLE P7_ROLE_JOURNEY (ID NUMBER PRIMARY KEY, NOTE VARCHAR2(60));\n",
+      "timeoutMillis": 120000,
+      "errorStrategy": "ABORT",
+      "generateRollbackPlan": false,
+      "queryLimit": 100,
+      "delimiter": ";",
+      "retryTimes": 0,
+      "markAsFailedWhenAnyErrorsHappened": true
+    }
+  },
+  "response": {
+    "contents": [
+      {
+        "affectedRows": null,
+        "approvable": false,
+        "completeTime": null,
+        "createTime": null,
+        "creator": null,
+        "database": null,
+        "description": null,
+        "executionStrategy": null,
+        "executionTime": null,
+        "id": 2000001,
+        "nodeList": null,
+        "parameters": null,
+        "progressPercentage": 0.0,
+        "project": null,
+        "projectId": null,
+        "status": null,
+        "type": "ASYNC"
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+// Install as a protected job on the existing Jenkins. Never load this from a PR.
+// The agent label, config files, identities and two credentials require operator setup.
+pipeline {
+    agent { label 'oracle-oss-poc' }
+    options { disableConcurrentBuilds(); skipDefaultCheckout(true); timestamps() }
+    parameters {
+        choice(name: 'TARGET_ID', choices: ['oracle-lab'], description: 'Reviewed single-target inventory')
+        string(name: 'RELEASE_ID', defaultValue: '', description: 'Permanent release identity')
+        string(name: 'MIGRATION_VERSION', defaultValue: '', description: 'Unique increasing numeric version')
+        string(name: 'SQL_PATH', defaultValue: 'poc/fixtures/T1_function.sql', description: 'SQL at the checked-out exact commit')
+        string(name: 'EXPECTED_PATH', defaultValue: 'poc/fixtures/T1_expected.json', description: 'Verification contract included in approval')
+    }
+    environment {
+        OSS_POC_INVENTORY = '/var/lib/oracle-oss-poc/config/targets.json'
+        OSS_POC_POLICY = '/var/lib/oracle-oss-poc/config/policy.json'
+        OSS_POC_STATE_DIR = '/var/lib/oracle-oss-poc/state'
+        OSS_POC_ENGINE_JAR = '/var/lib/oracle-oss-poc/engine/oss-oracle-runner-1.0.0.jar'
+        OSS_POC_ORACLE_DRIVER_JAR = '/var/lib/oracle-oss-poc/engine/ojdbc11-21.18.0.0.jar'
+        OSS_POC_REPORT_DIR = 'poc/reports/generated'
+        // Reviewed package installed into this venv; -I excludes source-workspace imports.
+        POC_PYTHON = '/var/lib/oracle-oss-poc/venv/bin/python'
+    }
+    stages {
+        stage('Freeze and preview') {
+            steps {
+                checkout scm
+                script {
+                    def causes = currentBuild.getBuildCauses('hudson.model.Cause$UserIdCause')
+                    if (causes.size() != 1 || !causes[0].userId) {
+                        error('A named authenticated requester is required; automatic/upstream triggers are disabled.')
+                    }
+                    env.POC_REQUESTER = causes[0].userId
+                    env.POC_COMMIT = sh(script: 'git rev-parse HEAD', returnStdout: true).trim()
+                }
+                sh '''#!/bin/sh
+                    set -eu
+                    "$POC_PYTHON" -I -m poc.runner freeze --release-id "$RELEASE_ID" \
+                      --git-commit "$POC_COMMIT" --version "$MIGRATION_VERSION" --target-id "$TARGET_ID" \
+                      --actor "$POC_REQUESTER" --repo "$WORKSPACE" --sql "$SQL_PATH" --expected "$EXPECTED_PATH"
+                '''
+                archiveArtifacts artifacts: 'poc/reports/generated/**/*', fingerprint: true
+            }
+        }
+        stage('Exact content approval') {
+            steps {
+                script {
+                    def policy = readJSON file: env.OSS_POC_POLICY
+                    // Read the SQL and envelope together from verified protected SQLite state.
+                    // Mutable workspace report files are never the approval authority.
+                    def review = readJSON text: sh(returnStdout: true, script: '''#!/bin/sh
+                        "$POC_PYTHON" -I -m poc.runner review --release-id "$RELEASE_ID"
+                    ''')
+                    def result = review.envelope
+                    def sql = review.sql_utf8
+                    def frozenBinding = review.approval_binding_sha256
+                    def reviewers = policy.reviewers.findAll { it != env.POC_REQUESTER }
+                    if (reviewers.isEmpty()) { error('No independent reviewer is configured.') }
+                    def approval = input message: "Release ${result.release_id}\nRequester ${result.requested_by}\n" +
+                        "Target ${result.target_id}\nResolved target ${result.target}\n" +
+                        "SQL SHA-256 ${result.artifact_sha256}\nEnvelope SHA-256 ${frozenBinding}\n" +
+                        "Verification ${result.expected}\nExact SQL:\n${sql}",
+                        submitter: reviewers.join(','), submitterParameter: 'REVIEWER',
+                        parameters: [string(name: 'CONFIRM_BINDING', defaultValue: '', description: 'Copy the envelope SHA-256 after review')]
+                    if (approval.CONFIRM_BINDING != frozenBinding) { error('Approval binding differs.') }
+                    env.POC_REVIEWER = approval.REVIEWER
+                    env.POC_BINDING = frozenBinding
+                }
+                sh '''#!/bin/sh
+                    set -eu
+                    "$POC_PYTHON" -I -m poc.runner approve --release-id "$RELEASE_ID" --actor "$POC_REVIEWER" --binding "$POC_BINDING"
+                '''
+            }
+        }
+        stage('Independent execution') {
+            steps {
+                script {
+                    def policy = readJSON file: env.OSS_POC_POLICY
+                    def executors = policy.executors.findAll { it != env.POC_REQUESTER && it != env.POC_REVIEWER }
+                    if (executors.isEmpty()) { error('No independent executor is configured.') }
+                    def dispatch = input message: "Execute approved ${params.RELEASE_ID} on ${params.TARGET_ID}?",
+                        submitter: executors.join(','), submitterParameter: 'EXECUTOR',
+                        parameters: [booleanParam(name: 'CONFIRM', defaultValue: false, description: 'Dispatch exact approved artifact')]
+                    if (!dispatch.CONFIRM) { error('Execution was not confirmed.') }
+                    env.POC_EXECUTOR = dispatch.EXECUTOR
+                }
+                withCredentials([
+                    string(credentialsId: 'oss-poc-oracle-writer', variable: 'OSS_POC_WRITER_PASSWORD'),
+                    string(credentialsId: 'oss-poc-oracle-observer', variable: 'OSS_POC_OBSERVER_PASSWORD')
+                ]) {
+                    sh '''#!/bin/sh
+                        set -eu
+                        "$POC_PYTHON" -I -m poc.runner execute --release-id "$RELEASE_ID" --actor "$POC_EXECUTOR"
+                    '''
+                }
+            }
+        }
+    }
+    post {
+        always {
+            // No engine rerun. Orphan recovery requires the lock; an active execution is retained.
+            sh returnStatus: true, script: '''#!/bin/sh
+                "$POC_PYTHON" -I -m poc.runner recover-orphans
+                "$POC_PYTHON" -I -m poc.runner report --release-id "$RELEASE_ID"
+            '''
+            archiveArtifacts artifacts: 'poc/reports/generated/**/*', fingerprint: true, allowEmptyArchive: true
+        }
+    }
+}

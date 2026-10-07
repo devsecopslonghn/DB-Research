@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-03",
+  "scope": "ODC comparison integration; read-only independent source review and document validation",
+  "independent_review": {
+    "tool": "Antigravity",
+    "model": "claude-opus-5-5-medium",
+    "exit_code": 0,
+    "status": "SUCCESS",
+    "stderr_empty": true,
+    "source_sha": "d517c0f27971642fb0cd7565fd61ab2309875ec3",
+    "findings": [
+      "Git project repository registration exists. Native merge-to-deploy is not established.",
+      "Datasource registration and schema sync do not provision an Oracle database.",
+      "OWNER, DBA, and DEVELOPER inherit all project databases. Participant requires explicit grants.",
+      "ODC grants are application metadata and do not execute native Oracle GRANT.",
+      "Source findings do not establish behavior of the newer deployed image."
+    ]
+  },
+  "application_tests_run": false,
+  "oracle_execution_run": false,
+  "acceptance_cases_not_run": 45,
+  "document_checks": {
+    "status": "PASS",
+    "record": "document-checks.json",
+    "source_references_checked": 183,
+    "relative_links_checked": 258,
+    "tables_checked": 57,
+    "source_working_trees_clean": true,
+    "generators_compared": 6,
+    "generator_outputs_compared": 11,
+    "generator_outputs_match": true,
+    "original_feature_rows_preserved": true,
+    "previous_supplemental_references_preserved": 66,
+    "requirements_and_unrelated_candidate_documents_preserved": true,
+    "errors": []
+  },
+  "runtime_record_sha256": "2d8e8a0b481053c447eac913e3b4f432f2ab186f0d3753a4c2520cc05f6c158a",
+  "report_diff_sha256": "5bb502face178d45d421f03d61df1a0e917a67268dbcfd225a3b8681e1de445a"
+}

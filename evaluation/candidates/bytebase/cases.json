@@ -1,0 +1,415 @@
+{
+  "tool": "bytebase",
+  "build": "Bytebase 3.22.1/FREE",
+  "oracle": "26ai 23.26.4.1.0",
+  "evidence_type": "RUNTIME_HISTORY",
+  "new_execution_status": "NOT_RUN",
+  "historical_evidence": "../../../evidence/bytebase-poc-cases.json",
+  "cases": [
+    {
+      "id": "MODEL-01",
+      "expected": "Applications/projects and their database targets have stable identities.",
+      "feature": "F02",
+      "historical_status": "PASS",
+      "historical_observed": "Project và năm target POC có resource name ổn định trong API, UI và các hậu kiểm.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-02",
+      "expected": "Register Oracle instances, services, databases/schemas, and environments centrally.",
+      "feature": "F02",
+      "historical_status": "PASS",
+      "historical_observed": "Đăng ký năm project-owned Oracle instance/database/schema. DEV/SIT/UAT/mockPROD có environment. Cùng một DB vật lý.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-03",
+      "expected": "Retain a stable change/release identifier and exact SQL artifact.",
+      "feature": "F05",
+      "historical_status": "PASS",
+      "historical_observed": "Native VERSIONED release giữ version, sheet SHA-256, plan/issue/taskRun và revision liên kết. SQL lấy từ API khớp artifact.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-04",
+      "expected": "Retain requester, approver, executor, database account, and timestamps separately.",
+      "feature": "F09",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Requester, release creator, executor và timestamp tách riêng. Tài khoản Oracle theo schema. Approver thực sự không có vì FREE SKIPPED.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-05",
+      "expected": "Review the exact SQL intended for the selected Oracle targets.",
+      "feature": "F06",
+      "historical_status": "PASS",
+      "historical_observed": "Review gắn với đúng SQL và target. P04 mới phát hiện ERROR trước issue nhưng execution enforcement vẫn FAIL riêng.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-06",
+      "expected": "Bind approval to the artifact and target set. Record any later change.",
+      "feature": "F06",
+      "historical_status": "BLOCKED",
+      "historical_observed": "FREE bỏ qua approval template: approvalStatus SKIPPED. Không thể nghiệm thu approval binding.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-07",
+      "expected": "Run the same approved change through DEV, SIT, UAT, and PROD in the accepted order.",
+      "feature": "F07",
+      "historical_status": "FAIL",
+      "historical_observed": "Native rollout có bốn stage và cùng artifact. API chạy staging trước; staging DONE trước SIT/UAT. Không bắt buộc thứ tự.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-08",
+      "expected": "Stop between stages. Resume only through an authorized action.",
+      "feature": "F07",
+      "historical_status": "PASS",
+      "historical_observed": "Sau DEV DONE, SIT NOT_STARTED và chưa có bảng. Requester tiếp tục bị 403; executor tiếp tục tạo đúng bảng/hàng.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-09",
+      "expected": "Apply the accepted stop policy. Do not continue automatically after an uncertain result.",
+      "feature": "F07",
+      "historical_status": "PASS",
+      "historical_observed": "DEV FAILED với ORA-00942; SIT giữ NOT_STARTED trước thao tác thủ công. Stage sau không tự chạy. Explicit executor vẫn được lên lịch sau lỗi.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-10",
+      "expected": "Display per-target status, execution records, errors, and central audit.",
+      "feature": "F09",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Task/target/log/time và lỗi Oracle đọc được. Audit search/export bị 403 FEATURE_AUDIT_LOG TEAM. Chưa kiểm retention.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-11",
+      "expected": "Prevent unauthorized project, target, approval, and execution actions. Verify inherited project access, Participant grants, expiry, and denied Oracle cross-schema access.",
+      "feature": "F03;F06",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Có project role, query/write denial, conditional grant hết hạn, revoke và Oracle cross-schema denial. Approval actions bị FREE chặn.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-12",
+      "expected": "Identify every missing release, checksum, ledger, locking, and recovery capability.",
+      "feature": "F05",
+      "historical_status": "PASS",
+      "historical_observed": "Đã phân biệt native release/revision, checksum WARNING, target ledger chưa có, dedup/concurrency quan sát được và recovery chưa đủ.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-01",
+      "expected": "Table exists. One successful target entry and one linked central result exist.",
+      "feature": "F04",
+      "historical_status": "PARTIAL",
+      "historical_observed": "UI chạy CREATE thành công; bảng/PK/type đúng và revision trung tâm liên kết. Không có target migration ledger trong schema.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-02",
+      "expected": "Both objects exist. Version order and ledger are correct.",
+      "feature": "F04",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Cột STATUS và constraint tồn tại; native version kế tiếp có revision. Chưa có ledger phía Oracle target.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-03",
+      "expected": "The row changes once. Replay does not increase the row count or value.",
+      "feature": "F04",
+      "historical_status": "PASS",
+      "historical_observed": "Sau INSERT/UPDATE, hàng 1 có amount=150. Replay cùng version skip; hậu kiểm trước/sau replay không đổi.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-04",
+      "expected": "Procedure is VALID. Invocation changes the expected row.",
+      "feature": "F04",
+      "historical_status": "PASS",
+      "historical_observed": "Procedure VALID. Invocation chuyển STATUS thành PAID.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-05",
+      "expected": "Function is VALID. SELECT from DUAL returns the expected value.",
+      "feature": "F04",
+      "historical_status": "PASS",
+      "historical_observed": "Function VALID. POC_ADD_TAX(100)=110.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-06",
+      "expected": "Both objects are VALID. Package invocation succeeds.",
+      "feature": "F04",
+      "historical_status": "PASS",
+      "historical_observed": "Package/spec/body VALID; invocation đổi NOTE và initialization trả 42.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-07",
+      "expected": "Trigger is VALID. One event produces one expected effect.",
+      "feature": "F04",
+      "historical_status": "PASS",
+      "historical_observed": "Trigger VALID; một UPDATE tạo một audit event 150→200.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-08",
+      "expected": "Each block executes once. Internal semicolons remain intact.",
+      "feature": "F04",
+      "historical_status": "PASS",
+      "historical_observed": "Hai block anonymous chạy; marker 801/802 mỗi loại một hàng.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-09",
+      "expected": "The parser uses the slash as a client delimiter. Oracle does not receive a bare slash statement.",
+      "feature": "F04",
+      "historical_status": "PASS",
+      "historical_observed": "Body PL/SQL với slash riêng dòng chạy thành công. Không có lỗi bare slash; log có statement ranges.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-10",
+      "expected": "Required commands work through a supported execution path. Unsupported commands fail clearly before execution.",
+      "feature": "F04",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Bundle SQLPlus FAILED ORA-01008; marker 1001 không có. Chưa kiểm từng directive, thông báo pre-execution hoặc đường native SQLPlus.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-11",
+      "expected": "The result reports invalid compilation. ALL_ERRORS identifies the error. The release is not reported as fully successful.",
+      "feature": "F04",
+      "historical_status": "FAIL",
+      "historical_observed": "Plan 109/task DONE và UI Deployed; Oracle procedure INVALID, hai USER_ERRORS, gồm PLS-00201.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-12",
+      "expected": "The parser preserves the exact body and statement boundaries.",
+      "feature": "F04",
+      "historical_status": "PASS",
+      "historical_observed": "Ba giá trị q-quote, comment marker trong chuỗi và quoted identifier giữ nguyên.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-01",
+      "expected": "Execution stops according to policy. The central result contains the exact failed migration and Oracle error.",
+      "feature": "F05",
+      "historical_status": "PASS",
+      "historical_observed": "Fixture missing-table FAILED với ORA-00942 và file/version/range trong log. Hàng 1101 không xuất hiện tại thời điểm lỗi.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-02",
+      "expected": "The engine skips the migration. The platform records the replay request without changing target state.",
+      "feature": "F05",
+      "historical_status": "PASS",
+      "historical_observed": "Nộp lại native version đã thành công: task DONE nhưng không chạy lại DML. Hậu kiểm paired trước/sau không đổi.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-03",
+      "expected": "Recovery follows a documented decision. The platform does not repeat committed work without review.",
+      "feature": "F05",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Hậu kiểm 1101=0 rồi tạo version sửa riêng; chạy thành công 1101=1. FREE không có phê duyệt correction thật.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-04",
+      "expected": "The created table remains visible. The platform reports partial or uncertain state. Automatic replay is blocked.",
+      "feature": "F05",
+      "historical_status": "PARTIAL",
+      "historical_observed": "CREATE được commit; ALTER lỗi ORA-00904 và task FAILED. POC_PARTIAL còn tồn tại. Chưa chứng minh partial-state fencing hoặc cấm mọi replay.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-05",
+      "expected": "Restart detects an uncertain result. An operator reconciles objects and history before resuming.",
+      "feature": "F05",
+      "historical_status": "NOT_RUN",
+      "historical_observed": "Chưa có crash barrier trước commit và worker restart được kiểm soát.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-06",
+      "expected": "Restart reads target success and repairs central state. No SQL replay occurs.",
+      "feature": "F05",
+      "historical_status": "NOT_RUN",
+      "historical_observed": "Chưa có commit barrier và phép crash giữa Oracle commit với central revision.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-07",
+      "expected": "The result distinguishes known failure from uncertain outcome. Recovery checks target history and object state.",
+      "feature": "F05",
+      "historical_status": "NOT_RUN",
+      "historical_observed": "Chưa cắt network sau commit bằng proxy có checkpoint.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-08",
+      "expected": "Validation fails before new SQL executes. An authorized repair cannot be silent.",
+      "feature": "F05",
+      "historical_status": "FAIL",
+      "historical_observed": "Đổi SQL giữ native version: check có WARNING Applied file has been modified và hai SHA. Task vẫn DONE/skip. Không đạt yêu cầu validation FAIL.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-09",
+      "expected": "Only one migration execution holds the target lock. Both central jobs have accurate results.",
+      "feature": "F05",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Hai native API plan cùng version chạy đồng thời: cả hai DONE, một effect/một SESSION_ID. Chưa quan sát lock holder hoặc hai runner CI độc lập.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-10",
+      "expected": "Stable request identity prevents duplicate work. Both API responses link to the same execution decision.",
+      "feature": "F05",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Hai tasks:batchRun cùng task trả 200/200; một taskRun, một effect. Identity dedup đạt tiểu ca; FREE approval SKIPPED nên chưa nghiệm thu approved execution đầy đủ.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-11",
+      "expected": "The platform reconciles the durable job and target state without duplicate execution.",
+      "feature": "F05",
+      "historical_status": "NOT_RUN",
+      "historical_observed": "Chưa có controlled multi-replica failover và fencing.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-12",
+      "expected": "Recovery distinguishes a dead worker from a slow worker. An operator can release a proven stale lock.",
+      "feature": "F05",
+      "historical_status": "NOT_RUN",
+      "historical_observed": "Chưa restore target từ backup và reconcile revision với trạng thái target.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-01",
+      "expected": "A query returns requester, approver, executor, SQL artifact, target, times, trigger, and result.",
+      "feature": "F09",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Join release/plan/issue/taskRun trả requester, creator, executor, hash, target, time, local job, result. Thiếu approver thật trên FREE.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-02",
+      "expected": "Changing the artifact, target, environment, or release version invalidates the previous approval.",
+      "feature": "F06",
+      "historical_status": "BLOCKED",
+      "historical_observed": "Không có approval template trên FREE để kiểm invalidate khi đổi SQL, target, environment hoặc version.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-03",
+      "expected": "An unauthorized requester cannot approve or execute their own production change. Document administrator powers separately.",
+      "feature": "F06",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Requester/CI rollout execute 403. SQL console ban đầu vẫn cho UPDATE vì sqlEditorUser. Đổi requester thành projectDeveloper+sqlEditorReadUser: UPDATE bị permission_denied, SELECT còn hoạt động. FREE approval chưa nghiệm thu.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-04",
+      "expected": "Higher environments receive the same immutable artifact after required lower-environment success.",
+      "feature": "F07",
+      "historical_status": "FAIL",
+      "historical_observed": "Staging/mockPROD task120 DONE 06:53:11Z; SIT DONE 06:53:27Z, UAT DONE 06:53:56Z. API chấp nhận staging khi lower stages chưa thành công.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-05",
+      "expected": "GitLab and Jenkins triggers retain a named service principal and the initiating job reference.",
+      "feature": "F08",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Named service account tạo plan/issue qua API, giữ principal và local job reference. Chưa chạy job GitLab/Jenkins thật.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-06",
+      "expected": "Restored metadata, artifacts, and keys remain readable. Reconciliation detects target changes after the backup.",
+      "feature": "F10",
+      "historical_status": "NOT_RUN",
+      "historical_observed": "Chưa có CI runner bị ngắt và resume từ checkpoint có controlled identity.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-07",
+      "expected": "Concurrent API servers cannot dispatch duplicate target execution.",
+      "feature": "F10",
+      "historical_status": "NOT_RUN",
+      "historical_observed": "Chưa có runner reassignment/failover với fencing.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-08",
+      "expected": "Logs and stored results contain no database passwords or secret-manager credentials.",
+      "feature": "F09;F10",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Known-secret scan trên task evidence và asset công bố không thấy bí mật. Không thể kiểm audit payload/export đầy đủ trên FREE.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-09",
+      "expected": "Audit export preserves actor, artifact hash, target, time, trigger, and result after log rotation.",
+      "feature": "F09",
+      "historical_status": "BLOCKED",
+      "historical_observed": "Audit search/export trả 403 TEAM feature. UI ghi Pro. Chưa có export hoặc rotation proof; không tự bật trial.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    }
+  ]
+}

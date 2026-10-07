@@ -1,0 +1,40 @@
+{
+  "source_commit": "d517c0f27971642fb0cd7565fd61ab2309875ec3",
+  "binary_source_equivalence": "NOT_PROVED; source explains configuration hypothesis; running-image behavior separately validated",
+  "files": [
+    {
+      "path": "evidence/product-model/sources/oceanbase__odc/server/odc-service/src/main/java/com/oceanbase/odc/service/task/model/ExecutorInfo.java",
+      "sha256": "5965c0657b9cbcf15b33808baae2e63f255dd2246529efb6635364d7e3a0da8d"
+    },
+    {
+      "path": "evidence/product-model/sources/oceanbase__odc/server/starters/web-starter/src/main/java/com/oceanbase/odc/service/dispatch/WebTaskDispatchChecker.java",
+      "sha256": "cc0ac578d36aa26fdb5ac58d36b95ca8c90d6d907a4ea3d5c3eedf2c29b14d60"
+    },
+    {
+      "path": "evidence/product-model/sources/oceanbase__odc/server/odc-service/src/main/java/com/oceanbase/odc/service/common/model/HostProperties.java",
+      "sha256": "2f21726cb630dcb202be1a188207b2c057dde08cae08966d8a5e2d0f391c9cbf"
+    },
+    {
+      "path": "evidence/product-model/sources/oceanbase__odc/server/odc-service/src/main/java/com/oceanbase/odc/service/task/TaskService.java",
+      "sha256": "a2a023fa319a801aff94b7aed5bdfabb0328b62b8804b06f8bf1a7d35c0f160b"
+    },
+    {
+      "path": "evidence/product-model/sources/oceanbase__odc/server/odc-service/src/main/java/com/oceanbase/odc/service/flow/FlowTaskInstanceService.java",
+      "sha256": "88021d674d93f5c5e3e3d9a0843119e69de29e96f3dfaef229939f6c4351f0f1"
+    },
+    {
+      "path": "evidence/product-model/sources/oceanbase__odc/server/odc-service/src/main/java/com/oceanbase/odc/service/flow/FlowTaskInstanceLoggerService.java",
+      "sha256": "3fc412b39e3003a40f338833fbdf42bf3f3f79e3d996e396d1b051faff7af3bd"
+    }
+  ],
+  "identity_equality_fields": [
+    "host",
+    "port",
+    "hostName"
+  ],
+  "ignored_equality_fields": [
+    "pid",
+    "jvmStartTime"
+  ],
+  "task_log_pattern": "<odc.log.directory>/async/<creatorId>/<taskId>/asynctask.all"
+}

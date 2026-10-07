@@ -1,0 +1,31 @@
+[
+  {
+    "url": "https://www.cdmgr.com/en/pricing/",
+    "retrieved_at": "2026-10-04T13:14:41.554481+00:00",
+    "file": "evaluation/research-round-2/coordinator/public-docs/clouddm-pricing.html",
+    "sha256": "9bca0fb2449737ec1eba676087cb0f8b75f0b3e698d0308d8d357ccf40256ab6",
+    "evidence_type": "DOC",
+    "claim_support": "NOT_SUPPORTING: trailing-slash URL returned page without pricing table"
+  },
+  {
+    "url": "https://www.cdmgr.com/en/pricing",
+    "final_url": "https://www.cdmgr.com/en/pricing",
+    "http_status": 200,
+    "retrieved_at": "2026-10-04T13:15:11.287655+00:00",
+    "file": "evaluation/research-round-2/coordinator/public-docs/clouddm-pricing-canonical.html",
+    "sha256": "9bca0fb2449737ec1eba676087cb0f8b75f0b3e698d0308d8d357ccf40256ab6",
+    "evidence_type": "DOC",
+    "claim_support": "NOT_SUPPORTING: directGET returned homepage, no pricing table"
+  },
+  {
+    "repo": "oceanbase/oceanbase",
+    "source_pin": "5d6cb5cbc3f7c1ab6eb22e40abec8e160a8764d5",
+    "tag": "v4.3.5_CE",
+    "url": "https://raw.githubusercontent.com/oceanbase/oceanbase/5d6cb5cbc3f7c1ab6eb22e40abec8e160a8764d5/LICENSE",
+    "file": "evaluation/research-round-2/coordinator/public-docs/oceanbase-v4.3.5_CE-LICENSE.txt",
+    "sha256": "2a620651d552eb191ab2b2841f406a0a14a3082e518b79ea9ec9c86924f272af",
+    "evidence_type": "SOURCE",
+    "retrieved_at": "2026-10-04T13:26:38.496904+00:00",
+    "claim_support": "Tag source license only; historical image4.3.5-lts tag not tied to commit"
+  }
+]

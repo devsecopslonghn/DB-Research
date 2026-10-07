@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-10-07T17:13:11.655496+00:00",
+  "original_template_sha256": "1a83c7be3c695923ab6f6cb3ce3f1c91eec9c26b776331b9815e6ff2f0448c38",
+  "restored_template_sha256": "1a83c7be3c695923ab6f6cb3ce3f1c91eec9c26b776331b9815e6ff2f0448c38",
+  "full_deployment_spec_equal": true,
+  "added_hostname_removed": true,
+  "note": "Initial merge restore retained an absent original field. Exact JSON Patch replacement removed it before final acceptance. No extra execution tickets or product/source/MetaDB correction."
+}

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.clougence.clouddm.platform.dal.mapper.cicd.DmChangeMapper">
+    <resultMap id="dmChangeDO" type="com.clougence.clouddm.platform.dal.model.cicd.DmChangeDO">
+        <result column="id" property="id"/>
+        <result column="gmt_create" property="gmtCreate"/>
+        <result column="gmt_modified" property="gmtModified"/>
+        <result column="owner_uid" property="ownerUid"/>
+        <result column="trigger_uid" property="triggerUid"/>
+        <result column="ref_flow_id" property="refFlowId"/>
+        <result column="ref_batch_id" property="refBatchId"/>
+        <result column="ref_parent_change_id" property="refParentChangeId"/>
+        <result column="change_name" property="changeName"/>
+        <result column="change_time" property="changeTime"/>
+        <result column="change_branch" property="changeBranch"/>
+        <result column="current_step" property="currentStep"
+                javaType="com.clougence.clouddm.platform.dal.model.cicd.ChangeStep"/>
+        <result column="current_status" property="currentStatus"
+                javaType="com.clougence.clouddm.platform.dal.model.cicd.ChangeStatus"/>
+        <result column="schedule_time" property="scheduleTime"/>
+        <result column="version" property="version"/>
+        <result column="remark" property="remark"/>
+        <result column="try_times" property="tryTimes"/>
+        <result column="last_commit_id" property="lastCommitId"/>
+        <result column="lock_status" property="lockStatus"/>
+    </resultMap>
+
+    <sql id="dmChangeColumns">
+        id
+        ,
+        gmt_create,
+        gmt_modified,
+        owner_uid,
+        trigger_uid,
+        ref_flow_id,
+        ref_batch_id,
+        ref_parent_change_id,
+        change_name,
+        change_time,
+        change_branch,
+        current_step,
+        current_status,
+        schedule_time,
+        version,
+        remark,
+        try_times,
+        last_commit_id,
+        lock_status
+    </sql>
+
+    <select id="listChangeByConditionAndPage" resultMap="dmChangeDO">
+        SELECT
+            <include refid="dmChangeColumns"/>
+        FROM
+            dm_change
+        WHERE
+            owner_uid   = #{param.ownerUid}
+            AND
+            ref_flow_id = #{param.flowId}
+            <if test="param.searchKeywords != null">
+                AND
+                change_name LIKE CONCAT('%', #{param.searchKeywords}, '%')
+            </if>
+        ORDER BY change_time DESC
+    </select>
+
+    <select id="queryChangeById" resultMap="dmChangeDO">
+        SELECT
+            <include refid="dmChangeColumns"/>
+        FROM
+            dm_change
+        WHERE
+            id = #{changeId}
+    </select>
+
+    <select id="queryByIds" resultMap="dmChangeDO">
+        SELECT
+            <include refid="dmChangeColumns"/>
+        FROM
+            dm_change
+        WHERE
+            owner_uid = #{ownerUid}
+            AND
+            id        IN
+            <foreach collection="changeIds" item="changeId" separator="," open="(" close=")">
+                #{changeId}
+            </foreach>
+    </select>
+
+    <select id="countUnfinishedChangeByFlowId" resultType="int">
+        SELECT
+            COUNT(*)
+        FROM
+            dm_change
+        WHERE
+            owner_uid   = #{ownerUid}
+            AND
+            ref_flow_id = #{flowId}
+            AND
+            lock_status = 0
+    </select>
+
+    <select id="queryReadyChangeListByDate" resultMap="dmChangeDO">
+        SELECT
+            <include refid="dmChangeColumns"/>
+        FROM
+            dm_change
+        WHERE
+            current_status = 'READY'
+            AND
+            (
+                <![CDATA[ #{date} >= schedule_time ]]>
+            OR
+                schedule_time IS NULL
+            )
+        ORDER BY schedule_time ASC
+        LIMIT ${limit}
+    </select>
+
+    <select id="queryByBatchIds" resultMap="dmChangeDO">
+        SELECT
+            <include refid="dmChangeColumns"/>
+        FROM
+            dm_change
+        WHERE
+            owner_uid    = #{ownerUid}
+            AND
+            ref_batch_id IN
+            <foreach collection="batchIds" item="batchId" separator="," open="(" close=")">
+                #{batchId}
+            </foreach>
+        ORDER BY id
+    </select>
+
+    <select id="queryByBatchIdForUpdate" resultMap="dmChangeDO">
+        SELECT
+            <include refid="dmChangeColumns"/>
+        FROM
+            dm_change
+        WHERE
+            owner_uid    = #{ownerUid}
+            AND
+            ref_batch_id = #{batchId}
+        ORDER BY id
+        FOR UPDATE
+    </select>
+
+    <select id="queryUnlockedChangesByFlowIds" resultMap="dmChangeDO">
+        SELECT
+            <include refid="dmChangeColumns"/>
+        FROM
+            dm_change
+        WHERE
+            owner_uid   = #{ownerUid}
+            AND
+            lock_status = 0
+            AND
+            ref_flow_id IN
+            <foreach collection="flowIds" item="flowId" separator="," open="(" close=")">
+                #{flowId}
+            </foreach>
+        ORDER BY id
+    </select>
+
+    <update id="assignReadyChange">
+        UPDATE
+            dm_change
+        SET
+            schedule_time = NOW(),
+            version       = version + 1
+        WHERE
+            id      = #{changeId}
+            AND
+            version = #{version}
+    </update>
+
+    <update id="increTryTimes">
+        UPDATE
+            dm_change
+        SET
+            schedule_time = NOW(),
+            version       = version + 1,
+            try_times     = try_times + 1,
+            remark        = #{remark}
+        WHERE
+            id      = #{changeId}
+            AND
+            version = #{version}
+    </update>
+
+    <update id="updateStatusTo">
+        UPDATE
+            dm_change
+        SET
+            schedule_time  = NOW(),
+            version        = version + 1,
+            remark         = #{remark},
+            current_status = #{toStatus, javaType=com.clougence.clouddm.platform.dal.model.cicd.ChangeStatus}
+        WHERE
+            id      = #{changeId}
+            AND
+            version = #{version}
+    </update>
+
+    <update id="updateStepTo">
+        UPDATE
+            dm_change
+        SET
+            schedule_time = NOW(),
+            version       = version + 1,
+            try_times     = 0,
+            remark        = #{remark},
+            current_step  = #{toStep, javaType=com.clougence.clouddm.platform.dal.model.cicd.ChangeStep}
+        WHERE
+            id      = #{changeId}
+            AND
+            version = #{version}
+    </update>
+
+    <update id="lockChangeById">
+        UPDATE
+            dm_change
+        SET
+            version     = version + 1,
+            lock_status = 1
+        WHERE
+            id      = #{changeId}
+            AND
+            version = #{version}
+    </update>
+
+    <update id="updateBatch">
+        UPDATE
+            dm_change
+        SET
+            ref_batch_id = #{batchId},
+            gmt_modified = NOW()
+        WHERE
+            id           = #{changeId}
+            AND
+            ref_batch_id IS NULL
+    </update>
+
+    <update id="updateTriggerUid">
+        UPDATE
+            dm_change
+        SET
+            trigger_uid  = #{triggerUid},
+            gmt_modified = NOW()
+        WHERE
+            id = #{changeId}
+    </update>
+
+    <select id="queryUnlockedChange" resultMap="dmChangeDO">
+        SELECT
+            <include refid="dmChangeColumns"/>
+        FROM
+            dm_change
+        WHERE
+            owner_uid   = #{ownerUid}
+            AND
+            ref_flow_id = #{flowId}
+            AND
+            lock_status = 0
+    </select>
+</mapper>

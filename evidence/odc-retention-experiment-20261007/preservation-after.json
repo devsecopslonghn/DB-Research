@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-07T17:19:25.562562+00:00",
+  "baseline_files": 250,
+  "unchanged_files": 248,
+  "expected_changed_files": [
+    "evaluation/README.md",
+    "evaluation/odc-practical-poc-results.md"
+  ],
+  "missing_files": [],
+  "historical_evidence_preserved": true,
+  "previous_practical_evidence_files_preserved": 79,
+  "scope": "All listed existing files in preservation-before; historical ODC/Bytebase root evidence and source hashes also validated by repository verifier"
+}

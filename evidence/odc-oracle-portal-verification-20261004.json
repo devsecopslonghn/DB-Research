@@ -1,0 +1,117 @@
+{
+  "pull_request": "https://github.com/devsecopslonghn/k8s-namepsace-chart/pull/36",
+  "merge_commit": "308ad16ec95a67f09959886828e8be4780921ff0",
+  "portal_browser": {
+    "captured_at": "2026-10-04T01:49:43.454545+00:00",
+    "url": "https://db-poc.apps.drgdevlab.com",
+    "status": "PASS",
+    "checks": [
+      {
+        "name": "Catalog loaded without an error state",
+        "passed": true
+      },
+      {
+        "name": "Comparison contains 18 capabilities",
+        "passed": true
+      },
+      {
+        "name": "Gallery matches the published catalog",
+        "passed": true
+      },
+      {
+        "name": "Live filter matches actual browser captures",
+        "passed": true
+      },
+      {
+        "name": "Image lightbox opens",
+        "passed": true
+      },
+      {
+        "name": "Escape closes lightbox and returns focus",
+        "passed": true
+      },
+      {
+        "name": "ODC filter retains 45 cases and SQL-11 failure",
+        "passed": true
+      },
+      {
+        "name": "Search finds historical P03 failure",
+        "passed": true
+      },
+      {
+        "name": "All published documents have download links",
+        "passed": true
+      },
+      {
+        "name": "Mobile page width: overview",
+        "passed": true
+      },
+      {
+        "name": "Mobile page width: products",
+        "passed": true
+      },
+      {
+        "name": "Mobile page width: comparison",
+        "passed": true
+      },
+      {
+        "name": "Mobile page width: gallery",
+        "passed": true
+      },
+      {
+        "name": "Mobile page width: cases",
+        "passed": true
+      },
+      {
+        "name": "Mobile page width: documents",
+        "passed": true
+      },
+      {
+        "name": "Mobile page width: architecture",
+        "passed": true
+      },
+      {
+        "name": "Mobile page width: tasks",
+        "passed": true
+      },
+      {
+        "name": "No JavaScript or CSP errors",
+        "passed": true
+      }
+    ],
+    "oracle_execution_run": false
+  },
+  "publication_integrity": {
+    "checked_at": "2026-10-04T01:49:51.878987+00:00",
+    "url": "https://db-poc.apps.drgdevlab.com/",
+    "status": "PASS",
+    "files_checked": 91,
+    "failures": []
+  },
+  "argocd": [
+    {
+      "name": "oceanbase-odc",
+      "sync": "Synced",
+      "health": "Healthy",
+      "revision": "308ad16ec95a67f09959886828e8be4780921ff0"
+    },
+    {
+      "name": "db-poc",
+      "sync": "Synced",
+      "health": "Healthy",
+      "revision": "308ad16ec95a67f09959886828e8be4780921ff0"
+    }
+  ],
+  "pvcs": [
+    {
+      "name": "odc-data",
+      "uid": "4f42837c-cece-4c5d-9603-0a42c34acad3",
+      "size": "5Gi"
+    },
+    {
+      "name": "data-oceanbase-metadb-10gi",
+      "uid": "669aee81-1d78-486b-b78e-2d221638ccad",
+      "size": "10Gi"
+    }
+  ]
+}

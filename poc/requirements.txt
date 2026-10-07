@@ -1,0 +1,2 @@
+# Only the Oracle observer/probe needs this package. Local safety tests use stdlib.
+oracledb==3.4.0

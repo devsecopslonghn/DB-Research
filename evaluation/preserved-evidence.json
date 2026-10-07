@@ -1,0 +1,17 @@
+{
+  "poc/ORACLE-POC.md": "434a26d7d030cae6a8a5471952f3e305dec266b6dbab23711ef76a765a49f0f6",
+  "BYTEBASE-ODC-COMPARISON.md": "7edab6e2e39b4069e036c0c0586c1e071f6fdd874e5d9e28222042da67d3ed26",
+  "ODC-ORACLE-POC-RESULTS.md": "3cdb74d7195967171e404e830b9a55236f6d3756c36618f73655aabae36b1840",
+  "BYTEBASE-ORACLE-POC-RESULTS.md": "70b7b3938227659feba1a7dd7adf37418ed15766a59ac79adf6334809e679f57",
+  "evidence/oracle-poc-api.json": "2d9338c5f5eb016cc8250656d187286327feaf1221018bae3f1c62f795a20da8",
+  "evidence/oracle-poc-governance.json": "6574dd6397761f7932c7795e3551513a1fab18c18b7dda0e6606c8143f9ddd0a",
+  "evidence/oracle-poc-manual-approval.json": "4ccb6dac58ad521048b67920f7247cc8d1e297853a8809f3892606eac6b097aa",
+  "evidence/oracle-poc-cases.json": "d2219376247dd717ce41b2a4730fe979e61da893a19cf053c2db45b83d348f29",
+  "evidence/oracle-poc-review.json": "5ddabb31e5e0580a0ead04d265f17107013d23386ca1c97e8097880412991913",
+  "evidence/bytebase-poc-api.json": "4657e728ebe7c399ce7a8581279697e67d5c1206f37105af2f6b508038defc74",
+  "evidence/bytebase-poc-governance.json": "af013b0a890b8205e78cb272f6e364714cc0684ba668d6b826443391c75e48fb",
+  "evidence/bytebase-poc-review.json": "ad86774a378fe4c836e1640abbfa3b7b38ef1d68aa2e675bb227c7204d50bd3f",
+  "evidence/bytebase-poc-cases.json": "28b20be1b505c79a95e7ee2ed760da065bee0034244161231b8a673d4757c849",
+  "evidence/bytebase-poc-browser.json": "3bdae012bce09cafda5d631ddfefb76e10054b6f9e18482bfcb280d1c47993d8",
+  "evidence/bytebase-poc-validation.json": "56b1c7275f5b41e316d405d1d258b44c7c85e716d536f6e5d4d0eb1c10aa610a"
+}

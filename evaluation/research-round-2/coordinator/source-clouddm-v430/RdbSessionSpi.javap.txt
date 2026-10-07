@@ -1,0 +1,147 @@
+Compiled from "RdbSessionSpi.java"
+public class com.clougence.clouddm.dsfamily.execute.RdbSessionSpi implements com.clougence.clouddm.sdk.execute.session.SessionSpi {
+  public com.clougence.clouddm.dsfamily.execute.RdbSessionSpi();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public com.clougence.clouddm.sdk.execute.session.SessionContextDTO createSessionContext(com.clougence.clouddm.base.metadata.ds.DataSourceConfig, java.util.Map<java.lang.String, java.lang.Object>);
+    Code:
+       0: aload_1
+       1: invokevirtual #7                  // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.asDriverProperties:()Ljava/util/Properties;
+       4: astore_3
+       5: aload_3
+       6: getstatic     #13                 // Field com/clougence/drivers/DsConfigKeys.DEFAULT_DATABASE:Lcom/clougence/drivers/DsConfigKeys;
+       9: invokevirtual #19                 // Method com/clougence/drivers/DsConfigKeys.getConfigKey:()Ljava/lang/String;
+      12: invokevirtual #23                 // Method java/util/Properties.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+      15: astore        4
+      17: aload_3
+      18: getstatic     #29                 // Field com/clougence/drivers/DsConfigKeys.DEFAULT_SCHEMA:Lcom/clougence/drivers/DsConfigKeys;
+      21: invokevirtual #19                 // Method com/clougence/drivers/DsConfigKeys.getConfigKey:()Ljava/lang/String;
+      24: invokevirtual #23                 // Method java/util/Properties.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+      27: astore        5
+      29: aload_3
+      30: getstatic     #32                 // Field com/clougence/drivers/DsConfigKeys.AUTO_COMMIT:Lcom/clougence/drivers/DsConfigKeys;
+      33: invokevirtual #19                 // Method com/clougence/drivers/DsConfigKeys.getConfigKey:()Ljava/lang/String;
+      36: invokevirtual #23                 // Method java/util/Properties.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+      39: astore        6
+      41: aload_2
+      42: ifnull        97
+      45: aload_2
+      46: ldc           #37                 // String DEFAULT_DB
+      48: invokeinterface #39,  2           // InterfaceMethod java/util/Map.containsKey:(Ljava/lang/Object;)Z
+      53: ifeq          71
+      56: aload_2
+      57: ldc           #37                 // String DEFAULT_DB
+      59: aload         4
+      61: invokeinterface #45,  3           // InterfaceMethod java/util/Map.getOrDefault:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      66: checkcast     #49                 // class java/lang/String
+      69: astore        4
+      71: aload_2
+      72: ldc           #51                 // String DEFAULT_SCHEMA
+      74: invokeinterface #39,  2           // InterfaceMethod java/util/Map.containsKey:(Ljava/lang/Object;)Z
+      79: ifeq          97
+      82: aload_2
+      83: ldc           #51                 // String DEFAULT_SCHEMA
+      85: aload         5
+      87: invokeinterface #45,  3           // InterfaceMethod java/util/Map.getOrDefault:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      92: checkcast     #49                 // class java/lang/String
+      95: astore        5
+      97: new           #52                 // class com/clougence/clouddm/sdk/execute/session/SessionContextDTO
+     100: dup
+     101: invokespecial #54                 // Method com/clougence/clouddm/sdk/execute/session/SessionContextDTO."<init>":()V
+     104: astore        7
+     106: aload         7
+     108: aload_1
+     109: invokevirtual #55                 // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.getMaxIdleTimeSec:()Ljava/lang/Integer;
+     112: invokevirtual #59                 // Method com/clougence/clouddm/sdk/execute/session/SessionContextDTO.setMaxIdleTimeSec:(Ljava/lang/Integer;)V
+     115: aload         7
+     117: invokestatic  #63                 // Method java/util/UUID.randomUUID:()Ljava/util/UUID;
+     120: invokevirtual #69                 // Method java/util/UUID.toString:()Ljava/lang/String;
+     123: ldc           #72                 // String -
+     125: ldc           #74                 // String
+     127: invokevirtual #76                 // Method java/lang/String.replace:(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+     130: invokevirtual #80                 // Method com/clougence/clouddm/sdk/execute/session/SessionContextDTO.setSessionId:(Ljava/lang/String;)V
+     133: aload         7
+     135: aload         4
+     137: invokevirtual #84                 // Method com/clougence/clouddm/sdk/execute/session/SessionContextDTO.setRdbCatalog:(Ljava/lang/String;)V
+     140: aload         7
+     142: aload         5
+     144: invokevirtual #87                 // Method com/clougence/clouddm/sdk/execute/session/SessionContextDTO.setRdbSchema:(Ljava/lang/String;)V
+     147: aload         7
+     149: ldc           #90                 // String false
+     151: aload         6
+     153: invokestatic  #92                 // Method com/clougence/utils/StringUtils.equalsIgnoreCase:(Ljava/lang/String;Ljava/lang/String;)Z
+     156: ifne          163
+     159: iconst_1
+     160: goto          164
+     163: iconst_0
+     164: invokevirtual #98                 // Method com/clougence/clouddm/sdk/execute/session/SessionContextDTO.setRdbAutoCommit:(Z)V
+     167: aload         7
+     169: aload_1
+     170: invokevirtual #102                // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.getIsolation:()Ljava/lang/String;
+     173: invokestatic  #105                // Method com/clougence/clouddm/sdk/execute/session/rdb/RdbIsolation.valueOfCode:(Ljava/lang/String;)Lcom/clougence/clouddm/sdk/execute/session/rdb/RdbIsolation;
+     176: invokevirtual #111                // Method com/clougence/clouddm/sdk/execute/session/SessionContextDTO.setRdbTxIsolation:(Lcom/clougence/clouddm/sdk/execute/session/rdb/RdbIsolation;)V
+     179: aload         7
+     181: getstatic     #115                // Field java/lang/Boolean.TRUE:Ljava/lang/Boolean;
+     184: aload_1
+     185: invokevirtual #121                // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.getReadOnly:()Ljava/lang/Boolean;
+     188: invokevirtual #125                // Method java/lang/Boolean.equals:(Ljava/lang/Object;)Z
+     191: invokevirtual #128                // Method com/clougence/clouddm/sdk/execute/session/SessionContextDTO.setRdbReadOnly:(Z)V
+     194: aload         7
+     196: areturn
+
+  public com.clougence.clouddm.sdk.execute.session.QueryRequest createQueryRequest(com.clougence.clouddm.base.metadata.ds.DataSourceConfig);
+    Code:
+       0: new           #131                // class com/clougence/clouddm/sdk/execute/session/QueryRequest
+       3: dup
+       4: invokespecial #133                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest."<init>":()V
+       7: astore_2
+       8: aload_2
+       9: aload_0
+      10: invokevirtual #134                // Method newQueryId:()Ljava/lang/String;
+      13: invokevirtual #139                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setQueryId:(Ljava/lang/String;)V
+      16: aload_2
+      17: iconst_0
+      18: invokevirtual #142                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setUsingValueProcess:(Z)V
+      21: aload_2
+      22: aload_1
+      23: invokevirtual #145                // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.getDataSourceType:()Lcom/clougence/clouddm/base/metadata/ds/DataSourceType;
+      26: invokevirtual #149                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setDsType:(Lcom/clougence/clouddm/base/metadata/ds/DataSourceType;)V
+      29: aload_2
+      30: new           #153                // class java/util/Date
+      33: dup
+      34: invokespecial #155                // Method java/util/Date."<init>":()V
+      37: invokevirtual #156                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setRequestTime:(Ljava/util/Date;)V
+      40: new           #160                // class com/clougence/clouddm/sdk/execute/session/QueryResultConf
+      43: dup
+      44: invokespecial #162                // Method com/clougence/clouddm/sdk/execute/session/QueryResultConf."<init>":()V
+      47: astore_3
+      48: aload_3
+      49: iconst_1
+      50: invokevirtual #163                // Method com/clougence/clouddm/sdk/execute/session/QueryResultConf.setFetchMoreResult:(Z)V
+      53: aload_2
+      54: aload_3
+      55: invokevirtual #166                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setResultConf:(Lcom/clougence/clouddm/sdk/execute/session/QueryResultConf;)V
+      58: aload_2
+      59: areturn
+
+  public java.lang.String newQueryId();
+    Code:
+       0: invokestatic  #170                // Method java/lang/System.currentTimeMillis:()J
+       3: bipush        16
+       5: invokestatic  #176                // Method java/lang/Long.toString:(JI)Ljava/lang/String;
+       8: bipush        11
+      10: bipush        48
+      12: invokestatic  #181                // Method com/clougence/utils/StringUtils.leftPad:(Ljava/lang/String;IC)Ljava/lang/String;
+      15: iconst_2
+      16: invokestatic  #185                // Method com/clougence/utils/RandomUtils.nextBytes:(I)[B
+      19: invokestatic  #191                // Method com/clougence/utils/HexadecimalUtils.bytes2hex:([B)Ljava/lang/String;
+      22: iconst_4
+      23: bipush        48
+      25: invokestatic  #181                // Method com/clougence/utils/StringUtils.leftPad:(Ljava/lang/String;IC)Ljava/lang/String;
+      28: invokedynamic #197,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      33: invokevirtual #201                // Method java/lang/String.toLowerCase:()Ljava/lang/String;
+      36: areturn
+}

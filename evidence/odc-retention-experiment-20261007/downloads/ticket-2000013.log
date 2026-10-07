@@ -1,0 +1,7 @@
+2026-10-08 01:07:02 INFO c.o.o.s.f.t.DatabaseChangeThread - Database change task start to run, taskId=2000026
+2026-10-08 01:07:02 INFO c.o.o.s.f.t.DatabaseChangeThread - Start read sql content, taskId=2000026
+2026-10-08 01:07:02 INFO c.o.o.s.f.t.DatabaseChangeThread - Read sql content successfully, taskId=2000026
+2026-10-08 01:07:02 INFO c.o.o.s.f.t.DatabaseChangeThread - Async sql: SELECT 'P7_RETENTION_CONFIG_SUCCESS' AS MARKER FROM DUAL
+2026-10-08 01:07:04 INFO c.o.o.s.f.t.DatabaseChangeThread - async task result set was saved as JSON file successfully, file name=data/ASYNC/AF42F993-21CA-4352-9865-82C9453E7261.json
+2026-10-08 01:07:04 INFO c.o.o.s.f.t.DatabaseChangeThread - database change task result set was saved as local zip file, file name=F8E8377A-03FC-41AD-A801-D9D1C63218B5
+2026-10-08 01:07:04 INFO c.o.o.s.f.t.DatabaseChangeThread - Async task end up running, task id: 2000026

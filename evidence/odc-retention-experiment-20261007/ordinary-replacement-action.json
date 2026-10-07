@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-10-07T17:08:50.239420+00:00",
+  "authorization": "Explicit mission authorizes ordinary ODC-only application pod replacement after clean fresh retention baseline",
+  "action": [
+    "kubectl",
+    "--context",
+    "k8s-admin-public",
+    "-n",
+    "oceanbase-odc",
+    "delete",
+    "pod",
+    "odc-6cd8c7d459-pmw9v",
+    "--wait=false"
+  ],
+  "old_pod": {
+    "name": "odc-6cd8c7d459-pmw9v",
+    "uid": "f6bec88e-26a0-4f3e-810d-4277cee4b031",
+    "ip": "10.244.1.114",
+    "hostname_spec": "odc"
+  },
+  "metadb_restart": false,
+  "pvc_change": false,
+  "service_change": false,
+  "deployment_change": false,
+  "output": "pod \"odc-6cd8c7d459-pmw9v\" deleted from oceanbase-odc namespace"
+}

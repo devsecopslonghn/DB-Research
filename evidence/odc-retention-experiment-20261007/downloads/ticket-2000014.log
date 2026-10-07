@@ -1,0 +1,9 @@
+2026-10-08 01:07:19 INFO c.o.o.s.f.t.DatabaseChangeThread - Database change task start to run, taskId=2000028
+2026-10-08 01:07:19 INFO c.o.o.s.f.t.DatabaseChangeThread - Start read sql content, taskId=2000028
+2026-10-08 01:07:19 INFO c.o.o.s.f.t.DatabaseChangeThread - Read sql content successfully, taskId=2000028
+2026-10-08 01:07:19 INFO c.o.o.s.f.t.DatabaseChangeThread - Async sql: SELECT 1/0 AS P7_RETENTION_CONFIG_FAILURE FROM DUAL
+2026-10-08 01:07:20 WARN c.o.o.s.f.t.DatabaseChangeThread - Error occurs when executing sql: SELECT 1/0 AS P7_RETENTION_CONFIG_FAILURE FROM DUAL, error message: ErrorCode = 1476, SQLState = 22012, Details = ORA-01476: divisor is equal to zero
+
+2026-10-08 01:07:20 INFO c.o.o.s.f.t.DatabaseChangeThread - async task result set was saved as JSON file successfully, file name=data/ASYNC/BA0B6D85-97BF-4C93-A3DB-E9A77AD6A2B1.json
+2026-10-08 01:07:20 INFO c.o.o.s.f.t.DatabaseChangeThread - database change task result set was saved as local zip file, file name=6669E8F5-D214-4540-8E2D-F0468E79F7E6
+2026-10-08 01:07:20 INFO c.o.o.s.f.t.DatabaseChangeThread - Async task end up running, task id: 2000028

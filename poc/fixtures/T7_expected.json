@@ -1,0 +1,1 @@
+{"objects":[{"name":"OSS_POC_LOST","type":"FUNCTION"}],"effects":[],"invocations":[{"function":"OSS_POC_LOST","clob_input":"abc","expected_number":3}]}

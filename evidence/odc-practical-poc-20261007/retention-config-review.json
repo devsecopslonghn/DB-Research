@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-10-07T10:51:20.095971+00:00",
+  "application": "oceanbase-odc",
+  "namespace": "argocd",
+  "source": {
+    "path": "oceanbase-odc",
+    "repoURL": "git@github.com:devsecopslonghn/k8s-namepsace-chart.git",
+    "targetRevision": "master"
+  },
+  "automated": {
+    "allowEmpty": false,
+    "prune": false,
+    "selfHeal": true
+  },
+  "annotation_names": [
+    "argocd.argoproj.io/sync-wave",
+    "argocd.argoproj.io/tracking-id",
+    "kubectl.kubernetes.io/last-applied-configuration"
+  ],
+  "health": {
+    "lastTransitionTime": "2026-10-07T10:49:12Z",
+    "status": "Healthy"
+  },
+  "sync": {
+    "revision": "39c744828fbeb43edfc6718cab4c81ef4507cd54",
+    "status": "Synced"
+  },
+  "configuration_patch_dry_run": "PASS server-side strategic merge; no mutation",
+  "configuration_patch_applied": false,
+  "constraint": "Argo CD selfHeal=true; a live Deployment fix will be reverted unless the experiment is separately controlled or GitOps desired state is updated."
+}

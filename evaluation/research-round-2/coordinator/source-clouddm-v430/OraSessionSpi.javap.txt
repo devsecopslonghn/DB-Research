@@ -1,0 +1,28 @@
+Compiled from "OraSessionSpi.java"
+public class com.clougence.clouddm.dsfamily.oracle.execute.OraSessionSpi extends com.clougence.clouddm.dsfamily.execute.RdbSessionSpi {
+  public com.clougence.clouddm.dsfamily.oracle.execute.OraSessionSpi();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method com/clougence/clouddm/dsfamily/execute/RdbSessionSpi."<init>":()V
+       4: return
+
+  public com.clougence.clouddm.sdk.execute.session.SessionContextDTO createSessionContext(com.clougence.clouddm.base.metadata.ds.DataSourceConfig, java.util.Map<java.lang.String, java.lang.Object>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokespecial #7                  // Method com/clougence/clouddm/dsfamily/execute/RdbSessionSpi.createSessionContext:(Lcom/clougence/clouddm/base/metadata/ds/DataSourceConfig;Ljava/util/Map;)Lcom/clougence/clouddm/sdk/execute/session/SessionContextDTO;
+       6: astore_3
+       7: aload_3
+       8: invokevirtual #11                 // Method com/clougence/clouddm/sdk/execute/session/SessionContextDTO.getRdbTxIsolation:()Lcom/clougence/clouddm/sdk/execute/session/rdb/RdbIsolation;
+      11: ifnull        24
+      14: aload_3
+      15: invokevirtual #11                 // Method com/clougence/clouddm/sdk/execute/session/SessionContextDTO.getRdbTxIsolation:()Lcom/clougence/clouddm/sdk/execute/session/rdb/RdbIsolation;
+      18: getstatic     #17                 // Field com/clougence/clouddm/sdk/execute/session/rdb/RdbIsolation.DEFAULT:Lcom/clougence/clouddm/sdk/execute/session/rdb/RdbIsolation;
+      21: if_acmpne     31
+      24: aload_3
+      25: getstatic     #23                 // Field com/clougence/clouddm/sdk/execute/session/rdb/RdbIsolation.READ_COMMITTED:Lcom/clougence/clouddm/sdk/execute/session/rdb/RdbIsolation;
+      28: invokevirtual #26                 // Method com/clougence/clouddm/sdk/execute/session/SessionContextDTO.setRdbTxIsolation:(Lcom/clougence/clouddm/sdk/execute/session/rdb/RdbIsolation;)V
+      31: aload_3
+      32: areturn
+}

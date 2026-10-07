@@ -1,0 +1,102 @@
+{
+  "minuth__open-migration": {
+    "repo": "minuth/open-migration",
+    "sha": "5dc73cc3ee98e3951d7436bfccb12063c0d6441e",
+    "directory": "evidence/source/minuth__open-migration"
+  },
+  "apegeek__schema-pilot": {
+    "repo": "apegeek/schema-pilot",
+    "sha": "67b2cc2864df1ce0d1f1f87dfd9d14ded792fe88",
+    "directory": "evidence/source/apegeek__schema-pilot"
+  },
+  "dband-drm__drm-cli": {
+    "repo": "dband-drm/drm-cli",
+    "sha": "d6b049d79b07a461949ec89e15dfe2c1eecf81ed",
+    "directory": "evidence/source/dband-drm__drm-cli"
+  },
+  "bablsoft__accessflow": {
+    "repo": "bablsoft/accessflow",
+    "sha": "55c209a4d9e4ba09a6c089f90e68a8b16b3f2133",
+    "directory": "evidence/source/bablsoft__accessflow"
+  },
+  "playframework__flyway-play": {
+    "repo": "playframework/flyway-play",
+    "sha": "85475380527415c65e7cc3b720f6f901dfc9cdf8",
+    "directory": "evidence/source/playframework__flyway-play"
+  },
+  "bytebase__bytebase": {
+    "repo": "bytebase/bytebase",
+    "sha": "80524fc54601bcc5545575e02f83b23ee6bb0a70",
+    "directory": "evidence/source/bytebase__bytebase"
+  },
+  "sqitchers__sqitch": {
+    "repo": "sqitchers/sqitch",
+    "sha": "b08e5c8a773ee4ab5ea4ab7cf6f7a16c55d6994e",
+    "directory": "evidence/source/sqitchers__sqitch"
+  },
+  "flyway__flyway": {
+    "repo": "flyway/flyway",
+    "sha": "a549f5dd1ac80fbe7bc8103dfcd2d556c606c39c",
+    "directory": "evidence/source/flyway__flyway"
+  },
+  "liquibase__liquibase": {
+    "repo": "liquibase/liquibase",
+    "sha": "3ed5c81625671e91b4423ba4503fe68ce947d1ff",
+    "directory": "evidence/source/liquibase__liquibase"
+  },
+  "ariga__atlas": {
+    "repo": "ariga/atlas",
+    "sha": "1317a57674f3795de395f535a258c088d7f767bf",
+    "directory": "evidence/source/ariga__atlas"
+  },
+  "cookieY__Yearning": {
+    "repo": "cookieY/Yearning",
+    "sha": "6e56e685beb2fff830ddd55ac406f842d575b82c",
+    "directory": "evidence/source/cookieY__Yearning"
+  },
+  "hhyo__Archery": {
+    "repo": "hhyo/Archery",
+    "sha": "ccc7134f48d0e261f9e3ffa0d445dcec48adb790",
+    "directory": "evidence/source/hhyo__Archery"
+  },
+  "liquibase__liquibase__v4.33.0": {
+    "repo": "liquibase/liquibase",
+    "sha": "75773ed9b45b0a5adf3c42872d2e5494da669427",
+    "directory": "evidence/source/liquibase__liquibase__v4.33.0"
+  },
+  "Tareya__devops-archery": {
+    "repo": "Tareya/devops-archery",
+    "sha": "ce303806e370f781ebc17fd370ef343c04ded689",
+    "directory": "evidence/source/Tareya__devops-archery"
+  },
+  "binout__flyway-ui": {
+    "repo": "binout/flyway-ui",
+    "sha": "3d5e624dddfb52333b4ffb3b8bba6df6d32bddff",
+    "directory": "evidence/source/binout__flyway-ui"
+  },
+  "dbmaintain": {
+    "repo": "dbmaintain/dbmaintain",
+    "sha": "50c0455d1224ea6db98f0fd042b83681cbe55386",
+    "directory": "evidence/additional-source/dbmaintain"
+  },
+  "cloudbeaver": {
+    "repo": "dbeaver/cloudbeaver",
+    "sha": "74123b3a36340282a6ab117dfa1733d69c32fe75",
+    "directory": "evidence/additional-source/cloudbeaver"
+  },
+  "dbward": {
+    "repo": "dbward-dev/dbward",
+    "sha": "e73370b15b2fd81fdcd9e6f8fa97004f9fd2fc69",
+    "directory": "evidence/additional-source/dbward"
+  },
+  "dbdeploy": {
+    "repo": "gigi81/dbdeploy",
+    "sha": "168ff6ff1ce93712c9839ec33a6935365e99632e",
+    "directory": "evidence/additional-source/dbdeploy"
+  },
+  "dbpm": {
+    "repo": "512itconsulting/dbpm",
+    "sha": "ef810bd2185110c7acb44493431f76def1de4216",
+    "directory": "evidence/additional-source/dbpm"
+  }
+}

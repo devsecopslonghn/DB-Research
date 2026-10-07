@@ -1,0 +1,42 @@
+[
+  {
+    "repo": "bablsoft/accessflow",
+    "commit": "2ba5d322e7e1b4c750b5b0af85935e9ae814bd6a",
+    "path": "backend/src/main/java/com/bablsoft/accessflow/schemachange/internal/SchemaChangeStatementScanner.java",
+    "url": "https://raw.githubusercontent.com/bablsoft/accessflow/2ba5d322e7e1b4c750b5b0af85935e9ae814bd6a/backend/src/main/java/com/bablsoft/accessflow/schemachange/internal/SchemaChangeStatementScanner.java",
+    "local_path": "evaluation/research-round-2/coordinator/source/accessflow-v2.7.0__SchemaChangeStatementScanner.java",
+    "sha256": "c876feaceb0a5cc47de3638379b2efb7bd8728eb054cde865651ab3004d6ee24",
+    "byte_identical_to_inspected_head": true,
+    "retrieved_at": "2026-10-04T13:16:43.079284+00:00"
+  },
+  {
+    "repo": "bablsoft/accessflow",
+    "commit": "2ba5d322e7e1b4c750b5b0af85935e9ae814bd6a",
+    "path": "backend/src/main/java/com/bablsoft/accessflow/schemachange/internal/SchemaChangeStatementGate.java",
+    "url": "https://raw.githubusercontent.com/bablsoft/accessflow/2ba5d322e7e1b4c750b5b0af85935e9ae814bd6a/backend/src/main/java/com/bablsoft/accessflow/schemachange/internal/SchemaChangeStatementGate.java",
+    "local_path": "evaluation/research-round-2/coordinator/source/accessflow-v2.7.0__SchemaChangeStatementGate.java",
+    "sha256": "97a9b06d97b941582420c59a755b06420706592e1f836378380e18274194dab1",
+    "byte_identical_to_inspected_head": true,
+    "retrieved_at": "2026-10-04T13:16:42.985311+00:00"
+  },
+  {
+    "repo": "bablsoft/accessflow",
+    "commit": "2ba5d322e7e1b4c750b5b0af85935e9ae814bd6a",
+    "path": "backend/src/main/java/com/bablsoft/accessflow/schemachange/internal/DefaultSchemaChangePromotionService.java",
+    "url": "https://raw.githubusercontent.com/bablsoft/accessflow/2ba5d322e7e1b4c750b5b0af85935e9ae814bd6a/backend/src/main/java/com/bablsoft/accessflow/schemachange/internal/DefaultSchemaChangePromotionService.java",
+    "local_path": "evaluation/research-round-2/coordinator/source/accessflow-v2.7.0__DefaultSchemaChangePromotionService.java",
+    "sha256": "3a9adc602d1753c75780681507727d8e994bbe995eabc994c286a53c79f75832",
+    "byte_identical_to_inspected_head": true,
+    "retrieved_at": "2026-10-04T13:16:43.093607+00:00"
+  },
+  {
+    "repo": "bablsoft/accessflow",
+    "commit": "2ba5d322e7e1b4c750b5b0af85935e9ae814bd6a",
+    "path": "backend/src/main/java/com/bablsoft/accessflow/requestgroups/internal/DefaultGroupReviewService.java",
+    "url": "https://raw.githubusercontent.com/bablsoft/accessflow/2ba5d322e7e1b4c750b5b0af85935e9ae814bd6a/backend/src/main/java/com/bablsoft/accessflow/requestgroups/internal/DefaultGroupReviewService.java",
+    "local_path": "evaluation/research-round-2/coordinator/source/accessflow-v2.7.0__DefaultGroupReviewService.java",
+    "sha256": "51b3c627048fa48f598fbbfa99f60ac2425f76d2812221b3dcbbd5e834da856b",
+    "byte_identical_to_inspected_head": true,
+    "retrieved_at": "2026-10-04T13:16:43.051311+00:00"
+  }
+]

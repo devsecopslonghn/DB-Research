@@ -1,0 +1,754 @@
+{
+  "observed_at": "2026-10-04T07:38:11.304301+00:00",
+  "url": "https://db-poc.apps.drgdevlab.com",
+  "merged_pr": "https://github.com/devsecopslonghn/k8s-namepsace-chart/pull/37",
+  "merge_commit": "39c744828fbeb43edfc6718cab4c81ef4507cd54",
+  "status": "PASS",
+  "manifest_matches_local": true,
+  "verified_assets": 141,
+  "asset_checks": [
+    {
+      "path": "app.js",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/01_sql01_create_table.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/02_sql02_alter_table.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/03_sql03_dml.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/04_sql04_sql05_procedure_function.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/05_sql06_package.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/06_sql07_trigger.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/07_sql08_sql09_anonymous_slash.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/08_sql10_sqlplus_directives.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/09_sql11_invalid_procedure.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/10_sql12_oracle_literals.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/11_rec01_missing_table.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/12_rec04_partial_ddl.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/13_rec08_checksum_changed_sql01.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/14_rec09_rec10_replay_probe.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/15_promotion.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/bytebase/01_sql01_create_table.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/bytebase/02_sql02_alter_table.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/bytebase/03_sql03_dml.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/bytebase/04_sql04_sql05_procedure_function.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/bytebase/05_sql06_package.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/bytebase/06_sql07_trigger.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/bytebase/07_sql08_sql09_anonymous_slash.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/bytebase/08_sql10_sqlplus_directives.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/bytebase/09_sql11_invalid_procedure.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/bytebase/10_sql12_oracle_literals.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/bytebase/11_rec01_missing_table.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/bytebase/12_rec04_partial_ddl.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/bytebase/13_rec08_checksum_changed_sql01.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/bytebase/14_rec09_rec10_replay_probe.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/bytebase/15_promotion.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/bytebase/16_ui_readback.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/artifacts/bytebase/17_api_cli_marker.sql",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/browser-manifest.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/bytebase-historical.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/bytebase-poc-api.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/bytebase-poc-browser.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/bytebase-poc-cases.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/bytebase-poc-governance.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/bytebase-poc-review.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/bytebase-poc-validation.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/catalog.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/odc-adoption-checks.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/odc-oracle-readonly.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/odc-runtime.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/oracle-poc-api.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/oracle-poc-browser.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/oracle-poc-cases.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/oracle-poc-governance.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/oracle-poc-manual-approval.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/oracle-poc-review.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/bb-poc-limited-instances.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/bb-poc-plan-review.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/bb-poc-project.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/bb-poc-ui-audit-gate.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/bb-poc-ui-executed.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/bb-poc-ui-four-stages.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/bb-poc-ui-invalid-task-done.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/bb-poc-ui-metadata-query-error.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/bb-poc-ui-review-error-deployed.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/bb-poc-ui-sql-readback.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/bb-poc-ui16-deployed.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/odc-datasources.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/odc-environments.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/odc-login.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/odc-oracle-ui-approved-result.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/odc-oracle-ui-create.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/odc-oracle-ui-invalid.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/odc-oracle-ui-readback.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/odc-oracle-ui-result.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/odc-oracle-ui-review.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/odc-oracle-ui-schema.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/odc-oracle-ui-ticket-created.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/odc-projects.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/odc-roles.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/odc-tickets.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/odc-users.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/poc-datasources.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/originals/poc-projects.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/portal-browser-manifest.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/portal-interaction-checks.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/portal-verification/portal-desktop.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/portal-verification/portal-desktop.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/portal-verification/portal-mobile.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/portal-verification/portal-mobile.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/BYTEBASE-ACCEPTANCE.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/BYTEBASE-API-UI-RUNBOOK.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/BYTEBASE-HISTORICAL.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/BYTEBASE-ODC-COMPARISON.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/BYTEBASE-ORACLE-POC-RESULTS.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/BYTEBASE-POC-CLI.py",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/FEATURE-MATRIX.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/LICENSE-AUDIT.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/ODC-API-UI-RUNBOOK.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/ODC-CONNECTION-POC.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/ODC-EVALUATION.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/ODC-ORACLE-POC-RESULTS.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/ODC-POC-GUIDE.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/ORACLE-COMPATIBILITY.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/ORACLE-POC.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/PRODUCT-EVIDENCE.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/PRODUCT-MODEL.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/REPORT.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/REVIEW-CHECKS.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/odc-oracle-readonly.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/reports/oracle-connection.md",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/accessflow-audit-log-light.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/accessflow-deployment-pipeline-environments-light.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/bb-poc-limited-instances.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/bb-poc-plan-review.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/bb-poc-project.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/bb-poc-ui-audit-gate.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/bb-poc-ui-executed.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/bb-poc-ui-four-stages.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/bb-poc-ui-invalid-task-done.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/bb-poc-ui-metadata-query-error.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/bb-poc-ui-review-error-deployed.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/bb-poc-ui-sql-readback.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/bb-poc-ui16-deployed.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/odc-batch-change.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/odc-datasources.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/odc-environments.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/odc-login.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/odc-oracle-ui-approved-result.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/odc-oracle-ui-create.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/odc-oracle-ui-invalid.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/odc-oracle-ui-readback.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/odc-oracle-ui-result.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/odc-oracle-ui-review.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/odc-oracle-ui-schema.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/odc-oracle-ui-ticket-created.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/odc-project-databases.png",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/odc-projects.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/odc-roles.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/odc-tickets.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/odc-users.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/poc-datasources.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/screenshots/poc-projects.webp",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "evidence/sources.json",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "index.html",
+      "http_status": 200,
+      "sha256_match": true
+    },
+    {
+      "path": "styles.css",
+      "http_status": 200,
+      "sha256_match": true
+    }
+  ],
+  "catalog": {
+    "products": 11,
+    "cases": 106,
+    "images": 32,
+    "documents": 71
+  },
+  "argocd": [
+    {
+      "name": "db-poc",
+      "sync": "Synced",
+      "health": "Healthy",
+      "revision": "39c744828fbeb43edfc6718cab4c81ef4507cd54"
+    },
+    {
+      "name": "oceanbase-odc",
+      "sync": "Synced",
+      "health": "Healthy",
+      "revision": "39c744828fbeb43edfc6718cab4c81ef4507cd54"
+    },
+    {
+      "name": "bytebase",
+      "sync": "Synced",
+      "health": "Healthy",
+      "revision": null
+    }
+  ],
+  "odc_pvcs": [
+    {
+      "name": "data-oceanbase-metadb-10gi",
+      "uid": "669aee81-1d78-486b-b78e-2d221638ccad",
+      "storage": "10Gi"
+    },
+    {
+      "name": "odc-data",
+      "uid": "4f42837c-cece-4c5d-9603-0a42c34acad3",
+      "storage": "5Gi"
+    }
+  ]
+}

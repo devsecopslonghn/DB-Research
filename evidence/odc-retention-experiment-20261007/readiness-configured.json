@@ -1,0 +1,341 @@
+{
+  "timestamp": "2026-10-07T17:06:48.410656+00:00",
+  "actors": {
+    "requester": {
+      "authenticated": true
+    },
+    "approver": {
+      "authenticated": true
+    },
+    "executor": {
+      "authenticated": true
+    },
+    "observer": {
+      "authenticated": true
+    }
+  },
+  "project": {
+    "createTime": 1791073053000,
+    "creator": {
+      "accountName": "odc_poc_executor",
+      "id": 10002,
+      "name": "POC executor",
+      "roleNames": []
+    },
+    "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+    "id": 1,
+    "name": "odc-oracle-poc",
+    "updateTime": 1791073053000
+  },
+  "datasources": [
+    {
+      "connectType": "ORACLE",
+      "dataSource": {
+        "connectType": "CONNECT_TYPE_OB",
+        "createTime": 1791074334000,
+        "creatorId": 1,
+        "defaultSchema": "ODC_POC_20261004_DEV",
+        "environmentId": 1,
+        "host": "adb.ap-mumbai-1.oraclecloud.com",
+        "id": 1000001,
+        "name": "odc-poc-dev",
+        "port": 1521,
+        "projectId": 1,
+        "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+        "status": {
+          "errorCode": null,
+          "errorMessage": null,
+          "status": "TESTING",
+          "type": null
+        },
+        "type": "ORACLE",
+        "updateTime": 1791074334000,
+        "username": "ODC_POC_20261004_DEV"
+      },
+      "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+      "environment": {
+        "createTime": 1791016279000,
+        "creator": {
+          "accountName": null,
+          "id": 1,
+          "name": null,
+          "roleNames": null
+        },
+        "description": "development environment",
+        "id": 1,
+        "name": "dev",
+        "updateTime": 1791016279000
+      },
+      "id": 1000069,
+      "name": "ODC_POC_20261004_DEV",
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": null,
+          "id": 1,
+          "name": null,
+          "roleNames": null
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "type": "PHYSICAL"
+    },
+    {
+      "connectType": "ORACLE",
+      "dataSource": {
+        "connectType": "CONNECT_TYPE_OB",
+        "createTime": 1791074474000,
+        "creatorId": 1,
+        "defaultSchema": "ODC_POC_20261004_MOCKPROD",
+        "environmentId": 1000022,
+        "host": "adb.ap-mumbai-1.oraclecloud.com",
+        "id": 1000004,
+        "name": "odc-poc-mockprod",
+        "port": 1521,
+        "projectId": 1,
+        "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+        "status": {
+          "errorCode": null,
+          "errorMessage": null,
+          "status": "TESTING",
+          "type": null
+        },
+        "type": "ORACLE",
+        "updateTime": 1791075730000,
+        "username": "ODC_POC_20261004_MOCKPROD"
+      },
+      "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+      "environment": {
+        "createTime": 1791075730000,
+        "creator": {
+          "accountName": null,
+          "id": 1,
+          "name": null,
+          "roleNames": null
+        },
+        "description": "Disposable schema environment simulation",
+        "id": 1000022,
+        "name": "POCPROD",
+        "updateTime": 1791075730000
+      },
+      "id": 1000218,
+      "name": "ODC_POC_20261004_MOCKPROD",
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": null,
+          "id": 1,
+          "name": null,
+          "roleNames": null
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "type": "PHYSICAL"
+    },
+    {
+      "connectType": "ORACLE",
+      "dataSource": {
+        "connectType": "CONNECT_TYPE_OB",
+        "createTime": 1791074479000,
+        "creatorId": 1,
+        "defaultSchema": "ODC_POC_20261004_OBSERVER",
+        "environmentId": 1,
+        "host": "adb.ap-mumbai-1.oraclecloud.com",
+        "id": 1000005,
+        "name": "odc-poc-observer",
+        "port": 1521,
+        "projectId": 1,
+        "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+        "status": {
+          "errorCode": null,
+          "errorMessage": null,
+          "status": "TESTING",
+          "type": null
+        },
+        "type": "ORACLE",
+        "updateTime": 1791074479000,
+        "username": "ODC_POC_20261004_OBSERVER"
+      },
+      "databaseId": "9BA4EF84-AE31-413F-AF39-9527F190E1EB",
+      "environment": {
+        "createTime": 1791016279000,
+        "creator": {
+          "accountName": null,
+          "id": 1,
+          "name": null,
+          "roleNames": null
+        },
+        "description": "development environment",
+        "id": 1,
+        "name": "dev",
+        "updateTime": 1791016279000
+      },
+      "id": 1000345,
+      "name": "ODC_POC_20261004_OBSERVER",
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": null,
+          "id": 1,
+          "name": null,
+          "roleNames": null
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "type": "PHYSICAL"
+    },
+    {
+      "connectType": "ORACLE",
+      "dataSource": {
+        "connectType": "CONNECT_TYPE_OB",
+        "createTime": 1791074464000,
+        "creatorId": 1,
+        "defaultSchema": "ODC_POC_20261004_SIT",
+        "environmentId": 2,
+        "host": "adb.ap-mumbai-1.oraclecloud.com",
+        "id": 1000002,
+        "name": "odc-poc-sit",
+        "port": 1521,
+        "projectId": 1,
+        "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+        "status": {
+          "errorCode": null,
+          "errorMessage": null,
+          "status": "TESTING",
+          "type": null
+        },
+        "type": "ORACLE",
+        "updateTime": 1791074464000,
+        "username": "ODC_POC_20261004_SIT"
+      },
+      "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+      "environment": {
+        "createTime": 1791016279000,
+        "creator": {
+          "accountName": null,
+          "id": 1,
+          "name": null,
+          "roleNames": null
+        },
+        "description": "sit environment",
+        "id": 2,
+        "name": "sit",
+        "updateTime": 1791016279000
+      },
+      "id": 1000122,
+      "name": "ODC_POC_20261004_SIT",
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": null,
+          "id": 1,
+          "name": null,
+          "roleNames": null
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "type": "PHYSICAL"
+    },
+    {
+      "connectType": "ORACLE",
+      "dataSource": {
+        "connectType": "CONNECT_TYPE_OB",
+        "createTime": 1791074469000,
+        "creatorId": 1,
+        "defaultSchema": "ODC_POC_20261004_UAT",
+        "environmentId": 1000021,
+        "host": "adb.ap-mumbai-1.oraclecloud.com",
+        "id": 1000003,
+        "name": "odc-poc-uat",
+        "port": 1521,
+        "projectId": 1,
+        "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+        "status": {
+          "errorCode": null,
+          "errorMessage": null,
+          "status": "TESTING",
+          "type": null
+        },
+        "type": "ORACLE",
+        "updateTime": 1791075730000,
+        "username": "ODC_POC_20261004_UAT"
+      },
+      "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+      "environment": {
+        "createTime": 1791075729000,
+        "creator": {
+          "accountName": null,
+          "id": 1,
+          "name": null,
+          "roleNames": null
+        },
+        "description": "Disposable schema environment simulation",
+        "id": 1000021,
+        "name": "POCUAT",
+        "updateTime": 1791075729000
+      },
+      "id": 1000184,
+      "name": "ODC_POC_20261004_UAT",
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": null,
+          "id": 1,
+          "name": null,
+          "roleNames": null
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "type": "PHYSICAL"
+    }
+  ],
+  "oracle_readonly_identity": {
+    "http_status": 200,
+    "successful": true,
+    "error_code": null,
+    "approval_required": null,
+    "results": [
+      {
+        "status": "SUCCESS",
+        "errorCode": -1,
+        "columnLabels": [
+          "SCHEMA_OWNER",
+          "SERVICE_NAME",
+          "PDB",
+          "PROTOCOL"
+        ],
+        "rows": [
+          [
+            "ODC_POC_20261004_DEV",
+            "GAF051B0A6547F3_LABDB_tp.adb.oraclecloud.com",
+            "GAF051B0A6547F3_LABDB",
+            "tcps"
+          ]
+        ],
+        "total": 1,
+        "track": null,
+        "existWarnings": false,
+        "checkViolations": []
+      }
+    ]
+  },
+  "info": {
+    "http_status": 200,
+    "version": "4.4.1-20260116"
+  }
+}

@@ -1,0 +1,16 @@
+# Final bounded ODC retention experiment
+
+**PASS for fresh success/failure evidence with supported configuration; internal practical pilot GO.** [Final report](../../evaluation/odc-retention-experiment.md) and [executive decision](final-decision.txt) define scope. This is the mission's requested 20261007 evidence namespace; captures carry actual UTC timestamps.
+
+- [Original cluster](cluster-before.json), [inventory](inventory-before.json), [readiness](readiness-before.json), [preservation baseline](preservation-before.json): unchanged lab identities, historical tickets, datasource mappings and current TCPS.
+- [Pause](reconciliation-paused.json), [application](configuration-applied.json), [configured runtime](cluster-configured.json): application-only reconciliation control, stable hostname/Service identity, persistent task-log mount.
+- [Pair before](pair-before.json), [executor metadata before](executors-before.json), [files before](files-before.json), [audit before](audit-before.json): new R1 2000013 success and R2 2000014 deterministic ORA-01476 failure; system auto-approval and DBA dispatch.
+- [Replacement action](ordinary-replacement-action.json), [replacement runtime](cluster-after-replacement.json), [pair after](pair-after.json), [executor metadata after](executors-after.json), [files after](files-after.json), [audit after](audit-after.json): same exact IDs and artifact hashes preserved after changed pod UID/IP.
+- [Routing proof](routing-verification.json), [retained downloads](retained-downloads.json), [conclusion](retention-conclusion.json): no retired-pod dependence, meaningful task-log retrieval, local ZIP/log artifacts, no correction round required.
+- [Template rollback](rollback-template-verification.json), [reconciliation restored](reconciliation-restored.json), [restored runtime](cluster-restored.json), [final lab checks](final-lab-verification.json): exact original configuration, Argo active/Synced/Healthy, unchanged MetaDB/PVC/Service/historical tickets. R1/R2 are retained.
+- [Minimal permanent recommendation](permanent-gitops-recommendation.yaml), [adoption dimensions/score](adoption-decision.json), [source review](source-review.json): only settings demonstrated at runtime, no permanent GitOps push, 86/100 feature judgment.
+- [Historical preservation](preservation-after.json), [document checks](document-checks.json), [evidence checks](evidence-checks.json): final verification and review.
+
+The copied [prepared configuration](prepared-configuration.yaml) preserves the historical proposal's original comments; configuration-applied.json records the later explicit authorization and actual application. The historical proposal/evidence directory remains untouched. Disposable probes reside under `/tmp/odc-retention-experiment-20261007/`; only API and exact-row read-only MetaDB SELECTs collect metadata. No product source or MetaDB writes occurred. The existing TCPS adapter remains an operational dependency.
+
+Rollback removes the proven live settings intentionally. Task files remain on the data PVC; local downloads preserve reviewable evidence. Applying the recommended settings through separately authorized GitOps is required before pilot use. Historical lost logs/stale-host tasks are not repaired by this experiment.

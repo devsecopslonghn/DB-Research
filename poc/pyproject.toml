@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61,<81"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oracle-oss-poc"
+version = "0.1.0"
+description = "Restricted single-target Oracle change-management POC"
+requires-python = ">=3.9"
+dependencies = ["oracledb==3.4.0"]
+
+[tool.setuptools]
+packages = ["poc", "poc.runner", "poc.inventory", "poc.state", "poc.verifier", "poc.reports"]
+package-dir = {poc = "."}

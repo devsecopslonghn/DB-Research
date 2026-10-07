@@ -1,0 +1,96 @@
+{
+  "timestamp": "2026-10-07T10:30:13.266464+00:00",
+  "http_status": 200,
+  "response": {
+    "contents": [
+      {
+        "databaseChangingRecordList": [
+          {
+            "database": {
+              "dataSource": {
+                "id": 1000001,
+                "name": "odc-poc-dev",
+                "type": "ORACLE"
+              },
+              "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+              "environment": {
+                "id": 1,
+                "name": "dev"
+              },
+              "id": 1000069,
+              "name": "ODC_POC_20261004_DEV",
+              "project": {
+                "id": 1,
+                "name": "odc-oracle-poc"
+              }
+            },
+            "status": "EXECUTION_SUCCEEDED"
+          },
+          {
+            "database": {
+              "dataSource": {
+                "id": 1000002,
+                "name": "odc-poc-sit",
+                "type": "ORACLE"
+              },
+              "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+              "environment": {
+                "id": 2,
+                "name": "sit"
+              },
+              "id": 1000122,
+              "name": "ODC_POC_20261004_SIT",
+              "project": {
+                "id": 1,
+                "name": "odc-oracle-poc"
+              }
+            },
+            "status": "WAIT_FOR_EXECUTION"
+          },
+          {
+            "database": {
+              "dataSource": {
+                "id": 1000003,
+                "name": "odc-poc-uat",
+                "type": "ORACLE"
+              },
+              "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+              "environment": {
+                "id": 1000021,
+                "name": "POCUAT"
+              },
+              "id": 1000184,
+              "name": "ODC_POC_20261004_UAT",
+              "project": {
+                "id": 1,
+                "name": "odc-oracle-poc"
+              }
+            },
+            "status": "WAIT_FOR_EXECUTION"
+          },
+          {
+            "database": {
+              "dataSource": {
+                "id": 1000004,
+                "name": "odc-poc-mockprod",
+                "type": "ORACLE"
+              },
+              "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+              "environment": {
+                "id": 1000022,
+                "name": "POCPROD"
+              },
+              "id": 1000218,
+              "name": "ODC_POC_20261004_MOCKPROD",
+              "project": {
+                "id": 1,
+                "name": "odc-oracle-poc"
+              }
+            },
+            "status": "WAIT_FOR_EXECUTION"
+          }
+        ]
+      }
+    ]
+  }
+}

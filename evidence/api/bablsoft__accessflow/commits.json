@@ -1,0 +1,2532 @@
+[
+  {
+    "sha": "55c209a4d9e4ba09a6c089f90e68a8b16b3f2133",
+    "node_id": "C_kwDOSQzY1doAKDU1YzIwOWE0ZDllNGJhMDlhNmMwODlmOTBlNjhhOGIxNmIzZjIxMzM",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-10-01T09:43:39Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-10-01T09:43:39Z"
+      },
+      "message": "Merge pull request #1142 from bablsoft/chore/AF-v2.7-release-thread\n\nchore(marketing): log v2.7 release thread, refresh proof points",
+      "tree": {
+        "sha": "1419365baf48208cb1a6ce066b516ba1596f6ddb",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/1419365baf48208cb1a6ce066b516ba1596f6ddb"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/55c209a4d9e4ba09a6c089f90e68a8b16b3f2133",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvitLCRC1aQ7uu5UhlAAADzQQAG+XScPIqyqRQFpkRQJC5YLH\nsfZky9SjyBCXWWvvx89sPwZJ6l1MfaVCGDW8Ekh+XDl7XaIl6FjZPIENZyKMd6KW\nv0nDIx89j/5uBTYLNBtcTHDdM317FuVhy/o3bFSnJEO7Y/JsyPuRhkKPA+UBMrmq\nLZfuKuIZ7lvd3HSNXR2RR4vI5Mb490wFWK+GgLIXDZ4TFYvfn39X+uPDsXYEpLKy\nRLUFb0TqJ/wAHV2+3afTYdEccZC6mpte/uriMCzsyBHs94mDO1ZNLcNEu1NoBUFh\nLbASSpcSkVcCfFTsw0gMAjUtECKQqg4L01ITLYIo7vsOrus0fLPSf1xT3bx7JsKX\nJy8LdMR33qDUhZBJ3ZSzq19iR1l8tTXmPD7+HDOSlnrVv38/PDGrdupeSO209J1p\nIjGExq9kddk6nmVlXMrsqq0yGrw8w8dP8KPK3HMLzCwIkgGqu46+6UiDif8qbrjU\nU14CKul8Lfsixr34usdBRGWQ6N4mC6FmGjHdQfvEAw6Jn4RWguvQu+3NrzK0RzkZ\nf1lY9TuR49BPacuv2fSRIXowfcvM5S1GG2omPTNrZ13wrlkgy8DheIH8t5B5+twk\njStBUVjvb+TBlondhcLw53VVu0W45yJY2IQGKF9B6KZHLXlYzvGnKKSbqVjGLIVN\nNLiQOIeeuB6/Fc/v+19w\n=DTwJ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 1419365baf48208cb1a6ce066b516ba1596f6ddb\nparent 6bf0a1981f19bc9dd194cfb2571929afc9078ee7\nparent f8610ba9c2baf06efad2bb2d7a4918c73c311054\nauthor Tigran Babloyan <tigran.babloyan@gmail.com> 1790847819 +0400\ncommitter GitHub <noreply@github.com> 1790847819 +0400\n\nMerge pull request #1142 from bablsoft/chore/AF-v2.7-release-thread\n\nchore(marketing): log v2.7 release thread, refresh proof points",
+        "verified_at": "2026-10-01T09:43:40Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/55c209a4d9e4ba09a6c089f90e68a8b16b3f2133",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/55c209a4d9e4ba09a6c089f90e68a8b16b3f2133",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/55c209a4d9e4ba09a6c089f90e68a8b16b3f2133/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6bf0a1981f19bc9dd194cfb2571929afc9078ee7",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/6bf0a1981f19bc9dd194cfb2571929afc9078ee7",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/6bf0a1981f19bc9dd194cfb2571929afc9078ee7"
+      },
+      {
+        "sha": "f8610ba9c2baf06efad2bb2d7a4918c73c311054",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/f8610ba9c2baf06efad2bb2d7a4918c73c311054",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/f8610ba9c2baf06efad2bb2d7a4918c73c311054"
+      }
+    ]
+  },
+  {
+    "sha": "f8610ba9c2baf06efad2bb2d7a4918c73c311054",
+    "node_id": "C_kwDOSQzY1doAKGY4NjEwYmE5YzJiYWYwNmVmYWQyYmIyZDdhNDkxOGM3M2MzMTEwNTQ",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-10-01T09:29:45Z"
+      },
+      "committer": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-10-01T09:29:45Z"
+      },
+      "message": "chore(marketing): log v2.7 release thread, refresh proof points\n\n- marketing-log: v2.7.0 X thread posted (9 tweets), X composer quirks\n  and the alternate-port screenshot stack recipe\n- product-marketing v1.1: SQL rules 14 -> 18, latest release v2.7.0",
+      "tree": {
+        "sha": "1419365baf48208cb1a6ce066b516ba1596f6ddb",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/1419365baf48208cb1a6ce066b516ba1596f6ddb"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/f8610ba9c2baf06efad2bb2d7a4918c73c311054",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/f8610ba9c2baf06efad2bb2d7a4918c73c311054",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/f8610ba9c2baf06efad2bb2d7a4918c73c311054",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/f8610ba9c2baf06efad2bb2d7a4918c73c311054/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6bf0a1981f19bc9dd194cfb2571929afc9078ee7",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/6bf0a1981f19bc9dd194cfb2571929afc9078ee7",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/6bf0a1981f19bc9dd194cfb2571929afc9078ee7"
+      }
+    ]
+  },
+  {
+    "sha": "6bf0a1981f19bc9dd194cfb2571929afc9078ee7",
+    "node_id": "C_kwDOSQzY1doAKDZiZjBhMTk4MWYxOWJjOWRkMTk0Y2ZiMjU3MTkyOWFmYzkwNzhlZTc",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-10-01T07:41:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-10-01T07:41:31Z"
+      },
+      "message": "Merge pull request #1141 from bablsoft/chore/release-prep-v2.7\n\nchore(release-prep): v2.7",
+      "tree": {
+        "sha": "4fddc6bcae858f4b171a933c6e77ba33e636e525",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/4fddc6bcae858f4b171a933c6e77ba33e636e525"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/6bf0a1981f19bc9dd194cfb2571929afc9078ee7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvg6rCRC1aQ7uu5UhlAAAb+kQAGYzzCCAjKS02WD+UW80HQs3\nuFPm3RMsal4yqpTfAXenRXFF1guzhGDsWTUMafXN9XnExduaPj0GPNHHpiQ+GL0e\nFaLctC5Bm8BOiIPOy6URkn4ulxdIzGkbbvhvdVnHWMSxP53gpiWxagm//COCDpH7\nSX9Lzp0wTQJf/GVrm6/BeZS1BlvTxqGle4bChUGJDlaRZ0gwB3lE7cbXWrlAb06k\n7TH1uA8JJ2ooCXemSO/ID8pdKRisMkw1fmdVK/sk+ge7hGNMf/MjJSAFIi0JONFn\ngSbquXSRlS2QrdW7/4PVGAudJcueFY4ydpuopCVY542e8PQMoRDJvfMkxadzXend\nikfAf3Q3ZT81p3K26ZjfiXFGlSbKStKZBsCxEUrAfh4Vy2IXhBHDK64iWfoBuEQh\nwcxsTa6g8R9T7gFIvUcvTjS+29Kkj0jxzFfvyux5p+JTGTkYqMxPX8shpAqB4OJH\nwzs3AXijL4slOyNS5+/itS9oZUsEr9G06ulRU0Nc4Yq75AyQw1F3sCP2/Tf44sOQ\nSd9ivTEGRzyXTAS+6sZ24bpgHmEQ6/7ycBiKloLxQ3fuZ2fPZW/BaAX7xrZ3w1V5\nsAcx7/3BxGhCh1818MvLzmw3fp6MT+fvMwaTcK/dxF0YUmj1OOI4Y6YasliVOhId\naGsOMd+YnjeklUSI5krg\n=ESOm\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4fddc6bcae858f4b171a933c6e77ba33e636e525\nparent 302ba8e31dcbcac16f293cef86585afa85b97514\nparent 49d7b0c92a1b5f9afd531a278145878f020f8ea5\nauthor Tigran Babloyan <tigran.babloyan@gmail.com> 1790840491 +0400\ncommitter GitHub <noreply@github.com> 1790840491 +0400\n\nMerge pull request #1141 from bablsoft/chore/release-prep-v2.7\n\nchore(release-prep): v2.7",
+        "verified_at": "2026-10-01T07:41:32Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/6bf0a1981f19bc9dd194cfb2571929afc9078ee7",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/6bf0a1981f19bc9dd194cfb2571929afc9078ee7",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/6bf0a1981f19bc9dd194cfb2571929afc9078ee7/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "302ba8e31dcbcac16f293cef86585afa85b97514",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/302ba8e31dcbcac16f293cef86585afa85b97514",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/302ba8e31dcbcac16f293cef86585afa85b97514"
+      },
+      {
+        "sha": "49d7b0c92a1b5f9afd531a278145878f020f8ea5",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/49d7b0c92a1b5f9afd531a278145878f020f8ea5",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/49d7b0c92a1b5f9afd531a278145878f020f8ea5"
+      }
+    ]
+  },
+  {
+    "sha": "49d7b0c92a1b5f9afd531a278145878f020f8ea5",
+    "node_id": "C_kwDOSQzY1doAKDQ5ZDdiMGM5MmExYjVmOWFmZDUzMWEyNzgxNDU4NzhmMDIwZjhlYTU",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-10-01T07:21:30Z"
+      },
+      "committer": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-10-01T07:21:30Z"
+      },
+      "message": "test(core): move permission-lookup test expiries past 2099\n\nmergeContributionsAppliesTheSameRulesFindForDoes pinned a grant expiry\nat 2026-10-01T00:00Z; from that instant the direct grant reads as\nexpired and canRead flips to false. Move all three literal expiries in\nthe class to 2099.",
+      "tree": {
+        "sha": "4fddc6bcae858f4b171a933c6e77ba33e636e525",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/4fddc6bcae858f4b171a933c6e77ba33e636e525"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/49d7b0c92a1b5f9afd531a278145878f020f8ea5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/49d7b0c92a1b5f9afd531a278145878f020f8ea5",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/49d7b0c92a1b5f9afd531a278145878f020f8ea5",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/49d7b0c92a1b5f9afd531a278145878f020f8ea5/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c36bb47d747a985ac61fd4aca7152a08ee1ccb71",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/c36bb47d747a985ac61fd4aca7152a08ee1ccb71",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/c36bb47d747a985ac61fd4aca7152a08ee1ccb71"
+      }
+    ]
+  },
+  {
+    "sha": "c36bb47d747a985ac61fd4aca7152a08ee1ccb71",
+    "node_id": "C_kwDOSQzY1doAKGMzNmJiNDdkNzQ3YTk4NWFjNjFmZDRhY2E3MTUyYTA4ZWUxY2NiNzE",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-10-01T07:02:11Z"
+      },
+      "committer": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-10-01T07:02:11Z"
+      },
+      "message": "chore(website): re-cut og-image at v2.7",
+      "tree": {
+        "sha": "5a823fa82f62242f9c941c245ce3a73ae0cbed87",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/5a823fa82f62242f9c941c245ce3a73ae0cbed87"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/c36bb47d747a985ac61fd4aca7152a08ee1ccb71",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/c36bb47d747a985ac61fd4aca7152a08ee1ccb71",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/c36bb47d747a985ac61fd4aca7152a08ee1ccb71",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/c36bb47d747a985ac61fd4aca7152a08ee1ccb71/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2379cd0607aedaec73cbec885124ef6e784e5fcb",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/2379cd0607aedaec73cbec885124ef6e784e5fcb",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/2379cd0607aedaec73cbec885124ef6e784e5fcb"
+      }
+    ]
+  },
+  {
+    "sha": "2379cd0607aedaec73cbec885124ef6e784e5fcb",
+    "node_id": "C_kwDOSQzY1doAKDIzNzljZDA2MDdhZWRhZWM3M2NiZWM4ODUxMjRlZjZlNzg0ZTVmY2I",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-10-01T06:58:06Z"
+      },
+      "committer": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-10-01T06:58:06Z"
+      },
+      "message": "chore(release-prep): mark v2.7 released and refresh website screenshots\n\n- docs/12-roadmap.md: flip v2.7 to released; reconcile the section with\n  the 2.7.0 milestone (service accounts, data-access controls, cost and\n  volume budgets, decision hook, effective-permission explorer, execution\n  provenance, job monitor, structured-DDL rules) and broaden the theme\n- website/changelog + version.json: v2.7.0 entry, update hint at 2.7.0\n- website/roadmap: new available-now items, milestone prose for v2.7\n- website/index.html: softwareVersion and hero badge to v2.7\n- website footer status line swept to v2.7 (page dates untouched)\n- website/sitemap.xml: lastmod for /, /roadmap/, /changelog/\n- website/README.md: content-source map row for schema change sets\n- README.md: scheduled job monitor, effective executed SQL\n- help-corpus: regenerated\n- website/images/docs: all 96 screenshots regenerated via capture.ts",
+      "tree": {
+        "sha": "fcb4918c348a839f3b87998b0289e0e24f08c09b",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/fcb4918c348a839f3b87998b0289e0e24f08c09b"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/2379cd0607aedaec73cbec885124ef6e784e5fcb",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/2379cd0607aedaec73cbec885124ef6e784e5fcb",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/2379cd0607aedaec73cbec885124ef6e784e5fcb",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/2379cd0607aedaec73cbec885124ef6e784e5fcb/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "302ba8e31dcbcac16f293cef86585afa85b97514",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/302ba8e31dcbcac16f293cef86585afa85b97514",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/302ba8e31dcbcac16f293cef86585afa85b97514"
+      }
+    ]
+  },
+  {
+    "sha": "302ba8e31dcbcac16f293cef86585afa85b97514",
+    "node_id": "C_kwDOSQzY1doAKDMwMmJhOGUzMWRjYmNhYzE2ZjI5M2NlZjg2NTg1YWZhODViOTc1MTQ",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T14:04:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T14:04:31Z"
+      },
+      "message": "Merge pull request #1140 from bablsoft/feature/AF-1131-review-plan-service-account-warning\n\nfeat(AF-1131): warn when an approver role includes service accounts",
+      "tree": {
+        "sha": "288f9dba764c09c1d10e8b5f3eae1adca422a3b6",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/288f9dba764c09c1d10e8b5f3eae1adca422a3b6"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/302ba8e31dcbcac16f293cef86585afa85b97514",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvRbvCRC1aQ7uu5UhlAAAjqoQAKvDH+21wZMUlwO6UXyIAWmE\n0gT3W659SVcqsQ5xmnful3gLNIfiOiCfXSauKHEIByzqG+7Bv7E7OSlsCAOn9JH/\nH07k/xpY+tyYVPZUbkN422o+Ee8tlX5EkTYz42wQMNmrQfE1LfraB1TUjN8vmoZf\njOFctIwz/UMVQLIVaUJLdHjhZ7I8TR3wXFe3NTuxkwCMqPCqr4KNpznxedZrZExS\ntqUZ6HAu2AUF8VhNtSOVD7fHjDiGxRyB/ksGlqNA6xPg1K2kZeLAJJvNS09RV656\nzPPdLMj+KQvnIl75M7mToSUgsRVyrIIdRlzJIPsphyT6mbJ0Nch0msG1SgMqWxPC\nEcxgZK/tN8vmI1p4+Qd3e1RDnl+2k5eciUUwwIWSVekcbXmHBJ3Q702SWMxLHK6v\n+rnvkqHLZpMJ47vnIa2Brhsymr+SHRfZlhWWELa40pYGTZtH6H4P/6qUbAGWgbh6\n2o9pBS6n7jaEMBG48/Y3JLiBmeSgfVuhncqulBXR6CeybzZZbh2xdj1WqV6eMmxF\n/X6gwe0qbpM35qC32WRA7+JzCE7yoppNCuaNkYjDa7SAk/nuMxu7HvMkoFWRG/xj\nxiPzdnP9g3xhbeJEcjbBc8IFCTt6e+ghYw7/bmVpWwOSBB2FXObUIDnZiRvw9UkL\nVbTFXn5w8ZuEOiUpVIgJ\n=YeV9\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 288f9dba764c09c1d10e8b5f3eae1adca422a3b6\nparent 3d676c17875aff46b60127b83f0fe7f9e86b4ba3\nparent 5f30d03837f4a5775197d81ca666a979acb54e7e\nauthor Tigran Babloyan <tigran.babloyan@gmail.com> 1790777071 +0400\ncommitter GitHub <noreply@github.com> 1790777071 +0400\n\nMerge pull request #1140 from bablsoft/feature/AF-1131-review-plan-service-account-warning\n\nfeat(AF-1131): warn when an approver role includes service accounts",
+        "verified_at": "2026-09-30T14:04:32Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/302ba8e31dcbcac16f293cef86585afa85b97514",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/302ba8e31dcbcac16f293cef86585afa85b97514",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/302ba8e31dcbcac16f293cef86585afa85b97514/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3d676c17875aff46b60127b83f0fe7f9e86b4ba3",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/3d676c17875aff46b60127b83f0fe7f9e86b4ba3",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/3d676c17875aff46b60127b83f0fe7f9e86b4ba3"
+      },
+      {
+        "sha": "5f30d03837f4a5775197d81ca666a979acb54e7e",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/5f30d03837f4a5775197d81ca666a979acb54e7e",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/5f30d03837f4a5775197d81ca666a979acb54e7e"
+      }
+    ]
+  },
+  {
+    "sha": "3d676c17875aff46b60127b83f0fe7f9e86b4ba3",
+    "node_id": "C_kwDOSQzY1doAKDNkNjc2YzE3ODc1YWZmNDZiNjAxMjdiODNmMGZlN2Y5ZTg2YjRiYTM",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T13:56:07Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T13:56:07Z"
+      },
+      "message": "Merge pull request #1139 from bablsoft/fix/AF-user-attribute-entry-validation\n\nfix: validate user attribute keys and values on PUT /admin/users",
+      "tree": {
+        "sha": "599f9890fe55378d0f8d9ad3c07d29dc8a273d0e",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/599f9890fe55378d0f8d9ad3c07d29dc8a273d0e"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/3d676c17875aff46b60127b83f0fe7f9e86b4ba3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvRT3CRC1aQ7uu5UhlAAA00EQAHTSoWSPzl4sh+bL8hv8F7cA\ni+VI6aXFpYrTbCEJGgzpD2cG4g2M/xuruh1SaMiq5HJhQz1me9BsVNupArYp972k\nzvIZWweIbW8FYs6DhFByjuvbEjU7y4MMxrNNa+gbE3HnzHRs1UtV9LCI+MLM9tSG\n9XXrM+3KQOZaPecAopN7WdY8OfNOWPh1YQPNpl76YNOl6dePQXwtkyQlaLWwRiHI\n96eEtCaQqxswNZqPRxaN6BSJLGgQIIjpI0XrgnEpajTEKQSQGgGx9DdGhnc6PKno\nimu/ITrfAexajekO8JgoeVn0QNEQIBzIe4nhxDACPHSflZwTQbL9BNdeevd7y14s\nMo5JxOkPAjft38QupxUmelUYTTXAMdsccVt3VCweR1FwKL1PnWtbvj7mXVFnqpq/\n083k5Z3fUbHnN7swzZa0BfaKyLWr5UJ5rHQ7rG0QIPq5cKxdoekxo0JtxVQLxM2z\n4pwd2Ojn6erfeIs8TqkpCAi5suB1cJYO1axE96ranDGXA9uisrOZdtumwZAhs9bl\nh7dVFmEonA5KSi8GtK0C+EUz1wi+iIPsCVv4c1Lt9RfKIpZ7d3r20PLxJKH7xg7i\nBIgVzSMoHx242tAW7aV46L4+X77vBdPXw7JRCU1xqlXKPXP0KTA73ETZYbpG3ubQ\n8j1ytH16i3coOWupmh+m\n=DSBv\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 599f9890fe55378d0f8d9ad3c07d29dc8a273d0e\nparent b0f5f97371d54d56f19469244fb041c50fdda10e\nparent 66a1721cf5c0865fb620fd0233f6662c07dd620f\nauthor Tigran Babloyan <tigran.babloyan@gmail.com> 1790776567 +0400\ncommitter GitHub <noreply@github.com> 1790776567 +0400\n\nMerge pull request #1139 from bablsoft/fix/AF-user-attribute-entry-validation\n\nfix: validate user attribute keys and values on PUT /admin/users",
+        "verified_at": "2026-09-30T13:56:17Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/3d676c17875aff46b60127b83f0fe7f9e86b4ba3",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/3d676c17875aff46b60127b83f0fe7f9e86b4ba3",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/3d676c17875aff46b60127b83f0fe7f9e86b4ba3/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b0f5f97371d54d56f19469244fb041c50fdda10e",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/b0f5f97371d54d56f19469244fb041c50fdda10e",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/b0f5f97371d54d56f19469244fb041c50fdda10e"
+      },
+      {
+        "sha": "66a1721cf5c0865fb620fd0233f6662c07dd620f",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/66a1721cf5c0865fb620fd0233f6662c07dd620f",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/66a1721cf5c0865fb620fd0233f6662c07dd620f"
+      }
+    ]
+  },
+  {
+    "sha": "5f30d03837f4a5775197d81ca666a979acb54e7e",
+    "node_id": "C_kwDOSQzY1doAKDVmMzBkMDM4MzdmNGE1Nzc1MTk3ZDgxY2E2NjZhOTc5YWNiNTRlN2U",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T13:37:33Z"
+      },
+      "committer": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T13:37:33Z"
+      },
+      "message": "Merge remote-tracking branch 'origin/main' into feature/AF-1131-review-plan-service-account-warning\n\n# Conflicts:\n#\thelp-corpus/manifest.json",
+      "tree": {
+        "sha": "cb2d13feab9611f1fbb79940cc72037c8410f3c0",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/cb2d13feab9611f1fbb79940cc72037c8410f3c0"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/5f30d03837f4a5775197d81ca666a979acb54e7e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/5f30d03837f4a5775197d81ca666a979acb54e7e",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/5f30d03837f4a5775197d81ca666a979acb54e7e",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/5f30d03837f4a5775197d81ca666a979acb54e7e/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "43d8e2ae499c91dcb4bfc8dc977b1f9b20fcd286",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/43d8e2ae499c91dcb4bfc8dc977b1f9b20fcd286",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/43d8e2ae499c91dcb4bfc8dc977b1f9b20fcd286"
+      },
+      {
+        "sha": "b0f5f97371d54d56f19469244fb041c50fdda10e",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/b0f5f97371d54d56f19469244fb041c50fdda10e",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/b0f5f97371d54d56f19469244fb041c50fdda10e"
+      }
+    ]
+  },
+  {
+    "sha": "66a1721cf5c0865fb620fd0233f6662c07dd620f",
+    "node_id": "C_kwDOSQzY1doAKDY2YTE3MjFjZjVjMDg2NWZiNjIwZmQwMjMzZjY2NjJjMDdkZDYyMGY",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T13:35:57Z"
+      },
+      "committer": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T13:35:57Z"
+      },
+      "message": "Merge remote-tracking branch 'origin/main' into fix/AF-user-attribute-entry-validation\n\n# Conflicts:\n#\tbackend/src/main/resources/i18n/messages.properties\n#\tbackend/src/main/resources/i18n/messages_de.properties\n#\tbackend/src/main/resources/i18n/messages_es.properties\n#\tbackend/src/main/resources/i18n/messages_fr.properties\n#\tbackend/src/main/resources/i18n/messages_hy.properties\n#\tbackend/src/main/resources/i18n/messages_ru.properties\n#\tbackend/src/main/resources/i18n/messages_zh_CN.properties",
+      "tree": {
+        "sha": "599f9890fe55378d0f8d9ad3c07d29dc8a273d0e",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/599f9890fe55378d0f8d9ad3c07d29dc8a273d0e"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/66a1721cf5c0865fb620fd0233f6662c07dd620f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/66a1721cf5c0865fb620fd0233f6662c07dd620f",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/66a1721cf5c0865fb620fd0233f6662c07dd620f",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/66a1721cf5c0865fb620fd0233f6662c07dd620f/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a14b10de97e08f832fe2d0e74147bf14158acc89",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/a14b10de97e08f832fe2d0e74147bf14158acc89",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/a14b10de97e08f832fe2d0e74147bf14158acc89"
+      },
+      {
+        "sha": "b0f5f97371d54d56f19469244fb041c50fdda10e",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/b0f5f97371d54d56f19469244fb041c50fdda10e",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/b0f5f97371d54d56f19469244fb041c50fdda10e"
+      }
+    ]
+  },
+  {
+    "sha": "b0f5f97371d54d56f19469244fb041c50fdda10e",
+    "node_id": "C_kwDOSQzY1doAKGIwZjVmOTczNzFkNTRkNTZmMTk0NjkyNDRmYjA0MWM1MGZkZGExMGU",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T13:35:07Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T13:35:07Z"
+      },
+      "message": "Merge pull request #1138 from bablsoft/fix/AF-1130-service-account-attributes\n\nfix(AF-1130): edit service-account attributes on the SA surface",
+      "tree": {
+        "sha": "74dfbe2876d32c372a3ec0f16e66f781db8765c7",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/74dfbe2876d32c372a3ec0f16e66f781db8765c7"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/b0f5f97371d54d56f19469244fb041c50fdda10e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvRALCRC1aQ7uu5UhlAAAmjgQAIZXBmbH1kFyNSWshCarS71m\nemoToCsbMJAaFe4fGfKS0yv2eQP1WDXhaWUF0edHTRj6a2S4ungtHYnP4lLnqvA5\neGr0HCQgYA7Mwz9yJyUEynRDRFn37/ew3neVnPEqQiW2tAeDqV/C7l8ZirqlQCsE\nUX3a3FLNlweFPFDZ3coWeHt3nqd1QZeUGTQ3/3gtiQ8Z4hLl7Meuvoviz6ZHZhY/\nqXtRmRUn3RyRfLir9XHiW+U67MaIqCWs9WhSu4Ap5VW73T0xPbNItyEVgUplw/Ue\nOs/ZGsPF/0IwDISO6ZmeWMbxnmohIBKDISTdFUFUK8g1h/ZL7qqKCMb2rZpJleOz\nh0/9kUwthepQa+M9H33temSwOhYNNotCt7HNp5Gv/AsQI0mmw6sLQqYHPXw+yzjQ\nYKMJLRop+zsv6w1av+CBHdcg6HWBwgMYlSAAgDsV8FlaghlgmRGITdfkIyy5tOo9\nZKd2BdZz+H0utFW+jrqZRMW4IUDxHmOoSdgaOsh0exhwG4e48yrWauvSkM8lKN1N\nf7kDm9KRi+CH1WkmGA5svFgQN/Z9EE9JU+JnhMP2EGqipJKhh0z8cG8y0eiyLQHy\nNIoQEkpy5kpLSDoA3ZhDdP4fnYNsDUd4PT4or+AJHhRWS7s64XombwCrqGWtH9rG\nWEJFZlqm7zwPRWDZBdFI\n=vHCR\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 74dfbe2876d32c372a3ec0f16e66f781db8765c7\nparent b5add9f7d02d3af8e80d41f733ea09523f7310fe\nparent e3ca73888e29743b6beeffad4e83236bcafbe4bc\nauthor Tigran Babloyan <tigran.babloyan@gmail.com> 1790775307 +0400\ncommitter GitHub <noreply@github.com> 1790775307 +0400\n\nMerge pull request #1138 from bablsoft/fix/AF-1130-service-account-attributes\n\nfix(AF-1130): edit service-account attributes on the SA surface",
+        "verified_at": "2026-09-30T13:35:08Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/b0f5f97371d54d56f19469244fb041c50fdda10e",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/b0f5f97371d54d56f19469244fb041c50fdda10e",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/b0f5f97371d54d56f19469244fb041c50fdda10e/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b5add9f7d02d3af8e80d41f733ea09523f7310fe",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/b5add9f7d02d3af8e80d41f733ea09523f7310fe",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/b5add9f7d02d3af8e80d41f733ea09523f7310fe"
+      },
+      {
+        "sha": "e3ca73888e29743b6beeffad4e83236bcafbe4bc",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/e3ca73888e29743b6beeffad4e83236bcafbe4bc",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/e3ca73888e29743b6beeffad4e83236bcafbe4bc"
+      }
+    ]
+  },
+  {
+    "sha": "43d8e2ae499c91dcb4bfc8dc977b1f9b20fcd286",
+    "node_id": "C_kwDOSQzY1doAKDQzZDhlMmFlNDk5YzkxZGNiNGJmYzhkYzk3N2IxZjliMjBmY2QyODY",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T13:27:01Z"
+      },
+      "committer": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T13:27:01Z"
+      },
+      "message": "fix(AF-1131): soften website copy, clean up e2e role, test roleRef path",
+      "tree": {
+        "sha": "8f4de922c2dd9c4d6e664f5ebeaa6ab7d2d2d8ae",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/8f4de922c2dd9c4d6e664f5ebeaa6ab7d2d2d8ae"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/43d8e2ae499c91dcb4bfc8dc977b1f9b20fcd286",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/43d8e2ae499c91dcb4bfc8dc977b1f9b20fcd286",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/43d8e2ae499c91dcb4bfc8dc977b1f9b20fcd286",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/43d8e2ae499c91dcb4bfc8dc977b1f9b20fcd286/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7ebf5fa8162b9d2f2d1f491e71297f7b7beec089",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/7ebf5fa8162b9d2f2d1f491e71297f7b7beec089",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/7ebf5fa8162b9d2f2d1f491e71297f7b7beec089"
+      }
+    ]
+  },
+  {
+    "sha": "a14b10de97e08f832fe2d0e74147bf14158acc89",
+    "node_id": "C_kwDOSQzY1doAKGExNGIxMGRlOTdlMDhmODMyZmUyZDBlNzQxNDdiZjE0MTU4YWNjODk",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T13:20:39Z"
+      },
+      "committer": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T13:20:39Z"
+      },
+      "message": "fix: validate user attribute keys and values on PUT /admin/users\n\nUpdateUserRequest only capped the attribute map at 50 entries, so a direct\nAPI caller could bypass the documented key <= 128 / value <= 512 limits the\nUsersPage edit modal enforces. Add type-use Bean Validation on the map\n(non-blank key <= 128, non-null value <= 512) with localized messages in\nall seven locales, an integration test, and the spec note.",
+      "tree": {
+        "sha": "a291693c97989848a580c28eabf5b0c5e763661e",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/a291693c97989848a580c28eabf5b0c5e763661e"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/a14b10de97e08f832fe2d0e74147bf14158acc89",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/a14b10de97e08f832fe2d0e74147bf14158acc89",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/a14b10de97e08f832fe2d0e74147bf14158acc89",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/a14b10de97e08f832fe2d0e74147bf14158acc89/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b5add9f7d02d3af8e80d41f733ea09523f7310fe",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/b5add9f7d02d3af8e80d41f733ea09523f7310fe",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/b5add9f7d02d3af8e80d41f733ea09523f7310fe"
+      }
+    ]
+  },
+  {
+    "sha": "7ebf5fa8162b9d2f2d1f491e71297f7b7beec089",
+    "node_id": "C_kwDOSQzY1doAKDdlYmY1ZmE4MTYyYjlkMmYyZDFmNDkxZTcxMjk3ZjdiN2JlZWMwODk",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T13:14:38Z"
+      },
+      "committer": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T13:14:38Z"
+      },
+      "message": "feat(AF-1131): warn when an approver role includes service accounts",
+      "tree": {
+        "sha": "9066b1b292159e04666df07307d6fc2496327338",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/9066b1b292159e04666df07307d6fc2496327338"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/7ebf5fa8162b9d2f2d1f491e71297f7b7beec089",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/7ebf5fa8162b9d2f2d1f491e71297f7b7beec089",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/7ebf5fa8162b9d2f2d1f491e71297f7b7beec089",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/7ebf5fa8162b9d2f2d1f491e71297f7b7beec089/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b5add9f7d02d3af8e80d41f733ea09523f7310fe",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/b5add9f7d02d3af8e80d41f733ea09523f7310fe",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/b5add9f7d02d3af8e80d41f733ea09523f7310fe"
+      }
+    ]
+  },
+  {
+    "sha": "e3ca73888e29743b6beeffad4e83236bcafbe4bc",
+    "node_id": "C_kwDOSQzY1doAKGUzY2E3Mzg4OGUyOTc0M2I2YmVlZmZhZDRlODMyMzZiY2FmYmU0YmM",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T13:11:36Z"
+      },
+      "committer": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T13:11:36Z"
+      },
+      "message": "fix(AF-1130): edit service-account attributes on the SA surface\n\nPUT /admin/users/{id} refuses service accounts since #1130, which left\ntheir row-security attributes with no write path. Add an optional\nattributes map to PUT /admin/service-accounts/{id} (UI-owned, editable\non BOOTSTRAP accounts), return it on the detail read, and add an\nAttributes tab to the settings page with validation parity.",
+      "tree": {
+        "sha": "74dfbe2876d32c372a3ec0f16e66f781db8765c7",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/74dfbe2876d32c372a3ec0f16e66f781db8765c7"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/e3ca73888e29743b6beeffad4e83236bcafbe4bc",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/e3ca73888e29743b6beeffad4e83236bcafbe4bc",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/e3ca73888e29743b6beeffad4e83236bcafbe4bc",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/e3ca73888e29743b6beeffad4e83236bcafbe4bc/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8ca08027c9e8e6e05035599a47ae5f370bba4a24",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/8ca08027c9e8e6e05035599a47ae5f370bba4a24",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/8ca08027c9e8e6e05035599a47ae5f370bba4a24"
+      }
+    ]
+  },
+  {
+    "sha": "b5add9f7d02d3af8e80d41f733ea09523f7310fe",
+    "node_id": "C_kwDOSQzY1doAKGI1YWRkOWY3ZDAyZDNhZjhlODBkNDFmNzMzZWEwOTUyM2Y3MzEwZmU",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T13:01:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T13:01:31Z"
+      },
+      "message": "Merge pull request #1137 from bablsoft/fix/AF-1130-refuse-admin-users-for-service-accounts\n\nfix(AF-1130): refuse admin users API for service accounts",
+      "tree": {
+        "sha": "2aa7e7556fed8870a4309a880dd347b748c1443c",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/2aa7e7556fed8870a4309a880dd347b748c1443c"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/b5add9f7d02d3af8e80d41f733ea09523f7310fe",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvQgrCRC1aQ7uu5UhlAAA6ZIQADxNFiV/FV1imDvDQZGBIg7K\nQBNrCuNXVBUWmDMaurmDJko9ACpiygtOswC0dDPmOpyWUuS/2e0HPSJ886xMqGUr\n5HtPVbl27IHuZJQlCu2W5uX9jXvP3/Z6vmUYNRZBQhR29v6OPpkO7YkOyxTzM97V\nqHeYj0P3C2uLBNDsLAvikMyG8cfvaMv/0FCttYl+LUvnbjwMlFrJ5lyrCFrsTYAb\nagQp7HeaV41ANta2GRO6svc1Bc84Z9u5kTjX06okI+esPXPP5fpPoLl/iSB/OWRU\nc86c483WTNpnqDZSIytBIA0iocTJxfhkJhB5EvhVX9g0rDPytTu3zbrMGUpcQDr1\nGOQhD9fpyH0fE/M+LIQXt04LC5gZkgrsEXP6jTKaipCSJQqAuHiTTJup+oW8aSFK\nhInNbJK7Gn6jd4hh8dQdXIaHjiwTDfRdYOTtlA7EiXREvd9MmkT9qo0xfFusNw7Z\n5Be8AD+SZNptgCm7RfD9vKcdimvn4jhZkYKHXkCH/NM2iXOXwoXrL0puu/hLy8ZX\ne7UNNYTh5IwSocUslV+oGtvfftqvB7r6rbO/wupw6xw93t2ZVOUfO8ht5uIpl5v6\nXQvdTlELHk6UggYPr3Sn9o+lNuBlhrpoR/z2DqGUyfGQgwktWh/dkV9blXAdnMU5\nNV25i0QlSZTozX5D4KLG\n=CL3C\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2aa7e7556fed8870a4309a880dd347b748c1443c\nparent dd8df83eec6f1b530a91d2adbce630ad7c269b97\nparent 8ca08027c9e8e6e05035599a47ae5f370bba4a24\nauthor Tigran Babloyan <tigran.babloyan@gmail.com> 1790773291 +0400\ncommitter GitHub <noreply@github.com> 1790773291 +0400\n\nMerge pull request #1137 from bablsoft/fix/AF-1130-refuse-admin-users-for-service-accounts\n\nfix(AF-1130): refuse admin users API for service accounts",
+        "verified_at": "2026-09-30T13:01:32Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/b5add9f7d02d3af8e80d41f733ea09523f7310fe",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/b5add9f7d02d3af8e80d41f733ea09523f7310fe",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/b5add9f7d02d3af8e80d41f733ea09523f7310fe/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dd8df83eec6f1b530a91d2adbce630ad7c269b97",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/dd8df83eec6f1b530a91d2adbce630ad7c269b97",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/dd8df83eec6f1b530a91d2adbce630ad7c269b97"
+      },
+      {
+        "sha": "8ca08027c9e8e6e05035599a47ae5f370bba4a24",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/8ca08027c9e8e6e05035599a47ae5f370bba4a24",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/8ca08027c9e8e6e05035599a47ae5f370bba4a24"
+      }
+    ]
+  },
+  {
+    "sha": "8ca08027c9e8e6e05035599a47ae5f370bba4a24",
+    "node_id": "C_kwDOSQzY1doAKDhjYTA4MDI3YzllOGU2ZTA1MDM1NTk5YTQ3YWU1ZjM3MGJiYTRhMjQ",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T12:38:45Z"
+      },
+      "committer": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T12:38:45Z"
+      },
+      "message": "fix(AF-1130): hide Deactivate for service accounts, clarify docs",
+      "tree": {
+        "sha": "2aa7e7556fed8870a4309a880dd347b748c1443c",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/2aa7e7556fed8870a4309a880dd347b748c1443c"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/8ca08027c9e8e6e05035599a47ae5f370bba4a24",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/8ca08027c9e8e6e05035599a47ae5f370bba4a24",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/8ca08027c9e8e6e05035599a47ae5f370bba4a24",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/8ca08027c9e8e6e05035599a47ae5f370bba4a24/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9bbee96613a93d1cb715a204099322e569b87960",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/9bbee96613a93d1cb715a204099322e569b87960",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/9bbee96613a93d1cb715a204099322e569b87960"
+      }
+    ]
+  },
+  {
+    "sha": "9bbee96613a93d1cb715a204099322e569b87960",
+    "node_id": "C_kwDOSQzY1doAKDliYmVlOTY2MTNhOTNkMWNiNzE1YTIwNDA5OTMyMmU1NjliODc5NjA",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T12:31:49Z"
+      },
+      "committer": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T12:31:49Z"
+      },
+      "message": "fix(AF-1130): refuse admin users API for service accounts",
+      "tree": {
+        "sha": "f52a37f5d9bcdc116d61efc540dc0ef4c2480b46",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/f52a37f5d9bcdc116d61efc540dc0ef4c2480b46"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/9bbee96613a93d1cb715a204099322e569b87960",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/9bbee96613a93d1cb715a204099322e569b87960",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/9bbee96613a93d1cb715a204099322e569b87960",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/9bbee96613a93d1cb715a204099322e569b87960/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dd8df83eec6f1b530a91d2adbce630ad7c269b97",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/dd8df83eec6f1b530a91d2adbce630ad7c269b97",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/dd8df83eec6f1b530a91d2adbce630ad7c269b97"
+      }
+    ]
+  },
+  {
+    "sha": "dd8df83eec6f1b530a91d2adbce630ad7c269b97",
+    "node_id": "C_kwDOSQzY1doAKGRkOGRmODNlZWM2ZjFiNTMwYTkxZDJhZGJjZTYzMGFkN2MyNjliOTc",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T12:23:09Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T12:23:09Z"
+      },
+      "message": "Merge pull request #1135 from bablsoft/dependabot/npm_and_yarn/frontend/jsdom-30.1.1\n\nchore(deps-dev): bump jsdom from 30.0.1 to 30.1.1 in /frontend",
+      "tree": {
+        "sha": "8d40a09c6cd3519e8b3048de5a86a744e2717cb8",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/8d40a09c6cd3519e8b3048de5a86a744e2717cb8"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/dd8df83eec6f1b530a91d2adbce630ad7c269b97",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvP8tCRC1aQ7uu5UhlAAAQUEQAJiy4vl9ZubKKk5Ke2OBOZK3\nvM8gut5Ilv6uPMYEv1qYrWbcJasvxJwts0XWX7mlS1IQ2HXThRo6AJp17DyHH3VB\nkrQ9GP84Oh9sy0U5Cm8uvfF7H7GGAnboUHxhZ7GTFe6aYB72j9zqx4Y6Ugk1pVMq\nDR96P793NAl7OzfBYeSsicjmoQf/WJaaejwRxh8ybwmZwE2yBRTZGgnQWBzhUceU\nZ6EP4ChHWV+LtTDsxW4zY1Dr++oX88LY2p4YBOJ6MPwYGTSjRDScK7y+74l75H21\nMHWqyhmFS36rQIybnsOWQIL1+F8Uex3Wx5lg1Vwe+UBQYu1Ra7dkk12kvKC+s+4c\nRhOpPiwa4WuX4lkZd2tnJPjubvWut3L4M/x4pkJw5xpOcAunmmmnPkO39nKfkQU4\ni2I+TyU3a8o1L7kv5Zf1zwH6butb5IcMDgfCEuAiMbz8mX1CZseYoRQmkbg1yH1a\niS8sXA6iWXk6E7N4pGwzEuRh6+0l9mnD/i+J75oSugQh73ozVL/zhWazOw2Mq3pi\nIUvLAtwdHDicRvdJpuwz1I53rAVwqVKKAiznS0TT9w602fFjZF3/2FeeqvQHdADP\n+Z1wi5SbO+FALmK7J3OkrD0wBxy+SyXflpDwY9i9t7V+AxKQpgIBLnxpzBD4lQGJ\nwJ+Jf/3QeiM2pWxypJBz\n=GDv5\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 8d40a09c6cd3519e8b3048de5a86a744e2717cb8\nparent 7c712c9259b2be2079b062a189e474bc6a687014\nparent 427dbffc3fd0748706bc60f645c257caa3474237\nauthor Tigran Babloyan <tigran.babloyan@gmail.com> 1790770989 +0400\ncommitter GitHub <noreply@github.com> 1790770989 +0400\n\nMerge pull request #1135 from bablsoft/dependabot/npm_and_yarn/frontend/jsdom-30.1.1\n\nchore(deps-dev): bump jsdom from 30.0.1 to 30.1.1 in /frontend",
+        "verified_at": "2026-09-30T12:23:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/dd8df83eec6f1b530a91d2adbce630ad7c269b97",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/dd8df83eec6f1b530a91d2adbce630ad7c269b97",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/dd8df83eec6f1b530a91d2adbce630ad7c269b97/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7c712c9259b2be2079b062a189e474bc6a687014",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/7c712c9259b2be2079b062a189e474bc6a687014",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/7c712c9259b2be2079b062a189e474bc6a687014"
+      },
+      {
+        "sha": "427dbffc3fd0748706bc60f645c257caa3474237",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/427dbffc3fd0748706bc60f645c257caa3474237",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/427dbffc3fd0748706bc60f645c257caa3474237"
+      }
+    ]
+  },
+  {
+    "sha": "7c712c9259b2be2079b062a189e474bc6a687014",
+    "node_id": "C_kwDOSQzY1doAKDdjNzEyYzkyNTliMmJlMjA3OWIwNjJhMTg5ZTQ3NGJjNmE2ODcwMTQ",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T12:22:34Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T12:22:34Z"
+      },
+      "message": "Merge pull request #1134 from bablsoft/dependabot/npm_and_yarn/frontend/react-router-dom-7.18.4\n\nchore(deps): bump react-router-dom from 7.18.3 to 7.18.4 in /frontend",
+      "tree": {
+        "sha": "3ecfcb392f072d6735c629fee6a3dc9ee9af9853",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/3ecfcb392f072d6735c629fee6a3dc9ee9af9853"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/7c712c9259b2be2079b062a189e474bc6a687014",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvP8KCRC1aQ7uu5UhlAAAhQIQADdewkJwHDyfrSeNIB8jtWZV\nuSIhS7YWBgoAYeRIRlKHoX/l9KNk9JMVj26AaskYSKFWbo0J56/YKopu2zP///tT\nA7E7ztQzLjcNyhAlvsRD85RyeLqqHOW7pshjjh4DMTruDMQNq5SDBD604420FrOu\n/RsbdseGYzUeiqO2HIoiAxUeYr69tSvcpYOGX0dNxIBlbCb/Hrk/ZSJb0PdRKV1b\npAD46sJBTskO41wVpwueW0y6TjtK7jC1K+JN/MRqFmwUgyUSp+NfG8HQDVQ332V5\npLgVKWSlZsHeBPN3qw3FyDR5ez7fFuN/R2Zoq2TSE1xc6RDL2GBfhFUWPK/Domgc\now8Tj+CYfIqya2ufCxVT0VuREdg/cvVrXs8k3phrTiQXOBx3qY48TPpgqYbt6F6P\no33whZWWnRUMrkPyHHgzuMWhkcxYfoUQHwseNXktyHlxq2Dlm97BoX5SOmMagMdX\nbBNqKKF81XkIQY+lqPxBvOrULje/7vJ/0Y0IWynrf/deaXfxZ8GKc5eJONpqyOO7\noeHzgrrMHKt2wEEi2fLB/yaf8oDcv7EI+iTlDb290YhBZKb4Wl+zAwAvzuKMDZa5\nCQt+vWHLgXkn834LILsEnTNJdzZpaxsloxJK67TWbzK4sYMoiECiFIO+R15/ftpx\nUQWCsOd6cUHz09h2mIU2\n=ojkP\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 3ecfcb392f072d6735c629fee6a3dc9ee9af9853\nparent 71537ac0ca2ce9375a32135449cdab1678f27379\nparent d7a3ca20d81b586ab5c9a7c1b2c47c4708dc75c0\nauthor Tigran Babloyan <tigran.babloyan@gmail.com> 1790770954 +0400\ncommitter GitHub <noreply@github.com> 1790770954 +0400\n\nMerge pull request #1134 from bablsoft/dependabot/npm_and_yarn/frontend/react-router-dom-7.18.4\n\nchore(deps): bump react-router-dom from 7.18.3 to 7.18.4 in /frontend",
+        "verified_at": "2026-09-30T12:22:35Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/7c712c9259b2be2079b062a189e474bc6a687014",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/7c712c9259b2be2079b062a189e474bc6a687014",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/7c712c9259b2be2079b062a189e474bc6a687014/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "71537ac0ca2ce9375a32135449cdab1678f27379",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/71537ac0ca2ce9375a32135449cdab1678f27379",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/71537ac0ca2ce9375a32135449cdab1678f27379"
+      },
+      {
+        "sha": "d7a3ca20d81b586ab5c9a7c1b2c47c4708dc75c0",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/d7a3ca20d81b586ab5c9a7c1b2c47c4708dc75c0",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/d7a3ca20d81b586ab5c9a7c1b2c47c4708dc75c0"
+      }
+    ]
+  },
+  {
+    "sha": "71537ac0ca2ce9375a32135449cdab1678f27379",
+    "node_id": "C_kwDOSQzY1doAKDcxNTM3YWMwY2EyY2U5Mzc1YTMyMTM1NDQ5Y2RhYjE2NzhmMjczNzk",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T12:22:14Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T12:22:14Z"
+      },
+      "message": "Merge pull request #1133 from bablsoft/dependabot/npm_and_yarn/frontend/vite-8.3.1\n\nchore(deps-dev): bump vite from 8.2.2 to 8.3.1 in /frontend",
+      "tree": {
+        "sha": "a1da5adbc2073083b4b890709287d25759ec3be7",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/a1da5adbc2073083b4b890709287d25759ec3be7"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/71537ac0ca2ce9375a32135449cdab1678f27379",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvP72CRC1aQ7uu5UhlAAAqhYQAD0+YUZz9mNor4JPHtCj5Oix\nFKXhzvX1bfrCANE1/hB8udym11RaVmjgsLNRvEiFn3md0S14YbU2RRKmPJsYbN+M\n4M8ZH8R0Q9tSE8lFzc0gvt5EI/QtfKWkMz7aA08dGqa9/I+PV3QUtpiqXe4++XGC\n7yEK8ax+1af7RErzLIfoTyo9xgC7oOrTtjUykkerTJskhueU+ZzsebzdzpBOTKd5\nb9+AgKmUzO686xOHA62RPiAM1jmEHtxGg2y91O0KVfSlm/yX8DDULV602q9UrFSQ\nTJmft4DTJwUfhC4Rj96P421N5QiRGd8BEy884s4IAtI6QgaCUboLYJe1icLYmYch\nnVZbdHR1Z3H90mYNsGVmURVJawDIKpQ2WMUZdioeke9BB3C6cm9F0J6oAebiOWzb\nnTPGwBau9GLj9o49hGb7DE9zq9PJ4/ZHeask1ldP7OrROp3V+JilEBJoZu9+ONik\nzVChu9Op/ekrDPzsh/IAMas5xhDvAaCR6tNHsBYMLvMcD6BmxRJqztiP21BTPua8\nPZeMOpMd8pTpSmWAa2edZSfvWr7codWaamr2gc4PVwoERe7+LQpCe7u50Ld3wYve\njGKKQz1cDzblDe5p0Ey9E5nikq3xHZvqFD7PVnicXI3/CMJcPZHD4JXcu86vIHyB\nLJeB2O3zDwnPwPfas0af\n=VxHv\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a1da5adbc2073083b4b890709287d25759ec3be7\nparent 904d4181245536e05fa2721e8b66203ebe547ae1\nparent f5da86ee82d32ff8478c9dfdcc25c0b9639ce9d6\nauthor Tigran Babloyan <tigran.babloyan@gmail.com> 1790770934 +0400\ncommitter GitHub <noreply@github.com> 1790770934 +0400\n\nMerge pull request #1133 from bablsoft/dependabot/npm_and_yarn/frontend/vite-8.3.1\n\nchore(deps-dev): bump vite from 8.2.2 to 8.3.1 in /frontend",
+        "verified_at": "2026-09-30T12:22:15Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/71537ac0ca2ce9375a32135449cdab1678f27379",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/71537ac0ca2ce9375a32135449cdab1678f27379",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/71537ac0ca2ce9375a32135449cdab1678f27379/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "904d4181245536e05fa2721e8b66203ebe547ae1",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/904d4181245536e05fa2721e8b66203ebe547ae1",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/904d4181245536e05fa2721e8b66203ebe547ae1"
+      },
+      {
+        "sha": "f5da86ee82d32ff8478c9dfdcc25c0b9639ce9d6",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/f5da86ee82d32ff8478c9dfdcc25c0b9639ce9d6",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/f5da86ee82d32ff8478c9dfdcc25c0b9639ce9d6"
+      }
+    ]
+  },
+  {
+    "sha": "904d4181245536e05fa2721e8b66203ebe547ae1",
+    "node_id": "C_kwDOSQzY1doAKDkwNGQ0MTgxMjQ1NTM2ZTA1ZmEyNzIxZThiNjYyMDNlYmU1NDdhZTE",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T12:21:44Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T12:21:44Z"
+      },
+      "message": "Merge pull request #1132 from bablsoft/dependabot/npm_and_yarn/frontend/antd-6.6.5\n\nchore(deps): bump antd from 6.5.2 to 6.6.5 in /frontend",
+      "tree": {
+        "sha": "917ba6903f90f4778660dedfb27f3841aa9cb877",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/917ba6903f90f4778660dedfb27f3841aa9cb877"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/904d4181245536e05fa2721e8b66203ebe547ae1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvP7YCRC1aQ7uu5UhlAAACwsQAH9mSbVpo/AKFbB5FuTvdzRf\n3AW81yBQ4JOD89pOLjWs98WrnAi82DvSQyWNOr6vwTIGc2STDUJ55srYoxytYaKe\nDxkB6htw2LL00kNHGUi9a4OPSJZSzIKqk+eGGgnyqXw+TYIaRTJczmmWTYOjfoYI\nc6okDknl4ksc1/Vf7zMn6B0vZARmbS972P+XhaxulJIhRwTMqJ24SJju9BLEf5jE\n+GLu+iHMPgddnBQHDIexsFFh/biL6bFc8goyb0ocgtGYnQEEJn/Menozrv0crh2Q\nrquaE4mg07EmKMbb227w1rT/WRpR68km58aBSLTuTxgcisK33e/6h0TxnUKcqrph\nROys9TdrHgjGFbcJSiQZ0WYXMwwNkOQxDSJ7PM5CQwSSrJbhjVKmbn7mM5cZF1vh\ngw1QmpRbEILAR24JWdSNqz1SjHl+M42W88bBVp/iGVSoJtCgicNj50ZQyx0E/zkC\nBjNxnmvPMSsYsuNJVy94Xrp7EvN8KPng5SW2Bqx3XCjLoNMaCpT/TzvlUpoxfCx7\nE4/vwufAeKkOks4G26yx1tW0xro3ZxmnYB1hKlPR1eZ34VqvU6tzs9qTbd9/PodF\nFwC5IhX+9s0obJdiZbXhdNqP1uT9U9QNqQvddly4UD8pfzd5ikhCSNv5mp6DWkg8\nM8xcKfiL5JzKkbkFrfey\n=OXyX\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 917ba6903f90f4778660dedfb27f3841aa9cb877\nparent 68982e7c6ef40574526dbdfdd42430cd3f234e26\nparent 01633582c282c4abf716550ed36fd40748071d5e\nauthor Tigran Babloyan <tigran.babloyan@gmail.com> 1790770904 +0400\ncommitter GitHub <noreply@github.com> 1790770904 +0400\n\nMerge pull request #1132 from bablsoft/dependabot/npm_and_yarn/frontend/antd-6.6.5\n\nchore(deps): bump antd from 6.5.2 to 6.6.5 in /frontend",
+        "verified_at": "2026-09-30T12:21:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/904d4181245536e05fa2721e8b66203ebe547ae1",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/904d4181245536e05fa2721e8b66203ebe547ae1",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/904d4181245536e05fa2721e8b66203ebe547ae1/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "68982e7c6ef40574526dbdfdd42430cd3f234e26",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/68982e7c6ef40574526dbdfdd42430cd3f234e26",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/68982e7c6ef40574526dbdfdd42430cd3f234e26"
+      },
+      {
+        "sha": "01633582c282c4abf716550ed36fd40748071d5e",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/01633582c282c4abf716550ed36fd40748071d5e",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/01633582c282c4abf716550ed36fd40748071d5e"
+      }
+    ]
+  },
+  {
+    "sha": "68982e7c6ef40574526dbdfdd42430cd3f234e26",
+    "node_id": "C_kwDOSQzY1doAKDY4OTgyZTdjNmVmNDA1NzQ1MjZkYmRmZGQ0MjQzMGNkM2YyMzRlMjY",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T12:21:04Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T12:21:04Z"
+      },
+      "message": "Merge pull request #1136 from bablsoft/fix/AF-1129-break-glass-ack-on-behalf-of\n\nfix(AF-1129): refuse break-glass acknowledgement by the on-behalf-of human",
+      "tree": {
+        "sha": "79f1004c9bd3db69f0721e0f61b295be47c14831",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/79f1004c9bd3db69f0721e0f61b295be47c14831"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/68982e7c6ef40574526dbdfdd42430cd3f234e26",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvP6wCRC1aQ7uu5UhlAAA3k8QALEtC3TstN8scT2IZB5skaAs\n9oM4XmDPuxHvxFQVSaoIL28F+Tru43OFgLZgA7vvLZMRyudGGlOOh9+7pdqQ2BoE\n0NjW7oQRdZc26LRLj0Pc6BPxGnVzNVAbEi+kvsJpVEclFK0b96iWzMogEgNQ18nP\nB8WNgRGI6u03/1KJ0VqwNtN2jO7N/vgKjfZDkV2bkjioJBAUlnxwmikH01eiz6VP\n/9CYeMqPljnJWVHtjUTJNAYuj2JUCpZ5+uhaWPWIRUxJrPN5+rS6wkt88sjsh3ha\n7tfbttoDDcycfVgnaCFMAEJzX2+xkATFw+3Q2k9XM/gtRJ7nDKc9Cp6n5lrPRcJh\nbAa1Jgja62JBT9yA6BCLQxm2BL8obvhhNmXNfs30BGxrz2yKmBMfZVIJo+0U+ww0\nGikcgOXnQjiIZXGsu0e+dLm++35OQNHXFy2AFCjYV2tdp85ddYsa0PgJm8Qo3eoy\nF9W4H2FaHRs6OKyWUaVgJZEpgGrIpZqPwKwCsSqTfgp8WyF7D1M1fzc8se/DgUYm\nlf6iz8j4gSHjWSGmiAy3PwvTeeHYSfrcG5ylHW//4hUTyMV7Yc1ZppfcEnM+zhKJ\n0wFcpAXFn53nzLMILPgbq8MI5H4KtNN/ViZZ2JaMfPmFpkLYvNwlhuZJxoR8Cl1a\nACdGBCKOUPkNla9+ii3p\n=fi9R\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 79f1004c9bd3db69f0721e0f61b295be47c14831\nparent a3192f0810819da340f0201d47183e566eecb1ea\nparent c2eb7738aa9c140d9d512fc6f672063a07348552\nauthor Tigran Babloyan <tigran.babloyan@gmail.com> 1790770864 +0400\ncommitter GitHub <noreply@github.com> 1790770864 +0400\n\nMerge pull request #1136 from bablsoft/fix/AF-1129-break-glass-ack-on-behalf-of\n\nfix(AF-1129): refuse break-glass acknowledgement by the on-behalf-of human",
+        "verified_at": "2026-09-30T12:21:05Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/68982e7c6ef40574526dbdfdd42430cd3f234e26",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/68982e7c6ef40574526dbdfdd42430cd3f234e26",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/68982e7c6ef40574526dbdfdd42430cd3f234e26/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a3192f0810819da340f0201d47183e566eecb1ea",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/a3192f0810819da340f0201d47183e566eecb1ea",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/a3192f0810819da340f0201d47183e566eecb1ea"
+      },
+      {
+        "sha": "c2eb7738aa9c140d9d512fc6f672063a07348552",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/c2eb7738aa9c140d9d512fc6f672063a07348552",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/c2eb7738aa9c140d9d512fc6f672063a07348552"
+      }
+    ]
+  },
+  {
+    "sha": "c2eb7738aa9c140d9d512fc6f672063a07348552",
+    "node_id": "C_kwDOSQzY1doAKGMyZWI3NzM4YWE5YzE0MGQ5ZDUxMmZjNmY2NzIwNjNhMDczNDg1NTI",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T11:48:22Z"
+      },
+      "committer": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T11:48:22Z"
+      },
+      "message": "docs(AF-1129): address review findings",
+      "tree": {
+        "sha": "79f1004c9bd3db69f0721e0f61b295be47c14831",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/79f1004c9bd3db69f0721e0f61b295be47c14831"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/c2eb7738aa9c140d9d512fc6f672063a07348552",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/c2eb7738aa9c140d9d512fc6f672063a07348552",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/c2eb7738aa9c140d9d512fc6f672063a07348552",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/c2eb7738aa9c140d9d512fc6f672063a07348552/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "29360b2057232a666e6f2c3742fa149dd5b4c5d8",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/29360b2057232a666e6f2c3742fa149dd5b4c5d8",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/29360b2057232a666e6f2c3742fa149dd5b4c5d8"
+      }
+    ]
+  },
+  {
+    "sha": "427dbffc3fd0748706bc60f645c257caa3474237",
+    "node_id": "C_kwDOSQzY1doAKDQyN2RiZmZjM2ZkMDc0ODcwNmJjNjBmNjQ1YzI1N2NhYTM0NzQyMzc",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-09-30T11:44:34Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T11:44:34Z"
+      },
+      "message": "chore(deps-dev): bump jsdom from 30.0.1 to 30.1.1 in /frontend\n\nBumps [jsdom](https://github.com/jsdom/jsdom) from 30.0.1 to 30.1.1.\n- [Release notes](https://github.com/jsdom/jsdom/releases)\n- [Commits](https://github.com/jsdom/jsdom/compare/v30.0.1...v30.1.1)\n\n---\nupdated-dependencies:\n- dependency-name: jsdom\n  dependency-version: 30.1.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "tree": {
+        "sha": "63c53dfd1f1eae42c4a6e818b91c43f3d1510435",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/63c53dfd1f1eae42c4a6e818b91c43f3d1510435"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/427dbffc3fd0748706bc60f645c257caa3474237",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvPYiCRC1aQ7uu5UhlAAA93EQAKd4XGnTsD6n0WHaLdqhCAVQ\nJOVuDdsXehBhH3O2jgWfxapWQDIPzZ2GShINMe+jS7d5Ic0qdigohLBx1jZHStFZ\nf2+U2yfkKEtF/Ba/C5TPflEZFjf5nn8UVQVKDT7R98rt2G5U9COEEAN24fxzfIqw\nMfxz4px7FPkIcWEzvosqWVuKzlCInZEEDiUzQcS/6Q8gmV8NOrWD17Jo8tDs1Tya\nwgp5w8aQ+HJW2AMzmln8W2P9GGO1jXxAikZ5/aRBRYgWnwjJl306EcoevlSrxHZZ\n1ufUew2lykSkvv8pN7BgAoeS/o0PwxQl1yCLLFTEQI/14Bh30Srk8YNOa0sWZopK\nqVJHXxn0KfDBMdu0F1MszHyn+dJemO+rxs1KpWgSokK3QSHlmfkTEI5z2vI67PSC\nkrzYTCC6z9ijF3KVbAK7/FZJ8IBEigB2NkLVEDkgWf6uZEToPSZjjG/rvDN49yeR\ntgaqD1NUfew+aVbVq1EZgwGQ91iV4ss0k0DNTUe1wJCDTjy/sjIsm0CrFi40IEUM\nFuOfSKuKosbcYeUDNYnyCvQMemLnjImCnswwLYgpsOl8iPpyN0DBOxG92aarlh3A\nBhoHjvOaNJubL2hQKKQ2ZHkavjYzzHg8YE1FnE6faKKmCN4pKScCUSPg1IpaM7EH\nAZBxbV+YYGzDkBnwl4xq\n=1zk1\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 63c53dfd1f1eae42c4a6e818b91c43f3d1510435\nparent a3192f0810819da340f0201d47183e566eecb1ea\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1790768674 +0000\ncommitter GitHub <noreply@github.com> 1790768674 +0000\n\nchore(deps-dev): bump jsdom from 30.0.1 to 30.1.1 in /frontend\n\nBumps [jsdom](https://github.com/jsdom/jsdom) from 30.0.1 to 30.1.1.\n- [Release notes](https://github.com/jsdom/jsdom/releases)\n- [Commits](https://github.com/jsdom/jsdom/compare/v30.0.1...v30.1.1)\n\n---\nupdated-dependencies:\n- dependency-name: jsdom\n  dependency-version: 30.1.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+        "verified_at": "2026-09-30T11:44:35Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/427dbffc3fd0748706bc60f645c257caa3474237",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/427dbffc3fd0748706bc60f645c257caa3474237",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/427dbffc3fd0748706bc60f645c257caa3474237/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a3192f0810819da340f0201d47183e566eecb1ea",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/a3192f0810819da340f0201d47183e566eecb1ea",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/a3192f0810819da340f0201d47183e566eecb1ea"
+      }
+    ]
+  },
+  {
+    "sha": "d7a3ca20d81b586ab5c9a7c1b2c47c4708dc75c0",
+    "node_id": "C_kwDOSQzY1doAKGQ3YTNjYTIwZDgxYjU4NmFiNWM5YTdjMWIyYzQ3YzQ3MDhkYzc1YzA",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-09-30T11:44:27Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T11:44:27Z"
+      },
+      "message": "chore(deps): bump react-router-dom from 7.18.3 to 7.18.4 in /frontend\n\nBumps [react-router-dom](https://github.com/remix-run/react-router/tree/HEAD/packages/react-router-dom) from 7.18.3 to 7.18.4.\n- [Release notes](https://github.com/remix-run/react-router/releases)\n- [Changelog](https://github.com/remix-run/react-router/blob/react-router-dom@7.18.4/packages/react-router-dom/CHANGELOG.md)\n- [Commits](https://github.com/remix-run/react-router/commits/react-router-dom@7.18.4/packages/react-router-dom)\n\n---\nupdated-dependencies:\n- dependency-name: react-router-dom\n  dependency-version: 7.18.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "tree": {
+        "sha": "87de5cded0003a5f8165ece936446efc2cdb25ea",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/87de5cded0003a5f8165ece936446efc2cdb25ea"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/d7a3ca20d81b586ab5c9a7c1b2c47c4708dc75c0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvPYbCRC1aQ7uu5UhlAAAt1QQABvQl3PLAQ3kgp1WF+l6UfEE\nY5f51arL6EClIj7Oukyw1G2wN+TV88oY55aE+e8nPsjRwLKaa7BsaJ1sh6klfQcK\n3A/8e+5dZ6MJ8Ev2ftlKvxraMiLl3hOKksit+p3wOeGvKicJzel92zEkLRYZtRR9\n++MRsDa+0dD+eurreeMNZ2NKYMw5YJO+dYwr2z0NyH58tDuj7bPvimLP5RhaNxLw\nSwGC1JkQpKG39VLnaaU5ojrCK0tWtJ4wkyaTFI3mqH6+A0af+QxAsfVmj7MaoSIM\ndaOIJDO7UqRtaeR9vj+4KY62hdJLUHXLcYpbaorqZQVX659aPHs6bjqxsquHaBHx\naAnZrGosizqXO9aXzHWopvL09l+mVnmuxNOiX1EYBk+VC/tr3366C1nQ++EveHbv\nyEtQ5IF37BI+3ZlnU1oZzCc1rOdgSjebEhD8er5PwT3dAF3ZjlhiIvXaDzp8b+4a\nkxlxbHGREIKiTdnlobz4d3haAwEf/snHy2CSljDPxNftnokfxgAaGrVFlj92p4jS\nYd8y9HtYunduj8VYcLbeiv6OZE4oPwfeBTo2NegloidmYEvJ02Xj9WE+03yNd+jF\nlvb30lhqiVn9CiVdqQJsesVajC2UDIZagFHDEZXSNTPrXoyputdc4fHDMeWPDfPr\nspbBdlHf/fMUd1MyAUlQ\n=IIdN\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 87de5cded0003a5f8165ece936446efc2cdb25ea\nparent a3192f0810819da340f0201d47183e566eecb1ea\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1790768667 +0000\ncommitter GitHub <noreply@github.com> 1790768667 +0000\n\nchore(deps): bump react-router-dom from 7.18.3 to 7.18.4 in /frontend\n\nBumps [react-router-dom](https://github.com/remix-run/react-router/tree/HEAD/packages/react-router-dom) from 7.18.3 to 7.18.4.\n- [Release notes](https://github.com/remix-run/react-router/releases)\n- [Changelog](https://github.com/remix-run/react-router/blob/react-router-dom@7.18.4/packages/react-router-dom/CHANGELOG.md)\n- [Commits](https://github.com/remix-run/react-router/commits/react-router-dom@7.18.4/packages/react-router-dom)\n\n---\nupdated-dependencies:\n- dependency-name: react-router-dom\n  dependency-version: 7.18.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+        "verified_at": "2026-09-30T11:44:29Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/d7a3ca20d81b586ab5c9a7c1b2c47c4708dc75c0",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/d7a3ca20d81b586ab5c9a7c1b2c47c4708dc75c0",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/d7a3ca20d81b586ab5c9a7c1b2c47c4708dc75c0/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a3192f0810819da340f0201d47183e566eecb1ea",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/a3192f0810819da340f0201d47183e566eecb1ea",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/a3192f0810819da340f0201d47183e566eecb1ea"
+      }
+    ]
+  },
+  {
+    "sha": "f5da86ee82d32ff8478c9dfdcc25c0b9639ce9d6",
+    "node_id": "C_kwDOSQzY1doAKGY1ZGE4NmVlODJkMzJmZjg0NzhjOWRmZGNjMjVjMGI5NjM5Y2U5ZDY",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-09-30T11:44:10Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T11:44:10Z"
+      },
+      "message": "chore(deps-dev): bump vite from 8.2.2 to 8.3.1 in /frontend\n\nBumps [vite](https://github.com/vitejs/vite/tree/HEAD/packages/vite) from 8.2.2 to 8.3.1.\n- [Release notes](https://github.com/vitejs/vite/releases)\n- [Changelog](https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md)\n- [Commits](https://github.com/vitejs/vite/commits/v8.3.1/packages/vite)\n\n---\nupdated-dependencies:\n- dependency-name: vite\n  dependency-version: 8.3.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "tree": {
+        "sha": "562637e8edbd5b30b219663cc36458e70a2a38b3",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/562637e8edbd5b30b219663cc36458e70a2a38b3"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/f5da86ee82d32ff8478c9dfdcc25c0b9639ce9d6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvPYLCRC1aQ7uu5UhlAAAbHAQAGRCKFifzPuCI+LkxbYZCKiQ\n6ZJzayLkP8BhQ0HLrv8thiOxx5ytAWfX1JKR7rS8k+ToszhbBXqzxSaQODgU5/5z\nQymXMDvRpobOq11jYas9TUcuvxvyil68R2E3Xda17AgBbNkQiMQBbMuUD37OxvXf\nCJ/ivbiS1IVbwdmj5R1jluniqoXiJzoONhHRMYLeiB517NSQbobQjYo6jGdI4+3X\nO8NmZ+KX96xyT/FxhoDte6yQ3CRxIUpXuEQvrM17Tv9Wm5FNmqGsAPEAQkbrLUD+\nB9pVVf6/rqRRId2HMwGpn/wQOG4YOE51kx08LY0LmIU7ky6iZoT6fNpKs9Ep13FI\nS5oyMmzWdTQo+fVibKh6K1gRe8hUuev+VPUa+cz9OgZiIQ+MnHGgZHm8jX5Lsay3\nta9IbKbnBBEqskHiHi+ImtrU0OcMsUslCKj0Q+cCoRCOzPe8UyejsUXWuyst7xr7\njTOTLQiZzGl2IUAVKiCGPYbOn7L5A0rHtKAzFtL8Y1iy5XQQNj9Cj8wg3b4d6GLJ\nOG1pRekHQaGzU+/gyHIxBDsZlsnT9n9QzC4p+hS2LtGvcT07e2kGWpl3tgMXM7p6\n2V4Yf2Q+T8kf/sQJyjJT0lMJhWrKvAKvZ/8lKo8ndG6L0nKLrcAq/0m2EGVYD9pK\nYJJJWYsopnicDfmW2pdo\n=Ltiw\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 562637e8edbd5b30b219663cc36458e70a2a38b3\nparent a3192f0810819da340f0201d47183e566eecb1ea\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1790768650 +0000\ncommitter GitHub <noreply@github.com> 1790768650 +0000\n\nchore(deps-dev): bump vite from 8.2.2 to 8.3.1 in /frontend\n\nBumps [vite](https://github.com/vitejs/vite/tree/HEAD/packages/vite) from 8.2.2 to 8.3.1.\n- [Release notes](https://github.com/vitejs/vite/releases)\n- [Changelog](https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md)\n- [Commits](https://github.com/vitejs/vite/commits/v8.3.1/packages/vite)\n\n---\nupdated-dependencies:\n- dependency-name: vite\n  dependency-version: 8.3.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+        "verified_at": "2026-09-30T11:44:12Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/f5da86ee82d32ff8478c9dfdcc25c0b9639ce9d6",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/f5da86ee82d32ff8478c9dfdcc25c0b9639ce9d6",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/f5da86ee82d32ff8478c9dfdcc25c0b9639ce9d6/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a3192f0810819da340f0201d47183e566eecb1ea",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/a3192f0810819da340f0201d47183e566eecb1ea",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/a3192f0810819da340f0201d47183e566eecb1ea"
+      }
+    ]
+  },
+  {
+    "sha": "01633582c282c4abf716550ed36fd40748071d5e",
+    "node_id": "C_kwDOSQzY1doAKDAxNjMzNTgyYzI4MmM0YWJmNzE2NTUwZWQzNmZkNDA3NDgwNzFkNWU",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-09-30T11:43:54Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T11:43:54Z"
+      },
+      "message": "chore(deps): bump antd from 6.5.2 to 6.6.5 in /frontend\n\nBumps [antd](https://github.com/ant-design/ant-design) from 6.5.2 to 6.6.5.\n- [Release notes](https://github.com/ant-design/ant-design/releases)\n- [Changelog](https://github.com/ant-design/ant-design/blob/master/CHANGELOG.en-US.md)\n- [Commits](https://github.com/ant-design/ant-design/compare/6.5.2...6.6.5)\n\n---\nupdated-dependencies:\n- dependency-name: antd\n  dependency-version: 6.6.5\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "tree": {
+        "sha": "1fda3c1baa1b129a0dee5a453767cd449ac623c0",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/1fda3c1baa1b129a0dee5a453767cd449ac623c0"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/01633582c282c4abf716550ed36fd40748071d5e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvPX6CRC1aQ7uu5UhlAAAM/AQAHyuvoPJk9GuXtOlpOLr5Zzb\nlXhpmwsBxGlm5QwXtmX5KYVqL6qLrWP/N16p12WTgQQTb72cPzQs1K0uSIhnOQ8g\n6tEJaYooCOpewl2IGAhAe4GsJ5Cb3m6GjyqzErxU7J2f3br+WewyWXajPlUvyVOr\nUxd8oDsjs1Gku+fmB14AiJ2JngJzeWWaCBsKuPnlF7ZHucrWcsIu7UCeLHyyabIr\nlUUp3kiZBNOTJparljZWA1ECxA/zsoAkAVmQdfVXrMAAkPRMapcy0/HUU7wFy+mV\nWDOFuj8BFev2EChdxln546L/3wbPvymp00gFLgxxIg7ezZkVu9lGVkbtYFBdjyiV\nvstG/fr/boOnAf/G4Ph9OL36TRHTx6SMSKOou7rNTEg6I/hqywgTGLiGe2PLo2Pb\n1I1iNKEo9fBop7q60DaR93lLVkZpIWzz7wYc7sQvqNsW06yo8Qv8sFgn3b4Ux+KX\nrfdW11EluQ8LqeMVDgxJYDPfLY9XnibGRFlAyUlvplb8s7o18oSqfRGdPmczTiqr\nc7jVHl7TedDAfgjihtZh1aSPXnRYDXVvjCGQ/Ow6Mw4BK+IyANXCs5SH98jzcNTO\n3RTbxPQwOozCx8FLAp8zkvdWXmI4ibsRfBOp3WGyiPxoNkBPKRapWDQGzObSq/Nx\n1MFo8tXOV2IozKeoO57S\n=QB4i\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 1fda3c1baa1b129a0dee5a453767cd449ac623c0\nparent a3192f0810819da340f0201d47183e566eecb1ea\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1790768634 +0000\ncommitter GitHub <noreply@github.com> 1790768634 +0000\n\nchore(deps): bump antd from 6.5.2 to 6.6.5 in /frontend\n\nBumps [antd](https://github.com/ant-design/ant-design) from 6.5.2 to 6.6.5.\n- [Release notes](https://github.com/ant-design/ant-design/releases)\n- [Changelog](https://github.com/ant-design/ant-design/blob/master/CHANGELOG.en-US.md)\n- [Commits](https://github.com/ant-design/ant-design/compare/6.5.2...6.6.5)\n\n---\nupdated-dependencies:\n- dependency-name: antd\n  dependency-version: 6.6.5\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+        "verified_at": "2026-09-30T11:43:55Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/01633582c282c4abf716550ed36fd40748071d5e",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/01633582c282c4abf716550ed36fd40748071d5e",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/01633582c282c4abf716550ed36fd40748071d5e/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a3192f0810819da340f0201d47183e566eecb1ea",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/a3192f0810819da340f0201d47183e566eecb1ea",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/a3192f0810819da340f0201d47183e566eecb1ea"
+      }
+    ]
+  },
+  {
+    "sha": "29360b2057232a666e6f2c3742fa149dd5b4c5d8",
+    "node_id": "C_kwDOSQzY1doAKDI5MzYwYjIwNTcyMzJhNjY2ZTZmMmMzNzQyZmExNDlkZDViNGM1ZDg",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T11:32:22Z"
+      },
+      "committer": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T11:32:22Z"
+      },
+      "message": "fix(AF-1129): refuse break-glass acknowledgement by the on-behalf-of human",
+      "tree": {
+        "sha": "d5977d41f320b4c0bd13eb14b3f04e37cba26fcb",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/d5977d41f320b4c0bd13eb14b3f04e37cba26fcb"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/29360b2057232a666e6f2c3742fa149dd5b4c5d8",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/29360b2057232a666e6f2c3742fa149dd5b4c5d8",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/29360b2057232a666e6f2c3742fa149dd5b4c5d8",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/29360b2057232a666e6f2c3742fa149dd5b4c5d8/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a3192f0810819da340f0201d47183e566eecb1ea",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/a3192f0810819da340f0201d47183e566eecb1ea",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/a3192f0810819da340f0201d47183e566eecb1ea"
+      }
+    ]
+  },
+  {
+    "sha": "a3192f0810819da340f0201d47183e566eecb1ea",
+    "node_id": "C_kwDOSQzY1doAKGEzMTkyZjA4MTA4MTlkYTM0MGYwMjAxZDQ3MTgzZTU2NmVlY2IxZWE",
+    "commit": {
+      "author": {
+        "name": "Tigran Babloyan",
+        "email": "tigran.babloyan@gmail.com",
+        "date": "2026-09-30T10:58:54Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T10:58:54Z"
+      },
+      "message": "Merge pull request #1128 from bablsoft/fix/AF-867-service-account-scim-inbox-exclusion\n\nfix(AF-867): hide service accounts from SCIM and skip their inbox rows",
+      "tree": {
+        "sha": "63410a632dd6fc2102beac96c4f91e2beb75b3e8",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/git/trees/63410a632dd6fc2102beac96c4f91e2beb75b3e8"
+      },
+      "url": "https://api.github.com/repos/bablsoft/accessflow/git/commits/a3192f0810819da340f0201d47183e566eecb1ea",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvOtuCRC1aQ7uu5UhlAAAWVUQAIQgantjUJ2K8h+qL6ytJvut\nVjA9SpeNlZvkzUfzVBHgLOC7XNHQz+37Rb5aA4Juv088xjabYHIry6oHgH/o9pf/\nMJlTSIyQDEmhu72zJPP1O5UA88qTg+m7x031tnkA7m1n7mfsUWRrfzYRLQdrKemp\nVjmCwQP0Kl63OenIB4R/bFZByxS4V4vxZmTJI5q1sfsW2bVwegg0edDkfTNG13G3\nevxt4e7lv3vQTZgbR+6DwsF0RokbyEVs981emr/L/oB0UVPsNj9nH8EGCSCgSmZl\nnCyWjwBA3n4lgon/DvWSL+Hj9HfzGQ3r2DBiAhi409Z0QJjlmrQ3Rdoi5krIXvsU\nPuQUTYcOcCbjBsnsR+34OmalR9Rrukfxk77zSp6DL3TLVTLxzHdCvOt2eOM1UkH/\nDKvoomiRxhDBgVPkhuXQ9w1RXAbp+HmEa/atNc4X/0a9n2J4zpZMGuVpGzIg4AaU\ncM+q0lVGORcxpwknnMB2/owtExr9Pgf4GyjpHIZfkCn6SHVWy9C/71EDe9aMy4i5\nAwClQIBtYQ/PJVLo8zdRXRXzS8pLAYcAHO3+CTdcMPQZy6Ytx282tmNoP6wXPuSY\nA6C1/5zJyh2xvcmU62GllRZoPAbXC5vY4wkE10zA6vl6mQ11xKWVgbI82ngxTVi6\nFuEEIuQK092Tn55lnja4\n=rA/h\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 63410a632dd6fc2102beac96c4f91e2beb75b3e8\nparent acc4ccbba011888951ef8e600a115adcbb5755d0\nparent b91b045ee4e643e94494ae374a43d40936ee400f\nauthor Tigran Babloyan <tigran.babloyan@gmail.com> 1790765934 +0400\ncommitter GitHub <noreply@github.com> 1790765934 +0400\n\nMerge pull request #1128 from bablsoft/fix/AF-867-service-account-scim-inbox-exclusion\n\nfix(AF-867): hide service accounts from SCIM and skip their inbox rows",
+        "verified_at": "2026-09-30T10:58:54Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bablsoft/accessflow/commits/a3192f0810819da340f0201d47183e566eecb1ea",
+    "html_url": "https://github.com/bablsoft/accessflow/commit/a3192f0810819da340f0201d47183e566eecb1ea",
+    "comments_url": "https://api.github.com/repos/bablsoft/accessflow/commits/a3192f0810819da340f0201d47183e566eecb1ea/comments",
+    "author": {
+      "login": "babltiga",
+      "id": 576403,
+      "node_id": "MDQ6VXNlcjU3NjQwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babltiga",
+      "html_url": "https://github.com/babltiga",
+      "followers_url": "https://api.github.com/users/babltiga/followers",
+      "following_url": "https://api.github.com/users/babltiga/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babltiga/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babltiga/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babltiga/subscriptions",
+      "organizations_url": "https://api.github.com/users/babltiga/orgs",
+      "repos_url": "https://api.github.com/users/babltiga/repos",
+      "events_url": "https://api.github.com/users/babltiga/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babltiga/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "acc4ccbba011888951ef8e600a115adcbb5755d0",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/acc4ccbba011888951ef8e600a115adcbb5755d0",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/acc4ccbba011888951ef8e600a115adcbb5755d0"
+      },
+      {
+        "sha": "b91b045ee4e643e94494ae374a43d40936ee400f",
+        "url": "https://api.github.com/repos/bablsoft/accessflow/commits/b91b045ee4e643e94494ae374a43d40936ee400f",
+        "html_url": "https://github.com/bablsoft/accessflow/commit/b91b045ee4e643e94494ae374a43d40936ee400f"
+      }
+    ]
+  }
+]

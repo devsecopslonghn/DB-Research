@@ -1,0 +1,101 @@
+{
+  "collected_date": "2026-10-04",
+  "scope": "Selected public raw source snapshots at immutable commit URLs. Not full repositories, release binaries, container images, SBOMs, or legal review.",
+  "runtime": "NOT_RUN",
+  "pin_provenance": [
+    {
+      "repo": "https://eco.dameng.com/document/dm/zh-cn/start/tool_SQLark.html",
+      "pin": "N/A proprietary product documentation",
+      "public_metadata_or_source_url": "https://eco.dameng.com/document/dm/zh-cn/start/tool_SQLark.html",
+      "snapshot_manifest": "source-manifest.csv",
+      "basis": "docs only; no source SHA"
+    },
+    {
+      "repo": "https://github.com/dbgate/dbgate",
+      "pin": "c6babf5933f9e9cd81c11bcf5889bdc54e35cb81",
+      "public_metadata_or_source_url": "https://github.com/dbgate/dbgate",
+      "snapshot_manifest": "source-manifest.csv",
+      "basis": "public repository metadata/API pin observed during research; immutable raw URLs used for snapshots"
+    },
+    {
+      "repo": "https://github.com/bytebase/dbhub",
+      "pin": "4ddb26e73c5d8f1d54f5d04351c11c3caeb43cbb",
+      "public_metadata_or_source_url": "https://github.com/bytebase/dbhub",
+      "snapshot_manifest": "source-manifest.csv",
+      "basis": "public repository metadata/API pin observed during research; immutable raw URLs used for snapshots"
+    },
+    {
+      "repo": "https://github.com/cloudera/hue",
+      "pin": "afa68e4008a550dfcef42c4a9b46d523396dd94c",
+      "public_metadata_or_source_url": "https://github.com/cloudera/hue",
+      "snapshot_manifest": "source-manifest.csv",
+      "basis": "public repository metadata/API pin observed during research; immutable raw URLs used for snapshots"
+    },
+    {
+      "repo": "https://github.com/sqlparser/sqlflow_public",
+      "pin": "067cbbe1bce1c02090d41db89f8e06715e3fa459",
+      "public_metadata_or_source_url": "https://github.com/sqlparser/sqlflow_public",
+      "snapshot_manifest": "source-manifest.csv",
+      "basis": "public repository metadata/API pin observed during research; immutable raw URLs used for snapshots"
+    },
+    {
+      "repo": "https://github.com/pt9912/d-migrate",
+      "pin": "cd2ad60b4b4ffdf3ef363a16ab5adfacf2b7c62a",
+      "public_metadata_or_source_url": "https://github.com/pt9912/d-migrate",
+      "snapshot_manifest": "source-manifest.csv",
+      "basis": "public repository metadata/API pin observed during research; immutable raw URLs used for snapshots"
+    },
+    {
+      "repo": "https://github.com/AI2Innovate/dbabridge",
+      "pin": "f96b5159aa2bf20da8584cdefe5e7b33efd338ed",
+      "public_metadata_or_source_url": "https://github.com/AI2Innovate/dbabridge",
+      "snapshot_manifest": "source-manifest.csv",
+      "basis": "public repository metadata/API pin observed during research; immutable raw URLs used for snapshots"
+    },
+    {
+      "repo": "https://github.com/junpisaanant/dbgit",
+      "pin": "N/A repository URL unavailable/404 in review",
+      "public_metadata_or_source_url": "https://github.com/junpisaanant/dbgit",
+      "snapshot_manifest": "source-manifest.csv",
+      "basis": "docs only; no source SHA"
+    },
+    {
+      "repo": "https://github.com/mugumedavid/bani",
+      "pin": "c3c386a802668ae372a6ae500cf0d039b101d7af",
+      "public_metadata_or_source_url": "https://github.com/mugumedavid/bani",
+      "snapshot_manifest": "source-manifest.csv",
+      "basis": "public git ls-remote HEAD observed during research"
+    },
+    {
+      "repo": "https://github.com/adiom-data/dsync",
+      "pin": "9c0e12db57fa10bd69220482b4ce151f7620eb30",
+      "public_metadata_or_source_url": "https://github.com/adiom-data/dsync",
+      "snapshot_manifest": "source-manifest.csv",
+      "basis": "public git ls-remote HEAD observed during research"
+    },
+    {
+      "repo": "https://github.com/liquibase/liquibase-Oracle-demo",
+      "pin": "6d8b60a3ea0de556ae08800dcf7f09bf23fb0079",
+      "public_metadata_or_source_url": "https://github.com/liquibase/liquibase-Oracle-demo",
+      "snapshot_manifest": "source-manifest.csv",
+      "basis": "public git ls-remote HEAD observed during research"
+    }
+  ],
+  "caveat": "Observed branch-head pins are point-in-time research metadata. Immutable commit URL proves the retrieved file content at that pin, not that it is the latest release or deployed artifact.",
+  "additional_artifacts": [
+    {
+      "artifact": "Adiom Dsync",
+      "license_url": "https://raw.githubusercontent.com/adiom-data/dsync/9c0e12db57fa10bd69220482b4ce151f7620eb30/LICENSE",
+      "observation": "HTTP 404 at selected pin; AGPL-3.0 is a docs declaration only, not verified from license text."
+    },
+    {
+      "artifact": "npm:@lovelytoonz/dbgit@0.1.0",
+      "metadata_url": "https://registry.npmjs.org/@lovelytoonz%2fdbgit",
+      "archive_url": "https://registry.npmjs.org/@lovelytoonz/dbgit/-/dbgit-0.1.0.tgz",
+      "pin_basis": "npm registry latest tag observed at collection; version 0.1.0; archive SHA-256 recorded from retrieved bytes",
+      "license": "MIT field plus LICENSE text inspected in archive",
+      "archive_sha256": "af488e47df91b04717f4e0ac33a08681adaa8593e5002bd2b8f353b2d7860941",
+      "upstream_git": "Repository URL in package metadata returned unavailable; npm archive pin is independent of Git commit/history."
+    }
+  ]
+}

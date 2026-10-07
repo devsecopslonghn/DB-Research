@@ -1,0 +1,188 @@
+{
+  "timestamp": "2026-10-07T10:55:11.047975+00:00",
+  "scope": "Read-only post-replacement history/project verification; no Oracle SQL",
+  "historical_checks": [
+    {
+      "ticket_id": 1000028,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000027,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000026,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000025,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000024,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000023,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000022,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000021,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000020,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000019,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000018,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000017,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000016,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000015,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000014,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000013,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000012,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000011,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000010,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000009,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000008,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000007,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000006,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000005,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000004,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000003,
+      "status_preserved": true,
+      "sql_preserved": true
+    }
+  ],
+  "new_tickets": [
+    {
+      "id": 2000012,
+      "status": "EXECUTION_SUCCEEDED"
+    },
+    {
+      "id": 2000011,
+      "status": "EXECUTION_FAILED"
+    },
+    {
+      "id": 2000010,
+      "status": "EXECUTION_SUCCEEDED"
+    },
+    {
+      "id": 2000009,
+      "status": "EXECUTION_SUCCEEDED"
+    },
+    {
+      "id": 2000008,
+      "status": "CANCELLED"
+    },
+    {
+      "id": 2000007,
+      "status": "EXECUTION_FAILED"
+    },
+    {
+      "id": 2000006,
+      "status": "EXECUTION_SUCCEEDED"
+    },
+    {
+      "id": 2000005,
+      "status": "EXECUTION_SUCCEEDED"
+    },
+    {
+      "id": 2000004,
+      "status": "EXECUTION_SUCCEEDED"
+    },
+    {
+      "id": 2000003,
+      "status": "EXECUTION_SUCCEEDED"
+    },
+    {
+      "id": 2000002,
+      "status": "EXECUTION_SUCCEEDED"
+    },
+    {
+      "id": 2000001,
+      "status": "EXECUTION_SUCCEEDED"
+    }
+  ],
+  "active_new_tickets": [],
+  "plugin_hash_after": "ad9902712e30907f513c750c90ee35522e19f0f13be0476466990b93552b4a31  /opt/odc/plugins/connect-plugin-oracle-4.4.1-20260116.jar"
+}

@@ -1,0 +1,39 @@
+{
+  "repository": "https://github.com/ClouGence/open-cdm",
+  "commit": "3aa1238a471afca2579e76e6fbf0a922d9be5579",
+  "snapshot_directory": "evaluation/research-round-2/coordinator/source-clouddm-20261006",
+  "tree": {
+    "url": "https://api.github.com/repos/ClouGence/open-cdm/git/trees/3aa1238a471afca2579e76e6fbf0a922d9be5579?recursive=1",
+    "entries": 10499,
+    "truncated": false,
+    "bytes": 3241728,
+    "sha256": "698aa8e2120560eec106e1f233245b000cebe4332ccab8e9fccba3f5579c128b"
+  },
+  "pricing_observation": {
+    "url": "https://www.cdmgr.com/en/pricing/",
+    "observed_at": "2026-10-06",
+    "bytes": 55741,
+    "sha256": "9bca0fb2449737ec1eba676087cb0f8b75f0b3e698d0308d8d357ccf40256ab6",
+    "matches_2026_10_04_direct_snapshot": true,
+    "indexed_result_reports_community_10_datasource_5_account": true,
+    "indexed_crawl_age_reported_by_search": "approximately 3 months; exact crawl date unavailable"
+  },
+  "license_file": "LICENSE.txt",
+  "license_sha256": "a714b40a28d8cefd070eb0b62e976edf3e85f3304ff4097971453da778ef7844",
+  "sha256": "SHA-256",
+  "files": [
+    {"upstream_path":"README.md","upstream_url":"https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/README.md","local_path":"README.md","sha256":"685c2fa243092f6e2e6b648d32ff698f819991b82ac6fe0d90f39b6525829fd9","bytes":7566},
+    {"upstream_path":"LICENSE.txt","upstream_url":"https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/LICENSE.txt","local_path":"LICENSE.txt","sha256":"a714b40a28d8cefd070eb0b62e976edf3e85f3304ff4097971453da778ef7844","bytes":11368},
+    {"upstream_path":"backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/rdp/service/impl/RdpUserServiceImpl.java","upstream_url":"https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/rdp/service/impl/RdpUserServiceImpl.java","local_path":"RdpUserServiceImpl.java","sha256":"f5444f010d7359a8542c5ecfe755b0bd032fa05b5f3cf5c3e2874cfb0f6bdf80","bytes":46926},
+    {"upstream_path":"backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/rdp/controller/RdpUserManagerController.java","upstream_url":"https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/rdp/controller/RdpUserManagerController.java","local_path":"RdpUserManagerController.java","sha256":"29ee54667d77bbcce6f033d493ec2724990ce9e2da9fcb12e6c5464364ddae21","bytes":14135},
+    {"upstream_path":"backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/controller/datasource/DmDsController.java","upstream_url":"https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/controller/datasource/DmDsController.java","local_path":"DmDsController.java","sha256":"8ca34ce0a8cdf7605cd4c9558f421a14fc0b8afee5ce2ab035fd60a3b1eb4362","bytes":19694},
+    {"upstream_path":"backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/datasource/DmDsWebServiceImpl.java","upstream_url":"https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/datasource/DmDsWebServiceImpl.java","local_path":"DmDsWebServiceImpl.java","sha256":"10dfcdaf3b1d437e3a43219c99c245318795163c82d1de4cd3d57171ed405d29","bytes":27454},
+    {"upstream_path":"backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/flyway/DmFlywayInit.java","upstream_url":"https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/flyway/DmFlywayInit.java","local_path":"DmFlywayInit.java","sha256":"ab3b8494d35b7b6d77bc0422d39ef8f41777b9b1fda22730e85d278e07d5f5b8","bytes":10075}
+  ],
+  "notices": [
+    "README.en.md at repository root returned HTTP 404; repository README.md retained instead.",
+    "Only selected source files are retained; the full source archive was not copied.",
+    "Tree data were parsed transiently for 10,499 entries and not retained as a 3.2 MB artifact.",
+    "This source snapshot does not identify or certify a distributed binary, entitlement, or legal right for 50 datasource instances and 20 accounts."
+  ]
+}

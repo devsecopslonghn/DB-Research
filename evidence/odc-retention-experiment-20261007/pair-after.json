@@ -1,0 +1,452 @@
+{
+  "timestamp": "2026-10-07T17:10:54.541745+00:00",
+  "phase": "configured, after ordinary replacement",
+  "tickets": [
+    {
+      "label": "R1",
+      "ticket_id": 2000013,
+      "snapshot": {
+        "timestamp": "2026-10-07T17:10:54.541767+00:00",
+        "ticket_id": 2000013,
+        "detail": {
+          "affectedRows": 0,
+          "approvable": false,
+          "completeTime": 1791392824000,
+          "createTime": 1791392808000,
+          "creator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "database": {
+            "connectType": "ORACLE",
+            "dataSource": {
+              "connectType": "CONNECT_TYPE_OB",
+              "createTime": 1791074334000,
+              "creatorId": 1,
+              "defaultSchema": "ODC_POC_20261004_DEV",
+              "environmentId": 1,
+              "host": "adb.ap-mumbai-1.oraclecloud.com",
+              "id": 1000001,
+              "name": "odc-poc-dev",
+              "port": 1521,
+              "projectId": 1,
+              "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+              "status": null,
+              "type": "ORACLE",
+              "updateTime": 1791074334000,
+              "username": "ODC_POC_20261004_DEV"
+            },
+            "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+            "environment": {
+              "createTime": null,
+              "creator": null,
+              "description": null,
+              "id": 1,
+              "name": null,
+              "updateTime": null
+            },
+            "id": 1000069,
+            "name": "ODC_POC_20261004_DEV",
+            "project": {
+              "createTime": null,
+              "creator": null,
+              "description": null,
+              "id": 1,
+              "name": null,
+              "updateTime": null
+            },
+            "type": "PHYSICAL"
+          },
+          "description": "app=odc-retention-poc; release=20261007-R1; ref=supported-config",
+          "executionStrategy": "MANUAL",
+          "executionTime": null,
+          "id": 2000013,
+          "nodeList": [
+            {
+              "candidates": null,
+              "comment": null,
+              "completeTime": 1791392814000,
+              "createTime": 1791392808000,
+              "id": 2000085,
+              "nodeType": "SERVICE_TASK",
+              "operator": {
+                "accountName": "odc_poc_requester",
+                "id": 10000,
+                "name": "POC requester",
+                "roleNames": []
+              },
+              "status": "COMPLETED",
+              "taskType": "PRE_CHECK"
+            },
+            {
+              "candidates": null,
+              "comment": "system auto-approval",
+              "completeTime": 1791392816000,
+              "createTime": 1791392808000,
+              "id": 2000061,
+              "nodeType": "APPROVAL_TASK",
+              "operator": null,
+              "status": "COMPLETED",
+              "taskType": null
+            },
+            {
+              "candidates": null,
+              "comment": null,
+              "completeTime": 1791392824000,
+              "createTime": 1791392808000,
+              "id": 2000086,
+              "nodeType": "SERVICE_TASK",
+              "operator": {
+                "accountName": "odc_poc_requester",
+                "id": 10000,
+                "name": "POC requester",
+                "roleNames": []
+              },
+              "status": "COMPLETED",
+              "taskType": "ASYNC"
+            }
+          ],
+          "parameters": {
+            "delimiter": ";",
+            "errorStrategy": "ABORT",
+            "queryLimit": 100,
+            "retryTimes": 0,
+            "sqlContent": "SELECT 'P7_RETENTION_CONFIG_SUCCESS' AS MARKER FROM DUAL;\n",
+            "sqlObjectNames": null,
+            "timeoutMillis": 120000
+          },
+          "progressPercentage": 100.0,
+          "project": {
+            "createTime": 1791073053000,
+            "creator": {
+              "accountName": "odc_poc_executor",
+              "id": 10002,
+              "name": "POC executor",
+              "roleNames": []
+            },
+            "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+            "id": 1,
+            "name": "odc-oracle-poc",
+            "updateTime": 1791073053000
+          },
+          "projectId": 1,
+          "status": "EXECUTION_SUCCEEDED",
+          "type": "ASYNC"
+        },
+        "result": {
+          "http_status": 200,
+          "successful": true,
+          "data": {
+            "contents": [
+              {
+                "autoModifyTimeout": false,
+                "containQuery": true,
+                "errorRecordsFilePath": null,
+                "failCount": 0,
+                "fullLogDownloadUrl": "/api/v2/flow/flowInstances/2000013/tasks/log/download",
+                "jsonFileBytes": 1841,
+                "jsonFileName": "AF42F993-21CA-4352-9865-82C9453E7261",
+                "records": [],
+                "resultPreviewMaxSizeBytes": 5242880,
+                "successCount": 1,
+                "zipFileDownloadUrl": "/api/v2/flow/flowInstances/2000013/tasks/download",
+                "zipFileId": "F8E8377A-03FC-41AD-A801-D9D1C63218B5"
+              }
+            ]
+          },
+          "error": null
+        },
+        "log": {
+          "http_status": 200,
+          "successful": true,
+          "data": "2026-10-08 01:07:02 INFO c.o.o.s.f.t.DatabaseChangeThread - Database change task start to run, taskId=2000026\n2026-10-08 01:07:02 INFO c.o.o.s.f.t.DatabaseChangeThread - Start read sql content, taskId=2000026\n2026-10-08 01:07:02 INFO c.o.o.s.f.t.DatabaseChangeThread - Read sql content successfully, taskId=2000026\n2026-10-08 01:07:02 INFO c.o.o.s.f.t.DatabaseChangeThread - Async sql: SELECT 'P7_RETENTION_CONFIG_SUCCESS' AS MARKER FROM DUAL\n2026-10-08 01:07:04 INFO c.o.o.s.f.t.DatabaseChangeThread - async task result set was saved as JSON file successfully, file name=data/ASYNC/AF42F993-21CA-4352-9865-82C9453E7261.json\n2026-10-08 01:07:04 INFO c.o.o.s.f.t.DatabaseChangeThread - database change task result set was saved as local zip file, file name=F8E8377A-03FC-41AD-A801-D9D1C63218B5\n2026-10-08 01:07:04 INFO c.o.o.s.f.t.DatabaseChangeThread - Async task end up running, task id: 2000026\n",
+          "error": null
+        },
+        "async_result": {
+          "http_status": 200,
+          "successful": true,
+          "data": {
+            "contents": [
+              {
+                "columnLabels": [
+                  "MARKER"
+                ],
+                "errorCode": -1,
+                "executeSql": null,
+                "existWarnings": false,
+                "rows": [
+                  [
+                    "P7_RETENTION_CONFIG_SUCCESS"
+                  ]
+                ],
+                "sqlType": null,
+                "status": "SUCCESS",
+                "total": 1,
+                "track": null
+              }
+            ]
+          },
+          "error": null
+        },
+        "attachment": {
+          "http_status": 200,
+          "bytes": 796,
+          "sha256": "12529738d626459c8118f1ace1f4c75423cf84ffa6ac4e76234278f2a3abfaa9",
+          "zip": true,
+          "entries": [
+            {
+              "name": "1.csv",
+              "content": "MARKER\nP7_RETENTION_CONFIG_SUCCESS\n"
+            },
+            {
+              "name": "csv_execute_result.json",
+              "content": "[ {\n  \"fileName\" : \"1.csv\",\n  \"sequence\" : 1,\n  \"sql\" : \"SELECT 'P7_RETENTION_CONFIG_SUCCESS' AS MARKER FROM DUAL\"\n} ]"
+            }
+          ]
+        },
+        "log_download": {
+          "http_status": 200,
+          "bytes": 897,
+          "sha256": "f3aef103873c001c10dd9a40886581c295d8268a1d0c06579987cf87cca06738",
+          "zip": false,
+          "text": "2026-10-08 01:07:02 INFO c.o.o.s.f.t.DatabaseChangeThread - Database change task start to run, taskId=2000026\n2026-10-08 01:07:02 INFO c.o.o.s.f.t.DatabaseChangeThread - Start read sql content, taskId=2000026\n2026-10-08 01:07:02 INFO c.o.o.s.f.t.DatabaseChangeThread - Read sql content successfully, taskId=2000026\n2026-10-08 01:07:02 INFO c.o.o.s.f.t.DatabaseChangeThread - Async sql: SELECT 'P7_RETENTION_CONFIG_SUCCESS' AS MARKER FROM DUAL\n2026-10-08 01:07:04 INFO c.o.o.s.f.t.DatabaseChangeThread - async task result set was saved as JSON file successfully, file name=data/ASYNC/AF42F993-21CA-4352-9865-82C9453E7261.json\n2026-10-08 01:07:04 INFO c.o.o.s.f.t.DatabaseChangeThread - database change task result set was saved as local zip file, file name=F8E8377A-03FC-41AD-A801-D9D1C63218B5\n2026-10-08 01:07:04 INFO c.o.o.s.f.t.DatabaseChangeThread - Async task end up running, task id: 2000026\n"
+        }
+      }
+    },
+    {
+      "label": "R2",
+      "ticket_id": 2000014,
+      "snapshot": {
+        "timestamp": "2026-10-07T17:10:55.308939+00:00",
+        "ticket_id": 2000014,
+        "detail": {
+          "affectedRows": 0,
+          "approvable": false,
+          "completeTime": 1791392840000,
+          "createTime": 1791392825000,
+          "creator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "database": {
+            "connectType": "ORACLE",
+            "dataSource": {
+              "connectType": "CONNECT_TYPE_OB",
+              "createTime": 1791074334000,
+              "creatorId": 1,
+              "defaultSchema": "ODC_POC_20261004_DEV",
+              "environmentId": 1,
+              "host": "adb.ap-mumbai-1.oraclecloud.com",
+              "id": 1000001,
+              "name": "odc-poc-dev",
+              "port": 1521,
+              "projectId": 1,
+              "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+              "status": null,
+              "type": "ORACLE",
+              "updateTime": 1791074334000,
+              "username": "ODC_POC_20261004_DEV"
+            },
+            "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+            "environment": {
+              "createTime": null,
+              "creator": null,
+              "description": null,
+              "id": 1,
+              "name": null,
+              "updateTime": null
+            },
+            "id": 1000069,
+            "name": "ODC_POC_20261004_DEV",
+            "project": {
+              "createTime": null,
+              "creator": null,
+              "description": null,
+              "id": 1,
+              "name": null,
+              "updateTime": null
+            },
+            "type": "PHYSICAL"
+          },
+          "description": "app=odc-retention-poc; release=20261007-R2; ref=supported-config",
+          "executionStrategy": "MANUAL",
+          "executionTime": null,
+          "id": 2000014,
+          "nodeList": [
+            {
+              "candidates": null,
+              "comment": null,
+              "completeTime": 1791392831000,
+              "createTime": 1791392825000,
+              "id": 2000090,
+              "nodeType": "SERVICE_TASK",
+              "operator": {
+                "accountName": "odc_poc_requester",
+                "id": 10000,
+                "name": "POC requester",
+                "roleNames": []
+              },
+              "status": "COMPLETED",
+              "taskType": "PRE_CHECK"
+            },
+            {
+              "candidates": null,
+              "comment": "system auto-approval",
+              "completeTime": 1791392832000,
+              "createTime": 1791392825000,
+              "id": 2000066,
+              "nodeType": "APPROVAL_TASK",
+              "operator": null,
+              "status": "COMPLETED",
+              "taskType": null
+            },
+            {
+              "candidates": null,
+              "comment": null,
+              "completeTime": 1791392840000,
+              "createTime": 1791392825000,
+              "id": 2000091,
+              "nodeType": "SERVICE_TASK",
+              "operator": {
+                "accountName": "odc_poc_requester",
+                "id": 10000,
+                "name": "POC requester",
+                "roleNames": []
+              },
+              "status": "FAILED",
+              "taskType": "ASYNC"
+            }
+          ],
+          "parameters": {
+            "delimiter": ";",
+            "errorStrategy": "ABORT",
+            "queryLimit": 100,
+            "retryTimes": 0,
+            "sqlContent": "SELECT 1/0 AS P7_RETENTION_CONFIG_FAILURE FROM DUAL;\n",
+            "sqlObjectNames": null,
+            "timeoutMillis": 120000
+          },
+          "progressPercentage": 100.0,
+          "project": {
+            "createTime": 1791073053000,
+            "creator": {
+              "accountName": "odc_poc_executor",
+              "id": 10002,
+              "name": "POC executor",
+              "roleNames": []
+            },
+            "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+            "id": 1,
+            "name": "odc-oracle-poc",
+            "updateTime": 1791073053000
+          },
+          "projectId": 1,
+          "status": "EXECUTION_FAILED",
+          "type": "ASYNC"
+        },
+        "result": {
+          "http_status": 200,
+          "successful": true,
+          "data": {
+            "contents": [
+              {
+                "autoModifyTimeout": false,
+                "containQuery": true,
+                "errorRecordsFilePath": "data/ASYNC/FD718FC6-2C78-44F3-BC21-B46855F0D546.txt",
+                "failCount": 1,
+                "fullLogDownloadUrl": "/api/v2/flow/flowInstances/2000014/tasks/log/download",
+                "jsonFileBytes": 1084,
+                "jsonFileName": "BA0B6D85-97BF-4C93-A3DB-E9A77AD6A2B1",
+                "records": [
+                  "The execution failed on line 1.: SELECT 1/0 AS P7_RETENTION_CONFIG_FAILURE FROM DUAL ErrorCode = 1476, SQLState = 22012, Details = ORA-01476: divisor is equal to zero "
+                ],
+                "resultPreviewMaxSizeBytes": 5242880,
+                "successCount": 0,
+                "zipFileDownloadUrl": "/api/v2/flow/flowInstances/2000014/tasks/download",
+                "zipFileId": "6669E8F5-D214-4540-8E2D-F0468E79F7E6"
+              }
+            ]
+          },
+          "error": null
+        },
+        "log": {
+          "http_status": 200,
+          "successful": true,
+          "data": "2026-10-08 01:07:19 INFO c.o.o.s.f.t.DatabaseChangeThread - Database change task start to run, taskId=2000028\n2026-10-08 01:07:19 INFO c.o.o.s.f.t.DatabaseChangeThread - Start read sql content, taskId=2000028\n2026-10-08 01:07:19 INFO c.o.o.s.f.t.DatabaseChangeThread - Read sql content successfully, taskId=2000028\n2026-10-08 01:07:19 INFO c.o.o.s.f.t.DatabaseChangeThread - Async sql: SELECT 1/0 AS P7_RETENTION_CONFIG_FAILURE FROM DUAL\n2026-10-08 01:07:20 WARN c.o.o.s.f.t.DatabaseChangeThread - Error occurs when executing sql: SELECT 1/0 AS P7_RETENTION_CONFIG_FAILURE FROM DUAL, error message: ErrorCode = 1476, SQLState = 22012, Details = ORA-01476: divisor is equal to zero\n\n2026-10-08 01:07:20 INFO c.o.o.s.f.t.DatabaseChangeThread - async task result set was saved as JSON file successfully, file name=data/ASYNC/BA0B6D85-97BF-4C93-A3DB-E9A77AD6A2B1.json\n2026-10-08 01:07:20 INFO c.o.o.s.f.t.DatabaseChangeThread - database change task result set was saved as local zip file, file name=6669E8F5-D214-4540-8E2D-F0468E79F7E6\n2026-10-08 01:07:20 INFO c.o.o.s.f.t.DatabaseChangeThread - Async task end up running, task id: 2000028\n",
+          "error": null
+        },
+        "async_result": {
+          "http_status": 200,
+          "successful": true,
+          "data": {
+            "contents": [
+              {
+                "columnLabels": null,
+                "errorCode": 1476,
+                "executeSql": null,
+                "existWarnings": false,
+                "rows": [],
+                "sqlType": null,
+                "status": "FAILED",
+                "total": null,
+                "track": "ErrorCode = 1476, SQLState = 22012, Details = ORA-01476: divisor is equal to zero\n"
+              }
+            ]
+          },
+          "error": null
+        },
+        "attachment": {
+          "http_status": 200,
+          "bytes": 457,
+          "sha256": "02e9e52a19f4398608919319bdee7630d7da1fe442bb132765bccfaa64802548",
+          "zip": true,
+          "entries": [
+            {
+              "name": "csv_execute_result.json",
+              "content": "[ ]"
+            }
+          ]
+        },
+        "log_download": {
+          "http_status": 200,
+          "bytes": 1136,
+          "sha256": "94645b7cadbd33ef1882fa659881564ca3dca6d6fdabfef3eed863057b51e209",
+          "zip": false,
+          "text": "2026-10-08 01:07:19 INFO c.o.o.s.f.t.DatabaseChangeThread - Database change task start to run, taskId=2000028\n2026-10-08 01:07:19 INFO c.o.o.s.f.t.DatabaseChangeThread - Start read sql content, taskId=2000028\n2026-10-08 01:07:19 INFO c.o.o.s.f.t.DatabaseChangeThread - Read sql content successfully, taskId=2000028\n2026-10-08 01:07:19 INFO c.o.o.s.f.t.DatabaseChangeThread - Async sql: SELECT 1/0 AS P7_RETENTION_CONFIG_FAILURE FROM DUAL\n2026-10-08 01:07:20 WARN c.o.o.s.f.t.DatabaseChangeThread - Error occurs when executing sql: SELECT 1/0 AS P7_RETENTION_CONFIG_FAILURE FROM DUAL, error message: ErrorCode = 1476, SQLState = 22012, Details = ORA-01476: divisor is equal to zero\n\n2026-10-08 01:07:20 INFO c.o.o.s.f.t.DatabaseChangeThread - async task result set was saved as JSON file successfully, file name=data/ASYNC/BA0B6D85-97BF-4C93-A3DB-E9A77AD6A2B1.json\n2026-10-08 01:07:20 INFO c.o.o.s.f.t.DatabaseChangeThread - database change task result set was saved as local zip file, file name=6669E8F5-D214-4540-8E2D-F0468E79F7E6\n2026-10-08 01:07:20 INFO c.o.o.s.f.t.DatabaseChangeThread - Async task end up running, task id: 2000028\n"
+        }
+      }
+    }
+  ],
+  "classification": [
+    {
+      "ticket_id": 2000013,
+      "metadata": "PRESERVED",
+      "sql": "PRESERVED",
+      "result": "PRESERVED",
+      "async_result": "PRESERVED",
+      "log": "PRESERVED",
+      "attachment": "PRESERVED",
+      "log_download": "PRESERVED",
+      "approvals": "PRESERVED"
+    },
+    {
+      "ticket_id": 2000014,
+      "metadata": "PRESERVED",
+      "sql": "PRESERVED",
+      "result": "PRESERVED",
+      "async_result": "PRESERVED",
+      "log": "PRESERVED",
+      "attachment": "PRESERVED",
+      "log_download": "PRESERVED",
+      "approvals": "PRESERVED"
+    }
+  ],
+  "audit_classification": "PRESERVED",
+  "file_hashes_preserved": true,
+  "all_async_files_preserved": true,
+  "comparison_note": "Compare saved JSON with canonical string ticket keys; the in-memory collection initially used integer keys. Individual hashes and content were unchanged."
+}

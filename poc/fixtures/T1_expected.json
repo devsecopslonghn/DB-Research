@@ -1,0 +1,1 @@
+{"objects":[{"name":"OSS_POC_CLOB_LEN","type":"FUNCTION"}],"effects":[],"invocations":[{"function":"OSS_POC_CLOB_LEN","clob_input":"abc","expected_number":3}]}

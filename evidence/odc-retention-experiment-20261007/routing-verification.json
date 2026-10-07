@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-10-07T17:11:56.896080+00:00",
+  "retired_pod": "odc-6cd8c7d459-pmw9v",
+  "retired_pod_uid": "f6bec88e-26a0-4f3e-810d-4277cee4b031",
+  "retired_pod_ip": "10.244.1.114",
+  "retired_pod_get_exit_code": 1,
+  "retired_pod_get_error": "Error from server (NotFound): pods \"odc-6cd8c7d459-pmw9v\" not found",
+  "new_pod": "odc-6cd8c7d459-7hqjn",
+  "new_pod_ip": "10.244.1.105",
+  "service_endpoints": [
+    {
+      "addresses": [
+        {
+          "ip": "10.244.1.105",
+          "nodeName": "k8s-worker2",
+          "targetRef": {
+            "kind": "Pod",
+            "name": "odc-6cd8c7d459-7hqjn",
+            "namespace": "oceanbase-odc",
+            "uid": "6e9d8a20-7e5b-43db-b4b5-829e82d44600"
+          }
+        }
+      ],
+      "ports": [
+        {
+          "name": "http",
+          "port": 8989,
+          "protocol": "TCP"
+        }
+      ]
+    }
+  ],
+  "persisted_executor_fields": [
+    {
+      "host": "odc.oceanbase-odc.svc.cluster.local",
+      "hostName": "odc",
+      "jvmStartTime": 1791392628900,
+      "pid": 57,
+      "port": 8989
+    },
+    {
+      "host": "odc.oceanbase-odc.svc.cluster.local",
+      "hostName": "odc",
+      "jvmStartTime": 1791392628900,
+      "pid": 57,
+      "port": 8989
+    }
+  ],
+  "current_runtime_hostname": "odc",
+  "current_runtime_host": "odc.oceanbase-odc.svc.cluster.local",
+  "current_runtime_port": "8989",
+  "matching_fields": [
+    "host",
+    "port",
+    "hostName"
+  ],
+  "retrieval_all_preserved": true,
+  "task_log_readback_lines": [
+    "[2026-10-08 01:07:05.466 CST][http-nio-8989-exec-10][28ffe8748aa64ae9,,be733cfa6966b595d8fff6247e66cb49][INFO][com.oceanbase.odc.service.flow.FlowTaskInstanceLoggerService][160]: get flow task log file, path=/opt/odc/log/async/10000/2000026/asynctask.all\uff0cexist=true",
+    "[2026-10-08 01:07:05.783 CST][http-nio-8989-exec-14][9e49946b92cd4053,,8b2204fb6c5cfda526f580f00cb2091c][INFO][com.oceanbase.odc.service.flow.FlowTaskInstanceLoggerService][160]: get flow task log file, path=/opt/odc/log/async/10000/2000026/asynctask.all\uff0cexist=true",
+    "[2026-10-08 01:07:21.719 CST][http-nio-8989-exec-2][0bb932eebe4940d2,,1c8d4eb85b446299f58be5f21fe321fb][INFO][com.oceanbase.odc.service.flow.FlowTaskInstanceLoggerService][160]: get flow task log file, path=/opt/odc/log/async/10000/2000028/asynctask.all\uff0cexist=true",
+    "[2026-10-08 01:07:21.992 CST][http-nio-8989-exec-6][779f2dda5239473b,,1ae46f223a52ea17fe08277afca6af6c][INFO][com.oceanbase.odc.service.flow.FlowTaskInstanceLoggerService][160]: get flow task log file, path=/opt/odc/log/async/10000/2000028/asynctask.all\uff0cexist=true",
+    "[2026-10-08 01:10:54.874 CST][http-nio-8989-exec-8][ac9254ab6c3f4b37,,24e21490ae21e8f37cf83bbaadb05e79][INFO][com.oceanbase.odc.service.flow.FlowTaskInstanceLoggerService][160]: get flow task log file, path=/opt/odc/log/async/10000/2000026/asynctask.all\uff0cexist=true",
+    "[2026-10-08 01:10:55.263 CST][http-nio-8989-exec-12][f56992729a4340b4,,c435c5c45143fc67a3bb5e8a43542217][INFO][com.oceanbase.odc.service.flow.FlowTaskInstanceLoggerService][160]: get flow task log file, path=/opt/odc/log/async/10000/2000026/asynctask.all\uff0cexist=true",
+    "[2026-10-08 01:10:55.672 CST][http-nio-8989-exec-16][8582df139b03474c,,2d1c11f6a062926740c308beabdfd127][INFO][com.oceanbase.odc.service.flow.FlowTaskInstanceLoggerService][160]: get flow task log file, path=/opt/odc/log/async/10000/2000028/asynctask.all\uff0cexist=true",
+    "[2026-10-08 01:10:55.965 CST][http-nio-8989-exec-1][e4e181d27f7f4437,,a9f8a7ace966631564710421a609411f][INFO][com.oceanbase.odc.service.flow.FlowTaskInstanceLoggerService][160]: get flow task log file, path=/opt/odc/log/async/10000/2000028/asynctask.all\uff0cexist=true"
+  ],
+  "retired_pod_forwarding": "NO",
+  "no_retired_pod_dependency": true,
+  "scope": "Fresh configured tickets 2000013/2000014 only; older pre-configuration records were not rewritten or repaired"
+}

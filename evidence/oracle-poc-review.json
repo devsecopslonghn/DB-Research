@@ -1,0 +1,2218 @@
+{
+  "observed_at": "2026-10-04T01:20:59.108430+00:00",
+  "scope": "Selected POC postchecks, errors and audit records. No raw private API payloads.",
+  "postchecks": [
+    {
+      "name": "objects",
+      "sql": "SELECT OWNER,OBJECT_NAME,OBJECT_TYPE,STATUS FROM ALL_OBJECTS WHERE OWNER LIKE 'ODC_POC_20261004_%' AND OBJECT_NAME LIKE 'POC_%' ORDER BY OWNER,OBJECT_NAME,OBJECT_TYPE",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "OWNER",
+              "OBJECT_NAME",
+              "OBJECT_TYPE",
+              "STATUS"
+            ],
+            "rows": [
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_ADD_TAX",
+                "FUNCTION",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_INVALID_PROC",
+                "PROCEDURE",
+                "INVALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_LITERAL_PROC",
+                "PROCEDURE",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_ORDERS",
+                "TABLE",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_ORDERS_AMOUNT_TRG",
+                "TRIGGER",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_ORDERS_AUDIT",
+                "TABLE",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_ORDERS_AUDIT_PK",
+                "INDEX",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_ORDERS_PK",
+                "INDEX",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_PARTIAL",
+                "TABLE",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_PARTIAL_PK",
+                "INDEX",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_PKG",
+                "PACKAGE",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_PKG",
+                "PACKAGE BODY",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_PROMOTION",
+                "TABLE",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_Quoted_Tbl",
+                "TABLE",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_Quoted_Tbl_PK",
+                "INDEX",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_REPLAY",
+                "TABLE",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_REPLAY_PK",
+                "INDEX",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_SET_STATUS",
+                "PROCEDURE",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_SLASH_FN",
+                "FUNCTION",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_UI_PROBE",
+                "TABLE",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_MOCKPROD",
+                "POC_GOV_MANUAL",
+                "TABLE",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_MOCKPROD",
+                "POC_GOV_PROBE",
+                "TABLE",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_MOCKPROD",
+                "POC_PROMOTION",
+                "TABLE",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_SIT",
+                "POC_PROMOTION",
+                "TABLE",
+                "VALID"
+              ],
+              [
+                "ODC_POC_20261004_UAT",
+                "POC_PROMOTION",
+                "TABLE",
+                "VALID"
+              ]
+            ],
+            "total": 25,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "invalid compilation",
+      "sql": "SELECT OWNER,NAME,TYPE,LINE,POSITION,TEXT FROM ALL_ERRORS WHERE OWNER='ODC_POC_20261004_DEV' AND NAME='POC_INVALID_PROC' ORDER BY SEQUENCE",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "OWNER",
+              "NAME",
+              "TYPE",
+              "LINE",
+              "POSITION",
+              "TEXT"
+            ],
+            "rows": [
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_INVALID_PROC",
+                "PROCEDURE",
+                "4",
+                "15",
+                "PLS-00201: identifier 'V_MISSING_VARIABLE' must be declared"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_INVALID_PROC",
+                "PROCEDURE",
+                "4",
+                "3",
+                "PL/SQL: Statement ignored"
+              ]
+            ],
+            "total": 2,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "target ledger inventory",
+      "sql": "SELECT OWNER,TABLE_NAME FROM ALL_TABLES WHERE OWNER LIKE 'ODC_POC_20261004_%' ORDER BY OWNER,TABLE_NAME",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "OWNER",
+              "TABLE_NAME"
+            ],
+            "rows": [
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_ORDERS"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_ORDERS_AUDIT"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_PARTIAL"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_PROMOTION"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_Quoted_Tbl"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_REPLAY"
+              ],
+              [
+                "ODC_POC_20261004_DEV",
+                "POC_UI_PROBE"
+              ],
+              [
+                "ODC_POC_20261004_MOCKPROD",
+                "POC_GOV_MANUAL"
+              ],
+              [
+                "ODC_POC_20261004_MOCKPROD",
+                "POC_GOV_PROBE"
+              ],
+              [
+                "ODC_POC_20261004_MOCKPROD",
+                "POC_PROMOTION"
+              ],
+              [
+                "ODC_POC_20261004_SIT",
+                "POC_PROMOTION"
+              ],
+              [
+                "ODC_POC_20261004_UAT",
+                "POC_PROMOTION"
+              ]
+            ],
+            "total": 12,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "charset",
+      "sql": "SELECT PARAMETER,VALUE FROM NLS_DATABASE_PARAMETERS WHERE PARAMETER IN ('NLS_CHARACTERSET','NLS_NCHAR_CHARACTERSET')",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "PARAMETER",
+              "VALUE"
+            ],
+            "rows": [
+              [
+                "NLS_NCHAR_CHARACTERSET",
+                "AL16UTF16"
+              ],
+              [
+                "NLS_CHARACTERSET",
+                "AL32UTF8"
+              ]
+            ],
+            "total": 2,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "duplicate marker count",
+      "sql": "SELECT COUNT(*) AS MARKER_ROWS FROM POC_REPLAY WHERE MARKER='POC_REC09_REC10_PROBE_V1'",
+      "observed_at": "2026-10-04T01:24:29.966370+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "MARKER_ROWS"
+            ],
+            "rows": [
+              [
+                "2"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "UI probe actual Oracle rows",
+      "sql": "SELECT ID,NOTE FROM POC_UI_PROBE",
+      "observed_at": "2026-10-04T01:24:32.599134+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "ID",
+              "NOTE"
+            ],
+            "rows": [
+              [
+                "1",
+                "REAL_UI_SELENIUM"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "promotion target DEV",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "ID",
+              "MARKER"
+            ],
+            "rows": [
+              [
+                "1",
+                "ODC_IMMUTABLE_ARTIFACT_V1"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "promotion target SIT",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "ID",
+              "MARKER"
+            ],
+            "rows": [
+              [
+                "1",
+                "ODC_IMMUTABLE_ARTIFACT_V1"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "promotion target UAT",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "ID",
+              "MARKER"
+            ],
+            "rows": [
+              [
+                "1",
+                "ODC_IMMUTABLE_ARTIFACT_V1"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "promotion target MOCKPROD",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "ID",
+              "MARKER"
+            ],
+            "rows": [
+              [
+                "1",
+                "ODC_IMMUTABLE_ARTIFACT_V1"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    }
+  ],
+  "ticket_errors": [
+    {
+      "flow_id": 1000011,
+      "status": "EXECUTION_SUCCEEDED",
+      "http_status": 200,
+      "oracle_errors": []
+    },
+    {
+      "flow_id": 1000012,
+      "status": "EXECUTION_FAILED",
+      "http_status": 200,
+      "oracle_errors": [],
+      "attachment_http_status": 500
+    },
+    {
+      "flow_id": 1000013,
+      "status": "EXECUTION_FAILED",
+      "http_status": 200,
+      "oracle_errors": [],
+      "attachment_http_status": 500
+    },
+    {
+      "flow_id": 1000014,
+      "status": "EXECUTION_FAILED",
+      "http_status": 200,
+      "oracle_errors": [],
+      "attachment_http_status": 500
+    },
+    {
+      "flow_id": 1000015,
+      "status": "EXECUTION_FAILED",
+      "http_status": 200,
+      "oracle_errors": [],
+      "attachment_http_status": 500
+    },
+    {
+      "flow_id": 1000024,
+      "status": "EXECUTION_FAILED",
+      "http_status": 200,
+      "oracle_errors": [
+        "ORA-00001.",
+        "ORA-00001: unique constraint (ODC_POC_20261004_DEV.POC_ORDERS_PK) violated on table ODC_POC_20261004_DEV.POC_ORDERS columns (ORDER_ID)",
+        "ORA-03301: (ORA-00001 details) row with column values (ORDER_ID:1) already exists"
+      ]
+    }
+  ],
+  "audit_events": [
+    {
+      "id": 2000187,
+      "action": "CREATE_SESSION",
+      "actionName": "Create session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "FAILED",
+      "startTime": 1791077011000,
+      "endTime": 1791077011000,
+      "username": "POC observer",
+      "userId": 10003,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000180,
+      "action": "EXECUTE_TASK",
+      "actionName": "Execute task",
+      "type": "UNKNOWN_TASK_TYPE",
+      "result": "FAILED",
+      "startTime": 1791076949000,
+      "endTime": 1791076949000,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": null
+    },
+    {
+      "id": 2000178,
+      "action": "CLOSE_SESSION",
+      "actionName": "Close session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "SUCCESS",
+      "startTime": 1791076941000,
+      "endTime": 1791076941000,
+      "username": "POC observer",
+      "userId": 10003,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000177,
+      "action": "SELECT",
+      "actionName": "SELECT",
+      "type": "DATABASE_OPERATION",
+      "result": "SUCCESS",
+      "startTime": 1791076939000,
+      "endTime": 1791076940000,
+      "username": "POC observer",
+      "userId": 10003,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": "643C9574715F406B9C08CB8DD5A65CE8"
+    },
+    {
+      "id": 2000176,
+      "action": "CREATE_SESSION",
+      "actionName": "Create session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "SUCCESS",
+      "startTime": 1791076928000,
+      "endTime": 1791076939000,
+      "username": "POC observer",
+      "userId": 10003,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000175,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076906000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000027"
+    },
+    {
+      "id": 2000174,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076906000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000026"
+    },
+    {
+      "id": 2000165,
+      "action": "SELECT",
+      "actionName": "SELECT",
+      "type": "DATABASE_OPERATION",
+      "result": "SUCCESS",
+      "startTime": 1791076810000,
+      "endTime": 1791076812000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": "1DD6837B84FD4D7CA2DFE072DBDB7B86"
+    },
+    {
+      "id": 2000164,
+      "action": "SELECT",
+      "actionName": "SELECT",
+      "type": "DATABASE_OPERATION",
+      "result": "SUCCESS",
+      "startTime": 1791076810000,
+      "endTime": 1791076811000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": "8220B9C2C60B42AF903F64D98AECBDDD"
+    },
+    {
+      "id": 2000163,
+      "action": "SELECT",
+      "actionName": "SELECT",
+      "type": "DATABASE_OPERATION",
+      "result": "SUCCESS",
+      "startTime": 1791076802000,
+      "endTime": 1791076803000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": "489C7473D28A455AB879720EC39ECF83"
+    },
+    {
+      "id": 2000162,
+      "action": "OTHERS",
+      "actionName": "OTHERS",
+      "type": "DATABASE_OPERATION",
+      "result": "SUCCESS",
+      "startTime": 1791076772000,
+      "endTime": 1791076775000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": "41CD3DD5AC7140629EC21D55E56A3AAD"
+    },
+    {
+      "id": 2000161,
+      "action": "INSERT",
+      "actionName": "INSERT",
+      "type": "DATABASE_OPERATION",
+      "result": "SUCCESS",
+      "startTime": 1791076772000,
+      "endTime": 1791076774000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": "ACF64EC5F4514F9086C5FF05C59FB433"
+    },
+    {
+      "id": 2000160,
+      "action": "EXECUTE_TASK",
+      "actionName": "Execute task",
+      "type": "UNKNOWN_TASK_TYPE",
+      "result": "FAILED",
+      "startTime": 1791076758000,
+      "endTime": 1791076758000,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": null
+    },
+    {
+      "id": 2000159,
+      "action": "EXECUTE_TASK",
+      "actionName": "Execute task",
+      "type": "UNKNOWN_TASK_TYPE",
+      "result": "FAILED",
+      "startTime": 1791076758000,
+      "endTime": 1791076758000,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": null
+    },
+    {
+      "id": 2000158,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076756000,
+      "endTime": 1791076756000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000157,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076755000,
+      "endTime": 1791076755000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000154,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076669000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000025"
+    },
+    {
+      "id": 2000153,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076661000,
+      "endTime": 1791076662000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000151,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076653000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000024"
+    },
+    {
+      "id": 2000152,
+      "action": "CREATE_SESSION",
+      "actionName": "Create session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "SUCCESS",
+      "startTime": 1791076643000,
+      "endTime": 1791076654000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000148,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076640000,
+      "endTime": 1791076641000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000150,
+      "action": "CREATE_SESSION",
+      "actionName": "Create session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "SUCCESS",
+      "startTime": 1791076639000,
+      "endTime": 1791076651000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000149,
+      "action": "CREATE_SESSION",
+      "actionName": "Create session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "SUCCESS",
+      "startTime": 1791076639000,
+      "endTime": 1791076651000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000141,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076418000,
+      "endTime": null,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000023"
+    },
+    {
+      "id": 2000140,
+      "action": "APPROVE",
+      "actionName": "Approve",
+      "type": "UNKNOWN_TASK_TYPE",
+      "result": "FAILED",
+      "startTime": 1791076417000,
+      "endTime": 1791076417000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": null
+    },
+    {
+      "id": 2000138,
+      "action": "APPROVE_ASYNC_TASK",
+      "actionName": "Approve database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076392000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000023"
+    },
+    {
+      "id": 2000137,
+      "action": "APPROVE_ASYNC_TASK",
+      "actionName": "Approve database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076373000,
+      "endTime": null,
+      "username": "POC approver",
+      "userId": 10001,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000023"
+    },
+    {
+      "id": 2000130,
+      "action": "EXECUTE_TASK",
+      "actionName": "Execute task",
+      "type": "UNKNOWN_TASK_TYPE",
+      "result": "FAILED",
+      "startTime": 1791076212000,
+      "endTime": 1791076212000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": null
+    },
+    {
+      "id": 2000129,
+      "action": "APPROVE",
+      "actionName": "Approve",
+      "type": "UNKNOWN_TASK_TYPE",
+      "result": "FAILED",
+      "startTime": 1791076212000,
+      "endTime": 1791076212000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": null
+    },
+    {
+      "id": 2000128,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076209000,
+      "endTime": 1791076209000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000004,
+      "connectionUsername": "ODC_POC_20261004_MOCKPROD",
+      "databaseId": 1000218,
+      "databaseName": "ODC_POC_20261004_MOCKPROD",
+      "taskId": null
+    },
+    {
+      "id": 2000127,
+      "action": "CREATE_SESSION",
+      "actionName": "Create session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "FAILED",
+      "startTime": 1791076151000,
+      "endTime": 1791076152000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000124,
+      "action": "CLOSE_SESSION",
+      "actionName": "Close session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "SUCCESS",
+      "startTime": 1791076104000,
+      "endTime": 1791076104000,
+      "username": "POC observer",
+      "userId": 10003,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000120,
+      "action": "CREATE_SESSION",
+      "actionName": "Create session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "SUCCESS",
+      "startTime": 1791076088000,
+      "endTime": 1791076100000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000119,
+      "action": "CREATE_SESSION",
+      "actionName": "Create session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "SUCCESS",
+      "startTime": 1791076088000,
+      "endTime": 1791076099000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000116,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076065000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000022"
+    },
+    {
+      "id": 2000115,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076058000,
+      "endTime": 1791076058000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000004,
+      "connectionUsername": "ODC_POC_20261004_MOCKPROD",
+      "databaseId": 1000218,
+      "databaseName": "ODC_POC_20261004_MOCKPROD",
+      "taskId": null
+    },
+    {
+      "id": 2000114,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076055000,
+      "endTime": null,
+      "username": "POC approver",
+      "userId": 10001,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000017"
+    },
+    {
+      "id": 2000113,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076048000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000021"
+    },
+    {
+      "id": 2000112,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076040000,
+      "endTime": 1791076041000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000003,
+      "connectionUsername": "ODC_POC_20261004_UAT",
+      "databaseId": 1000184,
+      "databaseName": "ODC_POC_20261004_UAT",
+      "taskId": null
+    },
+    {
+      "id": 2000111,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076030000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000020"
+    },
+    {
+      "id": 2000110,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076023000,
+      "endTime": 1791076023000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000002,
+      "connectionUsername": "ODC_POC_20261004_SIT",
+      "databaseId": 1000122,
+      "databaseName": "ODC_POC_20261004_SIT",
+      "taskId": null
+    },
+    {
+      "id": 2000109,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076013000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000019"
+    },
+    {
+      "id": 2000108,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791076005000,
+      "endTime": 1791076005000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000106,
+      "action": "CLOSE_SESSION",
+      "actionName": "Close session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "SUCCESS",
+      "startTime": 1791076002000,
+      "endTime": 1791076002000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000105,
+      "action": "CLOSE_SESSION",
+      "actionName": "Close session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "SUCCESS",
+      "startTime": 1791076002000,
+      "endTime": 1791076002000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000102,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075981000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000018"
+    },
+    {
+      "id": 2000101,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075973000,
+      "endTime": 1791075973000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000100,
+      "action": "CREATE_SESSION",
+      "actionName": "Create session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "SUCCESS",
+      "startTime": 1791075961000,
+      "endTime": 1791075973000,
+      "username": "POC observer",
+      "userId": 10003,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000099,
+      "action": "CLOSE_SESSION",
+      "actionName": "Close session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "SUCCESS",
+      "startTime": 1791075958000,
+      "endTime": 1791075958000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000098,
+      "action": "CLOSE_SESSION",
+      "actionName": "Close session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "SUCCESS",
+      "startTime": 1791075958000,
+      "endTime": 1791075958000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000097,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075957000,
+      "endTime": 1791075957000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000094,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "FAILED",
+      "startTime": 1791075927000,
+      "endTime": 1791075927000,
+      "username": "POC observer",
+      "userId": 10003,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000093,
+      "action": "SELECT",
+      "actionName": "SELECT",
+      "type": "DATABASE_OPERATION",
+      "result": "SUCCESS",
+      "startTime": 1791075926000,
+      "endTime": 1791075927000,
+      "username": "POC observer",
+      "userId": 10003,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": "D1E9455223E0460B8FEE61D76786A5D3"
+    },
+    {
+      "id": 2000096,
+      "action": "CREATE_SESSION",
+      "actionName": "Create session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "SUCCESS",
+      "startTime": 1791075925000,
+      "endTime": 1791075936000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000095,
+      "action": "CREATE_SESSION",
+      "actionName": "Create session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "SUCCESS",
+      "startTime": 1791075925000,
+      "endTime": 1791075936000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000091,
+      "action": "OTHERS",
+      "actionName": "OTHERS",
+      "type": "DATABASE_OPERATION",
+      "result": "UNFINISHED",
+      "startTime": 1791075921000,
+      "endTime": null,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": "2E46ABB1DA6E4A80BA2FD3AD6D5A0592"
+    },
+    {
+      "id": 2000092,
+      "action": "CREATE_SESSION",
+      "actionName": "Create session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "SUCCESS",
+      "startTime": 1791075915000,
+      "endTime": 1791075926000,
+      "username": "POC observer",
+      "userId": 10003,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000089,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075905000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000016"
+    },
+    {
+      "id": 2000088,
+      "action": "EXECUTE_TASK",
+      "actionName": "Execute task",
+      "type": "UNKNOWN_TASK_TYPE",
+      "result": "FAILED",
+      "startTime": 1791075902000,
+      "endTime": 1791075902000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": null
+    },
+    {
+      "id": 2000087,
+      "action": "EXECUTE_TASK",
+      "actionName": "Execute task",
+      "type": "UNKNOWN_TASK_TYPE",
+      "result": "FAILED",
+      "startTime": 1791075900000,
+      "endTime": 1791075900000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": null
+    },
+    {
+      "id": 2000086,
+      "action": "APPROVE",
+      "actionName": "Approve",
+      "type": "UNKNOWN_TASK_TYPE",
+      "result": "FAILED",
+      "startTime": 1791075900000,
+      "endTime": 1791075900000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": null
+    },
+    {
+      "id": 2000085,
+      "action": "SELECT",
+      "actionName": "SELECT",
+      "type": "DATABASE_OPERATION",
+      "result": "FAILED",
+      "startTime": 1791075899000,
+      "endTime": 1791075901000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": "05030020F1B345D1819EF0C84975DF8E"
+    },
+    {
+      "id": 2000083,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075898000,
+      "endTime": 1791075898000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000004,
+      "connectionUsername": "ODC_POC_20261004_MOCKPROD",
+      "databaseId": 1000218,
+      "databaseName": "ODC_POC_20261004_MOCKPROD",
+      "taskId": null
+    },
+    {
+      "id": 2000082,
+      "action": "CREATE_SESSION",
+      "actionName": "Create session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "FAILED",
+      "startTime": 1791075898000,
+      "endTime": 1791075898000,
+      "username": "POC observer",
+      "userId": 10003,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000081,
+      "action": "CREATE_SESSION",
+      "actionName": "Create session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "FAILED",
+      "startTime": 1791075898000,
+      "endTime": 1791075898000,
+      "username": "POC outsider",
+      "userId": 10004,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000080,
+      "action": "OTHERS",
+      "actionName": "OTHERS",
+      "type": "DATABASE_OPERATION",
+      "result": "FAILED",
+      "startTime": 1791075893000,
+      "endTime": 1791075896000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": "916AC1CB448C4F97B8BD8854C72CF021"
+    },
+    {
+      "id": 2000079,
+      "action": "INSERT",
+      "actionName": "INSERT",
+      "type": "DATABASE_OPERATION",
+      "result": "FAILED",
+      "startTime": 1791075893000,
+      "endTime": 1791075896000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": "BF4D6DEB469D4D089E14774475AB3119"
+    },
+    {
+      "id": 2000078,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075890000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000015"
+    },
+    {
+      "id": 2000077,
+      "action": "OTHERS",
+      "actionName": "OTHERS",
+      "type": "DATABASE_OPERATION",
+      "result": "UNFINISHED",
+      "startTime": 1791075887000,
+      "endTime": null,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": "3C4711CE243445B4AE94CF432FF83C9C"
+    },
+    {
+      "id": 2000076,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075882000,
+      "endTime": 1791075883000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000074,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075873000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000014"
+    },
+    {
+      "id": 2000073,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075866000,
+      "endTime": 1791075866000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000071,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075854000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000013"
+    },
+    {
+      "id": 2000070,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075846000,
+      "endTime": 1791075847000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000068,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075837000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000012"
+    },
+    {
+      "id": 2000067,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075829000,
+      "endTime": 1791075830000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000064,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075817000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000011"
+    },
+    {
+      "id": 2000063,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075810000,
+      "endTime": 1791075810000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000060,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075793000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000010"
+    },
+    {
+      "id": 2000059,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075786000,
+      "endTime": 1791075786000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000056,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075772000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000009"
+    },
+    {
+      "id": 2000055,
+      "action": "SELECT",
+      "actionName": "SELECT",
+      "type": "DATABASE_OPERATION",
+      "result": "SUCCESS",
+      "startTime": 1791075766000,
+      "endTime": 1791075769000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": "303A9A6FA4B64A1896DC28D2AE39137F"
+    },
+    {
+      "id": 2000054,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075765000,
+      "endTime": 1791075765000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000051,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075748000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000008"
+    },
+    {
+      "id": 2000050,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075741000,
+      "endTime": 1791075741000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000044,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075725000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000007"
+    },
+    {
+      "id": 2000043,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075718000,
+      "endTime": 1791075718000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000039,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075702000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000006"
+    },
+    {
+      "id": 2000038,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075694000,
+      "endTime": 1791075695000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000036,
+      "action": "SELECT",
+      "actionName": "SELECT",
+      "type": "DATABASE_OPERATION",
+      "result": "SUCCESS",
+      "startTime": 1791075692000,
+      "endTime": 1791075695000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": "1E0735E4BDE4485599E481F4C3876926"
+    },
+    {
+      "id": 2000035,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075681000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000005"
+    },
+    {
+      "id": 2000034,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075669000,
+      "endTime": 1791075670000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000031,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075653000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000004"
+    },
+    {
+      "id": 2000030,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075641000,
+      "endTime": 1791075641000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000028,
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075629000,
+      "endTime": null,
+      "username": "POC executor",
+      "userId": 10002,
+      "connectionId": null,
+      "connectionUsername": null,
+      "databaseId": null,
+      "databaseName": null,
+      "taskId": "1000003"
+    },
+    {
+      "id": 2000026,
+      "action": "CREATE_SESSION",
+      "actionName": "Create session",
+      "type": "CONNECTION_MANAGEMENT",
+      "result": "SUCCESS",
+      "startTime": 1791075605000,
+      "endTime": 1791075617000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    },
+    {
+      "id": 2000024,
+      "action": "CREATE_ASYNC_TASK",
+      "actionName": "Create database change task",
+      "type": "ASYNC",
+      "result": "SUCCESS",
+      "startTime": 1791075502000,
+      "endTime": 1791075503000,
+      "username": "POC requester",
+      "userId": 10000,
+      "connectionId": 1000001,
+      "connectionUsername": "ODC_POC_20261004_DEV",
+      "databaseId": 1000069,
+      "databaseName": "ODC_POC_20261004_DEV",
+      "taskId": null
+    }
+  ],
+  "permission_followup": [
+    {
+      "name": "Participant expired QUERY grant, later followup",
+      "observed_at": "2026-10-04T01:22:19.421911+00:00",
+      "http_status": 200,
+      "successful": true,
+      "error_code": null
+    },
+    {
+      "name": "query after expired grant",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "ORDER_ID"
+            ],
+            "rows": [
+              [
+                "1"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "Participant QUERY grant explicitly revoked",
+      "observed_at": "2026-10-04T01:23:30.939204+00:00",
+      "http_status": 403,
+      "successful": false,
+      "error_code": "AccessDenied"
+    }
+  ],
+  "participant_effective_grants": [
+    {
+      "id": 1010270,
+      "userId": 10003,
+      "databaseId": 1000069,
+      "type": "QUERY",
+      "expireTime": 1791129599000,
+      "status": "EXPIRING"
+    }
+  ],
+  "audit_export_scope": "Selected API audit listing. File export and retention after rotation are not verified.",
+  "final_connection_tests": [
+    {
+      "datasource_id": 1,
+      "observed_at": "2026-10-04T01:41:57.324007+00:00",
+      "http_status": 200,
+      "successful": true,
+      "active": true,
+      "error_code": null
+    },
+    {
+      "datasource_id": 1000001,
+      "observed_at": "2026-10-04T01:42:00.117873+00:00",
+      "http_status": 200,
+      "successful": true,
+      "active": true,
+      "error_code": null
+    },
+    {
+      "datasource_id": 1000002,
+      "observed_at": "2026-10-04T01:42:02.998669+00:00",
+      "http_status": 200,
+      "successful": true,
+      "active": true,
+      "error_code": null
+    },
+    {
+      "datasource_id": 1000003,
+      "observed_at": "2026-10-04T01:42:05.776933+00:00",
+      "http_status": 200,
+      "successful": true,
+      "active": true,
+      "error_code": null
+    },
+    {
+      "datasource_id": 1000004,
+      "observed_at": "2026-10-04T01:42:08.628446+00:00",
+      "http_status": 200,
+      "successful": true,
+      "active": true,
+      "error_code": null
+    },
+    {
+      "datasource_id": 1000005,
+      "observed_at": "2026-10-04T01:42:11.611156+00:00",
+      "http_status": 200,
+      "successful": true,
+      "active": true,
+      "error_code": null
+    }
+  ]
+}

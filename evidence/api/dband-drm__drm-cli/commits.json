@@ -1,0 +1,2112 @@
+[
+  {
+    "sha": "d6b049d79b07a461949ec89e15dfe2c1eecf81ed",
+    "node_id": "C_kwDOMgeWlNoAKGQ2YjA0OWQ3OWIwN2E0NjE5NDllYzg5ZTE1ZGZlMmMxZWVjZjgxZWQ",
+    "commit": {
+      "author": {
+        "name": "d-band",
+        "email": "dband.drm@gmail.com",
+        "date": "2026-08-03T13:09:45Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-03T13:09:45Z"
+      },
+      "message": "Add terminal demo screenshot for tool directories",
+      "tree": {
+        "sha": "9e815b980da467df61a730920d44cc5e9b826bb0",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/9e815b980da467df61a730920d44cc5e9b826bb0"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/d6b049d79b07a461949ec89e15dfe2c1eecf81ed",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqcJMZCRC1aQ7uu5UhlAAAPXIQAFyDZqC56Eq8A28zLufmeVQ7\nb2OJlkxY1oP8DJkoEu0neKN2GoRUoYC5GneDy8hoEJMstY/6eGN4MDV/5W/I975n\n8lX3mO4KqWBMSHnBcVEgUcRaoP2ehyxNNAyISU8WHDWAvlrDwE9O7JNuTTiz/iWk\nwyISPj3FwLhPjxw6/Yej7eTNkRALmee2RHpGIqusgK7NaRI7e/f63u6xT2Ws23jA\nvTz9g+1/tnxQf4gZMU0nqffnCwihbT7zVmLWxZZAd+qf/FhwCPyIy66SCFLIQydL\n99UlhOfKX1GF44zEBUjulgVAwWPgJ45A7fxQ3blsxHhMk3NcJQbcHkK9sE527t5y\nR5T1un/b9IWg5zKZ5V8We7Ey4gQU+b2yso5/DGRiSAYJF958AkvygSlO5psxHLei\n9oippefVd4hGOVg7NUhoC9aB8Xl4fsGu1cpZKIbfXl7w7NEXCgH7lUyGIfG3JGuB\nf5Jzm3UZZNyUT1RTL4W6j0xzDFDQc1kanOMNNMsUcUfFZTfAbAh/1sUDdEZY6L4b\nB0h3gATjpmhIIzGk33DdC42CF9UJvtIR/IYCfIxy7BFsP0dwaEZaQbAY+m0NIPIf\nm4f3fCLR17ApNx8tzl6m2zQAnTQUYSQmzrMRTimuPfKXQIfRgTKJ+2r/n5aoQ8JN\nN9JbMTkKrN0zbP4dJFEB\n=pfnU\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 9e815b980da467df61a730920d44cc5e9b826bb0\nparent 8ba37ce3a9e1f08690647f01b0622c0f53198fe7\nauthor d-band <dband.drm@gmail.com> 1785762585 +0300\ncommitter GitHub <noreply@github.com> 1785762585 +0300\n\nAdd terminal demo screenshot for tool directories",
+        "verified_at": "2026-08-03T13:09:46Z"
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/d6b049d79b07a461949ec89e15dfe2c1eecf81ed",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/d6b049d79b07a461949ec89e15dfe2c1eecf81ed",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/d6b049d79b07a461949ec89e15dfe2c1eecf81ed/comments",
+    "author": {
+      "login": "dband-drm",
+      "id": 177749812,
+      "node_id": "U_kgDOCpg_NA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/177749812?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dband-drm",
+      "html_url": "https://github.com/dband-drm",
+      "followers_url": "https://api.github.com/users/dband-drm/followers",
+      "following_url": "https://api.github.com/users/dband-drm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dband-drm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dband-drm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dband-drm/subscriptions",
+      "organizations_url": "https://api.github.com/users/dband-drm/orgs",
+      "repos_url": "https://api.github.com/users/dband-drm/repos",
+      "events_url": "https://api.github.com/users/dband-drm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dband-drm/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8ba37ce3a9e1f08690647f01b0622c0f53198fe7",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/8ba37ce3a9e1f08690647f01b0622c0f53198fe7",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/8ba37ce3a9e1f08690647f01b0622c0f53198fe7"
+      }
+    ]
+  },
+  {
+    "sha": "8ba37ce3a9e1f08690647f01b0622c0f53198fe7",
+    "node_id": "C_kwDOMgeWlNoAKDhiYTM3Y2UzYTllMWYwODY5MDY0N2YwMWIwNjIyYzBmNTMxOThmZTc",
+    "commit": {
+      "author": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-07-12T21:23:29Z"
+      },
+      "committer": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-07-12T21:23:29Z"
+      },
+      "message": "chore: strip private files for GitHub",
+      "tree": {
+        "sha": "38fe1b519c1268ab5164a8817d45ba7d7731c330",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/38fe1b519c1268ab5164a8817d45ba7d7731c330"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/8ba37ce3a9e1f08690647f01b0622c0f53198fe7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/8ba37ce3a9e1f08690647f01b0622c0f53198fe7",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/8ba37ce3a9e1f08690647f01b0622c0f53198fe7",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/8ba37ce3a9e1f08690647f01b0622c0f53198fe7/comments",
+    "author": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a6a98d2878a55e824034a77f41699aae5ef1e9d7",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/a6a98d2878a55e824034a77f41699aae5ef1e9d7",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/a6a98d2878a55e824034a77f41699aae5ef1e9d7"
+      }
+    ]
+  },
+  {
+    "sha": "a6a98d2878a55e824034a77f41699aae5ef1e9d7",
+    "node_id": "C_kwDOMgeWlNoAKGE2YTk4ZDI4NzhhNTVlODI0MDM0YTc3ZjQxNjk5YWFlNWVmMWU5ZDc",
+    "commit": {
+      "author": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-07-12T21:07:45Z"
+      },
+      "committer": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-07-12T21:07:45Z"
+      },
+      "message": "chore: bump version to 1.2.1, update CHANGELOG",
+      "tree": {
+        "sha": "e5cfb5816d7e902c493cda49750bf200885475e8",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/e5cfb5816d7e902c493cda49750bf200885475e8"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/a6a98d2878a55e824034a77f41699aae5ef1e9d7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/a6a98d2878a55e824034a77f41699aae5ef1e9d7",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/a6a98d2878a55e824034a77f41699aae5ef1e9d7",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/a6a98d2878a55e824034a77f41699aae5ef1e9d7/comments",
+    "author": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "991631530b1361d54c2e791ba0cd564cb256ab2d",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/991631530b1361d54c2e791ba0cd564cb256ab2d",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/991631530b1361d54c2e791ba0cd564cb256ab2d"
+      }
+    ]
+  },
+  {
+    "sha": "991631530b1361d54c2e791ba0cd564cb256ab2d",
+    "node_id": "C_kwDOMgeWlNoAKDk5MTYzMTUzMGIxMzYxZDU0YzJlNzkxYmEwY2Q1NjRjYjI1NmFiMmQ",
+    "commit": {
+      "author": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-07-12T20:46:23Z"
+      },
+      "committer": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-07-12T20:46:23Z"
+      },
+      "message": "docs: add CHANGELOG and expand npm keywords for discoverability\n\n- Add CHANGELOG.md documenting v1.0.0, v1.1.0, v1.2.0 release history\n- Expand package.json keywords: devops, dba, cli, release-management,\n  ci-cd, deployment-automation, db-migration, database-deployment,\n  release-manager, sql-deployment",
+      "tree": {
+        "sha": "0412fc3ef69de9d58ddf212e27d5d4b088df7425",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/0412fc3ef69de9d58ddf212e27d5d4b088df7425"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/991631530b1361d54c2e791ba0cd564cb256ab2d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/991631530b1361d54c2e791ba0cd564cb256ab2d",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/991631530b1361d54c2e791ba0cd564cb256ab2d",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/991631530b1361d54c2e791ba0cd564cb256ab2d/comments",
+    "author": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ccd27fcc515efa31f6ab9944851b42e51b378f57",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/ccd27fcc515efa31f6ab9944851b42e51b378f57",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/ccd27fcc515efa31f6ab9944851b42e51b378f57"
+      }
+    ]
+  },
+  {
+    "sha": "ccd27fcc515efa31f6ab9944851b42e51b378f57",
+    "node_id": "C_kwDOMgeWlNoAKGNjZDI3ZmNjNTE1ZWZhMzFmNmFiOTk0NDg1MWI0MmU1MWIzNzhmNTc",
+    "commit": {
+      "author": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-04-25T23:49:40Z"
+      },
+      "committer": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-04-25T23:49:40Z"
+      },
+      "message": "Merged PR 179: fix: add workflow_dispatch trigger for manual npm publish\n\nfix: add workflow_dispatch trigger for manual npm publish\n\nRelated work items: #407",
+      "tree": {
+        "sha": "4d06b2cc77d24f37b8bf5a590c586c22e8648209",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/4d06b2cc77d24f37b8bf5a590c586c22e8648209"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/ccd27fcc515efa31f6ab9944851b42e51b378f57",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/ccd27fcc515efa31f6ab9944851b42e51b378f57",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/ccd27fcc515efa31f6ab9944851b42e51b378f57",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/ccd27fcc515efa31f6ab9944851b42e51b378f57/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "220c60e47b4282925fc548a3a3c6dcfa95b4bcd4",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/220c60e47b4282925fc548a3a3c6dcfa95b4bcd4",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/220c60e47b4282925fc548a3a3c6dcfa95b4bcd4"
+      },
+      {
+        "sha": "019cd14b1e4c7e44535b2c8de71531f2452c4977",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/019cd14b1e4c7e44535b2c8de71531f2452c4977",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/019cd14b1e4c7e44535b2c8de71531f2452c4977"
+      }
+    ]
+  },
+  {
+    "sha": "019cd14b1e4c7e44535b2c8de71531f2452c4977",
+    "node_id": "C_kwDOMgeWlNoAKDAxOWNkMTRiMWU0YzdlNDQ1MzViMmM4ZGU3MTUzMWYyNDUyYzQ5Nzc",
+    "commit": {
+      "author": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-25T23:43:23Z"
+      },
+      "committer": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-25T23:43:23Z"
+      },
+      "message": "fix: add workflow_dispatch trigger for manual npm publish",
+      "tree": {
+        "sha": "4d06b2cc77d24f37b8bf5a590c586c22e8648209",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/4d06b2cc77d24f37b8bf5a590c586c22e8648209"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/019cd14b1e4c7e44535b2c8de71531f2452c4977",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/019cd14b1e4c7e44535b2c8de71531f2452c4977",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/019cd14b1e4c7e44535b2c8de71531f2452c4977",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/019cd14b1e4c7e44535b2c8de71531f2452c4977/comments",
+    "author": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "46a3639f557bba3939b89bc032c820ba6d84bc9b",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/46a3639f557bba3939b89bc032c820ba6d84bc9b",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/46a3639f557bba3939b89bc032c820ba6d84bc9b"
+      }
+    ]
+  },
+  {
+    "sha": "220c60e47b4282925fc548a3a3c6dcfa95b4bcd4",
+    "node_id": "C_kwDOMgeWlNoAKDIyMGM2MGU0N2I0MjgyOTI1ZmM1NDhhM2EzYzZkY2ZhOTViNGJjZDQ",
+    "commit": {
+      "author": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-04-25T23:33:51Z"
+      },
+      "committer": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-04-25T23:33:51Z"
+      },
+      "message": "Merged PR 178: fix: strip Release prefix from tag in publish workflow\n\nfix: strip Release prefix from tag in publish workflow\n\nRelated work items: #406",
+      "tree": {
+        "sha": "d780ae8fb53930e6c7bde48f128f73d7d8319278",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/d780ae8fb53930e6c7bde48f128f73d7d8319278"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/220c60e47b4282925fc548a3a3c6dcfa95b4bcd4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/220c60e47b4282925fc548a3a3c6dcfa95b4bcd4",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/220c60e47b4282925fc548a3a3c6dcfa95b4bcd4",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/220c60e47b4282925fc548a3a3c6dcfa95b4bcd4/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "0b232a6806de53c23775f3021c73ab6d8a9e620c",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/0b232a6806de53c23775f3021c73ab6d8a9e620c",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/0b232a6806de53c23775f3021c73ab6d8a9e620c"
+      },
+      {
+        "sha": "46a3639f557bba3939b89bc032c820ba6d84bc9b",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/46a3639f557bba3939b89bc032c820ba6d84bc9b",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/46a3639f557bba3939b89bc032c820ba6d84bc9b"
+      }
+    ]
+  },
+  {
+    "sha": "46a3639f557bba3939b89bc032c820ba6d84bc9b",
+    "node_id": "C_kwDOMgeWlNoAKDQ2YTM2MzlmNTU3YmJhMzkzOWI4OWJjMDMyYzgyMGJhNmQ4NGJjOWI",
+    "commit": {
+      "author": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-25T23:27:40Z"
+      },
+      "committer": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-25T23:27:40Z"
+      },
+      "message": "fix: strip Release prefix from tag in publish workflow",
+      "tree": {
+        "sha": "d780ae8fb53930e6c7bde48f128f73d7d8319278",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/d780ae8fb53930e6c7bde48f128f73d7d8319278"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/46a3639f557bba3939b89bc032c820ba6d84bc9b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/46a3639f557bba3939b89bc032c820ba6d84bc9b",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/46a3639f557bba3939b89bc032c820ba6d84bc9b",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/46a3639f557bba3939b89bc032c820ba6d84bc9b/comments",
+    "author": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0b232a6806de53c23775f3021c73ab6d8a9e620c",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/0b232a6806de53c23775f3021c73ab6d8a9e620c",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/0b232a6806de53c23775f3021c73ab6d8a9e620c"
+      }
+    ]
+  },
+  {
+    "sha": "0b232a6806de53c23775f3021c73ab6d8a9e620c",
+    "node_id": "C_kwDOMgeWlNoAKDBiMjMyYTY4MDZkZTUzYzIzNzc1ZjMwMjFjNzNhYjZkOGE5ZTYyMGM",
+    "commit": {
+      "author": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-04-25T23:19:37Z"
+      },
+      "committer": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-04-25T23:19:37Z"
+      },
+      "message": "Merged PR 177: restore: add Images folder (ERDs, diagrams, logo)\n\nrestore: add Images folder (ERDs, diagrams, logo)\n\nRelated work items: #405",
+      "tree": {
+        "sha": "af284fa761cdf1f989988b62244a926838db2f1b",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/af284fa761cdf1f989988b62244a926838db2f1b"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/0b232a6806de53c23775f3021c73ab6d8a9e620c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/0b232a6806de53c23775f3021c73ab6d8a9e620c",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/0b232a6806de53c23775f3021c73ab6d8a9e620c",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/0b232a6806de53c23775f3021c73ab6d8a9e620c/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "c220067bf5fc7d973cdfd404c0c6ea98965a171e",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/c220067bf5fc7d973cdfd404c0c6ea98965a171e",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/c220067bf5fc7d973cdfd404c0c6ea98965a171e"
+      },
+      {
+        "sha": "128b897ea05258e49719c6fa91973e5f4c910874",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/128b897ea05258e49719c6fa91973e5f4c910874",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/128b897ea05258e49719c6fa91973e5f4c910874"
+      }
+    ]
+  },
+  {
+    "sha": "128b897ea05258e49719c6fa91973e5f4c910874",
+    "node_id": "C_kwDOMgeWlNoAKDEyOGI4OTdlYTA1MjU4ZTQ5NzE5YzZmYTkxOTczZTVmNGM5MTA4NzQ",
+    "commit": {
+      "author": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-25T23:07:55Z"
+      },
+      "committer": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-25T23:07:55Z"
+      },
+      "message": "restore: add Images folder (ERDs, diagrams, logo)",
+      "tree": {
+        "sha": "af284fa761cdf1f989988b62244a926838db2f1b",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/af284fa761cdf1f989988b62244a926838db2f1b"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/128b897ea05258e49719c6fa91973e5f4c910874",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/128b897ea05258e49719c6fa91973e5f4c910874",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/128b897ea05258e49719c6fa91973e5f4c910874",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/128b897ea05258e49719c6fa91973e5f4c910874/comments",
+    "author": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f4f59ef65435965f8a37d9abea86be25916388a1",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/f4f59ef65435965f8a37d9abea86be25916388a1",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/f4f59ef65435965f8a37d9abea86be25916388a1"
+      }
+    ]
+  },
+  {
+    "sha": "c220067bf5fc7d973cdfd404c0c6ea98965a171e",
+    "node_id": "C_kwDOMgeWlNoAKGMyMjAwNjdiZjVmYzdkOTczY2RmZDQwNGMwYzZlYTk4OTY1YTE3MWU",
+    "commit": {
+      "author": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-04-25T22:42:45Z"
+      },
+      "committer": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-04-25T22:42:45Z"
+      },
+      "message": "Merged PR 176: npm publish (@d-band-drm/drm-cli)  \n\n\n\nRelated work items: #402",
+      "tree": {
+        "sha": "047b7a4c2a982a4d7a3a25aee84a370cda2c3df0",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/047b7a4c2a982a4d7a3a25aee84a370cda2c3df0"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/c220067bf5fc7d973cdfd404c0c6ea98965a171e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/c220067bf5fc7d973cdfd404c0c6ea98965a171e",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/c220067bf5fc7d973cdfd404c0c6ea98965a171e",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/c220067bf5fc7d973cdfd404c0c6ea98965a171e/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "efa0a23b88b4c0782cfc3245f30ef6e98c69c44a",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/efa0a23b88b4c0782cfc3245f30ef6e98c69c44a",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/efa0a23b88b4c0782cfc3245f30ef6e98c69c44a"
+      },
+      {
+        "sha": "f4f59ef65435965f8a37d9abea86be25916388a1",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/f4f59ef65435965f8a37d9abea86be25916388a1",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/f4f59ef65435965f8a37d9abea86be25916388a1"
+      }
+    ]
+  },
+  {
+    "sha": "f4f59ef65435965f8a37d9abea86be25916388a1",
+    "node_id": "C_kwDOMgeWlNoAKGY0ZjU5ZWY2NTQzNTk2NWY4YTM3ZDlhYmVhODZiZTI1OTE2Mzg4YTE",
+    "commit": {
+      "author": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-25T22:28:20Z"
+      },
+      "committer": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-25T22:37:41Z"
+      },
+      "message": "fix: rename npm package to @d-band-drm/drm-cli\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "047b7a4c2a982a4d7a3a25aee84a370cda2c3df0",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/047b7a4c2a982a4d7a3a25aee84a370cda2c3df0"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/f4f59ef65435965f8a37d9abea86be25916388a1",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/f4f59ef65435965f8a37d9abea86be25916388a1",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/f4f59ef65435965f8a37d9abea86be25916388a1",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/f4f59ef65435965f8a37d9abea86be25916388a1/comments",
+    "author": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a09bb50b6cb33f46b4bf8192373e4b85b8bbb3d9",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/a09bb50b6cb33f46b4bf8192373e4b85b8bbb3d9",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/a09bb50b6cb33f46b4bf8192373e4b85b8bbb3d9"
+      }
+    ]
+  },
+  {
+    "sha": "a09bb50b6cb33f46b4bf8192373e4b85b8bbb3d9",
+    "node_id": "C_kwDOMgeWlNoAKGEwOWJiNTBiNmNiMzNmNDZiNGJmODE5MjM3M2U0Yjg1YjhiYmIzZDk",
+    "commit": {
+      "author": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-25T22:20:22Z"
+      },
+      "committer": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-25T22:37:41Z"
+      },
+      "message": "docs: update npm install command to @dband/drm-cli\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "7d8da37bc1ec1c4aa27447a9487d2ba5367c571f",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/7d8da37bc1ec1c4aa27447a9487d2ba5367c571f"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/a09bb50b6cb33f46b4bf8192373e4b85b8bbb3d9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/a09bb50b6cb33f46b4bf8192373e4b85b8bbb3d9",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/a09bb50b6cb33f46b4bf8192373e4b85b8bbb3d9",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/a09bb50b6cb33f46b4bf8192373e4b85b8bbb3d9/comments",
+    "author": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "98e8da441c36dfe9f710ff5105ba2214bb57a8ed",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/98e8da441c36dfe9f710ff5105ba2214bb57a8ed",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/98e8da441c36dfe9f710ff5105ba2214bb57a8ed"
+      }
+    ]
+  },
+  {
+    "sha": "98e8da441c36dfe9f710ff5105ba2214bb57a8ed",
+    "node_id": "C_kwDOMgeWlNoAKDk4ZThkYTQ0MWMzNmRmZTlmNzEwZmY1MTA1YmEyMjE0YmI1N2E4ZWQ",
+    "commit": {
+      "author": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-25T22:16:16Z"
+      },
+      "committer": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-25T22:37:41Z"
+      },
+      "message": "fix: rename npm package to @dband/drm-cli, publish with --access public\n\ndrm-cli name rejected by npm (too similar to dts-cli, del-cli).\nScoped packages require --access public for public visibility.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "0a6437c88168a6fef7f81f33fb897d23b4743396",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/0a6437c88168a6fef7f81f33fb897d23b4743396"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/98e8da441c36dfe9f710ff5105ba2214bb57a8ed",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/98e8da441c36dfe9f710ff5105ba2214bb57a8ed",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/98e8da441c36dfe9f710ff5105ba2214bb57a8ed",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/98e8da441c36dfe9f710ff5105ba2214bb57a8ed/comments",
+    "author": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "efa0a23b88b4c0782cfc3245f30ef6e98c69c44a",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/efa0a23b88b4c0782cfc3245f30ef6e98c69c44a",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/efa0a23b88b4c0782cfc3245f30ef6e98c69c44a"
+      }
+    ]
+  },
+  {
+    "sha": "efa0a23b88b4c0782cfc3245f30ef6e98c69c44a",
+    "node_id": "C_kwDOMgeWlNoAKGVmYTBhMjNiODhiNGMwNzgyY2ZjMzI0NWYzMGVmNmU5OGM2OWM0NGE",
+    "commit": {
+      "author": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-04-25T21:21:27Z"
+      },
+      "committer": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-04-25T21:21:27Z"
+      },
+      "message": "Merged PR 175: readme updates\n\nreadme updates\n\nRelated work items: #404",
+      "tree": {
+        "sha": "b2ed10a22fe05763ce02f1ebbff1841b37768c0d",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/b2ed10a22fe05763ce02f1ebbff1841b37768c0d"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/efa0a23b88b4c0782cfc3245f30ef6e98c69c44a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/efa0a23b88b4c0782cfc3245f30ef6e98c69c44a",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/efa0a23b88b4c0782cfc3245f30ef6e98c69c44a",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/efa0a23b88b4c0782cfc3245f30ef6e98c69c44a/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "41dd395df78a4e89bc8826a23525e5c72ddc4068",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/41dd395df78a4e89bc8826a23525e5c72ddc4068",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/41dd395df78a4e89bc8826a23525e5c72ddc4068"
+      },
+      {
+        "sha": "4cbaec2a00e65c43201257d02988007f2c7b0b94",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/4cbaec2a00e65c43201257d02988007f2c7b0b94",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/4cbaec2a00e65c43201257d02988007f2c7b0b94"
+      }
+    ]
+  },
+  {
+    "sha": "4cbaec2a00e65c43201257d02988007f2c7b0b94",
+    "node_id": "C_kwDOMgeWlNoAKDRjYmFlYzJhMDBlNjVjNDMyMDEyNTdkMDI5ODgwMDdmMmM3YjBiOTQ",
+    "commit": {
+      "author": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-25T21:19:55Z"
+      },
+      "committer": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-25T21:19:55Z"
+      },
+      "message": "readme updates",
+      "tree": {
+        "sha": "b2ed10a22fe05763ce02f1ebbff1841b37768c0d",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/b2ed10a22fe05763ce02f1ebbff1841b37768c0d"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/4cbaec2a00e65c43201257d02988007f2c7b0b94",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/4cbaec2a00e65c43201257d02988007f2c7b0b94",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/4cbaec2a00e65c43201257d02988007f2c7b0b94",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/4cbaec2a00e65c43201257d02988007f2c7b0b94/comments",
+    "author": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "588dcedb863053ee438df6f887341465fe1a0f08",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/588dcedb863053ee438df6f887341465fe1a0f08",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/588dcedb863053ee438df6f887341465fe1a0f08"
+      }
+    ]
+  },
+  {
+    "sha": "41dd395df78a4e89bc8826a23525e5c72ddc4068",
+    "node_id": "C_kwDOMgeWlNoAKDQxZGQzOTVkZjc4YTRlODliYzg4MjZhMjM1MjVlNWM3MmRkYzQwNjg",
+    "commit": {
+      "author": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-04-25T21:09:38Z"
+      },
+      "committer": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-04-25T21:09:38Z"
+      },
+      "message": "Merged PR 174: implement AI 1_2_0\n\n\n\nRelated work items: #403",
+      "tree": {
+        "sha": "864893ff49d4e55973619b41cbb85aa1a09879f2",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/864893ff49d4e55973619b41cbb85aa1a09879f2"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/41dd395df78a4e89bc8826a23525e5c72ddc4068",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/41dd395df78a4e89bc8826a23525e5c72ddc4068",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/41dd395df78a4e89bc8826a23525e5c72ddc4068",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/41dd395df78a4e89bc8826a23525e5c72ddc4068/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "25b3c9013768d3427b5463255ffa2326a81977da",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/25b3c9013768d3427b5463255ffa2326a81977da",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/25b3c9013768d3427b5463255ffa2326a81977da"
+      },
+      {
+        "sha": "588dcedb863053ee438df6f887341465fe1a0f08",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/588dcedb863053ee438df6f887341465fe1a0f08",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/588dcedb863053ee438df6f887341465fe1a0f08"
+      }
+    ]
+  },
+  {
+    "sha": "588dcedb863053ee438df6f887341465fe1a0f08",
+    "node_id": "C_kwDOMgeWlNoAKDU4OGRjZWRiODYzMDUzZWU0MzhkZjZmODg3MzQxNDY1ZmUxYTBmMDg",
+    "commit": {
+      "author": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-25T21:01:01Z"
+      },
+      "committer": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-25T21:01:01Z"
+      },
+      "message": "ai added , publish elal\nto npm",
+      "tree": {
+        "sha": "864893ff49d4e55973619b41cbb85aa1a09879f2",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/864893ff49d4e55973619b41cbb85aa1a09879f2"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/588dcedb863053ee438df6f887341465fe1a0f08",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/588dcedb863053ee438df6f887341465fe1a0f08",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/588dcedb863053ee438df6f887341465fe1a0f08",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/588dcedb863053ee438df6f887341465fe1a0f08/comments",
+    "author": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f6462f3b24d63006d385e08a5b0449345dbd649c",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/f6462f3b24d63006d385e08a5b0449345dbd649c",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/f6462f3b24d63006d385e08a5b0449345dbd649c"
+      }
+    ]
+  },
+  {
+    "sha": "f6462f3b24d63006d385e08a5b0449345dbd649c",
+    "node_id": "C_kwDOMgeWlNoAKGY2NDYyZjNiMjRkNjMwMDZkMzg1ZTA4YTViMDQ0OTM0NWRiZDY0OWM",
+    "commit": {
+      "author": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-09T00:25:26Z"
+      },
+      "committer": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-09T00:25:26Z"
+      },
+      "message": "ai orginized",
+      "tree": {
+        "sha": "2348c33b9093c2135ca58d6c101924d7736748a3",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/2348c33b9093c2135ca58d6c101924d7736748a3"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/f6462f3b24d63006d385e08a5b0449345dbd649c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/f6462f3b24d63006d385e08a5b0449345dbd649c",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/f6462f3b24d63006d385e08a5b0449345dbd649c",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/f6462f3b24d63006d385e08a5b0449345dbd649c/comments",
+    "author": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "88cfd70c9cf5269a923d823a0d491246ddcb566b",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/88cfd70c9cf5269a923d823a0d491246ddcb566b",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/88cfd70c9cf5269a923d823a0d491246ddcb566b"
+      }
+    ]
+  },
+  {
+    "sha": "88cfd70c9cf5269a923d823a0d491246ddcb566b",
+    "node_id": "C_kwDOMgeWlNoAKDg4Y2ZkNzBjOWNmNTI2OWE5MjNkODIzYTBkNDkxMjQ2ZGRjYjU2NmI",
+    "commit": {
+      "author": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-04T23:30:42Z"
+      },
+      "committer": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-04T23:30:42Z"
+      },
+      "message": "impement AI integration",
+      "tree": {
+        "sha": "729a583dc6062b8407330cfa45c1181750c79f67",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/729a583dc6062b8407330cfa45c1181750c79f67"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/88cfd70c9cf5269a923d823a0d491246ddcb566b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/88cfd70c9cf5269a923d823a0d491246ddcb566b",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/88cfd70c9cf5269a923d823a0d491246ddcb566b",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/88cfd70c9cf5269a923d823a0d491246ddcb566b/comments",
+    "author": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f12d1f11ade5c0e2cc745b88d2c53477c7123c9b",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/f12d1f11ade5c0e2cc745b88d2c53477c7123c9b",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/f12d1f11ade5c0e2cc745b88d2c53477c7123c9b"
+      }
+    ]
+  },
+  {
+    "sha": "f12d1f11ade5c0e2cc745b88d2c53477c7123c9b",
+    "node_id": "C_kwDOMgeWlNoAKGYxMmQxZjExYWRlNWMwZTJjYzc0NWI4OGQyYzUzNDc3YzcxMjNjOWI",
+    "commit": {
+      "author": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-04T00:45:46Z"
+      },
+      "committer": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-04T00:45:46Z"
+      },
+      "message": "readme",
+      "tree": {
+        "sha": "50d2262913dd494f9d99d90827cb35331eb72a53",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/50d2262913dd494f9d99d90827cb35331eb72a53"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/f12d1f11ade5c0e2cc745b88d2c53477c7123c9b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/f12d1f11ade5c0e2cc745b88d2c53477c7123c9b",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/f12d1f11ade5c0e2cc745b88d2c53477c7123c9b",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/f12d1f11ade5c0e2cc745b88d2c53477c7123c9b/comments",
+    "author": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f4063877301d909662f5cad726eb64de7bad5992",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/f4063877301d909662f5cad726eb64de7bad5992",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/f4063877301d909662f5cad726eb64de7bad5992"
+      }
+    ]
+  },
+  {
+    "sha": "f4063877301d909662f5cad726eb64de7bad5992",
+    "node_id": "C_kwDOMgeWlNoAKGY0MDYzODc3MzAxZDkwOTY2MmY1Y2FkNzI2ZWI2NGRlN2JhZDU5OTI",
+    "commit": {
+      "author": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-04T00:42:47Z"
+      },
+      "committer": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-04T00:42:47Z"
+      },
+      "message": "nmp refactor",
+      "tree": {
+        "sha": "4450119819725e614aa09de36dd94843409d2a73",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/4450119819725e614aa09de36dd94843409d2a73"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/f4063877301d909662f5cad726eb64de7bad5992",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/f4063877301d909662f5cad726eb64de7bad5992",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/f4063877301d909662f5cad726eb64de7bad5992",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/f4063877301d909662f5cad726eb64de7bad5992/comments",
+    "author": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b3b0092ac7eae663f2128152b4c2e0857de5b4c2",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/b3b0092ac7eae663f2128152b4c2e0857de5b4c2",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/b3b0092ac7eae663f2128152b4c2e0857de5b4c2"
+      }
+    ]
+  },
+  {
+    "sha": "b3b0092ac7eae663f2128152b4c2e0857de5b4c2",
+    "node_id": "C_kwDOMgeWlNoAKGIzYjAwOTJhYzdlYWU2NjNmMjEyODE1MmI0YzJlMDg1N2RlNWI0YzI",
+    "commit": {
+      "author": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-04T00:15:01Z"
+      },
+      "committer": {
+        "name": "Levin Alexey",
+        "email": "levin.alexey@gmail.com",
+        "date": "2026-04-04T00:15:01Z"
+      },
+      "message": "nmp aded",
+      "tree": {
+        "sha": "8c4e4057f44ffe5ec80e59c7cfff8f421a20c2e6",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/8c4e4057f44ffe5ec80e59c7cfff8f421a20c2e6"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/b3b0092ac7eae663f2128152b4c2e0857de5b4c2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/b3b0092ac7eae663f2128152b4c2e0857de5b4c2",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/b3b0092ac7eae663f2128152b4c2e0857de5b4c2",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/b3b0092ac7eae663f2128152b4c2e0857de5b4c2/comments",
+    "author": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "alexeylevin1",
+      "id": 40989936,
+      "node_id": "MDQ6VXNlcjQwOTg5OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40989936?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexeylevin1",
+      "html_url": "https://github.com/alexeylevin1",
+      "followers_url": "https://api.github.com/users/alexeylevin1/followers",
+      "following_url": "https://api.github.com/users/alexeylevin1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexeylevin1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexeylevin1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexeylevin1/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexeylevin1/orgs",
+      "repos_url": "https://api.github.com/users/alexeylevin1/repos",
+      "events_url": "https://api.github.com/users/alexeylevin1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexeylevin1/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "25b3c9013768d3427b5463255ffa2326a81977da",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/25b3c9013768d3427b5463255ffa2326a81977da",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/25b3c9013768d3427b5463255ffa2326a81977da"
+      }
+    ]
+  },
+  {
+    "sha": "25b3c9013768d3427b5463255ffa2326a81977da",
+    "node_id": "C_kwDOMgeWlNoAKDI1YjNjOTAxMzc2OGQzNDI3YjU0NjMyNTVmZmEyMzI2YTgxOTc3ZGE",
+    "commit": {
+      "author": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-01-08T19:55:46Z"
+      },
+      "committer": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-01-08T19:55:46Z"
+      },
+      "message": "Merged PR 160: Enhance WSL2 compatibility in logging and installer modules\n\nEnhance WSL2 compatibility in logging and installer modules\n\nRelated work items: #373",
+      "tree": {
+        "sha": "706c46e43e964dd2677ab84bf04ca792b2cc83fc",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/706c46e43e964dd2677ab84bf04ca792b2cc83fc"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/25b3c9013768d3427b5463255ffa2326a81977da",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/25b3c9013768d3427b5463255ffa2326a81977da",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/25b3c9013768d3427b5463255ffa2326a81977da",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/25b3c9013768d3427b5463255ffa2326a81977da/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "7cab3a086fc6185d051b1ff362ce31562c982d05",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/7cab3a086fc6185d051b1ff362ce31562c982d05",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/7cab3a086fc6185d051b1ff362ce31562c982d05"
+      },
+      {
+        "sha": "8b575096745b285e6483ff2db8148b6e90c9d045",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/8b575096745b285e6483ff2db8148b6e90c9d045",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/8b575096745b285e6483ff2db8148b6e90c9d045"
+      }
+    ]
+  },
+  {
+    "sha": "8b575096745b285e6483ff2db8148b6e90c9d045",
+    "node_id": "C_kwDOMgeWlNoAKDhiNTc1MDk2NzQ1YjI4NWU2NDgzZmYyZGI4MTQ4YjZlOTBjOWQwNDU",
+    "commit": {
+      "author": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-01-08T19:52:11Z"
+      },
+      "committer": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-01-08T19:52:11Z"
+      },
+      "message": "Enhance WSL2 compatibility in logging and installer modules",
+      "tree": {
+        "sha": "706c46e43e964dd2677ab84bf04ca792b2cc83fc",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/706c46e43e964dd2677ab84bf04ca792b2cc83fc"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/8b575096745b285e6483ff2db8148b6e90c9d045",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/8b575096745b285e6483ff2db8148b6e90c9d045",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/8b575096745b285e6483ff2db8148b6e90c9d045",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/8b575096745b285e6483ff2db8148b6e90c9d045/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "7cab3a086fc6185d051b1ff362ce31562c982d05",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/7cab3a086fc6185d051b1ff362ce31562c982d05",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/7cab3a086fc6185d051b1ff362ce31562c982d05"
+      }
+    ]
+  },
+  {
+    "sha": "7cab3a086fc6185d051b1ff362ce31562c982d05",
+    "node_id": "C_kwDOMgeWlNoAKDdjYWIzYTA4NmZjNjE4NWQwNTFiMWZmMzYyY2UzMTU2MmM5ODJkMDU",
+    "commit": {
+      "author": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-01-06T19:56:46Z"
+      },
+      "committer": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-01-06T19:56:46Z"
+      },
+      "message": "Merged PR 158: wsl\n\nwsl\n\nRelated work items: #387",
+      "tree": {
+        "sha": "8ab8685d91d2cd96da8cd4639ec5f17682cba3a5",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/8ab8685d91d2cd96da8cd4639ec5f17682cba3a5"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/7cab3a086fc6185d051b1ff362ce31562c982d05",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/7cab3a086fc6185d051b1ff362ce31562c982d05",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/7cab3a086fc6185d051b1ff362ce31562c982d05",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/7cab3a086fc6185d051b1ff362ce31562c982d05/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "8ff855f3400e2c491c336ad632cc9fb936d891a2",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/8ff855f3400e2c491c336ad632cc9fb936d891a2",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/8ff855f3400e2c491c336ad632cc9fb936d891a2"
+      },
+      {
+        "sha": "3fc5b8b1b59dd5e0b8e392d3fc3e93d35319145e",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/3fc5b8b1b59dd5e0b8e392d3fc3e93d35319145e",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/3fc5b8b1b59dd5e0b8e392d3fc3e93d35319145e"
+      }
+    ]
+  },
+  {
+    "sha": "3fc5b8b1b59dd5e0b8e392d3fc3e93d35319145e",
+    "node_id": "C_kwDOMgeWlNoAKDNmYzViOGIxYjU5ZGQ1ZTBiOGUzOTJkM2ZjM2U5M2QzNTMxOTE0NWU",
+    "commit": {
+      "author": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-01-06T19:55:26Z"
+      },
+      "committer": {
+        "name": "Alexey Levin",
+        "email": "mumr666@hotmail.com",
+        "date": "2026-01-06T19:55:26Z"
+      },
+      "message": "wsl",
+      "tree": {
+        "sha": "8ab8685d91d2cd96da8cd4639ec5f17682cba3a5",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/8ab8685d91d2cd96da8cd4639ec5f17682cba3a5"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/3fc5b8b1b59dd5e0b8e392d3fc3e93d35319145e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/3fc5b8b1b59dd5e0b8e392d3fc3e93d35319145e",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/3fc5b8b1b59dd5e0b8e392d3fc3e93d35319145e",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/3fc5b8b1b59dd5e0b8e392d3fc3e93d35319145e/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "8ff855f3400e2c491c336ad632cc9fb936d891a2",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/8ff855f3400e2c491c336ad632cc9fb936d891a2",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/8ff855f3400e2c491c336ad632cc9fb936d891a2"
+      }
+    ]
+  },
+  {
+    "sha": "8ff855f3400e2c491c336ad632cc9fb936d891a2",
+    "node_id": "C_kwDOMgeWlNoAKDhmZjg1NWYzNDAwZTJjNDkxYzMzNmFkNjMyY2M5ZmI5MzZkODkxYTI",
+    "commit": {
+      "author": {
+        "name": "Eli Shohat",
+        "email": "elimirishohat@gmail.com",
+        "date": "2026-01-03T14:40:10Z"
+      },
+      "committer": {
+        "name": "Eli Shohat",
+        "email": "elimirishohat@gmail.com",
+        "date": "2026-01-03T14:40:10Z"
+      },
+      "message": "Merged PR 156: Bug fix: fail if module does not exist\n\nBug fix: fail if module does not exist\n\nRelated work items: #390",
+      "tree": {
+        "sha": "45fbb457762af666cc05e8d2e6495f868772a075",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/45fbb457762af666cc05e8d2e6495f868772a075"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/8ff855f3400e2c491c336ad632cc9fb936d891a2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/8ff855f3400e2c491c336ad632cc9fb936d891a2",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/8ff855f3400e2c491c336ad632cc9fb936d891a2",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/8ff855f3400e2c491c336ad632cc9fb936d891a2/comments",
+    "author": {
+      "login": "elimirishohat-crypto",
+      "id": 251908029,
+      "node_id": "U_kgDODwPPvQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/251908029?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/elimirishohat-crypto",
+      "html_url": "https://github.com/elimirishohat-crypto",
+      "followers_url": "https://api.github.com/users/elimirishohat-crypto/followers",
+      "following_url": "https://api.github.com/users/elimirishohat-crypto/following{/other_user}",
+      "gists_url": "https://api.github.com/users/elimirishohat-crypto/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/elimirishohat-crypto/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/elimirishohat-crypto/subscriptions",
+      "organizations_url": "https://api.github.com/users/elimirishohat-crypto/orgs",
+      "repos_url": "https://api.github.com/users/elimirishohat-crypto/repos",
+      "events_url": "https://api.github.com/users/elimirishohat-crypto/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/elimirishohat-crypto/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "elimirishohat-crypto",
+      "id": 251908029,
+      "node_id": "U_kgDODwPPvQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/251908029?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/elimirishohat-crypto",
+      "html_url": "https://github.com/elimirishohat-crypto",
+      "followers_url": "https://api.github.com/users/elimirishohat-crypto/followers",
+      "following_url": "https://api.github.com/users/elimirishohat-crypto/following{/other_user}",
+      "gists_url": "https://api.github.com/users/elimirishohat-crypto/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/elimirishohat-crypto/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/elimirishohat-crypto/subscriptions",
+      "organizations_url": "https://api.github.com/users/elimirishohat-crypto/orgs",
+      "repos_url": "https://api.github.com/users/elimirishohat-crypto/repos",
+      "events_url": "https://api.github.com/users/elimirishohat-crypto/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/elimirishohat-crypto/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0bac2e3b8a62ef640254a111a3a37a3598d2dae1",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/0bac2e3b8a62ef640254a111a3a37a3598d2dae1",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/0bac2e3b8a62ef640254a111a3a37a3598d2dae1"
+      },
+      {
+        "sha": "d673eca9c93aef085b98b9b083148e86011f1653",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/d673eca9c93aef085b98b9b083148e86011f1653",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/d673eca9c93aef085b98b9b083148e86011f1653"
+      }
+    ]
+  },
+  {
+    "sha": "d673eca9c93aef085b98b9b083148e86011f1653",
+    "node_id": "C_kwDOMgeWlNoAKGQ2NzNlY2E5YzkzYWVmMDg1Yjk4YjliMDgzMTQ4ZTg2MDExZjE2NTM",
+    "commit": {
+      "author": {
+        "name": "Eli Shohat",
+        "email": "elimirishohat@gmail.com",
+        "date": "2026-01-03T14:39:19Z"
+      },
+      "committer": {
+        "name": "Eli Shohat",
+        "email": "elimirishohat@gmail.com",
+        "date": "2026-01-03T14:39:19Z"
+      },
+      "message": "Bug fix: fail if module does not exist",
+      "tree": {
+        "sha": "45fbb457762af666cc05e8d2e6495f868772a075",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/45fbb457762af666cc05e8d2e6495f868772a075"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/d673eca9c93aef085b98b9b083148e86011f1653",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/d673eca9c93aef085b98b9b083148e86011f1653",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/d673eca9c93aef085b98b9b083148e86011f1653",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/d673eca9c93aef085b98b9b083148e86011f1653/comments",
+    "author": {
+      "login": "elimirishohat-crypto",
+      "id": 251908029,
+      "node_id": "U_kgDODwPPvQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/251908029?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/elimirishohat-crypto",
+      "html_url": "https://github.com/elimirishohat-crypto",
+      "followers_url": "https://api.github.com/users/elimirishohat-crypto/followers",
+      "following_url": "https://api.github.com/users/elimirishohat-crypto/following{/other_user}",
+      "gists_url": "https://api.github.com/users/elimirishohat-crypto/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/elimirishohat-crypto/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/elimirishohat-crypto/subscriptions",
+      "organizations_url": "https://api.github.com/users/elimirishohat-crypto/orgs",
+      "repos_url": "https://api.github.com/users/elimirishohat-crypto/repos",
+      "events_url": "https://api.github.com/users/elimirishohat-crypto/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/elimirishohat-crypto/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "elimirishohat-crypto",
+      "id": 251908029,
+      "node_id": "U_kgDODwPPvQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/251908029?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/elimirishohat-crypto",
+      "html_url": "https://github.com/elimirishohat-crypto",
+      "followers_url": "https://api.github.com/users/elimirishohat-crypto/followers",
+      "following_url": "https://api.github.com/users/elimirishohat-crypto/following{/other_user}",
+      "gists_url": "https://api.github.com/users/elimirishohat-crypto/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/elimirishohat-crypto/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/elimirishohat-crypto/subscriptions",
+      "organizations_url": "https://api.github.com/users/elimirishohat-crypto/orgs",
+      "repos_url": "https://api.github.com/users/elimirishohat-crypto/repos",
+      "events_url": "https://api.github.com/users/elimirishohat-crypto/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/elimirishohat-crypto/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0bac2e3b8a62ef640254a111a3a37a3598d2dae1",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/0bac2e3b8a62ef640254a111a3a37a3598d2dae1",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/0bac2e3b8a62ef640254a111a3a37a3598d2dae1"
+      }
+    ]
+  },
+  {
+    "sha": "0bac2e3b8a62ef640254a111a3a37a3598d2dae1",
+    "node_id": "C_kwDOMgeWlNoAKDBiYWMyZTNiOGE2MmVmNjQwMjU0YTExMWEzYTM3YTM1OThkMmRhZTE",
+    "commit": {
+      "author": {
+        "name": "Eli Shohat",
+        "email": "elimirishohat@gmail.com",
+        "date": "2026-01-03T14:29:35Z"
+      },
+      "committer": {
+        "name": "Eli Shohat",
+        "email": "elimirishohat@gmail.com",
+        "date": "2026-01-03T14:29:35Z"
+      },
+      "message": "Merged PR 155: Remove unsupported option decrypt\n\nRemove unsupported option decrypt\n\nRelated work items: #371",
+      "tree": {
+        "sha": "cbfdb43c5d596ccf4fd7c738b0c805b4aa1f3300",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/git/trees/cbfdb43c5d596ccf4fd7c738b0c805b4aa1f3300"
+      },
+      "url": "https://api.github.com/repos/dband-drm/drm-cli/git/commits/0bac2e3b8a62ef640254a111a3a37a3598d2dae1",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/0bac2e3b8a62ef640254a111a3a37a3598d2dae1",
+    "html_url": "https://github.com/dband-drm/drm-cli/commit/0bac2e3b8a62ef640254a111a3a37a3598d2dae1",
+    "comments_url": "https://api.github.com/repos/dband-drm/drm-cli/commits/0bac2e3b8a62ef640254a111a3a37a3598d2dae1/comments",
+    "author": {
+      "login": "elimirishohat-crypto",
+      "id": 251908029,
+      "node_id": "U_kgDODwPPvQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/251908029?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/elimirishohat-crypto",
+      "html_url": "https://github.com/elimirishohat-crypto",
+      "followers_url": "https://api.github.com/users/elimirishohat-crypto/followers",
+      "following_url": "https://api.github.com/users/elimirishohat-crypto/following{/other_user}",
+      "gists_url": "https://api.github.com/users/elimirishohat-crypto/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/elimirishohat-crypto/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/elimirishohat-crypto/subscriptions",
+      "organizations_url": "https://api.github.com/users/elimirishohat-crypto/orgs",
+      "repos_url": "https://api.github.com/users/elimirishohat-crypto/repos",
+      "events_url": "https://api.github.com/users/elimirishohat-crypto/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/elimirishohat-crypto/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "elimirishohat-crypto",
+      "id": 251908029,
+      "node_id": "U_kgDODwPPvQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/251908029?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/elimirishohat-crypto",
+      "html_url": "https://github.com/elimirishohat-crypto",
+      "followers_url": "https://api.github.com/users/elimirishohat-crypto/followers",
+      "following_url": "https://api.github.com/users/elimirishohat-crypto/following{/other_user}",
+      "gists_url": "https://api.github.com/users/elimirishohat-crypto/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/elimirishohat-crypto/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/elimirishohat-crypto/subscriptions",
+      "organizations_url": "https://api.github.com/users/elimirishohat-crypto/orgs",
+      "repos_url": "https://api.github.com/users/elimirishohat-crypto/repos",
+      "events_url": "https://api.github.com/users/elimirishohat-crypto/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/elimirishohat-crypto/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f0959f7a24e69569f28b7847c13d6403ffa413fd",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/f0959f7a24e69569f28b7847c13d6403ffa413fd",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/f0959f7a24e69569f28b7847c13d6403ffa413fd"
+      },
+      {
+        "sha": "353430d95648760065218923fd886c7614871194",
+        "url": "https://api.github.com/repos/dband-drm/drm-cli/commits/353430d95648760065218923fd886c7614871194",
+        "html_url": "https://github.com/dband-drm/drm-cli/commit/353430d95648760065218923fd886c7614871194"
+      }
+    ]
+  }
+]

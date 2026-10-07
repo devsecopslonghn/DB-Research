@@ -1,0 +1,312 @@
+{
+  "observed_at": "2026-10-04T07:24:44.391782+00:00",
+  "runtime": {
+    "kind": "StatefulSet",
+    "name": "bytebase",
+    "ready_replicas": 1,
+    "image": "bytebase/bytebase:3.22.1@sha256:d7aa62532fe5c789a46c51a1d53dadaaac316c7054d1e15733be4095f5f04139",
+    "pvc": {
+      "name": "bytebase-data-2gi",
+      "uid": "8ba260f3-0bea-4508-840b-2a5eec494707",
+      "requested": "2Gi",
+      "phase": "Bound"
+    },
+    "external_pg_configured": false,
+    "metadata_mode": "embedded PostgreSQL"
+  },
+  "secret_scan": {
+    "captured_task_log_groups": 24,
+    "known_secrets_compared": 12,
+    "known_secret_match": false,
+    "full_audit_export_available": false
+  },
+  "browser_review": {
+    "live_images": 11,
+    "hashes_verified": true,
+    "visually_inspected": true,
+    "method": "PNG contact sheet plus full-size critical frames; actual WebDriver actions."
+  },
+  "cli_validation": {
+    "observed_at": "2026-10-04T07:22:06.651630+00:00",
+    "actual_gitlab_jenkins_job_run": false,
+    "steps": [
+      {
+        "time": "2026-10-04T07:21:45.737417+00:00",
+        "actor": "approver",
+        "command": "release",
+        "result": {
+          "release": "projects/bbpoc-20261004/releases/bbpoc-cli-20261004_0721-00",
+          "sha256": "04d694f3a73b15085a5129c57e41472fe2a5abc25cced986f83549a800ab3b57",
+          "job_ref": "local-cli-smoke-20261004"
+        }
+      },
+      {
+        "time": "2026-10-04T07:21:50.455534+00:00",
+        "actor": "approver",
+        "command": "review",
+        "result": {
+          "release": "projects/bbpoc-20261004/releases/bbpoc-cli-20261004_0721-00",
+          "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV",
+          "sha256": "04d694f3a73b15085a5129c57e41472fe2a5abc25cced986f83549a800ab3b57",
+          "review": "NO_ERROR_OR_WARNING",
+          "reviewed_at": "2026-10-04T07:21:50.380297+00:00"
+        }
+      },
+      {
+        "time": "2026-10-04T07:21:55.072106+00:00",
+        "actor": "requester",
+        "command": "plan",
+        "result": {
+          "release": "projects/bbpoc-20261004/releases/bbpoc-cli-20261004_0721-00",
+          "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV",
+          "sha256": "04d694f3a73b15085a5129c57e41472fe2a5abc25cced986f83549a800ab3b57",
+          "review": "NO_ERROR_OR_WARNING",
+          "reviewed_at": "2026-10-04T07:21:54.869089+00:00",
+          "plan": "projects/bbpoc-20261004/plans/134",
+          "issue": "projects/bbpoc-20261004/issues/134",
+          "approval_status": "CHECKING"
+        }
+      },
+      {
+        "time": "2026-10-04T07:21:56.092539+00:00",
+        "actor": "executor",
+        "command": "execute",
+        "result": {
+          "plan": "projects/bbpoc-20261004/plans/134",
+          "scheduled_stage": "projects/bbpoc-20261004/plans/134/rollout/stages/develop",
+          "tasks": [
+            "projects/bbpoc-20261004/plans/134/rollout/stages/develop/tasks/141"
+          ]
+        }
+      },
+      {
+        "time": "2026-10-04T07:21:57.868078+00:00",
+        "actor": "executor",
+        "command": "inspect",
+        "result": {
+          "plan": "projects/bbpoc-20261004/plans/134",
+          "creator": "users/bbpoc-20261004-requester@drgdevlab.com",
+          "title": "BBPOC CLI local-cli-smoke-20261004",
+          "stages": [
+            {
+              "environment": "environments/develop",
+              "tasks": [
+                {
+                  "name": "projects/bbpoc-20261004/plans/134/rollout/stages/develop/tasks/141",
+                  "status": "RUNNING",
+                  "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "time": "2026-10-04T07:21:59.600956+00:00",
+        "actor": "executor",
+        "command": "inspect",
+        "result": {
+          "plan": "projects/bbpoc-20261004/plans/134",
+          "creator": "users/bbpoc-20261004-requester@drgdevlab.com",
+          "title": "BBPOC CLI local-cli-smoke-20261004",
+          "stages": [
+            {
+              "environment": "environments/develop",
+              "tasks": [
+                {
+                  "name": "projects/bbpoc-20261004/plans/134/rollout/stages/develop/tasks/141",
+                  "status": "RUNNING",
+                  "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "time": "2026-10-04T07:22:01.388751+00:00",
+        "actor": "executor",
+        "command": "inspect",
+        "result": {
+          "plan": "projects/bbpoc-20261004/plans/134",
+          "creator": "users/bbpoc-20261004-requester@drgdevlab.com",
+          "title": "BBPOC CLI local-cli-smoke-20261004",
+          "stages": [
+            {
+              "environment": "environments/develop",
+              "tasks": [
+                {
+                  "name": "projects/bbpoc-20261004/plans/134/rollout/stages/develop/tasks/141",
+                  "status": "RUNNING",
+                  "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "time": "2026-10-04T07:22:03.133267+00:00",
+        "actor": "executor",
+        "command": "inspect",
+        "result": {
+          "plan": "projects/bbpoc-20261004/plans/134",
+          "creator": "users/bbpoc-20261004-requester@drgdevlab.com",
+          "title": "BBPOC CLI local-cli-smoke-20261004",
+          "stages": [
+            {
+              "environment": "environments/develop",
+              "tasks": [
+                {
+                  "name": "projects/bbpoc-20261004/plans/134/rollout/stages/develop/tasks/141",
+                  "status": "RUNNING",
+                  "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "time": "2026-10-04T07:22:04.897601+00:00",
+        "actor": "executor",
+        "command": "inspect",
+        "result": {
+          "plan": "projects/bbpoc-20261004/plans/134",
+          "creator": "users/bbpoc-20261004-requester@drgdevlab.com",
+          "title": "BBPOC CLI local-cli-smoke-20261004",
+          "stages": [
+            {
+              "environment": "environments/develop",
+              "tasks": [
+                {
+                  "name": "projects/bbpoc-20261004/plans/134/rollout/stages/develop/tasks/141",
+                  "status": "RUNNING",
+                  "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "time": "2026-10-04T07:22:06.651583+00:00",
+        "actor": "executor",
+        "command": "inspect",
+        "result": {
+          "plan": "projects/bbpoc-20261004/plans/134",
+          "creator": "users/bbpoc-20261004-requester@drgdevlab.com",
+          "title": "BBPOC CLI local-cli-smoke-20261004",
+          "stages": [
+            {
+              "environment": "environments/develop",
+              "tasks": [
+                {
+                  "name": "projects/bbpoc-20261004/plans/134/rollout/stages/develop/tasks/141",
+                  "status": "DONE",
+                  "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "postcheck": {
+      "time": "2026-10-04T07:22:07.846268+00:00",
+      "schema": "BBPOC_20261004_DEV",
+      "sql": "SELECT COUNT(*) FROM POC_REPLAY WHERE MARKER='BB_CLI_NATIVE_20261004'",
+      "successful": true,
+      "columns": [
+        "COUNT(*)"
+      ],
+      "rows": [
+        [
+          1
+        ]
+      ]
+    }
+  },
+  "source_manifest": [
+    {
+      "url": "https://raw.githubusercontent.com/bytebase/bytebase/a85f6cb4195299995e8554303550d672d5093e1d/proto/v1/v1/plan_service.proto",
+      "status": 200,
+      "sha256": "e9e34ce8f2ba84e55bae2b086f52d31ef55cc666b2c743be2d555f9cb76fd601"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bytebase/bytebase/a85f6cb4195299995e8554303550d672d5093e1d/proto/v1/v1/rollout_service.proto",
+      "status": 200,
+      "sha256": "476439eb06582826f0da01b2958ccbd50bd338210b4bdcbf26cff60a760c0867"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bytebase/bytebase/a85f6cb4195299995e8554303550d672d5093e1d/proto/v1/v1/instance_service.proto",
+      "status": 200,
+      "sha256": "ecb8604d3da82497149c3bd1f81a94cf6ba3c8c55ae53c9866dcc381744ba3d9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bytebase/bytebase/a85f6cb4195299995e8554303550d672d5093e1d/proto/v1/v1/setting_service.proto",
+      "status": 200,
+      "sha256": "2e5c0bec64d0f84c91bae97a86db5f237d380553e0d08b170387d3a6aa482aa7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bytebase/bytebase/a85f6cb4195299995e8554303550d672d5093e1d/proto/v1/v1/project_service.proto",
+      "status": 200,
+      "sha256": "607ee31742547de00d5e5e5a44a8abd4d682ae7e28d4c6bc97fc08d6377a8548"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bytebase/bytebase/a85f6cb4195299995e8554303550d672d5093e1d/proto/v1/v1/user_service.proto",
+      "status": 200,
+      "sha256": "81ee09b7823cea40367a12fbea9fee420c72dd1931211111d350975bd7804a9f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bytebase/bytebase/a85f6cb4195299995e8554303550d672d5093e1d/proto/v1/v1/service_account_service.proto",
+      "status": 200,
+      "sha256": "abae2c51818646b7af62a5fed56460417a536af8ef96b768f4473d934cde3c1d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bytebase/bytebase/a85f6cb4195299995e8554303550d672d5093e1d/proto/v1/v1/revision_service.proto",
+      "status": 200,
+      "sha256": "5a486f573c4cbece4f0be477ee97ecb9e513e6533c0c0fe21df4cd9b550aa8f0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bytebase/bytebase/a85f6cb4195299995e8554303550d672d5093e1d/proto/v1/v1/org_policy_service.proto",
+      "status": 200,
+      "sha256": "acffbdfec7673a9f1a265bca357c69a20d6d9713047c804f3da1f8469bb67975"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bytebase/bytebase/a85f6cb4195299995e8554303550d672d5093e1d/proto/v1/v1/issue_service.proto",
+      "status": 200,
+      "sha256": "c968e4ef024d5cb9c511a6d89e142e73e377973bb360a7220dceabe675abb798"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bytebase/bytebase/a85f6cb4195299995e8554303550d672d5093e1d/proto/v1/v1/release_service.proto",
+      "status": 200,
+      "sha256": "4826c8b03c1368e45b1d21bbaa0d434fa9ef44812b200ac490e4cdecd2ff5361"
+    }
+  ],
+  "bounded_document_run": {
+    "tool": "agy",
+    "model": "claude-opus-5-5-medium",
+    "status": "SUCCESS",
+    "exit_code": 0,
+    "stderr_denied_actions": false,
+    "scope": "45-criterion checklist only; root corrected scope and reviewed criteria. No delegated deployment or SQL."
+  },
+  "unverified": [
+    "Oracle 19c/21c and RAC",
+    "Commit/crash barriers",
+    "Network fault checkpoint",
+    "Multi-replica failover",
+    "Backup restore/reconciliation",
+    "GitLab/Jenkins actual job",
+    "Paid edition approval/audit behavior"
+  ],
+  "requester_hardening_verified": true,
+  "scope_note": "Native CLI flow verified before SQL role tightening; release review and read/write denial verified after tightening.",
+  "publication_review": {
+    "known_secret_asset_matches": 0,
+    "new_document_link_gaps": 0,
+    "criteria_exactly_compared": 45,
+    "python_syntax_inspected": true
+  }
+}

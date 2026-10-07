@@ -1,0 +1,97 @@
+ODC FINAL PRACTICAL ADOPTION DECISION
+=====================================
+
+ODC PRACTICAL POC =
+GO — internal pilot using the demonstrated configuration
+
+ROLE-SEPARATED WORKFLOW =
+PASS — independent approval; approved requester dispatch accepted by policy
+
+NATIVE MULTI-ENV BATCH =
+PASS
+
+ORACLE PL/SQL/TCPS =
+PASS — observed 26ai lab with existing TCPS adapter
+
+PL/SQL VALIDITY ACCEPTANCE =
+PASS WITH DBA CHECK
+
+RETENTION BASELINE =
+FAIL
+
+RETENTION CONFIGURATION EXPERIMENT =
+PASS
+
+RESULT RETENTION =
+PASS
+
+LOG RETENTION =
+PASS
+
+ATTACHMENT RETENTION =
+PASS
+
+RETIRED-POD FORWARDING =
+NO — fresh configured tickets
+
+METADATA/SQL/AUDIT RETENTION =
+PASS
+
+DUPLICATE/CORRECTION WORKFLOW =
+PASS — prior-ticket checks and new reviewed corrections
+
+API/PROVENANCE =
+PASS — description/API/Execute audit trace
+
+ARGO CD RESTORED =
+YES
+
+LAB HEALTH AFTER EXPERIMENT =
+HEALTHY
+
+HISTORICAL EVIDENCE PRESERVED =
+YES
+
+BYTEBASE PRACTICAL PARITY =
+86/100
+moderate gap
+
+ODC VS DBEAVER/MANUAL SQL =
+MAJOR IMPROVEMENT
+
+ODC VS FLYWAY =
+PARTIAL REPLACEMENT
+
+CUSTOM PLATFORM CODE REQUIRED =
+NO — no new controller, executor or product patch; existing TCPS adapter remains
+
+PERMANENT GITOPS CHANGES RECOMMENDED =
+Deployment hostname: odc
+ODC_HOST: odc.oceanbase-odc.svc.cluster.local
+ODC_MAPPING_PORT: "8989"
+/opt/odc/log: existing data PVC, subPath task-logs
+
+PILOT OPERATING MODEL =
+Native tickets/batches, release references, OWNER/DBA review and approval,
+authorized manual dispatch, DBA result/validity acceptance per environment,
+prior-ticket lookup and new reviewed correction tickets.
+
+KNOWN NON-BLOCKING GAPS =
+1. Automatic INVALID detection; explicit DBA acceptance remains mandatory.
+2. Native migration-version/replay and Git binding are not Flyway-equivalent.
+3. Existing TCPS adapter ownership; approved requester dispatch and audit correlation.
+
+PRODUCTION HARDENING NOT PROVED =
+1. Actual 50-instance/20-user estate, Oracle 19c/21c and capacity.
+2. Lost-ACK/commit ambiguity, restore reconciliation and multi-replica failover.
+3. Distributed serialization/fencing, backups and full audit/long-term retention.
+
+FINAL RECOMMENDATION =
+Adopt ODC for the governed internal pilot after the proven minimal settings enter
+GitOps desired state. The bounded retention blocker is closed without product or
+MetaDB patches. Keep DBA PL/SQL checks and existing migration-version discipline;
+this does not approve production estate-wide rollout or retire all Flyway semantics.
+
+NEXT STEP =
+Approve and apply the supplied minimal GitOps retention change for the pilot;
+the lab was deliberately restored to its original baseline.

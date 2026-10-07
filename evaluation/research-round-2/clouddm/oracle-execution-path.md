@@ -1,0 +1,68 @@
+# CloudDM: Oracle execution path (SOURCE trace)
+
+Commit: `a9f16e78b8288c9a4158ee9df4378ee16b80021e`. Full-SHA links dùng commit cố định. Local source snapshot và SHA-256: [source-manifest.json](source-manifest.json). Runtime **NOT_RUN**.
+
+## Luồng được trace
+
+Pin `a9f16e78b8288c9a4158ee9df4378ee16b80021e` được so với 11 tệp chọn lọc ở release `v4.3.0` commit `3aa1238a471afca2579e76e6fbf0a922d9be5579`; các tệp đó byte-identical theo [manifest so sánh](../coordinator/clouddm-release-comparison.json). Phạm vi so sánh chỉ là 11 tệp, không chứng minh toàn repository hay image giống nhau.
+
+```text
+Webhook controller
+  -> DmChangeServiceImpl.triggerChangeSuggest
+  -> persistent trigger receipt (`INSERT IGNORE`; DDL có unique keys theo delivery và commit)
+  -> create/update change and batch
+  -> ChangeActionForApproval: ticket + locked SQL attachment
+  -> AutoExecServiceImpl: ordered tasks + QueryRequest ZIP + MD5 package
+  -> console dispatch via RSocket to sidecar
+  -> AutoExecJob: download/check package; parse QueryRequest records
+  -> SessionAgent.submitQueries(one request at a time)
+  -> datasource session SPI -> Oracle JDBC OraSession -> Statement.execute
+  -> task/job status messages to console
+```
+
+Trace points:
+
+- [Webhook controller, pinned source](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/controller/cicd/DmChangeFlowWebhookController.java#L129-L147)
+- [Change service trigger and receipt](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/cicd/DmChangeServiceImpl.java#L698-L747)
+- [Receipt uses INSERT IGNORE](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-dao/src/main/resources/mybatis/mapper/DmChangeTriggerReceiptMapper.xml#L5-L20)
+- [Approval ticket and locked artifact](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/action/ChangeActionForApproval.java#L144-L203)
+- [Package creation, MD5, task package](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/execute/impl/AutoExecServiceImpl.java#L308-L424)
+- [Dispatch/configuration](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/execute/impl/AutoExecServiceImpl.java#L244-L306)
+- [Sidecar package check and run](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-sidecar/src/main/java/com/clougence/clouddm/worker/component/autoexec/AutoExecJob.java#L150-L242)
+- [Worker transaction and per-request error strategy](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-sidecar/src/main/java/com/clougence/clouddm/worker/component/autoexec/AutoExecJob.java#L250-L397)
+- [Oracle session: compile mode and JDBC execute](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-ds/dsc-common-oracle/src/main/java/com/clougence/clouddm/dsfamily/oracle/execute/OraSession.java#L39-L167)
+- [Oracle parser engine SPI](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/java/com/clougence/sql/oracle/OraSqlEngineSpi.java#L33-L91)
+
+## Tách statement và hành vi riêng của Oracle
+
+Đường approval gọi `analysisSplitStream` với cấu hình datasource trong ticket. `QueryAnalysisServiceImpl` lấy `SqlEngineSpi` theo datasource rồi gọi `SplitAnalysisSpi`. Datasource Oracle vì vậy dùng `OraSplitAnalysisSpi` cùng lexer/parser ANTLR của Oracle. CICD nối tới splitter riêng Oracle là **SOURCE observed**.
+
+Grammar Oracle nhận script có dấu `/` phân cách, anonymous block, program object và literal q-quote. Grammar cũng parse một số lệnh SQL*Plus như `SET`, `PROMPT`, `WHENEVER`, `START`, `EXIT` và `SHOW ERRORS`. Lexer q-quote ghi chú TODO về quote phụ thuộc ngữ cảnh. Grammar chỉ chứng minh khả năng parse. Generic JDBC executor không có client-command interpreter được tìm thấy cho `PROMPT`, `WHENEVER`, `START`, `SPOOL` hoặc các chỉ thị khác. Hành vi đầu-cuối vẫn là **GAP / NOT_RUN**.
+
+`OraSession` dùng JDBC statement và có truy vấn compile tới `ALL_ERRORS`. Nhánh này phụ thuộc `QueryRequest.isUseCompile()`. `QueryRequest` mặc định `useCompile=false`; bước đóng gói AutoExec sao chép query body/type/args và các trường khác nhưng không đặt compile mode. Source không chứng minh AutoExec gọi nhánh chẩn đoán này sau mỗi DDL/PLSQL. Oracle có thể commit ngầm khi chạy DDL. Vì vậy transaction quanh job và rollback không bảo đảm release Oracle là nguyên tử.
+
+## Đối chiếu quan sát và mong đợi
+
+| Chủ đề | Source đã quan sát | Mong đợi để chấp nhận | Runtime |
+|---|---|---|---|
+| Kết nối và chạy Oracle | Có Oracle JDBC session và gọi statement | Chạy đúng trên Oracle 19c/21c với driver/TLS đã chọn | NOT_RUN |
+| Parser PL/SQL | Ticket approval gọi SPI theo datasource; grammar ANTLR Oracle có block và slash | CICD giữ đúng ranh giới block và gửi statement hợp lệ | NOT_RUN; cần runtime để xác nhận parser |
+| Slash, q-quote, SQL*Plus | Grammar nhận slash, literal q-quote và một số dạng SQL*Plus | Giữ hoặc bỏ delimiter đúng; từ chối lệnh client không hỗ trợ trước JDBC | NOT_RUN; chưa thấy client-command interpreter |
+| Commit | Có transaction JDBC tùy chọn cho toàn job | Báo chính xác DDL commit ngầm và trạng thái một phần | NOT_RUN; rollback generic không bảo đảm atomic |
+| INVALID/ALL_ERRORS | Chế độ compile tường minh truy vấn ALL_ERRORS | Runner kiểm từng object và dừng release khi có lỗi | NOT_RUN; chưa thấy tự gọi |
+| Dừng khi lỗi | FAIL ném lỗi; SKIP tiếp tục; RETRY gửi lại request | Chính sách dừng được duyệt; kết quả chưa rõ phải chặn replay | NOT_RUN |
+| Migration ledger | Chưa thấy trong executor thuộc scope | Lịch sử target, ID/hash ổn định và đối soát | NOT_RUN; chưa đủ bằng chứng |
+| Dedup | Receipt bền vững; unique delivery/flow+commit; khóa flow trong transaction | Dedup webhook an toàn khi đua và idempotency migration riêng | NOT_RUN; runner đã trace không có migration idempotency |
+| Approval | Lưu SHA-256 attachment; attachment xác nhận cấp dữ liệu cho Oracle split; sidecar kiểm digest gói | Gắn artifact và target đã duyệt; tách requester/approver/executor; ghi nhận quyền admin | NOT_RUN; không có so sánh digest trực tiếp; primary account có quyền approver |
+| Promotion | Có cấu trúc batch/child flow | Artifact bất biến và thứ tự môi trường được cưỡng chế | NOT_RUN; chưa thấy enforcement |
+
+## Mở rộng trace: receipt, split, hash binding và approval
+
+- [Receipt table migration](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/scripts/V202607210001__gitlab_cicd_source.java#L42-L59) khai báo unique `uk_trigger_delivery(owner_uid, ref_flow_id, delivery_id)` và `uk_trigger_commit(owner_uid, ref_flow_id, commit_id)`. Commit ID không null. [Trigger service](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/cicd/DmChangeServiceImpl.java#L697-L747) chạy transaction `REQUIRED`, khóa flow row qua [mapper `FOR UPDATE`](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-dao/src/main/resources/mybatis/mapper/DmChangeFlowMapper.xml#L175-L182), rồi reserve receipt bằng `INSERT IGNORE`. Đây là dedup bền vững webhook theo delivery/commit trong flow. Nó không phải target migration idempotency.
+- [Approval-to-split](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/approval/ApprovalControlServiceImpl.java#L984-L1025) lấy datasource/target levels từ ticket và tiêu thụ confirmed attachment. [Query analysis](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/analysis/impl/QueryAnalysisServiceImpl.java#L96-L105) chọn `SqlEngineSpi` bằng `DataSourceConfig`; [request splitter](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/analysis/impl/QueryAnalysisServiceImpl.java#L137-L163) gọi engine-specific `SplitAnalysisSpi`. Oracle implementation là [OraSplitAnalysisSpi](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16e/backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/java/com/clougence/sql/oracle/parser/OraSplitAnalysisSpi.java#L29-L49), backed by [Oracle DSL lexer/parser provider](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/java/com/clougence/sql/oracle/parser/OraDslProvider.java#L24-L63). Oracle parser wiring to the ticket split is now **SOURCE observed**. End-user semantics remain **NOT_RUN**.
+- [Attachment store](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/file/impl/LocalFileServiceImpl.java#L228-L263) computes SHA-256 and stores the file hash with attachment metadata. [Restore path](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/file/impl/LocalFileServiceImpl.java#L294-L325) validates bytes against that hash when the cache copy must be restored. `consumeLocked` does not re-hash an already-present cache file before passing it to the visitor. This is a source-level cache integrity boundary to review; it does not prove a practical tamper path.
+- Approval confirmation [consumes the locked confirmed SQL attachment](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/approval/impl/ApprovalServiceImpl.java#L58-L79). `AutoExecServiceImpl` splits/re-analyzes task text and packages serialized QueryRequests; local package attachment stores its SHA-256, while the DTO carries package MD5 and sidecar checks that MD5. There is no direct equality comparison between the approved attachment SHA-256 and the packaged request hash. The body lineage is from the locked attachment, but independent approval-to-execution digest binding is not observed.
+- [Approval person list](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/approval/handler/ChangeApprovalHandler.java#L139-L169) always includes the primary account and includes authorized subaccounts. [Approval decision](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/approval/impl/ApprovalFlowServiceImpl.java#L127-L168) checks only membership in that list; it has no requester-versus-approver inequality guard. If the applicant is also the primary account, the source has no guard against that overlap. Record this as primary-account authority; do not treat it as proof that ordinary-user GOV-03 fails. Execution authorization also returns true for the primary account in [checkOperationEnableWithResult](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/approval/ApprovalControlServiceImpl.java#L1184-L1215). Runtime identity and route behavior remain **NOT_RUN**.
+- [QueryRequest](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-plugin-sdk/src/main/java/com/clougence/clouddm/sdk/execute/session/QueryRequest.java#L34-L96) defaults `useCompile=false`. AutoExec task packaging builds new requests and copies query content/type/args without setting compile mode. [Oracle session](https://github.com/ClouGence/open-cdm/blob/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-ds/dsc-common-oracle/src/main/java/com/clougence/clouddm/dsfamily/oracle/execute/OraSession.java#L39-L91) only reads `ALL_ERRORS` when that flag is true. No source evidence shows the ticket runner invokes it automatically.
+
+The receipt gate closes webhook duplicate delivery/commit at SOURCE level. Approval content flows from the locked attachment into datasource-specific SQL split and request packaging. The system hashes the attachment and package separately, but no explicit digest comparison binds them. The primary account has approver and execution authority; this admin capability must be evaluated separately from ordinary requester separation.

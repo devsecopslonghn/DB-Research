@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-10-07T10:48:09.008247+00:00",
+  "authorization": "User said ti\u1ebfp t\u1ee5c in response to explicit normal ODC replacement question",
+  "context": "k8s-admin-public",
+  "namespace": "oceanbase-odc",
+  "action": "kubectl delete pod odc-5b74c68b74-bzcp7 --wait=false",
+  "exit_code": 0,
+  "old_pod": "odc-5b74c68b74-bzcp7",
+  "new_pod": "odc-5b74c68b74-v2cbd",
+  "metadb_restart": false,
+  "configuration_change": false
+}

@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-07T10:26:13.517331+00:00",
+  "request": {
+    "databaseId": 1000218,
+    "taskType": "ASYNC",
+    "executionStrategy": "MANUAL",
+    "description": "app=odc-adoption-poc; release=20261007-A2; ref=requester-permission-probe",
+    "parameters": {
+      "sqlContent": "SELECT 'P7_REQUESTER_AFTER_APPROVAL' AS POC_MARKER FROM DUAL;\n",
+      "timeoutMillis": 120000,
+      "errorStrategy": "ABORT",
+      "generateRollbackPlan": false,
+      "queryLimit": 100,
+      "delimiter": ";",
+      "retryTimes": 0,
+      "markAsFailedWhenAnyErrorsHappened": true
+    }
+  },
+  "response": {
+    "contents": [
+      {
+        "affectedRows": null,
+        "approvable": false,
+        "completeTime": null,
+        "createTime": null,
+        "creator": null,
+        "database": null,
+        "description": null,
+        "executionStrategy": null,
+        "executionTime": null,
+        "id": 2000002,
+        "nodeList": null,
+        "parameters": null,
+        "progressPercentage": 0.0,
+        "project": null,
+        "projectId": null,
+        "status": null,
+        "type": "ASYNC"
+      }
+    ]
+  }
+}

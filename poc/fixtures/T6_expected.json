@@ -1,0 +1,1 @@
+{"objects":[{"name":"OSS_POC_PARTIAL","type":"TABLE"}],"effects":[{"table":"OSS_POC_PARTIAL","key_column":"ID","key":1,"expected_count":0}],"invocations":[]}

@@ -1,0 +1,280 @@
+{
+  "release": "ClouGence/open-cdm v4.3.0",
+  "source_commit": "3aa1238a471afca2579e76e6fbf0a922d9be5579",
+  "source_commit_url": "https://github.com/ClouGence/open-cdm/tree/3aa1238a471afca2579e76e6fbf0a922d9be5579",
+  "release_asset": {
+    "url": "https://github.com/ClouGence/open-cdm/releases/download/v4.3.0/cgdm-alone-image-x86_64.tar.gz",
+    "sha256": "088bbc628d52d231c47d25792fc8ceaa25c5dd8d06ab87012bc338ae21c2ca29",
+    "bytes": 672779710
+  },
+  "oci": {
+    "index_digest": "sha256:510df19d9291d98887600cb77093f00bc7d05c6f59cb7549fadb8e7c57ad92ee",
+    "linux_amd64_manifest": "sha256:c6549411b9701840f75f4ad4c2f47fed82e4144e10c943dab81fd2d0550c11c1",
+    "config_digest": "sha256:24f06d5b39a86aab90a29a809b336e8100c2f05c0cdbfae0b830d0744444dc36",
+    "config_equal_archive": true,
+    "archive_blob_sha_checks": 24,
+    "ordered_layer_ids_match_oci_diff_ids": true,
+    "mismatches": 0,
+    "oci_manifest_config_layers_count": 12,
+    "oci_blob_total_bytes": 676816404
+  },
+  "selected_binary_jars": {
+    "cgdm-console-4.3.0.jar": "3f3484855608314c6c07a952b1e7d097560b20ebf23aeef1e4fbbffbcd3f67ce",
+    "cgdm-plugin-sdk-4.3.0.jar": "c54b88071ae7365410b9496485b3055779f3d22593811a26b43796cf9390babd",
+    "cgdm-sidecar-4.3.0.jar": "92c8a23643a15e55c0785f431271fe24dde90275e5cb8f8e45f978e37acbcf52",
+    "cgdm-dao-4.3.0.jar": "9ac31cd13b7d14fcdf5ff5a1febf297bf953f3db4f97f35fce16b2d6cb65f723",
+    "ds-oracle-lib.jar": "8182d3fc1ebaf3076fd20b3e8101a8e832e079d8a9cb247a1bbf1667ccd986ed",
+    "ds-oracle-lib.jar!/dsc-common-4.3.0.jar": "1900f4478a0d5d41cf1b6b078e04b56a2f332e37b7bc4e5335c8c1a23e9dd409",
+    "ds-oracle-lib.jar!/dsc-common-oracle-4.3.0.jar": "1a67f4499be05d28bdddaef13d354ff1f57400dbb3200246d035ddfbb13ecb9d"
+  },
+  "javap": {
+    "method_excerpt_files": [
+      "selected-javap.txt",
+      "QueryRequest.javap.txt",
+      "RdbSessionSpi.javap.txt",
+      "OraSessionSpi.javap.txt",
+      "AutoExecServiceImpl.javap.txt"
+    ],
+    "sha256": {
+      "selected-javap.txt": "26019cd2217d907baaa619f226fde342c3b541af21251c03728474920421b045",
+      "QueryRequest.javap.txt": "a83131bbf9f515eb80316d7023e1841a42cdd0e699f0b67f91b40ad4d53d277c",
+      "RdbSessionSpi.javap.txt": "906deaaafc26b8f5901a57d982fb1629d1a01b3304cfd52961b6bbff83455ac1",
+      "OraSessionSpi.javap.txt": "ec75508541fa47a195d3230c15fe59b88f9b4ad5d04cb62c42a29e971865bf74",
+      "AutoExecServiceImpl.javap.txt": "b21733becf7ab2468fae372879dfbeb41fb056a8494effbcccd0333a9a582866"
+    },
+    "methods": [
+      "RdpUserServiceImpl.addSubAccountCheck/addSubAccountForInternal/addSubAccountForBind",
+      "DmDsWebServiceImpl.persistAddDs",
+      "QueryRequest constructor",
+      "RdbSessionSpi.createQueryRequest",
+      "OraSessionSpi inherited registration (OraDsPlugin)",
+      "AutoExecServiceImpl request factory/copy fields"
+    ],
+    "command": "javap -p -c -l <class> against extracted application JARs; no class executed",
+    "commands": {
+      "selected-javap.txt": "javap -p -c -l <class>",
+      "QueryRequest.javap.txt": "javap -c -p -classpath cgdm-plugin-sdk-4.3.0.jar com.clougence.clouddm.sdk.execute.session.QueryRequest",
+      "RdbSessionSpi.javap.txt": "javap -c -p -classpath dsc-common-4.3.0.jar com.clougence.clouddm.dsfamily.execute.RdbSessionSpi",
+      "OraSessionSpi.javap.txt": "javap -c -p -classpath dsc-common-oracle-4.3.0.jar com.clougence.clouddm.dsfamily.oracle.execute.OraSessionSpi",
+      "AutoExecServiceImpl.javap.txt": "javap -c -p -classpath cgdm-console-4.3.0.jar com.clougence.clouddm.console.web.component.execute.impl.AutoExecServiceImpl"
+    },
+    "binary_class_jar_mapping": {
+      "QueryRequest.javap.txt": "QueryRequest from cgdm-plugin-sdk-4.3.0.jar",
+      "RdbSessionSpi.javap.txt": "RdbSessionSpi from nested dsc-common-4.3.0.jar",
+      "OraSessionSpi.javap.txt": "OraSessionSpi from nested dsc-common-oracle-4.3.0.jar",
+      "AutoExecServiceImpl.javap.txt": "AutoExecServiceImpl from cgdm-console-4.3.0.jar"
+    },
+    "source_only_terminal_path_symbols": [
+      "AutoExecJob item/run failure path",
+      "ExecJobRServiceProvider terminal failure path",
+      "ApprovalStateServiceImpl terminal transitions"
+    ]
+  },
+  "files": [
+    {
+      "path": "ActionServiceImpl.java",
+      "sha256": "e018999449d48b4d8380d7c0f72dac7add49022b936de32fa6dbea0ba98322f5",
+      "bytes": 27239,
+      "upstream_path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/browse/ActionServiceImpl.java",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/browse/ActionServiceImpl.java"
+    },
+    {
+      "path": "ApprovalStateServiceImpl.java",
+      "sha256": "73d46dbe0270c3316c6ae08f92ab8c7402a80a0172149fe6a3313cf826b53f8b",
+      "bytes": 19749,
+      "upstream_path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/approval/impl/ApprovalStateServiceImpl.java",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/approval/impl/ApprovalStateServiceImpl.java"
+    },
+    {
+      "path": "AutoExecJob.java",
+      "sha256": "cd3271f280b577f97db255a8c3457369aa02354dde5706f075641460315e86fd",
+      "bytes": 19143,
+      "upstream_path": "backend/clouddm-platform/cgdm-sidecar/src/main/java/com/clougence/clouddm/worker/component/autoexec/AutoExecJob.java",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-sidecar/src/main/java/com/clougence/clouddm/worker/component/autoexec/AutoExecJob.java"
+    },
+    {
+      "path": "AutoExecServiceImpl.java",
+      "sha256": "f02c1323a8a2c61f8bdfa36cafd031db5dc82d2dddd9c34b9d7a952c21e9f76e",
+      "bytes": 36358,
+      "upstream_path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/execute/impl/AutoExecServiceImpl.java",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/execute/impl/AutoExecServiceImpl.java"
+    },
+    {
+      "path": "AutoExecServiceImpl.javap.txt",
+      "sha256": "b21733becf7ab2468fae372879dfbeb41fb056a8494effbcccd0333a9a582866",
+      "bytes": 162406,
+      "provenance": "Static extraction from pinned v4.3.0 image or selected JAR disassembly; no executable run."
+    },
+    {
+      "path": "DefaultRdbSession.java",
+      "sha256": "9438d503c62c2db9f1c24c5e9f8388c8df6d63f1969d01a4007c21cd689053a9",
+      "bytes": 23992,
+      "upstream_path": "backend/clouddm-platform/cgdm-plugin-sdk/src/main/java/com/clougence/clouddm/sdk/execute/session/rdb/DefaultRdbSession.java",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-plugin-sdk/src/main/java/com/clougence/clouddm/sdk/execute/session/rdb/DefaultRdbSession.java"
+    },
+    {
+      "path": "DmDsController.java",
+      "sha256": "8ca34ce0a8cdf7605cd4c9558f421a14fc0b8afee5ce2ab035fd60a3b1eb4362",
+      "bytes": 19694,
+      "upstream_path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/controller/datasource/DmDsController.java",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/controller/datasource/DmDsController.java"
+    },
+    {
+      "path": "DmDsUtils.java",
+      "sha256": "dd001b5701db9979ca6d540cc368b81af080b65713a15b6c2db48605cea3f0d0",
+      "bytes": 11570,
+      "upstream_path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/util/DmDsUtils.java",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/util/DmDsUtils.java"
+    },
+    {
+      "path": "DmDsWebServiceImpl.java",
+      "sha256": "10dfcdaf3b1d437e3a43219c99c245318795163c82d1de4cd3d57171ed405d29",
+      "bytes": 27454,
+      "upstream_path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/datasource/DmDsWebServiceImpl.java",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/datasource/DmDsWebServiceImpl.java"
+    },
+    {
+      "path": "DmExecAutoJobMapper.xml",
+      "sha256": "80b7474e691bb801762b7e2f3a3518062c8063bda18a27b474d6d8fa1283d691",
+      "bytes": 7893,
+      "upstream_path": "backend/clouddm-platform/cgdm-dao/src/main/resources/mybatis/mapper/DmExecAutoJobMapper.xml",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-dao/src/main/resources/mybatis/mapper/DmExecAutoJobMapper.xml"
+    },
+    {
+      "path": "DmFlywayInit.java",
+      "sha256": "ab3b8494d35b7b6d77bc0422d39ef8f41777b9b1fda22730e85d278e07d5f5b8",
+      "bytes": 10075,
+      "upstream_path": "backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/flyway/DmFlywayInit.java",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/flyway/DmFlywayInit.java"
+    },
+    {
+      "path": "ExecJobRServiceProvider.java",
+      "sha256": "2e69e6a7db95b1cc330376e0aab90336421d8691b90370756d0f5e13e0790090",
+      "bytes": 13463,
+      "upstream_path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/provider/ExecJobRServiceProvider.java",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/provider/ExecJobRServiceProvider.java"
+    },
+    {
+      "path": "LICENSE.txt",
+      "sha256": "a714b40a28d8cefd070eb0b62e976edf3e85f3304ff4097971453da778ef7844",
+      "bytes": 11368,
+      "upstream_path": "LICENSE.txt",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/LICENSE.txt"
+    },
+    {
+      "path": "OraDsPlugin.java",
+      "sha256": "ff0b2d7ba464a65d9180dd87f4d3f19d1dfd15e761da677be217442afa918dc4",
+      "bytes": 5801,
+      "upstream_path": "backend/clouddm-plugins/clouddm-ds/ds-oracle/src/main/java/com/clougence/clouddm/ds/oracle/OraDsPlugin.java",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-plugins/clouddm-ds/ds-oracle/src/main/java/com/clougence/clouddm/ds/oracle/OraDsPlugin.java"
+    },
+    {
+      "path": "OraSessionSpi.java",
+      "sha256": "ad17a78437c6ce0ca1017dbb74f742ffbca3614b97484896e9be9b2841e3d4c7",
+      "bytes": 1558,
+      "upstream_path": "backend/clouddm-plugins/clouddm-ds/dsc-common-oracle/src/main/java/com/clougence/clouddm/dsfamily/oracle/execute/OraSessionSpi.java",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-plugins/clouddm-ds/dsc-common-oracle/src/main/java/com/clougence/clouddm/dsfamily/oracle/execute/OraSessionSpi.java"
+    },
+    {
+      "path": "OraSessionSpi.javap.txt",
+      "sha256": "ec75508541fa47a195d3230c15fe59b88f9b4ad5d04cb62c42a29e971865bf74",
+      "bytes": 2056,
+      "provenance": "Static extraction from pinned v4.3.0 image or selected JAR disassembly; no executable run."
+    },
+    {
+      "path": "Oracle-FUTC.txt",
+      "sha256": "0db5d7d8964a36dac4da9f9fcae3b19e13088adb90761a87c4e7f407dc0e4e5e",
+      "bytes": 6463,
+      "upstream_path": "package/legal/licenses/Oracle-FUTC.txt",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/package/legal/licenses/Oracle-FUTC.txt"
+    },
+    {
+      "path": "QueryRequest.java",
+      "sha256": "b4ac24fc1971ca9a2a33d05b05102a1f038ffa04672efd964f6f06c48be6efe6",
+      "bytes": 4343,
+      "upstream_path": "backend/clouddm-platform/cgdm-plugin-sdk/src/main/java/com/clougence/clouddm/sdk/execute/session/QueryRequest.java",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-plugin-sdk/src/main/java/com/clougence/clouddm/sdk/execute/session/QueryRequest.java"
+    },
+    {
+      "path": "QueryRequest.javap.txt",
+      "sha256": "a83131bbf9f515eb80316d7023e1841a42cdd0e699f0b67f91b40ad4d53d277c",
+      "bytes": 19249,
+      "provenance": "Static extraction from pinned v4.3.0 image or selected JAR disassembly; no executable run."
+    },
+    {
+      "path": "RdbSessionSpi.java",
+      "sha256": "3a7b7bd14432855659e5f1fde7911bae7a7f9b0d74b2701524cd6ca52f9a28f1",
+      "bytes": 3664,
+      "upstream_path": "backend/clouddm-plugins/clouddm-ds/dsc-common/src/main/java/com/clougence/clouddm/dsfamily/execute/RdbSessionSpi.java",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-plugins/clouddm-ds/dsc-common/src/main/java/com/clougence/clouddm/dsfamily/execute/RdbSessionSpi.java"
+    },
+    {
+      "path": "RdbSessionSpi.javap.txt",
+      "sha256": "906deaaafc26b8f5901a57d982fb1629d1a01b3304cfd52961b6bbff83455ac1",
+      "bytes": 9993,
+      "provenance": "Static extraction from pinned v4.3.0 image or selected JAR disassembly; no executable run."
+    },
+    {
+      "path": "RdpUserManagerController.java",
+      "sha256": "29ee54667d77bbcce6f033d493ec2724990ce9e2da9fcb12e6c5464364ddae21",
+      "bytes": 14135,
+      "upstream_path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/rdp/controller/RdpUserManagerController.java",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/rdp/controller/RdpUserManagerController.java"
+    },
+    {
+      "path": "RdpUserServiceImpl.java",
+      "sha256": "f5444f010d7359a8542c5ecfe755b0bd032fa05b5f3cf5c3e2874cfb0f6bdf80",
+      "bytes": 46926,
+      "upstream_path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/rdp/service/impl/RdpUserServiceImpl.java",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/rdp/service/impl/RdpUserServiceImpl.java"
+    },
+    {
+      "path": "SOURCE-CODE.md",
+      "sha256": "461390758ca8f20981a4845e9ab536a036ca9a56470e6773364776716e160528",
+      "bytes": 860,
+      "upstream_path": "package/legal/SOURCE-CODE.md",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/package/legal/SOURCE-CODE.md"
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.txt",
+      "sha256": "aecf2dec933fc1904d2308c97456f5931278566317779a809aabdf1c30d6033c",
+      "bytes": 11096,
+      "upstream_path": "package/legal/THIRD-PARTY-NOTICES.txt",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/package/legal/THIRD-PARTY-NOTICES.txt"
+    },
+    {
+      "path": "selected-javap.txt",
+      "sha256": "26019cd2217d907baaa619f226fde342c3b541af21251c03728474920421b045",
+      "bytes": 40466,
+      "provenance": "Static extraction from pinned v4.3.0 image or selected JAR disassembly; no executable run."
+    },
+    {
+      "path": "ui-datasource-info.vue",
+      "sha256": "1cbdc38c7a96cb8ebb0b46bdb2f739421a5b23ed01066e325f90c83465b2775c",
+      "bytes": 37069,
+      "upstream_path": "frontend/src/components/function/addDataSource/DataSourceInfo.vue",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/frontend/src/components/function/addDataSource/DataSourceInfo.vue"
+    },
+    {
+      "path": "ui-datasource-view.vue",
+      "sha256": "f2fafb7b6dcedc38526fd7b334c79d2e9f38872e35f0c74b066ef8d3484856e7",
+      "bytes": 46971,
+      "upstream_path": "frontend/src/views/dataSource/DataSource.vue",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/frontend/src/views/dataSource/DataSource.vue"
+    },
+    {
+      "path": "ui-subaccount-index.vue",
+      "sha256": "d339cdb7e2dc1c6b3a0029c24b212b6cda9f05b7dff020710c8aa3a80aa8eb1a",
+      "bytes": 36064,
+      "upstream_path": "frontend/src/views/system/subaccount/index.vue",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/frontend/src/views/system/subaccount/index.vue"
+    },
+    {
+      "path": "ui-user-api.js",
+      "sha256": "15173ba88798510534ebdce0c27932462bb23536ddefd15262b1fd6f2b991075",
+      "bytes": 2219,
+      "upstream_path": "frontend/src/services/http/api/user.js",
+      "upstream_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/frontend/src/services/http/api/user.js"
+    }
+  ]
+}

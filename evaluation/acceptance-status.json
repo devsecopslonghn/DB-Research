@@ -1,0 +1,39 @@
+{
+  "scope": "T00–T04 source/spec artifacts only",
+  "tasks": {
+    "T00": {
+      "artifact_status": "COMPLETE",
+      "runtime_status": "NOT_RUN",
+      "next_dependencies": "T05 target/quota/build/license pin; T06–T08 correctness; T09 explicit benchmark scope; T10 dedicated recovery target"
+    },
+    "T01": {
+      "artifact_status": "COMPLETE",
+      "runtime_status": "NOT_RUN",
+      "next_dependencies": "T05 target/quota/build/license pin; T06–T08 correctness; T09 explicit benchmark scope; T10 dedicated recovery target"
+    },
+    "T02": {
+      "artifact_status": "COMPLETE",
+      "runtime_status": "NOT_RUN",
+      "next_dependencies": "T05 target/quota/build/license pin; T06–T08 correctness; T09 explicit benchmark scope; T10 dedicated recovery target"
+    },
+    "T03": {
+      "artifact_status": "COMPLETE",
+      "runtime_status": "NOT_RUN",
+      "next_dependencies": "T05 target/quota/build/license pin; T06–T08 correctness; T09 explicit benchmark scope; T10 dedicated recovery target"
+    },
+    "T04": {
+      "artifact_status": "COMPLETE",
+      "runtime_status": "NOT_RUN",
+      "next_dependencies": "T05 target/quota/build/license pin; T06–T08 correctness; T09 explicit benchmark scope; T10 dedicated recovery target"
+    }
+  },
+  "unverified": "Full image/SBOM/driver distribution; exact source-image mapping; edition counter enforcement; Oracle19c/21c; native fixture correctness; real CI; recovery; performance",
+  "research_revision": "round-2",
+  "source_research_extension": "COMPLETE within documented public/scoped paths; search is not exhaustive",
+  "cross_reviews": [
+    "research-round-2/clouddm/cross-review.md",
+    "research-round-2/licensing/cross-review.md",
+    "research-round-2/discovery/cross-review.md"
+  ],
+  "information_preflight": "T05 information artifacts only; deployment/runtime NOT_RUN"
+}

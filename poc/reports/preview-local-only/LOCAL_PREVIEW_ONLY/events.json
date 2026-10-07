@@ -1,0 +1,18 @@
+[
+  {
+    "sequence": 1,
+    "release_id": "LOCAL_PREVIEW_ONLY",
+    "timestamp": "2026-10-07T09:06:11.809595+00:00",
+    "action": "NOT_STARTED",
+    "actor": "LOCAL_FIXTURE_REQUESTER",
+    "details": "{\"binding\":\"cab65fe684b4f7a6da278ad9123c38dcf2d7e761cc57765f747f8525c81dc1fa\"}"
+  },
+  {
+    "sequence": 2,
+    "release_id": "LOCAL_PREVIEW_ONLY",
+    "timestamp": "2026-10-07T09:06:11.959330+00:00",
+    "action": "APPROVED",
+    "actor": "LOCAL_FIXTURE_REVIEWER",
+    "details": "{\"binding\":\"cab65fe684b4f7a6da278ad9123c38dcf2d7e761cc57765f747f8525c81dc1fa\"}"
+  }
+]

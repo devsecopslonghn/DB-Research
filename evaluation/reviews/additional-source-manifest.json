@@ -1,0 +1,22 @@
+[
+  {
+    "path": "evaluation/candidates/clouddm/source/frontend__src__views__dataSource__DataSource.vue",
+    "source_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/frontend/src/views/dataSource/DataSource.vue",
+    "sha256": "f2fafb7b6dcedc38526fd7b334c79d2e9f38872e35f0c74b066ef8d3484856e7"
+  },
+  {
+    "path": "evaluation/candidates/clouddm/source/frontend__src__router__index.js",
+    "source_url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/frontend/src/router/index.js",
+    "sha256": "b4bc4579e04793d26a0fe0ced50c74223a36bb984b89ce1c8e7ba5f37e54ef1e"
+  },
+  {
+    "path": "evaluation/candidates/discovery/source/LICENSE",
+    "source_url": "https://raw.githubusercontent.com/tianyuso/advisorTool/19a49a72c63f741cd8a655c27dc9cbf980a8634e/LICENSE",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+  },
+  {
+    "path": "evaluation/candidates/discovery/source/README.md",
+    "source_url": "https://raw.githubusercontent.com/adminerevo/adminerevo/d11a2e87cc0da5e631d442c4b59819f92117a733/README.md",
+    "sha256": "da3a2e3e7f4cb4e6dfe03b36510dd45bcf84f8de8454e94289dc35bad585a990"
+  }
+]

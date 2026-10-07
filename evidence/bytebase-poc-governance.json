@@ -1,0 +1,1123 @@
+{
+  "observed_at": "2026-10-04T07:24:44.671517+00:00",
+  "project": "projects/bbpoc-20261004",
+  "role_scope": {
+    "bootstrap": "Provided workspaceAdmin account used only for setup and license reads.",
+    "approver": [
+      "projectOwner",
+      "sqlEditorUser"
+    ],
+    "requester": [
+      "projectDeveloper",
+      "sqlEditorReadUser"
+    ],
+    "executor": [
+      "projectReleaser"
+    ],
+    "observer": [
+      "projectViewer",
+      "sqlEditorReadUser"
+    ],
+    "ci": [
+      "projectDeveloper"
+    ],
+    "outsider": []
+  },
+  "mockprod_control": {
+    "plan": "projects/bbpoc-20261004/plans/121",
+    "requester_create_rollout": {
+      "http_status": 403,
+      "detail": {
+        "code": 7,
+        "message": "permission denied to create rollout"
+      }
+    },
+    "requester_execute": {
+      "http_status": 403,
+      "detail": {
+        "code": 7,
+        "message": "Not allowed to run tasks"
+      }
+    },
+    "ci_execute": {
+      "http_status": 403,
+      "detail": {
+        "code": 7,
+        "message": "Not allowed to run tasks"
+      }
+    },
+    "requester_approve": {
+      "http_status": 500,
+      "detail": {
+        "code": 13,
+        "message": "approval template is required"
+      }
+    },
+    "approval_status": "CHECKING",
+    "authorized_execution": {
+      "stages": [
+        {
+          "name": "projects/bbpoc-20261004/plans/121/rollout/stages/staging",
+          "environment": "environments/staging",
+          "tasks": [
+            {
+              "name": "projects/bbpoc-20261004/plans/121/rollout/stages/staging/tasks/124",
+              "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-mockprod/databases/BBPOC_20261004_MOCKPROD",
+              "status": "DONE",
+              "type": "DATABASE_MIGRATE",
+              "updateTime": "2026-10-04T07:06:15.494251Z"
+            }
+          ]
+        }
+      ],
+      "issue": {
+        "name": "projects/bbpoc-20261004/issues/121",
+        "creator": "users/bbpoc-20261004-requester@drgdevlab.com",
+        "createTime": "2026-10-04T07:06:00.789656Z",
+        "updateTime": "2026-10-04T07:06:01.380832Z",
+        "status": "DONE",
+        "approvalStatus": "SKIPPED",
+        "plan": "projects/bbpoc-20261004/plans/121"
+      },
+      "task_runs": [
+        {
+          "name": "projects/bbpoc-20261004/plans/121/rollout/stages/staging/tasks/124/taskRuns/127",
+          "creator": "users/bbpoc-20261004-executor@drgdevlab.com",
+          "status": "DONE",
+          "createTime": "2026-10-04T07:06:01.446651Z",
+          "startTime": "2026-10-04T07:06:06.128150Z",
+          "updateTime": "2026-10-04T07:06:15.494251Z"
+        }
+      ],
+      "attempts": [
+        {
+          "time": "2026-10-04T07:06:01.480828+00:00",
+          "actor": "executor",
+          "stage": "projects/bbpoc-20261004/plans/121/rollout/stages/staging",
+          "http_status": 200
+        }
+      ],
+      "log_events": [
+        {
+          "task_run": "projects/bbpoc-20261004/plans/121/rollout/stages/staging/tasks/124/taskRuns/127",
+          "events": [
+            {
+              "type": "DATABASE_SYNC",
+              "logTime": "2026-10-04T07:06:07.783061Z"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "local_ci_identity": {
+    "plan": {
+      "name": "projects/bbpoc-20261004/plans/122",
+      "creator": "users/bbpoc-20261004-ci@bbpoc-20261004.service.bytebase.com",
+      "description": "initiating_job=local-bbpoc-20261004-ci-control; NOT GitLab or Jenkins execution",
+      "title": "BBPOC named CI principal local trigger"
+    },
+    "issue": {
+      "name": "projects/bbpoc-20261004/issues/122",
+      "creator": "users/bbpoc-20261004-ci@bbpoc-20261004.service.bytebase.com",
+      "plan": "projects/bbpoc-20261004/plans/122",
+      "approvalStatus": "CHECKING"
+    },
+    "actual_gitlab_jenkins_job_run": false
+  },
+  "audit_gate": {
+    "search": {
+      "http_status": 403,
+      "detail": {
+        "code": 7,
+        "message": "feature FEATURE_AUDIT_LOG is a TEAM feature, please upgrade to access it"
+      }
+    },
+    "export": {
+      "http_status": 403,
+      "detail": {
+        "code": 7,
+        "message": "feature FEATURE_AUDIT_LOG is a TEAM feature, please upgrade to access it"
+      }
+    }
+  },
+  "native_observer": {
+    "select": {
+      "time": "2026-10-04T06:40:09.814777+00:00",
+      "schema": "BBPOC_20261004_OBSERVER",
+      "sql": "SELECT ORDER_ID,AMOUNT FROM BBPOC_20261004_DEV.POC_ORDERS",
+      "successful": true,
+      "columns": [
+        "ORDER_ID",
+        "AMOUNT"
+      ],
+      "rows": [
+        [
+          1,
+          200.0
+        ],
+        [
+          801,
+          8.01
+        ],
+        [
+          802,
+          8.02
+        ]
+      ]
+    },
+    "update": {
+      "denied": true,
+      "error_code": 41900,
+      "message": "ORA-41900: missing UPDATE privilege on \"BBPOC_20261004_DEV\".\"POC_ORDERS\"\nHelp: https://docs.oracle.com/error-help/db/ora-41900/"
+    }
+  },
+  "native_cross_schema_denial": {
+    "time": "2026-10-04T07:06:00.695970+00:00",
+    "schema": "BBPOC_20261004_DEV",
+    "sql": "SELECT * FROM BBPOC_20261004_SIT.POC_PROMOTION",
+    "successful": false,
+    "error_code": 942,
+    "error_message": "ORA-00942: table or view \"BBPOC_20261004_SIT\".\"POC_PROMOTION\" does not exist\nHelp: https://docs.oracle.com/error-help/db/ora-00942/"
+  },
+  "observer_query_controls": {
+    "probes": [
+      {
+        "time": "2026-10-04T06:45:05.094276+00:00",
+        "sql": "SELECT COUNT(*) AS N FROM POC_ORDERS",
+        "result": {
+          "http_status": 200,
+          "results": [
+            {
+              "columnNames": [
+                "N"
+              ],
+              "error": null,
+              "rows": [
+                {
+                  "values": [
+                    {
+                      "stringValue": "3"
+                    }
+                  ]
+                }
+              ],
+              "rowCount": null
+            }
+          ],
+          "api_code": null
+        },
+        "message": null
+      },
+      {
+        "time": "2026-10-04T06:45:06.823800+00:00",
+        "sql": "UPDATE POC_ORDERS SET NOTE='QUERY_DENY_PROBE' WHERE ORDER_ID=1",
+        "result": {
+          "http_status": 200,
+          "results": [
+            {
+              "columnNames": null,
+              "error": "permission_denied: permission denied to access resources: [projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV/tables/POC_ORDERS]",
+              "rows": null,
+              "rowCount": null
+            }
+          ],
+          "api_code": null
+        },
+        "message": null
+      },
+      {
+        "time": "2026-10-04T06:45:08.671092+00:00",
+        "sql": "CREATE TABLE POC_QUERY_BYPASS (ID NUMBER)",
+        "result": {
+          "http_status": 200,
+          "results": [
+            {
+              "columnNames": null,
+              "error": "permission_denied: permission denied to access resources: [projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV/tables/POC_QUERY_BYPASS]",
+              "rows": null,
+              "rowCount": null
+            }
+          ],
+          "api_code": null
+        },
+        "message": null
+      }
+    ],
+    "postcheck": {
+      "time": "2026-10-04T06:45:09.837549+00:00",
+      "schema": "BBPOC_20261004_DEV",
+      "sql": "SELECT TABLE_NAME FROM USER_TABLES WHERE TABLE_NAME='POC_QUERY_BYPASS'",
+      "successful": true,
+      "columns": [
+        "TABLE_NAME"
+      ],
+      "rows": []
+    }
+  },
+  "expiry": {
+    "deadline": "2026-10-04T06:44:25.685118+00:00",
+    "positive": {
+      "http_status": 200,
+      "results": [
+        {
+          "columnNames": [
+            "USER"
+          ],
+          "error": null,
+          "rows": [
+            {
+              "values": [
+                {
+                  "stringValue": "BBPOC_20261004_DEV"
+                }
+              ]
+            }
+          ],
+          "rowCount": null
+        }
+      ],
+      "api_code": null
+    },
+    "after_expiry": {
+      "http_status": 200,
+      "results": [
+        {
+          "columnNames": null,
+          "error": "permission_denied: permission denied to access resources: projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV",
+          "rows": null,
+          "rowCount": null
+        }
+      ],
+      "api_code": null
+    },
+    "after_revoke": {
+      "http_status": 403,
+      "code": 7,
+      "message": "permission denied for method \"/bytebase.v1.ProjectService/GetProject\", user does not have permission \"bb.projects.get\", extra [projects/bbpoc-20261004]"
+    }
+  },
+  "manual_continuation": {
+    "paused_execution": {
+      "stages": [
+        {
+          "name": "projects/bbpoc-20261004/plans/132/rollout/stages/develop",
+          "environment": "environments/develop",
+          "tasks": [
+            {
+              "name": "projects/bbpoc-20261004/plans/132/rollout/stages/develop/tasks/138",
+              "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV",
+              "status": "DONE",
+              "type": "DATABASE_MIGRATE",
+              "updateTime": "2026-10-04T07:11:51.789197Z"
+            }
+          ]
+        },
+        {
+          "name": "projects/bbpoc-20261004/plans/132/rollout/stages/sit",
+          "environment": "environments/sit",
+          "tasks": [
+            {
+              "name": "projects/bbpoc-20261004/plans/132/rollout/stages/sit/tasks/139",
+              "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-sit/databases/BBPOC_20261004_SIT",
+              "status": "NOT_STARTED",
+              "type": "DATABASE_MIGRATE"
+            }
+          ]
+        }
+      ],
+      "issue": {
+        "name": "projects/bbpoc-20261004/issues/132",
+        "creator": "users/bbpoc-20261004-requester@drgdevlab.com",
+        "createTime": "2026-10-04T07:11:40.575307Z",
+        "updateTime": "2026-10-04T07:11:40.666351Z",
+        "status": "DONE",
+        "approvalStatus": "SKIPPED",
+        "plan": "projects/bbpoc-20261004/plans/132"
+      },
+      "task_runs": [
+        {
+          "name": "projects/bbpoc-20261004/plans/132/rollout/stages/develop/tasks/138/taskRuns/140",
+          "creator": "users/bbpoc-20261004-executor@drgdevlab.com",
+          "status": "DONE",
+          "createTime": "2026-10-04T07:11:40.736274Z",
+          "startTime": "2026-10-04T07:11:41.133002Z",
+          "updateTime": "2026-10-04T07:11:51.789197Z"
+        }
+      ],
+      "attempts": [
+        {
+          "time": "2026-10-04T07:11:40.770510+00:00",
+          "actor": "executor",
+          "stage": "projects/bbpoc-20261004/plans/132/rollout/stages/develop",
+          "http_status": 200
+        }
+      ],
+      "log_events": [
+        {
+          "task_run": "projects/bbpoc-20261004/plans/132/rollout/stages/develop/tasks/138/taskRuns/140",
+          "events": [
+            {
+              "type": "RELEASE_FILE_EXECUTE",
+              "logTime": "2026-10-04T07:11:42.664233Z",
+              "file": {
+                "version": "20261004024",
+                "filePath": "V20261004024__MODEL08_manual_continuation.sql"
+              }
+            },
+            {
+              "type": "TRANSACTION_CONTROL",
+              "logTime": "2026-10-04T07:11:42.668463Z",
+              "transaction": {
+                "type": "BEGIN"
+              }
+            },
+            {
+              "type": "COMMAND_EXECUTE",
+              "logTime": "2026-10-04T07:11:42.670086Z",
+              "statement_range": {
+                "end": 73
+              },
+              "outcome": {
+                "logTime": "2026-10-04T07:11:42.916123Z",
+                "allAffectedRows": [
+                  "0"
+                ]
+              }
+            },
+            {
+              "type": "COMMAND_EXECUTE",
+              "logTime": "2026-10-04T07:11:42.918462Z",
+              "statement_range": {
+                "start": 74,
+                "end": 140
+              },
+              "outcome": {
+                "logTime": "2026-10-04T07:11:43.158290Z",
+                "affectedRows": "1",
+                "allAffectedRows": [
+                  "1"
+                ]
+              }
+            },
+            {
+              "type": "COMMAND_EXECUTE",
+              "logTime": "2026-10-04T07:11:43.160858Z",
+              "statement_range": {
+                "start": 141,
+                "end": 148
+              },
+              "outcome": {
+                "logTime": "2026-10-04T07:11:43.388446Z",
+                "allAffectedRows": [
+                  "0"
+                ]
+              }
+            },
+            {
+              "type": "TRANSACTION_CONTROL",
+              "logTime": "2026-10-04T07:11:43.504046Z",
+              "transaction": {
+                "type": "COMMIT"
+              }
+            },
+            {
+              "type": "DATABASE_SYNC",
+              "logTime": "2026-10-04T07:11:43.510350Z"
+            }
+          ]
+        }
+      ]
+    },
+    "sit_before": {
+      "time": "2026-10-04T07:11:52.966390+00:00",
+      "schema": "BBPOC_20261004_SIT",
+      "sql": "SELECT COUNT(*) FROM USER_TABLES WHERE TABLE_NAME='POC_MANUAL_STAGE2'",
+      "successful": true,
+      "columns": [
+        "COUNT(*)"
+      ],
+      "rows": [
+        [
+          0
+        ]
+      ]
+    },
+    "unauthorized": {
+      "http_status": 403,
+      "detail": {
+        "code": 7,
+        "message": "Not allowed to run tasks"
+      }
+    },
+    "authorized": {
+      "stages": [
+        {
+          "name": "projects/bbpoc-20261004/plans/132/rollout/stages/develop",
+          "environment": "environments/develop",
+          "tasks": [
+            {
+              "name": "projects/bbpoc-20261004/plans/132/rollout/stages/develop/tasks/138",
+              "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV",
+              "status": "DONE",
+              "type": "DATABASE_MIGRATE",
+              "updateTime": "2026-10-04T07:11:51.789197Z"
+            }
+          ]
+        },
+        {
+          "name": "projects/bbpoc-20261004/plans/132/rollout/stages/sit",
+          "environment": "environments/sit",
+          "tasks": [
+            {
+              "name": "projects/bbpoc-20261004/plans/132/rollout/stages/sit/tasks/139",
+              "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-sit/databases/BBPOC_20261004_SIT",
+              "status": "DONE",
+              "type": "DATABASE_MIGRATE",
+              "updateTime": "2026-10-04T07:12:03.164666Z"
+            }
+          ]
+        }
+      ],
+      "issue": {
+        "name": "projects/bbpoc-20261004/issues/132",
+        "creator": "users/bbpoc-20261004-requester@drgdevlab.com",
+        "createTime": "2026-10-04T07:11:40.575307Z",
+        "updateTime": "2026-10-04T07:11:53.167449Z",
+        "status": "DONE",
+        "approvalStatus": "SKIPPED",
+        "plan": "projects/bbpoc-20261004/plans/132"
+      },
+      "task_runs": [
+        {
+          "name": "projects/bbpoc-20261004/plans/132/rollout/stages/develop/tasks/138/taskRuns/140",
+          "creator": "users/bbpoc-20261004-executor@drgdevlab.com",
+          "status": "DONE",
+          "createTime": "2026-10-04T07:11:40.736274Z",
+          "startTime": "2026-10-04T07:11:41.133002Z",
+          "updateTime": "2026-10-04T07:11:51.789197Z"
+        },
+        {
+          "name": "projects/bbpoc-20261004/plans/132/rollout/stages/sit/tasks/139/taskRuns/141",
+          "creator": "users/bbpoc-20261004-executor@drgdevlab.com",
+          "status": "DONE",
+          "createTime": "2026-10-04T07:11:53.230694Z",
+          "startTime": "2026-10-04T07:11:53.259892Z",
+          "updateTime": "2026-10-04T07:12:03.164666Z"
+        }
+      ],
+      "attempts": [
+        {
+          "time": "2026-10-04T07:11:53.263641+00:00",
+          "actor": "executor",
+          "stage": "projects/bbpoc-20261004/plans/132/rollout/stages/sit",
+          "http_status": 200
+        }
+      ],
+      "log_events": [
+        {
+          "task_run": "projects/bbpoc-20261004/plans/132/rollout/stages/develop/tasks/138/taskRuns/140",
+          "events": [
+            {
+              "type": "RELEASE_FILE_EXECUTE",
+              "logTime": "2026-10-04T07:11:42.664233Z",
+              "file": {
+                "version": "20261004024",
+                "filePath": "V20261004024__MODEL08_manual_continuation.sql"
+              }
+            },
+            {
+              "type": "TRANSACTION_CONTROL",
+              "logTime": "2026-10-04T07:11:42.668463Z",
+              "transaction": {
+                "type": "BEGIN"
+              }
+            },
+            {
+              "type": "COMMAND_EXECUTE",
+              "logTime": "2026-10-04T07:11:42.670086Z",
+              "statement_range": {
+                "end": 73
+              },
+              "outcome": {
+                "logTime": "2026-10-04T07:11:42.916123Z",
+                "allAffectedRows": [
+                  "0"
+                ]
+              }
+            },
+            {
+              "type": "COMMAND_EXECUTE",
+              "logTime": "2026-10-04T07:11:42.918462Z",
+              "statement_range": {
+                "start": 74,
+                "end": 140
+              },
+              "outcome": {
+                "logTime": "2026-10-04T07:11:43.158290Z",
+                "affectedRows": "1",
+                "allAffectedRows": [
+                  "1"
+                ]
+              }
+            },
+            {
+              "type": "COMMAND_EXECUTE",
+              "logTime": "2026-10-04T07:11:43.160858Z",
+              "statement_range": {
+                "start": 141,
+                "end": 148
+              },
+              "outcome": {
+                "logTime": "2026-10-04T07:11:43.388446Z",
+                "allAffectedRows": [
+                  "0"
+                ]
+              }
+            },
+            {
+              "type": "TRANSACTION_CONTROL",
+              "logTime": "2026-10-04T07:11:43.504046Z",
+              "transaction": {
+                "type": "COMMIT"
+              }
+            },
+            {
+              "type": "DATABASE_SYNC",
+              "logTime": "2026-10-04T07:11:43.510350Z"
+            }
+          ]
+        },
+        {
+          "task_run": "projects/bbpoc-20261004/plans/132/rollout/stages/sit/tasks/139/taskRuns/141",
+          "events": [
+            {
+              "type": "RELEASE_FILE_EXECUTE",
+              "logTime": "2026-10-04T07:11:54.831274Z",
+              "file": {
+                "version": "20261004024",
+                "filePath": "V20261004024__MODEL08_manual_continuation.sql"
+              }
+            },
+            {
+              "type": "TRANSACTION_CONTROL",
+              "logTime": "2026-10-04T07:11:54.833526Z",
+              "transaction": {
+                "type": "BEGIN"
+              }
+            },
+            {
+              "type": "COMMAND_EXECUTE",
+              "logTime": "2026-10-04T07:11:54.835114Z",
+              "statement_range": {
+                "end": 73
+              },
+              "outcome": {
+                "logTime": "2026-10-04T07:11:55.148412Z",
+                "allAffectedRows": [
+                  "0"
+                ]
+              }
+            },
+            {
+              "type": "COMMAND_EXECUTE",
+              "logTime": "2026-10-04T07:11:55.150789Z",
+              "statement_range": {
+                "start": 74,
+                "end": 140
+              },
+              "outcome": {
+                "logTime": "2026-10-04T07:11:55.401642Z",
+                "affectedRows": "1",
+                "allAffectedRows": [
+                  "1"
+                ]
+              }
+            },
+            {
+              "type": "COMMAND_EXECUTE",
+              "logTime": "2026-10-04T07:11:55.403744Z",
+              "statement_range": {
+                "start": 141,
+                "end": 148
+              },
+              "outcome": {
+                "logTime": "2026-10-04T07:11:55.641462Z",
+                "allAffectedRows": [
+                  "0"
+                ]
+              }
+            },
+            {
+              "type": "TRANSACTION_CONTROL",
+              "logTime": "2026-10-04T07:11:55.762179Z",
+              "transaction": {
+                "type": "COMMIT"
+              }
+            },
+            {
+              "type": "DATABASE_SYNC",
+              "logTime": "2026-10-04T07:11:55.767520Z"
+            }
+          ]
+        }
+      ]
+    },
+    "sit_after": {
+      "time": "2026-10-04T07:12:04.321940+00:00",
+      "schema": "BBPOC_20261004_SIT",
+      "sql": "SELECT * FROM POC_MANUAL_STAGE2",
+      "successful": true,
+      "columns": [
+        "ID",
+        "NOTE"
+      ],
+      "rows": [
+        [
+          1,
+          "EXPLICIT_CONTINUATION"
+        ]
+      ]
+    }
+  },
+  "failed_stage": {
+    "first_execution": {
+      "stages": [
+        {
+          "name": "projects/bbpoc-20261004/plans/131/rollout/stages/develop",
+          "environment": "environments/develop",
+          "tasks": [
+            {
+              "name": "projects/bbpoc-20261004/plans/131/rollout/stages/develop/tasks/136",
+              "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV",
+              "status": "FAILED",
+              "type": "DATABASE_MIGRATE",
+              "updateTime": "2026-10-04T07:11:21.026302Z"
+            }
+          ]
+        },
+        {
+          "name": "projects/bbpoc-20261004/plans/131/rollout/stages/sit",
+          "environment": "environments/sit",
+          "tasks": [
+            {
+              "name": "projects/bbpoc-20261004/plans/131/rollout/stages/sit/tasks/137",
+              "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-sit/databases/BBPOC_20261004_SIT",
+              "status": "NOT_STARTED",
+              "type": "DATABASE_MIGRATE"
+            }
+          ]
+        }
+      ],
+      "issue": {
+        "name": "projects/bbpoc-20261004/issues/131",
+        "creator": "users/bbpoc-20261004-requester@drgdevlab.com",
+        "createTime": "2026-10-04T07:11:07.327497Z",
+        "updateTime": "2026-10-04T07:11:07.394774Z",
+        "status": "DONE",
+        "approvalStatus": "SKIPPED",
+        "plan": "projects/bbpoc-20261004/plans/131"
+      },
+      "task_runs": [
+        {
+          "name": "projects/bbpoc-20261004/plans/131/rollout/stages/develop/tasks/136/taskRuns/138",
+          "creator": "users/bbpoc-20261004-executor@drgdevlab.com",
+          "status": "FAILED",
+          "createTime": "2026-10-04T07:11:07.458693Z",
+          "startTime": "2026-10-04T07:11:11.130543Z",
+          "updateTime": "2026-10-04T07:11:21.026302Z"
+        }
+      ],
+      "attempts": [
+        {
+          "time": "2026-10-04T07:11:07.492552+00:00",
+          "actor": "executor",
+          "stage": "projects/bbpoc-20261004/plans/131/rollout/stages/develop",
+          "http_status": 200
+        }
+      ],
+      "log_events": [
+        {
+          "task_run": "projects/bbpoc-20261004/plans/131/rollout/stages/develop/tasks/136/taskRuns/138",
+          "events": [
+            {
+              "type": "RELEASE_FILE_EXECUTE",
+              "logTime": "2026-10-04T07:11:12.624622Z",
+              "file": {
+                "version": "20261004023",
+                "filePath": "V20261004023__MODEL09_failed_stage_stop.sql"
+              }
+            },
+            {
+              "type": "TRANSACTION_CONTROL",
+              "logTime": "2026-10-04T07:11:12.627273Z",
+              "transaction": {
+                "type": "BEGIN"
+              }
+            },
+            {
+              "type": "COMMAND_EXECUTE",
+              "logTime": "2026-10-04T07:11:12.628893Z",
+              "statement_range": {
+                "end": 47
+              },
+              "outcome": {
+                "logTime": "2026-10-04T07:11:12.854029Z",
+                "affectedRows": "1",
+                "allAffectedRows": [
+                  "1"
+                ]
+              }
+            },
+            {
+              "type": "COMMAND_EXECUTE",
+              "logTime": "2026-10-04T07:11:12.857482Z",
+              "statement_range": {
+                "start": 48,
+                "end": 89
+              },
+              "outcome": {
+                "logTime": "2026-10-04T07:11:13.189848Z",
+                "error": "ORA-00942: table or view \"BBPOC_20261004_DEV\".\"POC_TABLE_DOES_NOT_EXIST\" does not exist\n error occur at position: 8"
+              }
+            },
+            {
+              "type": "TRANSACTION_CONTROL",
+              "logTime": "2026-10-04T07:11:13.304526Z",
+              "transaction": {
+                "type": "ROLLBACK"
+              }
+            },
+            {
+              "type": "DATABASE_SYNC",
+              "logTime": "2026-10-04T07:11:13.306756Z"
+            }
+          ]
+        }
+      ]
+    },
+    "next_target_before_manual": {
+      "time": "2026-10-04T07:11:22.693787+00:00",
+      "schema": "BBPOC_20261004_SIT",
+      "sql": "SELECT COUNT(*) FROM USER_TABLES WHERE TABLE_NAME='POC_REPLAY'",
+      "successful": true,
+      "columns": [
+        "COUNT(*)"
+      ],
+      "rows": [
+        [
+          0
+        ]
+      ]
+    },
+    "manual_after_failed": {
+      "http_status": 200,
+      "detail": {}
+    },
+    "after_manual": {
+      "stages": [
+        {
+          "name": "projects/bbpoc-20261004/plans/131/rollout/stages/develop",
+          "environment": "environments/develop",
+          "tasks": [
+            {
+              "name": "projects/bbpoc-20261004/plans/131/rollout/stages/develop/tasks/136",
+              "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-dev/databases/BBPOC_20261004_DEV",
+              "status": "FAILED",
+              "type": "DATABASE_MIGRATE",
+              "updateTime": "2026-10-04T07:11:21.026302Z"
+            }
+          ]
+        },
+        {
+          "name": "projects/bbpoc-20261004/plans/131/rollout/stages/sit",
+          "environment": "environments/sit",
+          "tasks": [
+            {
+              "name": "projects/bbpoc-20261004/plans/131/rollout/stages/sit/tasks/137",
+              "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-sit/databases/BBPOC_20261004_SIT",
+              "status": "FAILED",
+              "type": "DATABASE_MIGRATE",
+              "updateTime": "2026-10-04T07:11:32.616421Z"
+            }
+          ]
+        }
+      ],
+      "issue": {
+        "name": "projects/bbpoc-20261004/issues/131",
+        "creator": "users/bbpoc-20261004-requester@drgdevlab.com",
+        "createTime": "2026-10-04T07:11:07.327497Z",
+        "updateTime": "2026-10-04T07:11:22.925917Z",
+        "status": "DONE",
+        "approvalStatus": "SKIPPED",
+        "plan": "projects/bbpoc-20261004/plans/131"
+      },
+      "task_runs": [
+        {
+          "name": "projects/bbpoc-20261004/plans/131/rollout/stages/develop/tasks/136/taskRuns/138",
+          "creator": "users/bbpoc-20261004-executor@drgdevlab.com",
+          "status": "FAILED",
+          "createTime": "2026-10-04T07:11:07.458693Z",
+          "startTime": "2026-10-04T07:11:11.130543Z",
+          "updateTime": "2026-10-04T07:11:21.026302Z"
+        },
+        {
+          "name": "projects/bbpoc-20261004/plans/131/rollout/stages/sit/tasks/137/taskRuns/139",
+          "creator": "users/bbpoc-20261004-executor@drgdevlab.com",
+          "status": "FAILED",
+          "createTime": "2026-10-04T07:11:22.858814Z",
+          "startTime": "2026-10-04T07:11:22.955487Z",
+          "updateTime": "2026-10-04T07:11:32.616421Z"
+        }
+      ],
+      "attempts": [
+        {
+          "time": "2026-10-04T07:11:23.017253+00:00",
+          "actor": "executor",
+          "stage": "projects/bbpoc-20261004/plans/131/rollout/stages/sit",
+          "http_status": 200
+        }
+      ],
+      "log_events": [
+        {
+          "task_run": "projects/bbpoc-20261004/plans/131/rollout/stages/develop/tasks/136/taskRuns/138",
+          "events": [
+            {
+              "type": "RELEASE_FILE_EXECUTE",
+              "logTime": "2026-10-04T07:11:12.624622Z",
+              "file": {
+                "version": "20261004023",
+                "filePath": "V20261004023__MODEL09_failed_stage_stop.sql"
+              }
+            },
+            {
+              "type": "TRANSACTION_CONTROL",
+              "logTime": "2026-10-04T07:11:12.627273Z",
+              "transaction": {
+                "type": "BEGIN"
+              }
+            },
+            {
+              "type": "COMMAND_EXECUTE",
+              "logTime": "2026-10-04T07:11:12.628893Z",
+              "statement_range": {
+                "end": 47
+              },
+              "outcome": {
+                "logTime": "2026-10-04T07:11:12.854029Z",
+                "affectedRows": "1",
+                "allAffectedRows": [
+                  "1"
+                ]
+              }
+            },
+            {
+              "type": "COMMAND_EXECUTE",
+              "logTime": "2026-10-04T07:11:12.857482Z",
+              "statement_range": {
+                "start": 48,
+                "end": 89
+              },
+              "outcome": {
+                "logTime": "2026-10-04T07:11:13.189848Z",
+                "error": "ORA-00942: table or view \"BBPOC_20261004_DEV\".\"POC_TABLE_DOES_NOT_EXIST\" does not exist\n error occur at position: 8"
+              }
+            },
+            {
+              "type": "TRANSACTION_CONTROL",
+              "logTime": "2026-10-04T07:11:13.304526Z",
+              "transaction": {
+                "type": "ROLLBACK"
+              }
+            },
+            {
+              "type": "DATABASE_SYNC",
+              "logTime": "2026-10-04T07:11:13.306756Z"
+            }
+          ]
+        },
+        {
+          "task_run": "projects/bbpoc-20261004/plans/131/rollout/stages/sit/tasks/137/taskRuns/139",
+          "events": [
+            {
+              "type": "RELEASE_FILE_EXECUTE",
+              "logTime": "2026-10-04T07:11:24.464179Z",
+              "file": {
+                "version": "20261004023",
+                "filePath": "V20261004023__MODEL09_failed_stage_stop.sql"
+              }
+            },
+            {
+              "type": "TRANSACTION_CONTROL",
+              "logTime": "2026-10-04T07:11:24.467822Z",
+              "transaction": {
+                "type": "BEGIN"
+              }
+            },
+            {
+              "type": "COMMAND_EXECUTE",
+              "logTime": "2026-10-04T07:11:24.469182Z",
+              "statement_range": {
+                "end": 47
+              },
+              "outcome": {
+                "logTime": "2026-10-04T07:11:24.806395Z",
+                "error": "ORA-00942: table or view \"BBPOC_20261004_SIT\".\"POC_REPLAY\" does not exist\n error occur at position: 12"
+              }
+            },
+            {
+              "type": "TRANSACTION_CONTROL",
+              "logTime": "2026-10-04T07:11:24.919986Z",
+              "transaction": {
+                "type": "ROLLBACK"
+              }
+            },
+            {
+              "type": "DATABASE_SYNC",
+              "logTime": "2026-10-04T07:11:24.921865Z"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "ui_metadata_query_error": {
+    "time": "2026-10-04T07:08:18.181913+00:00",
+    "url": "https://bytebase.apps.drgdevlab.com/sql-editor/projects/bbpoc-20261004/savedQueries/48477b6e-6224-4536-8668-cb7266a10ad4",
+    "statement": "SELECT NAME, TYPE, LINE, POSITION, TEXT FROM POC_COMPILE_ERRORS;",
+    "visible_error": "internal: failed to mask data: resource not found: database: BBPOC_20261004_DEV, table: USER_ERRORS",
+    "source": "actual Selenium UI"
+  },
+  "requester_query_hardening": {
+    "initial_roles": [
+      "projectDeveloper",
+      "sqlEditorUser"
+    ],
+    "initial_write_allowed": {
+      "time": "2026-10-04T07:29:06.179159+00:00",
+      "actor": "requester",
+      "statement": "UPDATE POC_PROMOTION SET MARKER=MARKER WHERE ID=1",
+      "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-mockprod/databases/BBPOC_20261004_MOCKPROD",
+      "outcome": {
+        "http_status": 200,
+        "results": [
+          {
+            "columnNames": [
+              "Affected Rows"
+            ],
+            "error": null,
+            "rows": [
+              {
+                "values": [
+                  {
+                    "int64Value": "1"
+                  }
+                ]
+              }
+            ],
+            "rowCount": null
+          }
+        ],
+        "api_code": null
+      },
+      "postcheck": {
+        "time": "2026-10-04T07:29:07.273155+00:00",
+        "schema": "BBPOC_20261004_MOCKPROD",
+        "sql": "SELECT ID,MARKER FROM POC_PROMOTION",
+        "successful": true,
+        "columns": [
+          "ID",
+          "MARKER"
+        ],
+        "rows": [
+          [
+            1,
+            "BB_IMMUTABLE_ARTIFACT_V1"
+          ]
+        ]
+      }
+    },
+    "final_roles": [
+      "projectDeveloper",
+      "sqlEditorReadUser"
+    ],
+    "after_scope_fix": {
+      "time": "2026-10-04T07:30:30.703584+00:00",
+      "actor": "requester",
+      "roles": [
+        "projectDeveloper",
+        "sqlEditorReadUser"
+      ],
+      "statement": "UPDATE POC_PROMOTION SET MARKER=MARKER WHERE ID=1",
+      "target": "projects/bbpoc-20261004/instances/bbpoc-20261004-mockprod/databases/BBPOC_20261004_MOCKPROD",
+      "outcome": {
+        "http_status": 200,
+        "results": [
+          {
+            "columnNames": null,
+            "error": "permission_denied: permission denied to access resources: [projects/bbpoc-20261004/instances/bbpoc-20261004-mockprod/databases/BBPOC_20261004_MOCKPROD/tables/POC_PROMOTION]",
+            "rows": null,
+            "rowCount": null
+          }
+        ],
+        "api_code": null
+      },
+      "postcheck": {
+        "time": "2026-10-04T07:30:31.735638+00:00",
+        "schema": "BBPOC_20261004_MOCKPROD",
+        "sql": "SELECT ID,MARKER FROM POC_PROMOTION",
+        "successful": true,
+        "columns": [
+          "ID",
+          "MARKER"
+        ],
+        "rows": [
+          [
+            1,
+            "BB_IMMUTABLE_ARTIFACT_V1"
+          ]
+        ]
+      },
+      "dev_read_control": {
+        "http_status": 200,
+        "results": [
+          {
+            "columnNames": [
+              "COUNT(*)"
+            ],
+            "error": null,
+            "rows": [
+              {
+                "values": [
+                  {
+                    "stringValue": "4"
+                  }
+                ]
+              }
+            ],
+            "rowCount": null
+          }
+        ],
+        "api_code": null
+      },
+      "rollout_negative": {
+        "http_status": 403,
+        "detail": {
+          "code": 7,
+          "message": "Not allowed to run tasks"
+        }
+      }
+    },
+    "scope": "Only new POC project IAM changed. Initial SQL write was allowed by assigned sqlEditorUser role, not a bypass of that role. Rollout execution and SQL console have separate permissions."
+  },
+  "readonly_datasource_gate": [
+    {
+      "http_status": 403,
+      "message": "feature FEATURE_INSTANCE_READ_ONLY_CONNECTION is a TEAM feature, please upgrade to access it"
+    },
+    {
+      "http_status": 403,
+      "message": "feature FEATURE_INSTANCE_READ_ONLY_CONNECTION is a TEAM feature, please upgrade to access it"
+    }
+  ]
+}

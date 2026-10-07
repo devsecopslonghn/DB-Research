@@ -1,0 +1,261 @@
+{
+  "timestamp": "2026-10-07T10:25:17.906095+00:00",
+  "context": "k8s-admin-public",
+  "namespace": "oceanbase-odc",
+  "workloads": [
+    {
+      "kind": "Deployment",
+      "name": "odc",
+      "uid": "1e25ed2c-5ab1-4b4b-8edc-f4da5f5ea352",
+      "created_at": "2026-10-03T08:10:34Z",
+      "status": {
+        "replicas": 1,
+        "readyReplicas": 1,
+        "availableReplicas": 1
+      },
+      "containers": [
+        {
+          "name": "odc",
+          "image": "oceanbase/odc:4.4.1_bp1@sha256:ee8ee48edea2907b1b2c11eac54c8603e554bdcc570eb11b0b1f9cef2ead040d",
+          "mounts": [
+            {
+              "mountPath": "/opt/odc/data",
+              "name": "data"
+            },
+            {
+              "mountPath": "/opt/odc/log",
+              "name": "logs"
+            },
+            {
+              "mountPath": "/opt/odc/plugins/connect-plugin-oracle-4.4.1-20260116.jar",
+              "name": "tcps-plugin",
+              "readOnly": true,
+              "subPath": "connect-plugin-oracle-4.4.1-20260116.jar"
+            }
+          ]
+        }
+      ],
+      "volumes": [
+        {
+          "name": "data",
+          "persistentVolumeClaim": {
+            "claimName": "odc-data"
+          }
+        },
+        {
+          "name": "logs",
+          "emptyDir": {}
+        },
+        {
+          "name": "tcps-src"
+        },
+        {
+          "name": "tcps-work",
+          "emptyDir": {
+            "sizeLimit": "2Gi"
+          }
+        },
+        {
+          "name": "tcps-plugin",
+          "emptyDir": {
+            "sizeLimit": "256Mi"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "StatefulSet",
+      "name": "oceanbase-metadb",
+      "uid": "a437c09f-980b-425c-a78d-566952add6ca",
+      "created_at": "2026-10-03T08:45:13Z",
+      "status": {
+        "replicas": 1,
+        "readyReplicas": 1,
+        "availableReplicas": 1
+      },
+      "containers": [
+        {
+          "name": "oceanbase",
+          "image": "oceanbase/oceanbase-ce:4.3.5-lts@sha256:31086a6900c21c479c2bcd942b6a28c53b17a51f4e9b9eb8eafcc596adfcd2e3",
+          "mounts": [
+            {
+              "mountPath": "/root/ob",
+              "name": "data",
+              "subPath": "ob"
+            },
+            {
+              "mountPath": "/root/.obd/cluster",
+              "name": "data",
+              "subPath": "obd-cluster"
+            },
+            {
+              "mountPath": "/root/ob/observer/log",
+              "name": "diagnostic-logs"
+            },
+            {
+              "mountPath": "/root/boot/init.d/00-odc.sql",
+              "name": "init-sql",
+              "readOnly": true,
+              "subPath": "00-odc.sql"
+            }
+          ]
+        }
+      ],
+      "volumes": [
+        {
+          "name": "data",
+          "persistentVolumeClaim": {
+            "claimName": "data-oceanbase-metadb-10gi"
+          }
+        },
+        {
+          "name": "diagnostic-logs",
+          "emptyDir": {
+            "sizeLimit": "2Gi"
+          }
+        },
+        {
+          "name": "init-sql"
+        }
+      ]
+    },
+    {
+      "kind": "Pod",
+      "name": "oceanbase-metadb-0",
+      "uid": "c4c97f43-3230-42ca-8814-e2077db930cd",
+      "created_at": "2026-10-07T06:20:30Z",
+      "status": {
+        "phase": "Running",
+        "podIP": "10.244.1.52"
+      },
+      "containers": [
+        {
+          "name": "oceanbase",
+          "image": "oceanbase/oceanbase-ce:4.3.5-lts@sha256:31086a6900c21c479c2bcd942b6a28c53b17a51f4e9b9eb8eafcc596adfcd2e3",
+          "mounts": [
+            {
+              "mountPath": "/root/ob",
+              "name": "data",
+              "subPath": "ob"
+            },
+            {
+              "mountPath": "/root/.obd/cluster",
+              "name": "data",
+              "subPath": "obd-cluster"
+            },
+            {
+              "mountPath": "/root/ob/observer/log",
+              "name": "diagnostic-logs"
+            },
+            {
+              "mountPath": "/root/boot/init.d/00-odc.sql",
+              "name": "init-sql",
+              "readOnly": true,
+              "subPath": "00-odc.sql"
+            }
+          ]
+        }
+      ],
+      "volumes": [
+        {
+          "name": "data",
+          "persistentVolumeClaim": {
+            "claimName": "data-oceanbase-metadb-10gi"
+          }
+        },
+        {
+          "name": "diagnostic-logs",
+          "emptyDir": {
+            "sizeLimit": "2Gi"
+          }
+        },
+        {
+          "name": "init-sql"
+        }
+      ]
+    },
+    {
+      "kind": "Pod",
+      "name": "odc-5b74c68b74-bzcp7",
+      "uid": "445e59c5-345f-4625-90a6-107c47562678",
+      "created_at": "2026-10-07T06:21:48Z",
+      "status": {
+        "phase": "Running",
+        "podIP": "10.244.1.98"
+      },
+      "containers": [
+        {
+          "name": "odc",
+          "image": "oceanbase/odc:4.4.1_bp1@sha256:ee8ee48edea2907b1b2c11eac54c8603e554bdcc570eb11b0b1f9cef2ead040d",
+          "mounts": [
+            {
+              "mountPath": "/opt/odc/data",
+              "name": "data"
+            },
+            {
+              "mountPath": "/opt/odc/log",
+              "name": "logs"
+            },
+            {
+              "mountPath": "/opt/odc/plugins/connect-plugin-oracle-4.4.1-20260116.jar",
+              "name": "tcps-plugin",
+              "readOnly": true,
+              "subPath": "connect-plugin-oracle-4.4.1-20260116.jar"
+            }
+          ]
+        }
+      ],
+      "volumes": [
+        {
+          "name": "data",
+          "persistentVolumeClaim": {
+            "claimName": "odc-data"
+          }
+        },
+        {
+          "name": "logs",
+          "emptyDir": {}
+        },
+        {
+          "name": "tcps-src"
+        },
+        {
+          "name": "tcps-work",
+          "emptyDir": {
+            "sizeLimit": "2Gi"
+          }
+        },
+        {
+          "name": "tcps-plugin",
+          "emptyDir": {
+            "sizeLimit": "256Mi"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "PersistentVolumeClaim",
+      "name": "data-oceanbase-metadb-10gi",
+      "uid": "669aee81-1d78-486b-b78e-2d221638ccad",
+      "created_at": "2026-10-03T08:37:59Z",
+      "status": {
+        "phase": "Bound",
+        "capacity": {
+          "storage": "10Gi"
+        }
+      }
+    },
+    {
+      "kind": "PersistentVolumeClaim",
+      "name": "odc-data",
+      "uid": "4f42837c-cece-4c5d-9603-0a42c34acad3",
+      "created_at": "2026-10-03T08:10:34Z",
+      "status": {
+        "phase": "Bound",
+        "capacity": {
+          "storage": "5Gi"
+        }
+      }
+    }
+  ]
+}

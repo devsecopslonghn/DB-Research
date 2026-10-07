@@ -1,0 +1,16 @@
+{
+  "revision": "oracle-common-v1",
+  "frozen_at": "2026-10-04",
+  "execution_status": "NOT_RUN",
+  "files": {
+    "context.md": "57e6e0762d164042466b5df0a1b9b6b3418d4f1eeb519d917559b5e070e98513",
+    "criteria.csv": "195a75bc6b19f8c61629249c27cbe1bbe799b16439552ea9077418a89053cd5c",
+    "candidates.csv": "2eaf8cff439f00107e7be32bf5227b6b9915d8d885936c6367f1a8834ba85f5d",
+    "feature-matrix.csv": "9776f9adf2c03bbe7dcdb5b9b13045f1df2f59f15e5fd01cc22460bb61f506ce",
+    "shortlist.md": "a15fba3d7a57f8616050b63b389887d4f444a8a913fde5bbe195d2a0eb50e0e9",
+    "benchmark-spec.md": "2e18eba717fc889cf2cca1cac8c9f37bea0505746e6c5f64f447b31bd72f9754",
+    "benchmark-config.json": "6e8c5a19933ab08d14decd157a31dfe01cc96ba75c730a6c8227d9fef5c5227b",
+    "workloads/manifest.json": "e4bc34d32e35ee6ab9016014eafe86d1c617553def99d82235ec875d782bae05",
+    "report.md": "769228899cdbf2d17cc22639dcbd43ddd997fe53079d5db54410f76689d13cc5"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "timestamp": "2026-10-07T09:01:46.243845+00:00",
+  "scope": "Initial blocked Oracle acceptance attempt; separate from all historical candidate results",
+  "cases": [
+    {
+      "case_id": "T1",
+      "timestamp": "2026-10-07T09:01:46.243845+00:00",
+      "engine": "Flyway Community",
+      "engine_version": "13.9.0",
+      "oracle_version": "UNCONFIRMED",
+      "target_id": "oracle-lab",
+      "target_enabled": false,
+      "artifact_sha256": "5a044b1946129660fecf944585d159f3200c1a8c6a1d3afe189312a614bf793b",
+      "expected": "engine success + correct VALID function/no errors + safe CLOB result; VERIFIED",
+      "observed": "No Oracle/CI runtime case executed. Approved separate references, current identity/schema, actual CI actors/agent/Git source and JDBC exception unavailable.",
+      "status": "BLOCKED",
+      "evidence_reference": [
+        "poc/lab-topology.md",
+        "poc/test-plan.md"
+      ],
+      "artifact_scope": "derived fixture; no authenticated release/Git commit has been submitted"
+    },
+    {
+      "case_id": "T2",
+      "timestamp": "2026-10-07T09:01:46.243845+00:00",
+      "engine": "Flyway Community",
+      "engine_version": "13.9.0",
+      "oracle_version": "UNCONFIRMED",
+      "target_id": "oracle-lab",
+      "target_enabled": false,
+      "artifact_sha256": "752f844d79eb57e4710203ef0b45cfc96ad6c02dcce4f1cbd4c1d51009e20ff0",
+      "expected": "compile diagnostic/INVALID veto, never VERIFIED; held",
+      "observed": "No Oracle/CI runtime case executed. Approved separate references, current identity/schema, actual CI actors/agent/Git source and JDBC exception unavailable.",
+      "status": "BLOCKED",
+      "evidence_reference": [
+        "poc/lab-topology.md",
+        "poc/test-plan.md"
+      ],
+      "artifact_scope": "derived fixture; no authenticated release/Git commit has been submitted"
+    },
+    {
+      "case_id": "T3",
+      "timestamp": "2026-10-07T09:01:46.243845+00:00",
+      "engine": "Flyway Community",
+      "engine_version": "13.9.0",
+      "oracle_version": "UNCONFIRMED",
+      "target_id": "oracle-lab",
+      "target_enabled": false,
+      "artifact_sha256": "5a044b1946129660fecf944585d159f3200c1a8c6a1d3afe189312a614bf793b",
+      "expected": "same release/artifact/target cannot execute again",
+      "observed": "No Oracle/CI runtime case executed. Approved separate references, current identity/schema, actual CI actors/agent/Git source and JDBC exception unavailable.",
+      "status": "BLOCKED",
+      "evidence_reference": [
+        "poc/lab-topology.md",
+        "poc/test-plan.md"
+      ],
+      "artifact_scope": "derived fixture; no authenticated release/Git commit has been submitted"
+    },
+    {
+      "case_id": "T4",
+      "timestamp": "2026-10-07T09:01:46.243845+00:00",
+      "engine": "Flyway Community",
+      "engine_version": "13.9.0",
+      "oracle_version": "UNCONFIRMED",
+      "target_id": "oracle-lab",
+      "target_enabled": false,
+      "artifact_sha256": "5a044b1946129660fecf944585d159f3200c1a8c6a1d3afe189312a614bf793b",
+      "expected": "changed artifact under permanent release ID rejects before connection/write",
+      "observed": "No Oracle/CI runtime case executed. Approved separate references, current identity/schema, actual CI actors/agent/Git source and JDBC exception unavailable.",
+      "status": "BLOCKED",
+      "evidence_reference": [
+        "poc/lab-topology.md",
+        "poc/test-plan.md"
+      ],
+      "artifact_scope": "derived fixture; no authenticated release/Git commit has been submitted"
+    },
+    {
+      "case_id": "T5",
+      "timestamp": "2026-10-07T09:01:46.243845+00:00",
+      "engine": "Flyway Community",
+      "engine_version": "13.9.0",
+      "oracle_version": "UNCONFIRMED",
+      "target_id": "oracle-lab",
+      "target_enabled": false,
+      "artifact_sha256": "5a044b1946129660fecf944585d159f3200c1a8c6a1d3afe189312a614bf793b",
+      "expected": "nonallowlisted target/schema rejects before connection/write",
+      "observed": "No Oracle/CI runtime case executed. Approved separate references, current identity/schema, actual CI actors/agent/Git source and JDBC exception unavailable.",
+      "status": "BLOCKED",
+      "evidence_reference": [
+        "poc/lab-topology.md",
+        "poc/test-plan.md"
+      ],
+      "artifact_scope": "derived fixture; no authenticated release/Git commit has been submitted"
+    },
+    {
+      "case_id": "T6",
+      "timestamp": "2026-10-07T09:01:46.243845+00:00",
+      "engine": "Flyway Community",
+      "engine_version": "13.9.0",
+      "oracle_version": "UNCONFIRMED",
+      "target_id": "oracle-lab",
+      "target_enabled": false,
+      "artifact_sha256": "e43968e5c27d5d5838f02ee928ae4f5949d201f344fdf62030c1c69643340fb9",
+      "expected": "first DDL persists, later fails; PARTIAL/HOLD, no retry",
+      "observed": "No Oracle/CI runtime case executed. Approved separate references, current identity/schema, actual CI actors/agent/Git source and JDBC exception unavailable.",
+      "status": "BLOCKED",
+      "evidence_reference": [
+        "poc/lab-topology.md",
+        "poc/test-plan.md"
+      ],
+      "artifact_scope": "derived fixture; no authenticated release/Git commit has been submitted"
+    },
+    {
+      "case_id": "T7",
+      "timestamp": "2026-10-07T09:01:46.243845+00:00",
+      "engine": "Flyway Community",
+      "engine_version": "13.9.0",
+      "oracle_version": "UNCONFIRMED",
+      "target_id": "oracle-lab",
+      "target_enabled": false,
+      "artifact_sha256": "92f767dcbbbf4d416b116f87d388ac17402741131e18e11fb0c37feaa675c998",
+      "expected": "engine success then process loss; durable UNKNOWN_OUTCOME/no replay/read-only reconciliation",
+      "observed": "No Oracle/CI runtime case executed. Approved separate references, current identity/schema, actual CI actors/agent/Git source and JDBC exception unavailable.",
+      "status": "BLOCKED",
+      "evidence_reference": [
+        "poc/lab-topology.md",
+        "poc/test-plan.md"
+      ],
+      "artifact_scope": "derived fixture; no authenticated release/Git commit has been submitted"
+    }
+  ]
+}

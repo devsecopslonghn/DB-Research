@@ -1,0 +1,98 @@
+{
+  "minuth__open-migration": {
+    "repo": "minuth/open-migration",
+    "sha": "5dc73cc3ee98e3951d7436bfccb12063c0d6441e",
+    "directory": "evidence/source/minuth__open-migration"
+  },
+  "apegeek__schema-pilot": {
+    "repo": "apegeek/schema-pilot",
+    "sha": "67b2cc2864df1ce0d1f1f87dfd9d14ded792fe88",
+    "directory": "evidence/source/apegeek__schema-pilot"
+  },
+  "bablsoft__accessflow": {
+    "repo": "bablsoft/accessflow",
+    "sha": "55c209a4d9e4ba09a6c089f90e68a8b16b3f2133",
+    "directory": "evidence/source/bablsoft__accessflow"
+  },
+  "bytebase__bytebase": {
+    "repo": "bytebase/bytebase",
+    "sha": "80524fc54601bcc5545575e02f83b23ee6bb0a70",
+    "directory": "evidence/source/bytebase__bytebase"
+  },
+  "hhyo__Archery": {
+    "repo": "hhyo/Archery",
+    "sha": "ccc7134f48d0e261f9e3ffa0d445dcec48adb790",
+    "directory": "evidence/source/hhyo__Archery"
+  },
+  "oceanbase__odc": {
+    "repo": "oceanbase/odc",
+    "sha": "d517c0f27971642fb0cd7565fd61ab2309875ec3",
+    "directory": "evidence/product-model/sources/oceanbase__odc"
+  },
+  "actiontech__sqle": {
+    "repo": "actiontech/sqle",
+    "sha": "44e88c45f9cd55edb2d826795770001e019dda81",
+    "directory": "evidence/product-model/sources/actiontech__sqle"
+  },
+  "actiontech__dms": {
+    "repo": "actiontech/dms",
+    "sha": "d63b4ea798e811881107d193b25d2c33f6d8685c",
+    "directory": "evidence/product-model/sources/actiontech__dms"
+  },
+  "oceanbase__odc-client": {
+    "repo": "oceanbase/odc-client",
+    "sha": "273fa3c4cc7d87f942ade231ce9220b98fa595e2",
+    "directory": "evidence/product-model/sources/oceanbase__odc-client"
+  },
+  "actiontech__sqle-oracle-plugin": {
+    "repo": "actiontech/sqle-oracle-plugin",
+    "sha": "41355b4948e4e69500e5d4369a668ec0a994c272",
+    "directory": "evidence/product-model/sources/actiontech__sqle-oracle-plugin"
+  },
+  "oceanbase__odc-doc": {
+    "repo": "oceanbase/odc-doc",
+    "sha": "40dc7c03522fef1968bd11b2b051bc216091e60d",
+    "directory": "evidence/product-model/sources/oceanbase__odc-doc"
+  },
+  "ninedata-cloud__ninedata-community": {
+    "repo": "ninedata-cloud/ninedata-community",
+    "sha": "a4481123d3b490a3ad4044d03fc737a38a766e78",
+    "directory": "evidence/product-model/sources/ninedata-cloud__ninedata-community"
+  },
+  "whatif-dev-bytebase": {
+    "repo": "whatif-dev/db-tools-bytebase",
+    "sha": "80341df8627cefc5e6d1adae1eb50bf1e52d20e6",
+    "directory": "evidence/product-model/forks/whatif-dev-bytebase"
+  },
+  "bytebase-Database-governance": {
+    "repo": "camillanapoles/bytebase-Database-governance",
+    "sha": "924bf38b2db906f459cdbd5300c8f02728c3f202",
+    "directory": "evidence/product-model/forks/bytebase-Database-governance"
+  },
+  "fariskha-sqlite": {
+    "repo": "FarendraAugust/fariskha-sqlite",
+    "sha": "2a8302b7af1adb15f705014d508650a49812de20",
+    "directory": "evidence/product-model/forks/fariskha-sqlite"
+  },
+  "WQMYH__database-govern": {
+    "repo": "WQMYH/database-govern",
+    "sha": "a85f6cb4195299995e8554303550d672d5093e1d",
+    "directory": "evidence/product-model/forks/WQMYH__database-govern"
+  },
+  "nanzm__bytebase": {
+    "repo": "nanzm/bytebase",
+    "sha": "378a868ab1e8c8e2ad011f4b968e34decceb2436",
+    "directory": "evidence/product-model/forks/nanzm__bytebase"
+  },
+  "hongweiyi__bytebase": {
+    "repo": "hongweiyi/bytebase",
+    "sha": "be87525c1228fe00cdcc3585859664bdd3167aca",
+    "directory": "evidence/product-model/forks/hongweiyi__bytebase"
+  },
+  "mydakit__dokeeper": {
+    "repo": "mydakit/dokeeper",
+    "sha": "40b22b38adb0ee506dba3f2d0dcc2cf2d6a71493",
+    "method": "raw source files. Clone exceeded available disk space.",
+    "directory": "evidence/product-model/forks/mydakit__dokeeper"
+  }
+}

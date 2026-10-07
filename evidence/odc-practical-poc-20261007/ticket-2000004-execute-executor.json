@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-10-07T10:30:26.285727+00:00",
+  "actor": "odc_poc_executor",
+  "http_status": 200,
+  "successful": true,
+  "response": {
+    "affectedRows": null,
+    "approvable": false,
+    "completeTime": null,
+    "createTime": null,
+    "creator": null,
+    "database": null,
+    "description": null,
+    "executionStrategy": null,
+    "executionTime": null,
+    "id": 2000004,
+    "nodeList": null,
+    "parameters": null,
+    "progressPercentage": 0.0,
+    "project": null,
+    "projectId": null,
+    "status": "WAIT_FOR_SCHEDULE_EXECUTION",
+    "type": "ASYNC"
+  }
+}

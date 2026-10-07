@@ -1,0 +1,199 @@
+{
+  "captured_at": "2026-10-03T14:47:40.567113+00:00",
+  "context": "k8s-admin-public",
+  "namespace": "oceanbase-odc",
+  "url": "https://oceanbase.apps.drgdevlab.com",
+  "scope": "Read-only resource, file, and authenticated GET inspection. Login/logout create and close a session. No target SQL or configuration change.",
+  "workloads": [
+    {
+      "kind": "Deployment",
+      "name": "odc",
+      "replicas": 1,
+      "ready_replicas": 1,
+      "containers": [
+        {
+          "name": "odc",
+          "image": "oceanbase/odc:4.4.1_bp1@sha256:ee8ee48edea2907b1b2c11eac54c8603e554bdcc570eb11b0b1f9cef2ead040d",
+          "resources": {
+            "limits": {
+              "cpu": "2",
+              "memory": "4Gi"
+            },
+            "requests": {
+              "cpu": "1",
+              "memory": "3Gi"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "StatefulSet",
+      "name": "oceanbase-metadb",
+      "replicas": 1,
+      "ready_replicas": 1,
+      "containers": [
+        {
+          "name": "oceanbase",
+          "image": "oceanbase/oceanbase-ce:4.3.5-lts@sha256:31086a6900c21c479c2bcd942b6a28c53b17a51f4e9b9eb8eafcc596adfcd2e3",
+          "resources": {
+            "limits": {
+              "cpu": "4",
+              "memory": "10Gi"
+            },
+            "requests": {
+              "cpu": "2",
+              "memory": "8Gi"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "pods": [
+    {
+      "name": "oceanbase-metadb-0",
+      "phase": "Running",
+      "node": "k8s-worker2",
+      "containers": [
+        {
+          "name": "oceanbase",
+          "ready": true,
+          "image_id": "docker.io/oceanbase/oceanbase-ce@sha256:31086a6900c21c479c2bcd942b6a28c53b17a51f4e9b9eb8eafcc596adfcd2e3"
+        }
+      ]
+    },
+    {
+      "name": "odc-6b4dbb96b-rvbc7",
+      "phase": "Running",
+      "node": "k8s-worker2",
+      "containers": [
+        {
+          "name": "odc",
+          "ready": true,
+          "image_id": "docker.io/oceanbase/odc@sha256:ee8ee48edea2907b1b2c11eac54c8603e554bdcc570eb11b0b1f9cef2ead040d"
+        }
+      ]
+    }
+  ],
+  "volumes": [
+    {
+      "name": "data-oceanbase-metadb-10gi",
+      "requested": "10Gi",
+      "capacity": "10Gi",
+      "phase": "Bound",
+      "storage_class": "longhorn-workers"
+    },
+    {
+      "name": "odc-data",
+      "requested": "5Gi",
+      "capacity": "5Gi",
+      "phase": "Bound",
+      "storage_class": "longhorn-workers"
+    }
+  ],
+  "api_checks": [
+    {
+      "path": "/api/v2/iam/users/me",
+      "http_status": 200,
+      "content_type": "application/json",
+      "top_level_keys": [
+        "data",
+        "durationMillis",
+        "httpStatus",
+        "requestId",
+        "server",
+        "successful",
+        "timestamp",
+        "traceId"
+      ],
+      "username": "admin",
+      "enabled": true
+    },
+    {
+      "path": "/api/v2/datasource/datasources",
+      "http_status": 200,
+      "content_type": "application/json",
+      "top_level_keys": [
+        "data",
+        "durationMillis",
+        "httpStatus",
+        "requestId",
+        "server",
+        "successful",
+        "timestamp",
+        "traceId"
+      ],
+      "returned_items": 0
+    },
+    {
+      "path": "/api/v2/collaboration/projects",
+      "http_status": 200,
+      "content_type": "application/json",
+      "top_level_keys": [
+        "data",
+        "durationMillis",
+        "httpStatus",
+        "requestId",
+        "server",
+        "successful",
+        "timestamp",
+        "traceId"
+      ],
+      "returned_items": 0
+    },
+    {
+      "path": "/swagger-ui.html",
+      "http_status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "/swagger-resources",
+      "http_status": 404,
+      "content_type": "text/html;charset=UTF-8"
+    },
+    {
+      "path": "/v2/api-docs",
+      "http_status": 200,
+      "content_type": "application/json",
+      "top_level_keys": [
+        "label",
+        "name",
+        "profiles",
+        "propertySources",
+        "state",
+        "version"
+      ],
+      "is_openapi_schema": false
+    }
+  ],
+  "oracle_target_connected": false,
+  "oracle_execution_run": false,
+  "application_tests_run": false,
+  "ingress": {
+    "name": "oceanbase-odc",
+    "class": "nginx",
+    "hosts": [
+      "oceanbase.apps.drgdevlab.com"
+    ],
+    "tls_secrets": [
+      null
+    ]
+  },
+  "info": {
+    "http_status": 200,
+    "version": "4.4.1-20260116"
+  },
+  "login_status": 200,
+  "oracle_plugin_files": [
+    "/opt/odc/plugins/connect-plugin-ob-oracle-4.4.1-20260116.jar",
+    "/opt/odc/plugins/connect-plugin-oracle-4.4.1-20260116.jar",
+    "/opt/odc/plugins/schema-plugin-ob-oracle-4.4.1-20260116.jar",
+    "/opt/odc/plugins/schema-plugin-oracle-4.4.1-20260116.jar",
+    "/opt/odc/plugins/task-plugin-ob-oracle-4.4.1-20260116.jar",
+    "/opt/odc/plugins/task-plugin-oracle-4.4.1-20260116.jar"
+  ],
+  "oracle_driver_files": [
+    "BOOT-INF/lib/ojdbc8-21.1.0.0.jar"
+  ]
+}

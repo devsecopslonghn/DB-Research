@@ -1,0 +1,193 @@
+Gudu SQLFlow Commercial License Agreement (EULA)
+
+Last updated: 2025-10-02
+
+IMPORTANT – READ CAREFULLY: This Commercial License Agreement (the “Agreement”)
+is a legal agreement between you (an individual or a legal entity) (“You”) and
+Gudu Software (“Licensor”, “Gudu”, “we” or “us”) for the Gudu SQLFlow software
+and services described below. By downloading, installing, accessing or using the
+Software or Cloud Service, or by clicking an “I agree”/“Accept” button, You
+agree to be bound by the terms of this Agreement. If You are entering into this
+Agreement on behalf of an entity, You represent that You have authority to bind
+that entity. If You do not agree to all terms, do not install or use the
+Software or Cloud Service.
+
+1. Definitions
+1.1 “Software” means Gudu SQLFlow in any edition or form provided for local use,
+     including (a) the VS Code extension (also “Extension”), (b) Java-based
+     libraries/JARs and command-line tools, and (c) any deliverables, updates,
+     and documentation provided by Gudu for local installation.
+1.2 “Cloud Service” means the hosted offering(s) of Gudu SQLFlow operated by
+     Gudu (for example, at websites under the gudusoft.com domain) that You
+     access remotely as a service.
+1.3 “Order” means an online purchase flow, purchase order, quote, or other
+     ordering document that identifies the products, license metrics (e.g.,
+     seats/servers), subscription term, and pricing.
+1.4 “Seat” means a unique individual user permitted to use the Extension.
+1.5 “Subscription Term” means the period identified on an Order during which You
+     are authorized to access the Cloud Service and/or receive updates/support
+     for the Software.
+1.6 “Evaluation” means time-limited or feature-limited use (e.g., trial limits)
+     solely for internal testing and evaluation, not for production use.
+
+2. License Grant – Software
+2.1 Subject to this Agreement and Your timely payment of applicable fees, Gudu
+     grants You a limited, non-exclusive, non-transferable, non-sublicensable
+     license to install and use the Software in object code form during the
+     Subscription Term (or perpetually if expressly stated on the Order) solely
+     for Your internal business purposes, in accordance with the license metric
+     specified on the Order:
+     a) VS Code Extension (Seat-based). You may allow the number of Seat users
+        specified on the Order to install and use the Extension. Each Seat is
+        for a named individual and is not shared concurrently among multiple
+        users. Automated license checks and activation keys may be required.
+     b) Java Libraries/Tools. Unless otherwise stated on the Order, licenses are
+        per Developer (for development/build) and per Server (for production
+        execution). Redistributing runtime components is prohibited unless
+        expressly permitted on the Order or in a separate distribution addendum.
+     c) Updates. During a valid Subscription Term for the relevant product,
+        Gudu may provide updates and fixes at its discretion.
+
+2.2 Evaluation License. If the Software is provided as an Evaluation (including
+     feature-limited or time-limited builds), You may use it only for internal
+     testing to assess suitability. Evaluation versions may include functional
+     limitations (for example, limits on analyzed objects/tables) and must not
+     be used in production.
+
+3. Access Grant – Cloud Service
+3.1 Subject to this Agreement, an active Subscription, and payment of fees, Gudu
+     grants You a limited, non-exclusive, non-transferable right to access and
+     use the Cloud Service during the Subscription Term solely for Your internal
+     business purposes and in accordance with any usage limits stated on the
+     Order. No rights are granted to obtain a copy of the Cloud Service, other
+     than client libraries or tools designated by Gudu for such purpose.
+3.2 Cloud Service may have separate Terms of Service and/or Acceptable Use
+     Policy referenced during signup. Those terms are incorporated by reference
+     and govern Your use of the Cloud Service. In case of conflict, the Order
+     and this Agreement control with respect to commercial terms and license
+     scope.
+
+4. Ownership; Feedback; Open-Source Components
+4.1 Ownership. Gudu and its licensors own all right, title and interest in and
+     to the Software and Cloud Service, including all improvements, derivative
+     works, and intellectual property rights. The Software is licensed, not
+     sold.
+4.2 Feedback. You may provide feedback or suggestions. Gudu may use such
+     feedback without restriction or obligation.
+4.3 Third-Party/Open-Source. The Software may include or link to third-party or
+     open-source components under separate licenses. Such components are
+     governed by their respective licenses; see any included NOTICE or
+     THIRD-PARTY files. Nothing in this Agreement limits Your rights under
+     those third-party licenses.
+
+5. Restrictions
+Unless expressly permitted in this Agreement or by applicable law (and then only
+to the extent such rights may not be waived), You shall not: (a) copy (except
+for a reasonable number of backup copies), modify, adapt, translate, or create
+derivative works of the Software; (b) reverse engineer, decompile, or disassemble
+the Software or attempt to derive source code; (c) remove, obscure, or alter any
+notices or branding; (d) lease, rent, sell, sublicense, assign, distribute, or
+otherwise transfer the Software or access to the Cloud Service to any third
+party; (e) use the Software or Cloud Service for timesharing, service bureau, or
+hosting for third parties; (f) circumvent technical restrictions, license metric
+controls, or activation mechanisms; (g) use the Software or Cloud Service to
+develop a competing product or to publish benchmarks without Gudu’s prior
+written consent; or (h) use the Software or Cloud Service in violation of any
+applicable law or third-party rights.
+
+6. Data; Privacy; Telemetry
+6.1 Local Processing. Many features of the Software operate locally on Your
+     machine/workspace. For Cloud Service features or optional telemetry, data
+     may be transmitted to Gudu. See the applicable privacy notice.
+6.2 Telemetry & Feedback in Extension. The Extension may offer optional
+     telemetry and/or in-product feedback. You may be able to disable telemetry
+     in settings. Feedback submissions are voluntary and may include
+     attachments You choose to provide.
+
+7. Support and Services
+Support, SLAs, or professional services are provided only if and as stated on an
+Order or separate agreement. Community or trial use does not include commercial
+support.
+
+8. Term; Termination; Effect
+8.1 Term. This Agreement is effective from first use and continues until
+     terminated as provided here. Subscription-based rights last for the
+     relevant Subscription Term.
+8.2 Termination. Gudu may terminate this Agreement or any license if You breach
+     any term and fail to cure within ten (10) days after notice. Either party
+     may terminate if the other becomes insolvent or ceases operations.
+8.3 Effect. Upon termination, Your rights to use the Software and/or Cloud
+     Service cease and You must uninstall and destroy copies of the Software
+     and license keys. Sections intended to survive (including Ownership,
+     Restrictions, Disclaimers, Liability, and Governing Law) shall survive.
+
+9. Warranties; Disclaimers
+THE SOFTWARE AND CLOUD SERVICE ARE PROVIDED “AS IS” AND “AS AVAILABLE.” TO THE
+MAXIMUM EXTENT PERMITTED BY LAW, GUDU AND ITS LICENSORS DISCLAIM ALL WARRANTIES,
+EXPRESS OR IMPLIED, INCLUDING ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. Gudu does not warrant that the
+Software or Cloud Service will be error-free or uninterrupted.
+
+10. Limitation of Liability
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT WILL GUDU OR ITS LICENSORS
+BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE
+DAMAGES, OR FOR LOSS OF PROFITS, REVENUE, DATA, OR BUSINESS, EVEN IF ADVISED OF
+THE POSSIBILITY. GUDU’S TOTAL LIABILITY UNDER THIS AGREEMENT SHALL NOT EXCEED
+THE AMOUNTS ACTUALLY PAID BY YOU TO GUDU FOR THE SOFTWARE OR CLOUD SERVICE IN
+THE TWELVE (12) MONTHS PRECEDING THE CLAIM. THESE LIMITATIONS APPLY NOTWITH-
+STANDING ANY FAILURE OF ESSENTIAL PURPOSE OF ANY REMEDY.
+
+11. Export; Compliance
+You shall comply with all applicable export control and sanctions laws and shall
+not export or re-export the Software or Cloud Service to any prohibited country
+or user. You represent that You are not located in, under the control of, or a
+national or resident of any prohibited country or on any denied party list.
+
+12. Government Use
+If You are a U.S. Government end user, the Software is “Commercial Computer
+Software” and use is subject to the terms of this Agreement pursuant to FAR
+12.212 and DFARS 227.7202, as applicable.
+
+13. General
+13.1 Entire Agreement; Order of Precedence. This Agreement (together with any
+     referenced terms and the applicable Order) constitutes the entire agreement
+     between the parties and supersedes all prior or contemporaneous agreements
+     regarding the subject matter. In case of conflict, the Order controls over
+     this Agreement.
+13.2 Assignment. You may not assign this Agreement without Gudu’s prior written
+     consent. Any unauthorized assignment is void. Gudu may assign to an
+     affiliate or in connection with a merger, acquisition, or sale of assets.
+13.3 Governing Law; Venue. This Agreement is governed by the laws applicable at
+     the Licensor’s principal place of business, excluding conflict-of-laws
+     principles. The parties submit to the exclusive jurisdiction of courts
+     located there. The U.N. Convention on Contracts for the International Sale
+     of Goods does not apply.
+13.4 Severability; Waiver. If any provision is unenforceable, it will be
+     modified to the minimum extent necessary to make it enforceable, and the
+     remainder will remain in effect. Failure to enforce any provision is not a
+     waiver.
+13.5 Notices. Legal notices to Gudu should be sent to the contact addresses on
+     gudusoft.com (or as otherwise specified in an Order) and are deemed given
+     upon receipt.
+
+14. Product-Specific Notes
+14.1 VS Code Extension. Seat-based licensing applies unless otherwise stated on
+     the Order. The Extension may enforce license checks and incorporate
+     optional telemetry/feedback as documented. Platform availability and
+     feature sets may vary by version.
+14.2 Java Libraries. Unless expressly permitted, redistribution of runtime
+     components is not allowed. If a redistributable runtime is licensed, You
+     must (a) distribute only as part of Your application; (b) ensure end users
+     cannot use the runtime separately; and (c) include required notices.
+14.3 Cloud Service. Use is subject to service-specific terms and usage limits.
+     Gudu may modify the Cloud Service, provided core functionality of the
+     purchased plan is not materially reduced during a paid term.
+
+Contact
+Gudu Software
+Website: https://sqlflow.gudusoft.com
+Support: See product documentation or Order for support channels.
+
+© Gudu Software. All rights reserved.
+
+

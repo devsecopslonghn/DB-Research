@@ -1,0 +1,457 @@
+{
+  "tool": "accessflow",
+  "evidence_type": "DOC/SOURCE",
+  "new_execution_status": "NOT_RUN",
+  "cases": [
+    {
+      "id": "MODEL-01",
+      "feature": "F02",
+      "priority": "P0",
+      "expected": "Applications/projects and their database targets have stable identities.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "MODEL-02",
+      "feature": "F02",
+      "priority": "P0",
+      "expected": "Register Oracle instances, services, databases/schemas, and environments centrally.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "MODEL-03",
+      "feature": "F05",
+      "priority": "P0",
+      "expected": "Retain a stable change/release identifier and exact SQL artifact.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "MODEL-04",
+      "feature": "F09",
+      "priority": "P0",
+      "expected": "Retain requester, approver, executor, database account, and timestamps separately.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "MODEL-05",
+      "feature": "F06",
+      "priority": "P0",
+      "expected": "Review the exact SQL intended for the selected Oracle targets.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "MODEL-06",
+      "feature": "F06",
+      "priority": "P0",
+      "expected": "Bind approval to the artifact and target set. Record any later change.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "MODEL-07",
+      "feature": "F07",
+      "priority": "P0",
+      "expected": "Run the same approved change through DEV, SIT, UAT, and PROD in the accepted order.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "MODEL-08",
+      "feature": "F07",
+      "priority": "P0",
+      "expected": "Stop between stages. Resume only through an authorized action.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "MODEL-09",
+      "feature": "F07",
+      "priority": "P0",
+      "expected": "Apply the accepted stop policy. Do not continue automatically after an uncertain result.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "MODEL-10",
+      "feature": "F09",
+      "priority": "P0",
+      "expected": "Display per-target status, execution records, errors, and central audit.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "MODEL-11",
+      "feature": "F03;F06",
+      "priority": "P0",
+      "expected": "Prevent unauthorized project, target, approval, and execution actions. Verify inherited project access, Participant grants, expiry, and denied Oracle cross-schema access.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "MODEL-12",
+      "feature": "F05",
+      "priority": "P0",
+      "expected": "Identify every missing release, checksum, ledger, locking, and recovery capability.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "SQL-01",
+      "feature": "F04",
+      "priority": "P0",
+      "expected": "Table exists. One successful target entry and one linked central result exist.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "SQL-02",
+      "feature": "F04",
+      "priority": "P0",
+      "expected": "Both objects exist. Version order and ledger are correct.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "SQL-03",
+      "feature": "F04",
+      "priority": "P0",
+      "expected": "The row changes once. Replay does not increase the row count or value.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "SQL-04",
+      "feature": "F04",
+      "priority": "P0",
+      "expected": "Procedure is VALID. Invocation changes the expected row.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "SQL-05",
+      "feature": "F04",
+      "priority": "P0",
+      "expected": "Function is VALID. SELECT from DUAL returns the expected value.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "SQL-06",
+      "feature": "F04",
+      "priority": "P0",
+      "expected": "Both objects are VALID. Package invocation succeeds.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "SQL-07",
+      "feature": "F04",
+      "priority": "P0",
+      "expected": "Trigger is VALID. One event produces one expected effect.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "SQL-08",
+      "feature": "F04",
+      "priority": "P0",
+      "expected": "Each block executes once. Internal semicolons remain intact.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "SQL-09",
+      "feature": "F04",
+      "priority": "P0",
+      "expected": "The parser uses the slash as a client delimiter. Oracle does not receive a bare slash statement.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "SQL-10",
+      "feature": "F04",
+      "priority": "P0",
+      "expected": "Required commands work through a supported execution path. Unsupported commands fail clearly before execution.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "SQL-11",
+      "feature": "F04",
+      "priority": "P0",
+      "expected": "The result reports invalid compilation. ALL_ERRORS identifies the error. The release is not reported as fully successful.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "SQL-12",
+      "feature": "F04",
+      "priority": "P0",
+      "expected": "The parser preserves the exact body and statement boundaries.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "REC-01",
+      "feature": "F05",
+      "priority": "P0",
+      "expected": "Execution stops according to policy. The central result contains the exact failed migration and Oracle error.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "REC-02",
+      "feature": "F05",
+      "priority": "P0",
+      "expected": "The engine skips the migration. The platform records the replay request without changing target state.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "REC-03",
+      "feature": "F05",
+      "priority": "P0",
+      "expected": "Recovery follows a documented decision. The platform does not repeat committed work without review.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "REC-04",
+      "feature": "F05",
+      "priority": "P0",
+      "expected": "The created table remains visible. The platform reports partial or uncertain state. Automatic replay is blocked.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "REC-05",
+      "feature": "F05",
+      "priority": "P0",
+      "expected": "Restart detects an uncertain result. An operator reconciles objects and history before resuming.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "REC-06",
+      "feature": "F05",
+      "priority": "P0",
+      "expected": "Restart reads target success and repairs central state. No SQL replay occurs.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "REC-07",
+      "feature": "F05",
+      "priority": "P0",
+      "expected": "The result distinguishes known failure from uncertain outcome. Recovery checks target history and object state.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "REC-08",
+      "feature": "F05",
+      "priority": "P0",
+      "expected": "Validation fails before new SQL executes. An authorized repair cannot be silent.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "REC-09",
+      "feature": "F05",
+      "priority": "P0",
+      "expected": "Only one migration execution holds the target lock. Both central jobs have accurate results.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "REC-10",
+      "feature": "F05",
+      "priority": "P0",
+      "expected": "Stable request identity prevents duplicate work. Both API responses link to the same execution decision.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "REC-11",
+      "feature": "F05",
+      "priority": "P0",
+      "expected": "The platform reconciles the durable job and target state without duplicate execution.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "REC-12",
+      "feature": "F05",
+      "priority": "P0",
+      "expected": "Recovery distinguishes a dead worker from a slow worker. An operator can release a proven stale lock.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "GOV-01",
+      "feature": "F09",
+      "priority": "P0",
+      "expected": "A query returns requester, approver, executor, SQL artifact, target, times, trigger, and result.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "GOV-02",
+      "feature": "F06",
+      "priority": "P0",
+      "expected": "Changing the artifact, target, environment, or release version invalidates the previous approval.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "GOV-03",
+      "feature": "F06",
+      "priority": "P0",
+      "expected": "An unauthorized requester cannot approve or execute their own production change. Document administrator powers separately.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "GOV-04",
+      "feature": "F07",
+      "priority": "P0",
+      "expected": "Higher environments receive the same immutable artifact after required lower-environment success.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "GOV-05",
+      "feature": "F08",
+      "priority": "P1",
+      "expected": "GitLab and Jenkins triggers retain a named service principal and the initiating job reference.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "GOV-06",
+      "feature": "F10",
+      "priority": "P1",
+      "expected": "Restored metadata, artifacts, and keys remain readable. Reconciliation detects target changes after the backup.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "GOV-07",
+      "feature": "F10",
+      "priority": "P1",
+      "expected": "Concurrent API servers cannot dispatch duplicate target execution.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "GOV-08",
+      "feature": "F09;F10",
+      "priority": "P0",
+      "expected": "Logs and stored results contain no database passwords or secret-manager credentials.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    },
+    {
+      "id": "GOV-09",
+      "feature": "F09",
+      "priority": "P0",
+      "expected": "Audit export preserves actor, artifact hash, target, time, trigger, and result after log rotation.",
+      "status": "NOT_RUN",
+      "observed": "Chưa chạy runtime; xem source-review.md cho fit/gap tĩnh.",
+      "evidence": "source-review.md",
+      "remaining_dependency": "T05 và T06/T07/T08/T10 theo case"
+    }
+  ]
+}

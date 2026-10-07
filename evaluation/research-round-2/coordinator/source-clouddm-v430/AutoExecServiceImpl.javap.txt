@@ -1,0 +1,2151 @@
+Compiled from "AutoExecServiceImpl.java"
+public class com.clougence.clouddm.console.web.component.execute.impl.AutoExecServiceImpl implements com.clougence.clouddm.console.web.component.execute.AutoExecService {
+  private static final org.slf4j.Logger log;
+
+  private static final int AUTO_EXEC_TASK_INSERT_BATCH_SIZE;
+
+  private static final long AUTO_EXEC_TASK_INSERT_MAX_BYTES;
+
+  private static final int TASK_FETCH_BATCH_SIZE;
+
+  private com.clougence.clouddm.platform.dal.access.SystemDal systemDal;
+
+  private com.clougence.clouddm.platform.dal.access.ExecutionDal execDal;
+
+  private com.clougence.clouddm.platform.dal.access.DataSourceDal dsDal;
+
+  private com.clougence.clouddm.platform.dal.access.ObjectCacheDao cacheDao;
+
+  private com.clougence.clouddm.api.sidecar.autoexec.AutoExecRService execRService;
+
+  private com.clougence.clouddm.console.web.component.dsconfig.DmDsConfigService configService;
+
+  private com.clougence.clouddm.console.web.component.approval.ApprovalStateService approvalStateService;
+
+  private com.clougence.clouddm.console.web.component.analysis.QueryAnalysisService analysisService;
+
+  private com.clougence.clouddm.console.web.service.security.AuditService auditService;
+
+  private com.clougence.clouddm.console.web.component.file.LocalFileService localFileService;
+
+  private org.springframework.transaction.PlatformTransactionManager txManager;
+
+  public com.clougence.clouddm.console.web.component.execute.impl.AutoExecServiceImpl();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public void createJob(com.clougence.clouddm.console.web.component.execute.model.AutoExecCreateMO, java.util.stream.Stream<com.clougence.clouddm.sdk.sql.parser.SplitScript>);
+    Code:
+       0: aload_1
+       1: invokevirtual #7                  // Method com/clougence/clouddm/console/web/component/execute/model/AutoExecCreateMO.getJobBizId:()Ljava/lang/String;
+       4: invokestatic  #13                 // Method com/clougence/utils/StringUtils.isBlank:(Ljava/lang/String;)Z
+       7: ifeq          20
+      10: new           #19                 // class java/lang/IllegalArgumentException
+      13: dup
+      14: ldc           #21                 // String Auto execution job biz id is required.
+      16: invokespecial #23                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      19: athrow
+      20: aload_1
+      21: invokevirtual #26                 // Method com/clougence/clouddm/console/web/component/execute/model/AutoExecCreateMO.getErrorStrategy:()Lcom/clougence/clouddm/api/console/autoexec/ErrorStrategy;
+      24: getstatic     #30                 // Field com/clougence/clouddm/api/console/autoexec/ErrorStrategy.RETRY:Lcom/clougence/clouddm/api/console/autoexec/ErrorStrategy;
+      27: if_acmpne     88
+      30: aload_1
+      31: invokevirtual #36                 // Method com/clougence/clouddm/console/web/component/execute/model/AutoExecCreateMO.getRetryWaitTime:()Ljava/lang/Long;
+      34: ifnull        44
+      37: aload_1
+      38: invokevirtual #40                 // Method com/clougence/clouddm/console/web/component/execute/model/AutoExecCreateMO.getRetryCount:()Ljava/lang/Long;
+      41: ifnonnull     54
+      44: new           #43                 // class com/clougence/clouddm/api/common/exception/ErrorMessageException
+      47: dup
+      48: ldc           #45                 // String retry wait time or retry count not should be null
+      50: invokespecial #47                 // Method com/clougence/clouddm/api/common/exception/ErrorMessageException."<init>":(Ljava/lang/String;)V
+      53: athrow
+      54: aload_1
+      55: invokevirtual #36                 // Method com/clougence/clouddm/console/web/component/execute/model/AutoExecCreateMO.getRetryWaitTime:()Ljava/lang/Long;
+      58: invokevirtual #48                 // Method java/lang/Long.longValue:()J
+      61: lconst_0
+      62: lcmp
+      63: iflt          78
+      66: aload_1
+      67: invokevirtual #40                 // Method com/clougence/clouddm/console/web/component/execute/model/AutoExecCreateMO.getRetryCount:()Ljava/lang/Long;
+      70: invokevirtual #48                 // Method java/lang/Long.longValue:()J
+      73: lconst_0
+      74: lcmp
+      75: ifge          88
+      78: new           #43                 // class com/clougence/clouddm/api/common/exception/ErrorMessageException
+      81: dup
+      82: ldc           #54                 // String retry wait time or retry count should be greater than 0
+      84: invokespecial #47                 // Method com/clougence/clouddm/api/common/exception/ErrorMessageException."<init>":(Ljava/lang/String;)V
+      87: athrow
+      88: aload_1
+      89: invokevirtual #56                 // Method com/clougence/clouddm/console/web/component/execute/model/AutoExecCreateMO.getBizId:()Ljava/lang/String;
+      92: astore_3
+      93: new           #59                 // class com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO
+      96: dup
+      97: invokespecial #61                 // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO."<init>":()V
+     100: astore        4
+     102: aload         4
+     104: aload_1
+     105: invokevirtual #62                 // Method com/clougence/clouddm/console/web/component/execute/model/AutoExecCreateMO.getDsLevels:()Lcom/clougence/clouddm/console/web/component/dsconfig/mode/DsLevels;
+     108: invokevirtual #66                 // Method com/clougence/clouddm/console/web/component/dsconfig/mode/DsLevels.dbLevels:()Ljava/util/List;
+     111: invokevirtual #72                 // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.setLevels:(Ljava/util/List;)V
+     114: aload         4
+     116: aload_1
+     117: invokevirtual #62                 // Method com/clougence/clouddm/console/web/component/execute/model/AutoExecCreateMO.getDsLevels:()Lcom/clougence/clouddm/console/web/component/dsconfig/mode/DsLevels;
+     120: invokevirtual #76                 // Method com/clougence/clouddm/console/web/component/dsconfig/mode/DsLevels.dsDO:()Lcom/clougence/clouddm/platform/dal/model/datasource/DmDsDO;
+     123: invokevirtual #80                 // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.getId:()Ljava/lang/Long;
+     126: invokevirtual #85                 // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.setDataSourceId:(Ljava/lang/Long;)V
+     129: aload         4
+     131: aload_3
+     132: invokevirtual #89                 // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.setDependOnBizId:(Ljava/lang/String;)V
+     135: aload         4
+     137: aload_1
+     138: invokevirtual #7                  // Method com/clougence/clouddm/console/web/component/execute/model/AutoExecCreateMO.getJobBizId:()Ljava/lang/String;
+     141: invokevirtual #92                 // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.setBizId:(Ljava/lang/String;)V
+     144: aload         4
+     146: aload_1
+     147: invokevirtual #95                 // Method com/clougence/clouddm/console/web/component/execute/model/AutoExecCreateMO.getExecType:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecType;
+     150: invokevirtual #99                 // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.setExecType:(Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecType;)V
+     153: aload         4
+     155: getstatic     #103                // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.PREPARING:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+     158: invokevirtual #109                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.setStatus:(Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;)V
+     161: new           #113                // class com/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj
+     164: dup
+     165: invokespecial #115                // Method com/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj."<init>":()V
+     168: astore        5
+     170: aload         5
+     172: aload_1
+     173: invokevirtual #116                // Method com/clougence/clouddm/console/web/component/execute/model/AutoExecCreateMO.isTransactional:()Z
+     176: invokevirtual #120                // Method com/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj.setEnableTransactional:(Z)V
+     179: aload         5
+     181: aload_1
+     182: invokevirtual #36                 // Method com/clougence/clouddm/console/web/component/execute/model/AutoExecCreateMO.getRetryWaitTime:()Ljava/lang/Long;
+     185: invokevirtual #124                // Method com/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj.setRetryWaitTime:(Ljava/lang/Long;)V
+     188: aload         5
+     190: aload_1
+     191: invokevirtual #26                 // Method com/clougence/clouddm/console/web/component/execute/model/AutoExecCreateMO.getErrorStrategy:()Lcom/clougence/clouddm/api/console/autoexec/ErrorStrategy;
+     194: invokevirtual #127                // Method com/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj.setErrorStrategy:(Lcom/clougence/clouddm/api/console/autoexec/ErrorStrategy;)V
+     197: aload         5
+     199: aload_1
+     200: invokevirtual #40                 // Method com/clougence/clouddm/console/web/component/execute/model/AutoExecCreateMO.getRetryCount:()Ljava/lang/Long;
+     203: invokevirtual #131                // Method com/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj.setRetryCount:(Ljava/lang/Long;)V
+     206: aload         5
+     208: aload_1
+     209: invokevirtual #134                // Method com/clougence/clouddm/console/web/component/execute/model/AutoExecCreateMO.getLanguageTag:()Ljava/lang/String;
+     212: invokevirtual #137                // Method com/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj.setLanguageTag:(Ljava/lang/String;)V
+     215: aload         4
+     217: aload         5
+     219: invokevirtual #140                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.setConfig:(Lcom/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj;)V
+     222: aload         4
+     224: invokevirtual #144                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getExecType:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecType;
+     227: getstatic     #145                // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecType.IMMEDIATE:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecType;
+     230: if_acmpne     248
+     233: aload         4
+     235: new           #151                // class java/util/Date
+     238: dup
+     239: invokespecial #153                // Method java/util/Date."<init>":()V
+     242: invokevirtual #154                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.setScheduleTime:(Ljava/util/Date;)V
+     245: goto          267
+     248: aload         4
+     250: new           #151                // class java/util/Date
+     253: dup
+     254: aload_1
+     255: invokevirtual #158                // Method com/clougence/clouddm/console/web/component/execute/model/AutoExecCreateMO.getExecTime:()Ljava/lang/Long;
+     258: invokevirtual #48                 // Method java/lang/Long.longValue:()J
+     261: invokespecial #161                // Method java/util/Date."<init>":(J)V
+     264: invokevirtual #154                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.setScheduleTime:(Ljava/util/Date;)V
+     267: aload_0
+     268: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+     271: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+     276: aload         4
+     278: invokeinterface #176,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.insert:(Ljava/lang/Object;)I
+     283: pop
+     284: iconst_1
+     285: istore        6
+     287: lconst_0
+     288: lstore        7
+     290: new           #182                // class java/util/ArrayList
+     293: dup
+     294: bipush        100
+     296: invokespecial #184                // Method java/util/ArrayList."<init>":(I)V
+     299: astore        9
+     301: aload_2
+     302: invokeinterface #187,  1          // InterfaceMethod java/util/stream/Stream.iterator:()Ljava/util/Iterator;
+     307: astore        10
+     309: aload         10
+     311: invokeinterface #193,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     316: ifeq          557
+     319: aload         10
+     321: invokeinterface #198,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     326: checkcast     #202                // class com/clougence/clouddm/sdk/sql/parser/SplitScript
+     329: astore        11
+     331: aload         11
+     333: invokevirtual #204                // Method com/clougence/clouddm/sdk/sql/parser/SplitScript.getScript:()Ljava/lang/String;
+     336: invokestatic  #207                // Method com/google/common/base/Utf8.encodedLength:(Ljava/lang/CharSequence;)I
+     339: i2l
+     340: lstore        12
+     342: aload         9
+     344: invokeinterface #213,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+     349: ifne          410
+     352: lload         7
+     354: lload         12
+     356: ladd
+     357: ldc2_w        #218                // long 4194304l
+     360: lcmp
+     361: ifle          410
+     364: aload_0
+     365: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+     368: invokeinterface #220,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoTaskMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper;
+     373: aload         9
+     375: invokeinterface #224,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper.batchInsert:(Ljava/util/List;)I
+     380: aload         9
+     382: invokeinterface #230,  1          // InterfaceMethod java/util/List.size:()I
+     387: if_icmpeq     400
+     390: new           #234                // class java/lang/IllegalStateException
+     393: dup
+     394: ldc           #236                // String Batch insert auto execution tasks failed.
+     396: invokespecial #238                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+     399: athrow
+     400: aload         9
+     402: invokeinterface #239,  1          // InterfaceMethod java/util/List.clear:()V
+     407: lconst_0
+     408: lstore        7
+     410: new           #242                // class com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO
+     413: dup
+     414: invokespecial #244                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO."<init>":()V
+     417: astore        14
+     419: aload         14
+     421: aload         11
+     423: invokevirtual #204                // Method com/clougence/clouddm/sdk/sql/parser/SplitScript.getScript:()Ljava/lang/String;
+     426: invokevirtual #245                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.setExecSql:(Ljava/lang/String;)V
+     429: aload         14
+     431: iload         6
+     433: iinc          6, 1
+     436: invokestatic  #248                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     439: invokevirtual #254                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.setExecOrder:(Ljava/lang/Integer;)V
+     442: aload         14
+     444: getstatic     #258                // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus.WAIT_EXEC:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;
+     447: invokevirtual #264                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.setStatus:(Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;)V
+     450: aload         14
+     452: aload         4
+     454: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+     457: invokevirtual #268                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.setAutoExecJobId:(Ljava/lang/Long;)V
+     460: aload         14
+     462: invokestatic  #271                // Method com/clougence/clouddm/console/web/util/DmTeamUtils.nextExecTaskBizId:()Ljava/lang/String;
+     465: invokevirtual #276                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.setBizId:(Ljava/lang/String;)V
+     468: aload         14
+     470: invokestatic  #277                // Method java/util/UUID.randomUUID:()Ljava/util/UUID;
+     473: invokevirtual #283                // Method java/util/UUID.toString:()Ljava/lang/String;
+     476: invokevirtual #286                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.setQueryId:(Ljava/lang/String;)V
+     479: aload         9
+     481: aload         14
+     483: invokeinterface #289,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     488: pop
+     489: lload         7
+     491: lload         12
+     493: ladd
+     494: lstore        7
+     496: aload         9
+     498: invokeinterface #230,  1          // InterfaceMethod java/util/List.size:()I
+     503: bipush        100
+     505: if_icmpne     554
+     508: aload_0
+     509: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+     512: invokeinterface #220,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoTaskMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper;
+     517: aload         9
+     519: invokeinterface #224,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper.batchInsert:(Ljava/util/List;)I
+     524: aload         9
+     526: invokeinterface #230,  1          // InterfaceMethod java/util/List.size:()I
+     531: if_icmpeq     544
+     534: new           #234                // class java/lang/IllegalStateException
+     537: dup
+     538: ldc           #236                // String Batch insert auto execution tasks failed.
+     540: invokespecial #238                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+     543: athrow
+     544: aload         9
+     546: invokeinterface #239,  1          // InterfaceMethod java/util/List.clear:()V
+     551: lconst_0
+     552: lstore        7
+     554: goto          309
+     557: iload         6
+     559: iconst_1
+     560: if_icmpne     574
+     563: new           #234                // class java/lang/IllegalStateException
+     566: dup
+     567: ldc_w         #293                // String Auto execution job must contain at least one SQL statement.
+     570: invokespecial #238                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+     573: athrow
+     574: aload         9
+     576: invokeinterface #213,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+     581: ifne          620
+     584: aload_0
+     585: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+     588: invokeinterface #220,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoTaskMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper;
+     593: aload         9
+     595: invokeinterface #224,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper.batchInsert:(Ljava/util/List;)I
+     600: aload         9
+     602: invokeinterface #230,  1          // InterfaceMethod java/util/List.size:()I
+     607: if_icmpeq     620
+     610: new           #234                // class java/lang/IllegalStateException
+     613: dup
+     614: ldc           #236                // String Batch insert auto execution tasks failed.
+     616: invokespecial #238                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+     619: athrow
+     620: goto          684
+     623: astore        6
+     625: new           #297                // class org/springframework/transaction/support/TransactionTemplate
+     628: dup
+     629: aload_0
+     630: getfield      #299                // Field txManager:Lorg/springframework/transaction/PlatformTransactionManager;
+     633: invokespecial #303                // Method org/springframework/transaction/support/TransactionTemplate."<init>":(Lorg/springframework/transaction/PlatformTransactionManager;)V
+     636: astore        7
+     638: aload         7
+     640: aload_0
+     641: aload         4
+     643: invokedynamic #306,  0            // InvokeDynamic #0:accept:(Lcom/clougence/clouddm/console/web/component/execute/impl/AutoExecServiceImpl;Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;)Ljava/util/function/Consumer;
+     648: invokevirtual #310                // Method org/springframework/transaction/support/TransactionTemplate.executeWithoutResult:(Ljava/util/function/Consumer;)V
+     651: goto          681
+     654: astore        7
+     656: aload         6
+     658: aload         7
+     660: invokevirtual #314                // Method java/lang/RuntimeException.addSuppressed:(Ljava/lang/Throwable;)V
+     663: getstatic     #318                // Field log:Lorg/slf4j/Logger;
+     666: ldc_w         #322                // String Cleanup partially created auto execution job failed, jobId={}
+     669: aload         4
+     671: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+     674: aload         7
+     676: invokeinterface #324,  4          // InterfaceMethod org/slf4j/Logger.error:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+     681: aload         6
+     683: athrow
+     684: return
+    Exception table:
+       from    to  target type
+         284   620   623   Class java/lang/RuntimeException
+         625   651   654   Class java/lang/RuntimeException
+
+  public void startJob(java.lang.String, java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+       4: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+       9: aload_1
+      10: invokeinterface #330,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.queryByBizId:(Ljava/lang/String;)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+      15: astore_3
+      16: aload_0
+      17: aload_3
+      18: aload_2
+      19: aload_1
+      20: invokedynamic #334,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      25: invokevirtual #338                // Method startPreparedJob:(Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;Ljava/lang/String;Ljava/lang/String;)V
+      28: return
+
+  private void startPreparedJob(com.clougence.clouddm.platform.dal.model.execution.DmExecAutoJobDO, java.lang.String, java.lang.String);
+    Code:
+       0: aload_2
+       1: invokestatic  #13                 // Method com/clougence/utils/StringUtils.isBlank:(Ljava/lang/String;)Z
+       4: ifeq          18
+       7: new           #19                 // class java/lang/IllegalArgumentException
+      10: dup
+      11: ldc_w         #342                // String Auto execution operator uid is required.
+      14: invokespecial #23                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      17: athrow
+      18: aload_1
+      19: ifnull        45
+      22: aload_0
+      23: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+      26: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+      31: aload_1
+      32: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+      35: aload_2
+      36: invokeinterface #344,  3          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.startPreparedJob:(Ljava/lang/Long;Ljava/lang/String;)I
+      41: iconst_1
+      42: if_icmpeq     59
+      45: new           #234                // class java/lang/IllegalStateException
+      48: dup
+      49: aload_3
+      50: invokedynamic #347,  0            // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      55: invokespecial #238                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      58: athrow
+      59: return
+
+  public void deleteJob(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+       4: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+       9: aload_1
+      10: invokeinterface #330,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.queryByBizId:(Ljava/lang/String;)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+      15: astore_2
+      16: aload_2
+      17: ifnull        31
+      20: aload_0
+      21: aload_2
+      22: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+      25: invokevirtual #48                 // Method java/lang/Long.longValue:()J
+      28: invokevirtual #348                // Method doDeleteJob:(J)V
+      31: return
+
+  private void doDeleteJob(long);
+    Code:
+       0: aload_0
+       1: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+       4: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+       9: lload_1
+      10: invokestatic  #351                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+      13: invokeinterface #354,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.queryByIdForUpdate:(Ljava/lang/Long;)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+      18: astore_3
+      19: aload_3
+      20: ifnonnull     24
+      23: return
+      24: aload_0
+      25: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+      28: invokeinterface #220,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoTaskMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper;
+      33: lload_1
+      34: invokestatic  #351                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+      37: invokeinterface #358,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper.deleteByJobId:(Ljava/lang/Long;)I
+      42: pop
+      43: aload_0
+      44: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+      47: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+      52: lload_1
+      53: invokestatic  #351                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+      56: invokeinterface #362,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.deleteById:(Ljava/io/Serializable;)I
+      61: pop
+      62: return
+
+  public void dispatchJob(java.lang.Long);
+    Code:
+       0: aload_0
+       1: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+       4: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+       9: aload_1
+      10: invokeinterface #366,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.claimJobForPackaging:(Ljava/lang/Long;)I
+      15: iconst_1
+      16: if_icmpeq     20
+      19: return
+      20: aload_0
+      21: aload_1
+      22: invokevirtual #48                 // Method java/lang/Long.longValue:()J
+      25: invokevirtual #369                // Method create:(J)Lcom/clougence/clouddm/api/console/autoexec/AutoExecTaskPackageInfo;
+      28: astore_2
+      29: goto          94
+      32: astore_3
+      33: aload_0
+      34: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+      37: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+      42: aload_1
+      43: invokevirtual #48                 // Method java/lang/Long.longValue:()J
+      46: invokeinterface #373,  3          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.queryById:(J)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+      51: astore        4
+      53: aload         4
+      55: ifnull        92
+      58: aload_0
+      59: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+      62: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+      67: aload_1
+      68: invokeinterface #377,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.markJobFailedIfActive:(Ljava/lang/Long;)I
+      73: iconst_1
+      74: if_icmpne     92
+      77: aload_0
+      78: getfield      #380                // Field approvalStateService:Lcom/clougence/clouddm/console/web/component/approval/ApprovalStateService;
+      81: aload         4
+      83: invokevirtual #384                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getDependOnBizId:()Ljava/lang/String;
+      86: aconst_null
+      87: invokeinterface #387,  3          // InterfaceMethod com/clougence/clouddm/console/web/component/approval/ApprovalStateService.failExecution:(Ljava/lang/String;Ljava/lang/String;)V
+      92: aload_3
+      93: athrow
+      94: new           #297                // class org/springframework/transaction/support/TransactionTemplate
+      97: dup
+      98: aload_0
+      99: getfield      #299                // Field txManager:Lorg/springframework/transaction/PlatformTransactionManager;
+     102: invokespecial #303                // Method org/springframework/transaction/support/TransactionTemplate."<init>":(Lorg/springframework/transaction/PlatformTransactionManager;)V
+     105: astore_3
+     106: aload_3
+     107: aload_0
+     108: aload_1
+     109: aload_2
+     110: invokedynamic #393,  0            // InvokeDynamic #3:doInTransaction:(Lcom/clougence/clouddm/console/web/component/execute/impl/AutoExecServiceImpl;Ljava/lang/Long;Lcom/clougence/clouddm/api/console/autoexec/AutoExecTaskPackageInfo;)Lorg/springframework/transaction/support/TransactionCallback;
+     115: invokevirtual #397                // Method org/springframework/transaction/support/TransactionTemplate.execute:(Lorg/springframework/transaction/support/TransactionCallback;)Ljava/lang/Object;
+     118: checkcast     #401                // class java/util/Map$Entry
+     121: astore        4
+     123: aload         4
+     125: ifnonnull     129
+     128: return
+     129: aload_0
+     130: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+     133: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+     138: aload_1
+     139: invokevirtual #48                 // Method java/lang/Long.longValue:()J
+     142: invokeinterface #373,  3          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.queryById:(J)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+     147: astore        5
+     149: aload_0
+     150: getfield      #380                // Field approvalStateService:Lcom/clougence/clouddm/console/web/component/approval/ApprovalStateService;
+     153: aload         5
+     155: invokevirtual #384                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getDependOnBizId:()Ljava/lang/String;
+     158: invokeinterface #403,  2          // InterfaceMethod com/clougence/clouddm/console/web/component/approval/ApprovalStateService.markExecutionDispatched:(Ljava/lang/String;)V
+     163: aload_0
+     164: getfield      #406                // Field execRService:Lcom/clougence/clouddm/api/sidecar/autoexec/AutoExecRService;
+     167: aload         4
+     169: invokeinterface #410,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+     174: checkcast     #413                // class com/clougence/clouddm/comm/model/RSocketSendDTO
+     177: aload         4
+     179: invokeinterface #415,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+     184: checkcast     #418                // class com/clougence/clouddm/api/sidecar/autoexec/AutoExecJobDTO
+     187: invokeinterface #420,  3          // InterfaceMethod com/clougence/clouddm/api/sidecar/autoexec/AutoExecRService.dispatchJob:(Lcom/clougence/clouddm/comm/model/RSocketSendDTO;Lcom/clougence/clouddm/api/sidecar/autoexec/AutoExecJobDTO;)V
+     192: goto          213
+     195: astore        6
+     197: getstatic     #318                // Field log:Lorg/slf4j/Logger;
+     200: aload_1
+     201: invokedynamic #428,  0            // InvokeDynamic #4:makeConcatWithConstants:(Ljava/lang/Long;)Ljava/lang/String;
+     206: aload         6
+     208: invokeinterface #431,  3          // InterfaceMethod org/slf4j/Logger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+     213: return
+    Exception table:
+       from    to  target type
+          20    29    32   Class java/lang/RuntimeException
+         163   192   195   Class java/lang/Throwable
+
+  public com.clougence.clouddm.api.console.autoexec.AutoExecTaskPackageInfo create(long);
+    Code:
+       0: aload_0
+       1: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+       4: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+       9: lload_1
+      10: invokeinterface #373,  3          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.queryById:(J)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+      15: astore_3
+      16: aload_3
+      17: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      20: getstatic     #438                // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.PACKAGING:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      23: if_acmpeq     40
+      26: new           #234                // class java/lang/IllegalStateException
+      29: dup
+      30: lload_1
+      31: invokedynamic #441,  0            // InvokeDynamic #5:makeConcatWithConstants:(J)Ljava/lang/String;
+      36: invokespecial #238                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      39: athrow
+      40: aload_0
+      41: getfield      #444                // Field dsDal:Lcom/clougence/clouddm/platform/dal/access/DataSourceDal;
+      44: invokeinterface #448,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/DataSourceDal.dsMapper:()Lcom/clougence/clouddm/platform/dal/mapper/datasource/DmDsMapper;
+      49: aload_3
+      50: invokevirtual #454                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getDataSourceId:()Ljava/lang/Long;
+      53: invokeinterface #457,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/datasource/DmDsMapper.queryDsIdentityById:(Ljava/lang/Long;)Lcom/clougence/clouddm/platform/dal/model/datasource/DmDsDO;
+      58: astore        4
+      60: aload_0
+      61: getfield      #463                // Field configService:Lcom/clougence/clouddm/console/web/component/dsconfig/DmDsConfigService;
+      64: aload         4
+      66: invokevirtual #80                 // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.getId:()Ljava/lang/Long;
+      69: invokevirtual #48                 // Method java/lang/Long.longValue:()J
+      72: invokeinterface #467,  3          // InterfaceMethod com/clougence/clouddm/console/web/component/dsconfig/DmDsConfigService.fetchDsConfigFromExists:(J)Lcom/clougence/clouddm/base/metadata/ds/DataSourceConfig;
+      77: astore        5
+      79: new           #182                // class java/util/ArrayList
+      82: dup
+      83: invokespecial #473                // Method java/util/ArrayList."<init>":()V
+      86: astore        6
+      88: aload         6
+      90: aload         4
+      92: invokevirtual #474                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.getDsEnvId:()Ljava/lang/Long;
+      95: invokevirtual #477                // Method java/lang/Long.toString:()Ljava/lang/String;
+      98: invokeinterface #289,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     103: pop
+     104: aload         6
+     106: aload         4
+     108: invokevirtual #80                 // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.getId:()Ljava/lang/Long;
+     111: invokevirtual #477                // Method java/lang/Long.toString:()Ljava/lang/String;
+     114: invokeinterface #289,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     119: pop
+     120: aload         6
+     122: aload_3
+     123: invokevirtual #478                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getLevels:()Ljava/util/List;
+     126: invokeinterface #481,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+     131: pop
+     132: invokestatic  #485                // Method com/clougence/clouddm/console/web/component/analysis/AnalysisQueryOptions.builder:()Lcom/clougence/clouddm/console/web/component/analysis/AnalysisQueryOptions$Builder;
+     135: aload_3
+     136: invokevirtual #491                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getUid:()Ljava/lang/String;
+     139: invokevirtual #494                // Method com/clougence/clouddm/console/web/component/analysis/AnalysisQueryOptions$Builder.currentUid:(Ljava/lang/String;)Lcom/clougence/clouddm/console/web/component/analysis/AnalysisQueryOptions$Builder;
+     142: aload         4
+     144: invokevirtual #80                 // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.getId:()Ljava/lang/Long;
+     147: invokevirtual #48                 // Method java/lang/Long.longValue:()J
+     150: invokevirtual #500                // Method com/clougence/clouddm/console/web/component/analysis/AnalysisQueryOptions$Builder.dataSourceId:(J)Lcom/clougence/clouddm/console/web/component/analysis/AnalysisQueryOptions$Builder;
+     153: aload_0
+     154: getfield      #463                // Field configService:Lcom/clougence/clouddm/console/web/component/dsconfig/DmDsConfigService;
+     157: aload         6
+     159: invokeinterface #504,  2          // InterfaceMethod com/clougence/clouddm/console/web/component/dsconfig/DmDsConfigService.parseLevels:(Ljava/util/List;)Lcom/clougence/clouddm/console/web/component/dsconfig/mode/DsLevels;
+     164: invokevirtual #508                // Method com/clougence/clouddm/console/web/component/dsconfig/mode/DsLevels.levelsParam:()Ljava/util/Map;
+     167: invokevirtual #512                // Method com/clougence/clouddm/console/web/component/analysis/AnalysisQueryOptions$Builder.levels:(Ljava/util/Map;)Lcom/clougence/clouddm/console/web/component/analysis/AnalysisQueryOptions$Builder;
+     170: getstatic     #516                // Field com/clougence/clouddm/console/web/component/analysis/QueryAnalysisFeature.REWRITE:Lcom/clougence/clouddm/console/web/component/analysis/QueryAnalysisFeature;
+     173: iconst_0
+     174: anewarray     #517                // class com/clougence/clouddm/console/web/component/analysis/QueryAnalysisFeature
+     177: invokevirtual #522                // Method com/clougence/clouddm/console/web/component/analysis/AnalysisQueryOptions$Builder.skip:(Lcom/clougence/clouddm/console/web/component/analysis/QueryAnalysisFeature;[Lcom/clougence/clouddm/console/web/component/analysis/QueryAnalysisFeature;)Lcom/clougence/clouddm/console/web/component/analysis/AnalysisQueryOptions$Builder;
+     180: invokevirtual #526                // Method com/clougence/clouddm/console/web/component/analysis/AnalysisQueryOptions$Builder.build:()Lcom/clougence/clouddm/console/web/component/analysis/AnalysisQueryOptions;
+     183: astore        7
+     185: aload         5
+     187: invokestatic  #530                // Method com/clougence/clouddm/console/web/util/DmDsUtils.createRequestCtx:(Lcom/clougence/clouddm/base/metadata/ds/DataSourceConfig;)Lcom/clougence/clouddm/sdk/execute/session/QueryRequest;
+     190: astore        8
+     192: aload         8
+     194: getstatic     #536                // Field com/clougence/clouddm/sdk/service/secrules/Requester.TICKET:Lcom/clougence/clouddm/sdk/service/secrules/Requester;
+     197: invokevirtual #542                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setRequester:(Lcom/clougence/clouddm/sdk/service/secrules/Requester;)V
+     200: aload         8
+     202: invokestatic  #548                // Method java/util/Collections.singletonList:(Ljava/lang/Object;)Ljava/util/List;
+     205: aload         4
+     207: invokevirtual #80                 // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.getId:()Ljava/lang/Long;
+     210: invokevirtual #48                 // Method java/lang/Long.longValue:()J
+     213: invokestatic  #554                // Method com/clougence/clouddm/console/web/util/DmDsUtils.fillRequestConfig:(Ljava/util/List;J)V
+     216: aload         8
+     218: invokevirtual #558                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.getDsId:()Ljava/lang/Long;
+     221: astore        9
+     223: aload         8
+     225: invokevirtual #561                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.getResultConf:()Lcom/clougence/clouddm/sdk/execute/session/QueryResultConf;
+     228: astore        10
+     230: lload_1
+     231: invokedynamic #565,  0            // InvokeDynamic #6:makeConcatWithConstants:(J)Ljava/lang/String;
+     236: astore        11
+     238: invokestatic  #566                // Method com/clougence/clouddm/api/common/GlobalConfUtils.getTempDataHome:()Ljava/lang/String;
+     241: iconst_2
+     242: anewarray     #571                // class java/lang/String
+     245: dup
+     246: iconst_0
+     247: ldc_w         #573                // String exec
+     250: aastore
+     251: dup
+     252: iconst_1
+     253: aload         11
+     255: invokedynamic #575,  0            // InvokeDynamic #7:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     260: aastore
+     261: invokestatic  #576                // InterfaceMethod java/nio/file/Path.of:(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+     264: astore        12
+     266: aload         12
+     268: invokeinterface #582,  1          // InterfaceMethod java/nio/file/Path.getParent:()Ljava/nio/file/Path;
+     273: iconst_0
+     274: anewarray     #586                // class java/nio/file/attribute/FileAttribute
+     277: invokestatic  #588                // Method java/nio/file/Files.createDirectories:(Ljava/nio/file/Path;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/file/Path;
+     280: pop
+     281: aload         12
+     283: invokestatic  #594                // Method java/nio/file/Files.deleteIfExists:(Ljava/nio/file/Path;)Z
+     286: pop
+     287: aload         12
+     289: iconst_0
+     290: anewarray     #586                // class java/nio/file/attribute/FileAttribute
+     293: invokestatic  #598                // Method java/nio/file/Files.createFile:(Ljava/nio/file/Path;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/file/Path;
+     296: pop
+     297: aload_0
+     298: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+     301: invokeinterface #220,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoTaskMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper;
+     306: lload_1
+     307: invokestatic  #351                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+     310: invokeinterface #601,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper.queryNeedExecTaskMaxOrder:(Ljava/lang/Long;)I
+     315: istore        13
+     317: aload_0
+     318: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+     321: invokeinterface #220,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoTaskMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper;
+     326: lload_1
+     327: invokestatic  #351                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+     330: invokeinterface #604,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper.queryNeedExecTaskCount:(Ljava/lang/Long;)I
+     335: istore        14
+     337: iconst_0
+     338: istore        15
+     340: aload_0
+     341: getfield      #380                // Field approvalStateService:Lcom/clougence/clouddm/console/web/component/approval/ApprovalStateService;
+     344: aload_3
+     345: invokevirtual #384                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getDependOnBizId:()Ljava/lang/String;
+     348: lconst_0
+     349: iload         14
+     351: i2l
+     352: invokeinterface #607,  6          // InterfaceMethod com/clougence/clouddm/console/web/component/approval/ApprovalStateService.reportExecutionPreparationProgress:(Ljava/lang/String;JJ)V
+     357: iconst_1
+     358: iload         13
+     360: invokestatic  #611                // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+     363: invokevirtual #614                // Method java/lang/String.length:()I
+     366: invokestatic  #617                // Method java/lang/Math.max:(II)I
+     369: istore        16
+     371: ldc_w         #623                // String MD5
+     374: invokestatic  #625                // Method java/security/MessageDigest.getInstance:(Ljava/lang/String;)Ljava/security/MessageDigest;
+     377: astore        17
+     379: new           #631                // class java/security/DigestOutputStream
+     382: dup
+     383: aload         12
+     385: iconst_2
+     386: anewarray     #633                // class java/nio/file/OpenOption
+     389: dup
+     390: iconst_0
+     391: getstatic     #635                // Field java/nio/file/StandardOpenOption.TRUNCATE_EXISTING:Ljava/nio/file/StandardOpenOption;
+     394: aastore
+     395: dup
+     396: iconst_1
+     397: getstatic     #641                // Field java/nio/file/StandardOpenOption.WRITE:Ljava/nio/file/StandardOpenOption;
+     400: aastore
+     401: invokestatic  #644                // Method java/nio/file/Files.newOutputStream:(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/OutputStream;
+     404: aload         17
+     406: invokespecial #648                // Method java/security/DigestOutputStream."<init>":(Ljava/io/OutputStream;Ljava/security/MessageDigest;)V
+     409: astore        18
+     411: new           #651                // class java/util/zip/ZipOutputStream
+     414: dup
+     415: aload         18
+     417: getstatic     #653                // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+     420: invokespecial #659                // Method java/util/zip/ZipOutputStream."<init>":(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V
+     423: astore        19
+     425: aload         19
+     427: iconst_1
+     428: invokevirtual #664                // Method java/util/zip/ZipOutputStream.setLevel:(I)V
+     431: iconst_0
+     432: istore        20
+     434: aload_0
+     435: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+     438: invokeinterface #220,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoTaskMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper;
+     443: lload_1
+     444: invokestatic  #351                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+     447: iload         20
+     449: bipush        100
+     451: invokeinterface #667,  4          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper.queryNeedExecTaskIdsBatch:(Ljava/lang/Long;II)Ljava/util/List;
+     456: astore        21
+     458: aload         21
+     460: invokeinterface #213,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+     465: ifeq          471
+     468: goto          1120
+     471: aload_0
+     472: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+     475: invokeinterface #220,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoTaskMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper;
+     480: lload_1
+     481: invokestatic  #351                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+     484: aload         21
+     486: invokeinterface #671,  3          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper.queryNeedExecTasksByIds:(Ljava/lang/Long;Ljava/util/List;)Ljava/util/List;
+     491: astore        22
+     493: aload         22
+     495: invokeinterface #230,  1          // InterfaceMethod java/util/List.size:()I
+     500: aload         21
+     502: invokeinterface #230,  1          // InterfaceMethod java/util/List.size:()I
+     507: if_icmpeq     521
+     510: new           #234                // class java/lang/IllegalStateException
+     513: dup
+     514: ldc_w         #675                // String Auto execution tasks changed while creating package.
+     517: invokespecial #238                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+     520: athrow
+     521: new           #677                // class java/util/zip/ZipEntry
+     524: dup
+     525: getstatic     #679                // Field java/util/Locale.ROOT:Ljava/util/Locale;
+     528: iload         16
+     530: invokedynamic #685,  0            // InvokeDynamic #8:makeConcatWithConstants:(I)Ljava/lang/String;
+     535: iconst_1
+     536: anewarray     #2                  // class java/lang/Object
+     539: dup
+     540: iconst_0
+     541: aload         22
+     543: iconst_0
+     544: invokeinterface #687,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+     549: checkcast     #242                // class com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO
+     552: invokevirtual #691                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getExecOrder:()Ljava/lang/Integer;
+     555: aastore
+     556: invokestatic  #695                // Method java/lang/String.format:(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+     559: invokespecial #699                // Method java/util/zip/ZipEntry."<init>":(Ljava/lang/String;)V
+     562: astore        23
+     564: aload         23
+     566: lconst_0
+     567: invokevirtual #700                // Method java/util/zip/ZipEntry.setTime:(J)V
+     570: aload         19
+     572: aload         23
+     574: invokevirtual #703                // Method java/util/zip/ZipOutputStream.putNextEntry:(Ljava/util/zip/ZipEntry;)V
+     577: invokestatic  #707                // Method com/clougence/utils/JsonUtils.defaultObjectMapper:()Lcom/fasterxml/jackson/databind/ObjectMapper;
+     580: invokevirtual #713                // Method com/fasterxml/jackson/databind/ObjectMapper.getFactory:()Lcom/fasterxml/jackson/core/JsonFactory;
+     583: aload         19
+     585: invokevirtual #719                // Method com/fasterxml/jackson/core/JsonFactory.createGenerator:(Ljava/io/OutputStream;)Lcom/fasterxml/jackson/core/JsonGenerator;
+     588: astore        24
+     590: aload         24
+     592: getstatic     #725                // Field com/fasterxml/jackson/core/JsonGenerator$Feature.AUTO_CLOSE_TARGET:Lcom/fasterxml/jackson/core/JsonGenerator$Feature;
+     595: invokevirtual #731                // Method com/fasterxml/jackson/core/JsonGenerator.disable:(Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/core/JsonGenerator;
+     598: pop
+     599: aload         24
+     601: aconst_null
+     602: invokevirtual #737                // Method com/fasterxml/jackson/core/JsonGenerator.setRootValueSeparator:(Lcom/fasterxml/jackson/core/SerializableString;)Lcom/fasterxml/jackson/core/JsonGenerator;
+     605: pop
+     606: aload         22
+     608: invokeinterface #741,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     613: astore        25
+     615: aload         25
+     617: invokeinterface #193,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     622: ifeq          1045
+     625: aload         25
+     627: invokeinterface #198,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     632: checkcast     #242                // class com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO
+     635: astore        26
+     637: aload_0
+     638: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+     641: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+     646: lload_1
+     647: invokestatic  #351                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+     650: invokeinterface #742,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.heartbeatPackaging:(Ljava/lang/Long;)I
+     655: iconst_1
+     656: if_icmpeq     670
+     659: new           #234                // class java/lang/IllegalStateException
+     662: dup
+     663: ldc_w         #745                // String Auto execution job stopped while creating task package.
+     666: invokespecial #238                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+     669: athrow
+     670: new           #747                // class java/io/StringReader
+     673: dup
+     674: aload         26
+     676: invokevirtual #749                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getExecSql:()Ljava/lang/String;
+     679: invokespecial #752                // Method java/io/StringReader."<init>":(Ljava/lang/String;)V
+     682: astore        27
+     684: aload_0
+     685: getfield      #753                // Field analysisService:Lcom/clougence/clouddm/console/web/component/analysis/QueryAnalysisService;
+     688: aload         5
+     690: aload         27
+     692: invokestatic  #757                // Method java/util/Collections.emptyList:()Ljava/util/List;
+     695: iconst_1
+     696: iconst_0
+     697: aload         7
+     699: invokeinterface #760,  7          // InterfaceMethod com/clougence/clouddm/console/web/component/analysis/QueryAnalysisService.analysisRequestsStream:(Lcom/clougence/clouddm/base/metadata/ds/DataSourceConfig;Ljava/io/Reader;Ljava/util/List;IILcom/clougence/clouddm/console/web/component/analysis/AnalysisQueryOptions;)Ljava/util/stream/Stream;
+     704: astore        28
+     706: aload         28
+     708: invokeinterface #187,  1          // InterfaceMethod java/util/stream/Stream.iterator:()Ljava/util/Iterator;
+     713: astore        29
+     715: aload         29
+     717: invokeinterface #193,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     722: ifne          736
+     725: new           #234                // class java/lang/IllegalStateException
+     728: dup
+     729: ldc_w         #766                // String Auto execution task must contain exactly one SQL statement.
+     732: invokespecial #238                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+     735: athrow
+     736: aload         29
+     738: invokeinterface #198,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     743: checkcast     #543                // class com/clougence/clouddm/sdk/execute/session/QueryRequest
+     746: astore        30
+     748: aload         29
+     750: invokeinterface #193,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     755: ifeq          769
+     758: new           #234                // class java/lang/IllegalStateException
+     761: dup
+     762: ldc_w         #766                // String Auto execution task must contain exactly one SQL statement.
+     765: invokespecial #238                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+     768: athrow
+     769: aload         5
+     771: invokestatic  #530                // Method com/clougence/clouddm/console/web/util/DmDsUtils.createRequestCtx:(Lcom/clougence/clouddm/base/metadata/ds/DataSourceConfig;)Lcom/clougence/clouddm/sdk/execute/session/QueryRequest;
+     774: astore        31
+     776: aload         31
+     778: aload         26
+     780: invokevirtual #768                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getQueryId:()Ljava/lang/String;
+     783: invokevirtual #771                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setQueryId:(Ljava/lang/String;)V
+     786: aload         31
+     788: aload         30
+     790: invokevirtual #772                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.getQueryBody:()Ljava/lang/String;
+     793: invokevirtual #775                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setQueryBody:(Ljava/lang/String;)V
+     796: aload         31
+     798: aload         30
+     800: invokevirtual #778                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.getQueryArgs:()Ljava/util/List;
+     803: invokevirtual #781                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setQueryArgs:(Ljava/util/List;)V
+     806: aload         31
+     808: aload         30
+     810: invokevirtual #784                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.getQueryTypes:()Ljava/util/Set;
+     813: invokevirtual #788                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setQueryTypes:(Ljava/util/Set;)V
+     816: aload         31
+     818: aload         9
+     820: invokevirtual #792                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setDsId:(Ljava/lang/Long;)V
+     823: aload         31
+     825: aload         30
+     827: invokevirtual #795                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.getDsType:()Lcom/clougence/clouddm/base/metadata/ds/DataSourceType;
+     830: invokevirtual #799                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setDsType:(Lcom/clougence/clouddm/base/metadata/ds/DataSourceType;)V
+     833: aload         31
+     835: aload         30
+     837: invokevirtual #803                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.getRelations:()Ljava/util/List;
+     840: invokevirtual #806                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setRelations:(Ljava/util/List;)V
+     843: aload         31
+     845: aload         30
+     847: invokevirtual #809                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.getColumnList:()Ljava/util/Map;
+     850: invokevirtual #812                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setColumnList:(Ljava/util/Map;)V
+     853: aload         31
+     855: aload         30
+     857: invokevirtual #816                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.isUsingValueProcess:()Z
+     860: invokevirtual #819                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setUsingValueProcess:(Z)V
+     863: aload         31
+     865: getstatic     #536                // Field com/clougence/clouddm/sdk/service/secrules/Requester.TICKET:Lcom/clougence/clouddm/sdk/service/secrules/Requester;
+     868: invokevirtual #542                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setRequester:(Lcom/clougence/clouddm/sdk/service/secrules/Requester;)V
+     871: aload         31
+     873: aload         26
+     875: invokevirtual #822                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getGmtCreate:()Ljava/time/LocalDateTime;
+     878: invokestatic  #826                // Method java/sql/Timestamp.valueOf:(Ljava/time/LocalDateTime;)Ljava/sql/Timestamp;
+     881: invokevirtual #831                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setRequestTime:(Ljava/util/Date;)V
+     884: aload         31
+     886: aload         10
+     888: invokevirtual #834                // Method com/clougence/clouddm/sdk/execute/session/QueryResultConf.clone:()Lcom/clougence/clouddm/sdk/execute/session/QueryResultConf;
+     891: invokevirtual #839                // Method com/clougence/clouddm/sdk/execute/session/QueryRequest.setResultConf:(Lcom/clougence/clouddm/sdk/execute/session/QueryResultConf;)V
+     894: aload_0
+     895: getfield      #843                // Field auditService:Lcom/clougence/clouddm/console/web/service/security/AuditService;
+     898: aload         4
+     900: invokevirtual #80                 // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.getId:()Ljava/lang/Long;
+     903: aload_3
+     904: invokevirtual #491                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getUid:()Ljava/lang/String;
+     907: aload         31
+     909: invokeinterface #847,  4          // InterfaceMethod com/clougence/clouddm/console/web/service/security/AuditService.prepareAudit:(Ljava/lang/Long;Ljava/lang/String;Lcom/clougence/clouddm/sdk/execute/session/QueryRequest;)V
+     914: invokestatic  #707                // Method com/clougence/utils/JsonUtils.defaultObjectMapper:()Lcom/fasterxml/jackson/databind/ObjectMapper;
+     917: aload         24
+     919: aload         31
+     921: invokevirtual #853                // Method com/fasterxml/jackson/databind/ObjectMapper.writeValue:(Lcom/fasterxml/jackson/core/JsonGenerator;Ljava/lang/Object;)V
+     924: aload         24
+     926: bipush        10
+     928: invokevirtual #857                // Method com/fasterxml/jackson/core/JsonGenerator.writeRaw:(C)V
+     931: aload         28
+     933: ifnull        975
+     936: aload         28
+     938: invokeinterface #861,  1          // InterfaceMethod java/util/stream/Stream.close:()V
+     943: goto          975
+     946: astore        29
+     948: aload         28
+     950: ifnull        972
+     953: aload         28
+     955: invokeinterface #861,  1          // InterfaceMethod java/util/stream/Stream.close:()V
+     960: goto          972
+     963: astore        30
+     965: aload         29
+     967: aload         30
+     969: invokevirtual #864                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+     972: aload         29
+     974: athrow
+     975: aload         27
+     977: invokevirtual #865                // Method java/io/StringReader.close:()V
+     980: goto          1005
+     983: astore        28
+     985: aload         27
+     987: invokevirtual #865                // Method java/io/StringReader.close:()V
+     990: goto          1002
+     993: astore        29
+     995: aload         28
+     997: aload         29
+     999: invokevirtual #864                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+    1002: aload         28
+    1004: athrow
+    1005: iinc          15, 1
+    1008: iload         15
+    1010: iload         14
+    1012: if_icmpeq     1023
+    1015: iload         15
+    1017: bipush        10
+    1019: irem
+    1020: ifne          1042
+    1023: aload_0
+    1024: getfield      #380                // Field approvalStateService:Lcom/clougence/clouddm/console/web/component/approval/ApprovalStateService;
+    1027: aload_3
+    1028: invokevirtual #384                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getDependOnBizId:()Ljava/lang/String;
+    1031: iload         15
+    1033: i2l
+    1034: iload         14
+    1036: i2l
+    1037: invokeinterface #607,  6          // InterfaceMethod com/clougence/clouddm/console/web/component/approval/ApprovalStateService.reportExecutionPreparationProgress:(Ljava/lang/String;JJ)V
+    1042: goto          615
+    1045: aload         24
+    1047: ifnull        1085
+    1050: aload         24
+    1052: invokevirtual #866                // Method com/fasterxml/jackson/core/JsonGenerator.close:()V
+    1055: goto          1085
+    1058: astore        25
+    1060: aload         24
+    1062: ifnull        1082
+    1065: aload         24
+    1067: invokevirtual #866                // Method com/fasterxml/jackson/core/JsonGenerator.close:()V
+    1070: goto          1082
+    1073: astore        26
+    1075: aload         25
+    1077: aload         26
+    1079: invokevirtual #864                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+    1082: aload         25
+    1084: athrow
+    1085: aload         19
+    1087: invokevirtual #867                // Method java/util/zip/ZipOutputStream.closeEntry:()V
+    1090: aload         22
+    1092: aload         22
+    1094: invokeinterface #230,  1          // InterfaceMethod java/util/List.size:()I
+    1099: iconst_1
+    1100: isub
+    1101: invokeinterface #687,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+    1106: checkcast     #242                // class com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO
+    1109: invokevirtual #691                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getExecOrder:()Ljava/lang/Integer;
+    1112: invokevirtual #870                // Method java/lang/Integer.intValue:()I
+    1115: istore        20
+    1117: goto          434
+    1120: aload         19
+    1122: invokevirtual #873                // Method java/util/zip/ZipOutputStream.close:()V
+    1125: goto          1150
+    1128: astore        20
+    1130: aload         19
+    1132: invokevirtual #873                // Method java/util/zip/ZipOutputStream.close:()V
+    1135: goto          1147
+    1138: astore        21
+    1140: aload         20
+    1142: aload         21
+    1144: invokevirtual #864                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+    1147: aload         20
+    1149: athrow
+    1150: aload         18
+    1152: invokevirtual #874                // Method java/security/DigestOutputStream.close:()V
+    1155: goto          1180
+    1158: astore        19
+    1160: aload         18
+    1162: invokevirtual #874                // Method java/security/DigestOutputStream.close:()V
+    1165: goto          1177
+    1168: astore        20
+    1170: aload         19
+    1172: aload         20
+    1174: invokevirtual #864                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+    1177: aload         19
+    1179: athrow
+    1180: invokestatic  #875                // Method java/util/HexFormat.of:()Ljava/util/HexFormat;
+    1183: aload         17
+    1185: invokevirtual #880                // Method java/security/MessageDigest.digest:()[B
+    1188: invokevirtual #884                // Method java/util/HexFormat.formatHex:([B)Ljava/lang/String;
+    1191: astore        18
+    1193: aload         12
+    1195: invokestatic  #888                // Method java/nio/file/Files.size:(Ljava/nio/file/Path;)J
+    1198: lstore        19
+    1200: aload_0
+    1201: getfield      #891                // Field localFileService:Lcom/clougence/clouddm/console/web/component/file/LocalFileService;
+    1204: aload_3
+    1205: invokevirtual #491                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getUid:()Ljava/lang/String;
+    1208: aload         12
+    1210: aload         11
+    1212: getstatic     #895                // Field com/clougence/clouddm/platform/dal/model/system/SysAttachmentType.SQL_FILE_TASK:Lcom/clougence/clouddm/platform/dal/model/system/SysAttachmentType;
+    1215: invokeinterface #901,  5          // InterfaceMethod com/clougence/clouddm/console/web/component/file/LocalFileService.addAsEditing:(Ljava/lang/String;Ljava/nio/file/Path;Ljava/lang/String;Lcom/clougence/clouddm/platform/dal/model/system/SysAttachmentType;)J
+    1220: lstore        21
+    1222: new           #907                // class com/clougence/clouddm/api/console/autoexec/AutoExecTaskPackageInfo
+    1225: dup
+    1226: invokespecial #909                // Method com/clougence/clouddm/api/console/autoexec/AutoExecTaskPackageInfo."<init>":()V
+    1229: astore        23
+    1231: aload         23
+    1233: lload         21
+    1235: invokevirtual #910                // Method com/clougence/clouddm/api/console/autoexec/AutoExecTaskPackageInfo.setAttachmentId:(J)V
+    1238: aload         23
+    1240: lload         19
+    1242: invokevirtual #913                // Method com/clougence/clouddm/api/console/autoexec/AutoExecTaskPackageInfo.setFileSize:(J)V
+    1245: aload         23
+    1247: aload         18
+    1249: invokevirtual #916                // Method com/clougence/clouddm/api/console/autoexec/AutoExecTaskPackageInfo.setMd5:(Ljava/lang/String;)V
+    1252: aload         23
+    1254: areturn
+    1255: astore        13
+    1257: aload         12
+    1259: invokestatic  #594                // Method java/nio/file/Files.deleteIfExists:(Ljava/nio/file/Path;)Z
+    1262: pop
+    1263: goto          1283
+    1266: astore        14
+    1268: getstatic     #318                // Field log:Lorg/slf4j/Logger;
+    1271: ldc_w         #921                // String delete incomplete auto execution task package failed: {}
+    1274: aload         12
+    1276: aload         14
+    1278: invokeinterface #923,  4          // InterfaceMethod org/slf4j/Logger.warn:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+    1283: new           #234                // class java/lang/IllegalStateException
+    1286: dup
+    1287: lload_1
+    1288: invokedynamic #926,  0            // InvokeDynamic #9:makeConcatWithConstants:(J)Ljava/lang/String;
+    1293: aload         13
+    1295: invokespecial #927                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;Ljava/lang/Throwable;)V
+    1298: athrow
+    Exception table:
+       from    to  target type
+         706   931   946   Class java/lang/Throwable
+         953   960   963   Class java/lang/Throwable
+         684   975   983   Class java/lang/Throwable
+         985   990   993   Class java/lang/Throwable
+         590  1045  1058   Class java/lang/Throwable
+        1065  1070  1073   Class java/lang/Throwable
+         425  1120  1128   Class java/lang/Throwable
+        1130  1135  1138   Class java/lang/Throwable
+         411  1150  1158   Class java/lang/Throwable
+        1160  1165  1168   Class java/lang/Throwable
+         266  1254  1255   Class java/lang/Exception
+        1257  1263  1266   Class java/lang/Exception
+
+  public byte[] read(long, long, long, int);
+    Code:
+       0: lload         5
+       2: lconst_0
+       3: lcmp
+       4: iflt          12
+       7: iload         7
+       9: ifgt          23
+      12: new           #19                 // class java/lang/IllegalArgumentException
+      15: dup
+      16: ldc_w         #929                // String Invalid auto execution task package read range.
+      19: invokespecial #23                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      22: athrow
+      23: aload_0
+      24: lload_1
+      25: invokevirtual #931                // Method requireJob:(J)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+      28: astore        8
+      30: aload_0
+      31: getfield      #891                // Field localFileService:Lcom/clougence/clouddm/console/web/component/file/LocalFileService;
+      34: aload         8
+      36: invokevirtual #491                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getUid:()Ljava/lang/String;
+      39: lload_3
+      40: aload_0
+      41: lload         5
+      43: aload         8
+      45: lload_3
+      46: iload         7
+      48: invokedynamic #934,  0            // InvokeDynamic #10:eApply:(Lcom/clougence/clouddm/console/web/component/execute/impl/AutoExecServiceImpl;JLcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;JI)Lcom/clougence/utils/function/EFunction;
+      53: invokeinterface #938,  5          // InterfaceMethod com/clougence/clouddm/console/web/component/file/LocalFileService.consumeEditing:(Ljava/lang/String;JLcom/clougence/utils/function/EFunction;)Ljava/lang/Object;
+      58: checkcast     #942                // class "[B"
+      61: areturn
+
+  public void delete(long);
+    Code:
+       0: aload_0
+       1: getfield      #891                // Field localFileService:Lcom/clougence/clouddm/console/web/component/file/LocalFileService;
+       4: lload_1
+       5: invokeinterface #944,  3          // InterfaceMethod com/clougence/clouddm/console/web/component/file/LocalFileService.deleteRecord:(J)V
+      10: return
+
+  private com.clougence.clouddm.platform.dal.model.execution.DmExecAutoJobDO requireJob(long);
+    Code:
+       0: aload_0
+       1: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+       4: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+       9: lload_1
+      10: invokeinterface #373,  3          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.queryById:(J)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+      15: astore_3
+      16: aload_3
+      17: ifnonnull     34
+      20: new           #234                // class java/lang/IllegalStateException
+      23: dup
+      24: lload_1
+      25: invokedynamic #947,  0            // InvokeDynamic #11:makeConcatWithConstants:(J)Ljava/lang/String;
+      30: invokespecial #238                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      33: athrow
+      34: aload_3
+      35: areturn
+
+  private com.clougence.clouddm.api.sidecar.autoexec.AutoExecJobDTO prepareJobData(com.clougence.clouddm.platform.dal.model.execution.DmExecAutoJobDO, com.clougence.clouddm.api.console.autoexec.AutoExecTaskPackageInfo);
+    Code:
+       0: new           #418                // class com/clougence/clouddm/api/sidecar/autoexec/AutoExecJobDTO
+       3: dup
+       4: invokespecial #948                // Method com/clougence/clouddm/api/sidecar/autoexec/AutoExecJobDTO."<init>":()V
+       7: astore_3
+       8: aload_3
+       9: aload_1
+      10: invokevirtual #949                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getConfig:()Lcom/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj;
+      13: invokevirtual #953                // Method com/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj.getErrorStrategy:()Lcom/clougence/clouddm/api/console/autoexec/ErrorStrategy;
+      16: invokevirtual #954                // Method com/clougence/clouddm/api/sidecar/autoexec/AutoExecJobDTO.setErrorStrategy:(Lcom/clougence/clouddm/api/console/autoexec/ErrorStrategy;)V
+      19: aload_3
+      20: aload_1
+      21: invokevirtual #949                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getConfig:()Lcom/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj;
+      24: invokevirtual #955                // Method com/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj.getRetryCount:()Ljava/lang/Long;
+      27: invokevirtual #956                // Method com/clougence/clouddm/api/sidecar/autoexec/AutoExecJobDTO.setRetryCount:(Ljava/lang/Long;)V
+      30: aload_3
+      31: aload_1
+      32: invokevirtual #949                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getConfig:()Lcom/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj;
+      35: invokevirtual #957                // Method com/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj.getRetryWaitTime:()Ljava/lang/Long;
+      38: invokevirtual #958                // Method com/clougence/clouddm/api/sidecar/autoexec/AutoExecJobDTO.setRetryWaitTime:(Ljava/lang/Long;)V
+      41: aload_3
+      42: aload_1
+      43: invokevirtual #949                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getConfig:()Lcom/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj;
+      46: invokevirtual #959                // Method com/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj.isEnableTransactional:()Z
+      49: invokevirtual #962                // Method com/clougence/clouddm/api/sidecar/autoexec/AutoExecJobDTO.setEnableTransactional:(Z)V
+      52: aload_0
+      53: getfield      #444                // Field dsDal:Lcom/clougence/clouddm/platform/dal/access/DataSourceDal;
+      56: invokeinterface #448,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/DataSourceDal.dsMapper:()Lcom/clougence/clouddm/platform/dal/mapper/datasource/DmDsMapper;
+      61: aload_1
+      62: invokevirtual #454                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getDataSourceId:()Ljava/lang/Long;
+      65: invokeinterface #457,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/datasource/DmDsMapper.queryDsIdentityById:(Ljava/lang/Long;)Lcom/clougence/clouddm/platform/dal/model/datasource/DmDsDO;
+      70: astore        4
+      72: aload_0
+      73: getfield      #463                // Field configService:Lcom/clougence/clouddm/console/web/component/dsconfig/DmDsConfigService;
+      76: aload         4
+      78: invokevirtual #80                 // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.getId:()Ljava/lang/Long;
+      81: invokevirtual #48                 // Method java/lang/Long.longValue:()J
+      84: invokeinterface #467,  3          // InterfaceMethod com/clougence/clouddm/console/web/component/dsconfig/DmDsConfigService.fetchDsConfigFromExists:(J)Lcom/clougence/clouddm/base/metadata/ds/DataSourceConfig;
+      89: astore        5
+      91: new           #182                // class java/util/ArrayList
+      94: dup
+      95: invokespecial #473                // Method java/util/ArrayList."<init>":()V
+      98: astore        6
+     100: aload         6
+     102: aload         4
+     104: invokevirtual #474                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.getDsEnvId:()Ljava/lang/Long;
+     107: invokevirtual #477                // Method java/lang/Long.toString:()Ljava/lang/String;
+     110: invokeinterface #289,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     115: pop
+     116: aload         6
+     118: aload         4
+     120: invokevirtual #80                 // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.getId:()Ljava/lang/Long;
+     123: invokevirtual #477                // Method java/lang/Long.toString:()Ljava/lang/String;
+     126: invokeinterface #289,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     131: pop
+     132: aload         6
+     134: aload_1
+     135: invokevirtual #478                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getLevels:()Ljava/util/List;
+     138: invokeinterface #481,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+     143: pop
+     144: aload_0
+     145: getfield      #463                // Field configService:Lcom/clougence/clouddm/console/web/component/dsconfig/DmDsConfigService;
+     148: aload         6
+     150: invokeinterface #504,  2          // InterfaceMethod com/clougence/clouddm/console/web/component/dsconfig/DmDsConfigService.parseLevels:(Ljava/util/List;)Lcom/clougence/clouddm/console/web/component/dsconfig/mode/DsLevels;
+     155: invokevirtual #508                // Method com/clougence/clouddm/console/web/component/dsconfig/mode/DsLevels.levelsParam:()Ljava/util/Map;
+     158: astore        7
+     160: new           #963                // class java/util/HashMap
+     163: dup
+     164: invokespecial #965                // Method java/util/HashMap."<init>":()V
+     167: astore        8
+     169: aload         8
+     171: ldc_w         #968                // String DEFAULT_DB
+     174: aload         7
+     176: getstatic     #970                // Field com/clougence/schema/umi/struts/UmiTypes.Catalog:Lcom/clougence/schema/umi/struts/UmiTypes;
+     179: invokeinterface #976,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+     184: invokestatic  #981                // Method com/clougence/utils/StringUtils.toString:(Ljava/lang/Object;)Ljava/lang/String;
+     187: invokeinterface #984,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     192: pop
+     193: aload         8
+     195: ldc_w         #988                // String DEFAULT_SCHEMA
+     198: aload         7
+     200: getstatic     #990                // Field com/clougence/schema/umi/struts/UmiTypes.Schema:Lcom/clougence/schema/umi/struts/UmiTypes;
+     203: invokeinterface #976,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+     208: invokestatic  #981                // Method com/clougence/utils/StringUtils.toString:(Ljava/lang/Object;)Ljava/lang/String;
+     211: invokeinterface #984,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     216: pop
+     217: aload         4
+     219: invokevirtual #993                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.getDataSourceType:()Lcom/clougence/clouddm/base/metadata/ds/DataSourceType;
+     222: invokestatic  #996                // Method com/clougence/clouddm/platform/plugin/PluginManager.findSessionSpi:(Lcom/clougence/clouddm/base/metadata/ds/DataSourceType;)Lcom/clougence/clouddm/sdk/execute/session/SessionSpi;
+     225: astore        9
+     227: aload         9
+     229: aload         5
+     231: aload         8
+     233: invokeinterface #1002,  3         // InterfaceMethod com/clougence/clouddm/sdk/execute/session/SessionSpi.createSessionContext:(Lcom/clougence/clouddm/base/metadata/ds/DataSourceConfig;Ljava/util/Map;)Lcom/clougence/clouddm/sdk/execute/session/SessionContextDTO;
+     238: astore        10
+     240: aload_3
+     241: aload         10
+     243: invokevirtual #1006               // Method com/clougence/clouddm/api/sidecar/autoexec/AutoExecJobDTO.setContextDTO:(Lcom/clougence/clouddm/sdk/execute/session/SessionContextDTO;)V
+     246: aload_3
+     247: aload         4
+     249: invokevirtual #80                 // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.getId:()Ljava/lang/Long;
+     252: invokevirtual #1010               // Method com/clougence/clouddm/api/sidecar/autoexec/AutoExecJobDTO.setDsId:(Ljava/lang/Long;)V
+     255: aload_3
+     256: aload_1
+     257: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+     260: invokevirtual #1011               // Method com/clougence/clouddm/api/sidecar/autoexec/AutoExecJobDTO.setJobId:(Ljava/lang/Long;)V
+     263: aload_3
+     264: aload_2
+     265: invokevirtual #1014               // Method com/clougence/clouddm/api/sidecar/autoexec/AutoExecJobDTO.setTaskPackage:(Lcom/clougence/clouddm/api/console/autoexec/AutoExecTaskPackageInfo;)V
+     268: aload_3
+     269: areturn
+
+  public void continueTask(java.lang.String, long);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #1018               // Method requireJob:(Ljava/lang/String;)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+       5: astore        4
+       7: aload         4
+       9: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      12: getstatic     #1020               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.PAUSE:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      15: if_acmpeq     46
+      18: aload         4
+      20: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      23: getstatic     #1023               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.FAILED:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      26: if_acmpeq     46
+      29: new           #43                 // class com/clougence/clouddm/api/common/exception/ErrorMessageException
+      32: dup
+      33: getstatic     #1026               // Field com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.AUTO_EXEC_WRONG_OPERATE_ERROR_MESSAGE:Lcom/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys;
+      36: invokevirtual #1032               // Method com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.name:()Ljava/lang/String;
+      39: invokestatic  #1035               // Method com/clougence/clouddm/console/web/global/i18n/DmI18nUtils.getMessage:(Ljava/lang/String;)Ljava/lang/String;
+      42: invokespecial #47                 // Method com/clougence/clouddm/api/common/exception/ErrorMessageException."<init>":(Ljava/lang/String;)V
+      45: athrow
+      46: aload_0
+      47: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+      50: invokeinterface #220,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoTaskMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper;
+      55: lload_2
+      56: invokestatic  #351                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+      59: invokeinterface #1040,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper.selectById:(Ljava/io/Serializable;)Ljava/lang/Object;
+      64: checkcast     #242                // class com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO
+      67: astore        5
+      69: aload         5
+      71: ifnull        90
+      74: aload         5
+      76: invokevirtual #1044               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getAutoExecJobId:()Ljava/lang/Long;
+      79: aload         4
+      81: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+      84: invokevirtual #1047               // Method java/lang/Long.equals:(Ljava/lang/Object;)Z
+      87: ifne          107
+      90: new           #43                 // class com/clougence/clouddm/api/common/exception/ErrorMessageException
+      93: dup
+      94: getstatic     #1050               // Field com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.AUTO_EXEC_TASK_JOB_NOT_MATCH_ERROR_MESSAGE:Lcom/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys;
+      97: invokevirtual #1032               // Method com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.name:()Ljava/lang/String;
+     100: invokestatic  #1035               // Method com/clougence/clouddm/console/web/global/i18n/DmI18nUtils.getMessage:(Ljava/lang/String;)Ljava/lang/String;
+     103: invokespecial #47                 // Method com/clougence/clouddm/api/common/exception/ErrorMessageException."<init>":(Ljava/lang/String;)V
+     106: athrow
+     107: aload         5
+     109: invokevirtual #1053               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;
+     112: getstatic     #1056               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus.CANCELED:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;
+     115: if_acmpeq     135
+     118: new           #43                 // class com/clougence/clouddm/api/common/exception/ErrorMessageException
+     121: dup
+     122: getstatic     #1059               // Field com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.AUTO_EXEC_TASK_NOT_SKIPPED:Lcom/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys;
+     125: invokevirtual #1032               // Method com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.name:()Ljava/lang/String;
+     128: invokestatic  #1035               // Method com/clougence/clouddm/console/web/global/i18n/DmI18nUtils.getMessage:(Ljava/lang/String;)Ljava/lang/String;
+     131: invokespecial #47                 // Method com/clougence/clouddm/api/common/exception/ErrorMessageException."<init>":(Ljava/lang/String;)V
+     134: athrow
+     135: aload_0
+     136: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+     139: invokeinterface #220,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoTaskMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper;
+     144: aload         5
+     146: invokevirtual #1062               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getId:()Ljava/lang/Long;
+     149: getstatic     #258                // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus.WAIT_EXEC:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;
+     152: invokeinterface #1063,  3         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper.updateStatusByTaskId:(Ljava/lang/Long;Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;)V
+     157: return
+
+  public boolean skipTask(java.lang.String, long);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #1018               // Method requireJob:(Ljava/lang/String;)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+       5: astore        4
+       7: aload         4
+       9: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      12: getstatic     #1020               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.PAUSE:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      15: if_acmpeq     46
+      18: aload         4
+      20: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      23: getstatic     #1023               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.FAILED:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      26: if_acmpeq     46
+      29: new           #43                 // class com/clougence/clouddm/api/common/exception/ErrorMessageException
+      32: dup
+      33: getstatic     #1026               // Field com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.AUTO_EXEC_WRONG_OPERATE_ERROR_MESSAGE:Lcom/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys;
+      36: invokevirtual #1032               // Method com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.name:()Ljava/lang/String;
+      39: invokestatic  #1035               // Method com/clougence/clouddm/console/web/global/i18n/DmI18nUtils.getMessage:(Ljava/lang/String;)Ljava/lang/String;
+      42: invokespecial #47                 // Method com/clougence/clouddm/api/common/exception/ErrorMessageException."<init>":(Ljava/lang/String;)V
+      45: athrow
+      46: aload_0
+      47: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+      50: invokeinterface #220,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoTaskMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper;
+      55: lload_2
+      56: invokestatic  #351                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+      59: invokeinterface #1040,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper.selectById:(Ljava/io/Serializable;)Ljava/lang/Object;
+      64: checkcast     #242                // class com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO
+      67: astore        5
+      69: aload         5
+      71: ifnull        90
+      74: aload         5
+      76: invokevirtual #1044               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getAutoExecJobId:()Ljava/lang/Long;
+      79: aload         4
+      81: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+      84: invokestatic  #1067               // Method java/util/Objects.equals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+      87: ifne          107
+      90: new           #43                 // class com/clougence/clouddm/api/common/exception/ErrorMessageException
+      93: dup
+      94: getstatic     #1050               // Field com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.AUTO_EXEC_TASK_JOB_NOT_MATCH_ERROR_MESSAGE:Lcom/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys;
+      97: invokevirtual #1032               // Method com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.name:()Ljava/lang/String;
+     100: invokestatic  #1035               // Method com/clougence/clouddm/console/web/global/i18n/DmI18nUtils.getMessage:(Ljava/lang/String;)Ljava/lang/String;
+     103: invokespecial #47                 // Method com/clougence/clouddm/api/common/exception/ErrorMessageException."<init>":(Ljava/lang/String;)V
+     106: athrow
+     107: aload         5
+     109: invokevirtual #1053               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;
+     112: getstatic     #1072               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus.FINISH:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;
+     115: if_acmpeq     129
+     118: aload         5
+     120: invokevirtual #1053               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;
+     123: getstatic     #1075               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus.WAIT_CONFIRM:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;
+     126: if_acmpne     146
+     129: new           #43                 // class com/clougence/clouddm/api/common/exception/ErrorMessageException
+     132: dup
+     133: getstatic     #1078               // Field com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.AUTO_EXEC_TASK_IS_FINISH:Lcom/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys;
+     136: invokevirtual #1032               // Method com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.name:()Ljava/lang/String;
+     139: invokestatic  #1035               // Method com/clougence/clouddm/console/web/global/i18n/DmI18nUtils.getMessage:(Ljava/lang/String;)Ljava/lang/String;
+     142: invokespecial #47                 // Method com/clougence/clouddm/api/common/exception/ErrorMessageException."<init>":(Ljava/lang/String;)V
+     145: athrow
+     146: aload_0
+     147: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+     150: invokeinterface #220,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoTaskMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper;
+     155: aload         5
+     157: invokevirtual #1062               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getId:()Ljava/lang/Long;
+     160: getstatic     #1056               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus.CANCELED:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;
+     163: invokeinterface #1063,  3         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper.updateStatusByTaskId:(Ljava/lang/Long;Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;)V
+     168: aload_0
+     169: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+     172: invokeinterface #220,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoTaskMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper;
+     177: aload         4
+     179: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+     182: invokeinterface #604,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper.queryNeedExecTaskCount:(Ljava/lang/Long;)I
+     187: istore        6
+     189: iload         6
+     191: ifne          229
+     194: aload_0
+     195: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+     198: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+     203: aload         4
+     205: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+     208: invokeinterface #1081,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.finishJob:(Ljava/lang/Long;)V
+     213: aload_0
+     214: getfield      #380                // Field approvalStateService:Lcom/clougence/clouddm/console/web/component/approval/ApprovalStateService;
+     217: aload         4
+     219: invokevirtual #384                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getDependOnBizId:()Ljava/lang/String;
+     222: invokeinterface #1084,  2         // InterfaceMethod com/clougence/clouddm/console/web/component/approval/ApprovalStateService.completeExecution:(Ljava/lang/String;)V
+     227: iconst_1
+     228: ireturn
+     229: iconst_0
+     230: ireturn
+
+  public com.clougence.clouddm.console.web.model.vo.ticket.DmAutoExecJobVO queryAutoExecJob(java.lang.String, boolean);
+    Code:
+       0: aload_0
+       1: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+       4: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+       9: aload_1
+      10: invokeinterface #1087,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.queryByDependOnBizId:(Ljava/lang/String;)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+      15: astore_3
+      16: aload_3
+      17: ifnonnull     22
+      20: aconst_null
+      21: areturn
+      22: new           #1090               // class com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO
+      25: dup
+      26: invokespecial #1092               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO."<init>":()V
+      29: astore        4
+      31: aload         4
+      33: aload_3
+      34: invokevirtual #144                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getExecType:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecType;
+      37: invokevirtual #1093               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setExecType:(Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecType;)V
+      40: aload         4
+      42: getstatic     #1094               // Field com/clougence/utils/format/DateFormatType.s_yyyyMMdd_HHmmss:Lcom/clougence/utils/format/DateFormatType;
+      45: aload_3
+      46: invokevirtual #1100               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getLastReportTime:()Ljava/util/Date;
+      49: invokevirtual #1104               // Method com/clougence/utils/format/DateFormatType.format:(Ljava/util/Date;)Ljava/lang/String;
+      52: invokevirtual #1107               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setLastReportTime:(Ljava/lang/String;)V
+      55: aload_3
+      56: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      59: getstatic     #438                // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.PACKAGING:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      62: if_acmpne     76
+      65: aload         4
+      67: getstatic     #1110               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.INIT:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      70: invokevirtual #1113               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setStatus:(Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;)V
+      73: goto          85
+      76: aload         4
+      78: aload_3
+      79: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      82: invokevirtual #1113               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setStatus:(Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;)V
+      85: aload         4
+      87: getstatic     #1094               // Field com/clougence/utils/format/DateFormatType.s_yyyyMMdd_HHmmss:Lcom/clougence/utils/format/DateFormatType;
+      90: aload_3
+      91: invokevirtual #1114               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getScheduleTime:()Ljava/util/Date;
+      94: invokevirtual #1104               // Method com/clougence/utils/format/DateFormatType.format:(Ljava/util/Date;)Ljava/lang/String;
+      97: invokevirtual #1117               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setExecTime:(Ljava/lang/String;)V
+     100: aload         4
+     102: aload_3
+     103: invokevirtual #1120               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getQueryId:()Ljava/lang/String;
+     106: invokevirtual #1121               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setQueryId:(Ljava/lang/String;)V
+     109: aload         4
+     111: aload_3
+     112: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+     115: invokevirtual #1122               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setId:(Ljava/lang/Long;)V
+     118: aload         4
+     120: aload_3
+     121: invokevirtual #949                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getConfig:()Lcom/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj;
+     124: invokevirtual #959                // Method com/clougence/clouddm/platform/dal/model/execution/RsExecAutoJobConfigObj.isEnableTransactional:()Z
+     127: invokevirtual #1125               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setEnableTransactional:(Z)V
+     130: aload_3
+     131: invokevirtual #1126               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getWorkerSeqNumber:()Ljava/lang/String;
+     134: ifnull        217
+     137: aload_3
+     138: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+     141: getstatic     #1110               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.INIT:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+     144: if_acmpeq     217
+     147: aload_3
+     148: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+     151: getstatic     #1129               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.FINISH:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+     154: if_acmpeq     217
+     157: aload_3
+     158: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+     161: getstatic     #1131               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.TERMINATION:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+     164: if_acmpeq     217
+     167: aload_0
+     168: getfield      #1134               // Field systemDal:Lcom/clougence/clouddm/platform/dal/access/SystemDal;
+     171: invokeinterface #1138,  1         // InterfaceMethod com/clougence/clouddm/platform/dal/access/SystemDal.workerMapper:()Lcom/clougence/clouddm/platform/dal/mapper/system/DmSysWorkerMapper;
+     176: aload_3
+     177: invokevirtual #1126               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getWorkerSeqNumber:()Ljava/lang/String;
+     180: invokeinterface #1144,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/system/DmSysWorkerMapper.getByWsn:(Ljava/lang/String;)Lcom/clougence/clouddm/platform/dal/model/system/DmSysWorkerDO;
+     185: astore        5
+     187: aload         4
+     189: aload         5
+     191: invokevirtual #1150               // Method com/clougence/clouddm/platform/dal/model/system/DmSysWorkerDO.getWorkerIp:()Ljava/lang/String;
+     194: invokevirtual #1155               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setWorkerIP:(Ljava/lang/String;)V
+     197: aload         4
+     199: aload         5
+     201: invokevirtual #1158               // Method com/clougence/clouddm/platform/dal/model/system/DmSysWorkerDO.getConnStatus:()Lcom/clougence/clouddm/comm/constants/worker/WorkerConnStatus;
+     204: invokevirtual #1162               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setWorkerStatus:(Lcom/clougence/clouddm/comm/constants/worker/WorkerConnStatus;)V
+     207: aload         4
+     209: aload         5
+     211: invokevirtual #1166               // Method com/clougence/clouddm/platform/dal/model/system/DmSysWorkerDO.getWorkerSeqNumber:()Ljava/lang/String;
+     214: invokevirtual #1167               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setWorkerSeqNumber:(Ljava/lang/String;)V
+     217: aload_3
+     218: invokevirtual #1170               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getNormal:()Ljava/lang/Boolean;
+     221: invokevirtual #1174               // Method java/lang/Boolean.booleanValue:()Z
+     224: ifne          247
+     227: aload         4
+     229: iconst_0
+     230: invokevirtual #1179               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setNormal:(Z)V
+     233: aload         4
+     235: getstatic     #1182               // Field com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.AUTO_EXEC_JOB_ERROR_STATUS_MESSAGE:Lcom/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys;
+     238: invokevirtual #1032               // Method com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.name:()Ljava/lang/String;
+     241: invokestatic  #1035               // Method com/clougence/clouddm/console/web/global/i18n/DmI18nUtils.getMessage:(Ljava/lang/String;)Ljava/lang/String;
+     244: invokevirtual #1185               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setMessage:(Ljava/lang/String;)V
+     247: iload_2
+     248: ifne          254
+     251: aload         4
+     253: areturn
+     254: getstatic     #1188               // Field com/clougence/clouddm/console/web/component/execute/impl/AutoExecServiceImpl$1.$SwitchMap$com$clougence$clouddm$platform$dal$model$execution$AutoExecJobStatus:[I
+     257: aload_3
+     258: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+     261: invokevirtual #1194               // Method com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.ordinal:()I
+     264: iaload
+     265: tableswitch   { // 1 to 5
+                     1: 300
+                     2: 300
+                     3: 300
+                     4: 309
+                     5: 324
+               default: 336
+          }
+     300: aload         4
+     302: iconst_1
+     303: invokevirtual #1197               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setCanPause:(Z)V
+     306: goto          336
+     309: aload         4
+     311: iconst_1
+     312: invokevirtual #1200               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setCanRestart:(Z)V
+     315: aload         4
+     317: iconst_1
+     318: invokevirtual #1203               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setCanEnd:(Z)V
+     321: goto          336
+     324: aload         4
+     326: iconst_1
+     327: invokevirtual #1206               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setCanRetry:(Z)V
+     330: aload         4
+     332: iconst_1
+     333: invokevirtual #1203               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecJobVO.setCanEnd:(Z)V
+     336: aload         4
+     338: areturn
+
+  public void stopJob(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #1018               // Method requireJob:(Ljava/lang/String;)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+       5: astore_2
+       6: aload_0
+       7: aload_2
+       8: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+      11: invokevirtual #1209               // Method stopJob:(Ljava/lang/Long;)V
+      14: return
+
+  public void endJob(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+       4: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+       9: aload_1
+      10: invokeinterface #1087,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.queryByDependOnBizId:(Ljava/lang/String;)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+      15: astore_2
+      16: aload_2
+      17: ifnull        30
+      20: aload_2
+      21: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      24: getstatic     #1131               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.TERMINATION:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      27: if_acmpne     31
+      30: return
+      31: aload_2
+      32: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      35: getstatic     #1020               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.PAUSE:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      38: if_acmpeq     68
+      41: aload_2
+      42: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      45: getstatic     #1023               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.FAILED:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      48: if_acmpeq     68
+      51: new           #43                 // class com/clougence/clouddm/api/common/exception/ErrorMessageException
+      54: dup
+      55: getstatic     #1212               // Field com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.AUTO_EXEC_RETRY_JOB_ERROR_MESSAGE:Lcom/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys;
+      58: invokevirtual #1032               // Method com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.name:()Ljava/lang/String;
+      61: invokestatic  #1035               // Method com/clougence/clouddm/console/web/global/i18n/DmI18nUtils.getMessage:(Ljava/lang/String;)Ljava/lang/String;
+      64: invokespecial #47                 // Method com/clougence/clouddm/api/common/exception/ErrorMessageException."<init>":(Ljava/lang/String;)V
+      67: athrow
+      68: aload_2
+      69: getstatic     #1131               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.TERMINATION:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      72: invokevirtual #109                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.setStatus:(Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;)V
+      75: aload_0
+      76: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+      79: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+      84: aload_2
+      85: invokeinterface #1215,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.updateById:(Ljava/lang/Object;)I
+      90: pop
+      91: aload_0
+      92: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+      95: invokeinterface #220,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoTaskMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper;
+     100: aload_2
+     101: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+     104: invokeinterface #1218,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper.cancelAllWaitTask:(Ljava/lang/Long;)V
+     109: aload_0
+     110: getfield      #380                // Field approvalStateService:Lcom/clougence/clouddm/console/web/component/approval/ApprovalStateService;
+     113: aload_2
+     114: invokevirtual #384                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getDependOnBizId:()Ljava/lang/String;
+     117: invokeinterface #1221,  2         // InterfaceMethod com/clougence/clouddm/console/web/component/approval/ApprovalStateService.cancelExecution:(Ljava/lang/String;)V
+     122: return
+
+  public void retryJob(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #1018               // Method requireJob:(Ljava/lang/String;)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+       5: astore_2
+       6: aload_2
+       7: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      10: getstatic     #1023               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.FAILED:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      13: if_acmpeq     43
+      16: aload_2
+      17: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      20: getstatic     #1020               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.PAUSE:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      23: if_acmpeq     43
+      26: new           #43                 // class com/clougence/clouddm/api/common/exception/ErrorMessageException
+      29: dup
+      30: getstatic     #1212               // Field com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.AUTO_EXEC_RETRY_JOB_ERROR_MESSAGE:Lcom/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys;
+      33: invokevirtual #1032               // Method com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.name:()Ljava/lang/String;
+      36: invokestatic  #1035               // Method com/clougence/clouddm/console/web/global/i18n/DmI18nUtils.getMessage:(Ljava/lang/String;)Ljava/lang/String;
+      39: invokespecial #47                 // Method com/clougence/clouddm/api/common/exception/ErrorMessageException."<init>":(Ljava/lang/String;)V
+      42: athrow
+      43: aload_2
+      44: getstatic     #1110               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.INIT:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      47: invokevirtual #109                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.setStatus:(Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;)V
+      50: aload_0
+      51: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+      54: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+      59: aload_2
+      60: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+      63: invokeinterface #1224,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.retryJob:(Ljava/lang/Long;)I
+      68: istore_3
+      69: iload_3
+      70: ifgt          74
+      73: return
+      74: aload_0
+      75: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+      78: invokeinterface #220,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoTaskMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper;
+      83: aload_2
+      84: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+      87: invokeinterface #1227,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper.retryTask:(Ljava/lang/Long;)V
+      92: return
+
+  public com.clougence.clouddm.console.web.model.vo.DmPageVO<com.clougence.clouddm.console.web.model.vo.ticket.DmAutoExecTaskVO> queryAutoExecTaskSummaryList(java.lang.String, boolean, com.clougence.clouddm.platform.dal.model.execution.AutoExecTaskStatus, com.clougence.clouddm.platform.dal.util.PageObj, int);
+    Code:
+       0: aload         4
+       2: invokestatic  #1230               // Method com/clougence/clouddm/platform/dal/util/PageUtils.startPage:(Lcom/clougence/clouddm/platform/dal/util/PageObj;)Lcom/baomidou/mybatisplus/extension/plugins/pagination/Page;
+       5: astore        6
+       7: aload_0
+       8: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+      11: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+      16: aload_1
+      17: invokeinterface #1087,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.queryByDependOnBizId:(Ljava/lang/String;)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+      22: astore        7
+      24: aload         7
+      26: ifnonnull     39
+      29: new           #1236               // class com/clougence/clouddm/console/web/model/vo/DmPageVO
+      32: dup
+      33: aload         6
+      35: invokespecial #1238               // Method com/clougence/clouddm/console/web/model/vo/DmPageVO."<init>":(Lcom/baomidou/mybatisplus/core/metadata/IPage;)V
+      38: areturn
+      39: aload_0
+      40: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+      43: invokeinterface #220,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoTaskMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper;
+      48: aload         6
+      50: aload         7
+      52: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+      55: aload_3
+      56: iload         5
+      58: invokeinterface #1241,  5         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper.querySummaryListByJobId:(Lcom/baomidou/mybatisplus/extension/plugins/pagination/Page;Ljava/lang/Long;Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;I)Lcom/baomidou/mybatisplus/core/metadata/IPage;
+      63: astore        8
+      65: aload_0
+      66: aload         7
+      68: iload_2
+      69: aload         8
+      71: invokevirtual #1245               // Method convertTaskPage:(Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;ZLcom/baomidou/mybatisplus/core/metadata/IPage;)Lcom/clougence/clouddm/console/web/model/vo/DmPageVO;
+      74: areturn
+
+  private com.clougence.clouddm.console.web.model.vo.DmPageVO<com.clougence.clouddm.console.web.model.vo.ticket.DmAutoExecTaskVO> convertTaskPage(com.clougence.clouddm.platform.dal.model.execution.DmExecAutoJobDO, boolean, com.baomidou.mybatisplus.core.metadata.IPage<com.clougence.clouddm.platform.dal.model.execution.DmExecAutoTaskDO>);
+    Code:
+       0: new           #1236               // class com/clougence/clouddm/console/web/model/vo/DmPageVO
+       3: dup
+       4: aload_3
+       5: invokespecial #1238               // Method com/clougence/clouddm/console/web/model/vo/DmPageVO."<init>":(Lcom/baomidou/mybatisplus/core/metadata/IPage;)V
+       8: astore        4
+      10: aload_3
+      11: invokeinterface #1249,  1         // InterfaceMethod com/baomidou/mybatisplus/core/metadata/IPage.getRecords:()Ljava/util/List;
+      16: invokeinterface #741,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      21: astore        5
+      23: aload         5
+      25: invokeinterface #193,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      30: ifeq          282
+      33: aload         5
+      35: invokeinterface #198,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      40: checkcast     #242                // class com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO
+      43: astore        6
+      45: new           #1254               // class com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecTaskVO
+      48: dup
+      49: invokespecial #1256               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecTaskVO."<init>":()V
+      52: astore        7
+      54: aload         7
+      56: aload         6
+      58: invokevirtual #1062               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getId:()Ljava/lang/Long;
+      61: invokevirtual #1257               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecTaskVO.setTaskId:(Ljava/lang/Long;)V
+      64: aload         7
+      66: aload         6
+      68: invokevirtual #1053               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;
+      71: invokevirtual #1260               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecTaskVO.setStatus:(Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;)V
+      74: aload         7
+      76: aload         6
+      78: invokevirtual #749                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getExecSql:()Ljava/lang/String;
+      81: invokevirtual #1261               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecTaskVO.setExecSql:(Ljava/lang/String;)V
+      84: aload         7
+      86: aload         6
+      88: invokevirtual #1262               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getAffectRow:()Ljava/lang/Long;
+      91: ifnull        105
+      94: aload         6
+      96: invokevirtual #1262               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getAffectRow:()Ljava/lang/Long;
+      99: invokevirtual #48                 // Method java/lang/Long.longValue:()J
+     102: goto          106
+     105: lconst_0
+     106: invokestatic  #351                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+     109: invokevirtual #1265               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecTaskVO.setAffectLine:(Ljava/lang/Long;)V
+     112: aload         7
+     114: aload         6
+     116: invokevirtual #1268               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getExecCount:()Ljava/lang/Integer;
+     119: invokevirtual #1271               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecTaskVO.setExecCount:(Ljava/lang/Integer;)V
+     122: aload         7
+     124: aload         6
+     126: invokevirtual #691                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getExecOrder:()Ljava/lang/Integer;
+     129: invokevirtual #1274               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecTaskVO.setExecuteOrder:(Ljava/lang/Integer;)V
+     132: aload         7
+     134: getstatic     #1094               // Field com/clougence/utils/format/DateFormatType.s_yyyyMMdd_HHmmss:Lcom/clougence/utils/format/DateFormatType;
+     137: aload         6
+     139: invokevirtual #1277               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getGmtLastStart:()Ljava/util/Date;
+     142: invokevirtual #1104               // Method com/clougence/utils/format/DateFormatType.format:(Ljava/util/Date;)Ljava/lang/String;
+     145: invokevirtual #1280               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecTaskVO.setActualStartTime:(Ljava/lang/String;)V
+     148: aload         7
+     150: getstatic     #1094               // Field com/clougence/utils/format/DateFormatType.s_yyyyMMdd_HHmmss:Lcom/clougence/utils/format/DateFormatType;
+     153: aload         6
+     155: invokevirtual #1283               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getGmtLastEnd:()Ljava/util/Date;
+     158: invokevirtual #1104               // Method com/clougence/utils/format/DateFormatType.format:(Ljava/util/Date;)Ljava/lang/String;
+     161: invokevirtual #1286               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecTaskVO.setActualEndTime:(Ljava/lang/String;)V
+     164: iload_2
+     165: ifeq          266
+     168: aload_1
+     169: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+     172: getstatic     #1020               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.PAUSE:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+     175: if_acmpeq     188
+     178: aload_1
+     179: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+     182: getstatic     #1023               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.FAILED:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+     185: if_acmpne     192
+     188: iconst_1
+     189: goto          193
+     192: iconst_0
+     193: istore        8
+     195: iload         8
+     197: ifeq          226
+     200: aload         6
+     202: invokevirtual #1053               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;
+     205: getstatic     #1072               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus.FINISH:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;
+     208: if_acmpeq     226
+     211: aload         6
+     213: invokevirtual #1053               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;
+     216: getstatic     #1056               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus.CANCELED:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;
+     219: if_acmpeq     226
+     222: iconst_1
+     223: goto          227
+     226: iconst_0
+     227: istore        9
+     229: iload         8
+     231: ifeq          249
+     234: aload         6
+     236: invokevirtual #1053               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;
+     239: getstatic     #1056               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus.CANCELED:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecTaskStatus;
+     242: if_acmpne     249
+     245: iconst_1
+     246: goto          250
+     249: iconst_0
+     250: istore        10
+     252: aload         7
+     254: iload         9
+     256: invokevirtual #1289               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecTaskVO.setCanSkip:(Z)V
+     259: aload         7
+     261: iload         10
+     263: invokevirtual #1292               // Method com/clougence/clouddm/console/web/model/vo/ticket/DmAutoExecTaskVO.setCanCancelSkip:(Z)V
+     266: aload         4
+     268: invokevirtual #1295               // Method com/clougence/clouddm/console/web/model/vo/DmPageVO.getRecords:()Ljava/util/List;
+     271: aload         7
+     273: invokeinterface #289,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     278: pop
+     279: goto          23
+     282: aload         4
+     284: areturn
+
+  public java.lang.String queryAutoExecTaskSql(java.lang.String, long);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #1018               // Method requireJob:(Ljava/lang/String;)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+       5: astore        4
+       7: aload_0
+       8: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+      11: invokeinterface #220,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoTaskMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper;
+      16: lload_2
+      17: invokestatic  #351                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+      20: invokeinterface #1040,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoTaskMapper.selectById:(Ljava/io/Serializable;)Ljava/lang/Object;
+      25: checkcast     #242                // class com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO
+      28: astore        5
+      30: aload         5
+      32: ifnull        51
+      35: aload         4
+      37: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+      40: aload         5
+      42: invokevirtual #1044               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getAutoExecJobId:()Ljava/lang/Long;
+      45: invokevirtual #1047               // Method java/lang/Long.equals:(Ljava/lang/Object;)Z
+      48: ifne          68
+      51: new           #43                 // class com/clougence/clouddm/api/common/exception/ErrorMessageException
+      54: dup
+      55: getstatic     #1026               // Field com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.AUTO_EXEC_WRONG_OPERATE_ERROR_MESSAGE:Lcom/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys;
+      58: invokevirtual #1032               // Method com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.name:()Ljava/lang/String;
+      61: invokestatic  #1035               // Method com/clougence/clouddm/console/web/global/i18n/DmI18nUtils.getMessage:(Ljava/lang/String;)Ljava/lang/String;
+      64: invokespecial #47                 // Method com/clougence/clouddm/api/common/exception/ErrorMessageException."<init>":(Ljava/lang/String;)V
+      67: athrow
+      68: aload         5
+      70: invokevirtual #749                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoTaskDO.getExecSql:()Ljava/lang/String;
+      73: areturn
+
+  private com.clougence.clouddm.platform.dal.model.execution.DmExecAutoJobDO requireJob(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+       4: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+       9: aload_1
+      10: invokeinterface #1087,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.queryByDependOnBizId:(Ljava/lang/String;)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+      15: astore_2
+      16: aload_2
+      17: ifnonnull     37
+      20: new           #43                 // class com/clougence/clouddm/api/common/exception/ErrorMessageException
+      23: dup
+      24: getstatic     #1026               // Field com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.AUTO_EXEC_WRONG_OPERATE_ERROR_MESSAGE:Lcom/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys;
+      27: invokevirtual #1032               // Method com/clougence/clouddm/console/web/global/i18n/I18nDmMsgKeys.name:()Ljava/lang/String;
+      30: invokestatic  #1035               // Method com/clougence/clouddm/console/web/global/i18n/DmI18nUtils.getMessage:(Ljava/lang/String;)Ljava/lang/String;
+      33: invokespecial #47                 // Method com/clougence/clouddm/api/common/exception/ErrorMessageException."<init>":(Ljava/lang/String;)V
+      36: athrow
+      37: aload_2
+      38: areturn
+
+  private void stopJob(java.lang.Long);
+    Code:
+       0: aload_0
+       1: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+       4: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+       9: aload_1
+      10: invokeinterface #354,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.queryByIdForUpdate:(Ljava/lang/Long;)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+      15: astore_2
+      16: aload_2
+      17: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      20: astore_3
+      21: aload_3
+      22: getstatic     #1110               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.INIT:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      25: if_acmpeq     35
+      28: aload_3
+      29: getstatic     #438                // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.PACKAGING:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      32: if_acmpne     59
+      35: aload_2
+      36: getstatic     #1020               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.PAUSE:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      39: invokevirtual #109                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.setStatus:(Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;)V
+      42: aload_0
+      43: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+      46: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+      51: aload_2
+      52: invokeinterface #1215,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.updateById:(Ljava/lang/Object;)I
+      57: pop
+      58: return
+      59: aload_3
+      60: getstatic     #1020               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.PAUSE:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      63: if_acmpeq     80
+      66: aload_3
+      67: getstatic     #1023               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.FAILED:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      70: if_acmpeq     80
+      73: aload_3
+      74: getstatic     #1129               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.FINISH:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      77: if_acmpne     93
+      80: getstatic     #318                // Field log:Lorg/slf4j/Logger;
+      83: ldc_w         #1296               // String {} was already stop
+      86: aload_1
+      87: invokeinterface #1298,  3         // InterfaceMethod org/slf4j/Logger.warn:(Ljava/lang/String;Ljava/lang/Object;)V
+      92: return
+      93: aload_3
+      94: getstatic     #1301               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.PAUSING:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      97: if_acmpne     101
+     100: return
+     101: aload_0
+     102: getfield      #406                // Field execRService:Lcom/clougence/clouddm/api/sidecar/autoexec/AutoExecRService;
+     105: aload_2
+     106: invokevirtual #1126               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getWorkerSeqNumber:()Ljava/lang/String;
+     109: invokestatic  #1304               // Method com/clougence/clouddm/console/web/util/CallUtils.buildSendDTO:(Ljava/lang/String;)Lcom/clougence/clouddm/comm/model/RSocketSendDTO;
+     112: aload_1
+     113: invokeinterface #1310,  3         // InterfaceMethod com/clougence/clouddm/api/sidecar/autoexec/AutoExecRService.pauseJob:(Lcom/clougence/clouddm/comm/model/RSocketSendDTO;Ljava/lang/Long;)V
+     118: aload_2
+     119: getstatic     #1301               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.PAUSING:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+     122: invokevirtual #109                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.setStatus:(Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;)V
+     125: aload_0
+     126: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+     129: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+     134: aload_2
+     135: invokeinterface #1215,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.updateById:(Ljava/lang/Object;)I
+     140: pop
+     141: return
+
+  private com.clougence.clouddm.comm.model.RSocketSendDTO buildRSocketSendDTO(long);
+    Code:
+       0: aload_0
+       1: getfield      #1134               // Field systemDal:Lcom/clougence/clouddm/platform/dal/access/SystemDal;
+       4: invokeinterface #1138,  1         // InterfaceMethod com/clougence/clouddm/platform/dal/access/SystemDal.workerMapper:()Lcom/clougence/clouddm/platform/dal/mapper/system/DmSysWorkerMapper;
+       9: lload_1
+      10: invokestatic  #351                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+      13: invokeinterface #1314,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/system/DmSysWorkerMapper.queryConnectedByClusterId:(Ljava/lang/Long;)Ljava/util/List;
+      18: astore_3
+      19: aload_3
+      20: invokeinterface #213,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+      25: ifeq          49
+      28: new           #43                 // class com/clougence/clouddm/api/common/exception/ErrorMessageException
+      31: dup
+      32: getstatic     #1318               // Field com/clougence/clouddm/api/common/exception/DmErrorCode.CLUSTER_HAVE_NO_WORKS_ERROR:Lcom/clougence/clouddm/api/common/exception/DmErrorCode;
+      35: invokevirtual #1324               // Method com/clougence/clouddm/api/common/exception/DmErrorCode.code:()Ljava/lang/String;
+      38: lload_1
+      39: invokestatic  #351                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+      42: invokestatic  #1327               // Method com/clougence/clouddm/console/web/util/MessageUtils.getClusterHaveNoWorksErrorMessage:(Ljava/lang/Long;)Ljava/lang/String;
+      45: invokespecial #1332               // Method com/clougence/clouddm/api/common/exception/ErrorMessageException."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      48: athrow
+      49: aload_3
+      50: new           #1334               // class java/util/Random
+      53: dup
+      54: invokestatic  #1336               // Method java/lang/System.currentTimeMillis:()J
+      57: invokespecial #1341               // Method java/util/Random."<init>":(J)V
+      60: aload_3
+      61: invokeinterface #230,  1          // InterfaceMethod java/util/List.size:()I
+      66: invokevirtual #1342               // Method java/util/Random.nextInt:(I)I
+      69: invokeinterface #687,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      74: checkcast     #1151               // class com/clougence/clouddm/platform/dal/model/system/DmSysWorkerDO
+      77: astore        4
+      79: new           #413                // class com/clougence/clouddm/comm/model/RSocketSendDTO
+      82: dup
+      83: invokespecial #1346               // Method com/clougence/clouddm/comm/model/RSocketSendDTO."<init>":()V
+      86: astore        5
+      88: aload         5
+      90: aload         4
+      92: invokevirtual #1347               // Method com/clougence/clouddm/platform/dal/model/system/DmSysWorkerDO.getClusterId:()J
+      95: invokestatic  #351                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+      98: invokevirtual #1350               // Method com/clougence/clouddm/comm/model/RSocketSendDTO.setClusterId:(Ljava/lang/Long;)V
+     101: aload         5
+     103: aload         4
+     105: invokevirtual #1166               // Method com/clougence/clouddm/platform/dal/model/system/DmSysWorkerDO.getWorkerSeqNumber:()Ljava/lang/String;
+     108: invokevirtual #1353               // Method com/clougence/clouddm/comm/model/RSocketSendDTO.setWorkerSeqNumber:(Ljava/lang/String;)V
+     111: aload         5
+     113: aload         4
+     115: invokevirtual #1150               // Method com/clougence/clouddm/platform/dal/model/system/DmSysWorkerDO.getWorkerIp:()Ljava/lang/String;
+     118: invokevirtual #1354               // Method com/clougence/clouddm/comm/model/RSocketSendDTO.setWorkerIP:(Ljava/lang/String;)V
+     121: aload         5
+     123: getstatic     #1355               // Field com/clougence/clouddm/comm/model/RSocketSendType.SPECIFIED:Lcom/clougence/clouddm/comm/model/RSocketSendType;
+     126: invokevirtual #1361               // Method com/clougence/clouddm/comm/model/RSocketSendDTO.setRSocketSendType:(Lcom/clougence/clouddm/comm/model/RSocketSendType;)V
+     129: aload         5
+     131: areturn
+
+  private byte[] lambda$read$2(long, com.clougence.clouddm.platform.dal.model.execution.DmExecAutoJobDO, long, int, java.nio.file.Path) throws java.lang.Exception;
+    Code:
+       0: aload         7
+       2: iconst_1
+       3: anewarray     #633                // class java/nio/file/OpenOption
+       6: dup
+       7: iconst_0
+       8: getstatic     #1365               // Field java/nio/file/StandardOpenOption.READ:Ljava/nio/file/StandardOpenOption;
+      11: aastore
+      12: invokestatic  #1368               // Method java/nio/channels/FileChannel.open:(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/nio/channels/FileChannel;
+      15: astore        8
+      17: aload         8
+      19: invokevirtual #1374               // Method java/nio/channels/FileChannel.size:()J
+      22: lstore        9
+      24: lload_1
+      25: lload         9
+      27: lcmp
+      28: iflt          64
+      31: aload_0
+      32: getfield      #891                // Field localFileService:Lcom/clougence/clouddm/console/web/component/file/LocalFileService;
+      35: aload_3
+      36: invokevirtual #491                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getUid:()Ljava/lang/String;
+      39: lload         4
+      41: invokeinterface #1376,  4         // InterfaceMethod com/clougence/clouddm/console/web/component/file/LocalFileService.renewEditing:(Ljava/lang/String;J)V
+      46: iconst_0
+      47: newarray       byte
+      49: astore        11
+      51: aload         8
+      53: ifnull        61
+      56: aload         8
+      58: invokevirtual #1380               // Method java/nio/channels/FileChannel.close:()V
+      61: aload         11
+      63: areturn
+      64: iload         6
+      66: i2l
+      67: lload         9
+      69: lload_1
+      70: lsub
+      71: invokestatic  #1381               // Method java/lang/Math.min:(JJ)J
+      74: l2i
+      75: istore        11
+      77: iload         11
+      79: invokestatic  #1385               // Method java/nio/ByteBuffer.allocate:(I)Ljava/nio/ByteBuffer;
+      82: astore        12
+      84: aload         8
+      86: lload_1
+      87: invokevirtual #1391               // Method java/nio/channels/FileChannel.position:(J)Ljava/nio/channels/FileChannel;
+      90: pop
+      91: aload         12
+      93: invokevirtual #1395               // Method java/nio/ByteBuffer.hasRemaining:()Z
+      96: ifeq          112
+      99: aload         8
+     101: aload         12
+     103: invokevirtual #1398               // Method java/nio/channels/FileChannel.read:(Ljava/nio/ByteBuffer;)I
+     106: iflt          112
+     109: goto          91
+     112: aload         12
+     114: invokevirtual #1402               // Method java/nio/ByteBuffer.position:()I
+     117: iload         11
+     119: if_icmpne     132
+     122: aload         12
+     124: invokevirtual #1404               // Method java/nio/ByteBuffer.array:()[B
+     127: astore        13
+     129: goto          155
+     132: aload         12
+     134: invokevirtual #1402               // Method java/nio/ByteBuffer.position:()I
+     137: newarray       byte
+     139: astore        13
+     141: aload         12
+     143: invokevirtual #1407               // Method java/nio/ByteBuffer.flip:()Ljava/nio/ByteBuffer;
+     146: pop
+     147: aload         12
+     149: aload         13
+     151: invokevirtual #1411               // Method java/nio/ByteBuffer.get:([B)Ljava/nio/ByteBuffer;
+     154: pop
+     155: aload_0
+     156: getfield      #891                // Field localFileService:Lcom/clougence/clouddm/console/web/component/file/LocalFileService;
+     159: aload_3
+     160: invokevirtual #491                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getUid:()Ljava/lang/String;
+     163: lload         4
+     165: invokeinterface #1376,  4         // InterfaceMethod com/clougence/clouddm/console/web/component/file/LocalFileService.renewEditing:(Ljava/lang/String;J)V
+     170: aload         13
+     172: astore        14
+     174: aload         8
+     176: ifnull        184
+     179: aload         8
+     181: invokevirtual #1380               // Method java/nio/channels/FileChannel.close:()V
+     184: aload         14
+     186: areturn
+     187: astore        9
+     189: aload         8
+     191: ifnull        211
+     194: aload         8
+     196: invokevirtual #1380               // Method java/nio/channels/FileChannel.close:()V
+     199: goto          211
+     202: astore        10
+     204: aload         9
+     206: aload         10
+     208: invokevirtual #864                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+     211: aload         9
+     213: athrow
+    Exception table:
+       from    to  target type
+          17    51   187   Class java/lang/Throwable
+          64   174   187   Class java/lang/Throwable
+         194   199   202   Class java/lang/Throwable
+
+  private java.util.AbstractMap$SimpleImmutableEntry lambda$dispatchJob$1(java.lang.Long, com.clougence.clouddm.api.console.autoexec.AutoExecTaskPackageInfo, org.springframework.transaction.TransactionStatus);
+    Code:
+       0: aload_0
+       1: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+       4: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+       9: aload_1
+      10: invokeinterface #354,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.queryByIdForUpdate:(Ljava/lang/Long;)Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;
+      15: astore        4
+      17: aload         4
+      19: ifnull        33
+      22: aload         4
+      24: invokevirtual #434                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getStatus:()Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      27: getstatic     #438                // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.PACKAGING:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      30: if_acmpeq     47
+      33: getstatic     #318                // Field log:Lorg/slf4j/Logger;
+      36: ldc_w         #1414               // String {} was dispatched by another console
+      39: aload_1
+      40: invokeinterface #1416,  3         // InterfaceMethod org/slf4j/Logger.info:(Ljava/lang/String;Ljava/lang/Object;)V
+      45: aconst_null
+      46: areturn
+      47: aload_0
+      48: getfield      #1419               // Field cacheDao:Lcom/clougence/clouddm/platform/dal/access/ObjectCacheDao;
+      51: aload         4
+      53: invokevirtual #454                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getDataSourceId:()Ljava/lang/Long;
+      56: invokeinterface #1423,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/access/ObjectCacheDao.queryByDsId:(Ljava/lang/Long;)Lcom/clougence/clouddm/platform/dal/access/entry/DsCacheEntry;
+      61: astore        5
+      63: aload         5
+      65: invokevirtual #1429               // Method com/clougence/clouddm/platform/dal/access/entry/DsCacheEntry.getClusterId:()Ljava/lang/Long;
+      68: ifnonnull     96
+      71: aload_0
+      72: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+      75: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+      80: aload         4
+      82: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+      85: getstatic     #1023               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.FAILED:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+      88: invokeinterface #1433,  3         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.updateJobStatus:(Ljava/lang/Long;Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;)I
+      93: pop
+      94: aconst_null
+      95: areturn
+      96: aload_0
+      97: aload         5
+      99: invokevirtual #1429               // Method com/clougence/clouddm/platform/dal/access/entry/DsCacheEntry.getClusterId:()Ljava/lang/Long;
+     102: invokevirtual #48                 // Method java/lang/Long.longValue:()J
+     105: invokevirtual #1437               // Method buildRSocketSendDTO:(J)Lcom/clougence/clouddm/comm/model/RSocketSendDTO;
+     108: astore        6
+     110: aload_0
+     111: aload         4
+     113: aload_2
+     114: invokevirtual #1441               // Method prepareJobData:(Lcom/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO;Lcom/clougence/clouddm/api/console/autoexec/AutoExecTaskPackageInfo;)Lcom/clougence/clouddm/api/sidecar/autoexec/AutoExecJobDTO;
+     117: astore        7
+     119: aload         4
+     121: getstatic     #1445               // Field com/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus.WAIT_EXEC:Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;
+     124: invokevirtual #109                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.setStatus:(Lcom/clougence/clouddm/platform/dal/model/execution/AutoExecJobStatus;)V
+     127: aload         4
+     129: new           #151                // class java/util/Date
+     132: dup
+     133: invokespecial #153                // Method java/util/Date."<init>":()V
+     136: invokevirtual #1447               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.setLastReportTime:(Ljava/util/Date;)V
+     139: aload         4
+     141: aload         6
+     143: invokevirtual #1449               // Method com/clougence/clouddm/comm/model/RSocketSendDTO.getWorkerSeqNumber:()Ljava/lang/String;
+     146: invokevirtual #1450               // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.setWorkerSeqNumber:(Ljava/lang/String;)V
+     149: aload_0
+     150: getfield      #164                // Field execDal:Lcom/clougence/clouddm/platform/dal/access/ExecutionDal;
+     153: invokeinterface #170,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/ExecutionDal.autoJobMapper:()Lcom/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper;
+     158: aload         4
+     160: invokeinterface #1215,  2         // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/execution/DmExecAutoJobMapper.updateById:(Ljava/lang/Object;)I
+     165: pop
+     166: new           #1451               // class java/util/AbstractMap$SimpleImmutableEntry
+     169: dup
+     170: aload         6
+     172: aload         7
+     174: invokespecial #1453               // Method java/util/AbstractMap$SimpleImmutableEntry."<init>":(Ljava/lang/Object;Ljava/lang/Object;)V
+     177: areturn
+
+  private void lambda$createJob$0(com.clougence.clouddm.platform.dal.model.execution.DmExecAutoJobDO, org.springframework.transaction.TransactionStatus);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #267                // Method com/clougence/clouddm/platform/dal/model/execution/DmExecAutoJobDO.getId:()Ljava/lang/Long;
+       5: invokevirtual #48                 // Method java/lang/Long.longValue:()J
+       8: invokevirtual #348                // Method doDeleteJob:(J)V
+      11: return
+
+  static {};
+    Code:
+       0: ldc           #165                // class com/clougence/clouddm/console/web/component/execute/impl/AutoExecServiceImpl
+       2: invokestatic  #1456               // Method org/slf4j/LoggerFactory.getLogger:(Ljava/lang/Class;)Lorg/slf4j/Logger;
+       5: putstatic     #318                // Field log:Lorg/slf4j/Logger;
+       8: return
+}

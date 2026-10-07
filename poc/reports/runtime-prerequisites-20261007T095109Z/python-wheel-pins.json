@@ -1,0 +1,37 @@
+[
+  {
+    "file": "cffi-2.0.0-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "name": "cffi",
+    "version": "2.0.0",
+    "sha256": "61d028e90346df14fedc3d1e5441df818d095f3b87d286825dfcbd6459b7ef63",
+    "license": "MIT"
+  },
+  {
+    "file": "cryptography-50.0.2-cp39-abi3-manylinux_2_34_x86_64.whl",
+    "name": "cryptography",
+    "version": "50.0.2",
+    "sha256": "1981f1db4630889b9ef7803fadef12b056f428cb6b85c27ba57b774793b6093c",
+    "license": "Apache-2.0 OR BSD-3-Clause"
+  },
+  {
+    "file": "oracledb-3.4.0-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "name": "oracledb",
+    "version": "3.4.0",
+    "sha256": "5cc94c5b25c160a14909119e4ac6222464da9cb398dbdb2fa4b551b7628fe056",
+    "license": "UPL-1.0 OR Apache-2.0"
+  },
+  {
+    "file": "pycparser-2.23-py3-none-any.whl",
+    "name": "pycparser",
+    "version": "2.23",
+    "sha256": "e5c6e8d3fbad53479cab09ac03729e0a9faf2bee3db8208a550daf5af81a5934",
+    "license": "BSD-3-Clause"
+  },
+  {
+    "file": "typing_extensions-4.16.0-py3-none-any.whl",
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+    "license": "PSF-2.0"
+  }
+]

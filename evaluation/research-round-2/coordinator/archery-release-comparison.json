@@ -1,0 +1,52 @@
+[
+  {
+    "repo": "hhyo/Archery",
+    "commit": "bc1f10efcc465f6a63c94b97feaba5d15546712a",
+    "path": "sql/engines/oracle.py",
+    "url": "https://raw.githubusercontent.com/hhyo/Archery/bc1f10efcc465f6a63c94b97feaba5d15546712a/sql/engines/oracle.py",
+    "local_path": "evaluation/research-round-2/coordinator/source/archery-v1.14.0__sql__engines__oracle.py",
+    "sha256": "8fe1c748a7308b60a36340b041d9963df05c099515d67391ff0179e7aa9a7565",
+    "compared_to_commit": "ccc7134f48d0e261f9e3ffa0d445dcec48adb790",
+    "byte_identical_to_inspected_pin": false,
+    "diff_lines": 117,
+    "execute_workflow_byte_identical": true,
+    "execute_workflow_sha256": "8266af78a65f608f8e81e0798cd1bb42ee53f38fadb696995cb8474a19c16494",
+    "release_function_lines": [
+      1105,
+      1251
+    ]
+  },
+  {
+    "repo": "hhyo/Archery",
+    "commit": "bc1f10efcc465f6a63c94b97feaba5d15546712a",
+    "path": "sql/utils/sql_utils.py",
+    "url": "https://raw.githubusercontent.com/hhyo/Archery/bc1f10efcc465f6a63c94b97feaba5d15546712a/sql/utils/sql_utils.py",
+    "local_path": "evaluation/research-round-2/coordinator/source/archery-v1.14.0__sql__utils__sql_utils.py",
+    "sha256": "bf947d191e9a9345575d9b884c7acc00a4b45cc135076c215f3b0f5cf531dc75",
+    "compared_to_commit": "ccc7134f48d0e261f9e3ffa0d445dcec48adb790",
+    "byte_identical_to_inspected_pin": true,
+    "diff_lines": 0
+  },
+  {
+    "repo": "hhyo/Archery",
+    "commit": "bc1f10efcc465f6a63c94b97feaba5d15546712a",
+    "path": "src/docker/setup.sh",
+    "url": "https://raw.githubusercontent.com/hhyo/Archery/bc1f10efcc465f6a63c94b97feaba5d15546712a/src/docker/setup.sh",
+    "local_path": "evaluation/research-round-2/coordinator/source/archery-v1.14.0__src__docker__setup.sh",
+    "sha256": "11aef1b69bd65c902ba342f542dbbc53ef58142a28f2a0d29d76d4bf5bae8843",
+    "compared_to_commit": "ccc7134f48d0e261f9e3ffa0d445dcec48adb790",
+    "byte_identical_to_inspected_pin": true,
+    "diff_lines": 0
+  },
+  {
+    "repo": "hhyo/Archery",
+    "commit": "bc1f10efcc465f6a63c94b97feaba5d15546712a",
+    "path": "requirements.txt",
+    "url": "https://raw.githubusercontent.com/hhyo/Archery/bc1f10efcc465f6a63c94b97feaba5d15546712a/requirements.txt",
+    "local_path": "evaluation/research-round-2/coordinator/source/archery-v1.14.0__requirements.txt",
+    "sha256": "81eb2f8bcd56656e9cde7bcfc03c37e08a8d1c3cac053b1b54380d42727883ec",
+    "compared_to_commit": "ccc7134f48d0e261f9e3ffa0d445dcec48adb790",
+    "byte_identical_to_inspected_pin": false,
+    "diff_lines": 64
+  }
+]

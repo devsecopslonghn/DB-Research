@@ -1,0 +1,4 @@
+PARSED=T1_function.sql:2
+PARSED=T2_invalid.sql:2
+PARSED=T6_partial.sql:3
+PARSED=T7_lost_result.sql:2

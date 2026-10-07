@@ -1,0 +1,930 @@
+{
+  "timestamp": "2026-10-07T10:23:53.349570+00:00",
+  "scope": "Existing isolated project 1 only; Oracle SELECT readiness, no mutations",
+  "roles": {
+    "requester": {
+      "authenticated": true
+    },
+    "approver": {
+      "authenticated": true
+    },
+    "executor": {
+      "authenticated": true
+    },
+    "observer": {
+      "authenticated": true
+    }
+  },
+  "oracle": [
+    {
+      "timestamp": "2026-10-07T10:23:58.437843+00:00",
+      "schema": "DEV",
+      "database_id": 1000069,
+      "datasource_id": 1000001,
+      "identity": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "SCHEMA_OWNER",
+              "SERVICE_NAME",
+              "PDB",
+              "PROTOCOL"
+            ],
+            "rows": [
+              [
+                "ODC_POC_20261004_DEV",
+                "GAF051B0A6547F3_LABDB_tp.adb.oraclecloud.com",
+                "GAF051B0A6547F3_LABDB",
+                "tcps"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "version": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "BANNER_FULL"
+            ],
+            "rows": [
+              [
+                "Oracle AI Database 26ai Enterprise Edition Release 23.26.4.1.0 - Production\nVersion 23.26.4.1.0"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "privileges": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "PRIVILEGE"
+            ],
+            "rows": [
+              [
+                "CREATE PROCEDURE"
+              ],
+              [
+                "CREATE SEQUENCE"
+              ],
+              [
+                "CREATE SESSION"
+              ],
+              [
+                "CREATE TABLE"
+              ],
+              [
+                "CREATE TRIGGER"
+              ],
+              [
+                "CREATE VIEW"
+              ]
+            ],
+            "total": 6,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "roles": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "ROLE"
+            ],
+            "rows": [],
+            "total": 0,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "healthy": true
+    },
+    {
+      "timestamp": "2026-10-07T10:24:20.482680+00:00",
+      "schema": "SIT",
+      "database_id": 1000122,
+      "datasource_id": 1000002,
+      "identity": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "SCHEMA_OWNER",
+              "SERVICE_NAME",
+              "PDB",
+              "PROTOCOL"
+            ],
+            "rows": [
+              [
+                "ODC_POC_20261004_SIT",
+                "GAF051B0A6547F3_LABDB_tp.adb.oraclecloud.com",
+                "GAF051B0A6547F3_LABDB",
+                "tcps"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "version": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "BANNER_FULL"
+            ],
+            "rows": [
+              [
+                "Oracle AI Database 26ai Enterprise Edition Release 23.26.4.1.0 - Production\nVersion 23.26.4.1.0"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "privileges": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "PRIVILEGE"
+            ],
+            "rows": [
+              [
+                "CREATE PROCEDURE"
+              ],
+              [
+                "CREATE SEQUENCE"
+              ],
+              [
+                "CREATE SESSION"
+              ],
+              [
+                "CREATE TABLE"
+              ],
+              [
+                "CREATE TRIGGER"
+              ],
+              [
+                "CREATE VIEW"
+              ]
+            ],
+            "total": 6,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "roles": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "ROLE"
+            ],
+            "rows": [],
+            "total": 0,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "healthy": true
+    },
+    {
+      "timestamp": "2026-10-07T10:24:38.248766+00:00",
+      "schema": "UAT",
+      "database_id": 1000184,
+      "datasource_id": 1000003,
+      "identity": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "SCHEMA_OWNER",
+              "SERVICE_NAME",
+              "PDB",
+              "PROTOCOL"
+            ],
+            "rows": [
+              [
+                "ODC_POC_20261004_UAT",
+                "GAF051B0A6547F3_LABDB_tp.adb.oraclecloud.com",
+                "GAF051B0A6547F3_LABDB",
+                "tcps"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "version": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "BANNER_FULL"
+            ],
+            "rows": [
+              [
+                "Oracle AI Database 26ai Enterprise Edition Release 23.26.4.1.0 - Production\nVersion 23.26.4.1.0"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "privileges": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "PRIVILEGE"
+            ],
+            "rows": [
+              [
+                "CREATE PROCEDURE"
+              ],
+              [
+                "CREATE SEQUENCE"
+              ],
+              [
+                "CREATE SESSION"
+              ],
+              [
+                "CREATE TABLE"
+              ],
+              [
+                "CREATE TRIGGER"
+              ],
+              [
+                "CREATE VIEW"
+              ]
+            ],
+            "total": 6,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "roles": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "ROLE"
+            ],
+            "rows": [],
+            "total": 0,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "healthy": true
+    },
+    {
+      "timestamp": "2026-10-07T10:24:55.563962+00:00",
+      "schema": "MOCKPROD",
+      "database_id": 1000218,
+      "datasource_id": 1000004,
+      "identity": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "SCHEMA_OWNER",
+              "SERVICE_NAME",
+              "PDB",
+              "PROTOCOL"
+            ],
+            "rows": [
+              [
+                "ODC_POC_20261004_MOCKPROD",
+                "GAF051B0A6547F3_LABDB_tp.adb.oraclecloud.com",
+                "GAF051B0A6547F3_LABDB",
+                "tcps"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "version": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "BANNER_FULL"
+            ],
+            "rows": [
+              [
+                "Oracle AI Database 26ai Enterprise Edition Release 23.26.4.1.0 - Production\nVersion 23.26.4.1.0"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "privileges": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "PRIVILEGE"
+            ],
+            "rows": [
+              [
+                "CREATE PROCEDURE"
+              ],
+              [
+                "CREATE SEQUENCE"
+              ],
+              [
+                "CREATE SESSION"
+              ],
+              [
+                "CREATE TABLE"
+              ],
+              [
+                "CREATE TRIGGER"
+              ],
+              [
+                "CREATE VIEW"
+              ]
+            ],
+            "total": 6,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "roles": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "ROLE"
+            ],
+            "rows": [],
+            "total": 0,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "healthy": true
+    }
+  ],
+  "historical": [
+    {
+      "id": 1000028,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "c2cedbc02566e916bb5a813ff0b326d4faa2f0a9da00440dd18766e0c051d0e7",
+      "description": "POC API manual approval verification"
+    },
+    {
+      "id": 1000027,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "7bf3ba0dddc9157660217eac28e6a9f1159c47cd50244b3e9cdd5fcf8136896e",
+      "description": "POC REC09 REC10 | same-job-id odc-duplicate-20261004"
+    },
+    {
+      "id": 1000026,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "7bf3ba0dddc9157660217eac28e6a9f1159c47cd50244b3e9cdd5fcf8136896e",
+      "description": "POC REC09 REC10 | same-job-id odc-duplicate-20261004"
+    },
+    {
+      "id": 1000025,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "f9303e977bdf105834ed59c292fb8f8cca35d742715a84e88d997a62111afc61",
+      "description": "POC REC03 reviewed correction only"
+    },
+    {
+      "id": 1000024,
+      "status": "EXECUTION_FAILED",
+      "sqlSha256": "fff0dd8fde07056c7b761dc3bc423e78ada9c87c957fa30913e746819b51199e",
+      "description": "POC REC02 replay successful DML artifact"
+    },
+    {
+      "id": 1000023,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "64fc9afc35183e99ed70895b1a53e478a7ec66cf69cb948377e18441e61d6209",
+      "description": "POC manual OWNER DBA approval | local-job odc-ui-20261004"
+    },
+    {
+      "id": 1000022,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "456da3e880655d6642ac427aa4b691d1fc87f5916edb0103044deeb3800f1bd2",
+      "description": "POC promotion MOCKPROD | local-job odc-poc-20261004"
+    },
+    {
+      "id": 1000021,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "456da3e880655d6642ac427aa4b691d1fc87f5916edb0103044deeb3800f1bd2",
+      "description": "POC promotion UAT | local-job odc-poc-20261004"
+    },
+    {
+      "id": 1000020,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "456da3e880655d6642ac427aa4b691d1fc87f5916edb0103044deeb3800f1bd2",
+      "description": "POC promotion SIT | local-job odc-poc-20261004"
+    },
+    {
+      "id": 1000019,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "456da3e880655d6642ac427aa4b691d1fc87f5916edb0103044deeb3800f1bd2",
+      "description": "POC promotion DEV | local-job odc-poc-20261004"
+    },
+    {
+      "id": 1000018,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "69c792822900ece8e634c4d3b1c0a328de19915b0c2fd4a44002f6a282ee0d97",
+      "description": "POC native observer grant"
+    },
+    {
+      "id": 1000017,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "d305b09f90daf18584786b0d5676842d2799c660981e3aaf43a7c588f00976d1",
+      "description": "POC UI Selenium CREATE POC_UI_PROBE 20261004"
+    },
+    {
+      "id": 1000016,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "d91aef1ba165fcabeab5d0413bbb2288caa7de0d4b724bcf1166ea1dbcc713ed",
+      "description": "POC GOV03 separation of duties"
+    },
+    {
+      "id": 1000015,
+      "status": "EXECUTION_FAILED",
+      "sqlSha256": "fc1d7a0e15f8e83465a35b28fd55c6d60287f7539170a6b9ca6673efba06b873",
+      "description": "POC REC-08 | artifact fc1d7a0e15f8"
+    },
+    {
+      "id": 1000014,
+      "status": "EXECUTION_FAILED",
+      "sqlSha256": "634b9f71791fa29783d3d92fd28e377f14613912c56235bd26b53ce2e6a25f83",
+      "description": "POC SQL-10 | artifact 634b9f71791f"
+    },
+    {
+      "id": 1000013,
+      "status": "EXECUTION_FAILED",
+      "sqlSha256": "3d204e0a9e69912f4eb215200757215161460e583bc6c90be0a9a0e5ef13cb56",
+      "description": "POC REC-04 | artifact 3d204e0a9e69"
+    },
+    {
+      "id": 1000012,
+      "status": "EXECUTION_FAILED",
+      "sqlSha256": "7359427dcc705187a51e59f7ecfd11ad78354edeb96ab2e1733449db959006d3",
+      "description": "POC REC-01 | artifact 7359427dcc70"
+    },
+    {
+      "id": 1000011,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "8a9acc5cafabc1407d0d6acc415dc6b8ebd9ebe9a562683793b28571a42e5dde",
+      "description": "POC SQL-11 | artifact 8a9acc5cafab"
+    },
+    {
+      "id": 1000010,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "ccd4d1318f75a70f759e9304693fe9b856bfd617c2dfd94e721a8a715da1321b",
+      "description": "POC SQL-12 | artifact ccd4d1318f75"
+    },
+    {
+      "id": 1000009,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "f8e4a4f6350e9970501dbe43da2eedbb487ea198992947009fd38e78d744bb77",
+      "description": "POC SQL-08-09 | artifact f8e4a4f6350e"
+    },
+    {
+      "id": 1000008,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "bc43658ab387a96831277a4591a34c1cbf03918af1cdd30fa113ed33929d5e25",
+      "description": "POC SQL-07 | artifact bc43658ab387"
+    },
+    {
+      "id": 1000007,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "5dc7412ddd558070f0bc584ebba8323aad15d526849682f947e9e763634d43fa",
+      "description": "POC SQL-06 | artifact 5dc7412ddd55"
+    },
+    {
+      "id": 1000006,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "a1c404672529208065a5aab8e53bbfb06f271f6b54ec9a5a7133c9066eb2df2d",
+      "description": "POC SQL-04-05 | artifact a1c404672529"
+    },
+    {
+      "id": 1000005,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "fff0dd8fde07056c7b761dc3bc423e78ada9c87c957fa30913e746819b51199e",
+      "description": "POC SQL-03 | artifact fff0dd8fde07"
+    },
+    {
+      "id": 1000004,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "93b4ca1700b3410168693ebff820434df888d75c3b890455be2479a35a2b6591",
+      "description": "POC SQL-02 | artifact 93b4ca1700b3"
+    },
+    {
+      "id": 1000003,
+      "status": "EXECUTION_SUCCEEDED",
+      "sqlSha256": "bdf276c54108a2874f11765badbc310ac90b7028ece0766babd7b3732e629088",
+      "description": "POC SQL-01 | artifact bdf276c54108"
+    }
+  ],
+  "project": {
+    "createTime": 1791073053000,
+    "creator": {
+      "accountName": "odc_poc_approver",
+      "id": 10001,
+      "name": "POC approver",
+      "roleNames": []
+    },
+    "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+    "id": 1,
+    "members": [
+      {
+        "accountName": "odc_poc_executor",
+        "id": 10002,
+        "name": "POC executor"
+      },
+      {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester"
+      },
+      {
+        "accountName": "odc_poc_approver",
+        "id": 10001,
+        "name": "POC approver"
+      },
+      {
+        "accountName": "odc_poc_observer",
+        "id": 10003,
+        "name": "POC observer"
+      },
+      {
+        "accountName": "admin",
+        "id": 1,
+        "name": "admin"
+      }
+    ],
+    "name": "odc-oracle-poc",
+    "updateTime": 1791073053000
+  },
+  "targets": [
+    {
+      "connectType": "ORACLE",
+      "dataSource": {
+        "connectType": "CONNECT_TYPE_OB",
+        "createTime": 1791074334000,
+        "creatorId": 1,
+        "defaultSchema": "ODC_POC_20261004_DEV",
+        "enabled": true,
+        "environmentId": 1,
+        "host": "adb.ap-mumbai-1.oraclecloud.com",
+        "id": 1000001,
+        "name": "odc-poc-dev",
+        "port": 1521,
+        "projectId": 1,
+        "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+        "status": {
+          "status": "TESTING",
+          "type": null
+        },
+        "type": "ORACLE",
+        "updateTime": 1791074334000,
+        "username": "ODC_POC_20261004_DEV"
+      },
+      "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+      "environment": {
+        "createTime": 1791016279000,
+        "creator": {
+          "accountName": null,
+          "id": 1,
+          "name": null,
+          "roleNames": null
+        },
+        "description": "development environment",
+        "enabled": true,
+        "id": 1,
+        "name": "dev",
+        "updateTime": 1791016279000
+      },
+      "id": 1000069,
+      "name": "ODC_POC_20261004_DEV",
+      "type": "PHYSICAL"
+    },
+    {
+      "connectType": "ORACLE",
+      "dataSource": {
+        "connectType": "CONNECT_TYPE_OB",
+        "createTime": 1791074474000,
+        "creatorId": 1,
+        "defaultSchema": "ODC_POC_20261004_MOCKPROD",
+        "enabled": true,
+        "environmentId": 1000022,
+        "host": "adb.ap-mumbai-1.oraclecloud.com",
+        "id": 1000004,
+        "name": "odc-poc-mockprod",
+        "port": 1521,
+        "projectId": 1,
+        "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+        "status": {
+          "status": "TESTING",
+          "type": null
+        },
+        "type": "ORACLE",
+        "updateTime": 1791075730000,
+        "username": "ODC_POC_20261004_MOCKPROD"
+      },
+      "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+      "environment": {
+        "createTime": 1791075730000,
+        "creator": {
+          "accountName": null,
+          "id": 1,
+          "name": null,
+          "roleNames": null
+        },
+        "description": "Disposable schema environment simulation",
+        "enabled": true,
+        "id": 1000022,
+        "name": "POCPROD",
+        "updateTime": 1791075730000
+      },
+      "id": 1000218,
+      "name": "ODC_POC_20261004_MOCKPROD",
+      "type": "PHYSICAL"
+    },
+    {
+      "connectType": "ORACLE",
+      "dataSource": {
+        "connectType": "CONNECT_TYPE_OB",
+        "createTime": 1791074479000,
+        "creatorId": 1,
+        "defaultSchema": "ODC_POC_20261004_OBSERVER",
+        "enabled": true,
+        "environmentId": 1,
+        "host": "adb.ap-mumbai-1.oraclecloud.com",
+        "id": 1000005,
+        "name": "odc-poc-observer",
+        "port": 1521,
+        "projectId": 1,
+        "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+        "status": {
+          "status": "TESTING",
+          "type": null
+        },
+        "type": "ORACLE",
+        "updateTime": 1791074479000,
+        "username": "ODC_POC_20261004_OBSERVER"
+      },
+      "databaseId": "9BA4EF84-AE31-413F-AF39-9527F190E1EB",
+      "environment": {
+        "createTime": 1791016279000,
+        "creator": {
+          "accountName": null,
+          "id": 1,
+          "name": null,
+          "roleNames": null
+        },
+        "description": "development environment",
+        "enabled": true,
+        "id": 1,
+        "name": "dev",
+        "updateTime": 1791016279000
+      },
+      "id": 1000345,
+      "name": "ODC_POC_20261004_OBSERVER",
+      "type": "PHYSICAL"
+    },
+    {
+      "connectType": "ORACLE",
+      "dataSource": {
+        "connectType": "CONNECT_TYPE_OB",
+        "createTime": 1791074464000,
+        "creatorId": 1,
+        "defaultSchema": "ODC_POC_20261004_SIT",
+        "enabled": true,
+        "environmentId": 2,
+        "host": "adb.ap-mumbai-1.oraclecloud.com",
+        "id": 1000002,
+        "name": "odc-poc-sit",
+        "port": 1521,
+        "projectId": 1,
+        "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+        "status": {
+          "status": "TESTING",
+          "type": null
+        },
+        "type": "ORACLE",
+        "updateTime": 1791074464000,
+        "username": "ODC_POC_20261004_SIT"
+      },
+      "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+      "environment": {
+        "createTime": 1791016279000,
+        "creator": {
+          "accountName": null,
+          "id": 1,
+          "name": null,
+          "roleNames": null
+        },
+        "description": "sit environment",
+        "enabled": true,
+        "id": 2,
+        "name": "sit",
+        "updateTime": 1791016279000
+      },
+      "id": 1000122,
+      "name": "ODC_POC_20261004_SIT",
+      "type": "PHYSICAL"
+    },
+    {
+      "connectType": "ORACLE",
+      "dataSource": {
+        "connectType": "CONNECT_TYPE_OB",
+        "createTime": 1791074469000,
+        "creatorId": 1,
+        "defaultSchema": "ODC_POC_20261004_UAT",
+        "enabled": true,
+        "environmentId": 1000021,
+        "host": "adb.ap-mumbai-1.oraclecloud.com",
+        "id": 1000003,
+        "name": "odc-poc-uat",
+        "port": 1521,
+        "projectId": 1,
+        "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+        "status": {
+          "status": "TESTING",
+          "type": null
+        },
+        "type": "ORACLE",
+        "updateTime": 1791075730000,
+        "username": "ODC_POC_20261004_UAT"
+      },
+      "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+      "environment": {
+        "createTime": 1791075729000,
+        "creator": {
+          "accountName": null,
+          "id": 1,
+          "name": null,
+          "roleNames": null
+        },
+        "description": "Disposable schema environment simulation",
+        "enabled": true,
+        "id": 1000021,
+        "name": "POCUAT",
+        "updateTime": 1791075729000
+      },
+      "id": 1000184,
+      "name": "ODC_POC_20261004_UAT",
+      "type": "PHYSICAL"
+    }
+  ],
+  "observer_access": {
+    "healthy": true,
+    "identity": [
+      [
+        "ODC_POC_20261004_OBSERVER",
+        "tcps"
+      ]
+    ],
+    "privileges": [
+      [
+        "CREATE SESSION"
+      ]
+    ],
+    "historical_dev_orders_count": [
+      [
+        4
+      ]
+    ]
+  },
+  "safe_for_changes": true
+}

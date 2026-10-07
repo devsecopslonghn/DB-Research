@@ -1,0 +1,1050 @@
+package taskrun
+
+import (
+	"context"
+	"fmt"
+	"log/slog"
+	"strings"
+	"time"
+
+	"github.com/bytebase/omni/pg/ast"
+	ghostbase "github.com/github/gh-ost/go/base"
+	"github.com/github/gh-ost/go/logic"
+	gomysql "github.com/go-sql-driver/mysql"
+	"github.com/pkg/errors"
+
+	"github.com/bytebase/bytebase/backend/common"
+	"github.com/bytebase/bytebase/backend/common/log"
+	"github.com/bytebase/bytebase/backend/component/bus"
+	"github.com/bytebase/bytebase/backend/component/config"
+	"github.com/bytebase/bytebase/backend/component/dbfactory"
+	"github.com/bytebase/bytebase/backend/component/ghost"
+	storepb "github.com/bytebase/bytebase/backend/generated-go/store"
+	"github.com/bytebase/bytebase/backend/plugin/db"
+	"github.com/bytebase/bytebase/backend/plugin/db/oracle"
+	parserbase "github.com/bytebase/bytebase/backend/plugin/parser/base"
+	"github.com/bytebase/bytebase/backend/plugin/parser/pg"
+	"github.com/bytebase/bytebase/backend/plugin/schema"
+	"github.com/bytebase/bytebase/backend/runner/schemasync"
+	"github.com/bytebase/bytebase/backend/store"
+	"github.com/bytebase/bytebase/backend/store/model"
+	"github.com/bytebase/bytebase/backend/utils"
+)
+
+// NewDatabaseMigrateExecutor creates a database migration task executor.
+func NewDatabaseMigrateExecutor(store *store.Store, dbFactory *dbfactory.DBFactory, bus *bus.Bus, schemaSyncer *schemasync.Syncer, profile *config.Profile) Executor {
+	return &DatabaseMigrateExecutor{
+		store:        store,
+		dbFactory:    dbFactory,
+		bus:          bus,
+		schemaSyncer: schemaSyncer,
+		profile:      profile,
+	}
+}
+
+// DatabaseMigrateExecutor is the database migration task executor.
+type DatabaseMigrateExecutor struct {
+	store        *store.Store
+	dbFactory    *dbfactory.DBFactory
+	bus          *bus.Bus
+	schemaSyncer *schemasync.Syncer
+	profile      *config.Profile
+}
+
+// RunOnce will run the database migration task executor once.
+func (exec *DatabaseMigrateExecutor) RunOnce(ctx context.Context, driverCtx context.Context, task *store.TaskMessage, taskRunUID int64) (*storepb.TaskRunResult, error) {
+	ctx = taskRunLogContext(ctx, task.ProjectID, taskRunUID)
+
+	// Fetch instance, database, and project (common to all migration types)
+	instance, err := exec.store.GetInstanceByResourceID(ctx, task.InstanceID)
+	if err != nil {
+		return nil, errors.Wrap(err, "failed to get instance")
+	}
+	if instance == nil {
+		return nil, errors.Errorf("instance not found for task %v", task.ID)
+	}
+
+	database, err := exec.store.GetDatabase(ctx, &store.FindDatabaseMessage{InstanceID: &task.InstanceID, DatabaseName: task.DatabaseName})
+	if err != nil {
+		return nil, errors.Wrap(err, "failed to get database")
+	}
+	if database == nil {
+		return nil, errors.Errorf("database not found for task %v", task.ID)
+	}
+
+	project, err := exec.store.GetProject(ctx, &store.FindProjectMessage{Workspace: instance.Workspace, ResourceID: &database.ProjectID})
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to get project")
+	}
+
+	// Ensure baseline changelog exists before running any migration
+	if err := exec.ensureBaselineChangelog(ctx, database, instance, taskRunUID); err != nil {
+		return nil, errors.Wrap(err, "failed to ensure baseline changelog")
+	}
+
+	// Execute migration based on task type
+	if releaseName := task.Payload.GetRelease(); releaseName != "" {
+		// Parse release name to get project ID and release ID
+		projectID, releaseID, err := common.GetProjectReleaseID(releaseName)
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to parse release name %q", releaseName)
+		}
+
+		// Fetch the release
+		release, err := exec.store.GetRelease(ctx, &store.FindReleaseMessage{
+			ProjectID: &projectID,
+			ReleaseID: &releaseID,
+		})
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to get release %s", releaseID)
+		}
+		if release == nil {
+			return nil, errors.Errorf("release %s not found", releaseID)
+		}
+
+		// Switch based on release type
+		switch release.Payload.Type {
+		case storepb.SchemaChangeType_VERSIONED:
+			return exec.runVersionedRelease(ctx, driverCtx, task, taskRunUID, release, instance, database, project)
+		case storepb.SchemaChangeType_DECLARATIVE:
+			return exec.runDeclarativeRelease(ctx, driverCtx, task, taskRunUID, release, instance, database, project)
+		default:
+			return nil, errors.Errorf("unsupported release type %q", release.Payload.Type)
+		}
+	}
+
+	// Fetch sheet for non-release tasks
+	sheet, err := exec.store.GetSheetFull(ctx, task.Payload.GetSheetSha256())
+	if err != nil {
+		return nil, err
+	}
+	if sheet == nil {
+		return nil, errors.Errorf("sheet not found: %s", task.Payload.GetSheetSha256())
+	}
+
+	if ghost.IsGhostEnabled(sheet.Statement) {
+		return exec.runGhostMigration(ctx, driverCtx, task, taskRunUID, sheet, instance, database, project)
+	}
+	return exec.runStandardMigration(ctx, driverCtx, task, taskRunUID, sheet, instance, database, project)
+}
+
+// ensureBaselineChangelog creates a baseline changelog if this is the first migration for the database.
+func (exec *DatabaseMigrateExecutor) ensureBaselineChangelog(ctx context.Context, database *store.DatabaseMessage, _ *store.InstanceMessage, taskRunUID int64) error {
+	// Check if this database has any existing changelogs
+	existingChangelogs, err := exec.store.ListChangelogs(ctx, &store.FindChangelogMessage{
+		InstanceID:   database.InstanceID,
+		DatabaseName: &database.DatabaseName,
+		Limit:        new(1),
+	})
+	if err != nil {
+		return errors.Wrapf(err, "failed to check for existing changelogs")
+	}
+
+	// If no changelogs exist, create a baseline with the current schema
+	if len(existingChangelogs) == 0 {
+		exec.store.CreateTaskRunLogS(ctx, database.ProjectID, taskRunUID, time.Now(), exec.profile.ReplicaID, &storepb.TaskRunLog{
+			Type:              storepb.TaskRunLog_DATABASE_SYNC_START,
+			DatabaseSyncStart: &storepb.TaskRunLog_DatabaseSyncStart{},
+		})
+
+		baselineSyncHistory, err := exec.schemaSyncer.SyncDatabaseSchemaToHistory(ctx, database)
+		if err != nil {
+			exec.store.CreateTaskRunLogS(ctx, database.ProjectID, taskRunUID, time.Now(), exec.profile.ReplicaID, &storepb.TaskRunLog{
+				Type: storepb.TaskRunLog_DATABASE_SYNC_END,
+				DatabaseSyncEnd: &storepb.TaskRunLog_DatabaseSyncEnd{
+					Error: err.Error(),
+				},
+			})
+			return errors.Wrapf(err, "failed to sync database schema for baseline")
+		}
+
+		_, err = exec.store.CreateChangelog(ctx, &store.ChangelogMessage{
+			InstanceID:   database.InstanceID,
+			DatabaseName: database.DatabaseName,
+			Status:       store.ChangelogStatusDone,
+			SyncHistory:  &baselineSyncHistory,
+			Payload: &storepb.ChangelogPayload{
+				GitCommit: exec.profile.GitCommit,
+			},
+		})
+		if err != nil {
+			exec.store.CreateTaskRunLogS(ctx, database.ProjectID, taskRunUID, time.Now(), exec.profile.ReplicaID, &storepb.TaskRunLog{
+				Type: storepb.TaskRunLog_DATABASE_SYNC_END,
+				DatabaseSyncEnd: &storepb.TaskRunLog_DatabaseSyncEnd{
+					Error: err.Error(),
+				},
+			})
+			return errors.Wrapf(err, "failed to create baseline changelog")
+		}
+		exec.store.CreateTaskRunLogS(ctx, database.ProjectID, taskRunUID, time.Now(), exec.profile.ReplicaID, &storepb.TaskRunLog{
+			Type:            storepb.TaskRunLog_DATABASE_SYNC_END,
+			DatabaseSyncEnd: &storepb.TaskRunLog_DatabaseSyncEnd{},
+		})
+	}
+
+	return nil
+}
+
+func (exec *DatabaseMigrateExecutor) runStandardMigration(ctx context.Context, driverCtx context.Context, task *store.TaskMessage, taskRunUID int64, sheet *store.SheetMessage, instance *store.InstanceMessage, database *store.DatabaseMessage, project *store.ProjectMessage) (*storepb.TaskRunResult, error) {
+	// Handle prior backup if enabled.
+	// TransformDMLToSelect will automatically filter out DDL statements,
+	// so this works correctly for mixed DDL+DML statements.
+	var priorBackupDetail *storepb.PriorBackupDetail
+	if task.Payload.GetEnablePriorBackup() {
+		// Check if this specific task run wants to skip backup.
+		taskRun, err := exec.store.GetTaskRunV1(ctx, &store.FindTaskRunMessage{
+			ProjectID: database.ProjectID,
+			UID:       &taskRunUID,
+		})
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to get task run")
+		}
+		if taskRun == nil {
+			return nil, errors.Errorf("task run %d not found in project %s", taskRunUID, database.ProjectID)
+		}
+
+		skipBackup := taskRun.PayloadProto.GetSkipPriorBackup()
+		if !skipBackup {
+			exec.store.CreateTaskRunLogS(ctx, database.ProjectID, taskRunUID, time.Now(), exec.profile.ReplicaID, &storepb.TaskRunLog{
+				Type:             storepb.TaskRunLog_PRIOR_BACKUP_START,
+				PriorBackupStart: &storepb.TaskRunLog_PriorBackupStart{},
+			})
+
+			// Check if we should skip backup or not.
+			if common.EngineSupportPriorBackup(database.Engine) {
+				var backupErr error
+				priorBackupDetail, backupErr = exec.backupData(ctx, driverCtx, sheet.Statement, task.Payload, task, instance, database)
+				if backupErr != nil {
+					exec.store.CreateTaskRunLogS(ctx, database.ProjectID, taskRunUID, time.Now(), exec.profile.ReplicaID, &storepb.TaskRunLog{
+						Type: storepb.TaskRunLog_PRIOR_BACKUP_END,
+						PriorBackupEnd: &storepb.TaskRunLog_PriorBackupEnd{
+							Error: backupErr.Error(),
+						},
+					})
+
+					return nil, backupErr
+				}
+
+				exec.store.CreateTaskRunLogS(ctx, database.ProjectID, taskRunUID, time.Now(), exec.profile.ReplicaID, &storepb.TaskRunLog{
+					Type: storepb.TaskRunLog_PRIOR_BACKUP_END,
+					PriorBackupEnd: &storepb.TaskRunLog_PriorBackupEnd{
+						PriorBackupDetail: priorBackupDetail,
+					},
+				})
+			}
+		}
+	}
+
+	needDump := computeNeedDump(task.Type, database.Engine, sheet.Statement)
+
+	// Get database driver
+	driver, err := exec.dbFactory.GetAdminDatabaseDriver(ctx, instance, database, db.ConnectionContext{
+		TenantMode: project.Setting.GetPostgresDatabaseTenantMode(),
+		TaskRunUID: &taskRunUID,
+	})
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to get driver connection for instance %q", instance.ResourceID)
+	}
+	defer driver.Close(ctx)
+
+	slog.DebugContext(ctx, "Start migration...",
+		slog.String("instance", database.InstanceID),
+		slog.String("database", database.DatabaseName),
+		slog.String("type", task.Type.String()),
+		slog.String("sheetSha256", sheet.Sha256),
+	)
+
+	// Set up execute options
+	opts := db.ExecuteOptions{}
+	if project != nil && project.Setting != nil {
+		opts.MaximumRetries = int(project.Setting.GetExecutionRetryPolicy().GetMaximumRetries())
+	}
+	opts.CreateTaskRunLog = func(t time.Time, e *storepb.TaskRunLog) error {
+		return exec.store.CreateTaskRunLog(ctx, database.ProjectID, taskRunUID, t.UTC(), exec.profile.ReplicaID, e)
+	}
+
+	// Begin migration - create pending changelog
+	changelogID, err := exec.store.CreateChangelog(ctx, &store.ChangelogMessage{
+		InstanceID:   database.InstanceID,
+		DatabaseName: database.DatabaseName,
+		Status:       store.ChangelogStatusPending,
+		SyncHistory:  nil,
+		Payload: &storepb.ChangelogPayload{
+			TaskRun:   common.FormatTaskRun(database.ProjectID, task.PlanID, task.Environment, task.ID, taskRunUID),
+			GitCommit: exec.profile.GitCommit,
+		},
+	})
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to create changelog")
+	}
+
+	// Execute the SQL
+	_, migrationErr := driver.Execute(driverCtx, sheet.Statement, opts)
+
+	// Dump after migration and update changelog
+	update := &store.UpdateChangelogMessage{
+		ResourceID: changelogID,
+	}
+	if needDump {
+		opts.LogDatabaseSyncStart()
+		syncHistory, err := exec.schemaSyncer.SyncDatabaseSchemaToHistory(ctx, database)
+		if err != nil {
+			opts.LogDatabaseSyncEnd(err.Error())
+			slog.ErrorContext(ctx, "failed to sync database schema", log.BBError(err))
+		} else {
+			opts.LogDatabaseSyncEnd("")
+			update.SyncHistory = &syncHistory
+		}
+	}
+	if migrationErr == nil {
+		update.Status = new(store.ChangelogStatusDone)
+	} else {
+		update.Status = new(store.ChangelogStatusFailed)
+	}
+	if err := exec.store.UpdateChangelog(ctx, update); err != nil {
+		slog.ErrorContext(ctx, "failed to update changelog", log.BBError(err))
+	}
+
+	if migrationErr != nil {
+		return nil, migrationErr
+	}
+
+	return &storepb.TaskRunResult{
+		HasPriorBackup: priorBackupDetail != nil && len(priorBackupDetail.Items) > 0,
+	}, nil
+}
+
+func executeGhostMigration(ctx context.Context, driverCtx context.Context, task *store.TaskMessage, sheet *store.SheetMessage, instance *store.InstanceMessage, database *store.DatabaseMessage, driver db.Driver, opts *db.ExecuteOptions) error {
+	flags, err := ghost.ParseGhostDirective(sheet.Statement)
+	if err != nil {
+		return errors.Wrapf(err, "failed to parse ghost directive")
+	}
+	if flags == nil {
+		flags = make(map[string]string)
+	}
+
+	slog.DebugContext(ctx, "Start migration...",
+		slog.String("instance", database.InstanceID),
+		slog.String("database", database.DatabaseName),
+		slog.String("type", task.Type.String()),
+		slog.String("sheetSha256", sheet.Sha256),
+	)
+
+	// Remove all Bytebase directives from statement before passing to gh-ost.
+	cleanedStatement := parserbase.CleanDirectives(sheet.Statement)
+	statement := strings.TrimSpace(cleanedStatement)
+	statement = strings.TrimRight(statement, ";")
+
+	tableName, err := ghost.GetTableNameFromStatement(statement)
+	if err != nil {
+		return err
+	}
+
+	adminDataSource := utils.DataSourceFromInstanceWithType(instance, storepb.DataSourceType_ADMIN)
+	if adminDataSource == nil {
+		return common.Errorf(common.Internal, "admin data source not found for instance %s", instance.ResourceID)
+	}
+
+	migrationContext, cleanup, err := ghost.NewMigrationContext(ctx, task.ID, database, adminDataSource, tableName, fmt.Sprintf("_%d", time.Now().Unix()), statement, false, flags, 10000000)
+	if err != nil {
+		return errors.Wrap(err, "failed to init migrationContext for gh-ost")
+	}
+	defer cleanup()
+	defer func() {
+		// Use migrationContext.Uuid as the tls_config_key by convention.
+		// We need to deregister it when gh-ost exits.
+		// https://github.com/bytebase/gh-ost2/pull/4
+		gomysql.DeregisterTLSConfig(migrationContext.Uuid)
+	}()
+
+	// set buffer size to 1 to unblock the sender because there is no listener if the task is canceled.
+	migrationError := make(chan error, 1)
+	migrator := logic.NewMigrator(migrationContext, "bb")
+	opts.LogGhostMigrationStart()
+
+	defer func() {
+		cleanupCtx := context.Background()
+
+		// Use the backup database name of MySQL as the ghost database name.
+		ghostDBName := common.BackupDatabaseNameOfEngine(storepb.Engine_MYSQL)
+		sql := fmt.Sprintf("DROP TABLE IF EXISTS `%s`.`%s`; DROP TABLE IF EXISTS `%s`.`%s`;",
+			ghostDBName,
+			migrationContext.GetGhostTableName(),
+			ghostDBName,
+			migrationContext.GetChangelogTableName(),
+		)
+
+		if _, err := driver.GetDB().ExecContext(cleanupCtx, sql); err != nil {
+			slog.WarnContext(ctx, "failed to cleanup gh-ost temp tables", log.BBError(err))
+		}
+	}()
+
+	go func() {
+		if err := migrator.Migrate(); err != nil {
+			slog.ErrorContext(ctx, "failed to run gh-ost migration", log.BBError(err))
+			migrationError <- err
+			return
+		}
+		migrationError <- nil
+	}()
+
+	select {
+	case err := <-migrationError:
+		if err != nil {
+			opts.LogGhostMigrationEnd(err.Error())
+			return err
+		}
+		opts.LogGhostMigrationEnd("")
+		return nil
+	case <-driverCtx.Done():
+		err := errors.Wrap(driverCtx.Err(), "task canceled")
+		opts.LogGhostMigrationEnd(err.Error())
+		abortCtx, cancel := context.WithTimeout(context.Background(), time.Second)
+		defer cancel()
+		if sendErr := ghostbase.SendWithContext(abortCtx, migrationContext.PanicAbort, err); sendErr != nil {
+			slog.WarnContext(ctx, "failed to abort gh-ost migration", log.BBError(sendErr))
+		}
+		return err
+	}
+}
+
+func (exec *DatabaseMigrateExecutor) runGhostMigration(ctx context.Context, driverCtx context.Context, task *store.TaskMessage, taskRunUID int64, sheet *store.SheetMessage, instance *store.InstanceMessage, database *store.DatabaseMessage, project *store.ProjectMessage) (*storepb.TaskRunResult, error) {
+	// Get database driver
+	driver, err := exec.dbFactory.GetAdminDatabaseDriver(ctx, instance, database, db.ConnectionContext{
+		TenantMode: project.Setting.GetPostgresDatabaseTenantMode(),
+		TaskRunUID: &taskRunUID,
+	})
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to get driver connection for instance %q", instance.ResourceID)
+	}
+	defer driver.Close(ctx)
+
+	// Set up execute options
+	opts := db.ExecuteOptions{}
+	if project != nil && project.Setting != nil {
+		opts.MaximumRetries = int(project.Setting.GetExecutionRetryPolicy().GetMaximumRetries())
+	}
+	opts.CreateTaskRunLog = func(t time.Time, e *storepb.TaskRunLog) error {
+		return exec.store.CreateTaskRunLog(ctx, database.ProjectID, taskRunUID, t.UTC(), exec.profile.ReplicaID, e)
+	}
+
+	// Begin migration - create pending changelog
+	changelogID, err := exec.store.CreateChangelog(ctx, &store.ChangelogMessage{
+		InstanceID:   database.InstanceID,
+		DatabaseName: database.DatabaseName,
+		Status:       store.ChangelogStatusPending,
+		SyncHistory:  nil,
+		Payload: &storepb.ChangelogPayload{
+			TaskRun:   common.FormatTaskRun(database.ProjectID, task.PlanID, task.Environment, task.ID, taskRunUID),
+			GitCommit: exec.profile.GitCommit,
+		},
+	})
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to create changelog")
+	}
+
+	migrationErr := executeGhostMigration(ctx, driverCtx, task, sheet, instance, database, driver, &opts)
+
+	// Dump after migration and update changelog
+	update := &store.UpdateChangelogMessage{
+		ResourceID: changelogID,
+	}
+	opts.LogDatabaseSyncStart()
+	syncHistory, err := exec.schemaSyncer.SyncDatabaseSchemaToHistory(ctx, database)
+	if err != nil {
+		opts.LogDatabaseSyncEnd(err.Error())
+		slog.ErrorContext(ctx, "failed to sync database schema", log.BBError(err))
+	} else {
+		opts.LogDatabaseSyncEnd("")
+		update.SyncHistory = &syncHistory
+	}
+	if migrationErr == nil {
+		update.Status = new(store.ChangelogStatusDone)
+	} else {
+		update.Status = new(store.ChangelogStatusFailed)
+	}
+	if err := exec.store.UpdateChangelog(ctx, update); err != nil {
+		slog.ErrorContext(ctx, "failed to update changelog", log.BBError(err))
+	}
+
+	if migrationErr != nil {
+		return nil, migrationErr
+	}
+
+	return &storepb.TaskRunResult{}, nil
+}
+
+func (exec *DatabaseMigrateExecutor) runVersionedRelease(ctx context.Context, driverCtx context.Context, task *store.TaskMessage, taskRunUID int64, release *store.ReleaseMessage, instance *store.InstanceMessage, database *store.DatabaseMessage, project *store.ProjectMessage) (*storepb.TaskRunResult, error) {
+	// Get existing revisions for this database
+	revisions, err := exec.store.ListRevisions(ctx, &store.FindRevisionMessage{
+		InstanceID:   task.InstanceID,
+		DatabaseName: task.DatabaseName,
+	})
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to list revisions for database %q", *task.DatabaseName)
+	}
+
+	// Build map of applied versions
+	appliedVersions := make(map[string]bool)
+	for _, revision := range revisions {
+		if revision.Payload.Type == storepb.SchemaChangeType_VERSIONED {
+			appliedVersions[revision.Version] = true
+		}
+	}
+
+	taskRunName := common.FormatTaskRun(database.ProjectID, task.PlanID, task.Environment, task.ID, taskRunUID)
+
+	// Create pending changelog for the entire release
+	changelogID, err := exec.store.CreateChangelog(ctx, &store.ChangelogMessage{
+		InstanceID:   database.InstanceID,
+		DatabaseName: database.DatabaseName,
+		Status:       store.ChangelogStatusPending,
+		SyncHistory:  nil,
+		Payload: &storepb.ChangelogPayload{
+			TaskRun:   taskRunName,
+			GitCommit: exec.profile.GitCommit,
+		},
+	})
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to create changelog")
+	}
+
+	// Set up execute options
+	opts := db.ExecuteOptions{}
+	if project != nil && project.Setting != nil {
+		opts.MaximumRetries = int(project.Setting.GetExecutionRetryPolicy().GetMaximumRetries())
+	}
+	opts.CreateTaskRunLog = func(t time.Time, e *storepb.TaskRunLog) error {
+		return exec.store.CreateTaskRunLog(ctx, database.ProjectID, taskRunUID, t.UTC(), exec.profile.ReplicaID, e)
+	}
+
+	// Get database driver once for all files
+	driver, err := exec.dbFactory.GetAdminDatabaseDriver(ctx, instance, database, db.ConnectionContext{
+		TenantMode: project.Setting.GetPostgresDatabaseTenantMode(),
+		TaskRunUID: &taskRunUID,
+	})
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to get driver connection for instance %q", instance.ResourceID)
+	}
+	defer driver.Close(ctx)
+
+	var migrationErr error
+
+	// Execute unapplied files in order
+	for _, file := range release.Payload.Files {
+		// Skip if already applied
+		if appliedVersions[file.Version] {
+			slog.InfoContext(ctx, "skipping already applied version",
+				slog.String("version", file.Version),
+				slog.String("database", *task.DatabaseName))
+			continue
+		}
+
+		sheet, err := exec.store.GetSheetFull(ctx, file.SheetSha256)
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to get sheet %s for version %s", file.SheetSha256, file.Version)
+		}
+		if sheet == nil {
+			return nil, errors.Errorf("sheet not found: %s", file.SheetSha256)
+		}
+
+		slog.InfoContext(ctx, "executing release file",
+			slog.String("version", file.Version),
+			slog.String("database", *task.DatabaseName),
+			slog.String("file", file.Path))
+
+		// Log release file execution
+		exec.store.CreateTaskRunLogS(ctx, database.ProjectID, taskRunUID, time.Now(), exec.profile.ReplicaID, &storepb.TaskRunLog{
+			Type: storepb.TaskRunLog_RELEASE_FILE_EXECUTE,
+			ReleaseFileExecute: &storepb.TaskRunLog_ReleaseFileExecute{
+				Version:  file.Version,
+				FilePath: file.Path,
+			},
+		})
+
+		// Execute the SQL.
+		if ghost.IsGhostEnabled(sheet.Statement) {
+			err = executeGhostMigration(ctx, driverCtx, task, sheet, instance, database, driver, &opts)
+		} else {
+			slog.DebugContext(ctx, "Start migration...",
+				slog.String("instance", database.InstanceID),
+				slog.String("database", database.DatabaseName),
+				slog.String("type", task.Type.String()),
+			)
+			_, err = driver.Execute(driverCtx, sheet.Statement, opts)
+		}
+		if err != nil {
+			migrationErr = errors.Wrapf(err, "failed to execute release file %s (version %s)", file.Path, file.Version)
+			break
+		}
+
+		// Create revision for this file
+		r := &store.RevisionMessage{
+			InstanceID:   database.InstanceID,
+			DatabaseName: database.DatabaseName,
+			Version:      file.Version,
+			Payload: &storepb.RevisionPayload{
+				Release:     task.Payload.GetRelease(),
+				File:        file.Path,
+				SheetSha256: file.SheetSha256,
+				TaskRun:     taskRunName,
+				Type:        storepb.SchemaChangeType_VERSIONED,
+				// The authoring project: where this rollout ran.
+				Project: task.ProjectID,
+			},
+		}
+
+		_, err = exec.store.CreateRevision(ctx, r)
+		if err != nil {
+			migrationErr = errors.Wrapf(err, "failed to create revision for version %s", file.Version)
+			break
+		}
+	}
+
+	// Update changelog after all files are processed
+	update := &store.UpdateChangelogMessage{
+		ResourceID: changelogID,
+	}
+	opts.LogDatabaseSyncStart()
+	syncHistory, err := exec.schemaSyncer.SyncDatabaseSchemaToHistory(ctx, database)
+	if err != nil {
+		opts.LogDatabaseSyncEnd(err.Error())
+		slog.ErrorContext(ctx, "failed to sync database schema", log.BBError(err))
+	} else {
+		opts.LogDatabaseSyncEnd("")
+		update.SyncHistory = &syncHistory
+	}
+	if migrationErr == nil {
+		update.Status = new(store.ChangelogStatusDone)
+	} else {
+		update.Status = new(store.ChangelogStatusFailed)
+	}
+	if err := exec.store.UpdateChangelog(ctx, update); err != nil {
+		slog.ErrorContext(ctx, "failed to update changelog", log.BBError(err))
+	}
+
+	if migrationErr != nil {
+		return nil, migrationErr
+	}
+
+	// Update database release to the current release
+	if _, err := exec.store.UpdateDatabase(ctx, &store.UpdateDatabaseMessage{
+		InstanceID:   database.InstanceID,
+		DatabaseName: database.DatabaseName,
+		MetadataUpdates: []func(*storepb.DatabaseMetadata){func(md *storepb.DatabaseMetadata) {
+			md.Release = task.Payload.GetRelease()
+		}},
+	}); err != nil {
+		return nil, errors.Wrapf(err, "failed to update database release to %s", release.ReleaseID)
+	}
+
+	return &storepb.TaskRunResult{}, nil
+}
+
+func (exec *DatabaseMigrateExecutor) runDeclarativeRelease(ctx context.Context, driverCtx context.Context, task *store.TaskMessage, taskRunUID int64, release *store.ReleaseMessage, instance *store.InstanceMessage, database *store.DatabaseMessage, project *store.ProjectMessage) (*storepb.TaskRunResult, error) {
+	// Declarative releases should have exactly one file
+	if len(release.Payload.Files) == 0 {
+		return nil, errors.Errorf("no files found in declarative release")
+	}
+	if len(release.Payload.Files) > 1 {
+		return nil, errors.Errorf("declarative release should have exactly one file, found %d", len(release.Payload.Files))
+	}
+
+	file := release.Payload.Files[0]
+
+	// Fetch the schema file
+	sheet, err := exec.store.GetSheetFull(ctx, file.SheetSha256)
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to get sheet %s for version %s", file.SheetSha256, file.Version)
+	}
+	if sheet == nil {
+		return nil, errors.Errorf("sheet not found: %s", file.SheetSha256)
+	}
+
+	slog.InfoContext(ctx, "executing declarative release",
+		slog.String("version", file.Version),
+		slog.String("database", *task.DatabaseName),
+		slog.String("file", file.Path))
+
+	// Log release file execution
+	exec.store.CreateTaskRunLogS(ctx, database.ProjectID, taskRunUID, time.Now(), exec.profile.ReplicaID, &storepb.TaskRunLog{
+		Type: storepb.TaskRunLog_RELEASE_FILE_EXECUTE,
+		ReleaseFileExecute: &storepb.TaskRunLog_ReleaseFileExecute{
+			Version: file.Version,
+			// FilePath is omitted because it's artificial for declarative releases
+		},
+	})
+
+	// Get database driver
+	driver, err := exec.dbFactory.GetAdminDatabaseDriver(ctx, instance, database, db.ConnectionContext{
+		TenantMode: project.Setting.GetPostgresDatabaseTenantMode(),
+		TaskRunUID: &taskRunUID,
+	})
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to get driver connection for instance %q", instance.ResourceID)
+	}
+	defer driver.Close(ctx)
+
+	slog.DebugContext(ctx, "Start migration...",
+		slog.String("instance", database.InstanceID),
+		slog.String("database", database.DatabaseName),
+		slog.String("type", task.Type.String()),
+		slog.String("sheetSha256", sheet.Sha256),
+	)
+
+	// Set up execute options
+	opts := db.ExecuteOptions{}
+	if project != nil && project.Setting != nil {
+		opts.MaximumRetries = int(project.Setting.GetExecutionRetryPolicy().GetMaximumRetries())
+	}
+	opts.CreateTaskRunLog = func(t time.Time, e *storepb.TaskRunLog) error {
+		return exec.store.CreateTaskRunLog(ctx, database.ProjectID, taskRunUID, t.UTC(), exec.profile.ReplicaID, e)
+	}
+
+	// Compute SDL diff before beginning migration
+	opts.LogComputeDiffStart()
+	migrationSQL, err := diff(ctx, exec.store, instance, database, sheet.Statement)
+	if err != nil {
+		opts.LogComputeDiffEnd(err.Error())
+		return nil, errors.Wrapf(err, "failed to diff database schema")
+	}
+	opts.LogComputeDiffEnd("")
+
+	// Begin migration - create pending changelog
+	changelogID, err := exec.store.CreateChangelog(ctx, &store.ChangelogMessage{
+		InstanceID:   database.InstanceID,
+		DatabaseName: database.DatabaseName,
+		Status:       store.ChangelogStatusPending,
+		SyncHistory:  nil,
+		Payload: &storepb.ChangelogPayload{
+			TaskRun:   common.FormatTaskRun(database.ProjectID, task.PlanID, task.Environment, task.ID, taskRunUID),
+			GitCommit: exec.profile.GitCommit,
+		},
+	})
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to create changelog")
+	}
+
+	// Execute SDL migration
+	// Log statement string.
+	opts.LogCommandStatement = true
+	_, migrationErr := driver.Execute(driverCtx, migrationSQL, opts)
+
+	// Dump after migration and update changelog
+	update := &store.UpdateChangelogMessage{
+		ResourceID: changelogID,
+	}
+	opts.LogDatabaseSyncStart()
+	syncHistory, err := exec.schemaSyncer.SyncDatabaseSchemaToHistory(ctx, database)
+	if err != nil {
+		opts.LogDatabaseSyncEnd(err.Error())
+		slog.ErrorContext(ctx, "failed to sync database schema", log.BBError(err))
+	} else {
+		opts.LogDatabaseSyncEnd("")
+		update.SyncHistory = &syncHistory
+	}
+	if migrationErr == nil {
+		update.Status = new(store.ChangelogStatusDone)
+	} else {
+		update.Status = new(store.ChangelogStatusFailed)
+	}
+	if err := exec.store.UpdateChangelog(ctx, update); err != nil {
+		slog.ErrorContext(ctx, "failed to update changelog", log.BBError(err))
+	}
+
+	if migrationErr != nil {
+		return nil, errors.Wrap(migrationErr, "failed to execute declarative release")
+	}
+
+	// Post migration - update database release
+	// Note: Declarative releases do NOT create revisions (they are version-tracked through the database schema itself)
+	if _, err := exec.store.UpdateDatabase(ctx, &store.UpdateDatabaseMessage{
+		InstanceID:   database.InstanceID,
+		DatabaseName: database.DatabaseName,
+		MetadataUpdates: []func(*storepb.DatabaseMetadata){func(md *storepb.DatabaseMetadata) {
+			md.Release = task.Payload.GetRelease()
+		}},
+	}); err != nil {
+		return nil, errors.Wrapf(err, "failed to update database release for %q", database.DatabaseName)
+	}
+
+	return &storepb.TaskRunResult{}, nil
+}
+
+func (exec *DatabaseMigrateExecutor) backupData(
+	ctx context.Context,
+	driverCtx context.Context,
+	originStatement string,
+	payload *storepb.Task,
+	task *store.TaskMessage,
+	instance *store.InstanceMessage,
+	database *store.DatabaseMessage,
+) (*storepb.PriorBackupDetail, error) {
+	if !payload.GetEnablePriorBackup() {
+		return nil, nil
+	}
+
+	sourceDatabaseName := common.FormatDatabase(database.InstanceID, database.DatabaseName)
+	backupDBName := common.BackupDatabaseNameOfEngine(database.Engine)
+	targetDatabaseName := common.FormatDatabase(database.InstanceID, backupDBName)
+	if instance.ProjectID != nil {
+		sourceDatabaseName = common.FormatProjectDatabase(*instance.ProjectID, database.InstanceID, database.DatabaseName)
+		targetDatabaseName = common.FormatProjectDatabase(*instance.ProjectID, database.InstanceID, backupDBName)
+	}
+	var backupDatabase *store.DatabaseMessage
+	var backupDriver db.Driver
+
+	_, backupInstanceID, backupDatabaseName, err := common.GetDatabaseResourceName(targetDatabaseName)
+	if err != nil {
+		return nil, errors.Wrap(err, "failed to parse backup database")
+	}
+
+	if database.Engine != storepb.Engine_POSTGRES {
+		backupDatabase, err = exec.store.GetDatabase(ctx, &store.FindDatabaseMessage{InstanceID: &backupInstanceID, DatabaseName: &backupDatabaseName})
+		if err != nil {
+			return nil, errors.Wrap(err, "failed to get backup database")
+		}
+		if backupDatabase == nil {
+			return nil, errors.Errorf("backup database %q not found", targetDatabaseName)
+		}
+		backupDriver, err = exec.dbFactory.GetAdminDatabaseDriver(driverCtx, instance, backupDatabase, db.ConnectionContext{})
+		if err != nil {
+			return nil, errors.Wrap(err, "failed to get backup database driver")
+		}
+		defer backupDriver.Close(driverCtx)
+	}
+
+	project, err := exec.store.GetProject(ctx, &store.FindProjectMessage{Workspace: instance.Workspace, ResourceID: &database.ProjectID})
+	if err != nil {
+		return nil, errors.Wrap(err, "failed to get project")
+	}
+	driver, err := exec.dbFactory.GetAdminDatabaseDriver(driverCtx, instance, database, db.ConnectionContext{
+		TenantMode: project.Setting.GetPostgresDatabaseTenantMode(),
+	})
+	if err != nil {
+		return nil, errors.Wrap(err, "failed to get database driver")
+	}
+	defer driver.Close(driverCtx)
+
+	tc := parserbase.TransformContext{
+		InstanceID:              instance.ResourceID,
+		GetDatabaseMetadataFunc: buildGetDatabaseMetadataFunc(exec.store, instance.Workspace),
+		ListDatabaseNamesFunc:   buildListDatabaseNamesFunc(exec.store),
+		IsCaseSensitive:         store.IsObjectCaseSensitive(instance),
+		DatabaseName:            database.DatabaseName,
+	}
+	if database.Engine == storepb.Engine_ORACLE {
+		oracleDriver, ok := driver.(*oracle.Driver)
+		if ok {
+			if version, err := oracleDriver.GetVersion(); err == nil {
+				tc.Version = version
+			}
+		}
+	}
+
+	if len(originStatement) > common.MaxSheetCheckSize {
+		return nil, errors.Errorf("statement size %d exceeds the limit %d, please disable data backup", len(originStatement), common.MaxSheetCheckSize)
+	}
+
+	prefix := "_" + time.Now().Format("20060102150405")
+	statements, err := parserbase.TransformDMLToSelect(ctx, database.Engine, tc, originStatement, database.DatabaseName, backupDatabaseName, prefix)
+	if err != nil {
+		return nil, errors.Wrap(err, "failed to transform DML to select")
+	}
+	if len(statements) == 0 {
+		return &storepb.PriorBackupDetail{}, nil
+	}
+
+	prependStatements, err := getPrependStatements(database.Engine, originStatement)
+	if err != nil {
+		return nil, errors.Wrap(err, "failed to get prepend statements")
+	}
+
+	priorBackupDetail := &storepb.PriorBackupDetail{}
+	bbSource := fmt.Sprintf("task %d", task.ID)
+	for _, statement := range statements {
+		backupStatement := statement.Statement
+		if prependStatements != "" {
+			backupStatement = prependStatements + backupStatement
+		}
+		if _, err := driver.Execute(driverCtx, backupStatement, db.ExecuteOptions{}); err != nil {
+			return nil, errors.Wrapf(err, "failed to execute backup statement %q", backupStatement)
+		}
+		switch instance.Metadata.GetEngine() {
+		case storepb.Engine_TIDB, storepb.Engine_MYSQL, storepb.Engine_MARIADB:
+			if _, err := driver.Execute(driverCtx, buildMySQLFamilyBackupTableCommentStatement(backupDatabaseName, statement.TargetTableName, bbSource, database.DatabaseName, statement.SourceTableName), db.ExecuteOptions{}); err != nil {
+				return nil, errors.Wrap(err, "failed to set table comment")
+			}
+		case storepb.Engine_MSSQL:
+			schemaName := statement.SourceSchema
+			if schemaName == "" {
+				schemaName = "dbo"
+			}
+			if _, err := backupDriver.Execute(driverCtx, fmt.Sprintf("EXEC sp_addextendedproperty 'MS_Description', '%s, source table (%s, %s, %s)', 'SCHEMA', 'dbo', 'TABLE', '%s'", bbSource, database.DatabaseName, schemaName, statement.SourceTableName, statement.TargetTableName), db.ExecuteOptions{}); err != nil {
+				return nil, errors.Wrap(err, "failed to set table comment")
+			}
+		case storepb.Engine_POSTGRES:
+			schemaName := statement.SourceSchema
+			if schemaName == "" {
+				schemaName = "public"
+			}
+			if _, err := driver.Execute(driverCtx, fmt.Sprintf(`COMMENT ON TABLE "%s"."%s" IS '%s, source table (%s, %s)'`, backupDatabaseName, statement.TargetTableName, bbSource, schemaName, statement.SourceTableName), db.ExecuteOptions{}); err != nil {
+				return nil, errors.Wrap(err, "failed to set table comment")
+			}
+		case storepb.Engine_ORACLE:
+			if _, err := driver.Execute(driverCtx, fmt.Sprintf(`COMMENT ON TABLE "%s"."%s" IS '%s, source table (%s, %s)'`, backupDatabaseName, statement.TargetTableName, bbSource, database.DatabaseName, statement.SourceTableName), db.ExecuteOptions{}); err != nil {
+				return nil, errors.Wrap(err, "failed to set table comment")
+			}
+		default:
+			// No action needed for other database engines
+		}
+
+		item := &storepb.PriorBackupDetail_Item{
+			SourceTable: &storepb.PriorBackupDetail_Item_Table{
+				Database: sourceDatabaseName,
+				Schema:   statement.SourceSchema,
+				Table:    statement.SourceTableName,
+			},
+			TargetTable: &storepb.PriorBackupDetail_Item_Table{
+				Database: targetDatabaseName,
+				Schema:   "",
+				Table:    statement.TargetTableName,
+			},
+			StartPosition: statement.StartPosition,
+			EndPosition:   statement.EndPosition,
+		}
+		if database.Engine == storepb.Engine_POSTGRES {
+			item.TargetTable = &storepb.PriorBackupDetail_Item_Table{
+				Database: sourceDatabaseName,
+				// postgres uses schema as the backup database name currently.
+				Schema: backupDatabaseName,
+				Table:  statement.TargetTableName,
+			}
+		}
+		priorBackupDetail.Items = append(priorBackupDetail.Items, item)
+	}
+
+	if database.Engine != storepb.Engine_POSTGRES {
+		exec.schemaSyncer.SyncDatabaseAsync(backupDatabase)
+	} else {
+		exec.schemaSyncer.SyncDatabaseAsync(database)
+	}
+
+	return priorBackupDetail, nil
+}
+
+func buildMySQLFamilyBackupTableCommentStatement(backupDatabaseName, targetTableName, bbSource, databaseName, sourceTableName string) string {
+	return fmt.Sprintf("ALTER TABLE `%s`.`%s` COMMENT = '%s, source table (%s, %s)'", backupDatabaseName, targetTableName, bbSource, databaseName, sourceTableName)
+}
+
+func buildGetDatabaseMetadataFunc(storeInstance *store.Store, workspace string) parserbase.GetDatabaseMetadataFunc {
+	return func(ctx context.Context, instanceID, databaseName string) (string, *model.DatabaseMetadata, error) {
+		database, err := storeInstance.GetDatabase(ctx, &store.FindDatabaseMessage{
+			InstanceID:   &instanceID,
+			DatabaseName: &databaseName,
+		})
+		if err != nil {
+			return "", nil, err
+		}
+		if database == nil {
+			return "", nil, nil
+		}
+		databaseMetadata, err := storeInstance.GetDBSchema(ctx, &store.FindDBSchemaMessage{
+			Workspace:    workspace,
+			InstanceID:   instanceID,
+			DatabaseName: databaseName,
+		})
+		if err != nil {
+			return "", nil, err
+		}
+		if databaseMetadata == nil {
+			return "", nil, nil
+		}
+		return databaseName, databaseMetadata, nil
+	}
+}
+
+func buildListDatabaseNamesFunc(storeInstance *store.Store) parserbase.ListDatabaseNamesFunc {
+	return func(ctx context.Context, instanceID string) ([]string, error) {
+		databases, err := storeInstance.ListDatabases(ctx, &store.FindDatabaseMessage{
+			InstanceID: &instanceID,
+		})
+		if err != nil {
+			return nil, err
+		}
+		names := make([]string, 0, len(databases))
+		for _, database := range databases {
+			names = append(names, database.DatabaseName)
+		}
+		return names, nil
+	}
+}
+
+func getPrependStatements(engine storepb.Engine, statement string) (string, error) {
+	if engine != storepb.Engine_POSTGRES {
+		return "", nil
+	}
+
+	stmts, err := pg.ParsePg(statement)
+	if err != nil {
+		return "", errors.Wrap(err, "failed to parse statement")
+	}
+
+	for _, stmt := range stmts {
+		varSet, ok := stmt.AST.(*ast.VariableSetStmt)
+		if !ok {
+			continue
+		}
+		if strings.EqualFold(varSet.Name, "role") || strings.EqualFold(varSet.Name, "search_path") {
+			text := strings.TrimSpace(stmt.Text)
+			if !strings.HasSuffix(text, ";") {
+				text += ";"
+			}
+			return text, nil
+		}
+	}
+
+	return "", nil
+}
+
+func diff(ctx context.Context, s *store.Store, instance *store.InstanceMessage, database *store.DatabaseMessage, sheetContent string) (string, error) {
+	dbMetadata, err := s.GetDBSchema(ctx, &store.FindDBSchemaMessage{
+		Workspace:    instance.Workspace,
+		InstanceID:   database.InstanceID,
+		DatabaseName: database.DatabaseName,
+	})
+	if err != nil {
+		return "", errors.Wrapf(err, "failed to get database schema for database %q", database.DatabaseName)
+	}
+	if dbMetadata == nil {
+		return "", errors.Errorf("database schema %q not found", database.DatabaseName)
+	}
+
+	// instance.Metadata.GetVersion() is the synced server version (e.g. "5.7.25"); thread
+	// it so MySQL canonicalizes a 5.7 database's schema as 5.7 rather than the default 8.0
+	// stored form. model.DatabaseMetadata drops the version, so it is sourced here where the
+	// instance message still carries it. Other engines ignore the version.
+	migrationSQL, err := schema.SDLMigration(instance.Metadata.GetEngine(), sheetContent, dbMetadata, instance.Metadata.GetVersion())
+	if err != nil {
+		return "", errors.Wrapf(err, "failed to compute SDL migration")
+	}
+
+	return migrationSQL, nil
+}
+
+// computeNeedDump determines if schema dump is needed based on task type and statements.
+func computeNeedDump(taskType storepb.Task_Type, engine storepb.Engine, statement string) bool {
+	//exhaustive:enforce
+	switch taskType {
+	case storepb.Task_DATABASE_MIGRATE:
+		// For DATABASE_MIGRATE, skip dump if all statements are DML since they
+		// don't change schema. IsAllDML owns the type list.
+		return !parserbase.IsAllDML(engine, statement)
+	case storepb.Task_DATABASE_CREATE:
+		return true
+	case storepb.Task_TASK_TYPE_UNSPECIFIED:
+		return false
+	default:
+		return false
+	}
+}

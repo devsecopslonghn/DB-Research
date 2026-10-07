@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-10-07T09:49:41.632113+00:00",
+  "scope": "LOCAL_ONLY prerequisite validation; no Oracle connections/SQL, authenticated Jenkins gates or T1\u2013T7 execution",
+  "checks": {
+    "installed_entrypoint": {
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "installed_entrypoint.log",
+      "sha256": "cff0094b69c3121bde195cc6e81015b6d04642be07b74234c6367b9092ce1be4"
+    },
+    "dependencies": {
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "dependencies.log",
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
+    },
+    "versions": {
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "versions.log",
+      "sha256": "6e5a19e4cdf328f7bcf21af67c3c7464813acef0dad6bdbd5ec5af4ad5e39591"
+    },
+    "local_tests": {
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "local_tests.log",
+      "sha256": "8077a84af8b63398d427141586eb8c278e2915709b9b2fd46077b2cdf5723b37",
+      "tests_run": 30
+    },
+    "engine_version": {
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "engine_version.log",
+      "sha256": "bafc7826abe968d55e015fbc13b40c7c715c09e591d467c1c9d1578c379e2a43"
+    },
+    "parser": {
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "parser.log",
+      "sha256": "0f7ed61edcb7307261c29a69589e5842cbd2e767ac65fff3fc3e7fb30f7842cd"
+    }
+  },
+  "installed_versions": {
+    "oracledb": "3.4.0",
+    "thin_mode": true,
+    "runner_version": "0.1.0",
+    "module": "/tmp/ci-flyway-runtime-20261007.o112kqhj/venv/lib64/python3.9/site-packages/poc/__init__.py"
+  },
+  "status": "PASS",
+  "local_runtime_directory": "/tmp/ci-flyway-runtime-20261007.o112kqhj",
+  "module_scope": "Temporary preparation venv; not a provisioned restricted persistent Jenkins agent",
+  "wheel": {
+    "file": "oracle_oss_poc-0.1.0-py3-none-any.whl",
+    "sha256": "ab63a5be7ddef3ba8f4181cb3535b428f344a99fce1de00c69064e340d2ceb72"
+  },
+  "staged_runtime_source_matches_repository": true
+}

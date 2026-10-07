@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-10-07T17:14:16.804433+00:00",
+  "action": "application.argoproj.io/oceanbase-odc annotated",
+  "annotation": null,
+  "syncPolicy_unchanged": true
+}

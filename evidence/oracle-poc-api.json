@@ -1,0 +1,1973 @@
+{
+  "started_at": "2026-10-04T00:58:01.759271+00:00",
+  "scope": "Authorized Oracle API and UI POC on disposable schemas; no business data.",
+  "oracle_version": "26ai 23.26.4.1.0",
+  "project_id": 1,
+  "schemas": [
+    {
+      "name": "ODC_POC_20261004_DEV",
+      "datasource_id": 1000001,
+      "database_id": 1000069
+    },
+    {
+      "name": "ODC_POC_20261004_SIT",
+      "datasource_id": 1000002,
+      "database_id": 1000122
+    },
+    {
+      "name": "ODC_POC_20261004_UAT",
+      "datasource_id": 1000003,
+      "database_id": 1000184
+    },
+    {
+      "name": "ODC_POC_20261004_MOCKPROD",
+      "datasource_id": 1000004,
+      "database_id": 1000218
+    },
+    {
+      "name": "ODC_POC_20261004_OBSERVER",
+      "datasource_id": 1000005,
+      "database_id": 1000345
+    }
+  ],
+  "runs": [
+    {
+      "id": "SQL-01",
+      "case_ids": [
+        "SQL-01"
+      ],
+      "artifact_path": "poc/sql/01_sql01_create_table.sql",
+      "artifact_sha256": "bdf276c54108a2874f11765badbc310ac90b7028ece0766babd7b3732e629088",
+      "flow_id": 1000003,
+      "created_via": "API",
+      "trigger_ref": "odc-poc-api-20261004/SQL-01",
+      "observed_at": "2026-10-04T00:58:22.679495+00:00",
+      "flow": {
+        "id": 1000003,
+        "status": "EXECUTION_SUCCEEDED",
+        "createTime": 1791075502000,
+        "completeTime": 1791075638000,
+        "description": "POC SQL-01 | artifact bdf276c54108",
+        "executionStrategy": "MANUAL",
+        "riskLevel": {
+          "approvalFlowConfig": null,
+          "approvalFlowConfigId": 1,
+          "description": "Default Risk Level",
+          "id": 1,
+          "level": 0,
+          "name": "Default Risk Level",
+          "organizationId": 1,
+          "style": "GRAY"
+        },
+        "affectedRows": 0,
+        "progressPercentage": 100.0,
+        "creator": {
+          "id": 10000,
+          "accountName": "odc_poc_requester",
+          "name": "POC requester"
+        },
+        "project_id": 1,
+        "database_id": 1000069,
+        "nodes": [
+          {
+            "id": 1000011,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "PRE_CHECK",
+            "status": "COMPLETED",
+            "createTime": 1791075502000,
+            "completeTime": 1791075507000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          },
+          {
+            "id": 1000011,
+            "nodeType": "APPROVAL_TASK",
+            "taskType": null,
+            "status": "COMPLETED",
+            "createTime": 1791075502000,
+            "completeTime": 1791075509000,
+            "autoApprove": true,
+            "operator": {
+              "id": null,
+              "accountName": null
+            }
+          },
+          {
+            "id": 1000012,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "ASYNC",
+            "status": "COMPLETED",
+            "createTime": 1791075502000,
+            "completeTime": 1791075638000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          }
+        ]
+      },
+      "result_http_status": 200,
+      "task_results": [
+        {
+          "successCount": 2,
+          "failCount": 0,
+          "containQuery": false
+        }
+      ]
+    },
+    {
+      "id": "SQL-02",
+      "case_ids": [
+        "SQL-02"
+      ],
+      "artifact_path": "poc/sql/02_sql02_alter_table.sql",
+      "artifact_sha256": "93b4ca1700b3410168693ebff820434df888d75c3b890455be2479a35a2b6591",
+      "flow_id": 1000004,
+      "created_via": "API",
+      "trigger_ref": "odc-poc-api-20261004/SQL-02",
+      "observed_at": "2026-10-04T01:00:41.154352+00:00",
+      "flow": {
+        "id": 1000004,
+        "status": "EXECUTION_SUCCEEDED",
+        "createTime": 1791075640000,
+        "completeTime": 1791075662000,
+        "description": "POC SQL-02 | artifact 93b4ca1700b3",
+        "executionStrategy": "MANUAL",
+        "riskLevel": {
+          "approvalFlowConfig": null,
+          "approvalFlowConfigId": 1,
+          "description": "Default Risk Level",
+          "id": 1,
+          "level": 0,
+          "name": "Default Risk Level",
+          "organizationId": 1,
+          "style": "GRAY"
+        },
+        "affectedRows": 0,
+        "progressPercentage": 100.0,
+        "creator": {
+          "id": 10000,
+          "accountName": "odc_poc_requester",
+          "name": "POC requester"
+        },
+        "project_id": 1,
+        "database_id": 1000069,
+        "nodes": [
+          {
+            "id": 1000016,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "PRE_CHECK",
+            "status": "COMPLETED",
+            "createTime": 1791075640000,
+            "completeTime": 1791075651000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          },
+          {
+            "id": 1000016,
+            "nodeType": "APPROVAL_TASK",
+            "taskType": null,
+            "status": "COMPLETED",
+            "createTime": 1791075640000,
+            "completeTime": 1791075652000,
+            "autoApprove": true,
+            "operator": {
+              "id": null,
+              "accountName": null
+            }
+          },
+          {
+            "id": 1000017,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "ASYNC",
+            "status": "COMPLETED",
+            "createTime": 1791075640000,
+            "completeTime": 1791075662000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          }
+        ]
+      },
+      "result_http_status": 200,
+      "task_results": [
+        {
+          "successCount": 3,
+          "failCount": 0,
+          "containQuery": false
+        }
+      ]
+    },
+    {
+      "id": "SQL-03",
+      "case_ids": [
+        "SQL-03"
+      ],
+      "artifact_path": "poc/sql/03_sql03_dml.sql",
+      "artifact_sha256": "fff0dd8fde07056c7b761dc3bc423e78ada9c87c957fa30913e746819b51199e",
+      "flow_id": 1000005,
+      "created_via": "API",
+      "trigger_ref": "odc-poc-api-20261004/SQL-03",
+      "observed_at": "2026-10-04T01:01:09.720806+00:00",
+      "flow": {
+        "id": 1000005,
+        "status": "EXECUTION_SUCCEEDED",
+        "createTime": 1791075669000,
+        "completeTime": 1791075691000,
+        "description": "POC SQL-03 | artifact fff0dd8fde07",
+        "executionStrategy": "MANUAL",
+        "riskLevel": {
+          "approvalFlowConfig": null,
+          "approvalFlowConfigId": 1,
+          "description": "Default Risk Level",
+          "id": 1,
+          "level": 0,
+          "name": "Default Risk Level",
+          "organizationId": 1,
+          "style": "GRAY"
+        },
+        "affectedRows": 2,
+        "progressPercentage": 100.0,
+        "creator": {
+          "id": 10000,
+          "accountName": "odc_poc_requester",
+          "name": "POC requester"
+        },
+        "project_id": 1,
+        "database_id": 1000069,
+        "nodes": [
+          {
+            "id": 1000021,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "PRE_CHECK",
+            "status": "COMPLETED",
+            "createTime": 1791075669000,
+            "completeTime": 1791075679000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          },
+          {
+            "id": 1000021,
+            "nodeType": "APPROVAL_TASK",
+            "taskType": null,
+            "status": "COMPLETED",
+            "createTime": 1791075669000,
+            "completeTime": 1791075680000,
+            "autoApprove": true,
+            "operator": {
+              "id": null,
+              "accountName": null
+            }
+          },
+          {
+            "id": 1000022,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "ASYNC",
+            "status": "COMPLETED",
+            "createTime": 1791075669000,
+            "completeTime": 1791075691000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          }
+        ]
+      },
+      "result_http_status": 200,
+      "task_results": [
+        {
+          "successCount": 3,
+          "failCount": 0,
+          "containQuery": false
+        }
+      ]
+    },
+    {
+      "id": "SQL-04-05",
+      "case_ids": [
+        "SQL-04",
+        "SQL-05"
+      ],
+      "artifact_path": "poc/sql/04_sql04_sql05_procedure_function.sql",
+      "artifact_sha256": "a1c404672529208065a5aab8e53bbfb06f271f6b54ec9a5a7133c9066eb2df2d",
+      "flow_id": 1000006,
+      "created_via": "API",
+      "trigger_ref": "odc-poc-api-20261004/SQL-04-05",
+      "observed_at": "2026-10-04T01:01:34.806761+00:00",
+      "flow": {
+        "id": 1000006,
+        "status": "EXECUTION_SUCCEEDED",
+        "createTime": 1791075694000,
+        "completeTime": 1791075712000,
+        "description": "POC SQL-04-05 | artifact a1c404672529",
+        "executionStrategy": "MANUAL",
+        "riskLevel": {
+          "approvalFlowConfig": null,
+          "approvalFlowConfigId": 1,
+          "description": "Default Risk Level",
+          "id": 1,
+          "level": 0,
+          "name": "Default Risk Level",
+          "organizationId": 1,
+          "style": "GRAY"
+        },
+        "affectedRows": 0,
+        "progressPercentage": 100.0,
+        "creator": {
+          "id": 10000,
+          "accountName": "odc_poc_requester",
+          "name": "POC requester"
+        },
+        "project_id": 1,
+        "database_id": 1000069,
+        "nodes": [
+          {
+            "id": 1000026,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "PRE_CHECK",
+            "status": "COMPLETED",
+            "createTime": 1791075694000,
+            "completeTime": 1791075699000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          },
+          {
+            "id": 1000026,
+            "nodeType": "APPROVAL_TASK",
+            "taskType": null,
+            "status": "COMPLETED",
+            "createTime": 1791075694000,
+            "completeTime": 1791075700000,
+            "autoApprove": true,
+            "operator": {
+              "id": null,
+              "accountName": null
+            }
+          },
+          {
+            "id": 1000027,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "ASYNC",
+            "status": "COMPLETED",
+            "createTime": 1791075694000,
+            "completeTime": 1791075712000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          }
+        ]
+      },
+      "result_http_status": 200,
+      "task_results": [
+        {
+          "successCount": 4,
+          "failCount": 0,
+          "containQuery": true
+        }
+      ]
+    },
+    {
+      "id": "SQL-06",
+      "case_ids": [
+        "SQL-06"
+      ],
+      "artifact_path": "poc/sql/05_sql06_package.sql",
+      "artifact_sha256": "5dc7412ddd558070f0bc584ebba8323aad15d526849682f947e9e763634d43fa",
+      "flow_id": 1000007,
+      "created_via": "API",
+      "trigger_ref": "odc-poc-api-20261004/SQL-06",
+      "observed_at": "2026-10-04T01:01:57.887704+00:00",
+      "flow": {
+        "id": 1000007,
+        "status": "EXECUTION_SUCCEEDED",
+        "createTime": 1791075717000,
+        "completeTime": 1791075735000,
+        "description": "POC SQL-06 | artifact 5dc7412ddd55",
+        "executionStrategy": "MANUAL",
+        "riskLevel": {
+          "approvalFlowConfig": null,
+          "approvalFlowConfigId": 1,
+          "description": "Default Risk Level",
+          "id": 1,
+          "level": 0,
+          "name": "Default Risk Level",
+          "organizationId": 1,
+          "style": "GRAY"
+        },
+        "affectedRows": 0,
+        "progressPercentage": 100.0,
+        "creator": {
+          "id": 10000,
+          "accountName": "odc_poc_requester",
+          "name": "POC requester"
+        },
+        "project_id": 1,
+        "database_id": 1000069,
+        "nodes": [
+          {
+            "id": 1000031,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "PRE_CHECK",
+            "status": "COMPLETED",
+            "createTime": 1791075717000,
+            "completeTime": 1791075722000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          },
+          {
+            "id": 1000031,
+            "nodeType": "APPROVAL_TASK",
+            "taskType": null,
+            "status": "COMPLETED",
+            "createTime": 1791075717000,
+            "completeTime": 1791075723000,
+            "autoApprove": true,
+            "operator": {
+              "id": null,
+              "accountName": null
+            }
+          },
+          {
+            "id": 1000032,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "ASYNC",
+            "status": "COMPLETED",
+            "createTime": 1791075717000,
+            "completeTime": 1791075735000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          }
+        ]
+      },
+      "result_http_status": 200,
+      "task_results": [
+        {
+          "successCount": 4,
+          "failCount": 0,
+          "containQuery": true
+        }
+      ]
+    },
+    {
+      "id": "SQL-07",
+      "case_ids": [
+        "SQL-07"
+      ],
+      "artifact_path": "poc/sql/06_sql07_trigger.sql",
+      "artifact_sha256": "bc43658ab387a96831277a4591a34c1cbf03918af1cdd30fa113ed33929d5e25",
+      "flow_id": 1000008,
+      "created_via": "API",
+      "trigger_ref": "odc-poc-api-20261004/SQL-07",
+      "observed_at": "2026-10-04T01:02:20.900624+00:00",
+      "flow": {
+        "id": 1000008,
+        "status": "EXECUTION_SUCCEEDED",
+        "createTime": 1791075740000,
+        "completeTime": 1791075760000,
+        "description": "POC SQL-07 | artifact bc43658ab387",
+        "executionStrategy": "MANUAL",
+        "riskLevel": {
+          "approvalFlowConfig": null,
+          "approvalFlowConfigId": 1,
+          "description": "Default Risk Level",
+          "id": 1,
+          "level": 0,
+          "name": "Default Risk Level",
+          "organizationId": 1,
+          "style": "GRAY"
+        },
+        "affectedRows": 1,
+        "progressPercentage": 100.0,
+        "creator": {
+          "id": 10000,
+          "accountName": "odc_poc_requester",
+          "name": "POC requester"
+        },
+        "project_id": 1,
+        "database_id": 1000069,
+        "nodes": [
+          {
+            "id": 1000036,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "PRE_CHECK",
+            "status": "COMPLETED",
+            "createTime": 1791075740000,
+            "completeTime": 1791075745000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          },
+          {
+            "id": 1000036,
+            "nodeType": "APPROVAL_TASK",
+            "taskType": null,
+            "status": "COMPLETED",
+            "createTime": 1791075740000,
+            "completeTime": 1791075747000,
+            "autoApprove": true,
+            "operator": {
+              "id": null,
+              "accountName": null
+            }
+          },
+          {
+            "id": 1000037,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "ASYNC",
+            "status": "COMPLETED",
+            "createTime": 1791075740000,
+            "completeTime": 1791075760000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          }
+        ]
+      },
+      "result_http_status": 200,
+      "task_results": [
+        {
+          "successCount": 4,
+          "failCount": 0,
+          "containQuery": false
+        }
+      ]
+    },
+    {
+      "id": "SQL-08-09",
+      "case_ids": [
+        "SQL-08",
+        "SQL-09"
+      ],
+      "artifact_path": "poc/sql/07_sql08_sql09_anonymous_slash.sql",
+      "artifact_sha256": "f8e4a4f6350e9970501dbe43da2eedbb487ea198992947009fd38e78d744bb77",
+      "flow_id": 1000009,
+      "created_via": "API",
+      "trigger_ref": "odc-poc-api-20261004/SQL-08-09",
+      "observed_at": "2026-10-04T01:02:44.860890+00:00",
+      "flow": {
+        "id": 1000009,
+        "status": "EXECUTION_SUCCEEDED",
+        "createTime": 1791075764000,
+        "completeTime": 1791075782000,
+        "description": "POC SQL-08-09 | artifact f8e4a4f6350e",
+        "executionStrategy": "MANUAL",
+        "riskLevel": {
+          "approvalFlowConfig": null,
+          "approvalFlowConfigId": 1,
+          "description": "Default Risk Level",
+          "id": 1,
+          "level": 0,
+          "name": "Default Risk Level",
+          "organizationId": 1,
+          "style": "GRAY"
+        },
+        "affectedRows": 0,
+        "progressPercentage": 100.0,
+        "creator": {
+          "id": 10000,
+          "accountName": "odc_poc_requester",
+          "name": "POC requester"
+        },
+        "project_id": 1,
+        "database_id": 1000069,
+        "nodes": [
+          {
+            "id": 1000041,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "PRE_CHECK",
+            "status": "COMPLETED",
+            "createTime": 1791075764000,
+            "completeTime": 1791075769000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          },
+          {
+            "id": 1000041,
+            "nodeType": "APPROVAL_TASK",
+            "taskType": null,
+            "status": "COMPLETED",
+            "createTime": 1791075764000,
+            "completeTime": 1791075770000,
+            "autoApprove": true,
+            "operator": {
+              "id": null,
+              "accountName": null
+            }
+          },
+          {
+            "id": 1000042,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "ASYNC",
+            "status": "COMPLETED",
+            "createTime": 1791075764000,
+            "completeTime": 1791075782000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          }
+        ]
+      },
+      "result_http_status": 200,
+      "task_results": [
+        {
+          "successCount": 4,
+          "failCount": 0,
+          "containQuery": true
+        }
+      ]
+    },
+    {
+      "id": "SQL-12",
+      "case_ids": [
+        "SQL-12"
+      ],
+      "artifact_path": "poc/sql/10_sql12_oracle_literals.sql",
+      "artifact_sha256": "ccd4d1318f75a70f759e9304693fe9b856bfd617c2dfd94e721a8a715da1321b",
+      "flow_id": 1000010,
+      "created_via": "API",
+      "trigger_ref": "odc-poc-api-20261004/SQL-12",
+      "observed_at": "2026-10-04T01:03:06.453050+00:00",
+      "flow": {
+        "id": 1000010,
+        "status": "EXECUTION_SUCCEEDED",
+        "createTime": 1791075786000,
+        "completeTime": 1791075806000,
+        "description": "POC SQL-12 | artifact ccd4d1318f75",
+        "executionStrategy": "MANUAL",
+        "riskLevel": {
+          "approvalFlowConfig": null,
+          "approvalFlowConfigId": 1,
+          "description": "Default Risk Level",
+          "id": 1,
+          "level": 0,
+          "name": "Default Risk Level",
+          "organizationId": 1,
+          "style": "GRAY"
+        },
+        "affectedRows": 0,
+        "progressPercentage": 100.0,
+        "creator": {
+          "id": 10000,
+          "accountName": "odc_poc_requester",
+          "name": "POC requester"
+        },
+        "project_id": 1,
+        "database_id": 1000069,
+        "nodes": [
+          {
+            "id": 1000046,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "PRE_CHECK",
+            "status": "COMPLETED",
+            "createTime": 1791075786000,
+            "completeTime": 1791075791000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          },
+          {
+            "id": 1000046,
+            "nodeType": "APPROVAL_TASK",
+            "taskType": null,
+            "status": "COMPLETED",
+            "createTime": 1791075786000,
+            "completeTime": 1791075792000,
+            "autoApprove": true,
+            "operator": {
+              "id": null,
+              "accountName": null
+            }
+          },
+          {
+            "id": 1000047,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "ASYNC",
+            "status": "COMPLETED",
+            "createTime": 1791075786000,
+            "completeTime": 1791075806000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          }
+        ]
+      },
+      "result_http_status": 200,
+      "task_results": [
+        {
+          "successCount": 6,
+          "failCount": 0,
+          "containQuery": false
+        }
+      ]
+    },
+    {
+      "id": "SQL-11",
+      "case_ids": [
+        "SQL-11"
+      ],
+      "artifact_path": "poc/sql/09_sql11_invalid_procedure.sql",
+      "artifact_sha256": "8a9acc5cafabc1407d0d6acc415dc6b8ebd9ebe9a562683793b28571a42e5dde",
+      "flow_id": 1000011,
+      "created_via": "API",
+      "trigger_ref": "odc-poc-api-20261004/SQL-11",
+      "observed_at": "2026-10-04T01:03:30.294787+00:00",
+      "flow": {
+        "id": 1000011,
+        "status": "EXECUTION_SUCCEEDED",
+        "createTime": 1791075810000,
+        "completeTime": 1791075825000,
+        "description": "POC SQL-11 | artifact 8a9acc5cafab",
+        "executionStrategy": "MANUAL",
+        "riskLevel": {
+          "approvalFlowConfig": null,
+          "approvalFlowConfigId": 1,
+          "description": "Default Risk Level",
+          "id": 1,
+          "level": 0,
+          "name": "Default Risk Level",
+          "organizationId": 1,
+          "style": "GRAY"
+        },
+        "affectedRows": 0,
+        "progressPercentage": 100.0,
+        "creator": {
+          "id": 10000,
+          "accountName": "odc_poc_requester",
+          "name": "POC requester"
+        },
+        "project_id": 1,
+        "database_id": 1000069,
+        "nodes": [
+          {
+            "id": 1000051,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "PRE_CHECK",
+            "status": "COMPLETED",
+            "createTime": 1791075810000,
+            "completeTime": 1791075815000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          },
+          {
+            "id": 1000051,
+            "nodeType": "APPROVAL_TASK",
+            "taskType": null,
+            "status": "COMPLETED",
+            "createTime": 1791075810000,
+            "completeTime": 1791075816000,
+            "autoApprove": true,
+            "operator": {
+              "id": null,
+              "accountName": null
+            }
+          },
+          {
+            "id": 1000052,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "ASYNC",
+            "status": "COMPLETED",
+            "createTime": 1791075810000,
+            "completeTime": 1791075825000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          }
+        ]
+      },
+      "result_http_status": 200,
+      "task_results": [
+        {
+          "successCount": 1,
+          "failCount": 0,
+          "containQuery": false
+        }
+      ]
+    },
+    {
+      "id": "REC-01",
+      "case_ids": [
+        "REC-01"
+      ],
+      "artifact_path": "poc/sql/11_rec01_missing_table.sql",
+      "artifact_sha256": "7359427dcc705187a51e59f7ecfd11ad78354edeb96ab2e1733449db959006d3",
+      "flow_id": 1000012,
+      "created_via": "API",
+      "trigger_ref": "odc-poc-api-20261004/REC-01",
+      "observed_at": "2026-10-04T01:03:49.715015+00:00",
+      "flow": {
+        "id": 1000012,
+        "status": "EXECUTION_FAILED",
+        "createTime": 1791075829000,
+        "completeTime": 1791075844000,
+        "description": "POC REC-01 | artifact 7359427dcc70",
+        "executionStrategy": "MANUAL",
+        "riskLevel": {
+          "approvalFlowConfig": null,
+          "approvalFlowConfigId": 1,
+          "description": "Default Risk Level",
+          "id": 1,
+          "level": 0,
+          "name": "Default Risk Level",
+          "organizationId": 1,
+          "style": "GRAY"
+        },
+        "affectedRows": 1,
+        "progressPercentage": 97.23,
+        "creator": {
+          "id": 10000,
+          "accountName": "odc_poc_requester",
+          "name": "POC requester"
+        },
+        "project_id": 1,
+        "database_id": 1000069,
+        "nodes": [
+          {
+            "id": 1000056,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "PRE_CHECK",
+            "status": "COMPLETED",
+            "createTime": 1791075829000,
+            "completeTime": 1791075834000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          },
+          {
+            "id": 1000056,
+            "nodeType": "APPROVAL_TASK",
+            "taskType": null,
+            "status": "COMPLETED",
+            "createTime": 1791075829000,
+            "completeTime": 1791075835000,
+            "autoApprove": true,
+            "operator": {
+              "id": null,
+              "accountName": null
+            }
+          },
+          {
+            "id": 1000057,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "ASYNC",
+            "status": "FAILED",
+            "createTime": 1791075829000,
+            "completeTime": 1791075844000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          }
+        ]
+      },
+      "result_http_status": 200,
+      "task_results": [
+        {
+          "successCount": 0,
+          "failCount": 1,
+          "containQuery": false
+        }
+      ]
+    },
+    {
+      "id": "REC-04",
+      "case_ids": [
+        "REC-04"
+      ],
+      "artifact_path": "poc/sql/12_rec04_partial_ddl.sql",
+      "artifact_sha256": "3d204e0a9e69912f4eb215200757215161460e583bc6c90be0a9a0e5ef13cb56",
+      "flow_id": 1000013,
+      "created_via": "API",
+      "trigger_ref": "odc-poc-api-20261004/REC-04",
+      "observed_at": "2026-10-04T01:04:06.613797+00:00",
+      "flow": {
+        "id": 1000013,
+        "status": "EXECUTION_FAILED",
+        "createTime": 1791075846000,
+        "completeTime": 1791075862000,
+        "description": "POC REC-04 | artifact 3d204e0a9e69",
+        "executionStrategy": "MANUAL",
+        "riskLevel": {
+          "approvalFlowConfig": null,
+          "approvalFlowConfigId": 1,
+          "description": "Default Risk Level",
+          "id": 1,
+          "level": 0,
+          "name": "Default Risk Level",
+          "organizationId": 1,
+          "style": "GRAY"
+        },
+        "affectedRows": 0,
+        "progressPercentage": 100.0,
+        "creator": {
+          "id": 10000,
+          "accountName": "odc_poc_requester",
+          "name": "POC requester"
+        },
+        "project_id": 1,
+        "database_id": 1000069,
+        "nodes": [
+          {
+            "id": 1000061,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "PRE_CHECK",
+            "status": "COMPLETED",
+            "createTime": 1791075846000,
+            "completeTime": 1791075851000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          },
+          {
+            "id": 1000061,
+            "nodeType": "APPROVAL_TASK",
+            "taskType": null,
+            "status": "COMPLETED",
+            "createTime": 1791075846000,
+            "completeTime": 1791075852000,
+            "autoApprove": true,
+            "operator": {
+              "id": null,
+              "accountName": null
+            }
+          },
+          {
+            "id": 1000062,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "ASYNC",
+            "status": "FAILED",
+            "createTime": 1791075846000,
+            "completeTime": 1791075862000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          }
+        ]
+      },
+      "result_http_status": 200,
+      "task_results": [
+        {
+          "successCount": 1,
+          "failCount": 1,
+          "containQuery": false
+        }
+      ]
+    },
+    {
+      "id": "SQL-10",
+      "case_ids": [
+        "SQL-10"
+      ],
+      "artifact_path": "poc/sql/08_sql10_sqlplus_directives.sql",
+      "artifact_sha256": "634b9f71791fa29783d3d92fd28e377f14613912c56235bd26b53ce2e6a25f83",
+      "flow_id": 1000014,
+      "created_via": "API",
+      "trigger_ref": "odc-poc-api-20261004/SQL-10",
+      "observed_at": "2026-10-04T01:04:25.801283+00:00",
+      "flow": {
+        "id": 1000014,
+        "status": "EXECUTION_FAILED",
+        "createTime": 1791075865000,
+        "completeTime": 1791075880000,
+        "description": "POC SQL-10 | artifact 634b9f71791f",
+        "executionStrategy": "MANUAL",
+        "riskLevel": {
+          "approvalFlowConfig": null,
+          "approvalFlowConfigId": 1,
+          "description": "Default Risk Level",
+          "id": 1,
+          "level": 0,
+          "name": "Default Risk Level",
+          "organizationId": 1,
+          "style": "GRAY"
+        },
+        "affectedRows": 0,
+        "progressPercentage": 84.99,
+        "creator": {
+          "id": 10000,
+          "accountName": "odc_poc_requester",
+          "name": "POC requester"
+        },
+        "project_id": 1,
+        "database_id": 1000069,
+        "nodes": [
+          {
+            "id": 1000066,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "PRE_CHECK",
+            "status": "COMPLETED",
+            "createTime": 1791075865000,
+            "completeTime": 1791075870000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          },
+          {
+            "id": 1000066,
+            "nodeType": "APPROVAL_TASK",
+            "taskType": null,
+            "status": "COMPLETED",
+            "createTime": 1791075865000,
+            "completeTime": 1791075871000,
+            "autoApprove": true,
+            "operator": {
+              "id": null,
+              "accountName": null
+            }
+          },
+          {
+            "id": 1000067,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "ASYNC",
+            "status": "FAILED",
+            "createTime": 1791075865000,
+            "completeTime": 1791075879000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          }
+        ]
+      },
+      "result_http_status": 200,
+      "task_results": [
+        {
+          "successCount": 0,
+          "failCount": 1,
+          "containQuery": false
+        }
+      ]
+    },
+    {
+      "id": "REC-08",
+      "case_ids": [
+        "REC-08"
+      ],
+      "artifact_path": "poc/sql/13_rec08_checksum_changed_sql01.sql",
+      "artifact_sha256": "fc1d7a0e15f8e83465a35b28fd55c6d60287f7539170a6b9ca6673efba06b873",
+      "flow_id": 1000015,
+      "created_via": "API",
+      "trigger_ref": "odc-poc-api-20261004/REC-08",
+      "observed_at": "2026-10-04T01:04:42.686188+00:00",
+      "flow": {
+        "id": 1000015,
+        "status": "EXECUTION_FAILED",
+        "createTime": 1791075882000,
+        "completeTime": 1791075897000,
+        "description": "POC REC-08 | artifact fc1d7a0e15f8",
+        "executionStrategy": "MANUAL",
+        "riskLevel": {
+          "approvalFlowConfig": null,
+          "approvalFlowConfigId": 1,
+          "description": "Default Risk Level",
+          "id": 1,
+          "level": 0,
+          "name": "Default Risk Level",
+          "organizationId": 1,
+          "style": "GRAY"
+        },
+        "affectedRows": 0,
+        "progressPercentage": 66.45,
+        "creator": {
+          "id": 10000,
+          "accountName": "odc_poc_requester",
+          "name": "POC requester"
+        },
+        "project_id": 1,
+        "database_id": 1000069,
+        "nodes": [
+          {
+            "id": 1000071,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "PRE_CHECK",
+            "status": "COMPLETED",
+            "createTime": 1791075882000,
+            "completeTime": 1791075887000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          },
+          {
+            "id": 1000071,
+            "nodeType": "APPROVAL_TASK",
+            "taskType": null,
+            "status": "COMPLETED",
+            "createTime": 1791075882000,
+            "completeTime": 1791075888000,
+            "autoApprove": true,
+            "operator": {
+              "id": null,
+              "accountName": null
+            }
+          },
+          {
+            "id": 1000072,
+            "nodeType": "SERVICE_TASK",
+            "taskType": "ASYNC",
+            "status": "FAILED",
+            "createTime": 1791075882000,
+            "completeTime": 1791075897000,
+            "autoApprove": null,
+            "operator": {
+              "id": 10000,
+              "accountName": "odc_poc_requester"
+            }
+          }
+        ]
+      },
+      "result_http_status": 200,
+      "task_results": [
+        {
+          "successCount": 0,
+          "failCount": 1,
+          "containQuery": false
+        }
+      ]
+    }
+  ],
+  "postchecks": [
+    {
+      "run_id": "SQL-01",
+      "sql": "SELECT TABLE_NAME FROM USER_TABLES WHERE TABLE_NAME IN ('POC_ORDERS','POC_REPLAY') ORDER BY TABLE_NAME",
+      "observed_at": "2026-10-04T01:00:40.781854+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "TABLE_NAME"
+            ],
+            "rows": [
+              [
+                "POC_ORDERS"
+              ],
+              [
+                "POC_REPLAY"
+              ]
+            ],
+            "total": 2,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-02",
+      "sql": "SELECT COLUMN_NAME,DATA_TYPE,DATA_LENGTH FROM USER_TAB_COLUMNS WHERE TABLE_NAME='POC_ORDERS' ORDER BY COLUMN_ID",
+      "observed_at": "2026-10-04T01:01:05.826435+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "COLUMN_NAME",
+              "DATA_TYPE",
+              "DATA_LENGTH"
+            ],
+            "rows": [
+              [
+                "ORDER_ID",
+                "NUMBER",
+                "22"
+              ],
+              [
+                "AMOUNT",
+                "NUMBER",
+                "22"
+              ],
+              [
+                "NOTE",
+                "VARCHAR2",
+                "400"
+              ],
+              [
+                "CREATED_AT",
+                "TIMESTAMP(6)",
+                "11"
+              ],
+              [
+                "STATUS",
+                "VARCHAR2",
+                "20"
+              ]
+            ],
+            "total": 5,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-02",
+      "sql": "SELECT CONSTRAINT_NAME,CONSTRAINT_TYPE,STATUS FROM USER_CONSTRAINTS WHERE TABLE_NAME='POC_ORDERS' ORDER BY CONSTRAINT_NAME",
+      "observed_at": "2026-10-04T01:01:09.345908+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "CONSTRAINT_NAME",
+              "CONSTRAINT_TYPE",
+              "STATUS"
+            ],
+            "rows": [
+              [
+                "POC_ORDERS_PK",
+                "P",
+                "ENABLED"
+              ],
+              [
+                "POC_ORDERS_STATUS_CK",
+                "C",
+                "ENABLED"
+              ],
+              [
+                "SYS_C0047801",
+                "C",
+                "ENABLED"
+              ],
+              [
+                "SYS_C0047802",
+                "C",
+                "ENABLED"
+              ],
+              [
+                "SYS_C0047808",
+                "C",
+                "ENABLED"
+              ]
+            ],
+            "total": 5,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-03",
+      "sql": "SELECT ORDER_ID,AMOUNT,NOTE,STATUS FROM POC_ORDERS ORDER BY ORDER_ID",
+      "observed_at": "2026-10-04T01:01:34.458818+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "ORDER_ID",
+              "AMOUNT",
+              "NOTE",
+              "STATUS"
+            ],
+            "rows": [
+              [
+                "1",
+                "150",
+                "SQL-03 updated",
+                "NEW"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-04-05",
+      "sql": "SELECT OBJECT_NAME,OBJECT_TYPE,STATUS FROM USER_OBJECTS WHERE OBJECT_NAME IN ('POC_SET_STATUS','POC_ADD_TAX') ORDER BY OBJECT_NAME",
+      "observed_at": "2026-10-04T01:01:54.887038+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "OBJECT_NAME",
+              "OBJECT_TYPE",
+              "STATUS"
+            ],
+            "rows": [
+              [
+                "POC_ADD_TAX",
+                "FUNCTION",
+                "VALID"
+              ],
+              [
+                "POC_SET_STATUS",
+                "PROCEDURE",
+                "VALID"
+              ]
+            ],
+            "total": 2,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-04-05",
+      "sql": "SELECT ORDER_ID,STATUS FROM POC_ORDERS WHERE ORDER_ID=1",
+      "observed_at": "2026-10-04T01:01:56.237898+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "ORDER_ID",
+              "STATUS"
+            ],
+            "rows": [
+              [
+                "1",
+                "PAID"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-04-05",
+      "sql": "SELECT POC_ADD_TAX(100) AS TAX FROM DUAL",
+      "observed_at": "2026-10-04T01:01:57.574941+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "TAX"
+            ],
+            "rows": [
+              [
+                "110"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-06",
+      "sql": "SELECT OBJECT_NAME,OBJECT_TYPE,STATUS FROM USER_OBJECTS WHERE OBJECT_NAME='POC_PKG' ORDER BY OBJECT_TYPE",
+      "observed_at": "2026-10-04T01:02:17.868239+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "OBJECT_NAME",
+              "OBJECT_TYPE",
+              "STATUS"
+            ],
+            "rows": [
+              [
+                "POC_PKG",
+                "PACKAGE",
+                "VALID"
+              ],
+              [
+                "POC_PKG",
+                "PACKAGE BODY",
+                "VALID"
+              ]
+            ],
+            "total": 2,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-06",
+      "sql": "SELECT POC_PKG.GET_INIT_VALUE AS INIT_VALUE FROM DUAL",
+      "observed_at": "2026-10-04T01:02:19.215249+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "INIT_VALUE"
+            ],
+            "rows": [
+              [
+                "42"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-06",
+      "sql": "SELECT NOTE FROM POC_ORDERS WHERE ORDER_ID=1",
+      "observed_at": "2026-10-04T01:02:20.585020+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "NOTE"
+            ],
+            "rows": [
+              [
+                "SQL-06 package"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-07",
+      "sql": "SELECT OLD_AMOUNT,NEW_AMOUNT FROM POC_ORDERS_AUDIT ORDER BY AUDIT_ID",
+      "observed_at": "2026-10-04T01:02:43.105876+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "OLD_AMOUNT",
+              "NEW_AMOUNT"
+            ],
+            "rows": [
+              [
+                "150",
+                "200"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-07",
+      "sql": "SELECT STATUS FROM USER_OBJECTS WHERE OBJECT_NAME='POC_ORDERS_AMOUNT_TRG'",
+      "observed_at": "2026-10-04T01:02:44.470755+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "STATUS"
+            ],
+            "rows": [
+              [
+                "VALID"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-08-09",
+      "sql": "SELECT ORDER_ID,NOTE FROM POC_ORDERS WHERE ORDER_ID IN (801,802) ORDER BY ORDER_ID",
+      "observed_at": "2026-10-04T01:03:04.808056+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "ORDER_ID",
+              "NOTE"
+            ],
+            "rows": [
+              [
+                "801",
+                "SQL-08 begin; end; block"
+              ],
+              [
+                "802",
+                "SQL-08 declare; begin; end;"
+              ]
+            ],
+            "total": 2,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-08-09",
+      "sql": "SELECT POC_SLASH_FN(10) AS HALF_VALUE FROM DUAL",
+      "observed_at": "2026-10-04T01:03:06.145885+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "HALF_VALUE"
+            ],
+            "rows": [
+              [
+                "5"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-12",
+      "sql": "SELECT \"Id\",\"Mixed Col\" FROM \"POC_Quoted_Tbl\" ORDER BY \"Id\"",
+      "observed_at": "2026-10-04T01:03:28.632926+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "Id",
+              "Mixed Col"
+            ],
+            "rows": [
+              [
+                "1",
+                "it's; -- not a comment /* not a block */ ; end;"
+              ],
+              [
+                "2",
+                "double 'quote'; -- still text /"
+              ],
+              [
+                "3",
+                "outer; /* text */ -- text | inner; BEGIN NULL; END; /"
+              ]
+            ],
+            "total": 3,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-12",
+      "sql": "SELECT STATUS FROM USER_OBJECTS WHERE OBJECT_NAME='POC_LITERAL_PROC'",
+      "observed_at": "2026-10-04T01:03:30.000143+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "STATUS"
+            ],
+            "rows": [
+              [
+                "VALID"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-11",
+      "sql": "SELECT OBJECT_NAME,STATUS FROM USER_OBJECTS WHERE OBJECT_NAME='POC_INVALID_PROC'",
+      "observed_at": "2026-10-04T01:03:48.021050+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "OBJECT_NAME",
+              "STATUS"
+            ],
+            "rows": [
+              [
+                "POC_INVALID_PROC",
+                "INVALID"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-11",
+      "sql": "SELECT NAME,TYPE,LINE,POSITION,TEXT FROM USER_ERRORS WHERE NAME='POC_INVALID_PROC' ORDER BY SEQUENCE",
+      "observed_at": "2026-10-04T01:03:49.419157+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "NAME",
+              "TYPE",
+              "LINE",
+              "POSITION",
+              "TEXT"
+            ],
+            "rows": [
+              [
+                "POC_INVALID_PROC",
+                "PROCEDURE",
+                "4",
+                "15",
+                "PLS-00201: identifier 'V_MISSING_VARIABLE' must be declared"
+              ],
+              [
+                "POC_INVALID_PROC",
+                "PROCEDURE",
+                "4",
+                "3",
+                "PL/SQL: Statement ignored"
+              ]
+            ],
+            "total": 2,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "REC-01",
+      "sql": "SELECT COUNT(*) AS AFTER_ERROR_ROWS FROM POC_ORDERS WHERE ORDER_ID=1101",
+      "observed_at": "2026-10-04T01:04:06.320971+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "AFTER_ERROR_ROWS"
+            ],
+            "rows": [
+              [
+                "0"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "REC-04",
+      "sql": "SELECT TABLE_NAME FROM USER_TABLES WHERE TABLE_NAME='POC_PARTIAL'",
+      "observed_at": "2026-10-04T01:04:25.500158+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "TABLE_NAME"
+            ],
+            "rows": [
+              [
+                "POC_PARTIAL"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "SQL-10",
+      "sql": "SELECT COUNT(*) AS DIRECTIVE_MARKER_ROWS FROM POC_ORDERS WHERE ORDER_ID=1001",
+      "observed_at": "2026-10-04T01:04:42.397581+00:00",
+      "selected": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "DIRECTIVE_MARKER_ROWS"
+            ],
+            "rows": [
+              [
+                "0"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    }
+  ],
+  "runtime_reference": "odc-runtime.json",
+  "gitops_execution_commit": "ae8d824f5f1e383ebe5c1f44f22bd6e3f84baf2a",
+  "oracle_character_sets": [
+    "AL32UTF8",
+    "AL16UTF16"
+  ],
+  "oracle_jdbc_driver": "Oracle JDBC bundled in pinned ODC plugin; exact driver version not independently recorded.",
+  "fixture_manifest": [
+    {
+      "path": "poc/sql/01_sql01_create_table.sql",
+      "sha256": "bdf276c54108a2874f11765badbc310ac90b7028ece0766babd7b3732e629088"
+    },
+    {
+      "path": "poc/sql/02_sql02_alter_table.sql",
+      "sha256": "93b4ca1700b3410168693ebff820434df888d75c3b890455be2479a35a2b6591"
+    },
+    {
+      "path": "poc/sql/03_sql03_dml.sql",
+      "sha256": "fff0dd8fde07056c7b761dc3bc423e78ada9c87c957fa30913e746819b51199e"
+    },
+    {
+      "path": "poc/sql/04_sql04_sql05_procedure_function.sql",
+      "sha256": "a1c404672529208065a5aab8e53bbfb06f271f6b54ec9a5a7133c9066eb2df2d"
+    },
+    {
+      "path": "poc/sql/05_sql06_package.sql",
+      "sha256": "5dc7412ddd558070f0bc584ebba8323aad15d526849682f947e9e763634d43fa"
+    },
+    {
+      "path": "poc/sql/06_sql07_trigger.sql",
+      "sha256": "bc43658ab387a96831277a4591a34c1cbf03918af1cdd30fa113ed33929d5e25"
+    },
+    {
+      "path": "poc/sql/07_sql08_sql09_anonymous_slash.sql",
+      "sha256": "f8e4a4f6350e9970501dbe43da2eedbb487ea198992947009fd38e78d744bb77"
+    },
+    {
+      "path": "poc/sql/08_sql10_sqlplus_directives.sql",
+      "sha256": "634b9f71791fa29783d3d92fd28e377f14613912c56235bd26b53ce2e6a25f83"
+    },
+    {
+      "path": "poc/sql/09_sql11_invalid_procedure.sql",
+      "sha256": "8a9acc5cafabc1407d0d6acc415dc6b8ebd9ebe9a562683793b28571a42e5dde"
+    },
+    {
+      "path": "poc/sql/10_sql12_oracle_literals.sql",
+      "sha256": "ccd4d1318f75a70f759e9304693fe9b856bfd617c2dfd94e721a8a715da1321b"
+    },
+    {
+      "path": "poc/sql/11_rec01_missing_table.sql",
+      "sha256": "7359427dcc705187a51e59f7ecfd11ad78354edeb96ab2e1733449db959006d3"
+    },
+    {
+      "path": "poc/sql/12_rec04_partial_ddl.sql",
+      "sha256": "3d204e0a9e69912f4eb215200757215161460e583bc6c90be0a9a0e5ef13cb56"
+    },
+    {
+      "path": "poc/sql/13_rec08_checksum_changed_sql01.sql",
+      "sha256": "fc1d7a0e15f8e83465a35b28fd55c6d60287f7539170a6b9ca6673efba06b873"
+    },
+    {
+      "path": "poc/sql/14_rec09_rec10_replay_probe.sql",
+      "sha256": "7bf3ba0dddc9157660217eac28e6a9f1159c47cd50244b3e9cdd5fcf8136896e"
+    },
+    {
+      "path": "poc/sql/15_promotion.sql",
+      "sha256": "456da3e880655d6642ac427aa4b691d1fc87f5916edb0103044deeb3800f1bd2"
+    }
+  ]
+}

@@ -1,0 +1,2462 @@
+[
+  {
+    "sha": "a549f5dd1ac80fbe7bc8103dfcd2d556c606c39c",
+    "node_id": "C_kwDOAG1oCtoAKGE1NDlmNWRkMWFjODBmYmU3YmM4MTAzZGZjZDJkNTU2YzYwNmMzOWM",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-10-01T12:14:02Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-10-01T12:14:02Z"
+      },
+      "message": "Bump version to flyway-13.9.0\n\nPlease see the GH release for the release notes\n\nDon't report a successful rollback when the rollback failed",
+      "tree": {
+        "sha": "f1ac9c72b278fe8f4b9eded51fba401b4f7595ba",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/f1ac9c72b278fe8f4b9eded51fba401b4f7595ba"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/a549f5dd1ac80fbe7bc8103dfcd2d556c606c39c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/a549f5dd1ac80fbe7bc8103dfcd2d556c606c39c",
+    "html_url": "https://github.com/flyway/flyway/commit/a549f5dd1ac80fbe7bc8103dfcd2d556c606c39c",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/a549f5dd1ac80fbe7bc8103dfcd2d556c606c39c/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "af01b4cc086df2dd1bbc33b670924d3acd8c4373",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/af01b4cc086df2dd1bbc33b670924d3acd8c4373",
+        "html_url": "https://github.com/flyway/flyway/commit/af01b4cc086df2dd1bbc33b670924d3acd8c4373"
+      }
+    ]
+  },
+  {
+    "sha": "af01b4cc086df2dd1bbc33b670924d3acd8c4373",
+    "node_id": "C_kwDOAG1oCtoAKGFmMDFiNGNjMDg2ZGYyZGQxYmJjMzNiNjcwOTI0ZDNhY2Q4YzQzNzM",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-09-29T09:39:03Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-09-29T09:39:03Z"
+      },
+      "message": "Bump version to flyway-13.8.1\n\nPlease see the GH release for the release notes\n\nEmit progress logs from clean, validate and repair",
+      "tree": {
+        "sha": "60735c2864b837665a3aa679435542746694f7d4",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/60735c2864b837665a3aa679435542746694f7d4"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/af01b4cc086df2dd1bbc33b670924d3acd8c4373",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/af01b4cc086df2dd1bbc33b670924d3acd8c4373",
+    "html_url": "https://github.com/flyway/flyway/commit/af01b4cc086df2dd1bbc33b670924d3acd8c4373",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/af01b4cc086df2dd1bbc33b670924d3acd8c4373/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "894946447bd6b4e3acab81a1dd3abfa6fe8b96df",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/894946447bd6b4e3acab81a1dd3abfa6fe8b96df",
+        "html_url": "https://github.com/flyway/flyway/commit/894946447bd6b4e3acab81a1dd3abfa6fe8b96df"
+      }
+    ]
+  },
+  {
+    "sha": "894946447bd6b4e3acab81a1dd3abfa6fe8b96df",
+    "node_id": "C_kwDOAG1oCtoAKDg5NDk0NjQ0N2JkNmI0ZTNhY2FiODFhMWRkM2FiZmE2ZmU4Yjk2ZGY",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-09-24T09:23:13Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-09-24T09:23:13Z"
+      },
+      "message": "Bump version to flyway-13.8.0\n\nPlease see the GH release for the release notes\n\nSet the pgjdbc assumeMinServerVersion property to 9.1 on PostgreSQL connections\nAdd a Databricks partner identifier constant for database types to use\nChange the application name reported to databases from \"Flyway by Redgate\" to \"Redgate_Flyway\"\nUse the casing pgjdbc expects for the ApplicationName connection property, so PostgreSQL and CockroachDB connections report as \"Flyway by Redgate\" instead of the driver default",
+      "tree": {
+        "sha": "7720103de0560a750b8a1318eeba8fd92c766c9c",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/7720103de0560a750b8a1318eeba8fd92c766c9c"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/894946447bd6b4e3acab81a1dd3abfa6fe8b96df",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/894946447bd6b4e3acab81a1dd3abfa6fe8b96df",
+    "html_url": "https://github.com/flyway/flyway/commit/894946447bd6b4e3acab81a1dd3abfa6fe8b96df",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/894946447bd6b4e3acab81a1dd3abfa6fe8b96df/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4e9e435c5f98a62c892dbdaa75def65253622c68",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/4e9e435c5f98a62c892dbdaa75def65253622c68",
+        "html_url": "https://github.com/flyway/flyway/commit/4e9e435c5f98a62c892dbdaa75def65253622c68"
+      }
+    ]
+  },
+  {
+    "sha": "4e9e435c5f98a62c892dbdaa75def65253622c68",
+    "node_id": "C_kwDOAG1oCtoAKDRlOWU0MzVjNWY5OGE2MmM4OTJkYmRhYTc1ZGVmNjUyNTM2MjJjNjg",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-09-15T09:58:43Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-09-15T09:58:43Z"
+      },
+      "message": "Bump version to flyway-13.7.0\n\nPlease see the GH release for the release notes\n\nFix EXTRA_ARGS array expansion silently dropping second JVM argument in Unix launcher script\nCloses #4282: Fix older versions of the Snowflake driver using a legacy driver class being unable to connect to Flyway",
+      "tree": {
+        "sha": "86ade3032d8a0ebdefc0def3d52ae94c0c6f9596",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/86ade3032d8a0ebdefc0def3d52ae94c0c6f9596"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/4e9e435c5f98a62c892dbdaa75def65253622c68",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/4e9e435c5f98a62c892dbdaa75def65253622c68",
+    "html_url": "https://github.com/flyway/flyway/commit/4e9e435c5f98a62c892dbdaa75def65253622c68",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/4e9e435c5f98a62c892dbdaa75def65253622c68/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "52d835ec32875a46543a60703b8c4b9eb4be7d13",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/52d835ec32875a46543a60703b8c4b9eb4be7d13",
+        "html_url": "https://github.com/flyway/flyway/commit/52d835ec32875a46543a60703b8c4b9eb4be7d13"
+      }
+    ]
+  },
+  {
+    "sha": "52d835ec32875a46543a60703b8c4b9eb4be7d13",
+    "node_id": "C_kwDOAG1oCtoAKDUyZDgzNWVjMzI4NzVhNDY1NDNhNjA3MDNiOGM0YjllYjRiZTdkMTM",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-09-10T09:37:03Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-09-10T09:37:03Z"
+      },
+      "message": "Bump version to flyway-13.6.0\n\nPlease see the GH release for the release notes\n\nAdd a schemaVersion field to the report JSON envelope\nFix DB2 migrations failing with SQLCODE=-428 by making DB2Connection always reissue SET SCHEMA instead of querying first\nskip restoring sql server database name and 'ansi_nulls' if they're unchanged\nadd getDisplayName to ResourceType",
+      "tree": {
+        "sha": "aafffbeef40a1ae0a6a5863362a0e94208023f33",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/aafffbeef40a1ae0a6a5863362a0e94208023f33"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/52d835ec32875a46543a60703b8c4b9eb4be7d13",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/52d835ec32875a46543a60703b8c4b9eb4be7d13",
+    "html_url": "https://github.com/flyway/flyway/commit/52d835ec32875a46543a60703b8c4b9eb4be7d13",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/52d835ec32875a46543a60703b8c4b9eb4be7d13/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d477f304835e841346c0d8cff6618afe10f3cf02",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/d477f304835e841346c0d8cff6618afe10f3cf02",
+        "html_url": "https://github.com/flyway/flyway/commit/d477f304835e841346c0d8cff6618afe10f3cf02"
+      }
+    ]
+  },
+  {
+    "sha": "d477f304835e841346c0d8cff6618afe10f3cf02",
+    "node_id": "C_kwDOAG1oCtoAKGQ0NzdmMzA0ODM1ZTg0MTM0NmMwZDhjZmY2NjE4YWZlMTBmM2NmMDI",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-09-03T09:44:54Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-09-03T09:44:54Z"
+      },
+      "message": "Bump version to flyway-13.5.0\n\nPlease see the GH release for the release notes\n\nImprove dry run script's reviewability by removing unnecessary statements",
+      "tree": {
+        "sha": "3112351077b9f8355d186c2ce5ffd80f2e40ad0f",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/3112351077b9f8355d186c2ce5ffd80f2e40ad0f"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/d477f304835e841346c0d8cff6618afe10f3cf02",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/d477f304835e841346c0d8cff6618afe10f3cf02",
+    "html_url": "https://github.com/flyway/flyway/commit/d477f304835e841346c0d8cff6618afe10f3cf02",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/d477f304835e841346c0d8cff6618afe10f3cf02/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bea01e538200bb299127d777a595d2ad7890095d",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/bea01e538200bb299127d777a595d2ad7890095d",
+        "html_url": "https://github.com/flyway/flyway/commit/bea01e538200bb299127d777a595d2ad7890095d"
+      }
+    ]
+  },
+  {
+    "sha": "bea01e538200bb299127d777a595d2ad7890095d",
+    "node_id": "C_kwDOAG1oCtoAKGJlYTAxZTUzODIwMGJiMjk5MTI3ZDc3N2E1OTVkMmFkNzg5MDA5NWQ",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-08-26T09:33:06Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-08-26T09:33:06Z"
+      },
+      "message": "Bump version to flyway-13.4.0\n\nPlease see the GH release for the release notes\n\nInherit the operating system proxy configuration in the command line and Docker images, with FLYWAY_USE_SYSTEM_PROXIES=false to opt out. Adds a network troubleshooting documentation page.\nCloses #4269: Snowflake parser supports AGENT IF EXISTS clause\nFix Oracle parser mis-parsing PL/SQL blocks when a table or column is named CASE\nHoist the \"none\" provisioner name into EnvironmentProvisionerNone.NAME so the sentinel is defined in one place",
+      "tree": {
+        "sha": "d9b1462a9a45614fa9567316185a2b0c42fcfdf7",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/d9b1462a9a45614fa9567316185a2b0c42fcfdf7"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/bea01e538200bb299127d777a595d2ad7890095d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/bea01e538200bb299127d777a595d2ad7890095d",
+    "html_url": "https://github.com/flyway/flyway/commit/bea01e538200bb299127d777a595d2ad7890095d",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/bea01e538200bb299127d777a595d2ad7890095d/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "55bc98edf95a54ff419e57523e00561642103030",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/55bc98edf95a54ff419e57523e00561642103030",
+        "html_url": "https://github.com/flyway/flyway/commit/55bc98edf95a54ff419e57523e00561642103030"
+      }
+    ]
+  },
+  {
+    "sha": "55bc98edf95a54ff419e57523e00561642103030",
+    "node_id": "C_kwDOAG1oCtoAKDU1YmM5OGVkZjk1YTU0ZmY0MTllNTc1MjNlMDA1NjE2NDIxMDMwMzA",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-08-13T10:11:01Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-08-13T10:11:01Z"
+      },
+      "message": "Bump version to flyway-13.3.0\n\nPlease see the GH release for the release notes\n\nBuild: only update licence headers when the update-file-headers profile is requested",
+      "tree": {
+        "sha": "8f4cf11f3d93a2d83217950042991aadecc9e047",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/8f4cf11f3d93a2d83217950042991aadecc9e047"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/55bc98edf95a54ff419e57523e00561642103030",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/55bc98edf95a54ff419e57523e00561642103030",
+    "html_url": "https://github.com/flyway/flyway/commit/55bc98edf95a54ff419e57523e00561642103030",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/55bc98edf95a54ff419e57523e00561642103030/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2089236045bfc7818fafcb5cab2c97857ef3cdf2",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/2089236045bfc7818fafcb5cab2c97857ef3cdf2",
+        "html_url": "https://github.com/flyway/flyway/commit/2089236045bfc7818fafcb5cab2c97857ef3cdf2"
+      }
+    ]
+  },
+  {
+    "sha": "2089236045bfc7818fafcb5cab2c97857ef3cdf2",
+    "node_id": "C_kwDOAG1oCtoAKDIwODkyMzYwNDViZmM3ODE4ZmFmY2I1Y2FiMmM5Nzg1N2VmM2NkZjI",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-08-06T12:28:39Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-08-06T12:28:39Z"
+      },
+      "message": "Bump version to flyway-13.2.0\n\nPlease see the GH release for the release notes\n\nJSON results with timestamps now include a UTC offset. API users relying on getTimestamp or setTimestamp will need to use OffsetDateTime instead\nUpdate BouncyCastle to 1.85\nRemove the unused token field from ResolvedEnvironment; database access tokens are supplied through jdbcProperties by a property resolver.\nFix test classes silently excluded from CI by mis-cased and missing @Tag annotations\nProvide a way to write configuration to the environment that a scoped configuration targets, since setters write the root flyway block while the matching getters prefer the environment block, and fail rather than inventing an environment when the target is absent. Scoping now merges into a fresh environment model so it cannot clear the resolvers of the model it was given, and clears resolvers consistently however that configuration was scoped.\nOverlay resolved connection details onto an environment's existing definition rather than replacing it, so per-environment configuration such as the schema history table and default schema is no longer lost when switching environment.\nRemove configuration extension unused by OSS from flyway-core",
+      "tree": {
+        "sha": "ceb7ad6c63729b4e489d85e66ef31ccd5a3b9198",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/ceb7ad6c63729b4e489d85e66ef31ccd5a3b9198"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/2089236045bfc7818fafcb5cab2c97857ef3cdf2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/2089236045bfc7818fafcb5cab2c97857ef3cdf2",
+    "html_url": "https://github.com/flyway/flyway/commit/2089236045bfc7818fafcb5cab2c97857ef3cdf2",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/2089236045bfc7818fafcb5cab2c97857ef3cdf2/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8dc991b53202325bfd72385b40328382f526b3a0",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/8dc991b53202325bfd72385b40328382f526b3a0",
+        "html_url": "https://github.com/flyway/flyway/commit/8dc991b53202325bfd72385b40328382f526b3a0"
+      }
+    ]
+  },
+  {
+    "sha": "8dc991b53202325bfd72385b40328382f526b3a0",
+    "node_id": "C_kwDOAG1oCtoAKDhkYzk5MWI1MzIwMjMyNWJmZDcyMzg1YjQwMzI4MzgyZjUyNmIzYTA",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-07-30T10:24:49Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-07-30T10:24:49Z"
+      },
+      "message": "Bump version to flyway-13.1.0\n\nPlease see the GH release for the release notes\n\nUpgraded jansi to use org.jline.jansi package\nAccept any case for environments_/flyway_ environment variable prefixes, and document the environments_<name>_<setting> convention.\nAdd Databricks support to the snapshot-history feature via a dedicated query strategy. Snapshots are stored as Base64-encoded text to work around Databricks JDBC binary-handling limitations, and identifiers escape embedded backticks by doubling them.\nFix Databricks identifier backtick escaping: escape an embedded backtick by doubling it rather than with a backslash, so quoted identifiers containing a backtick produce valid SQL.\nDelay the first schema-history lock heartbeat by half the lock timeout. The immediate heartbeat UPDATE was redundant (the lock INSERT already stamps installed_on) and on Databricks/Delta raced the unlock DELETE of the same row, causing a ConcurrentAppendException.",
+      "tree": {
+        "sha": "321f958bfda70f0a87721dfce22dd489aac3263f",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/321f958bfda70f0a87721dfce22dd489aac3263f"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/8dc991b53202325bfd72385b40328382f526b3a0",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/8dc991b53202325bfd72385b40328382f526b3a0",
+    "html_url": "https://github.com/flyway/flyway/commit/8dc991b53202325bfd72385b40328382f526b3a0",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/8dc991b53202325bfd72385b40328382f526b3a0/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c5e20fc77341d4117e7a291214e23f89c1371516",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/c5e20fc77341d4117e7a291214e23f89c1371516",
+        "html_url": "https://github.com/flyway/flyway/commit/c5e20fc77341d4117e7a291214e23f89c1371516"
+      }
+    ]
+  },
+  {
+    "sha": "c5e20fc77341d4117e7a291214e23f89c1371516",
+    "node_id": "C_kwDOAG1oCtoAKGM1ZTIwZmM3NzM0MWQ0MTE3ZTdhMjkxMjE0ZTIzZjg5YzEzNzE1MTY",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-07-20T10:06:47Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-07-20T10:06:47Z"
+      },
+      "message": "Bump version to flyway-13.0.0\n\nPlease see the GH release for the release notes\n\nAdd execution time to DeployResult\nfix(security): Bump jackson-databind to 3.1.5 / 2.22.1 to fix Incorrect Authorization advisory\nInclude the offending SQL in error messages for Flyway Desktop when debug logging is disabled\nAdd CommandExtension.requiresDefaultLocations() so commands like auth that don't use migration locations can opt out of the default SQL location warning, without affecting commands (like add/generate) that need it resolved",
+      "tree": {
+        "sha": "72e6f4e7dd3c6946283c85292a51f81a5cf01b9b",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/72e6f4e7dd3c6946283c85292a51f81a5cf01b9b"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/c5e20fc77341d4117e7a291214e23f89c1371516",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/c5e20fc77341d4117e7a291214e23f89c1371516",
+    "html_url": "https://github.com/flyway/flyway/commit/c5e20fc77341d4117e7a291214e23f89c1371516",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/c5e20fc77341d4117e7a291214e23f89c1371516/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7e2b98e47cf57474f81d40fa0884225dc9c21b5d",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/7e2b98e47cf57474f81d40fa0884225dc9c21b5d",
+        "html_url": "https://github.com/flyway/flyway/commit/7e2b98e47cf57474f81d40fa0884225dc9c21b5d"
+      }
+    ]
+  },
+  {
+    "sha": "7e2b98e47cf57474f81d40fa0884225dc9c21b5d",
+    "node_id": "C_kwDOAG1oCtoAKDdlMmI5OGU0N2NmNTc0NzRmODFkNDBmYTA4ODQyMjVkYzljMjFiNWQ",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-07-09T09:52:22Z"
+      },
+      "committer": {
+        "name": "WilliamL-RG",
+        "email": "william.liversidge@red-gate.com",
+        "date": "2026-07-09T10:03:51Z"
+      },
+      "message": "Bump version to flyway-12.11.0\n\nPlease see the GH release for the release notes\n\nApply IntelliJ code-style formatting; remove unused imports; add final to never-reassigned locals and parameters\nNormalize documentation to American English spelling and add a Vale rule to catch regressions.\nchange: testConnection now reports provisioning progress\nCloses #4250: Upgrade Snowflake from 4.0.2 to 4.3.1\nOmit SQL State and Error Code from Oracle SQL error output, as the ORA-##### code is already present in the message\nEmit a deprecation notice when the docker provisioner is configured with legacy compose-file keys, forwarding to the docker-compose provisioner",
+      "tree": {
+        "sha": "3f852c2e4aec92f1277b3fc7c9bdbc5b378d9c81",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/3f852c2e4aec92f1277b3fc7c9bdbc5b378d9c81"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/7e2b98e47cf57474f81d40fa0884225dc9c21b5d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/7e2b98e47cf57474f81d40fa0884225dc9c21b5d",
+    "html_url": "https://github.com/flyway/flyway/commit/7e2b98e47cf57474f81d40fa0884225dc9c21b5d",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/7e2b98e47cf57474f81d40fa0884225dc9c21b5d/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "WilliamL-RG",
+      "id": 138497874,
+      "node_id": "U_kgDOCEFPUg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138497874?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/WilliamL-RG",
+      "html_url": "https://github.com/WilliamL-RG",
+      "followers_url": "https://api.github.com/users/WilliamL-RG/followers",
+      "following_url": "https://api.github.com/users/WilliamL-RG/following{/other_user}",
+      "gists_url": "https://api.github.com/users/WilliamL-RG/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/WilliamL-RG/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/WilliamL-RG/subscriptions",
+      "organizations_url": "https://api.github.com/users/WilliamL-RG/orgs",
+      "repos_url": "https://api.github.com/users/WilliamL-RG/repos",
+      "events_url": "https://api.github.com/users/WilliamL-RG/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/WilliamL-RG/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e31d5b4ae42ce255b2f21a3ed094592176b61a39",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/e31d5b4ae42ce255b2f21a3ed094592176b61a39",
+        "html_url": "https://github.com/flyway/flyway/commit/e31d5b4ae42ce255b2f21a3ed094592176b61a39"
+      }
+    ]
+  },
+  {
+    "sha": "e31d5b4ae42ce255b2f21a3ed094592176b61a39",
+    "node_id": "C_kwDOAG1oCtoAKGUzMWQ1YjRhZTQyY2UyNTViMmYyMWEzZWQwOTQ1OTIxNzZiNjFhMzk",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-06-30T09:40:04Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-06-30T09:40:04Z"
+      },
+      "message": "Bump version to flyway-12.10.0\n\nPlease see the GH release for the release notes\n\nAdd keepAlive container reuse semantics to the smart docker provisioner\nSkip non-existent callback locations instead of failing or erroring\nReport the effective working directory when a filesystem location is not found\nLog out-of-order mode at info level instead of as a warning",
+      "tree": {
+        "sha": "9867e88f116f52b390b9ffc1b9feab41429d034a",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/9867e88f116f52b390b9ffc1b9feab41429d034a"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/e31d5b4ae42ce255b2f21a3ed094592176b61a39",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/e31d5b4ae42ce255b2f21a3ed094592176b61a39",
+    "html_url": "https://github.com/flyway/flyway/commit/e31d5b4ae42ce255b2f21a3ed094592176b61a39",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/e31d5b4ae42ce255b2f21a3ed094592176b61a39/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e0118b30e3594b8859179f31d83537ffaf0a7a34",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/e0118b30e3594b8859179f31d83537ffaf0a7a34",
+        "html_url": "https://github.com/flyway/flyway/commit/e0118b30e3594b8859179f31d83537ffaf0a7a34"
+      }
+    ]
+  },
+  {
+    "sha": "e0118b30e3594b8859179f31d83537ffaf0a7a34",
+    "node_id": "C_kwDOAG1oCtoAKGUwMTE4YjMwZTM1OTRiODg1OTE3OWYzMWQ4MzUzN2ZmYWYwYTdhMzQ",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-06-18T09:50:26Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-06-18T09:50:26Z"
+      },
+      "message": "Bump version to flyway-12.9.0\n\nPlease see the GH release for the release notes",
+      "tree": {
+        "sha": "c1c7648ba3c673852cf79cf3370a29378911fd47",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/c1c7648ba3c673852cf79cf3370a29378911fd47"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/e0118b30e3594b8859179f31d83537ffaf0a7a34",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/e0118b30e3594b8859179f31d83537ffaf0a7a34",
+    "html_url": "https://github.com/flyway/flyway/commit/e0118b30e3594b8859179f31d83537ffaf0a7a34",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/e0118b30e3594b8859179f31d83537ffaf0a7a34/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "74975d92c94c0d11a8c03f19a9d6c7c28f56c6db",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/74975d92c94c0d11a8c03f19a9d6c7c28f56c6db",
+        "html_url": "https://github.com/flyway/flyway/commit/74975d92c94c0d11a8c03f19a9d6c7c28f56c6db"
+      }
+    ]
+  },
+  {
+    "sha": "74975d92c94c0d11a8c03f19a9d6c7c28f56c6db",
+    "node_id": "C_kwDOAG1oCtoAKDc0OTc1ZDkyYzk0YzBkMTFhOGMwM2YxOWE5ZDZjN2MyOGY1NmM2ZGI",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-06-05T10:18:23Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-06-05T10:18:23Z"
+      },
+      "message": "Bump version to flyway-12.8.1\n\nPlease see the GH release for the release notes",
+      "tree": {
+        "sha": "6fc2ea53a7610d376b67de4e36a75688c58298e7",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/6fc2ea53a7610d376b67de4e36a75688c58298e7"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/74975d92c94c0d11a8c03f19a9d6c7c28f56c6db",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/74975d92c94c0d11a8c03f19a9d6c7c28f56c6db",
+    "html_url": "https://github.com/flyway/flyway/commit/74975d92c94c0d11a8c03f19a9d6c7c28f56c6db",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/74975d92c94c0d11a8c03f19a9d6c7c28f56c6db/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9fca2f125f84daf8156736a9d6e5cd50bf036a85",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/9fca2f125f84daf8156736a9d6e5cd50bf036a85",
+        "html_url": "https://github.com/flyway/flyway/commit/9fca2f125f84daf8156736a9d6e5cd50bf036a85"
+      }
+    ]
+  },
+  {
+    "sha": "9fca2f125f84daf8156736a9d6e5cd50bf036a85",
+    "node_id": "C_kwDOAG1oCtoAKDlmY2EyZjEyNWY4NGRhZjgxNTY3MzZhOWQ2ZTVjZDUwYmYwMzZhODU",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-06-04T10:34:42Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-06-04T10:34:42Z"
+      },
+      "message": "Bump version to flyway-12.8.0\n\nPlease see the GH release for the release notes",
+      "tree": {
+        "sha": "84c9b1b74fcb2032cecf911661f7772dc4e620de",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/84c9b1b74fcb2032cecf911661f7772dc4e620de"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/9fca2f125f84daf8156736a9d6e5cd50bf036a85",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/9fca2f125f84daf8156736a9d6e5cd50bf036a85",
+    "html_url": "https://github.com/flyway/flyway/commit/9fca2f125f84daf8156736a9d6e5cd50bf036a85",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/9fca2f125f84daf8156736a9d6e5cd50bf036a85/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d8c8996dd7200dc56a9de4857650d2c224c5146b",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/d8c8996dd7200dc56a9de4857650d2c224c5146b",
+        "html_url": "https://github.com/flyway/flyway/commit/d8c8996dd7200dc56a9de4857650d2c224c5146b"
+      }
+    ]
+  },
+  {
+    "sha": "d8c8996dd7200dc56a9de4857650d2c224c5146b",
+    "node_id": "C_kwDOAG1oCtoAKGQ4Yzg5OTZkZDcyMDBkYzU2YTlkZTQ4NTc2NTBkMmMyMjRjNTE0NmI",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-05-29T10:16:52Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-05-29T10:16:52Z"
+      },
+      "message": "Bump version to flyway-12.7.0\n\nPlease see the GH release for the release notes",
+      "tree": {
+        "sha": "919decd111616a513b805439f03f91233fb280a3",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/919decd111616a513b805439f03f91233fb280a3"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/d8c8996dd7200dc56a9de4857650d2c224c5146b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/d8c8996dd7200dc56a9de4857650d2c224c5146b",
+    "html_url": "https://github.com/flyway/flyway/commit/d8c8996dd7200dc56a9de4857650d2c224c5146b",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/d8c8996dd7200dc56a9de4857650d2c224c5146b/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "079f1cc13a3854602b9532ad9744bc34287ed91a",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/079f1cc13a3854602b9532ad9744bc34287ed91a",
+        "html_url": "https://github.com/flyway/flyway/commit/079f1cc13a3854602b9532ad9744bc34287ed91a"
+      }
+    ]
+  },
+  {
+    "sha": "079f1cc13a3854602b9532ad9744bc34287ed91a",
+    "node_id": "C_kwDOAG1oCtoAKDA3OWYxY2MxM2EzODU0NjAyYjk1MzJhZDk3NDRiYzM0Mjg3ZWQ5MWE",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-05-21T09:59:19Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-05-21T09:59:19Z"
+      },
+      "message": "Bump version to flyway-12.6.2\n\nPlease see the GH release for the release notes\n\nFix duplicate .gitignore entry and trailing comma in .devcontainer/devcontainer.json.\nDocument immutability of comparison-engine record components with @Unmodifiable; mark Jackson @JsonCreator factory methods @SuppressWarnings(\"unused\").\nFix invalid HTML in documentation files (childPages.html, Release Notes for Flyway Engine.html).\nCloses #4238: Cockroach v26 is now supported",
+      "tree": {
+        "sha": "d23b6fa376d0757f20f3e970c3b5efb84a229b3a",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/d23b6fa376d0757f20f3e970c3b5efb84a229b3a"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/079f1cc13a3854602b9532ad9744bc34287ed91a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/079f1cc13a3854602b9532ad9744bc34287ed91a",
+    "html_url": "https://github.com/flyway/flyway/commit/079f1cc13a3854602b9532ad9744bc34287ed91a",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/079f1cc13a3854602b9532ad9744bc34287ed91a/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "502c532b124630f42ffef17fb33755bf5726afe0",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/502c532b124630f42ffef17fb33755bf5726afe0",
+        "html_url": "https://github.com/flyway/flyway/commit/502c532b124630f42ffef17fb33755bf5726afe0"
+      }
+    ]
+  },
+  {
+    "sha": "502c532b124630f42ffef17fb33755bf5726afe0",
+    "node_id": "C_kwDOAG1oCtoAKDUwMmM1MzJiMTI0NjMwZjQyZmZlZjE3ZmIzMzc1NWJmNTcyNmFmZTA",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-05-12T10:25:40Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-05-12T10:25:40Z"
+      },
+      "message": "Bump version to flyway-12.6.1\n\nPlease see the GH release for the release notes\n\nUpdate Maven version to 3.9.15 and single-source version for tests\nMove license-texts to assembly directory so they are included in distributions",
+      "tree": {
+        "sha": "c4ae97b10acbd3c53057ab5e5a575a2f522ff02e",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/c4ae97b10acbd3c53057ab5e5a575a2f522ff02e"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/502c532b124630f42ffef17fb33755bf5726afe0",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/502c532b124630f42ffef17fb33755bf5726afe0",
+    "html_url": "https://github.com/flyway/flyway/commit/502c532b124630f42ffef17fb33755bf5726afe0",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/502c532b124630f42ffef17fb33755bf5726afe0/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ce65ee118f01f1792aa46129a3f07cc746c6c6b9",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/ce65ee118f01f1792aa46129a3f07cc746c6c6b9",
+        "html_url": "https://github.com/flyway/flyway/commit/ce65ee118f01f1792aa46129a3f07cc746c6c6b9"
+      }
+    ]
+  },
+  {
+    "sha": "ce65ee118f01f1792aa46129a3f07cc746c6c6b9",
+    "node_id": "C_kwDOAG1oCtoAKGNlNjVlZTExOGYwMWYxNzkyYWE0NjEyOWEzZjA3Y2M3NDZjNmM2Yjk",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-05-08T09:57:11Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-05-08T09:57:11Z"
+      },
+      "message": "Bump version to flyway-12.6.0\n\nPlease see the GH release for the release notes\n\nCloses #4232: Add support for `DROP ... IF EXISTS` and `CREATE ... IF NOT EXISTS` for Oracle parser\nCloses #4230: Only create synonyms for Oracle SHTs when the name includes lower case characters\nSurface obsolete configuration parameters via dedicated exception\nC,l,o,s,e,s, ,#, ,[,',4,2,2,9,',,, ,',4,2,2,9,',]: Fix Gradle plugin configuration cache compatibility\nFix check report styling: summary pill alignment, wrapped code gutter overlap, and missing pointer cursor on details summaries",
+      "tree": {
+        "sha": "99c23b94528fa5cba92a672e103fe5bc0ef60a7d",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/99c23b94528fa5cba92a672e103fe5bc0ef60a7d"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/ce65ee118f01f1792aa46129a3f07cc746c6c6b9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/ce65ee118f01f1792aa46129a3f07cc746c6c6b9",
+    "html_url": "https://github.com/flyway/flyway/commit/ce65ee118f01f1792aa46129a3f07cc746c6c6b9",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/ce65ee118f01f1792aa46129a3f07cc746c6c6b9/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7c3ea883c0b78fd0aff1c69275cf3c0945eb6017",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/7c3ea883c0b78fd0aff1c69275cf3c0945eb6017",
+        "html_url": "https://github.com/flyway/flyway/commit/7c3ea883c0b78fd0aff1c69275cf3c0945eb6017"
+      }
+    ]
+  },
+  {
+    "sha": "7c3ea883c0b78fd0aff1c69275cf3c0945eb6017",
+    "node_id": "C_kwDOAG1oCtoAKDdjM2VhODgzYzBiNzhmZDBhZmYxYzY5Mjc1Y2YzYzA5NDVlYjYwMTc",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-04-27T10:36:08Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-04-27T10:36:08Z"
+      },
+      "message": "Bump version to flyway-12.5.0\n\nPlease see the GH release for the release notes\n\nBump couchbase java-client from 3.9.2 to 3.11.2\nMove flyway-database-databricks from flyway-community-db-support into flyway-main\nSuggest case-insensitive match when environment not found\nBump Jetty to 12.1.7 and update expected Redgate distribution jar metadata",
+      "tree": {
+        "sha": "4cbb97c94e2836e1bb67e16a2ca3a3fbe3b57b31",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/4cbb97c94e2836e1bb67e16a2ca3a3fbe3b57b31"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/7c3ea883c0b78fd0aff1c69275cf3c0945eb6017",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/7c3ea883c0b78fd0aff1c69275cf3c0945eb6017",
+    "html_url": "https://github.com/flyway/flyway/commit/7c3ea883c0b78fd0aff1c69275cf3c0945eb6017",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/7c3ea883c0b78fd0aff1c69275cf3c0945eb6017/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "be256634108dba6f760dbb0604e3421f12f2c431",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/be256634108dba6f760dbb0604e3421f12f2c431",
+        "html_url": "https://github.com/flyway/flyway/commit/be256634108dba6f760dbb0604e3421f12f2c431"
+      }
+    ]
+  },
+  {
+    "sha": "be256634108dba6f760dbb0604e3421f12f2c431",
+    "node_id": "C_kwDOAG1oCtoAKGJlMjU2NjM0MTA4ZGJhNmY3NjBkYmIwNjA0ZTM0MjFmMTJmMmM0MzE",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-04-14T09:50:13Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-04-14T09:50:13Z"
+      },
+      "message": "Bump version to flyway-12.4.0\n\nPlease see the GH release for the release notes\n\nEscape quotes in Slack release-announcement payload output\nCloses #4221: Fix Snowflake JDBC 4.0.2 connectivity failure when PUBLIC schema absent\nCloses #4223: Support the Gradle configuration cache in flyway-gradle-plugin",
+      "tree": {
+        "sha": "2c70c09e03f40ef7ebd3d4229ce0654fb5a5b486",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/2c70c09e03f40ef7ebd3d4229ce0654fb5a5b486"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/be256634108dba6f760dbb0604e3421f12f2c431",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/be256634108dba6f760dbb0604e3421f12f2c431",
+    "html_url": "https://github.com/flyway/flyway/commit/be256634108dba6f760dbb0604e3421f12f2c431",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/be256634108dba6f760dbb0604e3421f12f2c431/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c5fc596a73f1d75e600e8707c72b92a47aad3095",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/c5fc596a73f1d75e600e8707c72b92a47aad3095",
+        "html_url": "https://github.com/flyway/flyway/commit/c5fc596a73f1d75e600e8707c72b92a47aad3095"
+      }
+    ]
+  },
+  {
+    "sha": "c5fc596a73f1d75e600e8707c72b92a47aad3095",
+    "node_id": "C_kwDOAG1oCtoAKGM1ZmM1OTZhNzNmMWQ3NWU2MDBlODcwN2M3MmI5MmE0N2FhZDMwOTU",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-03-31T13:52:03Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-03-31T13:52:03Z"
+      },
+      "message": "Bump version to flyway-12.3.0\n\nPlease see the GH release for the release notes\n\nRemove [master-not] ossifier tag from POM files\nReplace Topic enum rule entries with slug-based URL generation",
+      "tree": {
+        "sha": "acad1448ae4d49d892b44fec7bc2213bf4eca593",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/acad1448ae4d49d892b44fec7bc2213bf4eca593"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/c5fc596a73f1d75e600e8707c72b92a47aad3095",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/c5fc596a73f1d75e600e8707c72b92a47aad3095",
+    "html_url": "https://github.com/flyway/flyway/commit/c5fc596a73f1d75e600e8707c72b92a47aad3095",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/c5fc596a73f1d75e600e8707c72b92a47aad3095/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7938d947842a84eedaf5e807c0e04ae955d5f8a0",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/7938d947842a84eedaf5e807c0e04ae955d5f8a0",
+        "html_url": "https://github.com/flyway/flyway/commit/7938d947842a84eedaf5e807c0e04ae955d5f8a0"
+      }
+    ]
+  },
+  {
+    "sha": "7938d947842a84eedaf5e807c0e04ae955d5f8a0",
+    "node_id": "C_kwDOAG1oCtoAKDc5MzhkOTQ3ODQyYTg0ZWVkYWY1ZTgwN2MwZTA0YWU5NTVkNWY4YTA",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-03-26T11:24:24Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-03-26T11:24:24Z"
+      },
+      "message": "Bump version to flyway-12.2.0\n\nPlease see the GH release for the release notes\n\nCloses #3687: Fix parsing of backticks for quoted strings in MySQL\nRemove getDatabaseTypeForUrl from DatabaseTypeRegister\nCloses #4206: Upgrade aws-secretsmanager to 2.0.4\nRemove PUR telemetry ossifier blocks from Flyway.java\nUpdate Snowflake JDBC driver from 3.27.0 to 4.0.2",
+      "tree": {
+        "sha": "d89df8493816f1ada9b43f34eb2b8ae5391650e0",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/d89df8493816f1ada9b43f34eb2b8ae5391650e0"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/7938d947842a84eedaf5e807c0e04ae955d5f8a0",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/7938d947842a84eedaf5e807c0e04ae955d5f8a0",
+    "html_url": "https://github.com/flyway/flyway/commit/7938d947842a84eedaf5e807c0e04ae955d5f8a0",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/7938d947842a84eedaf5e807c0e04ae955d5f8a0/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "64e5c3c9491eb0c61d1a23d9c257d3380d2519e6",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/64e5c3c9491eb0c61d1a23d9c257d3380d2519e6",
+        "html_url": "https://github.com/flyway/flyway/commit/64e5c3c9491eb0c61d1a23d9c257d3380d2519e6"
+      }
+    ]
+  },
+  {
+    "sha": "64e5c3c9491eb0c61d1a23d9c257d3380d2519e6",
+    "node_id": "C_kwDOAG1oCtoAKDY0ZTVjM2M5NDkxZWIwYzYxZDFhMjNkOWMyNTdkMzM4MGQyNTE5ZTY",
+    "commit": {
+      "author": {
+        "name": "WilliamL-RG",
+        "email": "william.liversidge@red-gate.com",
+        "date": "2026-03-17T15:06:29Z"
+      },
+      "committer": {
+        "name": "WilliamL-RG",
+        "email": "william.liversidge@red-gate.com",
+        "date": "2026-03-17T15:06:29Z"
+      },
+      "message": "Bump version to flyway-12.1.1",
+      "tree": {
+        "sha": "9f8b3ca77f702d0ca93a72f15c558568f23da296",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/9f8b3ca77f702d0ca93a72f15c558568f23da296"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/64e5c3c9491eb0c61d1a23d9c257d3380d2519e6",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/64e5c3c9491eb0c61d1a23d9c257d3380d2519e6",
+    "html_url": "https://github.com/flyway/flyway/commit/64e5c3c9491eb0c61d1a23d9c257d3380d2519e6",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/64e5c3c9491eb0c61d1a23d9c257d3380d2519e6/comments",
+    "author": {
+      "login": "WilliamL-RG",
+      "id": 138497874,
+      "node_id": "U_kgDOCEFPUg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138497874?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/WilliamL-RG",
+      "html_url": "https://github.com/WilliamL-RG",
+      "followers_url": "https://api.github.com/users/WilliamL-RG/followers",
+      "following_url": "https://api.github.com/users/WilliamL-RG/following{/other_user}",
+      "gists_url": "https://api.github.com/users/WilliamL-RG/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/WilliamL-RG/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/WilliamL-RG/subscriptions",
+      "organizations_url": "https://api.github.com/users/WilliamL-RG/orgs",
+      "repos_url": "https://api.github.com/users/WilliamL-RG/repos",
+      "events_url": "https://api.github.com/users/WilliamL-RG/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/WilliamL-RG/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "WilliamL-RG",
+      "id": 138497874,
+      "node_id": "U_kgDOCEFPUg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138497874?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/WilliamL-RG",
+      "html_url": "https://github.com/WilliamL-RG",
+      "followers_url": "https://api.github.com/users/WilliamL-RG/followers",
+      "following_url": "https://api.github.com/users/WilliamL-RG/following{/other_user}",
+      "gists_url": "https://api.github.com/users/WilliamL-RG/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/WilliamL-RG/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/WilliamL-RG/subscriptions",
+      "organizations_url": "https://api.github.com/users/WilliamL-RG/orgs",
+      "repos_url": "https://api.github.com/users/WilliamL-RG/repos",
+      "events_url": "https://api.github.com/users/WilliamL-RG/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/WilliamL-RG/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "00275224845e0a2b314a65170e761d58aa0a9d83",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/00275224845e0a2b314a65170e761d58aa0a9d83",
+        "html_url": "https://github.com/flyway/flyway/commit/00275224845e0a2b314a65170e761d58aa0a9d83"
+      }
+    ]
+  },
+  {
+    "sha": "00275224845e0a2b314a65170e761d58aa0a9d83",
+    "node_id": "C_kwDOAG1oCtoAKDAwMjc1MjI0ODQ1ZTBhMmIzMTRhNjUxNzBlNzYxZDU4YWEwYTlkODM",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-03-09T12:05:35Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-03-09T12:05:35Z"
+      },
+      "message": "Bump version to flyway-12.1.0\n\nPlease see the GH release for the release notes\n\nFix NPE when sorting callbacks with null callback names\nC,l,o,s,e,s, ,#, ,[,',4,2,1,2,',,, ,',4,1,6,4,',]: add InsertRowLock#doLock overload with lockStrategy predicate",
+      "tree": {
+        "sha": "623bcdb87b1f59bacf8a48282a6789f6c8b93712",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/623bcdb87b1f59bacf8a48282a6789f6c8b93712"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/00275224845e0a2b314a65170e761d58aa0a9d83",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/00275224845e0a2b314a65170e761d58aa0a9d83",
+    "html_url": "https://github.com/flyway/flyway/commit/00275224845e0a2b314a65170e761d58aa0a9d83",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/00275224845e0a2b314a65170e761d58aa0a9d83/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "214beff5167e9ec01a5f060890914795d3ef5a9e",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/214beff5167e9ec01a5f060890914795d3ef5a9e",
+        "html_url": "https://github.com/flyway/flyway/commit/214beff5167e9ec01a5f060890914795d3ef5a9e"
+      }
+    ]
+  },
+  {
+    "sha": "214beff5167e9ec01a5f060890914795d3ef5a9e",
+    "node_id": "C_kwDOAG1oCtoAKDIxNGJlZmY1MTY3ZTllYzAxYTVmMDYwODkwOTE0Nzk1ZDNlZjVhOWU",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-02-27T11:22:46Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-02-27T11:22:46Z"
+      },
+      "message": "Bump version to flyway-12.0.3\n\nPlease see the GH release for the release notes\n\nCloses #4191: Upgrade Jackson from 2.19.1 to 3.0.4\nFilter Oracle SHT synonym from drift comparisons\nAdd dedicated DRIFT_DETECTED error code for DriftDetectedException",
+      "tree": {
+        "sha": "aff0c6bfe17445082ea43db445cd285ccc05b023",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/aff0c6bfe17445082ea43db445cd285ccc05b023"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/214beff5167e9ec01a5f060890914795d3ef5a9e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/214beff5167e9ec01a5f060890914795d3ef5a9e",
+    "html_url": "https://github.com/flyway/flyway/commit/214beff5167e9ec01a5f060890914795d3ef5a9e",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/214beff5167e9ec01a5f060890914795d3ef5a9e/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "635355cfe317236b342ecd3897134d459d7d9f86",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/635355cfe317236b342ecd3897134d459d7d9f86",
+        "html_url": "https://github.com/flyway/flyway/commit/635355cfe317236b342ecd3897134d459d7d9f86"
+      }
+    ]
+  },
+  {
+    "sha": "635355cfe317236b342ecd3897134d459d7d9f86",
+    "node_id": "C_kwDOAG1oCtoAKDYzNTM1NWNmZTMxNzIzNmIzNDJlY2QzODk3MTM0ZDQ1OWQ3ZDlmODY",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-02-20T09:52:05Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-02-20T09:52:05Z"
+      },
+      "message": "Bump version to flyway-12.0.2\n\nPlease see the GH release for the release notes\n\nExclude .claude folder and CLAUDE.md from OSS edition",
+      "tree": {
+        "sha": "023c27e2610fc2080f91e0d25fed6943293f24d5",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/023c27e2610fc2080f91e0d25fed6943293f24d5"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/635355cfe317236b342ecd3897134d459d7d9f86",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/635355cfe317236b342ecd3897134d459d7d9f86",
+    "html_url": "https://github.com/flyway/flyway/commit/635355cfe317236b342ecd3897134d459d7d9f86",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/635355cfe317236b342ecd3897134d459d7d9f86/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9fc87c32b807be8ad66d559ba9b7c9388905e1c6",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/9fc87c32b807be8ad66d559ba9b7c9388905e1c6",
+        "html_url": "https://github.com/flyway/flyway/commit/9fc87c32b807be8ad66d559ba9b7c9388905e1c6"
+      }
+    ]
+  },
+  {
+    "sha": "9fc87c32b807be8ad66d559ba9b7c9388905e1c6",
+    "node_id": "C_kwDOAG1oCtoAKDlmYzg3YzMyYjgwN2JlOGFkNjZkNTU5YmE5YjdjOTM4ODkwNWUxYzY",
+    "commit": {
+      "author": {
+        "name": "JasonLuo-Redgate",
+        "email": "130552403+JasonLuo-Redgate@users.noreply.github.com",
+        "date": "2026-02-12T14:17:31Z"
+      },
+      "committer": {
+        "name": "JasonLuo-Redgate",
+        "email": "130552403+JasonLuo-Redgate@users.noreply.github.com",
+        "date": "2026-02-12T14:17:31Z"
+      },
+      "message": "Bump version to flyway-12.0.1",
+      "tree": {
+        "sha": "1948a96357330ce6a21f023404ab16b3fd5795a9",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/1948a96357330ce6a21f023404ab16b3fd5795a9"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/9fc87c32b807be8ad66d559ba9b7c9388905e1c6",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/9fc87c32b807be8ad66d559ba9b7c9388905e1c6",
+    "html_url": "https://github.com/flyway/flyway/commit/9fc87c32b807be8ad66d559ba9b7c9388905e1c6",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/9fc87c32b807be8ad66d559ba9b7c9388905e1c6/comments",
+    "author": {
+      "login": "JasonLuo-Redgate",
+      "id": 130552403,
+      "node_id": "U_kgDOB8gSUw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/130552403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/JasonLuo-Redgate",
+      "html_url": "https://github.com/JasonLuo-Redgate",
+      "followers_url": "https://api.github.com/users/JasonLuo-Redgate/followers",
+      "following_url": "https://api.github.com/users/JasonLuo-Redgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/JasonLuo-Redgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/JasonLuo-Redgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/JasonLuo-Redgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/JasonLuo-Redgate/orgs",
+      "repos_url": "https://api.github.com/users/JasonLuo-Redgate/repos",
+      "events_url": "https://api.github.com/users/JasonLuo-Redgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/JasonLuo-Redgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "JasonLuo-Redgate",
+      "id": 130552403,
+      "node_id": "U_kgDOB8gSUw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/130552403?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/JasonLuo-Redgate",
+      "html_url": "https://github.com/JasonLuo-Redgate",
+      "followers_url": "https://api.github.com/users/JasonLuo-Redgate/followers",
+      "following_url": "https://api.github.com/users/JasonLuo-Redgate/following{/other_user}",
+      "gists_url": "https://api.github.com/users/JasonLuo-Redgate/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/JasonLuo-Redgate/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/JasonLuo-Redgate/subscriptions",
+      "organizations_url": "https://api.github.com/users/JasonLuo-Redgate/orgs",
+      "repos_url": "https://api.github.com/users/JasonLuo-Redgate/repos",
+      "events_url": "https://api.github.com/users/JasonLuo-Redgate/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/JasonLuo-Redgate/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d003178d29f9d19a8381f70d4f0a44fdae08dd34",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/d003178d29f9d19a8381f70d4f0a44fdae08dd34",
+        "html_url": "https://github.com/flyway/flyway/commit/d003178d29f9d19a8381f70d4f0a44fdae08dd34"
+      }
+    ]
+  },
+  {
+    "sha": "d003178d29f9d19a8381f70d4f0a44fdae08dd34",
+    "node_id": "C_kwDOAG1oCtoAKGQwMDMxNzhkMjlmOWQxOWE4MzgxZjcwZDRmMGE0NGZkYWUwOGRkMzQ",
+    "commit": {
+      "author": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-01-28T13:50:02Z"
+      },
+      "committer": {
+        "name": "rg-buildmonkey",
+        "email": "github-buildmonkey@red-gate.com",
+        "date": "2026-01-28T13:50:02Z"
+      },
+      "message": "Bump version to flyway-12.0.0\n\nPlease see the GH release for the release notes\n\nThe 'plugin' namespace for configuration parameters is no longer supported\nCloses #4194: Add support for nested IF statements in Snowflake parser",
+      "tree": {
+        "sha": "b401cab85de5a8dfe4d488a7d21d1435c45ab6dd",
+        "url": "https://api.github.com/repos/flyway/flyway/git/trees/b401cab85de5a8dfe4d488a7d21d1435c45ab6dd"
+      },
+      "url": "https://api.github.com/repos/flyway/flyway/git/commits/d003178d29f9d19a8381f70d4f0a44fdae08dd34",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/flyway/flyway/commits/d003178d29f9d19a8381f70d4f0a44fdae08dd34",
+    "html_url": "https://github.com/flyway/flyway/commit/d003178d29f9d19a8381f70d4f0a44fdae08dd34",
+    "comments_url": "https://api.github.com/repos/flyway/flyway/commits/d003178d29f9d19a8381f70d4f0a44fdae08dd34/comments",
+    "author": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rg-buildmonkey",
+      "id": 25437519,
+      "node_id": "MDQ6VXNlcjI1NDM3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25437519?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rg-buildmonkey",
+      "html_url": "https://github.com/rg-buildmonkey",
+      "followers_url": "https://api.github.com/users/rg-buildmonkey/followers",
+      "following_url": "https://api.github.com/users/rg-buildmonkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rg-buildmonkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rg-buildmonkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rg-buildmonkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/rg-buildmonkey/orgs",
+      "repos_url": "https://api.github.com/users/rg-buildmonkey/repos",
+      "events_url": "https://api.github.com/users/rg-buildmonkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rg-buildmonkey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6aa438ea6f9905ac34e95caacfa8357f4b479439",
+        "url": "https://api.github.com/repos/flyway/flyway/commits/6aa438ea6f9905ac34e95caacfa8357f4b479439",
+        "html_url": "https://github.com/flyway/flyway/commit/6aa438ea6f9905ac34e95caacfa8357f4b479439"
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "requesters": [],
+  "reviewers": [],
+  "executors": [],
+  "recovery_owners": [],
+  "allow_failure_instrumentation": false,
+  "engine": "Flyway Community",
+  "engine_version": "13.9.0",
+  "engine_sha256": "UNCONFIRMED",
+  "oracle_driver": {
+    "coordinate": "com.oracle.database.jdbc:ojdbc11:21.18.0.0",
+    "license": "Oracle Free Use Terms and Conditions (FUTC); not OSS",
+    "approved": false,
+    "sha256": "UNCONFIRMED"
+  }
+}

@@ -1,0 +1,368 @@
+{
+  "timestamp": "2026-10-07T17:01:36.862686+00:00",
+  "deployment": {
+    "uid": "1e25ed2c-5ab1-4b4b-8edc-f4da5f5ea352",
+    "generation": 13,
+    "spec_hash": "2d953b3512233908493220c9a362d2d5385ae3ba99e003d052a647cd6ce1aeb0",
+    "template_hash": "1a83c7be3c695923ab6f6cb3ce3f1c91eec9c26b776331b9815e6ff2f0448c38",
+    "replicas": 1,
+    "status": {
+      "availableReplicas": 1,
+      "conditions": [
+        {
+          "lastTransitionTime": "2026-10-03T08:30:57Z",
+          "lastUpdateTime": "2026-10-04T01:16:17Z",
+          "message": "ReplicaSet \"odc-5b74c68b74\" has successfully progressed.",
+          "reason": "NewReplicaSetAvailable",
+          "status": "True",
+          "type": "Progressing"
+        },
+        {
+          "lastTransitionTime": "2026-10-07T10:49:12Z",
+          "lastUpdateTime": "2026-10-07T10:49:12Z",
+          "message": "Deployment has minimum availability.",
+          "reason": "MinimumReplicasAvailable",
+          "status": "True",
+          "type": "Available"
+        }
+      ],
+      "observedGeneration": 13,
+      "readyReplicas": 1,
+      "replicas": 1,
+      "terminatingReplicas": 0,
+      "updatedReplicas": 1
+    }
+  },
+  "replica_set": [
+    {
+      "apiVersion": "apps/v1",
+      "blockOwnerDeletion": true,
+      "controller": true,
+      "kind": "ReplicaSet",
+      "name": "odc-5b74c68b74",
+      "uid": "9ca54ab3-5a0c-49e8-bd9a-1665849ee487"
+    }
+  ],
+  "pod": {
+    "name": "odc-5b74c68b74-v2cbd",
+    "uid": "f869b229-c0a3-4e36-85aa-187cfcc7a19b",
+    "ip": "10.244.1.212",
+    "hostname_spec": null,
+    "image": "oceanbase/odc:4.4.1_bp1@sha256:ee8ee48edea2907b1b2c11eac54c8603e554bdcc570eb11b0b1f9cef2ead040d",
+    "image_status": [
+      {
+        "allocatedResources": {
+          "cpu": "1",
+          "memory": "3Gi"
+        },
+        "containerID": "containerd://7ce01cb83df3e6c76349ad50f88ba41915c57e8e760aab909dff185dffce96ff",
+        "image": "sha256:d3b4a9ec77cfdcf89136c86108822a47d77cafcc7fd35cf5a5ea2cc87e378c19",
+        "imageID": "docker.io/oceanbase/odc@sha256:ee8ee48edea2907b1b2c11eac54c8603e554bdcc570eb11b0b1f9cef2ead040d",
+        "lastState": {},
+        "name": "odc",
+        "ready": true,
+        "resources": {
+          "limits": {
+            "cpu": "2",
+            "memory": "4Gi"
+          },
+          "requests": {
+            "cpu": "1",
+            "memory": "3Gi"
+          }
+        },
+        "restartCount": 0,
+        "started": true,
+        "state": {
+          "running": {
+            "startedAt": "2026-10-07T10:48:01Z"
+          }
+        },
+        "user": {
+          "linux": {
+            "gid": 0,
+            "supplementalGroups": [
+              0
+            ],
+            "uid": 0
+          }
+        },
+        "volumeMounts": [
+          {
+            "mountPath": "/opt/odc/data",
+            "name": "data"
+          },
+          {
+            "mountPath": "/opt/odc/log",
+            "name": "logs"
+          },
+          {
+            "mountPath": "/opt/odc/plugins/connect-plugin-oracle-4.4.1-20260116.jar",
+            "name": "tcps-plugin",
+            "readOnly": true,
+            "recursiveReadOnly": "Disabled"
+          }
+        ]
+      }
+    ],
+    "phase": "Running",
+    "ready": true,
+    "env_configuration": [
+      {
+        "name": "DATABASE_HOST",
+        "value_source": "redacted non-retention setting"
+      },
+      {
+        "name": "DATABASE_PORT",
+        "value_source": "redacted non-retention setting"
+      },
+      {
+        "name": "DATABASE_USERNAME",
+        "value_source": "redacted non-retention setting"
+      },
+      {
+        "name": "DATABASE_NAME",
+        "value_source": "redacted non-retention setting"
+      },
+      {
+        "name": "DATABASE_PASSWORD",
+        "value_source": {
+          "secretKeyRef": {
+            "key": "DATABASE_PASSWORD",
+            "name": "odc-bootstrap"
+          }
+        }
+      },
+      {
+        "name": "ODC_ADMIN_INITIAL_PASSWORD",
+        "value_source": {
+          "secretKeyRef": {
+            "key": "ODC_ADMIN_INITIAL_PASSWORD",
+            "name": "odc-bootstrap"
+          }
+        }
+      },
+      {
+        "name": "ODC_ORACLE_TCPS_HOSTS",
+        "value_source": "redacted non-retention setting"
+      },
+      {
+        "name": "ODC_SERVER_PORT",
+        "value": "8989"
+      },
+      {
+        "name": "ODC_JVM_HEAP_OPTIONS",
+        "value_source": "redacted non-retention setting"
+      }
+    ],
+    "volume_mounts": [
+      {
+        "mountPath": "/opt/odc/data",
+        "name": "data"
+      },
+      {
+        "mountPath": "/opt/odc/log",
+        "name": "logs"
+      },
+      {
+        "mountPath": "/opt/odc/plugins/connect-plugin-oracle-4.4.1-20260116.jar",
+        "name": "tcps-plugin",
+        "readOnly": true,
+        "subPath": "connect-plugin-oracle-4.4.1-20260116.jar"
+      }
+    ],
+    "volumes": [
+      {
+        "name": "data",
+        "persistentVolumeClaim": {
+          "claimName": "odc-data"
+        }
+      },
+      {
+        "emptyDir": {},
+        "name": "logs"
+      },
+      {
+        "configMap": {
+          "defaultMode": 292,
+          "name": "odc-oracle-tcps-src-272mgcf824"
+        },
+        "name": "tcps-src"
+      },
+      {
+        "emptyDir": {
+          "sizeLimit": "2Gi"
+        },
+        "name": "tcps-work"
+      },
+      {
+        "emptyDir": {
+          "sizeLimit": "256Mi"
+        },
+        "name": "tcps-plugin"
+      }
+    ],
+    "runtime_identity_mounts": "odc-5b74c68b74-v2cbd\n6545 6532 8:80 / /opt/odc/data rw,relatime - ext4 /dev/longhorn/pvc-4f42837c-cece-4c5d-9603-0a42c34acad3 rw\n6546 6532 253:0 /var/lib/kubelet/pods/f869b229-c0a3-4e36-85aa-187cfcc7a19b/volumes/kubernetes.io~empty-dir/logs /opt/odc/log rw,relatime - xfs /dev/mapper/almalinux_longhn0710-root rw,attr2,inode64,logbufs=8,logbsize=32k,noquota\n/opt/odc"
+  },
+  "metadb": {
+    "name": "oceanbase-metadb-0",
+    "uid": "c4c97f43-3230-42ca-8814-e2077db930cd",
+    "image": "oceanbase/oceanbase-ce:4.3.5-lts@sha256:31086a6900c21c479c2bcd942b6a28c53b17a51f4e9b9eb8eafcc596adfcd2e3",
+    "image_status": [
+      {
+        "allocatedResources": {
+          "cpu": "2",
+          "memory": "8Gi"
+        },
+        "containerID": "containerd://296284d1e69d8547983b9dbd9d1868b04be37734c536d536067ea637c3c1f56e",
+        "image": "sha256:9048f3fe0269da8b40e4fb0885b003c99637fcd67e77cc114b199c01c21e6a06",
+        "imageID": "docker.io/oceanbase/oceanbase-ce@sha256:31086a6900c21c479c2bcd942b6a28c53b17a51f4e9b9eb8eafcc596adfcd2e3",
+        "lastState": {},
+        "name": "oceanbase",
+        "ready": true,
+        "resources": {
+          "limits": {
+            "cpu": "4",
+            "memory": "10Gi"
+          },
+          "requests": {
+            "cpu": "2",
+            "memory": "8Gi"
+          }
+        },
+        "restartCount": 0,
+        "started": true,
+        "state": {
+          "running": {
+            "startedAt": "2026-10-07T06:21:03Z"
+          }
+        },
+        "user": {
+          "linux": {
+            "gid": 0,
+            "supplementalGroups": [
+              0
+            ],
+            "uid": 0
+          }
+        },
+        "volumeMounts": [
+          {
+            "mountPath": "/root/ob",
+            "name": "data"
+          },
+          {
+            "mountPath": "/root/.obd/cluster",
+            "name": "data"
+          },
+          {
+            "mountPath": "/root/ob/observer/log",
+            "name": "diagnostic-logs"
+          },
+          {
+            "mountPath": "/root/boot/init.d/00-odc.sql",
+            "name": "init-sql",
+            "readOnly": true,
+            "recursiveReadOnly": "Disabled"
+          }
+        ]
+      }
+    ],
+    "phase": "Running",
+    "ready": true
+  },
+  "pvcs": [
+    {
+      "name": "data-oceanbase-metadb-10gi",
+      "uid": "669aee81-1d78-486b-b78e-2d221638ccad",
+      "phase": "Bound"
+    },
+    {
+      "name": "odc-data",
+      "uid": "4f42837c-cece-4c5d-9603-0a42c34acad3",
+      "phase": "Bound"
+    }
+  ],
+  "service": {
+    "uid": "c8026375-c0ee-48be-b0b5-36c473dfc1b1",
+    "spec": {
+      "clusterIP": "10.103.239.130",
+      "clusterIPs": [
+        "10.103.239.130"
+      ],
+      "internalTrafficPolicy": "Cluster",
+      "ipFamilies": [
+        "IPv4"
+      ],
+      "ipFamilyPolicy": "SingleStack",
+      "ports": [
+        {
+          "name": "http",
+          "port": 8989,
+          "protocol": "TCP",
+          "targetPort": 8989
+        }
+      ],
+      "selector": {
+        "app.kubernetes.io/name": "odc"
+      },
+      "sessionAffinity": "None",
+      "type": "ClusterIP"
+    }
+  },
+  "endpoints": [
+    {
+      "addresses": [
+        {
+          "ip": "10.244.1.212",
+          "nodeName": "k8s-worker2",
+          "targetRef": {
+            "kind": "Pod",
+            "name": "odc-5b74c68b74-v2cbd",
+            "namespace": "oceanbase-odc",
+            "uid": "f869b229-c0a3-4e36-85aa-187cfcc7a19b"
+          }
+        }
+      ],
+      "ports": [
+        {
+          "name": "http",
+          "port": 8989,
+          "protocol": "TCP"
+        }
+      ]
+    }
+  ],
+  "argo": {
+    "uid": "9962c792-2cf2-4124-b1dd-99307ea3f0c4",
+    "skip_reconcile": null,
+    "syncPolicy": {
+      "automated": {
+        "allowEmpty": false,
+        "prune": false,
+        "selfHeal": true
+      }
+    },
+    "sync": {
+      "comparedTo": {
+        "destination": {
+          "namespace": "oceanbase-odc",
+          "server": "https://kubernetes.default.svc"
+        },
+        "source": {
+          "path": "oceanbase-odc",
+          "repoURL": "git@github.com:devsecopslonghn/k8s-namepsace-chart.git",
+          "targetRevision": "master"
+        }
+      },
+      "revision": "39c744828fbeb43edfc6718cab4c81ef4507cd54",
+      "status": "Synced"
+    },
+    "health": {
+      "lastTransitionTime": "2026-10-07T10:49:12Z",
+      "status": "Healthy"
+    },
+    "reconciledAt": "2026-10-07T16:58:47Z",
+    "operationState_phase": "Succeeded"
+  }
+}

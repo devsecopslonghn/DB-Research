@@ -1,0 +1,292 @@
+/*
+ * Copyright 2026 杭州开云集致科技有限公司
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.clougence.rdp.controller;
+
+import static com.clougence.clouddm.platform.dal.model.monitor.SecurityLevel.HIGH;
+import static com.clougence.clouddm.sdk.security.auth.def.SecRoleAuthLabel.RDP_USER_MANAGE;
+import static com.clougence.clouddm.sdk.security.auth.def.SecRoleAuthLabel.RDP_USER_READ;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.clougence.clouddm.api.common.exception.DmErrorCode;
+import com.clougence.clouddm.api.common.exception.ErrorMessageException;
+import com.clougence.clouddm.api.common.rpc.ResWebData;
+import com.clougence.clouddm.api.common.rpc.ResWebDataUtils;
+import com.clougence.clouddm.console.web.component.auth.DmAuthServiceForBiz;
+import com.clougence.clouddm.console.web.component.config.ConsoleConfig;
+import com.clougence.clouddm.console.web.constants.DmControllerUrlPrefix;
+import com.clougence.clouddm.console.web.global.i18n.DmI18nUtils;
+import com.clougence.clouddm.console.web.global.i18n.I18nRdpMsgKeys;
+import com.clougence.clouddm.console.web.global.jwtsession.JwtService;
+import com.clougence.clouddm.console.web.global.jwtsession.RequestAuth;
+import com.clougence.clouddm.console.web.model.fo.ResetPasswdFO;
+import com.clougence.clouddm.console.web.model.fo.role.UpdateUserRoleFO;
+import com.clougence.clouddm.console.web.model.fo.user.*;
+import com.clougence.clouddm.console.web.model.lo.UpdateUserRoleLO;
+import com.clougence.clouddm.console.web.model.vo.ListUserVO;
+import com.clougence.clouddm.console.web.service.auth.RdpUserService;
+import com.clougence.clouddm.console.web.util.Sm2Utils;
+import com.clougence.clouddm.platform.dal.access.AuthDal;
+import com.clougence.clouddm.platform.dal.model.ResourceType;
+import com.clougence.clouddm.platform.dal.model.auth.AccountType;
+import com.clougence.clouddm.platform.dal.model.auth.DmAuthUserDO;
+import com.clougence.clouddm.platform.dal.model.monitor.AuditType;
+import com.clougence.clouddm.platform.dal.model.monitor.SecurityLevel;
+import com.clougence.rdp.service.RdpOpAuditService;
+import com.clougence.rdp.service.model.AddSubAccountMO;
+import com.clougence.rdp.service.model.CheckSubAccountMO;
+import com.clougence.rdp.service.model.UpdateUserInfoMO;
+import com.clougence.rdp.service.model.ValidateResultMO;
+import com.clougence.utils.StringUtils;
+
+import jakarta.annotation.Resource;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Valid;
+import lombok.extern.slf4j.Slf4j;
+
+/**
+ * @author wanshao create time is 2020/3/11
+ **/
+@RestController
+@RequestMapping(value = DmControllerUrlPrefix.CONSOLE_PREFIX + "/user/manager")
+@Slf4j
+public class RdpUserManagerController {
+
+    @Resource
+    private AuthDal             authDal;
+    @Resource
+    private RdpUserService      rdpUserService;
+    @Resource
+    private DmAuthServiceForBiz rdpAuthServiceForBiz;
+    @Resource
+    private ConsoleConfig       consoleConfig;
+    @Resource
+    private RdpOpAuditService   rdpOpAuditService;
+
+    @RequestAuth(level = HIGH, value = RDP_USER_MANAGE)
+    @RequestMapping(value = "/resetPasswd", method = { RequestMethod.POST })
+    public ResWebData<?> resetPasswd(@Valid @RequestBody ResetPasswdFO fo, HttpServletRequest request) {
+        String uid = (String) request.getAttribute(RdpUserService.UID);
+
+        //decrypt
+        fo.setPassword(Sm2Utils.decrypt(consoleConfig.getPrivateKey(), fo.getPassword()));
+
+        DmAuthUserDO userDO = null;
+        ValidateResultMO validatePwdMO = null;
+        if (fo.getAccountType() == AccountType.PRIMARY_ACCOUNT) {
+            userDO = this.authDal.userMapper().queryPrimaryByPhone(fo.getPhone());
+            validatePwdMO = this.rdpUserService.validatePrimaryAccountPwd(fo.getPassword());
+        } else if (fo.getAccountType() == AccountType.SUB_ACCOUNT) {
+            if (StringUtils.isBlank(fo.getAccount())) {
+                return ResWebDataUtils.buildError(DmI18nUtils.getMessage(I18nRdpMsgKeys.USER_ACCOUNT_EMPTY_ERROR.name()));
+            }
+
+            userDO = this.authDal.userMapper().queryBySubAccount(fo.getAccount());
+
+            String puid = (String) request.getAttribute(RdpUserService.PUID);
+            validatePwdMO = this.rdpUserService.validateSubAccountPwd(puid, fo.getPassword());
+        }
+
+        if (userDO == null) {
+            return ResWebDataUtils.buildError(DmI18nUtils.getMessage(I18nRdpMsgKeys.USER_NOT_EXIST_ERROR.name()));
+        }
+
+        if (validatePwdMO != null && !validatePwdMO.isSuccess()) {
+            return ResWebDataUtils.buildError(validatePwdMO.getErrorMsg());
+        }
+
+        checkOperateUserAuth(uid, userDO.getUid());
+
+        UpdateUserInfoMO resetPasswdMO = this.rdpUserService.resetPassword(fo);
+        if (resetPasswdMO.isSuccess()) {
+            return ResWebDataUtils.buildSuccess();
+        } else {
+            return ResWebDataUtils.buildError(resetPasswdMO.getErrorMsg());
+        }
+    }
+
+    @RequestAuth(level = HIGH, value = RDP_USER_READ)
+    @RequestMapping(value = "/listSubAccounts", method = { RequestMethod.POST })
+    public ResWebData<?> listSubAccounts(@Valid @RequestBody ListSubAccountsFO fo, HttpServletRequest request) {
+        String puid = (String) request.getAttribute(RdpUserService.PUID);
+        List<ListUserVO> users = this.rdpUserService.listSubAccounts(puid, fo);
+        return ResWebDataUtils.buildSuccess(users);
+    }
+
+    @RequestAuth(level = HIGH, value = RDP_USER_MANAGE)
+    @RequestMapping(value = "/ctrlAddSubAccount", method = RequestMethod.POST)
+    public ResWebData<?> ctrlAddSubAccount() {
+        return ResWebDataUtils.buildSuccess();
+    }
+
+    @RequestAuth(level = HIGH, value = RDP_USER_MANAGE)
+    @RequestMapping(value = "/addSubAccount", method = { RequestMethod.POST })
+    public ResWebData<?> addSubAccount(@Valid @RequestBody AddSubAccountFO fo, HttpServletRequest request) {
+        String puid = (String) request.getAttribute(RdpUserService.PUID);
+        String uid = (String) request.getAttribute(RdpUserService.UID);
+
+        //decrypt
+        fo.setPassword(Sm2Utils.decrypt(consoleConfig.getPrivateKey(), fo.getPassword()));
+
+        AddSubAccountMO accountMO = this.rdpUserService.addSubAccountForInternal(puid, fo);
+        if (accountMO.isSuccess()) {
+            rdpOpAuditService.logAndAddOperationAudit(puid, uid, request.getRequestURI(), request.getRemoteAddr(), accountMO
+                .getSubUid(), fo, SecurityLevel.HIGH, AuditType.ADD_SUB_ACCOUNT, ResourceType.ACCOUNT);
+            return ResWebDataUtils.buildSuccess();
+        } else {
+            return ResWebDataUtils.buildError(accountMO.getErrorMsg());
+        }
+    }
+
+    @RequestAuth(level = HIGH, value = RDP_USER_MANAGE)
+    @RequestMapping(value = "/updateSubAccount", method = { RequestMethod.POST })
+    public ResWebData<?> updateSubAccount(@Valid @RequestBody UpdateSubAccountFO fo, HttpServletRequest request) {
+        String puid = (String) request.getAttribute(RdpUserService.PUID);
+        String uid = (String) request.getAttribute(RdpUserService.UID);
+
+        checkOperateUserAuth(uid, fo.getTargetUid());
+        if (StringUtils.isNotBlank(fo.getPassword())) {
+            fo.setPassword(Sm2Utils.decrypt(consoleConfig.getPrivateKey(), fo.getPassword()));
+        }
+
+        UpdateUserInfoMO accountMO = this.rdpUserService.updateSubAccount(fo, puid);
+        if (accountMO.isSuccess()) {
+            rdpOpAuditService.logAndAddOperationAudit(puid, uid, request.getRequestURI(), request.getRemoteAddr(), fo.getTargetUid(), accountMO
+                .getConfigLO(), SecurityLevel.HIGH, AuditType.UPDATE_SUB_ACCOUNT, ResourceType.ACCOUNT);
+            return ResWebDataUtils.buildSuccess();
+        } else {
+            return ResWebDataUtils.buildError(accountMO.getErrorMsg());
+        }
+    }
+
+    @RequestAuth(level = HIGH, value = RDP_USER_MANAGE)
+    @RequestMapping(value = "/checkSubAccountDuplicate", method = { RequestMethod.POST })
+    public ResWebData<?> checkSubAccountDuplicate(@Valid @RequestBody CheckSubAccountFO fo, HttpServletRequest request) {
+        String puid = (String) request.getAttribute(RdpUserService.PUID);
+
+        CheckSubAccountMO re = this.rdpUserService.checkSubAccount(puid, fo);
+        if (re.isSuccess()) {
+            return ResWebDataUtils.buildSuccess();
+        } else {
+            return ResWebDataUtils.buildError(re.getErrorMsg());
+        }
+    }
+
+    @RequestAuth(level = HIGH, value = RDP_USER_MANAGE)
+    @RequestMapping(value = "/deleteSubAccount", method = { RequestMethod.POST })
+    public ResWebData<?> deleteSubAccount(@Valid @RequestBody DeleteSubAccountFO fo, HttpServletRequest request) {
+        String puid = (String) request.getAttribute(RdpUserService.PUID);
+        String uid = (String) request.getAttribute(RdpUserService.UID);
+
+        if (StringUtils.isBlank(fo.getAccount())) {
+            return ResWebDataUtils.buildError(DmI18nUtils.getMessage(I18nRdpMsgKeys.USER_ACCOUNT_EMPTY_ERROR.name()));
+        }
+
+        DmAuthUserDO userDO = this.authDal.userMapper().queryBySubAccount(fo.getAccount());
+
+        if (userDO == null) {
+            return ResWebDataUtils.buildError(DmI18nUtils.getMessage(I18nRdpMsgKeys.USER_NOT_EXIST_ERROR.name()));
+        }
+
+        if (userDO.getUid().equals(uid)) {
+            return ResWebDataUtils.buildError(DmI18nUtils.getMessage(I18nRdpMsgKeys.CAN_NOT_DELETE_SUB_ACCOUNT_SELF.name()));
+        }
+
+        rdpAuthServiceForBiz.checkOperateOtherUserAuth(uid, userDO.getUid());
+
+        DmAuthUserDO rdpUserDO = authDal.userMapper().queryBySubAccount(fo.getAccount());
+        ResWebData<Boolean> resWebData = this.rdpUserService.deleteSubAccount(puid, fo);
+
+        if (resWebData.isSuccess()) {
+            rdpOpAuditService.logAndAddOperationAudit(puid, uid, request.getRequestURI(), request.getRemoteAddr(), userDO
+                .getUid(), fo, SecurityLevel.HIGH, AuditType.DELETE_SUB_ACCOUNT, ResourceType.ACCOUNT, rdpUserDO.getUsername());
+        }
+
+        return resWebData;
+    }
+
+    @RequestAuth(level = HIGH, value = RDP_USER_MANAGE)
+    @RequestMapping(value = "/updateUserRole", method = RequestMethod.POST)
+    public ResWebData<?> updateUserRole(@Valid @RequestBody UpdateUserRoleFO fo, HttpServletRequest request, HttpServletResponse response) {
+        String uid = (String) request.getAttribute(RdpUserService.UID);
+        String puid = (String) request.getAttribute(RdpUserService.PUID);
+
+        checkOperateUserAuth(uid, fo.getSubAccountUid());
+        UpdateUserRoleLO lo = this.rdpUserService.updateUserRole(fo);
+        rdpOpAuditService.logAndAddOperationAudit(puid, uid, request.getRequestURI(), request.getRemoteAddr(), fo
+            .getSubAccountUid(), lo, SecurityLevel.HIGH, AuditType.UPDATE_SUB_ACCOUNT_ROLE, ResourceType.ACCOUNT);
+
+        if (StringUtils.equals(uid, fo.getSubAccountUid())) {
+            Cookie cookie = new Cookie(JwtService.jwtTokenName, StringUtils.EMPTY);
+            cookie.setHttpOnly(true);
+            cookie.setMaxAge(0);
+            cookie.setPath("/");
+
+            if (StringUtils.isNotBlank(consoleConfig.getLoginCookieDomain())) {
+                cookie.setDomain(consoleConfig.getLoginCookieDomain());
+            }
+
+            response.addCookie(cookie);
+            return ResWebDataUtils.buildError(DmErrorCode.COMM_RELOAD_ACTION.code(), DmI18nUtils.getMessage(I18nRdpMsgKeys.USER_NEED_RELOGIN.name()));
+        }
+
+        return ResWebDataUtils.buildSuccess();
+    }
+
+    @RequestAuth(level = HIGH, value = RDP_USER_MANAGE)
+    @RequestMapping(value = "/updateAccountAbility", method = RequestMethod.POST)
+    public ResWebData<?> updateAccountAbility(@Valid @RequestBody AccountAbilityFO fo, HttpServletRequest request) {
+        String uid = (String) request.getAttribute(RdpUserService.UID);
+        String puid = (String) request.getAttribute(RdpUserService.PUID);
+        if (uid.equals(fo.getUid())) {
+            return ResWebDataUtils.buildError(DmI18nUtils.getMessage(I18nRdpMsgKeys.CAN_NOT_DISABLE_SUB_ACCOUNT_SELF.name()));
+        }
+
+        checkOperateUserAuth(uid, fo.getUid());
+        ResWebData<Boolean> resWebData = this.rdpUserService.updateAccountAbility(puid, fo);
+        if (resWebData.isSuccess()) {
+            if (fo.getDisable()) {
+                rdpOpAuditService.logAndAddOperationAudit(puid, uid, request.getRequestURI(), request.getRemoteAddr(), fo
+                    .getUid(), fo, SecurityLevel.HIGH, AuditType.DISABLE_SUB_ACCOUNT, ResourceType.ACCOUNT);
+            } else {
+                rdpOpAuditService.logAndAddOperationAudit(puid, uid, request.getRequestURI(), request.getRemoteAddr(), fo
+                    .getUid(), fo, SecurityLevel.HIGH, AuditType.ENABLE_SUB_ACCOUNT, ResourceType.ACCOUNT);
+            }
+        }
+        return resWebData;
+    }
+
+    private void checkOperateUserAuth(String operateUid, String uid) {
+        if (StringUtils.isBlank(uid)) {
+            throw new RuntimeException("uid can not be blank.");
+        }
+
+        DmAuthUserDO userDO = this.authDal.userMapper().queryByUid(uid);
+
+        if (userDO == null) {
+            throw new ErrorMessageException(DmI18nUtils.getMessage(I18nRdpMsgKeys.USER_NOT_EXIST_ERROR.name()));
+        }
+
+        rdpAuthServiceForBiz.checkOperateOtherUserAuth(operateUid, userDO.getUid());
+    }
+}

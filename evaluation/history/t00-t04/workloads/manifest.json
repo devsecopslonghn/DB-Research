@@ -1,0 +1,93 @@
+{
+  "revision": "oracle-common-v1",
+  "encoding": "UTF-8",
+  "newlines": "LF",
+  "execution_status": "NOT_RUN",
+  "artifacts": [
+    {
+      "path": "dml-1000.sql",
+      "sha256": "0c3ed79d9fd43f8b337b3c4786fa4ce5dc2ede349e7420f374ea8f520828a9ae",
+      "bytes": 185
+    },
+    {
+      "path": "dml-10000.sql",
+      "sha256": "c5fa9f046b7e524e027dc28a7e6d2c77729af3a3a65ff2dd2f3b5101c323d7f8",
+      "bytes": 186
+    },
+    {
+      "path": "duplicate-effect.sql",
+      "sha256": "82296cc271d553c3a9682f6a788bdef36adddf2748659ac3e814f07ac1c2432d",
+      "bytes": 63
+    },
+    {
+      "path": "eval-include.sql",
+      "sha256": "3cd6f51472a72a8a0baba9d07e6ffddfef7f71c085d06777078ede8a45b707bb",
+      "bytes": 33
+    },
+    {
+      "path": "fixture-inventory.sql",
+      "sha256": "53d5437c8f51a944f1750f98bf993a76e9bf657516e828a393d5d2fc7db0d37c",
+      "bytes": 700
+    },
+    {
+      "path": "invalid-compilation.sql",
+      "sha256": "a1a79dca1eb3ea98edd72022759604a72de89df07c42c621ff30cb68a2ba3b91",
+      "bytes": 80
+    },
+    {
+      "path": "partial-ddl.sql",
+      "sha256": "132b63d3cd2b7efc83407c2b8b153efa58a4367931e86bed482db60b3be46ac8",
+      "bytes": 104
+    },
+    {
+      "path": "release-small.sql",
+      "sha256": "a762e67ee079f51319f7697e8fe5eb8c75ae17e9a456e557ec02329cee9f593c",
+      "bytes": 1049
+    },
+    {
+      "path": "replay-changed.sql",
+      "sha256": "c6233e1f33a0081a06185b855e18e668d19521e18e9ec13be0b44bb0fc04211d",
+      "bytes": 112
+    },
+    {
+      "path": "replay.sql",
+      "sha256": "65fdbebfd4450214df8cec1b9bea16b788fa99301122e4d5164dcfe57cc4755c",
+      "bytes": 111
+    },
+    {
+      "path": "sqlplus-directives.sql",
+      "sha256": "38383859d0317b56b2e40a8128cb93c50a2ac8068906402331b2473ffa5685f9",
+      "bytes": 198
+    },
+    {
+      "path": "statements-10.sql",
+      "sha256": "fb6d92c8875bd59a6e581e61fa88d3e0e917cd854144fa22a426eedbaecf66bd",
+      "bytes": 375
+    },
+    {
+      "path": "statements-100.sql",
+      "sha256": "097c8bba7e4d25af022bb927580dafe84020ccf3ad5a609a1e43f043b7c1e90d",
+      "bytes": 3973
+    },
+    {
+      "path": "statements-1000.sql",
+      "sha256": "ba56ebc6045e49844898386ce92060a54b59bef38e3ba63130bae675aef54d77",
+      "bytes": 41771
+    }
+  ],
+  "migration_identity": {
+    "replay.sql": {
+      "migration_id": "EVAL_REPLAY_V1",
+      "migration_version": "202610040001"
+    },
+    "replay-changed.sql": {
+      "migration_id": "EVAL_REPLAY_V1",
+      "migration_version": "202610040001"
+    },
+    "duplicate-effect.sql": {
+      "migration_id": "EVAL_DUPLICATE_V1",
+      "migration_version": "202610040002",
+      "request_identity": "same approved execution identity for both deliveries"
+    }
+  }
+}

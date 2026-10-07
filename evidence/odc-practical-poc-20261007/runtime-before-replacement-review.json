@@ -1,0 +1,1070 @@
+{
+  "timestamp": "2026-10-07T10:36:51.634245+00:00",
+  "historical_checks": [
+    {
+      "ticket_id": 1000028,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000027,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000026,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000025,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000024,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000023,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000022,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000021,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000020,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000019,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000018,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000017,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000016,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000015,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000014,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000013,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000012,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000011,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000010,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000009,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000008,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000007,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000006,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000005,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000004,
+      "status_preserved": true,
+      "sql_preserved": true
+    },
+    {
+      "ticket_id": 1000003,
+      "status_preserved": true,
+      "sql_preserved": true
+    }
+  ],
+  "new_tickets": [
+    {
+      "affectedRows": null,
+      "approvable": false,
+      "completeTime": 1791369312000,
+      "createTime": 1791369297000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "database": {
+        "connectType": "ORACLE",
+        "dataSource": {
+          "connectType": "CONNECT_TYPE_CLOUD",
+          "createTime": null,
+          "creatorId": null,
+          "defaultSchema": null,
+          "environmentId": null,
+          "host": null,
+          "id": 1000001,
+          "name": null,
+          "port": null,
+          "projectId": null,
+          "serviceName": null,
+          "status": null,
+          "type": null,
+          "updateTime": null,
+          "username": null
+        },
+        "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+        "environment": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "id": 1000069,
+        "name": "ODC_POC_20261004_DEV",
+        "project": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "type": "PHYSICAL"
+      },
+      "description": "application=odc-adoption-poc; release=0.1.1-poc-E2; corrects-ticket=2000011; ref=correction",
+      "executionStrategy": "MANUAL",
+      "executionTime": null,
+      "id": 2000012,
+      "nodeList": null,
+      "parameters": null,
+      "progressPercentage": 100.0,
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "projectId": 1,
+      "status": "EXECUTION_SUCCEEDED",
+      "type": "ASYNC"
+    },
+    {
+      "affectedRows": null,
+      "approvable": false,
+      "completeTime": 1791369297000,
+      "createTime": 1791369282000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "database": {
+        "connectType": "ORACLE",
+        "dataSource": {
+          "connectType": "CONNECT_TYPE_CLOUD",
+          "createTime": null,
+          "creatorId": null,
+          "defaultSchema": null,
+          "environmentId": null,
+          "host": null,
+          "id": 1000001,
+          "name": null,
+          "port": null,
+          "projectId": null,
+          "serviceName": null,
+          "status": null,
+          "type": null,
+          "updateTime": null,
+          "username": null
+        },
+        "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+        "environment": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "id": 1000069,
+        "name": "ODC_POC_20261004_DEV",
+        "project": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "type": "PHYSICAL"
+      },
+      "description": "application=odc-adoption-poc; release=0.1.0-poc-E2; ref=harmless-correction-original",
+      "executionStrategy": "MANUAL",
+      "executionTime": null,
+      "id": 2000011,
+      "nodeList": null,
+      "parameters": null,
+      "progressPercentage": 100.0,
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "projectId": 1,
+      "status": "EXECUTION_FAILED",
+      "type": "ASYNC"
+    },
+    {
+      "affectedRows": null,
+      "approvable": false,
+      "completeTime": 1791369280000,
+      "createTime": 1791369264000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "database": {
+        "connectType": "ORACLE",
+        "dataSource": {
+          "connectType": "CONNECT_TYPE_CLOUD",
+          "createTime": null,
+          "creatorId": null,
+          "defaultSchema": null,
+          "environmentId": null,
+          "host": null,
+          "id": 1000004,
+          "name": null,
+          "port": null,
+          "projectId": null,
+          "serviceName": null,
+          "status": null,
+          "type": null,
+          "updateTime": null,
+          "username": null
+        },
+        "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+        "environment": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1000022,
+          "name": null,
+          "updateTime": null
+        },
+        "id": 1000218,
+        "name": "ODC_POC_20261004_MOCKPROD",
+        "project": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "type": "PHYSICAL"
+      },
+      "description": "application=odc-adoption-poc; release=0.1.0-poc; git-ref=practical-poc-20261007/E1",
+      "executionStrategy": "MANUAL",
+      "executionTime": null,
+      "id": 2000010,
+      "nodeList": null,
+      "parameters": null,
+      "progressPercentage": 100.0,
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "projectId": 1,
+      "status": "EXECUTION_SUCCEEDED",
+      "type": "ASYNC"
+    },
+    {
+      "affectedRows": null,
+      "approvable": false,
+      "completeTime": 1791369263000,
+      "createTime": 1791369247000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "database": {
+        "connectType": "ORACLE",
+        "dataSource": {
+          "connectType": "CONNECT_TYPE_CLOUD",
+          "createTime": null,
+          "creatorId": null,
+          "defaultSchema": null,
+          "environmentId": null,
+          "host": null,
+          "id": 1000004,
+          "name": null,
+          "port": null,
+          "projectId": null,
+          "serviceName": null,
+          "status": null,
+          "type": null,
+          "updateTime": null,
+          "username": null
+        },
+        "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+        "environment": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1000022,
+          "name": null,
+          "updateTime": null
+        },
+        "id": 1000218,
+        "name": "ODC_POC_20261004_MOCKPROD",
+        "project": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "type": "PHYSICAL"
+      },
+      "description": "application=odc-adoption-poc; release=0.1.0-poc; git-ref=practical-poc-20261007/E1",
+      "executionStrategy": "MANUAL",
+      "executionTime": null,
+      "id": 2000009,
+      "nodeList": null,
+      "parameters": null,
+      "progressPercentage": 100.0,
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "projectId": 1,
+      "status": "EXECUTION_SUCCEEDED",
+      "type": "ASYNC"
+    },
+    {
+      "affectedRows": null,
+      "approvable": false,
+      "completeTime": 1791369342000,
+      "createTime": 1791369246000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "database": {
+        "connectType": "ORACLE",
+        "dataSource": {
+          "connectType": "CONNECT_TYPE_CLOUD",
+          "createTime": null,
+          "creatorId": null,
+          "defaultSchema": null,
+          "environmentId": null,
+          "host": null,
+          "id": 1000001,
+          "name": null,
+          "port": null,
+          "projectId": null,
+          "serviceName": null,
+          "status": null,
+          "type": null,
+          "updateTime": null,
+          "username": null
+        },
+        "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+        "environment": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "id": 1000069,
+        "name": "ODC_POC_20261004_DEV",
+        "project": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "type": "PHYSICAL"
+      },
+      "description": "app=odc-adoption-poc; release=20261007-B2; ref=controlled-SIT-failure",
+      "executionStrategy": "MANUAL",
+      "executionTime": null,
+      "id": 2000008,
+      "nodeList": null,
+      "parameters": null,
+      "progressPercentage": 50.0,
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "projectId": 1,
+      "status": "CANCELLED",
+      "type": "MULTIPLE_ASYNC"
+    },
+    {
+      "affectedRows": null,
+      "approvable": false,
+      "completeTime": 1791369122000,
+      "createTime": 1791369107000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "database": {
+        "connectType": "ORACLE",
+        "dataSource": {
+          "connectType": "CONNECT_TYPE_CLOUD",
+          "createTime": null,
+          "creatorId": null,
+          "defaultSchema": null,
+          "environmentId": null,
+          "host": null,
+          "id": 1000001,
+          "name": null,
+          "port": null,
+          "projectId": null,
+          "serviceName": null,
+          "status": null,
+          "type": null,
+          "updateTime": null,
+          "username": null
+        },
+        "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+        "environment": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "id": 1000069,
+        "name": "ODC_POC_20261004_DEV",
+        "project": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "type": "PHYSICAL"
+      },
+      "description": "app=odc-adoption-poc; release=20261007-D-failure; ref=retention",
+      "executionStrategy": "MANUAL",
+      "executionTime": null,
+      "id": 2000007,
+      "nodeList": null,
+      "parameters": null,
+      "progressPercentage": 100.0,
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "projectId": 1,
+      "status": "EXECUTION_FAILED",
+      "type": "ASYNC"
+    },
+    {
+      "affectedRows": null,
+      "approvable": false,
+      "completeTime": 1791369111000,
+      "createTime": 1791369096000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "database": {
+        "connectType": "ORACLE",
+        "dataSource": {
+          "connectType": "CONNECT_TYPE_CLOUD",
+          "createTime": null,
+          "creatorId": null,
+          "defaultSchema": null,
+          "environmentId": null,
+          "host": null,
+          "id": 1000001,
+          "name": null,
+          "port": null,
+          "projectId": null,
+          "serviceName": null,
+          "status": null,
+          "type": null,
+          "updateTime": null,
+          "username": null
+        },
+        "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+        "environment": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "id": 1000069,
+        "name": "ODC_POC_20261004_DEV",
+        "project": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "type": "PHYSICAL"
+      },
+      "description": "app=odc-adoption-poc; release=20261007-C2; ref=editionable-slash",
+      "executionStrategy": "MANUAL",
+      "executionTime": null,
+      "id": 2000006,
+      "nodeList": null,
+      "parameters": null,
+      "progressPercentage": 100.0,
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "projectId": 1,
+      "status": "EXECUTION_SUCCEEDED",
+      "type": "ASYNC"
+    },
+    {
+      "affectedRows": null,
+      "approvable": false,
+      "completeTime": 1791369105000,
+      "createTime": 1791368952000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "database": {
+        "connectType": "ORACLE",
+        "dataSource": {
+          "connectType": "CONNECT_TYPE_CLOUD",
+          "createTime": null,
+          "creatorId": null,
+          "defaultSchema": null,
+          "environmentId": null,
+          "host": null,
+          "id": 1000001,
+          "name": null,
+          "port": null,
+          "projectId": null,
+          "serviceName": null,
+          "status": null,
+          "type": null,
+          "updateTime": null,
+          "username": null
+        },
+        "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+        "environment": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "id": 1000069,
+        "name": "ODC_POC_20261004_DEV",
+        "project": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "type": "PHYSICAL"
+      },
+      "description": "app=odc-adoption-poc; release=20261007-D-success; ref=retention",
+      "executionStrategy": "MANUAL",
+      "executionTime": null,
+      "id": 2000005,
+      "nodeList": null,
+      "parameters": null,
+      "progressPercentage": 100.0,
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "projectId": 1,
+      "status": "EXECUTION_SUCCEEDED",
+      "type": "ASYNC"
+    },
+    {
+      "affectedRows": null,
+      "approvable": false,
+      "completeTime": 1791369036000,
+      "createTime": 1791368908000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "database": {
+        "connectType": "ORACLE",
+        "dataSource": {
+          "connectType": "CONNECT_TYPE_CLOUD",
+          "createTime": null,
+          "creatorId": null,
+          "defaultSchema": null,
+          "environmentId": null,
+          "host": null,
+          "id": 1000001,
+          "name": null,
+          "port": null,
+          "projectId": null,
+          "serviceName": null,
+          "status": null,
+          "type": null,
+          "updateTime": null,
+          "username": null
+        },
+        "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+        "environment": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "id": 1000069,
+        "name": "ODC_POC_20261004_DEV",
+        "project": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "type": "PHYSICAL"
+      },
+      "description": "app=odc-adoption-poc; release=20261007-C1; ref=editionable-slash",
+      "executionStrategy": "MANUAL",
+      "executionTime": null,
+      "id": 2000004,
+      "nodeList": null,
+      "parameters": null,
+      "progressPercentage": 100.0,
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "projectId": 1,
+      "status": "EXECUTION_SUCCEEDED",
+      "type": "ASYNC"
+    },
+    {
+      "affectedRows": null,
+      "approvable": false,
+      "completeTime": 1791369181000,
+      "createTime": 1791368883000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "database": {
+        "connectType": "ORACLE",
+        "dataSource": {
+          "connectType": "CONNECT_TYPE_CLOUD",
+          "createTime": null,
+          "creatorId": null,
+          "defaultSchema": null,
+          "environmentId": null,
+          "host": null,
+          "id": 1000001,
+          "name": null,
+          "port": null,
+          "projectId": null,
+          "serviceName": null,
+          "status": null,
+          "type": null,
+          "updateTime": null,
+          "username": null
+        },
+        "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+        "environment": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "id": 1000069,
+        "name": "ODC_POC_20261004_DEV",
+        "project": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "type": "PHYSICAL"
+      },
+      "description": "app=odc-adoption-poc; release=20261007-B1; ref=native-four-stage",
+      "executionStrategy": "MANUAL",
+      "executionTime": null,
+      "id": 2000003,
+      "nodeList": null,
+      "parameters": null,
+      "progressPercentage": 100.0,
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "projectId": 1,
+      "status": "EXECUTION_SUCCEEDED",
+      "type": "MULTIPLE_ASYNC"
+    },
+    {
+      "affectedRows": null,
+      "approvable": false,
+      "completeTime": 1791368862000,
+      "createTime": 1791368773000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "database": {
+        "connectType": "ORACLE",
+        "dataSource": {
+          "connectType": "CONNECT_TYPE_CLOUD",
+          "createTime": null,
+          "creatorId": null,
+          "defaultSchema": null,
+          "environmentId": null,
+          "host": null,
+          "id": 1000004,
+          "name": null,
+          "port": null,
+          "projectId": null,
+          "serviceName": null,
+          "status": null,
+          "type": null,
+          "updateTime": null,
+          "username": null
+        },
+        "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+        "environment": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1000022,
+          "name": null,
+          "updateTime": null
+        },
+        "id": 1000218,
+        "name": "ODC_POC_20261004_MOCKPROD",
+        "project": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "type": "PHYSICAL"
+      },
+      "description": "app=odc-adoption-poc; release=20261007-A2; ref=requester-permission-probe",
+      "executionStrategy": "MANUAL",
+      "executionTime": null,
+      "id": 2000002,
+      "nodeList": null,
+      "parameters": null,
+      "progressPercentage": 100.0,
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "projectId": 1,
+      "status": "EXECUTION_SUCCEEDED",
+      "type": "ASYNC"
+    },
+    {
+      "affectedRows": null,
+      "approvable": false,
+      "completeTime": 1791368758000,
+      "createTime": 1791368741000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "database": {
+        "connectType": "ORACLE",
+        "dataSource": {
+          "connectType": "CONNECT_TYPE_CLOUD",
+          "createTime": null,
+          "creatorId": null,
+          "defaultSchema": null,
+          "environmentId": null,
+          "host": null,
+          "id": 1000004,
+          "name": null,
+          "port": null,
+          "projectId": null,
+          "serviceName": null,
+          "status": null,
+          "type": null,
+          "updateTime": null,
+          "username": null
+        },
+        "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+        "environment": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1000022,
+          "name": null,
+          "updateTime": null
+        },
+        "id": 1000218,
+        "name": "ODC_POC_20261004_MOCKPROD",
+        "project": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "type": "PHYSICAL"
+      },
+      "description": "app=odc-adoption-poc; release=20261007-A1; ref=practical-poc-A1",
+      "executionStrategy": "MANUAL",
+      "executionTime": null,
+      "id": 2000001,
+      "nodeList": null,
+      "parameters": null,
+      "progressPercentage": 100.0,
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "projectId": 1,
+      "status": "EXECUTION_SUCCEEDED",
+      "type": "ASYNC"
+    }
+  ],
+  "active_tickets": [],
+  "members": [
+    {
+      "accountName": "odc_poc_executor",
+      "id": 10002,
+      "name": "POC executor",
+      "role": "DBA"
+    },
+    {
+      "accountName": "odc_poc_requester",
+      "id": 10000,
+      "name": "POC requester",
+      "role": "DEVELOPER"
+    },
+    {
+      "accountName": "odc_poc_approver",
+      "id": 10001,
+      "name": "POC approver",
+      "role": "OWNER"
+    },
+    {
+      "accountName": "odc_poc_observer",
+      "id": 10003,
+      "name": "POC observer",
+      "role": "PARTICIPANT"
+    },
+    {
+      "accountName": "admin",
+      "id": 1,
+      "name": "admin",
+      "role": "OWNER"
+    }
+  ]
+}

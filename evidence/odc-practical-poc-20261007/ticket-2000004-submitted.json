@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-07T10:28:29.011756+00:00",
+  "request": {
+    "databaseId": 1000069,
+    "taskType": "ASYNC",
+    "executionStrategy": "MANUAL",
+    "description": "app=odc-adoption-poc; release=20261007-C1; ref=editionable-slash",
+    "parameters": {
+      "sqlContent": "CREATE OR REPLACE EDITIONABLE FUNCTION P7_VALID_FN (P_VALUE IN NUMBER)\nRETURN NUMBER\nAS\nBEGIN\n  RETURN P_VALUE + 7;\nEND;\n/\n",
+      "timeoutMillis": 120000,
+      "errorStrategy": "ABORT",
+      "generateRollbackPlan": false,
+      "queryLimit": 100,
+      "delimiter": ";",
+      "retryTimes": 0,
+      "markAsFailedWhenAnyErrorsHappened": true
+    }
+  },
+  "response": {
+    "contents": [
+      {
+        "affectedRows": null,
+        "approvable": false,
+        "completeTime": null,
+        "createTime": null,
+        "creator": null,
+        "database": null,
+        "description": null,
+        "executionStrategy": null,
+        "executionTime": null,
+        "id": 2000004,
+        "nodeList": null,
+        "parameters": null,
+        "progressPercentage": 0.0,
+        "project": null,
+        "projectId": null,
+        "status": null,
+        "type": "ASYNC"
+      }
+    ]
+  }
+}

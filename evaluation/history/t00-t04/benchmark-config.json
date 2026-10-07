@@ -1,0 +1,161 @@
+{
+  "spec_revision": "oracle-common-v1",
+  "execution_status": "NOT_RUN",
+  "required_pin_fields": [
+    "tool",
+    "edition",
+    "commit",
+    "image_digest",
+    "oracle_full_version",
+    "driver_version",
+    "parser_version",
+    "host",
+    "network",
+    "worker_count",
+    "pool_min",
+    "pool_max",
+    "metadata_db",
+    "proxy",
+    "cpu_limits",
+    "ram_limits",
+    "storage_limits",
+    "schema_ids",
+    "sql_hashes",
+    "plugin_versions",
+    "license_scope",
+    "oracle_charset",
+    "oracle_nls",
+    "oracle_service_class",
+    "oracle_cpu_quota",
+    "oracle_session_quota",
+    "oracle_scheduler",
+    "oracle_topology",
+    "request_timeout_seconds",
+    "job_timeout_seconds",
+    "ui_timeout_seconds",
+    "retry_policy",
+    "storage_class",
+    "fixture_revision",
+    "release_id",
+    "release_version",
+    "metadata_snapshot_id",
+    "observer_actor",
+    "observer_privileges",
+    "resource_sample_interval_seconds",
+    "clock_sync_evidence",
+    "api_route_mapping",
+    "ui_scenario_mapping",
+    "execution_path",
+    "adapter_commit_or_hash",
+    "pool_scope",
+    "pool_capacity_total",
+    "reset_id",
+    "sqlplus_working_directory",
+    "sqlplus_spool_path"
+  ],
+  "resource_budget": {
+    "platform_total_cpu_limit": 4,
+    "platform_total_memory_gib": 8,
+    "platform_total_persistent_storage_gib": 20,
+    "benchmark_oracle_sessions_max": 16,
+    "worker_count": 1,
+    "pool_min": 1,
+    "pool_max": 8,
+    "job_concurrency_levels": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "shared_oracle_runs": "sequential",
+    "pool_scope": "global_if_supported_else_per_target_singleton",
+    "pool_capacity_total": 8,
+    "per_target_pool_min": 1,
+    "per_target_pool_max": 1,
+    "executor_sessions_max": 8,
+    "observer_sessions_max": 2,
+    "bootstrap_sessions_max": 1,
+    "other_platform_target_sessions_max": 5,
+    "session_formula": "8 executor + 2 observer + 1 bootstrap + 5 other = 16 maximum; idle sessions included",
+    "api_read_concurrency_levels": [
+      1,
+      2,
+      4,
+      8
+    ]
+  },
+  "resource_budget_status": "Frozen proposed ceiling; verify host and dedicated target quota before T05/T09. No execution authorization this turn.",
+  "oracle_baseline": "26ai 23.26.4.1.0 historical; future run must verify exact version",
+  "minimum_samples": {
+    "independent_rounds": 3,
+    "PERF-01": {
+      "api_warmup_per_endpoint_per_concurrency": 3,
+      "api_requests_per_endpoint_per_concurrency_per_round": 100,
+      "ui_warmup_per_scenario": 3,
+      "ui_runs_per_scenario_per_round": 10
+    },
+    "PERF-02": {
+      "onboarding_target_counts": [
+        1,
+        10,
+        50
+      ],
+      "warmup_level_1": 1,
+      "trials_per_supported_level_per_round": 5
+    },
+    "PERF-03": {
+      "warmup_runs": 3,
+      "migration_runs_per_round": 5
+    },
+    "PERF-04": {
+      "warmup_per_artifact": 3,
+      "runs_per_artifact_per_round": 5
+    },
+    "PERF-05": {
+      "warmup_waves_per_level": 3,
+      "waves_per_level_per_round": 5,
+      "jobs_per_wave": "offered_concurrency"
+    },
+    "PERF-06": {
+      "warmup_trials_per_case_mode": 3,
+      "paired_trials_per_case_mode_per_round": 5,
+      "duplicate_delivery_modes": {
+        "sequential_delay_ms": 0,
+        "concurrent": "same client barrier, record actual send timestamp skew"
+      }
+    },
+    "PERF-07": {
+      "status": "NOT_RUN",
+      "dependency": "T10, dedicated fault target and explicit authorization"
+    }
+  },
+  "sla": null,
+  "performance_score": null,
+  "counting_policy": "Fixed attempts, including failures. No replacement trial to reach a success count. Early stop preserves incomplete cell and raw errors.",
+  "timeouts_seconds": {
+    "api": 30,
+    "job_wall_time": 300,
+    "ui_navigation": 60
+  },
+  "sampling": {
+    "resource_interval_seconds": 1,
+    "poll_interval_ms": 250,
+    "quantile": "nearest_rank",
+    "primary_percentiles": "API p50/p95 within each endpoint/load/round only",
+    "aggregate_round_percentiles": "not published as primary",
+    "migration_ui_summary": "raw/median/min/max/error count"
+  },
+  "stop_policy": {
+    "false_success": "immediate",
+    "duplicate_effect": "immediate",
+    "cross_schema_access": "immediate",
+    "secret_leak": "immediate",
+    "resource_ceiling_exceeded": "immediate",
+    "api_error_rate": "greater than 1% in 100 requests within endpoint/load cell",
+    "consecutive_api_timeouts": 2,
+    "job_timeout_seconds": 300
+  },
+  "execution_path_policy": "native, adapter and direct_client are separate configurations; no shared ranking across paths",
+  "approval_policy": "full workflow null/BLOCKED when supported mandatory approval is unavailable; never substitute zero waiting time",
+  "reset_policy": "New owner schema per trial/wave, fresh dedicated metadata snapshot per trial; archive evidence before reset; uncertain target never reset to continue measurement"
+}

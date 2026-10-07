@@ -1,0 +1,17 @@
+[
+  {
+    "path": "LICENSE",
+    "source_url": "https://raw.githubusercontent.com/bytebase/bytebase/a85f6cb4195299995e8554303550d672d5093e1d/LICENSE",
+    "sha256": "cabda19dfa84124f47c423da96e65b4860ac28fe443663cda21a3a84a09b762e"
+  },
+  {
+    "path": "LICENSE.enterprise",
+    "source_url": "https://raw.githubusercontent.com/bytebase/bytebase/a85f6cb4195299995e8554303550d672d5093e1d/LICENSE.enterprise",
+    "sha256": "24ff745fd7be9f66ba03952a41e5714fbe1ea45224557802e4794f6e1ce06af5"
+  },
+  {
+    "path": "backend__enterprise__plan.yaml",
+    "source_url": "https://raw.githubusercontent.com/bytebase/bytebase/a85f6cb4195299995e8554303550d672d5093e1d/backend/enterprise/plan.yaml",
+    "sha256": "643e788c6cac459f4c8f9e9588b37f4892ea05c4ddd1307a2fc6931a1885f5e9"
+  }
+]

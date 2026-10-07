@@ -1,0 +1,101 @@
+[
+  {
+    "repo": "bablsoft/accessflow",
+    "commit": "55c209a4d9e4ba09a6c089f90e68a8b16b3f2133",
+    "file": "backend/src/main/java/com/bablsoft/accessflow/schemachange/internal/SchemaChangeStatementScanner.java",
+    "local_source": "evidence/source/bablsoft__accessflow/backend/src/main/java/com/bablsoft/accessflow/schemachange/internal/SchemaChangeStatementScanner.java",
+    "artifact": "evaluation/research-round-2/coordinator/source/bablsoft__accessflow__backend__src__main__java__com__bablsoft__accessflow__schemachange__internal__SchemaChangeStatementScanner.java",
+    "sha256": "c876feaceb0a5cc47de3638379b2efb7bd8728eb054cde865651ab3004d6ee24",
+    "permanent_url": "https://github.com/bablsoft/accessflow/blob/55c209a4d9e4ba09a6c089f90e68a8b16b3f2133/backend/src/main/java/com/bablsoft/accessflow/schemachange/internal/SchemaChangeStatementScanner.java"
+  },
+  {
+    "repo": "bablsoft/accessflow",
+    "commit": "55c209a4d9e4ba09a6c089f90e68a8b16b3f2133",
+    "file": "backend/src/main/java/com/bablsoft/accessflow/schemachange/internal/SchemaChangeStatementGate.java",
+    "local_source": "evidence/source/bablsoft__accessflow/backend/src/main/java/com/bablsoft/accessflow/schemachange/internal/SchemaChangeStatementGate.java",
+    "artifact": "evaluation/research-round-2/coordinator/source/bablsoft__accessflow__backend__src__main__java__com__bablsoft__accessflow__schemachange__internal__SchemaChangeStatementGate.java",
+    "sha256": "97a9b06d97b941582420c59a755b06420706592e1f836378380e18274194dab1",
+    "permanent_url": "https://github.com/bablsoft/accessflow/blob/55c209a4d9e4ba09a6c089f90e68a8b16b3f2133/backend/src/main/java/com/bablsoft/accessflow/schemachange/internal/SchemaChangeStatementGate.java"
+  },
+  {
+    "repo": "bablsoft/accessflow",
+    "commit": "55c209a4d9e4ba09a6c089f90e68a8b16b3f2133",
+    "file": "backend/src/main/java/com/bablsoft/accessflow/schemachange/internal/DefaultSchemaChangePromotionService.java",
+    "local_source": "evidence/source/bablsoft__accessflow/backend/src/main/java/com/bablsoft/accessflow/schemachange/internal/DefaultSchemaChangePromotionService.java",
+    "artifact": "evaluation/research-round-2/coordinator/source/bablsoft__accessflow__backend__src__main__java__com__bablsoft__accessflow__schemachange__internal__DefaultSchemaChangePromotionService.java",
+    "sha256": "3a9adc602d1753c75780681507727d8e994bbe995eabc994c286a53c79f75832",
+    "permanent_url": "https://github.com/bablsoft/accessflow/blob/55c209a4d9e4ba09a6c089f90e68a8b16b3f2133/backend/src/main/java/com/bablsoft/accessflow/schemachange/internal/DefaultSchemaChangePromotionService.java"
+  },
+  {
+    "repo": "bablsoft/accessflow",
+    "commit": "55c209a4d9e4ba09a6c089f90e68a8b16b3f2133",
+    "file": "backend/src/main/java/com/bablsoft/accessflow/requestgroups/internal/DefaultGroupReviewService.java",
+    "local_source": "evidence/source/bablsoft__accessflow/backend/src/main/java/com/bablsoft/accessflow/requestgroups/internal/DefaultGroupReviewService.java",
+    "artifact": "evaluation/research-round-2/coordinator/source/bablsoft__accessflow__backend__src__main__java__com__bablsoft__accessflow__requestgroups__internal__DefaultGroupReviewService.java",
+    "sha256": "51b3c627048fa48f598fbbfa99f60ac2425f76d2812221b3dcbbd5e834da856b",
+    "permanent_url": "https://github.com/bablsoft/accessflow/blob/55c209a4d9e4ba09a6c089f90e68a8b16b3f2133/backend/src/main/java/com/bablsoft/accessflow/requestgroups/internal/DefaultGroupReviewService.java"
+  },
+  {
+    "repo": "bablsoft/accessflow",
+    "commit": "55c209a4d9e4ba09a6c089f90e68a8b16b3f2133",
+    "file": "backend/src/main/java/com/bablsoft/accessflow/requestgroups/internal/GroupExecutionService.java",
+    "local_source": "evidence/source/bablsoft__accessflow/backend/src/main/java/com/bablsoft/accessflow/requestgroups/internal/GroupExecutionService.java",
+    "artifact": "evaluation/research-round-2/coordinator/source/bablsoft__accessflow__backend__src__main__java__com__bablsoft__accessflow__requestgroups__internal__GroupExecutionService.java",
+    "sha256": "df0838f4a918e18a7dd890115a0c0b53f743b915740080d8af85948ec0f0df3c",
+    "permanent_url": "https://github.com/bablsoft/accessflow/blob/55c209a4d9e4ba09a6c089f90e68a8b16b3f2133/backend/src/main/java/com/bablsoft/accessflow/requestgroups/internal/GroupExecutionService.java"
+  },
+  {
+    "repo": "bablsoft/accessflow",
+    "commit": "55c209a4d9e4ba09a6c089f90e68a8b16b3f2133",
+    "file": "backend/src/main/java/com/bablsoft/accessflow/proxy/internal/DefaultQueryExecutor.java",
+    "local_source": "evidence/source/bablsoft__accessflow/backend/src/main/java/com/bablsoft/accessflow/proxy/internal/DefaultQueryExecutor.java",
+    "artifact": "evaluation/research-round-2/coordinator/source/bablsoft__accessflow__backend__src__main__java__com__bablsoft__accessflow__proxy__internal__DefaultQueryExecutor.java",
+    "sha256": "2ed9ac13e4d68e3457ad4d18c5c5b65174148a99d5aa62e92624cb1393f9a7e3",
+    "permanent_url": "https://github.com/bablsoft/accessflow/blob/55c209a4d9e4ba09a6c089f90e68a8b16b3f2133/backend/src/main/java/com/bablsoft/accessflow/proxy/internal/DefaultQueryExecutor.java"
+  },
+  {
+    "repo": "hhyo/Archery",
+    "commit": "ccc7134f48d0e261f9e3ffa0d445dcec48adb790",
+    "file": "sql/engines/oracle.py",
+    "local_source": "evidence/source/hhyo__Archery/sql/engines/oracle.py",
+    "artifact": "evaluation/research-round-2/coordinator/source/hhyo__Archery__sql__engines__oracle.py",
+    "sha256": "b16d94c9756ae35e5047e44cd93887190fe751864d529cf62b59fc9f8b2ccbb9",
+    "permanent_url": "https://github.com/hhyo/Archery/blob/ccc7134f48d0e261f9e3ffa0d445dcec48adb790/sql/engines/oracle.py"
+  },
+  {
+    "repo": "hhyo/Archery",
+    "commit": "ccc7134f48d0e261f9e3ffa0d445dcec48adb790",
+    "file": "sql/utils/sql_utils.py",
+    "local_source": "evidence/source/hhyo__Archery/sql/utils/sql_utils.py",
+    "artifact": "evaluation/research-round-2/coordinator/source/hhyo__Archery__sql__utils__sql_utils.py",
+    "sha256": "bf947d191e9a9345575d9b884c7acc00a4b45cc135076c215f3b0f5cf531dc75",
+    "permanent_url": "https://github.com/hhyo/Archery/blob/ccc7134f48d0e261f9e3ffa0d445dcec48adb790/sql/utils/sql_utils.py"
+  },
+  {
+    "repo": "hhyo/Archery",
+    "commit": "ccc7134f48d0e261f9e3ffa0d445dcec48adb790",
+    "file": "sql/utils/sql_review.py",
+    "local_source": "evidence/source/hhyo__Archery/sql/utils/sql_review.py",
+    "artifact": "evaluation/research-round-2/coordinator/source/hhyo__Archery__sql__utils__sql_review.py",
+    "sha256": "d843ba153995990845ecbd8742d83aba8d798747b152d171fdb15825aceeb9ab",
+    "permanent_url": "https://github.com/hhyo/Archery/blob/ccc7134f48d0e261f9e3ffa0d445dcec48adb790/sql/utils/sql_review.py"
+  },
+  {
+    "repo": "oceanbase/odc",
+    "commit": "d517c0f27971642fb0cd7565fd61ab2309875ec3",
+    "file": "server/odc-service/src/main/java/com/oceanbase/odc/service/session/OdcStatementCallBack.java",
+    "local_source": "evidence/product-model/sources/oceanbase__odc/server/odc-service/src/main/java/com/oceanbase/odc/service/session/OdcStatementCallBack.java",
+    "artifact": "evaluation/research-round-2/coordinator/source/oceanbase__odc__server__odc-service__src__main__java__com__oceanbase__odc__service__session__OdcStatementCallBack.java",
+    "sha256": "31eedeea2a64c9bf02839f86106cec337e6168634e6ad312547e76bb1d78673a",
+    "permanent_url": "https://github.com/oceanbase/odc/blob/d517c0f27971642fb0cd7565fd61ab2309875ec3/server/odc-service/src/main/java/com/oceanbase/odc/service/session/OdcStatementCallBack.java"
+  },
+  {
+    "repo": "oceanbase/odc",
+    "commit": "d517c0f27971642fb0cd7565fd61ab2309875ec3",
+    "file": "server/odc-service/src/main/java/com/oceanbase/odc/service/flow/task/DatabaseChangeThread.java",
+    "local_source": "evidence/product-model/sources/oceanbase__odc/server/odc-service/src/main/java/com/oceanbase/odc/service/flow/task/DatabaseChangeThread.java",
+    "artifact": "evaluation/research-round-2/coordinator/source/oceanbase__odc__server__odc-service__src__main__java__com__oceanbase__odc__service__flow__task__DatabaseChangeThread.java",
+    "sha256": "46308c7a8e96476f7bcde25841382e3ce2c50bedd6ee3872df6c04b9b7d09613",
+    "permanent_url": "https://github.com/oceanbase/odc/blob/d517c0f27971642fb0cd7565fd61ab2309875ec3/server/odc-service/src/main/java/com/oceanbase/odc/service/flow/task/DatabaseChangeThread.java"
+  }
+]

@@ -1,0 +1,2462 @@
+[
+  {
+    "sha": "80524fc54601bcc5545575e02f83b23ee6bb0a70",
+    "node_id": "C_kwDOE93Pb9oAKDgwNTI0ZmM1NDYwMWJjYzU1NDU1NzVlMDJmODNiMjNlZTZiYjBhNzA",
+    "commit": {
+      "author": {
+        "name": "boojack",
+        "email": "stevenlgtm@gmail.com",
+        "date": "2026-09-30T06:36:15Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T06:36:15Z"
+      },
+      "message": "fix(plan): keep the reading position when editing a statement (#21547)\n\nClicking Edit replaced the read-only statement editor with a fresh edit\neditor that opened at line 1. Capture the top visible line and the\nvisible cursor by line number, then restore them in the edit editor and\nfocus it, so a reviewer can change the line they were reading.\n\nCo-authored-by: Claude Opus 5.5 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "b832a78949c6946fad234cc3d7f38418fcd5bcab",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/b832a78949c6946fad234cc3d7f38418fcd5bcab"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/80524fc54601bcc5545575e02f83b23ee6bb0a70",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvK3fCRC1aQ7uu5UhlAAAUmYQABLQpF1kCAy5z559p8h6gXNF\nzd6tjqxMJPmTo3BfUw/iSxSPvxKBRVCHCXXD5vH+SVT3ju5X+WVrXMvG30I4UmOj\nqVLL3mYsVv+ZcyeiSAZnrQTxL8Bt0+/L7cjggD8b8IvDV4PX8jbeHmaJfJNKdLOa\nNFJ/IYldB+w4YKHdgYg0wr6IkQ7Lx5vQ910LJG4fEmDfDcMkUfmq90+VItPRTr6F\nkm9Km+dNuyGfjfWN/0NNHTrjHV3uAwfI3NnkqJEcv6i1Xdgrof/eeL31cZIlrChw\nJRBVhRex/HLg3B8gDVCf8MbtNAW2HvxpPoDMDTtuJmxvqfiasU3zTMwTqtZlP5+L\n7aRal5YBmakINPuMw3HB/kXSYXiwanBZ8HtQX+tgfv5lLI4g4NOtm6HyrLfM7p/0\nEEgckd9Ake+JIQizsQmeL2Yc1ATshzY7HTkPSIR7VZqvKhSjSx0Zi5rKSWZKBQRM\nua29sVfLdyDDuoUS1M5XCPYn8qyQDcWPrcBxhvKXC/jwSYvMwKM5kWrp+Mtjtyne\nqvIdAsuwRY9mp0MbsnSkJxbP/HcB8PlZHf6AUEUwAPRK/J0uEbOtsFxQLAB/4ZK2\nfnkDqrMwk80bGzcnH0Pm/2bKZ6D+Gv0abKVTA6FanzVwQzW8GRtAA1to2aL0VjBQ\nxUdmo0+hBWKys4qyVozb\n=zyor\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b832a78949c6946fad234cc3d7f38418fcd5bcab\nparent 65cf75596396365ab225ca978f057d2fb97189f9\nauthor boojack <stevenlgtm@gmail.com> 1790750175 +0800\ncommitter GitHub <noreply@github.com> 1790750175 +0800\n\nfix(plan): keep the reading position when editing a statement (#21547)\n\nClicking Edit replaced the read-only statement editor with a fresh edit\neditor that opened at line 1. Capture the top visible line and the\nvisible cursor by line number, then restore them in the edit editor and\nfocus it, so a reviewer can change the line they were reading.\n\nCo-authored-by: Claude Opus 5.5 <noreply@anthropic.com>",
+        "verified_at": "2026-09-30T06:36:15Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/80524fc54601bcc5545575e02f83b23ee6bb0a70",
+    "html_url": "https://github.com/bytebase/bytebase/commit/80524fc54601bcc5545575e02f83b23ee6bb0a70",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/80524fc54601bcc5545575e02f83b23ee6bb0a70/comments",
+    "author": {
+      "login": "boojack",
+      "id": 24653555,
+      "node_id": "MDQ6VXNlcjI0NjUzNTU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24653555?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/boojack",
+      "html_url": "https://github.com/boojack",
+      "followers_url": "https://api.github.com/users/boojack/followers",
+      "following_url": "https://api.github.com/users/boojack/following{/other_user}",
+      "gists_url": "https://api.github.com/users/boojack/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/boojack/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/boojack/subscriptions",
+      "organizations_url": "https://api.github.com/users/boojack/orgs",
+      "repos_url": "https://api.github.com/users/boojack/repos",
+      "events_url": "https://api.github.com/users/boojack/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/boojack/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "65cf75596396365ab225ca978f057d2fb97189f9",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/65cf75596396365ab225ca978f057d2fb97189f9",
+        "html_url": "https://github.com/bytebase/bytebase/commit/65cf75596396365ab225ca978f057d2fb97189f9"
+      }
+    ]
+  },
+  {
+    "sha": "65cf75596396365ab225ca978f057d2fb97189f9",
+    "node_id": "C_kwDOE93Pb9oAKDY1Y2Y3NTU5NjM5NjM2NWFiMjI1Y2E5NzhmMDU3ZDJmYjk3MTg5Zjk",
+    "commit": {
+      "author": {
+        "name": "boojack",
+        "email": "stevenlgtm@gmail.com",
+        "date": "2026-09-30T06:16:19Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T06:16:19Z"
+      },
+      "message": "fix(plan): improve inline thread navigation and anchor jumps (#21543)",
+      "tree": {
+        "sha": "4e7073e980672024ffb5969787c65e396f5dd23f",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/4e7073e980672024ffb5969787c65e396f5dd23f"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/65cf75596396365ab225ca978f057d2fb97189f9",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvKkzCRC1aQ7uu5UhlAAADCwQAFeJ9fpgdT3RIk7a7ZFlHfN+\nymAnjMRTAccZFWLnoC8XHj5CQGFgcvYIqdp8G1RPLLyF2waRd7OuAAs0dliRVLA2\nSrwNUSz2bCFlPkWIeT5K1iYeBXATILyrEhek3YZgPqotnlSt5xq/7H+t5b2jnk0y\njOWUwjiUXFcDPsgO4eNjoVm6JXyDJoXWWa5V1zD27vIQFOnYf0XBHmLQGY/8XMu1\nB0fC/zMwWrLJYRPP+EwigdyB0XKxeS+1MHQlJLJKW/uouYEZtttNasOW0M0Rniyr\nFYIMNN2Btou1ukdqAfY8S4osea9U/LVuDA5xCVrHoPig3tGutUlWmfYL8ylHAW6K\nPxqxUS5ru0/Qma45t8i+Ph3ROPGyNvNC/2jjsTeUid8UFhXcnESqVQdB5/hkPprq\nu693+aZFUVuwZsyK/GWGM4xpakm/4k631N9SbrzSHGqeoaG8DAhfV3BqxpYKuf/X\nfAV2RB2JSNZYjRtkr8fgwRNnaG68uBOkRs9m2MfpFMmiB0ZhvfTARLYGLAVD3FT3\n03QytN+AG7rgSJFk508VCHOdgneizlENhzAn2eY5yQMEmlfVSgk6J99ZgHaOnPuU\nslmRo4aZLBvf7s6cg8lSjOBWjtn2ahZdFydpqSeEszyhk0e7Zl2fP8vB2xIA8JvB\ngXEkCBhrLXu1Cvhpm+gF\n=+MV1\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4e7073e980672024ffb5969787c65e396f5dd23f\nparent f520a869841d29bb167709670ca43b97ac9112fa\nauthor boojack <stevenlgtm@gmail.com> 1790748979 +0800\ncommitter GitHub <noreply@github.com> 1790748979 +0800\n\nfix(plan): improve inline thread navigation and anchor jumps (#21543)",
+        "verified_at": "2026-09-30T06:16:19Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/65cf75596396365ab225ca978f057d2fb97189f9",
+    "html_url": "https://github.com/bytebase/bytebase/commit/65cf75596396365ab225ca978f057d2fb97189f9",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/65cf75596396365ab225ca978f057d2fb97189f9/comments",
+    "author": {
+      "login": "boojack",
+      "id": 24653555,
+      "node_id": "MDQ6VXNlcjI0NjUzNTU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24653555?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/boojack",
+      "html_url": "https://github.com/boojack",
+      "followers_url": "https://api.github.com/users/boojack/followers",
+      "following_url": "https://api.github.com/users/boojack/following{/other_user}",
+      "gists_url": "https://api.github.com/users/boojack/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/boojack/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/boojack/subscriptions",
+      "organizations_url": "https://api.github.com/users/boojack/orgs",
+      "repos_url": "https://api.github.com/users/boojack/repos",
+      "events_url": "https://api.github.com/users/boojack/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/boojack/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f520a869841d29bb167709670ca43b97ac9112fa",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/f520a869841d29bb167709670ca43b97ac9112fa",
+        "html_url": "https://github.com/bytebase/bytebase/commit/f520a869841d29bb167709670ca43b97ac9112fa"
+      }
+    ]
+  },
+  {
+    "sha": "f520a869841d29bb167709670ca43b97ac9112fa",
+    "node_id": "C_kwDOE93Pb9oAKGY1MjBhODY5ODQxZDI5YmIxNjc3MDk2NzBjYTQzYjk3YWM5MTEyZmE",
+    "commit": {
+      "author": {
+        "name": "boojack",
+        "email": "stevenlgtm@gmail.com",
+        "date": "2026-09-30T06:08:27Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T06:08:27Z"
+      },
+      "message": "fix(plan): show inline comments in large statement previews (#21538)\n\n* fix(plan): show inline comments in large statement previews\n\n* fix(plan): explain large-sheet preview and comparison limits\n\n* fix(plan): align thread tab counts with statement previews\n\n* perf(plan): cache thread preview line boundaries",
+      "tree": {
+        "sha": "0ede9ac9d67cd679d2d29271a9397cc4bf00452d",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/0ede9ac9d67cd679d2d29271a9397cc4bf00452d"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/f520a869841d29bb167709670ca43b97ac9112fa",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvKdbCRC1aQ7uu5UhlAAA79gQAB21zt8TjIMc+NzB2kEmgbq4\n4HCXIxySDAdX3Bhw2lTsWPVleR069mGQliXxeSUhzhZNUb8rVTW+5K3PebaqJBLG\n19iYE84rjGBQWJaB2oTBEsvJZaDCuWR9xIbHFF/eFR/RWjlLzQjL4/12pQjSb7ie\noinRJ48/kmp+9KLfDdt1xBxU+MeolkY42KI01+FC0gVvujfoXT1zi3DKBNWoenvP\nHHA2U+46iK00qCEiT9A63AlDM4GxYAt8GBLYN+2gVdvEwH0trRIQ5Yf/y5ZosKAC\nYlpLD4UzArbLC7mWJfyyC/MsnnUMiOG+5cN7DAe5djZrSndFanAsrjFlPsNVYhSv\nofp2dbdXHMK1/vcBtLh06SXZBqTmySsETEGj5MKPQDAJ2RLa/9l34kJZynK9LQzJ\n2zKmFkias+CxlVQ0Q9uS2cQCTH87qnwZjTWqoq6Hmj/vnwzNRiaMEOdBeKIgXJXV\nHFeyTM0aCP7xtjNPlo0mQTwdt+4wZMlcv3PpAL8F+YORKurU+ylgbQhFUl0DUDbZ\nos5TRcZ9c2oH0bVsYcLxpoE0WF4iykjFnCZv2b2qLi7gjrpHrbrTFRkrxjHODQDk\nPTTfhQ+62wq9gDUUnP+3mYEtPsjJgLiGtqmoIrWyYzLkrkoJp3pqhUCu5RKWdSkD\nkzZbIdLEhYIY1dMxCukU\n=eMF4\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0ede9ac9d67cd679d2d29271a9397cc4bf00452d\nparent a3bd659b796c03c7ca82424884fd39de6c7ef6d0\nauthor boojack <stevenlgtm@gmail.com> 1790748507 +0800\ncommitter GitHub <noreply@github.com> 1790748507 +0800\n\nfix(plan): show inline comments in large statement previews (#21538)\n\n* fix(plan): show inline comments in large statement previews\n\n* fix(plan): explain large-sheet preview and comparison limits\n\n* fix(plan): align thread tab counts with statement previews\n\n* perf(plan): cache thread preview line boundaries",
+        "verified_at": "2026-09-30T06:08:27Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/f520a869841d29bb167709670ca43b97ac9112fa",
+    "html_url": "https://github.com/bytebase/bytebase/commit/f520a869841d29bb167709670ca43b97ac9112fa",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/f520a869841d29bb167709670ca43b97ac9112fa/comments",
+    "author": {
+      "login": "boojack",
+      "id": 24653555,
+      "node_id": "MDQ6VXNlcjI0NjUzNTU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24653555?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/boojack",
+      "html_url": "https://github.com/boojack",
+      "followers_url": "https://api.github.com/users/boojack/followers",
+      "following_url": "https://api.github.com/users/boojack/following{/other_user}",
+      "gists_url": "https://api.github.com/users/boojack/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/boojack/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/boojack/subscriptions",
+      "organizations_url": "https://api.github.com/users/boojack/orgs",
+      "repos_url": "https://api.github.com/users/boojack/repos",
+      "events_url": "https://api.github.com/users/boojack/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/boojack/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a3bd659b796c03c7ca82424884fd39de6c7ef6d0",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/a3bd659b796c03c7ca82424884fd39de6c7ef6d0",
+        "html_url": "https://github.com/bytebase/bytebase/commit/a3bd659b796c03c7ca82424884fd39de6c7ef6d0"
+      }
+    ]
+  },
+  {
+    "sha": "a3bd659b796c03c7ca82424884fd39de6c7ef6d0",
+    "node_id": "C_kwDOE93Pb9oAKGEzYmQ2NTliNzk2YzAzYzdjYTgyNDI0ODg0ZmQzOWRlNmM3ZWY2ZDA",
+    "commit": {
+      "author": {
+        "name": "boojack",
+        "email": "stevenlgtm@gmail.com",
+        "date": "2026-09-30T01:08:43Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-30T01:08:43Z"
+      },
+      "message": "fix(plan): clarify thread hierarchy and activity spacing (#21542)\n\n* fix(plan): clarify thread hierarchy and activity spacing\n\n* fix(plan): let reply markdown inherit thread background",
+      "tree": {
+        "sha": "a1b440d18ae1fcf864353fd6a7a5a0739d3156d8",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/a1b440d18ae1fcf864353fd6a7a5a0739d3156d8"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/a3bd659b796c03c7ca82424884fd39de6c7ef6d0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvGEbCRC1aQ7uu5UhlAAAs1MQAGo9M9RPTZP14w2l4enlsPSe\nGdwQeW0kICe9gympSc7TbHa7na9lfdSfNKnIWS09vv3i5D5fkoWgk7xlbk661xoa\n8Ao+5V7RT9LVVNPYcONGia1Rn8y/S/0QKaae0vF5Dr0WE58+HCdjZkZayi4VXKVr\nf601rtb77ed7PDSTUh4Ng2wmJ4+DhpaquM2vNJSI4uv40A6wnum7C7jMJBmmGa3H\n21HQhk1uQ8Zz/hAVQu2ngiiXDGIpRhgz+xAUgLtZXJRAJgTd4fxtaJIK95z+PnQL\nZqxHvbsKujhXOFrPGc/0b+RuFoZMv+KMA5InhQzd/9vKrq5xrv2RZ1WIZ9ek1fFg\nU9hQCnpW/choNv0tma7pa6bb+sYdp4JbQOxs1j5DvaCiagLS9j5fElzleZkKTcgR\nKTheW/m8pIRYEqkRh9L0jCPYal3rZS/4tSrXtBbdvhIJV5E/xKgD6AumZaQlxC5p\n5grCpFl/KhPhIV1DB6GWwAFeOKsf7FVoVLNuBiBLnnda8YnZNtvaBT4uZm+etL7O\nmHu66a+pgpvNJFlkrFzBouXNEJpnEm2rSg/neF2G3TBxl6DXcImsYPaeGiA+u14F\n87FzjLaGFZRb2jmJRTa91wljysoLSYE/pE8qUIajRc9sjbkGBvF77HUvaTVnJEGW\nh3a99kgSyz28p5EcPHGG\n=NzLM\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a1b440d18ae1fcf864353fd6a7a5a0739d3156d8\nparent dc0138311121493605c0456cb9509a7a3c123df9\nauthor boojack <stevenlgtm@gmail.com> 1790730523 +0800\ncommitter GitHub <noreply@github.com> 1790730523 +0800\n\nfix(plan): clarify thread hierarchy and activity spacing (#21542)\n\n* fix(plan): clarify thread hierarchy and activity spacing\n\n* fix(plan): let reply markdown inherit thread background",
+        "verified_at": "2026-09-30T01:08:44Z"
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/a3bd659b796c03c7ca82424884fd39de6c7ef6d0",
+    "html_url": "https://github.com/bytebase/bytebase/commit/a3bd659b796c03c7ca82424884fd39de6c7ef6d0",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/a3bd659b796c03c7ca82424884fd39de6c7ef6d0/comments",
+    "author": {
+      "login": "boojack",
+      "id": 24653555,
+      "node_id": "MDQ6VXNlcjI0NjUzNTU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24653555?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/boojack",
+      "html_url": "https://github.com/boojack",
+      "followers_url": "https://api.github.com/users/boojack/followers",
+      "following_url": "https://api.github.com/users/boojack/following{/other_user}",
+      "gists_url": "https://api.github.com/users/boojack/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/boojack/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/boojack/subscriptions",
+      "organizations_url": "https://api.github.com/users/boojack/orgs",
+      "repos_url": "https://api.github.com/users/boojack/repos",
+      "events_url": "https://api.github.com/users/boojack/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/boojack/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dc0138311121493605c0456cb9509a7a3c123df9",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/dc0138311121493605c0456cb9509a7a3c123df9",
+        "html_url": "https://github.com/bytebase/bytebase/commit/dc0138311121493605c0456cb9509a7a3c123df9"
+      }
+    ]
+  },
+  {
+    "sha": "dc0138311121493605c0456cb9509a7a3c123df9",
+    "node_id": "C_kwDOE93Pb9oAKGRjMDEzODMxMTEyMTQ5MzYwNWMwNDU2Y2I5NTA5YTdhM2MxMjNkZjk",
+    "commit": {
+      "author": {
+        "name": "h3n4l",
+        "email": "oysterdays@gmail.com",
+        "date": "2026-09-23T03:11:42Z"
+      },
+      "committer": {
+        "name": "h3n4l",
+        "email": "oysterdays@gmail.com",
+        "date": "2026-09-29T08:36:32Z"
+      },
+      "message": "fix(review): keep a review panic inside its run and test the run's bounds\n\nA panic in a review goroutine crashed the process, since the scheduler's\nrecovery covers only the goroutine that called RunOnce. The concurrent\nstep is now reviewUnits, which records a panic as that unit's error, and\nits cap, its collect-all behavior, and the sheet bound are tested on\ntheir own. A database a spec names twice is reviewed once. The failing\nmodel in the lifecycle test is a local stub instead of a real DNS lookup.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "bc6eea12b71ffd8269bd2f84429c480872cb2a98",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/bc6eea12b71ffd8269bd2f84429c480872cb2a98"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/dc0138311121493605c0456cb9509a7a3c123df9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/dc0138311121493605c0456cb9509a7a3c123df9",
+    "html_url": "https://github.com/bytebase/bytebase/commit/dc0138311121493605c0456cb9509a7a3c123df9",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/dc0138311121493605c0456cb9509a7a3c123df9/comments",
+    "author": {
+      "login": "h3n4l",
+      "id": 87714218,
+      "node_id": "MDQ6VXNlcjg3NzE0MjE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87714218?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/h3n4l",
+      "html_url": "https://github.com/h3n4l",
+      "followers_url": "https://api.github.com/users/h3n4l/followers",
+      "following_url": "https://api.github.com/users/h3n4l/following{/other_user}",
+      "gists_url": "https://api.github.com/users/h3n4l/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/h3n4l/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/h3n4l/subscriptions",
+      "organizations_url": "https://api.github.com/users/h3n4l/orgs",
+      "repos_url": "https://api.github.com/users/h3n4l/repos",
+      "events_url": "https://api.github.com/users/h3n4l/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/h3n4l/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "h3n4l",
+      "id": 87714218,
+      "node_id": "MDQ6VXNlcjg3NzE0MjE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87714218?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/h3n4l",
+      "html_url": "https://github.com/h3n4l",
+      "followers_url": "https://api.github.com/users/h3n4l/followers",
+      "following_url": "https://api.github.com/users/h3n4l/following{/other_user}",
+      "gists_url": "https://api.github.com/users/h3n4l/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/h3n4l/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/h3n4l/subscriptions",
+      "organizations_url": "https://api.github.com/users/h3n4l/orgs",
+      "repos_url": "https://api.github.com/users/h3n4l/repos",
+      "events_url": "https://api.github.com/users/h3n4l/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/h3n4l/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0f7b953840fab67516c064e916cef46b86c92a9c",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/0f7b953840fab67516c064e916cef46b86c92a9c",
+        "html_url": "https://github.com/bytebase/bytebase/commit/0f7b953840fab67516c064e916cef46b86c92a9c"
+      }
+    ]
+  },
+  {
+    "sha": "0f7b953840fab67516c064e916cef46b86c92a9c",
+    "node_id": "C_kwDOE93Pb9oAKDBmN2I5NTM4NDBmYWI2NzUxNmMwNjRlOTE2Y2VmNDZiODZjOTJhOWM",
+    "commit": {
+      "author": {
+        "name": "h3n4l",
+        "email": "oysterdays@gmail.com",
+        "date": "2026-09-23T03:02:13Z"
+      },
+      "committer": {
+        "name": "h3n4l",
+        "email": "oysterdays@gmail.com",
+        "date": "2026-09-29T08:36:32Z"
+      },
+      "message": "feat(review): run the AI review and post its findings\n\nAIReviewExecutor loads the workspace and project instructions, reviews\neach spec's sheet once per database with that database's facts in the\nprompt, and posts every finding as an open thread on the sheet, named as\nthe AI reviewer's result and listing the databases it applies to. The\nsame title on the same line across databases is one thread with the\nhighest priority among them. Up to 8 reviews of one run call the model\nat once, a sheet over 256 KiB is reported as not reviewed, and a failed\ndatabase fails the run with the collect-all message the rule review uses.\n\nThe reviewer runs without tools until the read and search tools land:\nthe prompt says so and asks the model to list what it could not check in\nnotes, which the executor logs.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "6a50000e1d88ffdf9a26808c8e3a5cc9f9ead584",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/6a50000e1d88ffdf9a26808c8e3a5cc9f9ead584"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/0f7b953840fab67516c064e916cef46b86c92a9c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/0f7b953840fab67516c064e916cef46b86c92a9c",
+    "html_url": "https://github.com/bytebase/bytebase/commit/0f7b953840fab67516c064e916cef46b86c92a9c",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/0f7b953840fab67516c064e916cef46b86c92a9c/comments",
+    "author": {
+      "login": "h3n4l",
+      "id": 87714218,
+      "node_id": "MDQ6VXNlcjg3NzE0MjE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87714218?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/h3n4l",
+      "html_url": "https://github.com/h3n4l",
+      "followers_url": "https://api.github.com/users/h3n4l/followers",
+      "following_url": "https://api.github.com/users/h3n4l/following{/other_user}",
+      "gists_url": "https://api.github.com/users/h3n4l/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/h3n4l/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/h3n4l/subscriptions",
+      "organizations_url": "https://api.github.com/users/h3n4l/orgs",
+      "repos_url": "https://api.github.com/users/h3n4l/repos",
+      "events_url": "https://api.github.com/users/h3n4l/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/h3n4l/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "h3n4l",
+      "id": 87714218,
+      "node_id": "MDQ6VXNlcjg3NzE0MjE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87714218?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/h3n4l",
+      "html_url": "https://github.com/h3n4l",
+      "followers_url": "https://api.github.com/users/h3n4l/followers",
+      "following_url": "https://api.github.com/users/h3n4l/following{/other_user}",
+      "gists_url": "https://api.github.com/users/h3n4l/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/h3n4l/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/h3n4l/subscriptions",
+      "organizations_url": "https://api.github.com/users/h3n4l/orgs",
+      "repos_url": "https://api.github.com/users/h3n4l/repos",
+      "events_url": "https://api.github.com/users/h3n4l/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/h3n4l/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a52d28a3b52badf6eac81920ea74d1e15b1cb042",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/a52d28a3b52badf6eac81920ea74d1e15b1cb042",
+        "html_url": "https://github.com/bytebase/bytebase/commit/a52d28a3b52badf6eac81920ea74d1e15b1cb042"
+      }
+    ]
+  },
+  {
+    "sha": "a52d28a3b52badf6eac81920ea74d1e15b1cb042",
+    "node_id": "C_kwDOE93Pb9oAKGE1MmQyOGEzYjUyYmFkZjZlYWM4MTkyMGVhNzRkMWUxNWIxY2IwNDI",
+    "commit": {
+      "author": {
+        "name": "Vincent Huang",
+        "email": "Huangvincent00@gmail.com",
+        "date": "2026-09-28T21:02:15Z"
+      },
+      "committer": {
+        "name": "zchpeter",
+        "email": "zchpeter@gmail.com",
+        "date": "2026-09-29T08:15:08Z"
+      },
+      "message": "test(frontend): pin the silent account lists and the workload identity email\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "12b6b14e49eba530fa313a8744c404b2131cf807",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/12b6b14e49eba530fa313a8744c404b2131cf807"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/a52d28a3b52badf6eac81920ea74d1e15b1cb042",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/a52d28a3b52badf6eac81920ea74d1e15b1cb042",
+    "html_url": "https://github.com/bytebase/bytebase/commit/a52d28a3b52badf6eac81920ea74d1e15b1cb042",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/a52d28a3b52badf6eac81920ea74d1e15b1cb042/comments",
+    "author": {
+      "login": "vsai12",
+      "id": 40749774,
+      "node_id": "MDQ6VXNlcjQwNzQ5Nzc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40749774?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/vsai12",
+      "html_url": "https://github.com/vsai12",
+      "followers_url": "https://api.github.com/users/vsai12/followers",
+      "following_url": "https://api.github.com/users/vsai12/following{/other_user}",
+      "gists_url": "https://api.github.com/users/vsai12/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/vsai12/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/vsai12/subscriptions",
+      "organizations_url": "https://api.github.com/users/vsai12/orgs",
+      "repos_url": "https://api.github.com/users/vsai12/repos",
+      "events_url": "https://api.github.com/users/vsai12/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/vsai12/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f6325d17acbdffae8fcf971ed3c6c796313a6927",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/f6325d17acbdffae8fcf971ed3c6c796313a6927",
+        "html_url": "https://github.com/bytebase/bytebase/commit/f6325d17acbdffae8fcf971ed3c6c796313a6927"
+      }
+    ]
+  },
+  {
+    "sha": "f6325d17acbdffae8fcf971ed3c6c796313a6927",
+    "node_id": "C_kwDOE93Pb9oAKGY2MzI1ZDE3YWNiZGZmYWU4ZmNmOTcxZWQzYzZjNzk2MzEzYTY5Mjc",
+    "commit": {
+      "author": {
+        "name": "Vincent Huang",
+        "email": "Huangvincent00@gmail.com",
+        "date": "2026-09-28T20:43:24Z"
+      },
+      "committer": {
+        "name": "zchpeter",
+        "email": "zchpeter@gmail.com",
+        "date": "2026-09-29T08:15:08Z"
+      },
+      "message": "fix(frontend): let the server gate actor lists and offer typed accounts\n\n- List service accounts and workload identities with a silent context\n  instead of copying their list permissions on the client. A denied list\n  is dropped instead of redirecting to /403, and the server's check is\n  the only gate.\n- Offer a typed service account or workload identity email as its\n  account even when no list returns it. From the workspace page the lists\n  cannot reach another project's accounts, or deleted ones.\n- Read the actor value through one helper in both the search and the\n  filter, so a lowercased prefix committed with Enter still filters.\n- Give the column-resize handle no z-index, and move its tests beside it.\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "f92d5a0736446c7a105859a94d62058dfc3d6dde",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/f92d5a0736446c7a105859a94d62058dfc3d6dde"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/f6325d17acbdffae8fcf971ed3c6c796313a6927",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/f6325d17acbdffae8fcf971ed3c6c796313a6927",
+    "html_url": "https://github.com/bytebase/bytebase/commit/f6325d17acbdffae8fcf971ed3c6c796313a6927",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/f6325d17acbdffae8fcf971ed3c6c796313a6927/comments",
+    "author": {
+      "login": "vsai12",
+      "id": 40749774,
+      "node_id": "MDQ6VXNlcjQwNzQ5Nzc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40749774?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/vsai12",
+      "html_url": "https://github.com/vsai12",
+      "followers_url": "https://api.github.com/users/vsai12/followers",
+      "following_url": "https://api.github.com/users/vsai12/following{/other_user}",
+      "gists_url": "https://api.github.com/users/vsai12/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/vsai12/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/vsai12/subscriptions",
+      "organizations_url": "https://api.github.com/users/vsai12/orgs",
+      "repos_url": "https://api.github.com/users/vsai12/repos",
+      "events_url": "https://api.github.com/users/vsai12/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/vsai12/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0df5eef91125f2ec3ea868ae03651196f3141539",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/0df5eef91125f2ec3ea868ae03651196f3141539",
+        "html_url": "https://github.com/bytebase/bytebase/commit/0df5eef91125f2ec3ea868ae03651196f3141539"
+      }
+    ]
+  },
+  {
+    "sha": "0df5eef91125f2ec3ea868ae03651196f3141539",
+    "node_id": "C_kwDOE93Pb9oAKDBkZjVlZWY5MTEyNWYyZWMzZWE4NjhhZTAzNjUxMTk2ZjMxNDE1Mzk",
+    "commit": {
+      "author": {
+        "name": "Vincent Huang",
+        "email": "Huangvincent00@gmail.com",
+        "date": "2026-09-28T19:24:43Z"
+      },
+      "committer": {
+        "name": "zchpeter",
+        "email": "zchpeter@gmail.com",
+        "date": "2026-09-29T08:15:08Z"
+      },
+      "message": "fix(frontend): find every actor kind in the audit log actor filter\n\nThe Actor filter searched service accounts and workload identities only\nbehind a case-sensitive \"serviceAccounts/\" or \"workloadIdentities/\"\nprefix, but AdvancedSearch lowercases the keyword before it searches,\nso every search fell back to users. A typed \"users/<email>\" also missed,\nbecause the account lists match on email, not on the resource name.\n\nSearch users, service accounts and workload identities together on one\nkeyword, as AccountMultiSelect does, after stripping any resource prefix\nregardless of case. Drop the prefix instructions from the hint.\n\nLower the column-resize handle from z-10 to z-1. It sits inside its own\nheader cell since #20936, so z-10 only made it paint over inline popups\nsuch as the search menu.\n\nFixes BYT-10291.\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>",
+      "tree": {
+        "sha": "0429ae2b15df5a9c56e9c5bf422e8e8b9d8a4692",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/0429ae2b15df5a9c56e9c5bf422e8e8b9d8a4692"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/0df5eef91125f2ec3ea868ae03651196f3141539",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/0df5eef91125f2ec3ea868ae03651196f3141539",
+    "html_url": "https://github.com/bytebase/bytebase/commit/0df5eef91125f2ec3ea868ae03651196f3141539",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/0df5eef91125f2ec3ea868ae03651196f3141539/comments",
+    "author": {
+      "login": "vsai12",
+      "id": 40749774,
+      "node_id": "MDQ6VXNlcjQwNzQ5Nzc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40749774?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/vsai12",
+      "html_url": "https://github.com/vsai12",
+      "followers_url": "https://api.github.com/users/vsai12/followers",
+      "following_url": "https://api.github.com/users/vsai12/following{/other_user}",
+      "gists_url": "https://api.github.com/users/vsai12/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/vsai12/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/vsai12/subscriptions",
+      "organizations_url": "https://api.github.com/users/vsai12/orgs",
+      "repos_url": "https://api.github.com/users/vsai12/repos",
+      "events_url": "https://api.github.com/users/vsai12/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/vsai12/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ef0892fa9b2365971dd59f62ff1d0e67084d0fd2",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/ef0892fa9b2365971dd59f62ff1d0e67084d0fd2",
+        "html_url": "https://github.com/bytebase/bytebase/commit/ef0892fa9b2365971dd59f62ff1d0e67084d0fd2"
+      }
+    ]
+  },
+  {
+    "sha": "ef0892fa9b2365971dd59f62ff1d0e67084d0fd2",
+    "node_id": "C_kwDOE93Pb9oAKGVmMDg5MmZhOWIyMzY1OTcxZGQ1OWY2MmZmMWQwZTY3MDg0ZDBmZDI",
+    "commit": {
+      "author": {
+        "name": "zchpeter",
+        "email": "pz@bytebase.com",
+        "date": "2026-09-28T10:07:20Z"
+      },
+      "committer": {
+        "name": "zchpeter",
+        "email": "zchpeter@gmail.com",
+        "date": "2026-09-29T03:56:15Z"
+      },
+      "message": "test(e2e): prove the task-run log folds a lock-timeout retry\n\nTwo plan-detail tests run a statement that times out on a lock another\nsession holds, once and then twice. They check that the log folds the\nfailed attempts into one closed \"Previous attempts\" row above the final\ngreen sections, and that the failed attempt's error entry is still behind\nit.\n\nA sequence in the fixture schema counts executions, so exactly N attempts\nfail and the next one waits for the lock, whatever the timing. The lock is\nreleased once the umbrella reads \"retrying\".\n\n- psql: spawnPsql holds a session open by writing its SQL to stdin;\n  killing the process ends the session and rolls it back.\n- plan-helpers: setPermissiveGates and waitForRollout, now shared with the\n  lifecycle spec.\n- api-client: updateProjectSettings passes executionRetryPolicy through.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "33120499dd929170323b8d806cfff8fd54e3f0fe",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/33120499dd929170323b8d806cfff8fd54e3f0fe"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/ef0892fa9b2365971dd59f62ff1d0e67084d0fd2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/ef0892fa9b2365971dd59f62ff1d0e67084d0fd2",
+    "html_url": "https://github.com/bytebase/bytebase/commit/ef0892fa9b2365971dd59f62ff1d0e67084d0fd2",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/ef0892fa9b2365971dd59f62ff1d0e67084d0fd2/comments",
+    "author": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4e6c2b11ad5a7ff2b60fe0387067d0e1d5767cb1",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/4e6c2b11ad5a7ff2b60fe0387067d0e1d5767cb1",
+        "html_url": "https://github.com/bytebase/bytebase/commit/4e6c2b11ad5a7ff2b60fe0387067d0e1d5767cb1"
+      }
+    ]
+  },
+  {
+    "sha": "4e6c2b11ad5a7ff2b60fe0387067d0e1d5767cb1",
+    "node_id": "C_kwDOE93Pb9oAKDRlNmMyYjExYWQ1YTdmZjJiNjBmZTAzODcwNjdkMGUxZDU3NjdjYjE",
+    "commit": {
+      "author": {
+        "name": "zchpeter",
+        "email": "pz@bytebase.com",
+        "date": "2026-09-28T10:07:20Z"
+      },
+      "committer": {
+        "name": "zchpeter",
+        "email": "zchpeter@gmail.com",
+        "date": "2026-09-29T03:56:15Z"
+      },
+      "message": "feat(frontend): fold retried attempts into one row in the task-run log\n\nWhen the PostgreSQL driver retries a statement after a lock timeout, the\nlog showed each failed attempt as red sections beside the final one, so a\nrun that passed read like one that failed. The superseded attempts now\nfold into one gray \"Previous attempts\" row above the final attempt's\nsections; only the final attempt's failure is state.\n\n- model: a retry scope is a run of attempt material (transaction control,\n  command execute, retry info), and each retry marker closes one attempt.\n  Row ids stay positional. The failure mark is picked once per context,\n  before the cut, because an attempt on its own has lost the marker that\n  supersedes its failure.\n- hook: expansion is derived rather than stored. A failed section is open\n  by default and the umbrella and attempt rows are closed. The reset runs\n  in render when the marker count changes, so no unrelated section opens\n  as the list regroups.\n- viewer: the row list and the sole section remount on that same key,\n  which resets load-more with the regrouping. Statement folds are keyed\n  by entry and seeded on the run alone, so they survive the marker.\n- LogRows: section rows and the history rows on the shared Collapsible.\n  The \"retrying\" note shows only while the run is running.\n- The unused \"Retry\" section label and retry-attempt detail are removed,\n  and the hook's tests move beside the hook.\n\nDesign: docs/design/task-run-log-previous-attempts.md (BYT-9993).\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "0bb90d6af6a94b31f8b6f1550a76329e8180dffc",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/0bb90d6af6a94b31f8b6f1550a76329e8180dffc"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/4e6c2b11ad5a7ff2b60fe0387067d0e1d5767cb1",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/4e6c2b11ad5a7ff2b60fe0387067d0e1d5767cb1",
+    "html_url": "https://github.com/bytebase/bytebase/commit/4e6c2b11ad5a7ff2b60fe0387067d0e1d5767cb1",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/4e6c2b11ad5a7ff2b60fe0387067d0e1d5767cb1/comments",
+    "author": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a0ca88c5c769c9f693bcbad2afb7058e91efda15",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/a0ca88c5c769c9f693bcbad2afb7058e91efda15",
+        "html_url": "https://github.com/bytebase/bytebase/commit/a0ca88c5c769c9f693bcbad2afb7058e91efda15"
+      }
+    ]
+  },
+  {
+    "sha": "a0ca88c5c769c9f693bcbad2afb7058e91efda15",
+    "node_id": "C_kwDOE93Pb9oAKGEwY2E4OGM1Yzc2OWM5ZjY5M2JjYmFkMmFmYjcwNThlOTFlZmRhMTU",
+    "commit": {
+      "author": {
+        "name": "zchpeter",
+        "email": "pz@bytebase.com",
+        "date": "2026-09-28T10:07:20Z"
+      },
+      "committer": {
+        "name": "zchpeter",
+        "email": "zchpeter@gmail.com",
+        "date": "2026-09-29T03:56:15Z"
+      },
+      "message": "docs(design): record what implementing previous attempts settled\n\nImplementing the design settled four points it had left open.\n\n- Every failed section opens by default, a superseded one included. The\n  umbrella and attempt rows stay closed, so superseded material stays out\n  of view until the reader opens its attempt.\n- The retrying note reads the run status. A run whose server stopped\n  mid-attempt fails with its last command unanswered, and only the status\n  tells that apart from an attempt in flight.\n- The derivation assumes a complete log. The driver only warns when a log\n  write fails, and a lost write reads as it did before this change.\n- The marker-count reset also covers each section's load-more state, by\n  remounting the row list on the same key.\n\nIt also adds SCHEMA_DUMP to the entry inventory and points the\nimplementation outline at the files that shipped.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "f0932e7682599899a377283804a9e916af450dfb",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/f0932e7682599899a377283804a9e916af450dfb"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/a0ca88c5c769c9f693bcbad2afb7058e91efda15",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/a0ca88c5c769c9f693bcbad2afb7058e91efda15",
+    "html_url": "https://github.com/bytebase/bytebase/commit/a0ca88c5c769c9f693bcbad2afb7058e91efda15",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/a0ca88c5c769c9f693bcbad2afb7058e91efda15/comments",
+    "author": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9aa2f412446b8cdeb40ae67400cc475faf5fe72d",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/9aa2f412446b8cdeb40ae67400cc475faf5fe72d",
+        "html_url": "https://github.com/bytebase/bytebase/commit/9aa2f412446b8cdeb40ae67400cc475faf5fe72d"
+      }
+    ]
+  },
+  {
+    "sha": "9aa2f412446b8cdeb40ae67400cc475faf5fe72d",
+    "node_id": "C_kwDOE93Pb9oAKDlhYTJmNDEyNDQ2YjhjZGViNDBhZTY3NDAwY2M0NzVmYWY1ZmU3MmQ",
+    "commit": {
+      "author": {
+        "name": "zchpeter",
+        "email": "pz@bytebase.com",
+        "date": "2026-09-24T09:34:47Z"
+      },
+      "committer": {
+        "name": "zchpeter",
+        "email": "zchpeter@gmail.com",
+        "date": "2026-09-28T10:01:53Z"
+      },
+      "message": "test(e2e): fill the log with SELECTs so the journey leaves no schema behind\n\nCodex round 2 (P2): the nine successes were `ALTER TABLE employee ADD\nCOLUMN \u2026`, which left a column each on the shared sample table with no\nteardown. They exist only to fill the section's box with rows, so make them\n`SELECT '<marker>';` \u2014 nothing to create, nothing to drop, and each row keeps\na marker of its own for the copy assertion. The file's older tests keep\ntheir DDL: there the schema change is what is under test.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "7dfac299c450e21278c72281b131d6a0f0420389",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/7dfac299c450e21278c72281b131d6a0f0420389"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/9aa2f412446b8cdeb40ae67400cc475faf5fe72d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/9aa2f412446b8cdeb40ae67400cc475faf5fe72d",
+    "html_url": "https://github.com/bytebase/bytebase/commit/9aa2f412446b8cdeb40ae67400cc475faf5fe72d",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/9aa2f412446b8cdeb40ae67400cc475faf5fe72d/comments",
+    "author": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "58629cbba6237591dc98f9c1bceec2fc351b44c9",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/58629cbba6237591dc98f9c1bceec2fc351b44c9",
+        "html_url": "https://github.com/bytebase/bytebase/commit/58629cbba6237591dc98f9c1bceec2fc351b44c9"
+      }
+    ]
+  },
+  {
+    "sha": "58629cbba6237591dc98f9c1bceec2fc351b44c9",
+    "node_id": "C_kwDOE93Pb9oAKDU4NjI5Y2JiYTYyMzc1OTFkYzk4ZjljMWJjZWVjMmZjMzUxYjQ0Yzk",
+    "commit": {
+      "author": {
+        "name": "zchpeter",
+        "email": "pz@bytebase.com",
+        "date": "2026-09-24T08:51:19Z"
+      },
+      "committer": {
+        "name": "zchpeter",
+        "email": "zchpeter@gmail.com",
+        "date": "2026-09-28T10:01:53Z"
+      },
+      "message": "fix(frontend): let the fold control keep the shared xs padding\n\nCodex round 1 (P1): `px-1` on the fold button overrode the shared `xs`\nButton's inline padding, making it a one-off 22px control in feature code.\nThe override was copied from `CopyButton`, which may own its contract as a\nshared primitive; feature code may not. Drop it and widen the reserved slot\nfrom 24px to 28px so the control fits at its own width. The suggested\nshared icon-only variant is a design-system change with cross-surface reach;\nremoving the override resolves the finding without it.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "21951043e1cec5e5bf1b79aed44a49f07d7a9835",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/21951043e1cec5e5bf1b79aed44a49f07d7a9835"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/58629cbba6237591dc98f9c1bceec2fc351b44c9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/58629cbba6237591dc98f9c1bceec2fc351b44c9",
+    "html_url": "https://github.com/bytebase/bytebase/commit/58629cbba6237591dc98f9c1bceec2fc351b44c9",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/58629cbba6237591dc98f9c1bceec2fc351b44c9/comments",
+    "author": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c653a91a6f16e08e8c1f1a4c56b145e0ad95be03",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/c653a91a6f16e08e8c1f1a4c56b145e0ad95be03",
+        "html_url": "https://github.com/bytebase/bytebase/commit/c653a91a6f16e08e8c1f1a4c56b145e0ad95be03"
+      }
+    ]
+  },
+  {
+    "sha": "c653a91a6f16e08e8c1f1a4c56b145e0ad95be03",
+    "node_id": "C_kwDOE93Pb9oAKGM2NTNhOTFhNmYxNmUwOGU4YzFmMWE0YzU2YjE0NWUwYWQ5NWJlMDM",
+    "commit": {
+      "author": {
+        "name": "zchpeter",
+        "email": "pz@bytebase.com",
+        "date": "2026-09-24T08:29:38Z"
+      },
+      "committer": {
+        "name": "zchpeter",
+        "email": "zchpeter@gmail.com",
+        "date": "2026-09-28T10:01:53Z"
+      },
+      "message": "feat(frontend): unfold and copy a statement in the task-run log\n\nImplements docs/design/task-run-log-statement-unfold.md (#21428), with four\ndecisions revised during implementation review and recorded in the doc:\n\n- D4: nothing unfolds by default. The failure that explains the outcome is\n  marked \u2014 rendered past the 50-row window and scrolled into view \u2014 but the\n  reader opens it.\n- D7: every line with a fold control toggles on click, the statement and the\n  error included; only the unfolded block does not.\n- D8: the section's box never changes height because a row unfolds. A block\n  scrolls inside it, and its copy button is sticky to the box's top.\n- D16: unfolding reveals what it opened by scrolling the section the least\n  that shows the row; folding puts the line back where it was clicked from.\n\nThe model returns the line plus both payloads (verbatim statement and error)\ninstead of an 80-character cut; row keys are the entry's identity, assigned\nonce over the run so the reader's folds survive regrouping; the columns before\nthe statement are sized per section so the chevrons line up.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "90c98e6d14ac2c2140dba87db79df1766ed954cc",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/90c98e6d14ac2c2140dba87db79df1766ed954cc"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/c653a91a6f16e08e8c1f1a4c56b145e0ad95be03",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/c653a91a6f16e08e8c1f1a4c56b145e0ad95be03",
+    "html_url": "https://github.com/bytebase/bytebase/commit/c653a91a6f16e08e8c1f1a4c56b145e0ad95be03",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/c653a91a6f16e08e8c1f1a4c56b145e0ad95be03/comments",
+    "author": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e063a25b500eca41ced73911ceeeb9cc5058eb1b",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/e063a25b500eca41ced73911ceeeb9cc5058eb1b",
+        "html_url": "https://github.com/bytebase/bytebase/commit/e063a25b500eca41ced73911ceeeb9cc5058eb1b"
+      }
+    ]
+  },
+  {
+    "sha": "e063a25b500eca41ced73911ceeeb9cc5058eb1b",
+    "node_id": "C_kwDOE93Pb9oAKGUwNjNhMjViNTAwZWNhNDFjZWQ3MzkxMWNlZWViOWNjNTA1OGViMWI",
+    "commit": {
+      "author": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-28T06:59:45Z"
+      },
+      "committer": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-28T08:12:33Z"
+      },
+      "message": "feat(review): switch every standard rule on for a new workspace\n\nCreateWorkspace inserts the workspace's REVIEW_RULE policy row, every\nrule on and enforced, beside its IAM policy. The workspace SQL Review\npage updates that row and gates on bb.policies.update alone; without\nthe row its first save went through CreatePolicy, which a role with\nupdate but not create could not make.\n\nExisting workspaces keep the GetPolicy stand-in and the store's\nevery-rule default; no migration.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "b811a5600236458f719a14925682813ccf7bc67c",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/b811a5600236458f719a14925682813ccf7bc67c"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/e063a25b500eca41ced73911ceeeb9cc5058eb1b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/e063a25b500eca41ced73911ceeeb9cc5058eb1b",
+    "html_url": "https://github.com/bytebase/bytebase/commit/e063a25b500eca41ced73911ceeeb9cc5058eb1b",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/e063a25b500eca41ced73911ceeeb9cc5058eb1b/comments",
+    "author": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2a8302b7af1adb15f705014d508650a49812de20",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/2a8302b7af1adb15f705014d508650a49812de20",
+        "html_url": "https://github.com/bytebase/bytebase/commit/2a8302b7af1adb15f705014d508650a49812de20"
+      }
+    ]
+  },
+  {
+    "sha": "2a8302b7af1adb15f705014d508650a49812de20",
+    "node_id": "C_kwDOE93Pb9oAKDJhODMwMmI3YWYxYWRiMTVmNzA1MDE0ZDUwODY1MGE0OTgxMmRlMjA",
+    "commit": {
+      "author": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-28T03:38:31Z"
+      },
+      "committer": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-28T04:13:15Z"
+      },
+      "message": "fix(review): gate the workspace rules on update alone\n\nEvery workspace gets a review rule policy row by default, so a\nworkspace save is always an update. The page no longer lists policies\nto learn whether the row exists, nor requires create as well when it\ncannot list, and the store drops the list call added for that.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "d07d1c51fe98e5ed4ee1e3c523356b97e14bd4c9",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/d07d1c51fe98e5ed4ee1e3c523356b97e14bd4c9"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/2a8302b7af1adb15f705014d508650a49812de20",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/2a8302b7af1adb15f705014d508650a49812de20",
+    "html_url": "https://github.com/bytebase/bytebase/commit/2a8302b7af1adb15f705014d508650a49812de20",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/2a8302b7af1adb15f705014d508650a49812de20/comments",
+    "author": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f9f15c9553c4304634335376c9d3f1c6b943107f",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/f9f15c9553c4304634335376c9d3f1c6b943107f",
+        "html_url": "https://github.com/bytebase/bytebase/commit/f9f15c9553c4304634335376c9d3f1c6b943107f"
+      }
+    ]
+  },
+  {
+    "sha": "f9f15c9553c4304634335376c9d3f1c6b943107f",
+    "node_id": "C_kwDOE93Pb9oAKGY5ZjE1Yzk1NTNjNDMwNDYzNDMzNTM3NmM5ZDNmMWM2Yjk0MzEwN2Y",
+    "commit": {
+      "author": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-28T03:24:06Z"
+      },
+      "committer": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-28T04:13:15Z"
+      },
+      "message": "fix(review): keep inherited rules out of the set to restore\n\nThe read-only view shows rules set elsewhere. Following the workspace\nin between switching customization off and on passed its rules through\nthe switches, which then restored them instead of the project's own\nwhen SYNTAX went back on.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "d79199fc71b6528c17bfeecca540755249c12002",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/d79199fc71b6528c17bfeecca540755249c12002"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/f9f15c9553c4304634335376c9d3f1c6b943107f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/f9f15c9553c4304634335376c9d3f1c6b943107f",
+    "html_url": "https://github.com/bytebase/bytebase/commit/f9f15c9553c4304634335376c9d3f1c6b943107f",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/f9f15c9553c4304634335376c9d3f1c6b943107f/comments",
+    "author": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ebbd4d0d18a35a1bf10ad974337a3b0d3fb30096",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/ebbd4d0d18a35a1bf10ad974337a3b0d3fb30096",
+        "html_url": "https://github.com/bytebase/bytebase/commit/ebbd4d0d18a35a1bf10ad974337a3b0d3fb30096"
+      }
+    ]
+  },
+  {
+    "sha": "ebbd4d0d18a35a1bf10ad974337a3b0d3fb30096",
+    "node_id": "C_kwDOE93Pb9oAKGViYmQ0ZDBkMThhMzVhMWJmMTBhZDk3NDMzN2EzYjBkM2ZiMzAwOTY",
+    "commit": {
+      "author": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-28T03:15:45Z"
+      },
+      "committer": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-28T04:13:15Z"
+      },
+      "message": "fix(review): let a rule run complete while review is off\n\nRunReview refused a rule run when the effective policy was empty, which\nleft the findings of earlier runs open forever once SYNTAX was switched\noff: CompleteReviewRun resolves them only when a later run reaches DONE.\nThe run is now created as usual; the executor returns no findings for\nan empty policy, so the run completes and clears the earlier ones.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "1fbe1a727bee2b4184388d4cb2433dbbd774195a",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/1fbe1a727bee2b4184388d4cb2433dbbd774195a"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/ebbd4d0d18a35a1bf10ad974337a3b0d3fb30096",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/ebbd4d0d18a35a1bf10ad974337a3b0d3fb30096",
+    "html_url": "https://github.com/bytebase/bytebase/commit/ebbd4d0d18a35a1bf10ad974337a3b0d3fb30096",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/ebbd4d0d18a35a1bf10ad974337a3b0d3fb30096/comments",
+    "author": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "25a18c864e756604c11122a8ebfbc08dcd4e0c35",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/25a18c864e756604c11122a8ebfbc08dcd4e0c35",
+        "html_url": "https://github.com/bytebase/bytebase/commit/25a18c864e756604c11122a8ebfbc08dcd4e0c35"
+      }
+    ]
+  },
+  {
+    "sha": "25a18c864e756604c11122a8ebfbc08dcd4e0c35",
+    "node_id": "C_kwDOE93Pb9oAKDI1YTE4Yzg2NGU3NTY2MDRjMTExMjJhOGViZmJjMDhkY2Q0ZTBjMzU",
+    "commit": {
+      "author": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-28T03:14:33Z"
+      },
+      "committer": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-28T04:13:15Z"
+      },
+      "message": "fix(review): show the workspace rules link on the policy read alone\n\nThe V2 workspace SQL Review route needs only bb.policies.get, so the\nlink to it from the project page must not also require the v1\nbb.reviewConfigs.list.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "63b5627e89124dd2007032fc38c732e860dfc0b6",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/63b5627e89124dd2007032fc38c732e860dfc0b6"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/25a18c864e756604c11122a8ebfbc08dcd4e0c35",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/25a18c864e756604c11122a8ebfbc08dcd4e0c35",
+    "html_url": "https://github.com/bytebase/bytebase/commit/25a18c864e756604c11122a8ebfbc08dcd4e0c35",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/25a18c864e756604c11122a8ebfbc08dcd4e0c35/comments",
+    "author": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "041972463d6c5fb5582d0ece8894832074c062a0",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/041972463d6c5fb5582d0ece8894832074c062a0",
+        "html_url": "https://github.com/bytebase/bytebase/commit/041972463d6c5fb5582d0ece8894832074c062a0"
+      }
+    ]
+  },
+  {
+    "sha": "041972463d6c5fb5582d0ece8894832074c062a0",
+    "node_id": "C_kwDOE93Pb9oAKDA0MTk3MjQ2M2Q2YzVmYjU1ODJkMGVjZTg4OTQ4MzIwNzRjMDYyYTA",
+    "commit": {
+      "author": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-24T10:25:12Z"
+      },
+      "committer": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-28T04:13:15Z"
+      },
+      "message": "fix(review): tell an absent policy from a failed refresh\n\n- The policy store gains fetchPolicyByParentAndType, which resolves to\n  null for a resource without a policy and to undefined when the read\n  failed. The pages decide \"failed\" from that result, since a failed\n  refresh leaves the earlier policy in the cache and the cache alone\n  cannot tell the two apart.\n- The rule switches are keyed by project or workspace, so the rules\n  remembered while SYNTAX is off cannot carry over to another resource.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "61b0462fe2eb5337297a02f8532e537ace94ebe6",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/61b0462fe2eb5337297a02f8532e537ace94ebe6"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/041972463d6c5fb5582d0ece8894832074c062a0",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/041972463d6c5fb5582d0ece8894832074c062a0",
+    "html_url": "https://github.com/bytebase/bytebase/commit/041972463d6c5fb5582d0ece8894832074c062a0",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/041972463d6c5fb5582d0ece8894832074c062a0/comments",
+    "author": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "71046e4b484cd62e96a0d0a8d9ee06670c2e021b",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/71046e4b484cd62e96a0d0a8d9ee06670c2e021b",
+        "html_url": "https://github.com/bytebase/bytebase/commit/71046e4b484cd62e96a0d0a8d9ee06670c2e021b"
+      }
+    ]
+  },
+  {
+    "sha": "71046e4b484cd62e96a0d0a8d9ee06670c2e021b",
+    "node_id": "C_kwDOE93Pb9oAKDcxMDQ2ZTRiNDg0Y2Q2MmU5NmEwZDBhOGQ5ZWUwNjY3MGMyZTAyMWI",
+    "commit": {
+      "author": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-24T10:12:08Z"
+      },
+      "committer": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-28T04:13:15Z"
+      },
+      "message": "fix(review): read a policy the way the backend applies it\n\n- A stored rule list without SYNTAX runs nothing, so it reads as empty\n  on both pages instead of showing its rules as on.\n- The project page reads the workspace policy only when this user holds\n  bb.policies.get at workspace scope. Otherwise it loads from the\n  project policy alone and says the inherited rules are not visible,\n  instead of failing the whole page.\n- Moving to another project, or workspace, drops an unsaved draft so it\n  cannot be saved under the new name.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "7119cbcf3f9cd3a7ec6e324c8eef896c421a58bc",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/7119cbcf3f9cd3a7ec6e324c8eef896c421a58bc"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/71046e4b484cd62e96a0d0a8d9ee06670c2e021b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/71046e4b484cd62e96a0d0a8d9ee06670c2e021b",
+    "html_url": "https://github.com/bytebase/bytebase/commit/71046e4b484cd62e96a0d0a8d9ee06670c2e021b",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/71046e4b484cd62e96a0d0a8d9ee06670c2e021b/comments",
+    "author": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fe10b238eb08c9024ff7102e072aee17f21edd33",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/fe10b238eb08c9024ff7102e072aee17f21edd33",
+        "html_url": "https://github.com/bytebase/bytebase/commit/fe10b238eb08c9024ff7102e072aee17f21edd33"
+      }
+    ]
+  },
+  {
+    "sha": "fe10b238eb08c9024ff7102e072aee17f21edd33",
+    "node_id": "C_kwDOE93Pb9oAKGZlMTBiMjM4ZWIwOGM5MDI0ZmY3MTAyZTA3MmFlZTE3ZjIxZWRkMzM",
+    "commit": {
+      "author": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-24T09:59:30Z"
+      },
+      "committer": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-28T04:13:15Z"
+      },
+      "message": "fix(review): tell a missing policy row from a failed or unenforced read\n\nThe standard rule pages read a policy through GetPolicy, which stands\nin for a missing workspace row, returns an unenforced row as-is, and\nresolves to nothing when the transport fails. Each of those looked like\nsomething else:\n\n- A workspace policy switched off through the API rendered no switches,\n  and a project following it showed no inherited rules. The backend\n  applies every rule in that case, so the pages now do too.\n- A failed read of either policy marked the project page loaded and\n  showed \"follows the workspace\", where a save would have replaced the\n  real policy. Both pages now show an error with a retry instead.\n- An unenforced project row made the permission gate assume a create,\n  while the save updates the row. The gate now follows row existence.\n- The workspace gate required both create and update. It now lists the\n  workspace's policies, including unenforced ones, to learn whether the\n  row exists, and requires only the permission for that save; without\n  the list permission it keeps requiring both.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "35ab6ac12c124e79a70e5f55108932255abc2757",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/35ab6ac12c124e79a70e5f55108932255abc2757"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/fe10b238eb08c9024ff7102e072aee17f21edd33",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/fe10b238eb08c9024ff7102e072aee17f21edd33",
+    "html_url": "https://github.com/bytebase/bytebase/commit/fe10b238eb08c9024ff7102e072aee17f21edd33",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/fe10b238eb08c9024ff7102e072aee17f21edd33/comments",
+    "author": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fb46a6463400744d64567eb11715687488c920da",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/fb46a6463400744d64567eb11715687488c920da",
+        "html_url": "https://github.com/bytebase/bytebase/commit/fb46a6463400744d64567eb11715687488c920da"
+      }
+    ]
+  },
+  {
+    "sha": "fb46a6463400744d64567eb11715687488c920da",
+    "node_id": "C_kwDOE93Pb9oAKGZiNDZhNjQ2MzQwMDc0NGQ2NDU2N2ViMTE3MTU2ODc0ODhjOTIwZGE",
+    "commit": {
+      "author": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-24T09:14:36Z"
+      },
+      "committer": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-28T04:13:15Z"
+      },
+      "message": "fix(review): gate each rule save on the RPC it makes\n\nFollow-ups from review:\n- An unenforced REVIEW_RULE policy reads as absent, as the backend reads\n  it, and a save re-enables it by putting enforce in the update mask.\n- The workspace's first save creates its policy row, so editing needs\n  bb.policies.create as well as bb.policies.update.\n- On the project page, switching customization on is a create, editing\n  the project's own rules an update, and switching it off a delete; each\n  control follows its own permission, and undoing an unsaved switch\n  needs none.\n- The V2 SQL Review route requires bb.policies.get only.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "cf5c2f134bf06a04faea30889f7faa29c622bcb4",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/cf5c2f134bf06a04faea30889f7faa29c622bcb4"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/fb46a6463400744d64567eb11715687488c920da",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/fb46a6463400744d64567eb11715687488c920da",
+    "html_url": "https://github.com/bytebase/bytebase/commit/fb46a6463400744d64567eb11715687488c920da",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/fb46a6463400744d64567eb11715687488c920da/comments",
+    "author": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c5e3c534a030b9b77e46c54cc0b78644847463fe",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/c5e3c534a030b9b77e46c54cc0b78644847463fe",
+        "html_url": "https://github.com/bytebase/bytebase/commit/c5e3c534a030b9b77e46c54cc0b78644847463fe"
+      }
+    ]
+  },
+  {
+    "sha": "c5e3c534a030b9b77e46c54cc0b78644847463fe",
+    "node_id": "C_kwDOE93Pb9oAKGM1ZTNjNTM0YTAzMGI5Yjc3ZTQ2YzU0Y2MwYjc4NjQ0ODQ3NDYzZmU",
+    "commit": {
+      "author": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-24T08:08:50Z"
+      },
+      "committer": {
+        "name": "rebelice",
+        "email": "yangrebelice@gmail.com",
+        "date": "2026-09-28T04:13:15Z"
+      },
+      "message": "feat(review): switch the standard review rules on and off\n\nSQL Review V2 keeps eleven standard rules behind one REVIEW_RULE policy,\nand nothing in the product could switch them yet.\n\nBackend:\n- GetPolicy on a project without its own REVIEW_RULE policy is NOT_FOUND\n  instead of the every-rule stand-in, so a client can tell \"follows the\n  workspace\" from \"customized to every rule\". The workspace keeps the\n  stand-in.\n- SYNTAX gates the rest: GetEffectiveReviewRulePolicy returns an empty\n  list when the nearest policy lacks it, RunReview refuses a RULE run\n  with nothing on, and RuleExecutor returns no findings for an empty\n  policy instead of asking omni, which evaluates SYNTAX regardless.\n\nFrontend, in dev builds only behind sqlReviewV2Enabled():\n- CI/CD > SQL Review shows the workspace rules as one centered card with\n  a status line naming how many rules run, or that Syntax is off.\n- A new project page under CI/CD > SQL Review follows the workspace by\n  default and keeps the project's own list once \"Customize for this\n  project\" is on; switching it back off deletes the project policy.\n- Switching Syntax off saves an empty list; switching it on restores the\n  session's previous set, else every rule.\n- The v1 review policy surfaces (workspace create/detail routes, the\n  project settings attach and \"Enforce SQL review\" toggle, the\n  environment attach) are hidden.\n- The policy store gains the REVIEW_RULE update mask it was missing.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "b2838aa57b18fe78aa2b0a7fea102c9c16bb9494",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/b2838aa57b18fe78aa2b0a7fea102c9c16bb9494"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/c5e3c534a030b9b77e46c54cc0b78644847463fe",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/c5e3c534a030b9b77e46c54cc0b78644847463fe",
+    "html_url": "https://github.com/bytebase/bytebase/commit/c5e3c534a030b9b77e46c54cc0b78644847463fe",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/c5e3c534a030b9b77e46c54cc0b78644847463fe/comments",
+    "author": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rebelice",
+      "id": 20775801,
+      "node_id": "MDQ6VXNlcjIwNzc1ODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20775801?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rebelice",
+      "html_url": "https://github.com/rebelice",
+      "followers_url": "https://api.github.com/users/rebelice/followers",
+      "following_url": "https://api.github.com/users/rebelice/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rebelice/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rebelice/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rebelice/subscriptions",
+      "organizations_url": "https://api.github.com/users/rebelice/orgs",
+      "repos_url": "https://api.github.com/users/rebelice/repos",
+      "events_url": "https://api.github.com/users/rebelice/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rebelice/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c2d2e7ed327f4b4a3675ce877b7afb3fca40f9d7",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/c2d2e7ed327f4b4a3675ce877b7afb3fca40f9d7",
+        "html_url": "https://github.com/bytebase/bytebase/commit/c2d2e7ed327f4b4a3675ce877b7afb3fca40f9d7"
+      }
+    ]
+  },
+  {
+    "sha": "c2d2e7ed327f4b4a3675ce877b7afb3fca40f9d7",
+    "node_id": "C_kwDOE93Pb9oAKGMyZDJlN2VkMzI3ZjRiNGEzNjc1Y2U4NzdiN2FmYjNmY2E0MGY5ZDc",
+    "commit": {
+      "author": {
+        "name": "zchpeter",
+        "email": "pz@bytebase.com",
+        "date": "2026-09-24T16:24:36Z"
+      },
+      "committer": {
+        "name": "zchpeter",
+        "email": "zchpeter@gmail.com",
+        "date": "2026-09-28T02:57:45Z"
+      },
+      "message": "fix(frontend): keep the consent page's vertical padding on the spacing scale\n\nThe page took SplashLayout's py-12 (48px), which is outside the UX\ncontract's spacing vocabulary, whose largest step for a major page region\nis 32px, and it spent 32px more of a short viewport above and below a\ncard that already scrolls there. Use py-8, the value the consent page\nhad before.\n\nFound by Codex review.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "4c0866a767e9c1e01e99b2b5170f7d766b9db557",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/4c0866a767e9c1e01e99b2b5170f7d766b9db557"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/c2d2e7ed327f4b4a3675ce877b7afb3fca40f9d7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/c2d2e7ed327f4b4a3675ce877b7afb3fca40f9d7",
+    "html_url": "https://github.com/bytebase/bytebase/commit/c2d2e7ed327f4b4a3675ce877b7afb3fca40f9d7",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/c2d2e7ed327f4b4a3675ce877b7afb3fca40f9d7/comments",
+    "author": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "aa99241b7e05906ab63bc8b22fabf54df9fb3028",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/aa99241b7e05906ab63bc8b22fabf54df9fb3028",
+        "html_url": "https://github.com/bytebase/bytebase/commit/aa99241b7e05906ab63bc8b22fabf54df9fb3028"
+      }
+    ]
+  },
+  {
+    "sha": "aa99241b7e05906ab63bc8b22fabf54df9fb3028",
+    "node_id": "C_kwDOE93Pb9oAKGFhOTkyNDFiN2UwNTkwNmFiNjNiYzhiMjJmYWJmNTRkZjlmYjMwMjg",
+    "commit": {
+      "author": {
+        "name": "zchpeter",
+        "email": "pz@bytebase.com",
+        "date": "2026-09-24T15:29:08Z"
+      },
+      "committer": {
+        "name": "zchpeter",
+        "email": "zchpeter@gmail.com",
+        "date": "2026-09-28T02:57:45Z"
+      },
+      "message": "fix(frontend): give the MCP consent card one width, centered on the viewport\n\nThe consent page sized itself as a fraction of SplashLayout's column\n(md:w-3/5 lg:w-1/2), and that column is already half the viewport from\nlg with 80-96px of padding, so on desktop screens the card came out\n176-384px wide and every capability row wrapped (BYT-10284).\n\nConsent is an interstitial, not a sign-in page: render it outside\nSplashLayout, centered on the whole viewport, with a 672px card that\nnarrows only on screens that cannot hold it, and balance the header\ntext. SplashLayout now states the width contract for the pages that\nstay in it.\n\nReplace the unit test that pinned the fraction classes with an e2e spec\nthat measures the card at seven viewport widths.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "dc1da979020101382630c7ca5c0298623410c6b4",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/dc1da979020101382630c7ca5c0298623410c6b4"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/aa99241b7e05906ab63bc8b22fabf54df9fb3028",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/aa99241b7e05906ab63bc8b22fabf54df9fb3028",
+    "html_url": "https://github.com/bytebase/bytebase/commit/aa99241b7e05906ab63bc8b22fabf54df9fb3028",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/aa99241b7e05906ab63bc8b22fabf54df9fb3028/comments",
+    "author": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "80341df8627cefc5e6d1adae1eb50bf1e52d20e6",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/80341df8627cefc5e6d1adae1eb50bf1e52d20e6",
+        "html_url": "https://github.com/bytebase/bytebase/commit/80341df8627cefc5e6d1adae1eb50bf1e52d20e6"
+      }
+    ]
+  },
+  {
+    "sha": "80341df8627cefc5e6d1adae1eb50bf1e52d20e6",
+    "node_id": "C_kwDOE93Pb9oAKDgwMzQxZGY4NjI3Y2VmYzVlNmQxYWRhZTFlYjUwYmYxZTUyZDIwZTY",
+    "commit": {
+      "author": {
+        "name": "zchpeter",
+        "email": "pz@bytebase.com",
+        "date": "2026-09-24T07:44:41Z"
+      },
+      "committer": {
+        "name": "zchpeter",
+        "email": "zchpeter@gmail.com",
+        "date": "2026-09-24T08:03:06Z"
+      },
+      "message": "fix(frontend): adapt to main's tooltip provider, semantic colors and MCP tables\n\nRebasing onto main brings #21522, which mounts one tooltip provider at the\napp root, and the surfaces main reworked alongside it.\n\n- `ProjectMaskingExemptionPage` and `IssueDetailCommentList` keep this\n  branch's shared-clock reading and `HumanizeTs` rows, and take main's\n  `text-warning` / `text-info` in place of raw palette colors.\n- `CommentThreadCard`'s spec passes `issue`, the prop main renamed from\n  `issueName`.\n- main's MCP capability tables are keyed `read` and `write`, which the\n  time-reading plugin reported: it rejected any object literal containing a\n  `read`. A reading carries both members, so the literal check now keys on\n  `nextChangeAt`, and shorthand `{ read }` -- a reading being unpacked or\n  passed on -- keeps an alternative of its own. Probed each spelling:\n  member access, optional chaining, a quoted key, both destructurings and a\n  nested literal all still report; a table of flags no longer does.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "0bacc907a3b2072db0963324aba17ae809f7f774",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/0bacc907a3b2072db0963324aba17ae809f7f774"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/80341df8627cefc5e6d1adae1eb50bf1e52d20e6",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/80341df8627cefc5e6d1adae1eb50bf1e52d20e6",
+    "html_url": "https://github.com/bytebase/bytebase/commit/80341df8627cefc5e6d1adae1eb50bf1e52d20e6",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/80341df8627cefc5e6d1adae1eb50bf1e52d20e6/comments",
+    "author": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dfb9381a9578463969a4dfad14393b42893000fc",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/dfb9381a9578463969a4dfad14393b42893000fc",
+        "html_url": "https://github.com/bytebase/bytebase/commit/dfb9381a9578463969a4dfad14393b42893000fc"
+      }
+    ]
+  },
+  {
+    "sha": "dfb9381a9578463969a4dfad14393b42893000fc",
+    "node_id": "C_kwDOE93Pb9oAKGRmYjkzODFhOTU3ODQ2Mzk2OWE0ZGZhZDE0MzkzYjQyODkzMDAwZmM",
+    "commit": {
+      "author": {
+        "name": "zchpeter",
+        "email": "pz@bytebase.com",
+        "date": "2026-09-22T05:03:58Z"
+      },
+      "committer": {
+        "name": "zchpeter",
+        "email": "zchpeter@gmail.com",
+        "date": "2026-09-24T08:03:06Z"
+      },
+      "message": "fix(frontend): measure a scroller's borders exactly, not from rounded widths\n\n`fillableWidth` took the borders and scrollbar as `offsetWidth` less\n`clientWidth`, which is exact only when they come to whole pixels. Chrome\nsnaps a 1px border to device pixels -- 0.8px at Windows 125%, 0.67px at\n150% -- and the two rounded widths then differ by 1 or 2 for a true 1.6 or\n1.33, so the access grants still scrolled on about a fifth of widths at\nexactly the scales the previous commit was for.\n\nBorders and padding now come from the computed style, which reports the\nsnapped values exactly. A scrollbar has no exact measure: what the two\nrounded widths leave over the borders is a scrollbar only when it is more\nthan a pixel of rounding, and is then given one pixel more. Padding is\nsubtracted too, so the helper holds for a padded scroller as well.\n\nSwept in a browser over 100 widths from 800 to 805px, with scale emulated\nby CSS zoom on a DPR-2 display (1px border snapped to 0.8, 0.667 and\n0.909px): the table scrolled 0 times at every scale, against 21-22 for the\nprevious measurement and 24-36 for `clientWidth`; with a 12px vertical\nscrollbar and no border, 0 at every scale. The spec gains the snapped\nborder, a rounding remainder that looks like a scrollbar, and padding;\ntaking the borders from the rounded widths, ignoring padding, dropping the\nscrollbar's pixel, reading any remainder as a scrollbar, or rounding\ninstead of flooring each fail it.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "72ef540f3f9615eae49db463ea12daade50854e2",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/72ef540f3f9615eae49db463ea12daade50854e2"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/dfb9381a9578463969a4dfad14393b42893000fc",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/dfb9381a9578463969a4dfad14393b42893000fc",
+    "html_url": "https://github.com/bytebase/bytebase/commit/dfb9381a9578463969a4dfad14393b42893000fc",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/dfb9381a9578463969a4dfad14393b42893000fc/comments",
+    "author": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c98339a922fbf99984458d5a4f5d80b3ba5948c0",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/c98339a922fbf99984458d5a4f5d80b3ba5948c0",
+        "html_url": "https://github.com/bytebase/bytebase/commit/c98339a922fbf99984458d5a4f5d80b3ba5948c0"
+      }
+    ]
+  },
+  {
+    "sha": "c98339a922fbf99984458d5a4f5d80b3ba5948c0",
+    "node_id": "C_kwDOE93Pb9oAKGM5ODMzOWE5MjJmYmY5OTk4NDQ1OGQ1YTRmNWQ4MGIzYmE1OTQ4YzA",
+    "commit": {
+      "author": {
+        "name": "zchpeter",
+        "email": "pz@bytebase.com",
+        "date": "2026-09-22T04:48:59Z"
+      },
+      "committer": {
+        "name": "zchpeter",
+        "email": "zchpeter@gmail.com",
+        "date": "2026-09-24T08:03:06Z"
+      },
+      "message": "fix(frontend): fit a table to the floor of its scroller's exact width\n\n`clientWidth` rounds to a whole pixel, and a table half a pixel wider than\nits scroller still scrolls. Every table fitted by `distributeColumnWidths`\n-- the access grants and the schema editor's two -- was sized to it, and\nsince this branch makes the widths add up to exactly the measured width,\nany fractional width that rounds up now scrolls: browser zoom, or Windows\nat 125% or 150%, where a scrollbar that appears takes 12px of height.\n\n`fillableWidth` is the one measurement all three use: the scroller's exact\nwidth less its borders and any scrollbar, floored. Checked in a browser at\nfive fractional and whole widths, with and without a 12px vertical\nscrollbar: `clientWidth` overran the exact inner width in eight of ten, and\n`fillableWidth` fitted all ten, equal to `clientWidth` whenever the width is\nwhole. A spec pins the three cases; reading `clientWidth` again, rounding\ninstead of flooring, or ignoring the border each fail it.\n\nThe kept-space assertion in the HumanizeTs spec now checks only a piece with\na space at its edge, and accepts the class on an ancestor, so it fails when\nthe space would be dropped and not when an identical rendering moves the\nclass. The `truncate` comment names the one fallback it left out.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "f06a3675ecc0fba573e31acc5513c1853dc307f6",
+        "url": "https://api.github.com/repos/bytebase/bytebase/git/trees/f06a3675ecc0fba573e31acc5513c1853dc307f6"
+      },
+      "url": "https://api.github.com/repos/bytebase/bytebase/git/commits/c98339a922fbf99984458d5a4f5d80b3ba5948c0",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/bytebase/bytebase/commits/c98339a922fbf99984458d5a4f5d80b3ba5948c0",
+    "html_url": "https://github.com/bytebase/bytebase/commit/c98339a922fbf99984458d5a4f5d80b3ba5948c0",
+    "comments_url": "https://api.github.com/repos/bytebase/bytebase/commits/c98339a922fbf99984458d5a4f5d80b3ba5948c0/comments",
+    "author": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "zchpeter",
+      "id": 5019167,
+      "node_id": "MDQ6VXNlcjUwMTkxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5019167?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zchpeter",
+      "html_url": "https://github.com/zchpeter",
+      "followers_url": "https://api.github.com/users/zchpeter/followers",
+      "following_url": "https://api.github.com/users/zchpeter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zchpeter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zchpeter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zchpeter/subscriptions",
+      "organizations_url": "https://api.github.com/users/zchpeter/orgs",
+      "repos_url": "https://api.github.com/users/zchpeter/repos",
+      "events_url": "https://api.github.com/users/zchpeter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zchpeter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3ea289759c00d7e21eeae8b2198f4622a23bc9d3",
+        "url": "https://api.github.com/repos/bytebase/bytebase/commits/3ea289759c00d7e21eeae8b2198f4622a23bc9d3",
+        "html_url": "https://github.com/bytebase/bytebase/commit/3ea289759c00d7e21eeae8b2198f4622a23bc9d3"
+      }
+    ]
+  }
+]

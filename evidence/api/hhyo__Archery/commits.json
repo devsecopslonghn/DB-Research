@@ -1,0 +1,2462 @@
+[
+  {
+    "sha": "ccc7134f48d0e261f9e3ffa0d445dcec48adb790",
+    "node_id": "C_kwDOCPspSNoAKGNjYzcxMzRmNDhkMGUyNjFmOWUzZmZhMGQ0NDVkY2VjNDhhZGI3OTA",
+    "commit": {
+      "author": {
+        "name": "Shaw",
+        "email": "115983836+Shikanor@users.noreply.github.com",
+        "date": "2026-09-04T08:46:35Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-04T08:46:35Z"
+      },
+      "message": "\u67e5\u8be2\u7ed3\u679c\u652f\u6301\u590d\u5236\u4e3a Markdown (#3257)\n\n* [feat] \u67e5\u8be2\u7ed3\u679c\u65b0\u589e\u590d\u5236\u4e3aMarkdown\u6309\u94ae\n\n* [fix] \u590d\u5236Markdown\u6309\u94ae\u6309\u4e0b\u8f7d\u6743\u9650\u95e8\u63a7\u5e76\u8bb0\u5f55\u5ba1\u8ba1 \u4fee\u590d\u6807\u9898\u8f6c\u4e49\u4e0eSafari\u624b\u52bf\u517c\u5bb9",
+      "tree": {
+        "sha": "a8fedbc0aa21e065b32366e94fbc9bfda5662157",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/a8fedbc0aa21e065b32366e94fbc9bfda5662157"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/ccc7134f48d0e261f9e3ffa0d445dcec48adb790",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqmoVrCRC1aQ7uu5UhlAAA14kQADJ6OsFmtJRvaVyNYgpQooDO\nLR8SDzt1oe80a51kIyblHTJ3Fy039QmBYPvud1rzkT5yN8km382ZMhqEezm5+HJ2\nJDAVci1CN8h2dJQ+9vqplzpOIJBhq9nggGdZGD4NPXWK1qeexMcNKg4JBhnL4RuN\nhR+tPj5+QqlIKUEZkopc0tS0yClmAd1u6Ox10VA98PqiS7vEB+aukaBOJCEf1F1b\nIe7QWVA5gnXw6TxUK3pnMozs9O+GlPmQbHwlJ+iALo0wziHn24RpB93Tk85bYQMQ\nm9bJhPUGUz1mBY+i3XqmGtUEOP+WgyCeKejTS/PI/SVa6D+Ly9+wZtrpDn9fgZVX\n89bCP+Wl7QD60YIu/z8y7NtXLQgncxKhwa5c6pieg3ns6HePyrbEjdExoP37q3+r\n4wDhKGWq5VAMooA0p4USKAPyJKpxrZIPLKCZGoz8lAr+8rG3yQQl0FiHh3krb8in\npRbVdf+j0WLRWhkx6VFs7INbsJBarFVAm9JiEIKnWHIbH1s9+Rlz6Wy9k0JwoQGJ\nmxXK05biYx286NBPMeCguquWuMZmywWnD4+O0grQPO7jwRamVdO/Zlj0w5E1TiVS\nSttcFB1i5D0xj4r/C558pfEZBpQPjGGw4OuFEaxDidDgCyiB7wMO7deUKyfltkTH\nAc8yRPIlxXw48QX82e15\n=noLE\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a8fedbc0aa21e065b32366e94fbc9bfda5662157\nparent 7faf9a80b05b6a152cbb1cccd03a1e1ddb89601c\nauthor Shaw <115983836+Shikanor@users.noreply.github.com> 1788511595 +0800\ncommitter GitHub <noreply@github.com> 1788511595 +0800\n\n\u67e5\u8be2\u7ed3\u679c\u652f\u6301\u590d\u5236\u4e3a Markdown (#3257)\n\n* [feat] \u67e5\u8be2\u7ed3\u679c\u65b0\u589e\u590d\u5236\u4e3aMarkdown\u6309\u94ae\n\n* [fix] \u590d\u5236Markdown\u6309\u94ae\u6309\u4e0b\u8f7d\u6743\u9650\u95e8\u63a7\u5e76\u8bb0\u5f55\u5ba1\u8ba1 \u4fee\u590d\u6807\u9898\u8f6c\u4e49\u4e0eSafari\u624b\u52bf\u517c\u5bb9",
+        "verified_at": "2026-09-04T08:46:37Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/ccc7134f48d0e261f9e3ffa0d445dcec48adb790",
+    "html_url": "https://github.com/hhyo/Archery/commit/ccc7134f48d0e261f9e3ffa0d445dcec48adb790",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/ccc7134f48d0e261f9e3ffa0d445dcec48adb790/comments",
+    "author": {
+      "login": "Shikanor",
+      "id": 115983836,
+      "node_id": "U_kgDOBunF3A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/115983836?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Shikanor",
+      "html_url": "https://github.com/Shikanor",
+      "followers_url": "https://api.github.com/users/Shikanor/followers",
+      "following_url": "https://api.github.com/users/Shikanor/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Shikanor/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Shikanor/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Shikanor/subscriptions",
+      "organizations_url": "https://api.github.com/users/Shikanor/orgs",
+      "repos_url": "https://api.github.com/users/Shikanor/repos",
+      "events_url": "https://api.github.com/users/Shikanor/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Shikanor/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7faf9a80b05b6a152cbb1cccd03a1e1ddb89601c",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/7faf9a80b05b6a152cbb1cccd03a1e1ddb89601c",
+        "html_url": "https://github.com/hhyo/Archery/commit/7faf9a80b05b6a152cbb1cccd03a1e1ddb89601c"
+      }
+    ]
+  },
+  {
+    "sha": "7faf9a80b05b6a152cbb1cccd03a1e1ddb89601c",
+    "node_id": "C_kwDOCPspSNoAKDdmYWY5YTgwYjA1YjZhMTUyY2JiMWNjY2QwM2ExZTFkZGI4OTYwMWM",
+    "commit": {
+      "author": {
+        "name": "Leo Q",
+        "email": "LeoQuote@users.noreply.github.com",
+        "date": "2026-09-03T08:04:14Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-03T08:04:14Z"
+      },
+      "message": "\u65b0\u589e instance \u7684\u516c\u5f00\u63a5\u53e3, \u8865\u9f50\u5173\u4e8e workflow \u4e00\u4e9b\u64cd\u4f5c\u63a5\u53e3\u7684 schema (#3256)\n\n* \u65b0\u589e instance \u7684\u516c\u5f00\u63a5\u53e3, \u83b7\u53d6\u4e00\u4e9b\u4e0d\u654f\u611f\u7684\u5b9e\u4f8b\u4fe1\u606f, \u8865\u9f50\u5173\u4e8e workflow \u4e00\u4e9b\u64cd\u4f5c\u63a5\u53e3\u7684 schema, \u65b9\u4fbf cli\n\n* black\n\n* \u9650\u5236 instance \u7684 update delete \u63a5\u53e3, \u4ec5\u4f9b\u7ba1\u7406\u5458\u4f7f\u7528\n\n* feat: \u66f4\u65b0\u5de5\u4f5c\u6d41 API \u5408\u540c\uff0c\u8865\u5145\u65e5\u671f\u65f6\u95f4\u5b57\u6bb5\u7684 RFC3339 \u683c\u5f0f\u63cf\u8ff0\uff0c\u4f18\u5316\u9519\u8bef\u4fe1\u606f\u8fd4\u56de\n\n* delete unused tests",
+      "tree": {
+        "sha": "9d663e12586265d971d3296dc809b90860c512c5",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/9d663e12586265d971d3296dc809b90860c512c5"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/7faf9a80b05b6a152cbb1cccd03a1e1ddb89601c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqmSn+CRC1aQ7uu5UhlAAAHpcQAJ11SRaL3eoTfxtBCcB3t+sO\nUCp9YgyrL/8GqzOMMyl67CQZX1B4tSrpWuqSqUGm8UWNNGA6W+Bm2y8Zl/x5qzLI\n6b9nPVT5VOutMqI2bsRRXMHvLqnIGy6vcMWVqZBkqJWJY4ihCK/WX1LFodgkqkUI\nAV+LHUDz9xoX9oCsI7HHECHg1/ycc0PCfI+SmnkRudJF4yT1fUbUzOjWdZkTkM+C\nhrh/sxN1zHcqppHtZxwCfghfwL5/40H/kPziHD8WnYRoqcSGTNab1eofoSrTdufe\nPV8sBGMoPC+4qhGAJgGXYFegov1mv1ZLQZ8H3tcphnm0E2PxBfOfgZkvodFS3/D4\nS2IT0SUqES/o+D9nZj/H3kokXPwiLRwZe2NQvoDAXYNsAHTwO4LmhHvakF0Mue/Y\nQ3piLC8YA+oHplldubPuwTyFSjLKLmuSBfdTfBOTJkcjKlrAqLsnKAbiQe2//DNm\nl9qy7s6d+OyCJDMeF0KL8nhuzU+GvZpqDIPvdzbG8jGk0rrVRHyOtEOvMkwEKU1J\nbCd0HZBFfCc1GkxDlJQTxhVXQOxmXzaUDnC6c1Jjc68gy3qtOxcH3vi8+yixiTBT\nNRCgQGrTgs4pu2KQ/9yjRVO76HkBSs36HXMjcnOL50gODNsAUOdjv7rfBdlx8UZa\nZUun8CsTiIVTgLx2QrTv\n=lXS0\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 9d663e12586265d971d3296dc809b90860c512c5\nparent a1b45e7a118bf92f3cbe4f05101f13e248db134b\nauthor Leo Q <LeoQuote@users.noreply.github.com> 1788422654 +0800\ncommitter GitHub <noreply@github.com> 1788422654 +0800\n\n\u65b0\u589e instance \u7684\u516c\u5f00\u63a5\u53e3, \u8865\u9f50\u5173\u4e8e workflow \u4e00\u4e9b\u64cd\u4f5c\u63a5\u53e3\u7684 schema (#3256)\n\n* \u65b0\u589e instance \u7684\u516c\u5f00\u63a5\u53e3, \u83b7\u53d6\u4e00\u4e9b\u4e0d\u654f\u611f\u7684\u5b9e\u4f8b\u4fe1\u606f, \u8865\u9f50\u5173\u4e8e workflow \u4e00\u4e9b\u64cd\u4f5c\u63a5\u53e3\u7684 schema, \u65b9\u4fbf cli\n\n* black\n\n* \u9650\u5236 instance \u7684 update delete \u63a5\u53e3, \u4ec5\u4f9b\u7ba1\u7406\u5458\u4f7f\u7528\n\n* feat: \u66f4\u65b0\u5de5\u4f5c\u6d41 API \u5408\u540c\uff0c\u8865\u5145\u65e5\u671f\u65f6\u95f4\u5b57\u6bb5\u7684 RFC3339 \u683c\u5f0f\u63cf\u8ff0\uff0c\u4f18\u5316\u9519\u8bef\u4fe1\u606f\u8fd4\u56de\n\n* delete unused tests",
+        "verified_at": "2026-09-03T08:04:14Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/7faf9a80b05b6a152cbb1cccd03a1e1ddb89601c",
+    "html_url": "https://github.com/hhyo/Archery/commit/7faf9a80b05b6a152cbb1cccd03a1e1ddb89601c",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/7faf9a80b05b6a152cbb1cccd03a1e1ddb89601c/comments",
+    "author": {
+      "login": "LeoQuote",
+      "id": 4143818,
+      "node_id": "MDQ6VXNlcjQxNDM4MTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4143818?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LeoQuote",
+      "html_url": "https://github.com/LeoQuote",
+      "followers_url": "https://api.github.com/users/LeoQuote/followers",
+      "following_url": "https://api.github.com/users/LeoQuote/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LeoQuote/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LeoQuote/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LeoQuote/subscriptions",
+      "organizations_url": "https://api.github.com/users/LeoQuote/orgs",
+      "repos_url": "https://api.github.com/users/LeoQuote/repos",
+      "events_url": "https://api.github.com/users/LeoQuote/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LeoQuote/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a1b45e7a118bf92f3cbe4f05101f13e248db134b",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/a1b45e7a118bf92f3cbe4f05101f13e248db134b",
+        "html_url": "https://github.com/hhyo/Archery/commit/a1b45e7a118bf92f3cbe4f05101f13e248db134b"
+      }
+    ]
+  },
+  {
+    "sha": "a1b45e7a118bf92f3cbe4f05101f13e248db134b",
+    "node_id": "C_kwDOCPspSNoAKGExYjQ1ZTdhMTE4YmY5MmYzY2JlNGYwNTEwMWYxM2UyNDhkYjEzNGI",
+    "commit": {
+      "author": {
+        "name": "Leo Q",
+        "email": "LeoQuote@users.noreply.github.com",
+        "date": "2026-09-02T07:51:05Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-02T07:51:05Z"
+      },
+      "message": "feat: \u7edf\u4e00\u5404\u79cd\u7533\u8bf7\u5de5\u5355\u7684 url \u6a21\u5f0f, \u7edf\u4e00\u4e3a /workflow/x (#3255)\n\n* feat: Implement unified audit work order view\n\n- Introduced a new unified detail view for SQL Workflow, query privilege, archive, and offline download work orders accessible via `/workflow/<audit_id>/`.\n- Updated rendering logic to directly display the appropriate detail templates based on the resolved audit ID, eliminating unnecessary redirects to legacy detail pages.\n- Maintained compatibility with existing legacy detail URLs while transitioning list navigation to the new audit ID-based links.\n- Enhanced test coverage to validate the new rendering behavior and ensure proper handling of permissions, state, and error scenarios.\n- Documented the feature specifications, data models, and implementation plans to guide future development and testing efforts.\n\n* \u65b0\u589e fallback \u517c\u5bb9\u6ca1\u6709\u5ba1\u6279\u6d41\u8bb0\u5f55\u7684\u8001\u5de5\u5355\n\n* fix test",
+      "tree": {
+        "sha": "8cf731886c4e5f0b8e341cd980e9d731f100da27",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/8cf731886c4e5f0b8e341cd980e9d731f100da27"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/a1b45e7a118bf92f3cbe4f05101f13e248db134b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJql9VpCRC1aQ7uu5UhlAAAMfcQACXiz9JVXPk+ZwnvZkfo1cWN\nskFs4bpnELPHYtWbUKpW4R+o/P48lYh9xwgVbF1XLDq4fRY7KQfCqEzskNMiyExU\nLnkuWXEIMSe+CHfFuCpuYiISEmns9nqUJoVhVJumVyLLS+lA9e9lztOXWMVvwjsY\na2gBIKZ/vLMzoyizubh0ihMRB5OV4o9lDr3P0GYH7HvwJ496+d6aYTa3ek0Ad73K\nfBZomZX7o7Dj6Lk0HVz9V58Nreo3mvU3Ug7AeYjYSjb9Z8ge2KlK9Snn4lwiZGOv\nd0SHz7FKkDY98LXsgJtWY0Lp7H79MlA5a5qahqydd22MR1rpMpVhci7QvVwpR4nr\nI+F2jXji42r08pipaCazcJ2QY2+8Y6QVSttKEb08ZC8jL+EfBspw/tA2keISns7h\nTPMjQhqt3Hv7Kv3arVkA0obnMPmMbjk4Gf7L0GYrfdM59as2rY8fUCVcNGdGdYFP\n6DgQvit5QkFnd+R8UbBHb8fuffc5IsFehMq7I2nEd9J9K6jcLYaskEjeWtpuRZz5\nBQDtsoXBIrJ9svATYB93mC8yDQW+quDmkntiycLGrdrrG2MufOKIp/YpAZe/DUc7\nwIztL9RNFpporaW+bGd1mMb9dtbQv9qXDlxfHARO/ZveIQ2a1Hc0YeMv8OP2Pxm+\naueRE1h1UE+OLGLJRv+n\n=o5yX\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 8cf731886c4e5f0b8e341cd980e9d731f100da27\nparent 7f2090836a2c17c7fd3d2d287eab154a975b01c8\nauthor Leo Q <LeoQuote@users.noreply.github.com> 1788335465 +0800\ncommitter GitHub <noreply@github.com> 1788335465 +0800\n\nfeat: \u7edf\u4e00\u5404\u79cd\u7533\u8bf7\u5de5\u5355\u7684 url \u6a21\u5f0f, \u7edf\u4e00\u4e3a /workflow/x (#3255)\n\n* feat: Implement unified audit work order view\n\n- Introduced a new unified detail view for SQL Workflow, query privilege, archive, and offline download work orders accessible via `/workflow/<audit_id>/`.\n- Updated rendering logic to directly display the appropriate detail templates based on the resolved audit ID, eliminating unnecessary redirects to legacy detail pages.\n- Maintained compatibility with existing legacy detail URLs while transitioning list navigation to the new audit ID-based links.\n- Enhanced test coverage to validate the new rendering behavior and ensure proper handling of permissions, state, and error scenarios.\n- Documented the feature specifications, data models, and implementation plans to guide future development and testing efforts.\n\n* \u65b0\u589e fallback \u517c\u5bb9\u6ca1\u6709\u5ba1\u6279\u6d41\u8bb0\u5f55\u7684\u8001\u5de5\u5355\n\n* fix test",
+        "verified_at": "2026-09-02T07:51:06Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/a1b45e7a118bf92f3cbe4f05101f13e248db134b",
+    "html_url": "https://github.com/hhyo/Archery/commit/a1b45e7a118bf92f3cbe4f05101f13e248db134b",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/a1b45e7a118bf92f3cbe4f05101f13e248db134b/comments",
+    "author": {
+      "login": "LeoQuote",
+      "id": 4143818,
+      "node_id": "MDQ6VXNlcjQxNDM4MTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4143818?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LeoQuote",
+      "html_url": "https://github.com/LeoQuote",
+      "followers_url": "https://api.github.com/users/LeoQuote/followers",
+      "following_url": "https://api.github.com/users/LeoQuote/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LeoQuote/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LeoQuote/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LeoQuote/subscriptions",
+      "organizations_url": "https://api.github.com/users/LeoQuote/orgs",
+      "repos_url": "https://api.github.com/users/LeoQuote/repos",
+      "events_url": "https://api.github.com/users/LeoQuote/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LeoQuote/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7f2090836a2c17c7fd3d2d287eab154a975b01c8",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/7f2090836a2c17c7fd3d2d287eab154a975b01c8",
+        "html_url": "https://github.com/hhyo/Archery/commit/7f2090836a2c17c7fd3d2d287eab154a975b01c8"
+      }
+    ]
+  },
+  {
+    "sha": "7f2090836a2c17c7fd3d2d287eab154a975b01c8",
+    "node_id": "C_kwDOCPspSNoAKDdmMjA5MDgzNmEyYzE3YzdmZDNkMmQyODdlYWIxNTRhOTc1YjAxYzg",
+    "commit": {
+      "author": {
+        "name": "Leo Q",
+        "email": "LeoQuote@users.noreply.github.com",
+        "date": "2026-09-01T09:56:46Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-01T09:56:46Z"
+      },
+      "message": "feat: Migrate Workflow Operations to REST API(\u901a\u8fc7, \u6267\u884c, osc \u72b6\u6001\u67e5\u8be2, \u62d2\u7edd, \u4e2d\u6b62) (#3253)\n\n* feat: Migrate Workflow Operations to REST API\n\n- Introduced a dedicated module for workflow operations under `sql_api.api_workflow_operations`.\n- Defined RESTful endpoints for managing workflows, including approval, execution, scheduling, and termination.\n- Implemented serializers to retain legacy field names for compatibility.\n- Added permission checks and validation for each operation to ensure proper access control.\n- Created unit and integration tests to validate the functionality of the new API endpoints and ensure they meet existing requirements.\n- Removed legacy function-based workflow operation views and updated routing to reflect the new API structure.\n- Documented the migration process and provided guidance for consumers transitioning to the new API.\n\n* black\n\n* \u8865\u4e00\u4e9b api \u7684\u6d4b\u8bd5\n\n* black\n\n* \u65b0\u589e\u4e00\u4e9b\u6d4b\u8bd5\n\n* feat: \u66f4\u65b0\u5de5\u4f5c\u6d41 API\uff0c\u6dfb\u52a0 JSON \u683c\u5f0f\u652f\u6301\u5e76\u589e\u5f3a\u9519\u8bef\u65e5\u5fd7\u8bb0\u5f55\n\n* \u4e00\u6279\u5173\u4e8e API \u5b57\u6bb5\u7684\u9002\u914d\u6539\u52a8\n\n* fix tests\n\n* \u9002\u914d\u672a\u9009\u62e9\n\n* \u6839\u636e AI \u7684\u5efa\u8bae\u4fee\u590d\u95ee\u9898\n\n* \u91cd\u65b0\u8bbe\u8ba1 api \u7684\u5b9e\u73b0\u601d\u8def, \u7edf\u4e00\u7528 audit id \u6765\u5bf9\u5de5\u5355\u8fdb\u884c\u64cd\u4f5c\n\n* black\n\n* delete unused tests\n\n* add more tests\n\n* \u6dfb\u52a0\u786e\u4fdd\u65e5\u5fd7\u53ef\u67e5\u770b\u7684\u51fd\u6570\uff0c\u5e76\u4e3a\u5ba1\u6838\u7528\u6237\u6dfb\u52a0\u6d4b\u8bd5\u7528\u4f8b\n\n* \u6dfb\u52a0\u81ea\u52a8\u6267\u884c\u63d0\u4ea4\u529f\u80fd\uff0c\u5e76\u4e3a\u8c03\u5ea6\u6e05\u7406\u5931\u8d25\u7684\u60c5\u51b5\u6dfb\u52a0\u6d4b\u8bd5\u7528\u4f8b\n\n* \u6dfb\u52a0\u5de5\u4f5c\u6d41\u6267\u884c\u6743\u9650\u68c0\u67e5\u548c\u76f8\u5173\u6d4b\u8bd5\u7528\u4f8b\n\n* \u6dfb\u52a0\u81ea\u52a8\u5ba1\u6838\u5931\u8d25\u65f6\u7684\u5ba1\u6838ID\u5904\u7406\u903b\u8f91\uff0c\u5e76\u66f4\u65b0\u76f8\u5173\u6d4b\u8bd5\u7528\u4f8b\n\n* fix\n\n* \u4f18\u5316\u6570\u636e\u4f20\u8f93\u65b9\u5f0f\uff0c\u4fee\u6539\u591a\u4e2a\u6a21\u677f\u4e2d\u7684\u6570\u636e\u5904\u7406\u903b\u8f91",
+      "tree": {
+        "sha": "77e584000868af2779aed9c1fb5e46525f109bc7",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/77e584000868af2779aed9c1fb5e46525f109bc7"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/7f2090836a2c17c7fd3d2d287eab154a975b01c8",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqlqFeCRC1aQ7uu5UhlAAA0EAQABmucUTfH93zxrv3XVa//kis\ntOK0HzczwoJO/NdBo1lSBe+RrP87vLGQeyGqj/QCs/pG6WqOqDpt0Q94b3abfdSX\nWVSo6scC93MXG6SZeFF8Pn9nAy8lmMuJuvKEqjVv7JKkDONKry01HSXa6ZJ8jEl7\nleOsPLXrMYDnjCA0AoNKRicx4/Yq9n0jYSnbZbLEsh4nkl1qT2Nl6CRGVjIXz0HY\nr7q4iMRCKC03eT/j7EszEv6O/BT0ioDqfH4DLEz9tF/+Wf5T6SSZTr4FcvHlZcr9\nKZLHKk1GJlR+KRtyXj9woTATKVrp7h+iWgUQdtx3GR9vBlLz6WsVl/GbrIyL/prm\nwJ6QSNtmQFno2jUG5WAl8qmk9f4HeS2QmrOP5yLgRWxMMpVnzhtVi0g0JqspgiOE\nLcvmjkC2tUBlPKHcwwIqRrJLxVR39GkdayQdkJYhMQk/nZd0UQH2wIfpehzsHG2j\nEH9b4mnysfni5EO0r0UUhBbyT3NI4YpgsoeMMs7w+ShKWGHr7EpR5mK8eWkE34VX\n8aIO1NMu049F/IQNpJbr/HaqW6aqPDDcOYhX7w135f9TaxciSC5vE42HyNXDy2X+\n+JZioMUGzz982FYCQanLGbTtvVdVTWFEOTbhhE6Cm4KJjahC0vWFmPAahn/gmz4C\nuVpGHrUP1xS+Wh8j3+j8\n=4cvj\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 77e584000868af2779aed9c1fb5e46525f109bc7\nparent 0257a2a380814175426b205016d632f43328ce31\nauthor Leo Q <LeoQuote@users.noreply.github.com> 1788256606 +0800\ncommitter GitHub <noreply@github.com> 1788256606 +0800\n\nfeat: Migrate Workflow Operations to REST API(\u901a\u8fc7, \u6267\u884c, osc \u72b6\u6001\u67e5\u8be2, \u62d2\u7edd, \u4e2d\u6b62) (#3253)\n\n* feat: Migrate Workflow Operations to REST API\n\n- Introduced a dedicated module for workflow operations under `sql_api.api_workflow_operations`.\n- Defined RESTful endpoints for managing workflows, including approval, execution, scheduling, and termination.\n- Implemented serializers to retain legacy field names for compatibility.\n- Added permission checks and validation for each operation to ensure proper access control.\n- Created unit and integration tests to validate the functionality of the new API endpoints and ensure they meet existing requirements.\n- Removed legacy function-based workflow operation views and updated routing to reflect the new API structure.\n- Documented the migration process and provided guidance for consumers transitioning to the new API.\n\n* black\n\n* \u8865\u4e00\u4e9b api \u7684\u6d4b\u8bd5\n\n* black\n\n* \u65b0\u589e\u4e00\u4e9b\u6d4b\u8bd5\n\n* feat: \u66f4\u65b0\u5de5\u4f5c\u6d41 API\uff0c\u6dfb\u52a0 JSON \u683c\u5f0f\u652f\u6301\u5e76\u589e\u5f3a\u9519\u8bef\u65e5\u5fd7\u8bb0\u5f55\n\n* \u4e00\u6279\u5173\u4e8e API \u5b57\u6bb5\u7684\u9002\u914d\u6539\u52a8\n\n* fix tests\n\n* \u9002\u914d\u672a\u9009\u62e9\n\n* \u6839\u636e AI \u7684\u5efa\u8bae\u4fee\u590d\u95ee\u9898\n\n* \u91cd\u65b0\u8bbe\u8ba1 api \u7684\u5b9e\u73b0\u601d\u8def, \u7edf\u4e00\u7528 audit id \u6765\u5bf9\u5de5\u5355\u8fdb\u884c\u64cd\u4f5c\n\n* black\n\n* delete unused tests\n\n* add more tests\n\n* \u6dfb\u52a0\u786e\u4fdd\u65e5\u5fd7\u53ef\u67e5\u770b\u7684\u51fd\u6570\uff0c\u5e76\u4e3a\u5ba1\u6838\u7528\u6237\u6dfb\u52a0\u6d4b\u8bd5\u7528\u4f8b\n\n* \u6dfb\u52a0\u81ea\u52a8\u6267\u884c\u63d0\u4ea4\u529f\u80fd\uff0c\u5e76\u4e3a\u8c03\u5ea6\u6e05\u7406\u5931\u8d25\u7684\u60c5\u51b5\u6dfb\u52a0\u6d4b\u8bd5\u7528\u4f8b\n\n* \u6dfb\u52a0\u5de5\u4f5c\u6d41\u6267\u884c\u6743\u9650\u68c0\u67e5\u548c\u76f8\u5173\u6d4b\u8bd5\u7528\u4f8b\n\n* \u6dfb\u52a0\u81ea\u52a8\u5ba1\u6838\u5931\u8d25\u65f6\u7684\u5ba1\u6838ID\u5904\u7406\u903b\u8f91\uff0c\u5e76\u66f4\u65b0\u76f8\u5173\u6d4b\u8bd5\u7528\u4f8b\n\n* fix\n\n* \u4f18\u5316\u6570\u636e\u4f20\u8f93\u65b9\u5f0f\uff0c\u4fee\u6539\u591a\u4e2a\u6a21\u677f\u4e2d\u7684\u6570\u636e\u5904\u7406\u903b\u8f91",
+        "verified_at": "2026-09-01T09:56:47Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/7f2090836a2c17c7fd3d2d287eab154a975b01c8",
+    "html_url": "https://github.com/hhyo/Archery/commit/7f2090836a2c17c7fd3d2d287eab154a975b01c8",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/7f2090836a2c17c7fd3d2d287eab154a975b01c8/comments",
+    "author": {
+      "login": "LeoQuote",
+      "id": 4143818,
+      "node_id": "MDQ6VXNlcjQxNDM4MTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4143818?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LeoQuote",
+      "html_url": "https://github.com/LeoQuote",
+      "followers_url": "https://api.github.com/users/LeoQuote/followers",
+      "following_url": "https://api.github.com/users/LeoQuote/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LeoQuote/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LeoQuote/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LeoQuote/subscriptions",
+      "organizations_url": "https://api.github.com/users/LeoQuote/orgs",
+      "repos_url": "https://api.github.com/users/LeoQuote/repos",
+      "events_url": "https://api.github.com/users/LeoQuote/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LeoQuote/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0257a2a380814175426b205016d632f43328ce31",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/0257a2a380814175426b205016d632f43328ce31",
+        "html_url": "https://github.com/hhyo/Archery/commit/0257a2a380814175426b205016d632f43328ce31"
+      }
+    ]
+  },
+  {
+    "sha": "0257a2a380814175426b205016d632f43328ce31",
+    "node_id": "C_kwDOCPspSNoAKDAyNTdhMmEzODA4MTQxNzU0MjZiMjA1MDE2ZDYzMmY0MzMyOGNlMzE",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "rank_rao@163.com",
+        "date": "2026-08-26T09:55:29Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-26T09:55:29Z"
+      },
+      "message": "perf(sqlquery):\u5173\u7cfb\u578b\u6570\u636e\u5e93\u9009\u62e9\u8868\u4e4b\u540e\u81ea\u52a8\u63d2\u5165select\u8bed\u53e5 (#3212)",
+      "tree": {
+        "sha": "93f01cf71903d749ec0e9a8be1e46b55b95f0299",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/93f01cf71903d749ec0e9a8be1e46b55b95f0299"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/0257a2a380814175426b205016d632f43328ce31",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqjrgRCRC1aQ7uu5UhlAAAECAQAKc4TndsVfkO1pB1AE8kpr4c\nWsS3gDFeh2KTsyXl05nF07SniRVLYvoliRHJEVaFyp7JYc0b6jxIGwYpswc7A9ib\nXMDizzjkI4XRj+ZzOFpI8bNPNkBqs3GdlkAMD88CKW0x0ZqFG/rEBpBTE78b2kJJ\nmLtB3b5WoQkhU6Huzamo0wpG1x5K0OwOkzCWbzB6xzY2AZlOpOani6Xa5fClf30P\nzqXUnQqSNvAmmdNHb6wQwhgyDre/OMwa2AU5UeCgb8oQj1ZFVpyyhzHmTkGHiBrE\nJeX6w3Pjxkf7N6j/o7CqP82n6bc9SN3/UM17ZvDZxBZVHrOzrkTvqni1fTspoxr0\nXQKz3XF8bR55bXrLhV7q/EpIKYmptmMnLbeegAcRbEpQRa/gSSjYmvtZvPsaT/S4\nXt/H3PdEK2hfMy7v78k0kyBl4f/GRt+OosegxrZpv53wAB98+K+62FmV85rzoM2e\nRijJOk0lAvTlQk38DAMhf7Vpj7tjucgiKbNuFzb4vx6ZmkVb/69EAp0qXh0GZBd1\nYGh31rx3m4qGMbCVE7tGGtbeJ+c3ucDtyUaJk8BxF/V7ytvMyQiVfNJzmN/z7jGY\nGBgd0IWDCbZ2EUP16tdisr5nDuLK4geVNeksINFmgR6B6q0p+qsQBbUIoDH9hPoc\nW2C1a708EOI0YAL9gRNj\n=6V6P\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 93f01cf71903d749ec0e9a8be1e46b55b95f0299\nparent 0049387eb4b2f1146128b56b4a8cd8b205b4a21f\nauthor RankRao <rank_rao@163.com> 1787738129 +0800\ncommitter GitHub <noreply@github.com> 1787738129 +0800\n\nperf(sqlquery):\u5173\u7cfb\u578b\u6570\u636e\u5e93\u9009\u62e9\u8868\u4e4b\u540e\u81ea\u52a8\u63d2\u5165select\u8bed\u53e5 (#3212)",
+        "verified_at": "2026-08-26T09:55:29Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/0257a2a380814175426b205016d632f43328ce31",
+    "html_url": "https://github.com/hhyo/Archery/commit/0257a2a380814175426b205016d632f43328ce31",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/0257a2a380814175426b205016d632f43328ce31/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0049387eb4b2f1146128b56b4a8cd8b205b4a21f",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/0049387eb4b2f1146128b56b4a8cd8b205b4a21f",
+        "html_url": "https://github.com/hhyo/Archery/commit/0049387eb4b2f1146128b56b4a8cd8b205b4a21f"
+      }
+    ]
+  },
+  {
+    "sha": "0049387eb4b2f1146128b56b4a8cd8b205b4a21f",
+    "node_id": "C_kwDOCPspSNoAKDAwNDkzODdlYjRiMmYxMTQ2MTI4YjU2YjRhOGNkOGIyMDViNGEyMWY",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "rank_rao@163.com",
+        "date": "2026-08-26T09:42:57Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-26T09:42:57Z"
+      },
+      "message": "fix(my2sql):\u4fee\u590dbinlog.py\u7684\u90e8\u5206\u5f02\u5e38 (#3248)\n\n* fix(my2sql):\u4fee\u590dbinlog.py\u7684\u90e8\u5206\u5f02\u5e38\n\n1\u3001\u589e\u52a0\u53c2\u6570\u5316\u8868\u8fbe\uff1a\u5b57\u7b26\u4e32\u62fc\u63a5purge master logs\u6539\u4e3a\u53c2\u6570\u5316\u8868\u8fbe\u5f0f\u3002\n2\u3001\u5f02\u6b65\u901a\u77e5\u4efb\u52a1\u4fee\u590d\uff1a\u7531\u4e8edjango-q\u6846\u67b6\u5347\u7ea7\u5230django-q2\uff0c\u51fd\u6570\u5bf9\u8c61\u4f1a\u4e25\u683c\u6821\u9a8c\uff0c\u4fee\u6539hook\u53c2\u6570\u4e3a\u6807\u51c6\u65b9\u5f0f\u3002\n3\u3001\u5f02\u6b65\u4fdd\u5b58\u6587\u4ef6\u4fee\u590d\uff1a\u751f\u6210\u5e26\u65f6\u95f4\u6233\u7684\u72ec\u7acbmy2sql\u76ee\u5f55\uff1b\u4fee\u590duser\u5bf9\u8c61\u53c2\u6570\u5f02\u5e38\uff1b\u589e\u52a0\u5176\u4ed6\u5f02\u5e38\u63d0\u793a\u3002\n4\u3001\u4e0b\u62c9\u7b5b\u9009\u589e\u52a0\u641c\u7d22\u8f93\u5165\u6846\uff1a\u8d77\u59cb\u89e3\u6790\u6587\u4ef6\u548c\u7ec8\u6b62\u89e3\u6790\u6587\u4ef6\u589e\u52a0\u641c\u7d22\u529f\u80fd\uff0c\u7c7b\u4f3c\u6570\u636e\u5e93\u8fc7\u6ee4\u7684\u641c\u7d22\u3002\n\n* \u4fee\u590d\u5355\u5143\u6d4b\u8bd5\u5f02\u5e38",
+      "tree": {
+        "sha": "0743436f400c6330832549bd8c248d9560660fd4",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/0743436f400c6330832549bd8c248d9560660fd4"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/0049387eb4b2f1146128b56b4a8cd8b205b4a21f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqjrUhCRC1aQ7uu5UhlAAAPOEQAA02XyFDnfn1D3iKhF2FlMpN\nLjvpUXk/2GuBl21oqLZmKUTvTVCTAT0hGKMsaNW2NjAub82x4BYSi+j0ZR2nGorm\n+m/+z+ROy/gcPD4lxwrHfTBEcd0dSPL98xFU/JUeS4xz6CdR4joC4J64YK8wUBfI\nXQrn5TBpluPZNbIidQhiIS/67wOWFFitB1Wj3BK9TvEP0uvMMyuM2Ym0iP0dZEIo\niiIHk1Z67CbBb9Mxl1QmWjxL0Ymm6wbLaZz59VCwymHKxSWwOmRbKDRYXbARVcZA\nMdHBukqXk3JEGhrexMi1FUyjfK/2JV6ouDD3Dd00B/6ib1iBtDprehcXBMU9ZXO+\n9h3SHcH2CDxo6AOiCOUPP8/UW2tiKYgH7opr8g1nK0hODdOquwgbXjxzPz5Cw9Ck\np9WjbiieRjfbCwlquDp/DL7FvHj0NPg8XDt6857Gd0loU4ol1/zRy74AS9sfc/Oz\ndkrAi/xQQbhjOvj5BpxrwTkp5MbUvxdjSU0u87mCwsLwacIK9yHrJc30fSFbn3EQ\nHoWULtMNpvVhpNreo+36RbMlHgkcxTgt6WKteQyzo045BILU5cJPnBrp/9U1nCZe\nIYyQBtvmAQtTSjYaz2Pj8Jeax6K5HHH7nrKy98gwiWLdVBF9/gQgwRWCEcXJawGj\no0F5s0S5y/KS3k9Heb4d\n=FOYV\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0743436f400c6330832549bd8c248d9560660fd4\nparent 94df32761586400cda23cd3b2b90a6e811dcccbe\nauthor RankRao <rank_rao@163.com> 1787737377 +0800\ncommitter GitHub <noreply@github.com> 1787737377 +0800\n\nfix(my2sql):\u4fee\u590dbinlog.py\u7684\u90e8\u5206\u5f02\u5e38 (#3248)\n\n* fix(my2sql):\u4fee\u590dbinlog.py\u7684\u90e8\u5206\u5f02\u5e38\n\n1\u3001\u589e\u52a0\u53c2\u6570\u5316\u8868\u8fbe\uff1a\u5b57\u7b26\u4e32\u62fc\u63a5purge master logs\u6539\u4e3a\u53c2\u6570\u5316\u8868\u8fbe\u5f0f\u3002\n2\u3001\u5f02\u6b65\u901a\u77e5\u4efb\u52a1\u4fee\u590d\uff1a\u7531\u4e8edjango-q\u6846\u67b6\u5347\u7ea7\u5230django-q2\uff0c\u51fd\u6570\u5bf9\u8c61\u4f1a\u4e25\u683c\u6821\u9a8c\uff0c\u4fee\u6539hook\u53c2\u6570\u4e3a\u6807\u51c6\u65b9\u5f0f\u3002\n3\u3001\u5f02\u6b65\u4fdd\u5b58\u6587\u4ef6\u4fee\u590d\uff1a\u751f\u6210\u5e26\u65f6\u95f4\u6233\u7684\u72ec\u7acbmy2sql\u76ee\u5f55\uff1b\u4fee\u590duser\u5bf9\u8c61\u53c2\u6570\u5f02\u5e38\uff1b\u589e\u52a0\u5176\u4ed6\u5f02\u5e38\u63d0\u793a\u3002\n4\u3001\u4e0b\u62c9\u7b5b\u9009\u589e\u52a0\u641c\u7d22\u8f93\u5165\u6846\uff1a\u8d77\u59cb\u89e3\u6790\u6587\u4ef6\u548c\u7ec8\u6b62\u89e3\u6790\u6587\u4ef6\u589e\u52a0\u641c\u7d22\u529f\u80fd\uff0c\u7c7b\u4f3c\u6570\u636e\u5e93\u8fc7\u6ee4\u7684\u641c\u7d22\u3002\n\n* \u4fee\u590d\u5355\u5143\u6d4b\u8bd5\u5f02\u5e38",
+        "verified_at": "2026-08-26T09:42:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/0049387eb4b2f1146128b56b4a8cd8b205b4a21f",
+    "html_url": "https://github.com/hhyo/Archery/commit/0049387eb4b2f1146128b56b4a8cd8b205b4a21f",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/0049387eb4b2f1146128b56b4a8cd8b205b4a21f/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "94df32761586400cda23cd3b2b90a6e811dcccbe",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/94df32761586400cda23cd3b2b90a6e811dcccbe",
+        "html_url": "https://github.com/hhyo/Archery/commit/94df32761586400cda23cd3b2b90a6e811dcccbe"
+      }
+    ]
+  },
+  {
+    "sha": "94df32761586400cda23cd3b2b90a6e811dcccbe",
+    "node_id": "C_kwDOCPspSNoAKDk0ZGYzMjc2MTU4NjQwMGNkYTIzY2QzYjJiOTBhNmU4MTFkY2NjYmU",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "rank_rao@163.com",
+        "date": "2026-08-18T15:29:01Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-18T15:29:01Z"
+      },
+      "message": "fix(mysql): \u4fee\u590d\u83b7\u53d6\u5b9e\u4f8b\u53ea\u8bfb\u72b6\u6001\u65f6\u56e0\u8fde\u63a5\u5f02\u5e38\u5bfc\u81f4\u7684 IndexError (#3246)\n\n* \u5f53\u67e5\u8be2 @@global.read_only \u53d1\u751f\u8fde\u63a5\u8d85\u65f6\u7b49\u7f51\u7edc\u5f02\u5e38\u65f6\uff0cself.query \u8fd4\u56de\u7684 rows \u4e3a\u7a7a\u3002\n\u539f\u4ee3\u7801\u5f3a\u4f9d\u8d56 rows[0][0] \u4f1a\u5bfc\u81f4 IndexError\uff0c\u8fdb\u800c\u5f15\u8d77 django-q worker \u4efb\u52a1\u5d29\u6e83\u3002\n\u901a\u8fc7\u589e\u52a0\u83b7\u53d6\u72b6\u6001\u5931\u8d25\u7684\u6355\u83b7\u4e0e\u7a7a\u7ed3\u679c\u5224\u65ad\uff0c\u4ee5\u4f18\u96c5\u5730\u8fd4\u56de\u5e26\u6709\u5931\u8d25\u4fe1\u606f\u7684 ReviewSet \u89e3\u51b3\u6b64\u95ee\u9898\u3002\n\n* \u517c\u5bb9\u67e5\u8be2\u7ed3\u679c\u53ef\u80fd\u4e3a\u7a7a\u7684\u60c5\u51b5",
+      "tree": {
+        "sha": "4f86bd8f0ce14456976932ed71dd3891a9cd0336",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/4f86bd8f0ce14456976932ed71dd3891a9cd0336"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/94df32761586400cda23cd3b2b90a6e811dcccbe",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqhHo9CRC1aQ7uu5UhlAAAelsQAJ0sfeUGAq7LaIRBMDThi+g9\n9cA15fRNftPp4j3s6W57R0Gec3BZncujIScFPvAneOY1gi7WPNJjZI1WFT1iYcL9\nQT54XAm9sQd2ezAwPAhsth4RqvpSroVAuKiZzYpmQVbCI/HXjLjp/heW6TC39haC\nOyzhJd+RGc9vV/Una1mM5Sr4XmXnJYcUdyhIon60KqjsM0t/pLfn73KA1MMTc/Nx\nXtj/cPTu2YMFbIQ3I3NY+DrjN53NbbNQVnNRaWwrq2pB+kbsZI0IvPeF03ZFzWOA\nd8PZwDncAo7w8U3TBcS1P5W3HGRYFAggKr9DJxdZfu3XSMk0vErLcENlhHoBY+l2\nHBHgF26UPcn5+SsL28y/igV6Ef2Iw7KFfaRAMXsH9xIR6ytt1WudraZ7mc77/BMF\nYhkwGY/lKqRXgqIGnwsjuHRweeeQ4ZoEF8s8QhMsMXbkZMTYbIYH/QLvMbC85sD3\nGR6/Vl/Xf8574qx+RoCM76yCKlZU3oKa20rfZz3V5ku5/XrIuMh1ca0P3+4ROFjU\nliopZa6s295ivdLoIj4T3fB660HbjMwLjMyQLaQc/Gl8hTNohqvfcve7iEaMe2WA\n0WEjU09Q+G2Bx+6HmXiVUZwjHZ6BX2k8ipzZ/ALWDpWci5/hRJcQIEE/516FLnY1\nBLRFasGwVm+EoEQkfL5c\n=sxMM\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4f86bd8f0ce14456976932ed71dd3891a9cd0336\nparent 7df19f78a17e2cee586b4f052a5a6335aa4855e5\nauthor RankRao <rank_rao@163.com> 1787066941 +0800\ncommitter GitHub <noreply@github.com> 1787066941 +0800\n\nfix(mysql): \u4fee\u590d\u83b7\u53d6\u5b9e\u4f8b\u53ea\u8bfb\u72b6\u6001\u65f6\u56e0\u8fde\u63a5\u5f02\u5e38\u5bfc\u81f4\u7684 IndexError (#3246)\n\n* \u5f53\u67e5\u8be2 @@global.read_only \u53d1\u751f\u8fde\u63a5\u8d85\u65f6\u7b49\u7f51\u7edc\u5f02\u5e38\u65f6\uff0cself.query \u8fd4\u56de\u7684 rows \u4e3a\u7a7a\u3002\n\u539f\u4ee3\u7801\u5f3a\u4f9d\u8d56 rows[0][0] \u4f1a\u5bfc\u81f4 IndexError\uff0c\u8fdb\u800c\u5f15\u8d77 django-q worker \u4efb\u52a1\u5d29\u6e83\u3002\n\u901a\u8fc7\u589e\u52a0\u83b7\u53d6\u72b6\u6001\u5931\u8d25\u7684\u6355\u83b7\u4e0e\u7a7a\u7ed3\u679c\u5224\u65ad\uff0c\u4ee5\u4f18\u96c5\u5730\u8fd4\u56de\u5e26\u6709\u5931\u8d25\u4fe1\u606f\u7684 ReviewSet \u89e3\u51b3\u6b64\u95ee\u9898\u3002\n\n* \u517c\u5bb9\u67e5\u8be2\u7ed3\u679c\u53ef\u80fd\u4e3a\u7a7a\u7684\u60c5\u51b5",
+        "verified_at": "2026-08-18T15:29:03Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/94df32761586400cda23cd3b2b90a6e811dcccbe",
+    "html_url": "https://github.com/hhyo/Archery/commit/94df32761586400cda23cd3b2b90a6e811dcccbe",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/94df32761586400cda23cd3b2b90a6e811dcccbe/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7df19f78a17e2cee586b4f052a5a6335aa4855e5",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/7df19f78a17e2cee586b4f052a5a6335aa4855e5",
+        "html_url": "https://github.com/hhyo/Archery/commit/7df19f78a17e2cee586b4f052a5a6335aa4855e5"
+      }
+    ]
+  },
+  {
+    "sha": "7df19f78a17e2cee586b4f052a5a6335aa4855e5",
+    "node_id": "C_kwDOCPspSNoAKDdkZjE5Zjc4YTE3ZTJjZWU1ODZiNGYwNTJhNWE2MzM1YWE0ODU1ZTU",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "rank_rao@163.com",
+        "date": "2026-08-18T15:28:08Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-18T15:28:08Z"
+      },
+      "message": "feat(engine): \u5141\u8bb8\u7ba1\u7406\u5458\u67e5\u8be2\u88ab\u9650\u5236\u7684\u7cfb\u7edf\u6570\u636e\u5e93 (#3245)\n\n1\u3001\u5728 get_all_databases \u53ca\u76f8\u5173\u65b9\u6cd5\u4e2d\u589e\u52a0 is_superuser \u6821\u9a8c\n2\u3001\u5141\u8bb8\u8d85\u7ea7\u7ba1\u7406\u5458\u5728\u67e5\u8be2\u548c\u7ba1\u7406\u754c\u9762\u67e5\u770b\u88ab\u9650\u5236\u7684\u7cfb\u7edf\u6570\u636e\u5e93\n3\u3001\u4fee\u6539\u6d89\u53ca MySQL\u3001MongoDB \u5f15\u64ce",
+      "tree": {
+        "sha": "28fe63b04333ae0ebc1c105f5cf2168a9ae36fc7",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/28fe63b04333ae0ebc1c105f5cf2168a9ae36fc7"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/7df19f78a17e2cee586b4f052a5a6335aa4855e5",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqhHoICRC1aQ7uu5UhlAAA4dsQAHAT92W47So+KbDr084F7c+I\n08h2jUpNrnKyKmenjnE0GHDiF+EqDFrwyAqRPZGbp6fJfhsPNqvZ64Jx1pW06k6W\nZH1YVAYt4rE6gCg4dGMo0e7s053lz2sJTQHCTF5VyV5j6qpVkhtlpImIs92YpsQE\ncJCAlSBXPQnWYKeZfa7QpbR6n+sLJddbvtATWY2CN7SadQpvCRkz3y1mu/fAxm4E\nK0do0ubEfgieamI5zEZIQStzqXLIBGGU1SKp0J0+ofCRqZehZdNexBN4vW45Bxcr\nkiC3FHpRoWOBMAP1nGXo1pa8tm7T49gTClMIyCd3QsCcyr+gzF9Oy3wdH7WwNbUN\nP7wrYABhVobeYeecqxV8JWtSjczlEocrf/qyEd12fTBl/cxWaPKOe0vZf00XS25S\nUlRaH9RGmUNpmaWX1yDW3bLOKLvfkdRhOqx8AbaQ553iRh3xakcfmRVUNO1GK06t\n8My/0QFpUb68R+g/QhlLYXLo9VWxeHzQnROv6Hw1+pSuOGULVLQiOe24OU1j0Vmu\n2U2CCpB/TyVebNuvlWfNmXVVsl9PuTpyzJzEIiCqP4bMguJwFK5y+BFpcGLEnW0v\nvAwbk0qFzvU0mWyUlIzfWSxUadSYnI1bj0yQ0BmxhH5vA1NsqlY5YyKdBG9r3jHc\nWl+TUMVB85g/5eieXGJk\n=e4LM\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 28fe63b04333ae0ebc1c105f5cf2168a9ae36fc7\nparent dc5ee5f152e50f7f497be4bd6c749ae29c54278d\nauthor RankRao <rank_rao@163.com> 1787066888 +0800\ncommitter GitHub <noreply@github.com> 1787066888 +0800\n\nfeat(engine): \u5141\u8bb8\u7ba1\u7406\u5458\u67e5\u8be2\u88ab\u9650\u5236\u7684\u7cfb\u7edf\u6570\u636e\u5e93 (#3245)\n\n1\u3001\u5728 get_all_databases \u53ca\u76f8\u5173\u65b9\u6cd5\u4e2d\u589e\u52a0 is_superuser \u6821\u9a8c\n2\u3001\u5141\u8bb8\u8d85\u7ea7\u7ba1\u7406\u5458\u5728\u67e5\u8be2\u548c\u7ba1\u7406\u754c\u9762\u67e5\u770b\u88ab\u9650\u5236\u7684\u7cfb\u7edf\u6570\u636e\u5e93\n3\u3001\u4fee\u6539\u6d89\u53ca MySQL\u3001MongoDB \u5f15\u64ce",
+        "verified_at": "2026-08-18T15:28:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/7df19f78a17e2cee586b4f052a5a6335aa4855e5",
+    "html_url": "https://github.com/hhyo/Archery/commit/7df19f78a17e2cee586b4f052a5a6335aa4855e5",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/7df19f78a17e2cee586b4f052a5a6335aa4855e5/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dc5ee5f152e50f7f497be4bd6c749ae29c54278d",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/dc5ee5f152e50f7f497be4bd6c749ae29c54278d",
+        "html_url": "https://github.com/hhyo/Archery/commit/dc5ee5f152e50f7f497be4bd6c749ae29c54278d"
+      }
+    ]
+  },
+  {
+    "sha": "dc5ee5f152e50f7f497be4bd6c749ae29c54278d",
+    "node_id": "C_kwDOCPspSNoAKGRjNWVlNWYxNTJlNTBmN2Y0OTdiZTRiZDZjNzQ5YWUyOWM1NDI3OGQ",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "rank_rao@163.com",
+        "date": "2026-08-18T15:26:54Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-18T15:26:54Z"
+      },
+      "message": "fix(mongo):mongo\u5f15\u64ce\u4f18\u5316 (#3244)\n\n1\u3001\u4f18\u5316\u5206\u53f7\u68c0\u67e5\uff1a\u5141\u8bb8\u5355\u6761\u6216\u6700\u540e\u4e00\u6761\u8bed\u53e5\u4e0d\u5e26\u5206\u53f7\u3002\n2\u3001\u589e\u52a0NumberDecimal\u7684\u89e3\u6790\uff1a\u4fee\u590d\u89e3\u6790\u5f02\u5e38\u3002\n\u6d4b\u8bd5\u8bed\u53e5\uff1a\ndb.products.insertOne({ name: \"Laptop\", price: NumberDecimal(\"1299.99\") })\n3\u3001\u5b8c\u5584\u5355\u5143\u6d4b\u8bd5\u3002",
+      "tree": {
+        "sha": "aefb78d8ba781d0ce6d225dd769a861d2a88654c",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/aefb78d8ba781d0ce6d225dd769a861d2a88654c"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/dc5ee5f152e50f7f497be4bd6c749ae29c54278d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqhHm+CRC1aQ7uu5UhlAAAFQsQACYISQdfXgIff+SycVriIsjD\n5fEb5Ed23hSxEu6Hsj2uYGH+u/FHnEZtum62GrYDP7dX43L1foLTTWDdhyQ94ObE\nUfg5Apxho+FGFDUHNn6BBscViCbGQ8oWq0SpIf9Vn1+OWP+2/QyEsU0L6PMDSI2q\nyk3Afa8sFN/Sjn2x3onSq5ukl4YxxTjxJjYh7dPEQH3Dfx2teYUNDcN6pzN+/SVZ\nQlqUlutWOdlDlcHbElhjLqKmmmniRn8s3ApZRTqFWQUvbo7YrVffqDUbX51BHHzJ\nl0X5ulhR1SH6aGBRi7iT1qmlaR5nAiv1oMCAVfkXNfa7b6A1e2e2PRZZ0os83jjd\nykF8h844/WaH4NatO65Ie5Zn0P0lCyggPNfn3HXsP/yHsXqpa0xFuZ8Fl+FxDYsU\nbYGCgEbw+BhvNXYgSTq1Jh3NMCcmhd49lOi5JBfdeF7Cj4/DEZ0H8tFZfcM2Xbi3\nGpKKUxKlZW4AUK8fbcehd/URuOEb6bKX5aWxJttNVqAKzTo5ggFYhi6z8o6SNUbe\njtb0IzQBLn522jYtHP7zXefrujq8Sie5hINWwlOnB+I/clVVCwRZAruslj9P1BGY\nz/tfN9RrdLfjmprV98GWSaB+pMB4y6SPO4h+mU4NVvZBZhvQ5EdYtKEc++k0xs+Y\n/KUcB4MpRt0w0BiqOHKJ\n=SFf9\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree aefb78d8ba781d0ce6d225dd769a861d2a88654c\nparent fa0c106c2d5df94dbc96c1216a36a68084ad0799\nauthor RankRao <rank_rao@163.com> 1787066814 +0800\ncommitter GitHub <noreply@github.com> 1787066814 +0800\n\nfix(mongo):mongo\u5f15\u64ce\u4f18\u5316 (#3244)\n\n1\u3001\u4f18\u5316\u5206\u53f7\u68c0\u67e5\uff1a\u5141\u8bb8\u5355\u6761\u6216\u6700\u540e\u4e00\u6761\u8bed\u53e5\u4e0d\u5e26\u5206\u53f7\u3002\n2\u3001\u589e\u52a0NumberDecimal\u7684\u89e3\u6790\uff1a\u4fee\u590d\u89e3\u6790\u5f02\u5e38\u3002\n\u6d4b\u8bd5\u8bed\u53e5\uff1a\ndb.products.insertOne({ name: \"Laptop\", price: NumberDecimal(\"1299.99\") })\n3\u3001\u5b8c\u5584\u5355\u5143\u6d4b\u8bd5\u3002",
+        "verified_at": "2026-08-18T15:26:55Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/dc5ee5f152e50f7f497be4bd6c749ae29c54278d",
+    "html_url": "https://github.com/hhyo/Archery/commit/dc5ee5f152e50f7f497be4bd6c749ae29c54278d",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/dc5ee5f152e50f7f497be4bd6c749ae29c54278d/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fa0c106c2d5df94dbc96c1216a36a68084ad0799",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/fa0c106c2d5df94dbc96c1216a36a68084ad0799",
+        "html_url": "https://github.com/hhyo/Archery/commit/fa0c106c2d5df94dbc96c1216a36a68084ad0799"
+      }
+    ]
+  },
+  {
+    "sha": "fa0c106c2d5df94dbc96c1216a36a68084ad0799",
+    "node_id": "C_kwDOCPspSNoAKGZhMGMxMDZjMmQ1ZGY5NGRiYzk2YzEyMTZhMzZhNjgwODRhZDA3OTk",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "rank_rao@163.com",
+        "date": "2026-08-15T11:55:07Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-15T11:55:07Z"
+      },
+      "message": "fix(mysql):\u5b89\u5168\u7c7b\u4fee\u590d (#3208)\n\n* fix(mysql):\u5b89\u5168\u7c7b\u4fee\u590d\n1\u3001\u4fee\u590dsql\u6ce8\u5165\u95ee\u9898\uff1a\u5bf9\u539f\u624b\u52a8\u5b57\u7b26\u4e32\u62fc\u63a5sql\u90e8\u5206\uff0c\u589e\u52a0\u53c2\u6570\u5316\u6216\u8005\u4e25\u683c\u6821\u9a8c\u3002\n2\u3001mysql\u6743\u9650\u7ba1\u7406\u79fb\u5230\u5f15\u64ce\u5c42\uff1amysql engine \u589e\u52a0grant_instance_user\u65b9\u6cd5\u3002\n3\u3001\u589e\u52a0regex\uff1a\u9ad8\u5371\u8bed\u53e5\u4f7f\u7528regex\u6b63\u5219\u5224\u65ad\uff0c\u5e76\u589e\u52a0\u8d85\u65f6\uff0c\u9632\u6b62\u53ef\u80fd\u7684Redos\u653b\u51fb\u95ee\u9898\u3002\n4\u3001\u4fee\u590dmariadb\u517c\u5bb9\u6027\uff1aMariaDB 10.4.2\u7248\u672c\u4e4b\u540e\u5f15\u5165\u7684ACCOUNT LOCK\u529f\u80fd\u9700\u8981\u67e5\u8be2mysql.global_priv\u8868\uff0c\u800c\u4e0d\u662fmysql.user\u8868\u3002\n\n* \u4fee\u590dbug\n\n* \u8865\u5145\u5355\u5143\u6d4b\u8bd5\n\n* \u4fee\u590dmariadb\u517c\u5bb9\u6027\uff1atrxandlocks\u83b7\u53d6\u9501\u4fe1\u606f",
+      "tree": {
+        "sha": "09d8f1edf7f7e8ceef34401848b94d9422362b70",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/09d8f1edf7f7e8ceef34401848b94d9422362b70"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/fa0c106c2d5df94dbc96c1216a36a68084ad0799",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqgFObCRC1aQ7uu5UhlAAAIMcQAEIla7RIJcbSg9TwHs6lwdDM\nBcDitq4CmkMn6R77NcZnma/5iPGevqc8RQt2dwjq4Ab1XEoQ6vb1LtlwttSrYSO/\nj4RfLNVe7Mxh22f9OS+0Qize8V2UYA8Qv5Pdg56EHKGNtPKwVMn6L/XtuGRS0GGU\nTxUaL8FCHq+48jjbw/VXMXyGHjF8iRRmNHBp/lwQacYkOEu5jB/TKj8IC1hm90OT\ns8w1LxjZGRQlx2B8GwqJbm+ACN2TfMErp2QGM+bC34hTPbAahjzSWvqaXB0e/neQ\n7ULYdX6ZrW7krELUkLZmArJWi09/Wo+aKxO1k3Vp7E70ViaSb7733BetNl+Ycroc\n4YI3lcwZwnQ3ZG1fS24DCEMhZ7IxzWRe3cLaIseiCd3wskWh9nJjllE7ns0+LHN5\nRL6H/VuegC3AwLPsAoAuSycNQXwSkxmfgvvpuWkLc9+l9YTpTDdKBNdX2TtlPlRS\nVebMunEc0xPs5+z6DVURuFfbx04XjRaAWspBxyLImHlitYSSNdMO3A7ErhPm0nzl\n0cjro1vLWAImVWUZ0uRhuDYCLUADyWHm4ERJqwVuo1ngMqFB/1ycRJrCN4vRH2NK\nQbk8qd3JaSbyU30/mHSyYz5VHtmfWz7eUEese84lM1ZcC0+x7pAoFuRhrLeNeuBK\n3cPGYGelIcY0hjgNFnqm\n=BYxJ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 09d8f1edf7f7e8ceef34401848b94d9422362b70\nparent 44d62824a9157321de34d8df5950a3ccdd642250\nauthor RankRao <rank_rao@163.com> 1786794907 +0800\ncommitter GitHub <noreply@github.com> 1786794907 +0800\n\nfix(mysql):\u5b89\u5168\u7c7b\u4fee\u590d (#3208)\n\n* fix(mysql):\u5b89\u5168\u7c7b\u4fee\u590d\n1\u3001\u4fee\u590dsql\u6ce8\u5165\u95ee\u9898\uff1a\u5bf9\u539f\u624b\u52a8\u5b57\u7b26\u4e32\u62fc\u63a5sql\u90e8\u5206\uff0c\u589e\u52a0\u53c2\u6570\u5316\u6216\u8005\u4e25\u683c\u6821\u9a8c\u3002\n2\u3001mysql\u6743\u9650\u7ba1\u7406\u79fb\u5230\u5f15\u64ce\u5c42\uff1amysql engine \u589e\u52a0grant_instance_user\u65b9\u6cd5\u3002\n3\u3001\u589e\u52a0regex\uff1a\u9ad8\u5371\u8bed\u53e5\u4f7f\u7528regex\u6b63\u5219\u5224\u65ad\uff0c\u5e76\u589e\u52a0\u8d85\u65f6\uff0c\u9632\u6b62\u53ef\u80fd\u7684Redos\u653b\u51fb\u95ee\u9898\u3002\n4\u3001\u4fee\u590dmariadb\u517c\u5bb9\u6027\uff1aMariaDB 10.4.2\u7248\u672c\u4e4b\u540e\u5f15\u5165\u7684ACCOUNT LOCK\u529f\u80fd\u9700\u8981\u67e5\u8be2mysql.global_priv\u8868\uff0c\u800c\u4e0d\u662fmysql.user\u8868\u3002\n\n* \u4fee\u590dbug\n\n* \u8865\u5145\u5355\u5143\u6d4b\u8bd5\n\n* \u4fee\u590dmariadb\u517c\u5bb9\u6027\uff1atrxandlocks\u83b7\u53d6\u9501\u4fe1\u606f",
+        "verified_at": "2026-08-15T11:55:08Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/fa0c106c2d5df94dbc96c1216a36a68084ad0799",
+    "html_url": "https://github.com/hhyo/Archery/commit/fa0c106c2d5df94dbc96c1216a36a68084ad0799",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/fa0c106c2d5df94dbc96c1216a36a68084ad0799/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "44d62824a9157321de34d8df5950a3ccdd642250",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/44d62824a9157321de34d8df5950a3ccdd642250",
+        "html_url": "https://github.com/hhyo/Archery/commit/44d62824a9157321de34d8df5950a3ccdd642250"
+      }
+    ]
+  },
+  {
+    "sha": "44d62824a9157321de34d8df5950a3ccdd642250",
+    "node_id": "C_kwDOCPspSNoAKDQ0ZDYyODI0YTkxNTczMjFkZTM0ZDhkZjU5NTBhM2NjZGQ2NDIyNTA",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "rank_rao@163.com",
+        "date": "2026-08-15T11:52:46Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-15T11:52:46Z"
+      },
+      "message": "bulid(redis):redis\u4f9d\u8d56\u5347\u7ea7 (#3226)\n\nredis\u4f9d\u8d56\u5347\u7ea7\n1\u3001redis\u66f4\u65b0\u52305.3.1\u7248\u672c\uff0c\u652f\u6301redis server Version 5.0 to 7.4\u3002\n2\u3001\u79fb\u9664redis-py-cluster\uff0c\u5df2\u7edf\u4e00\u96c6\u6210\u5230redis\n3\u3001django-redis\u5347\u7ea7\u52306.0.0",
+      "tree": {
+        "sha": "96993fe23451dc2af86b2660eefc670ea3322cc2",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/96993fe23451dc2af86b2660eefc670ea3322cc2"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/44d62824a9157321de34d8df5950a3ccdd642250",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqgFMOCRC1aQ7uu5UhlAAAwU8QAGsS15hV9JdwwDY+vBT4g5qj\nHO7e4gCoWIXvmc6YJ2G+Lk48YKyag9tlU+JZOFAwPRc07Rx1e31GbQ7xPzlThUfm\nDZhYaw8NqESw3MJ8M4Np9pMaXJk9lEah3gwk7ZmBJRCQaB0LICJGqfrxvYg8wLYJ\nNzGIKkynnr6LUOJ6VbhOYEdUTPqlAz4q59hHc076RnJ4fsWAJWX6V61OsEoHXENP\nysVtdb676lkxtLmVexLkhvrYBcpEpOds+Ji9RFf5TYXclcVen9ONz3M2dEPWrG1Z\nFZbw07hsSMUhRMkYT7D/0yHscDr8XvCsV7W4KpJnREWjjzTMeOmSNTpsiACLGXkz\ncSKJawh3j3uw/L6UZQhUQYzP/sGHI3EPUKhUVKM7zBw79uXYEawZ+VX3SAxEcrak\nrHKc9RyWt6wZOx6HusZYdLrOayb7OqwxSz76JO9TnwZx9Y+cbsU15j5Bn5sdwKOP\niy3F4WlgXvxanAo//+4dRKmv32XtTBIxg6V8b7TBHousFj/yjYwdfA1hu3V5MQ/c\nEw0CAdrOP9G1NqGLIiIXOW/o1BtIkwZUKFvAvN15cPEhKogeutT7Bboft9MOUKKb\n7j6KTw0NPTGS+CBWDxeAFotP0NQ1glDjnZhjM55rd1GlOSBcjXqlLlEwriR9uQGh\n3+9ajrcBdY3bHNT0XN7M\n=k1t2\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 96993fe23451dc2af86b2660eefc670ea3322cc2\nparent 459c680f5b58d33b11be00b092210d518252656f\nauthor RankRao <rank_rao@163.com> 1786794766 +0800\ncommitter GitHub <noreply@github.com> 1786794766 +0800\n\nbulid(redis):redis\u4f9d\u8d56\u5347\u7ea7 (#3226)\n\nredis\u4f9d\u8d56\u5347\u7ea7\n1\u3001redis\u66f4\u65b0\u52305.3.1\u7248\u672c\uff0c\u652f\u6301redis server Version 5.0 to 7.4\u3002\n2\u3001\u79fb\u9664redis-py-cluster\uff0c\u5df2\u7edf\u4e00\u96c6\u6210\u5230redis\n3\u3001django-redis\u5347\u7ea7\u52306.0.0",
+        "verified_at": "2026-08-15T11:52:47Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/44d62824a9157321de34d8df5950a3ccdd642250",
+    "html_url": "https://github.com/hhyo/Archery/commit/44d62824a9157321de34d8df5950a3ccdd642250",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/44d62824a9157321de34d8df5950a3ccdd642250/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "459c680f5b58d33b11be00b092210d518252656f",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/459c680f5b58d33b11be00b092210d518252656f",
+        "html_url": "https://github.com/hhyo/Archery/commit/459c680f5b58d33b11be00b092210d518252656f"
+      }
+    ]
+  },
+  {
+    "sha": "459c680f5b58d33b11be00b092210d518252656f",
+    "node_id": "C_kwDOCPspSNoAKDQ1OWM2ODBmNWI1OGQzM2IxMWJlMDBiMDkyMjEwZDUxODI1MjY1NmY",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "rank_rao@163.com",
+        "date": "2026-08-12T10:08:11Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-12T10:08:11Z"
+      },
+      "message": "fix(test):\u4fee\u590d\u5355\u5143\u6d4b\u8bd5\u5f02\u5e38 (#3238)\n\n\u4fee\u590d\u5355\u5143\u6d4b\u8bd5\u5f02\u5e38",
+      "tree": {
+        "sha": "21201eb99129d79344ca74cee76c28879fe0bd2b",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/21201eb99129d79344ca74cee76c28879fe0bd2b"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/459c680f5b58d33b11be00b092210d518252656f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqfEYLCRC1aQ7uu5UhlAAApPgQAGnKScFGM7kUInAqxk6glFQH\nZYvD5HwYoOLPrvj+AFFqU3gN8zP61Y5n9wUWCShWIN/6SDKKLimq18Q8220lozf4\nxkkabn1XCdj+hJ1m5KsLEM4detc5DRoJFXLxjWE4kjLH42QxSBMToujEUmD58ZV4\nVqu/85mDZ8iymK0Ms6WA30rTBEBQniIA6fkBRdpM+jiSr2IwdA5N6c6kdL3DyBR7\nYTJUk1MuM2HJo0PLF0b6np6ngy0m0ffrcwyO9pw7/EE9eiYkDsHocm5vNW91UxDF\n7p5IlBq/ORbXOySaVF4616gVV8x6nI3j0s4o68Wjer83UcZ9QT1T5DqF+IiyoVFt\nToaOVscqdjFGO3WxoWO/vlrTMp2EDLtHxbFOAF8awpZwiFRqDff8lrb/wCx0zDOn\nWBqI+iEoLDYV+puZfKvwQf3QQzcboc/D1zx9bMdel991aKZO4Cn9dAmbjFIZVatV\nTx6GWseeMEnYb3Xii4JsEUN8G0QHYlZGtkMRN5iqDsdAKwOIRPw+fbPmMZgAhKCw\nvMRD/CIZVmyTeLB352IcVNDrcuhsRsQZJyHbp5RG2T8sguSLloC3RoXmes4W3OHc\nEohrkFS0K+RyPk0sdPGqeEimux0DbKwYr1N8PdTiQH19wTiwitHozyMtnt/k18yr\n+6HRYgocrbu5gNjTEEKQ\n=eKGx\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 21201eb99129d79344ca74cee76c28879fe0bd2b\nparent 5f2859d738d7037d037c9018b24548ef16e43d86\nauthor RankRao <rank_rao@163.com> 1786529291 +0800\ncommitter GitHub <noreply@github.com> 1786529291 +0800\n\nfix(test):\u4fee\u590d\u5355\u5143\u6d4b\u8bd5\u5f02\u5e38 (#3238)\n\n\u4fee\u590d\u5355\u5143\u6d4b\u8bd5\u5f02\u5e38",
+        "verified_at": "2026-08-12T10:08:16Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/459c680f5b58d33b11be00b092210d518252656f",
+    "html_url": "https://github.com/hhyo/Archery/commit/459c680f5b58d33b11be00b092210d518252656f",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/459c680f5b58d33b11be00b092210d518252656f/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5f2859d738d7037d037c9018b24548ef16e43d86",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/5f2859d738d7037d037c9018b24548ef16e43d86",
+        "html_url": "https://github.com/hhyo/Archery/commit/5f2859d738d7037d037c9018b24548ef16e43d86"
+      }
+    ]
+  },
+  {
+    "sha": "5f2859d738d7037d037c9018b24548ef16e43d86",
+    "node_id": "C_kwDOCPspSNoAKDVmMjg1OWQ3MzhkNzAzN2QwMzdjOTAxOGIyNDU0OGVmMTZlNDNkODY",
+    "commit": {
+      "author": {
+        "name": "wdg",
+        "email": "2515717245@qq.com",
+        "date": "2026-08-10T23:33:18Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-10T23:33:18Z"
+      },
+      "message": "SQL\u4e0a\u7ebf\u65f6\uff0c\u5bf9\u4e8eDML\u8bed\u53e5\uff0c\u53ef\u4ee5\u8bbe\u7f6e\u514d\u5ba1\u6838\u5c42\u7ea7 (#3154)\n\nCo-authored-by: \u5c0f\u5708\u5708 <rtttte@qq.com>",
+      "tree": {
+        "sha": "4df51e9994c3a79bd5523000e1f6baf079b3964c",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/4df51e9994c3a79bd5523000e1f6baf079b3964c"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/5f2859d738d7037d037c9018b24548ef16e43d86",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqel++CRC1aQ7uu5UhlAAAdMkQAKcZUorMjLWPPeQGUGdkKZNl\ngJfBkrEw0caNaHCOR9cZeX9Nn8B/RZO27ec7VM+o6w4eBIfvxKunvAtG4OZUAtcY\n8YP7BwvxJOVRhua9D6Aqjpm/O6DDpU9pxdAi38WzObNH93tOGKkJ/kW7+voPzZ9t\nzOPxLQASg9ac+keF4+gSu8wiky3+0RaOhfsWlcm4bhb4VOSYawdcmO5veuucQQse\nn0VckoWFDmqvVAiUA9RMXYh9XEhAwder4BikEGsXRWSM+i4FtscHSEHq9GCnK016\nTpDGmjQEybEWIWjcpjyWTLuI/6Y/o/HWLddNqCISoB3xUJdCmHsAt/w/fZBc75y+\n9IgBIr9sApAfV/wmHvPtqvEcyCIar09S6Zi1foTaE7QtNt/80pP1XVt6JwdnZkGm\nB34K5zk5hhcZYv4LXKXcGS1ishiJ1LM34LF0O6OLm8Pe7yWTA4+4FCOTAXIF8LFJ\naA9INaZCGwXJ3YuIzUkoqltY4O2aFA/5Ka9qtcBmNTF5ZB9uBY0IVHLV1oIbqydP\n+OXBezJB7KAIX4tHyfVhGuXKJ2P7+mjT8kCkEDm+xJLQg9Xnw7bCDmIZdIK6z+YW\nK9tGxV4f5AIdYx3jjfMHybIuOAlnMhC9VARwLOtLTJhFhDkb41Qq8BlTocgmqxmK\no+z9Yxs6zx5z5/0LPm3I\n=g2wa\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4df51e9994c3a79bd5523000e1f6baf079b3964c\nparent cef59da9bf64c248e259aafc771487632c29dcd4\nauthor wdg <2515717245@qq.com> 1786404798 +0800\ncommitter GitHub <noreply@github.com> 1786404798 +0800\n\nSQL\u4e0a\u7ebf\u65f6\uff0c\u5bf9\u4e8eDML\u8bed\u53e5\uff0c\u53ef\u4ee5\u8bbe\u7f6e\u514d\u5ba1\u6838\u5c42\u7ea7 (#3154)\n\nCo-authored-by: \u5c0f\u5708\u5708 <rtttte@qq.com>",
+        "verified_at": "2026-08-10T23:33:23Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/5f2859d738d7037d037c9018b24548ef16e43d86",
+    "html_url": "https://github.com/hhyo/Archery/commit/5f2859d738d7037d037c9018b24548ef16e43d86",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/5f2859d738d7037d037c9018b24548ef16e43d86/comments",
+    "author": {
+      "login": "weideguo",
+      "id": 3381137,
+      "node_id": "MDQ6VXNlcjMzODExMzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3381137?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/weideguo",
+      "html_url": "https://github.com/weideguo",
+      "followers_url": "https://api.github.com/users/weideguo/followers",
+      "following_url": "https://api.github.com/users/weideguo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/weideguo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/weideguo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/weideguo/subscriptions",
+      "organizations_url": "https://api.github.com/users/weideguo/orgs",
+      "repos_url": "https://api.github.com/users/weideguo/repos",
+      "events_url": "https://api.github.com/users/weideguo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/weideguo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cef59da9bf64c248e259aafc771487632c29dcd4",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/cef59da9bf64c248e259aafc771487632c29dcd4",
+        "html_url": "https://github.com/hhyo/Archery/commit/cef59da9bf64c248e259aafc771487632c29dcd4"
+      }
+    ]
+  },
+  {
+    "sha": "cef59da9bf64c248e259aafc771487632c29dcd4",
+    "node_id": "C_kwDOCPspSNoAKGNlZjU5ZGE5YmY2NGMyNDhlMjU5YWFmYzc3MTQ4NzYzMmMyOWRjZDQ",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "rank_rao@163.com",
+        "date": "2026-08-10T23:28:35Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-10T23:28:35Z"
+      },
+      "message": "fix(oracle):\u4fee\u590doracledb\u5f3a\u5236\u8981\u6c42\u4f7f\u7528\u5168\u90e8\u5173\u952e\u5b57\u53c2\u6570 (#3237)\n\n* \u4fee\u590doracledb\u5f3a\u5236\u8981\u6c42\u4f7f\u7528\u5168\u90e8\u5173\u952e\u5b57\u53c2\u6570\n\n* 1\u3001Django\u7248\u672c\u56fa\u5b9a\uff1a\u9632\u6b62\u5347\u7ea7\u5230\u6700\u65b0\u7248\uff0c\u5f3a\u5236\u8981\u6c42mysql8.4\n2\u3001\u6b63\u5219\u4fee\u590d\uff1a\u6b63\u5219\u8868\u8fbe\u5f0f\u8b66\u544a\u4fee\u590d\n\n* pytest-django\u56fa\u5b9a\u7248\u672c",
+      "tree": {
+        "sha": "dcd994c07b5c91164053ff628f9d4e478b85d73f",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/dcd994c07b5c91164053ff628f9d4e478b85d73f"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/cef59da9bf64c248e259aafc771487632c29dcd4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqel6jCRC1aQ7uu5UhlAAAkoYQAHJWPppqMO3HOsS+63r/ud9p\nNlO8qH+F/SEPbp0gUNuJ2OTZ/k2pe8zSkRakIag1mqnXpygyR2IYplE4tDW7vM3W\nJXAT38hLJnr3tzY0cuQBiureNSsnA5+/NK2QHmoQM6XM/V1//QcipeWO7X4seZ3p\n+Mye/7p8U9NROBP2TQJivXFZd69ZkPj31R6H/aGMcYbCwPdBLdj6qUpDBA45hia4\nZtbB+xAm6qlMq8aDTKXoJFNIC4S1tTrlEnuQ/8HRc+bhluD5SAG53qKwje8zgWTL\n25BfYd8QIMnZY+DJZMvL4CjrsMXWYE3AYchfRFQnjL9JMXwvLBwUzDh0s+1LKTm7\nHM7arzsYXAOKeYyKYKp0eEYu4c8oacE/OXVKboyZlpLHNDmGgjEqWWfiZS8oogFw\nBy7XnhF6NzMkDQCSynkiUsyWh5jPTCgA2rHqh9fgf+TG+8MnjdqEMuaqBoo7dINo\nCGc1uuhnsMk/EWyZ5niB0cC5np2Q264Is1zocnweWGNqq8J1ddTvnY97mccpTs/v\n+vAPVhw+4q8V3NhZRFP46tONzkVtQE1Z7y6t6Yi7OhEL2GJNwF8YdQAEshTaswKz\nrfLyju0Umh6xcUawhNFsR5D1WOyFG9O/Ilbt0OmR8xqS50MPQc/1o2KJWSzCQyp8\ntiIn6QPxxPt+NfBZu16P\n=wAg4\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree dcd994c07b5c91164053ff628f9d4e478b85d73f\nparent b2cba054e2db45224cff5852d4af7a6c682311f4\nauthor RankRao <rank_rao@163.com> 1786404515 +0800\ncommitter GitHub <noreply@github.com> 1786404515 +0800\n\nfix(oracle):\u4fee\u590doracledb\u5f3a\u5236\u8981\u6c42\u4f7f\u7528\u5168\u90e8\u5173\u952e\u5b57\u53c2\u6570 (#3237)\n\n* \u4fee\u590doracledb\u5f3a\u5236\u8981\u6c42\u4f7f\u7528\u5168\u90e8\u5173\u952e\u5b57\u53c2\u6570\n\n* 1\u3001Django\u7248\u672c\u56fa\u5b9a\uff1a\u9632\u6b62\u5347\u7ea7\u5230\u6700\u65b0\u7248\uff0c\u5f3a\u5236\u8981\u6c42mysql8.4\n2\u3001\u6b63\u5219\u4fee\u590d\uff1a\u6b63\u5219\u8868\u8fbe\u5f0f\u8b66\u544a\u4fee\u590d\n\n* pytest-django\u56fa\u5b9a\u7248\u672c",
+        "verified_at": "2026-08-10T23:28:40Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/cef59da9bf64c248e259aafc771487632c29dcd4",
+    "html_url": "https://github.com/hhyo/Archery/commit/cef59da9bf64c248e259aafc771487632c29dcd4",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/cef59da9bf64c248e259aafc771487632c29dcd4/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b2cba054e2db45224cff5852d4af7a6c682311f4",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/b2cba054e2db45224cff5852d4af7a6c682311f4",
+        "html_url": "https://github.com/hhyo/Archery/commit/b2cba054e2db45224cff5852d4af7a6c682311f4"
+      }
+    ]
+  },
+  {
+    "sha": "b2cba054e2db45224cff5852d4af7a6c682311f4",
+    "node_id": "C_kwDOCPspSNoAKGIyY2JhMDU0ZTJkYjQ1MjI0Y2ZmNTg1MmQ0YWY3YTZjNjgyMzExZjQ",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "rank_rao@163.com",
+        "date": "2026-08-10T23:27:01Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-10T23:27:01Z"
+      },
+      "message": "fix(mongo):\u4fee\u590dmongo\u5f15\u64ce\u7684eval\u53ef\u80fd\u7684\u98ce\u9669\u6f0f\u6d1e (#3223)\n\n* \u4fee\u590dmongo\u5f15\u64ce\u7684eval\u53ef\u80fd\u7684\u98ce\u9669\u6f0f\u6d1e\n\n* \u683c\u5f0f\u5316\n\n* \u4fee\u590d\u5355\u5143\u6d4b\u8bd5",
+      "tree": {
+        "sha": "94e1817ea7842465dd657f35a37d090f7f3edc70",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/94e1817ea7842465dd657f35a37d090f7f3edc70"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/b2cba054e2db45224cff5852d4af7a6c682311f4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqel5FCRC1aQ7uu5UhlAAAzFYQAKbzf5DNzND8dMAnex00ZefF\n/5cDCVeuOJgD2vkXRdjPJ3WQBUX5eV4XEkpS17avqrkmfYENpwkA0OVey3CJFIek\nWroeTVGawF5ICoUIev0HxtVV+aaoFU9JRdnvF5uLAXUJYOlETKcLhfsTCaKtaFLY\n6GlGdzD44/1dbfSyewlVw+AayqlMCQwc6DAYQ/Xnoh6Ig4OVcNEP0VA/wF7nmqR2\nwkBeL75Fml9qg++Qy/FLXEhrfB7mHOqoKi3U3koCXELGziOkkagLK4kX7Qc1aDNk\nPFaYSGFkZ3mT2zZk19CVbxEdzBJTJEVCWoGC6LRqNE+oi5LvxUGE0phmjDi1jibO\nlJeseqapwnIygjWK/c2SjdtjzYjE6HI5x+qBIMEbf1Q2BtWylBJEUzUWg8vDrr4l\nB5mrmcee6REj/TRyrkDFed6m0X1Q/IsAm4KwAPwVMoGIRXOhtgQabgG+TKX2Mnbx\nC23mCJkS3LXUtsoFMZfKM4208DHJwvsHLgunndhl2Wa/dgeMsuSiO6pTP1+qKQmN\n8gdTYjax8XRbO7i8TOxdG/fWzt+6Gnje7F3j4DiDZ6xb516Cvlbhr5Irmw1KYtWV\nanq9OTd5M19JFxS0YqCWPj8PbZ6NRtAse+SAxCnmSgJspIBpcm6ppXLHPY6vD2jB\nrTohMi3wtrqKJ4sKi9bf\n=n8b4\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 94e1817ea7842465dd657f35a37d090f7f3edc70\nparent dafb2b972705567357dbdbfe2c0f9064948e98bd\nauthor RankRao <rank_rao@163.com> 1786404421 +0800\ncommitter GitHub <noreply@github.com> 1786404421 +0800\n\nfix(mongo):\u4fee\u590dmongo\u5f15\u64ce\u7684eval\u53ef\u80fd\u7684\u98ce\u9669\u6f0f\u6d1e (#3223)\n\n* \u4fee\u590dmongo\u5f15\u64ce\u7684eval\u53ef\u80fd\u7684\u98ce\u9669\u6f0f\u6d1e\n\n* \u683c\u5f0f\u5316\n\n* \u4fee\u590d\u5355\u5143\u6d4b\u8bd5",
+        "verified_at": "2026-08-10T23:27:06Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/b2cba054e2db45224cff5852d4af7a6c682311f4",
+    "html_url": "https://github.com/hhyo/Archery/commit/b2cba054e2db45224cff5852d4af7a6c682311f4",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/b2cba054e2db45224cff5852d4af7a6c682311f4/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dafb2b972705567357dbdbfe2c0f9064948e98bd",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/dafb2b972705567357dbdbfe2c0f9064948e98bd",
+        "html_url": "https://github.com/hhyo/Archery/commit/dafb2b972705567357dbdbfe2c0f9064948e98bd"
+      }
+    ]
+  },
+  {
+    "sha": "dafb2b972705567357dbdbfe2c0f9064948e98bd",
+    "node_id": "C_kwDOCPspSNoAKGRhZmIyYjk3MjcwNTU2NzM1N2RiZGJmZTJjMGY5MDY0OTQ4ZTk4YmQ",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "rank_rao@163.com",
+        "date": "2026-08-10T23:26:26Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-10T23:26:26Z"
+      },
+      "message": "fix(offlinedownload):\u4fee\u590d\u79bb\u7ebf\u4e0b\u8f7d\u7684bug (#3224)\n\n* \u79bb\u7ebf\u4e0b\u8f7d\uff1a\n1\u3001\u5b89\u5168\u4fee\u590d\uff1a\u901a\u8fc7 workflow_id \u5173\u8054\u67e5\u8be2\u5408\u6cd5\u7684\u6587\u4ef6\u540d\uff0c\u800c\u975e\u76f4\u63a5\u4fe1\u4efb\u7528\u6237\u4f20\u5165\u7684\u6587\u4ef6\u540d\n2\u3001\u6821\u9a8c\uff1a\u6821\u9a8c file_name \u4e0d\u5305\u542b\u8def\u5f84\u5206\u9694\u7b26\u548c ..\n3\u3001bug\u4fee\u590d\uff1a\u6570\u636e\u5bfc\u51fa\u5de5\u5355\u53ea\u652f\u6301\u5355\u4e2a\u5e93\u7684\u5bfc\u51fa\n4\u3001Execute\u65b9\u6cd5\u8c03\u7528\uff1alimit_num\u589e\u52a0\u9ed8\u8ba4\u503c\n\n* \u4f18\u5316\u5bfc\u51fa\uff0c\u9632\u6b62\u53ef\u80fd\u7684\u5185\u5b58\u79ef\u538b",
+      "tree": {
+        "sha": "6a0bd7bd8935a5d14f91e18ecb389ba88c722613",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/6a0bd7bd8935a5d14f91e18ecb389ba88c722613"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/dafb2b972705567357dbdbfe2c0f9064948e98bd",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqel4iCRC1aQ7uu5UhlAAAbtQQAGcP4+CIli7QxElJZ5XkU5iE\nAj0an7MGlHzCjs/JEKwZx0PZGUKpkCDud2Dv69aBjIBdyieqAazGf80p32bs2rtN\nu0RLgB+G9Al7hSy8Jo6BLqYzonnXQ8nizVvaFyIX0cer49SVQM+2EzcvP1XheCJI\nccuTi7BWZU+wL4FqFOIBVccX8VNTtBy+4592x5A4mw/x9t+auVkx2Nok/hdFTp9y\nBpi09QKZL4diSjw2MdDbdc4IkCaxOV30KKZOXcNaZHuFlHp+VXOTifwSppr8yb1O\nku9a2safaANNFeR++bNBsqKRUDDUhupWLiUZD0pM3zYeq7AtYTXGvZ505OwuGy5w\nWssLNQhaGJUOap6DGrD8k4h+g9Zci2rVROICHEfLZMTEEcF9nxEVp3gR5tfQc/6X\nqSGLGuihpSjB1LQ02qYJwli72OkfMbKYPuKPDD5b4w1+T0UFZiDVhOXnONxbtCZe\npHWXcnvD+yg2+E5EBcDTqlDvEou0AZFSgzknaEKPCF//xDcn5QPMD9maZ8nRKS6X\nSgTSlG17M3Csf2G3FKH/6shf7RtlsSXKJPYpfcUSktKDM3bZ9Oetm5/b3aRzALsg\nbYL4AD8mip2gDd7teIz3fNGAW0QVBPUcz7TDcpb8bLmRWfvIkgwZ6PIVLCMFgXFw\npcNifT1S1TKcSozERgWT\n=DLvO\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 6a0bd7bd8935a5d14f91e18ecb389ba88c722613\nparent 3f5f63ae1398a9510b757a76eabf240baf51f37f\nauthor RankRao <rank_rao@163.com> 1786404386 +0800\ncommitter GitHub <noreply@github.com> 1786404386 +0800\n\nfix(offlinedownload):\u4fee\u590d\u79bb\u7ebf\u4e0b\u8f7d\u7684bug (#3224)\n\n* \u79bb\u7ebf\u4e0b\u8f7d\uff1a\n1\u3001\u5b89\u5168\u4fee\u590d\uff1a\u901a\u8fc7 workflow_id \u5173\u8054\u67e5\u8be2\u5408\u6cd5\u7684\u6587\u4ef6\u540d\uff0c\u800c\u975e\u76f4\u63a5\u4fe1\u4efb\u7528\u6237\u4f20\u5165\u7684\u6587\u4ef6\u540d\n2\u3001\u6821\u9a8c\uff1a\u6821\u9a8c file_name \u4e0d\u5305\u542b\u8def\u5f84\u5206\u9694\u7b26\u548c ..\n3\u3001bug\u4fee\u590d\uff1a\u6570\u636e\u5bfc\u51fa\u5de5\u5355\u53ea\u652f\u6301\u5355\u4e2a\u5e93\u7684\u5bfc\u51fa\n4\u3001Execute\u65b9\u6cd5\u8c03\u7528\uff1alimit_num\u589e\u52a0\u9ed8\u8ba4\u503c\n\n* \u4f18\u5316\u5bfc\u51fa\uff0c\u9632\u6b62\u53ef\u80fd\u7684\u5185\u5b58\u79ef\u538b",
+        "verified_at": "2026-08-10T23:26:31Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/dafb2b972705567357dbdbfe2c0f9064948e98bd",
+    "html_url": "https://github.com/hhyo/Archery/commit/dafb2b972705567357dbdbfe2c0f9064948e98bd",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/dafb2b972705567357dbdbfe2c0f9064948e98bd/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3f5f63ae1398a9510b757a76eabf240baf51f37f",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/3f5f63ae1398a9510b757a76eabf240baf51f37f",
+        "html_url": "https://github.com/hhyo/Archery/commit/3f5f63ae1398a9510b757a76eabf240baf51f37f"
+      }
+    ]
+  },
+  {
+    "sha": "3f5f63ae1398a9510b757a76eabf240baf51f37f",
+    "node_id": "C_kwDOCPspSNoAKDNmNWY2M2FlMTM5OGE5NTEwYjc1N2E3NmVhYmYyNDBiYWY1MWYzN2Y",
+    "commit": {
+      "author": {
+        "name": "\u798f",
+        "email": "69781045+zhuatuzilo@users.noreply.github.com",
+        "date": "2026-08-10T23:25:59Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-10T23:25:59Z"
+      },
+      "message": "Add user_all_instances path to group URLs (#3229)",
+      "tree": {
+        "sha": "17a733a28bdee7856c2b52c2b5c40e134114570b",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/17a733a28bdee7856c2b52c2b5c40e134114570b"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/3f5f63ae1398a9510b757a76eabf240baf51f37f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqel4HCRC1aQ7uu5UhlAAAGMUQAIPXvsty34sF19RfWNUp2PPs\nD1haeSmn/VvTDKpRud+/AnPUHd/6mjHh0aOYPfQFzuKbbHCAehx/jBPOo+CJ0Lfb\nxtW8h8dSpc3NJ1CdIUuGjBYFNhSL7reBb5My0oJiiXUc5dePQ63OHcyY7W8IwZiX\n9eF9R1mJbS7W2tMJ5gZ8Ig5DU/Jtn1P6d4UH2x6NRtAnF//NfplEPAhGMOUm1yQW\nfiTcnT7nKzwh2kew/6BWNWcQyZk1sFNMXzfQEK4PfIYWHs2m6BHEF83HXUwVdpqb\nY826TRyXBa2AktquEB6G6F7PTv02IDotuxMdqD5q7mY3pHedx7BEs9CWBb4Q2nLu\nFtgZxB41ByBvPhbfde+pKhEWZtgJQKo6gNFNJKyNIH/ZrhVWfWq8ZaY7Rqr2IlEP\nw4dXl2yezhm2Nd1Ex/mUmCEZupX7WJVsUsIEQNi+TLwogSMERXuT5Md6Ph4NofCZ\nDHXwszw0eroLUA+0+vBKLmcLhl3wZ81eP5zdLReJqfkds8DNtBoEHQ8l4CeOsg6G\nMm3drp5Yd0Bvw1q/txF2Oy1r6NJx7lJtMjslh/6t2zcUZLs8zzp969qSmsZbzNkJ\n1dm35Ya12tqw0Kq6VyZmeUVtROi1uHEdinYFPqJAQ+E2XMtbYbDkVbxwRUiQFq0r\nFF4ycmHN9Izgz90evmcR\n=hojA\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 17a733a28bdee7856c2b52c2b5c40e134114570b\nparent 440a6efdf8936dcb110a22992e65a8e2e04b851b\nauthor \u798f <69781045+zhuatuzilo@users.noreply.github.com> 1786404359 +0800\ncommitter GitHub <noreply@github.com> 1786404359 +0800\n\nAdd user_all_instances path to group URLs (#3229)",
+        "verified_at": "2026-08-10T23:26:04Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/3f5f63ae1398a9510b757a76eabf240baf51f37f",
+    "html_url": "https://github.com/hhyo/Archery/commit/3f5f63ae1398a9510b757a76eabf240baf51f37f",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/3f5f63ae1398a9510b757a76eabf240baf51f37f/comments",
+    "author": {
+      "login": "zhuatuzilo",
+      "id": 69781045,
+      "node_id": "MDQ6VXNlcjY5NzgxMDQ1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69781045?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhuatuzilo",
+      "html_url": "https://github.com/zhuatuzilo",
+      "followers_url": "https://api.github.com/users/zhuatuzilo/followers",
+      "following_url": "https://api.github.com/users/zhuatuzilo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhuatuzilo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhuatuzilo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhuatuzilo/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhuatuzilo/orgs",
+      "repos_url": "https://api.github.com/users/zhuatuzilo/repos",
+      "events_url": "https://api.github.com/users/zhuatuzilo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhuatuzilo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "440a6efdf8936dcb110a22992e65a8e2e04b851b",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/440a6efdf8936dcb110a22992e65a8e2e04b851b",
+        "html_url": "https://github.com/hhyo/Archery/commit/440a6efdf8936dcb110a22992e65a8e2e04b851b"
+      }
+    ]
+  },
+  {
+    "sha": "440a6efdf8936dcb110a22992e65a8e2e04b851b",
+    "node_id": "C_kwDOCPspSNoAKDQ0MGE2ZWZkZjg5MzZkY2IxMTBhMjI5OTJlNjVhOGUyZTA0Yjg1MWI",
+    "commit": {
+      "author": {
+        "name": "jarrenL",
+        "email": "104139391+jarrenL@users.noreply.github.com",
+        "date": "2026-08-10T23:25:10Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-10T23:25:10Z"
+      },
+      "message": "feat: add GaussDB/openGauss database engine support (#3221)\n\n* feat: add GaussDB/openGauss database engine support\n\nAdd GaussDBEngine as a new database engine that inherits from PgSQLEngine.\nGaussDB for openGauss is PostgreSQL wire-protocol compatible, so the engine\nreuses PgSQL behavior while keeping a separate db_type for product\nconfiguration, UI grouping, and dialect differences.\n\nKey changes:\n- New engine: sql/engines/gaussdb.py (GaussDBEngine(PgSQLEngine))\n  - PBE-safe query() using PREPARE + EXPLAIN EXECUTE\n  - GaussDB-specific processlist, describe_table, slowquery_review\n  - Full Archery standard methods (tablespace, views, triggers, etc.)\n- Engine registration in models.py, settings.py\n- Integration across instance/slowlog/db_diagnostic/data_dictionary/\n  query_privileges/instance_database/offlinedownload/views\n- Frontend templates: optgroup, column defs, schema selection\n- pgsql.py: parameterized SET statements (PBE compatibility)\n- Tests: test_gaussdb.py (21 tests), gaussdb fixtures in test_instance.py\n  and test_query_privileges.py\n- No external dependencies: reuses psycopg2\n\n* fix: address PR review feedback (3 P1 + 14 P2)\n\nP1 fixes:\n- pgsql.py: use psycopg2.sql.Identifier for SET search_path (SQL injection)\n- gaussdb.py: use ALTER SYSTEM SET instead of session-level SET for set_variable\n- instance_management.py: remove PgSQL from management allow-list (no write impl)\n\nP2 fixes:\n- instance_database.py: add else branch for unsupported db create; remove PgSQL\n- param_compare.html: remove GaussDB option (backend not implemented)\n- gaussdb.py: pg_class join filtered by schema namespace\n- gaussdb.py: only intercept bare EXPLAIN (preserve ANALYZE/FORMAT)\n- data_dictionary.py: fix tuple db_type comparison in _dict_list/_dict_detail\n- instance.py: param edit validates db_type + editable=True\n- dbdiagnostic.html: revert GaussDB from supportedDbType (no diagnostic JS)\n- gaussdb.py: alias pid as id in processlist for kill session\n- data_dictionary.py: open function routes for GaussDB\n- gaussdb.py: skip IF NOT EXISTS in CREATE rollback SQL\n- gaussdb.py: pass schema_name to _explain_via_prepare\n- gaussdb.py: use null as created placeholder for triggers\n- gaussdb.py: fold unquoted identifiers to lowercase in _split_table_name\n\n* fix: address second round review feedback (7 P2)\n\n- gaussdb.py: capture full SQL after EXPLAIN (was only capturing keyword)\n- gaussdb.py: set autocommit before ALTER SYSTEM (cannot run in transaction)\n- gaussdb.py: fix account user_host format to match saved records (user@%)\n- instanceaccount.html: fix missing ) in onclick handlers for GaussDB buttons\n- database.html: remove PgSQL from selector (backend doesn't support it)\n- instanceaccount.html: remove PgSQL from selector (backend doesn't support it)\n- data_dictionary.py: add GaussDB to export endpoint db_type list\n\n* fix: address third round review feedback (1 P1 + 3 P2)\n\n- views.py: remove pgsql/gaussdb from auto-review db_type (execute_check\n  doesn't set affected_rows, would bypass row-count safety gate)\n- gaussdb.py: fix _split_qualified_name to preserve quoted identifier case\n  (was lowercasing everything because quotes were already stripped)\n- gaussdb.py: add event_object_table ordering to trigger detail query\n  (PG trigger names are per-table unique, not per-schema)\n- gaussdb.py: include specific_name in routine list and return all overloads\n  in detail (PG/GaussDB supports function overloading)\n\n* fix: address fourth round review feedback (4 P2)\n\n- dbdiagnostic.html: add gaussdb to diagnostic instance AJAX filter\n- gaussdb.py: add saved=False flag to account rows (prevent KeyError on filter)\n- slowquery.html: hide SQLAdvisor button for GaussDB (only supports MySQL)\n- gaussdb.py: call pg_reload_conf() after ALTER SYSTEM SET\n\n* fix: self-review findings\n\n- gaussdb.py: replace created/last_altered with null in routine detail\n  (information_schema.routines may not have these columns on GaussDB)\n- gaussdb.py: use unique stmt_name for PREPARE to avoid concurrent\n  EXPLAIN requests deallocating each other's prepared statements\n- gaussdb.py: rewrite _split_qualified_name to remove dead code and\n  correctly track quote state per segment (had_quotes flag)\n\n* fix: self-review + subagent review findings (2 P1 + 6 P2)\n\nP1:\n- dbdiagnostic.html: remove gaussdb from supportedDbType (gaussdbDiagnosticInfo\n  not defined in db_info.js, would crash session diagnostics page)\n- instance_management.py: remove gaussdb from SUPPORTED_MANAGEMENT_DB_TYPE\n  (write ops not implemented, would silently report success)\n- instanceaccount.html: remove gaussdb optgroup and db_type entries\n\nP2:\n- gaussdb.py: close cursor in _explain_via_prepare finally block\n- gaussdb.py: remove conn.rollback() when autocommit=True\n- gaussdb.py: propagate count query error in _slowquery_response\n- param_compare.html: early return when db_type is empty\n- gaussdb.py: return () instead of [] for empty rows in detail methods\n- gaussdb.py: log constraint/comment query errors in show_create_table\n\n* fix: set statement_timeout in _explain_via_prepare for query timeout\n\n* fix: resolve CI failures \u2014 black formatting, GoInceptionEngine import, test expectations\n\n- Restore module-level GoInceptionEngine import in data_masking.py\n  (tests patch it at module level: @patch('sql.utils.data_masking.GoInceptionEngine'))\n- Update test expectations in tests.py to match new error message\n  ('\u8be5\u6570\u636e\u5e93\u7c7b\u578b\u4e0d\u652f\u6301\u6b64\u529f\u80fd' replaces '\u4ec5MySQL\u652f\u6301\u8be5\u529f\u80fd')\n- Apply black formatting to 6 files flagged by CI lint check\n\n* fix: address remaining review feedback (7 P2)\n\n- get_rollback: handle ADD CONSTRAINT/PRIMARY KEY/FOREIGN KEY separately\n  from ADD COLUMN to avoid generating DROP COLUMN rollback for constraints\n- slowquery: gate /slowquery/report/ AJAX call for GaussDB (no report backend)\n- show_create_table: append PARTITION BY clause for partitioned tables\n- show_create_table: include secondary indexes from pg_indexes in CREATE SQL\n- get_table_desc_data: constrain pg_class join by relnamespace to prevent\n  cross-schema comment duplication\n- database.html: disable create-database button for GaussDB (not supported)\n- slowquery: set QueryTimePct95 to 0 instead of single execution duration\n  (GaussDB statement_history is per-execution, not aggregated)\n\n* test: add comprehensive test coverage for GaussDB engine\n\nAdd 61 new test methods covering previously untested engine methods:\n- _split_qualified_name / _display_object_name\n- _slowquery_filters / _slowquery_response\n- _build_metadata_rollback_sql (all DDL + constraint branches)\n- get_all_databases_summary / get_instance_users_summary\n- get_rollback (valid + invalid JSON)\n- get_variables / set_variable (postmaster rejection + success)\n- kill / get_kill_command\n- get_table_meta_data / get_table_desc_data / get_table_index_data\n- get_view_detail / get_triggers_list / get_trigger_detail\n- _group_information_schema_objects / _get_routines_list / _get_routine_detail\n- get_tables_metas_data\n- tablespace / tablespace_count\n- slowquery_review / slowquery_review_history\n- lock_info / get_long_transaction\n- get_group_tables_by_db\n- _explain_via_prepare (success + schema + error)\n- show_create_table with partition + secondary indexes\n\nAlso fix: _build_metadata_rollback_sql now handles 'IF NOT EXISTS' as a\nsingle sqlparse token (not three separate tokens) when skipping optional\nCREATE clauses.\n\nCoverage: 43% -> 92% (39 uncovered lines remain, all error-handling\nexcept branches and edge cases).\n\n* fix: address bot round 8 review feedback (1 P1 + 7 P2)\n\n- P1: Override execute_check to reject COMMIT/ROLLBACK/BEGIN in workflows\n  (prevents breaking Archery's transaction management)\n- P2: Accept WITH/CTE read-only queries in query_check\n- P2: Enable GaussDB in param_compare (frontend selector + backend allowlist)\n- P2: Fix integer types rendered as integer(32,0) \u2014 only numeric/decimal\n  get precision/scale in both show_create_table and data dictionary\n- P2: Retrieve UDT name for USER-DEFINED and ARRAY column types in\n  show_create_table (was returning placeholder 'USER-DEFINED')\n- P2: Return actual indexed columns and positions from pg_index instead\n  of empty strings in get_table_index_data\n- P2: Skip IF NOT EXISTS in ALTER TABLE ADD COLUMN rollback regex\n- P2: Keep 'postgres' database visible in database management list\n\nAdd 7 new test methods covering all fixes.\n\n* fix: address bot round 9 review feedback (2 P1 + 2 P2)\n\n- P1: Fix execute_check using 'errorlevel' instead of 'errlevel' \u2014\n  rejection was not persisted through ReviewSet.json() serialization\n- P1: Revert CTE/WITH acceptance in query_check \u2014 accepting WITH creates\n  a data masking bypass (PgSQL query_masking only handles SELECT prefix)\n- P2: Preserve schema in ALTER TABLE RENAME rollback (public.foo\u2192bar\n  generated invalid 'ALTER TABLE bar RENAME TO public.foo')\n- P2: Group slow-query aggregates by both sql_id and db_name to prevent\n  cross-database collision of identical query text",
+      "tree": {
+        "sha": "61ca5666899558b8782501cc7a4d633d64f61ba6",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/61ca5666899558b8782501cc7a4d633d64f61ba6"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/440a6efdf8936dcb110a22992e65a8e2e04b851b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqel3WCRC1aQ7uu5UhlAAA5ywQAEPUpMLeRUg5sxA4DMwiTluq\nuJir+yQLKvdHSyVFeG/7z8Fyl6Trmp15e0NvFCeIGz8oUN6q3azSjTw5WgT7ykXx\nRl8jnDLItv+ZmvMNtI2WW56ZngoXH8VGLS8kEeNTpFyDVV0nP6TOXwNWottUKpLl\nbPt6qyQIE7bwjarjOsCkia3U4J/GpcvJqleOm96D19ZPuwzXUxhMKwcXKCclZbUt\nwIXFtQDQgl6ZIpp4HSQDUZh+Lx548R3yKYgCnLyzF9Em6WlbiOUO4UEAQcyeUtVA\neeM3+PaaQxJOrka6jxQL+3WX0zeAOwz/zEivdiBDE7+qWFr6PUU14Nhdeydyoczz\n3LDeHzM6k9O99Kwg4V0TrKybjG9Ku7jb1X9/fxSUd7F+gsRD2la5oNDv0w4996lg\nUh0ybmK5rBkyJs1OyIalWc+TCEGBqYIAQ2jfvHFqi8P/Lb4YvpAQuYK/XXeQ+4CJ\nu/GQm5dqanV2HZ6DmaLlu4yYnafpLYbH3tp8wxgaLHFWm8WkXcRleIvv49bOIbaU\ndHxdznGszUhDVys/pJYvn5+Rb+utZ6Sh/c+PBTLf6Xv3s/zFvgMwo/lpWdzJ4nEL\nGP9YTkAQ6qcm2oNGi2h6ulVSoiR34Ie3/pS+3nqA8BB7ti0FRL1utZeBSuE5Rxxn\nbhSb79xwLeGDmxhYnRdo\n=PmZQ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 61ca5666899558b8782501cc7a4d633d64f61ba6\nparent c5a63c2397e708b38081039b4c4d0bfc704fc5d6\nauthor jarrenL <104139391+jarrenL@users.noreply.github.com> 1786404310 +0800\ncommitter GitHub <noreply@github.com> 1786404310 +0800\n\nfeat: add GaussDB/openGauss database engine support (#3221)\n\n* feat: add GaussDB/openGauss database engine support\n\nAdd GaussDBEngine as a new database engine that inherits from PgSQLEngine.\nGaussDB for openGauss is PostgreSQL wire-protocol compatible, so the engine\nreuses PgSQL behavior while keeping a separate db_type for product\nconfiguration, UI grouping, and dialect differences.\n\nKey changes:\n- New engine: sql/engines/gaussdb.py (GaussDBEngine(PgSQLEngine))\n  - PBE-safe query() using PREPARE + EXPLAIN EXECUTE\n  - GaussDB-specific processlist, describe_table, slowquery_review\n  - Full Archery standard methods (tablespace, views, triggers, etc.)\n- Engine registration in models.py, settings.py\n- Integration across instance/slowlog/db_diagnostic/data_dictionary/\n  query_privileges/instance_database/offlinedownload/views\n- Frontend templates: optgroup, column defs, schema selection\n- pgsql.py: parameterized SET statements (PBE compatibility)\n- Tests: test_gaussdb.py (21 tests), gaussdb fixtures in test_instance.py\n  and test_query_privileges.py\n- No external dependencies: reuses psycopg2\n\n* fix: address PR review feedback (3 P1 + 14 P2)\n\nP1 fixes:\n- pgsql.py: use psycopg2.sql.Identifier for SET search_path (SQL injection)\n- gaussdb.py: use ALTER SYSTEM SET instead of session-level SET for set_variable\n- instance_management.py: remove PgSQL from management allow-list (no write impl)\n\nP2 fixes:\n- instance_database.py: add else branch for unsupported db create; remove PgSQL\n- param_compare.html: remove GaussDB option (backend not implemented)\n- gaussdb.py: pg_class join filtered by schema namespace\n- gaussdb.py: only intercept bare EXPLAIN (preserve ANALYZE/FORMAT)\n- data_dictionary.py: fix tuple db_type comparison in _dict_list/_dict_detail\n- instance.py: param edit validates db_type + editable=True\n- dbdiagnostic.html: revert GaussDB from supportedDbType (no diagnostic JS)\n- gaussdb.py: alias pid as id in processlist for kill session\n- data_dictionary.py: open function routes for GaussDB\n- gaussdb.py: skip IF NOT EXISTS in CREATE rollback SQL\n- gaussdb.py: pass schema_name to _explain_via_prepare\n- gaussdb.py: use null as created placeholder for triggers\n- gaussdb.py: fold unquoted identifiers to lowercase in _split_table_name\n\n* fix: address second round review feedback (7 P2)\n\n- gaussdb.py: capture full SQL after EXPLAIN (was only capturing keyword)\n- gaussdb.py: set autocommit before ALTER SYSTEM (cannot run in transaction)\n- gaussdb.py: fix account user_host format to match saved records (user@%)\n- instanceaccount.html: fix missing ) in onclick handlers for GaussDB buttons\n- database.html: remove PgSQL from selector (backend doesn't support it)\n- instanceaccount.html: remove PgSQL from selector (backend doesn't support it)\n- data_dictionary.py: add GaussDB to export endpoint db_type list\n\n* fix: address third round review feedback (1 P1 + 3 P2)\n\n- views.py: remove pgsql/gaussdb from auto-review db_type (execute_check\n  doesn't set affected_rows, would bypass row-count safety gate)\n- gaussdb.py: fix _split_qualified_name to preserve quoted identifier case\n  (was lowercasing everything because quotes were already stripped)\n- gaussdb.py: add event_object_table ordering to trigger detail query\n  (PG trigger names are per-table unique, not per-schema)\n- gaussdb.py: include specific_name in routine list and return all overloads\n  in detail (PG/GaussDB supports function overloading)\n\n* fix: address fourth round review feedback (4 P2)\n\n- dbdiagnostic.html: add gaussdb to diagnostic instance AJAX filter\n- gaussdb.py: add saved=False flag to account rows (prevent KeyError on filter)\n- slowquery.html: hide SQLAdvisor button for GaussDB (only supports MySQL)\n- gaussdb.py: call pg_reload_conf() after ALTER SYSTEM SET\n\n* fix: self-review findings\n\n- gaussdb.py: replace created/last_altered with null in routine detail\n  (information_schema.routines may not have these columns on GaussDB)\n- gaussdb.py: use unique stmt_name for PREPARE to avoid concurrent\n  EXPLAIN requests deallocating each other's prepared statements\n- gaussdb.py: rewrite _split_qualified_name to remove dead code and\n  correctly track quote state per segment (had_quotes flag)\n\n* fix: self-review + subagent review findings (2 P1 + 6 P2)\n\nP1:\n- dbdiagnostic.html: remove gaussdb from supportedDbType (gaussdbDiagnosticInfo\n  not defined in db_info.js, would crash session diagnostics page)\n- instance_management.py: remove gaussdb from SUPPORTED_MANAGEMENT_DB_TYPE\n  (write ops not implemented, would silently report success)\n- instanceaccount.html: remove gaussdb optgroup and db_type entries\n\nP2:\n- gaussdb.py: close cursor in _explain_via_prepare finally block\n- gaussdb.py: remove conn.rollback() when autocommit=True\n- gaussdb.py: propagate count query error in _slowquery_response\n- param_compare.html: early return when db_type is empty\n- gaussdb.py: return () instead of [] for empty rows in detail methods\n- gaussdb.py: log constraint/comment query errors in show_create_table\n\n* fix: set statement_timeout in _explain_via_prepare for query timeout\n\n* fix: resolve CI failures \u2014 black formatting, GoInceptionEngine import, test expectations\n\n- Restore module-level GoInceptionEngine import in data_masking.py\n  (tests patch it at module level: @patch('sql.utils.data_masking.GoInceptionEngine'))\n- Update test expectations in tests.py to match new error message\n  ('\u8be5\u6570\u636e\u5e93\u7c7b\u578b\u4e0d\u652f\u6301\u6b64\u529f\u80fd' replaces '\u4ec5MySQL\u652f\u6301\u8be5\u529f\u80fd')\n- Apply black formatting to 6 files flagged by CI lint check\n\n* fix: address remaining review feedback (7 P2)\n\n- get_rollback: handle ADD CONSTRAINT/PRIMARY KEY/FOREIGN KEY separately\n  from ADD COLUMN to avoid generating DROP COLUMN rollback for constraints\n- slowquery: gate /slowquery/report/ AJAX call for GaussDB (no report backend)\n- show_create_table: append PARTITION BY clause for partitioned tables\n- show_create_table: include secondary indexes from pg_indexes in CREATE SQL\n- get_table_desc_data: constrain pg_class join by relnamespace to prevent\n  cross-schema comment duplication\n- database.html: disable create-database button for GaussDB (not supported)\n- slowquery: set QueryTimePct95 to 0 instead of single execution duration\n  (GaussDB statement_history is per-execution, not aggregated)\n\n* test: add comprehensive test coverage for GaussDB engine\n\nAdd 61 new test methods covering previously untested engine methods:\n- _split_qualified_name / _display_object_name\n- _slowquery_filters / _slowquery_response\n- _build_metadata_rollback_sql (all DDL + constraint branches)\n- get_all_databases_summary / get_instance_users_summary\n- get_rollback (valid + invalid JSON)\n- get_variables / set_variable (postmaster rejection + success)\n- kill / get_kill_command\n- get_table_meta_data / get_table_desc_data / get_table_index_data\n- get_view_detail / get_triggers_list / get_trigger_detail\n- _group_information_schema_objects / _get_routines_list / _get_routine_detail\n- get_tables_metas_data\n- tablespace / tablespace_count\n- slowquery_review / slowquery_review_history\n- lock_info / get_long_transaction\n- get_group_tables_by_db\n- _explain_via_prepare (success + schema + error)\n- show_create_table with partition + secondary indexes\n\nAlso fix: _build_metadata_rollback_sql now handles 'IF NOT EXISTS' as a\nsingle sqlparse token (not three separate tokens) when skipping optional\nCREATE clauses.\n\nCoverage: 43% -> 92% (39 uncovered lines remain, all error-handling\nexcept branches and edge cases).\n\n* fix: address bot round 8 review feedback (1 P1 + 7 P2)\n\n- P1: Override execute_check to reject COMMIT/ROLLBACK/BEGIN in workflows\n  (prevents breaking Archery's transaction management)\n- P2: Accept WITH/CTE read-only queries in query_check\n- P2: Enable GaussDB in param_compare (frontend selector + backend allowlist)\n- P2: Fix integer types rendered as integer(32,0) \u2014 only numeric/decimal\n  get precision/scale in both show_create_table and data dictionary\n- P2: Retrieve UDT name for USER-DEFINED and ARRAY column types in\n  show_create_table (was returning placeholder 'USER-DEFINED')\n- P2: Return actual indexed columns and positions from pg_index instead\n  of empty strings in get_table_index_data\n- P2: Skip IF NOT EXISTS in ALTER TABLE ADD COLUMN rollback regex\n- P2: Keep 'postgres' database visible in database management list\n\nAdd 7 new test methods covering all fixes.\n\n* fix: address bot round 9 review feedback (2 P1 + 2 P2)\n\n- P1: Fix execute_check using 'errorlevel' instead of 'errlevel' \u2014\n  rejection was not persisted through ReviewSet.json() serialization\n- P1: Revert CTE/WITH acceptance in query_check \u2014 accepting WITH creates\n  a data masking bypass (PgSQL query_masking only handles SELECT prefix)\n- P2: Preserve schema in ALTER TABLE RENAME rollback (public.foo\u2192bar\n  generated invalid 'ALTER TABLE bar RENAME TO public.foo')\n- P2: Group slow-query aggregates by both sql_id and db_name to prevent\n  cross-database collision of identical query text",
+        "verified_at": "2026-08-10T23:25:15Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/440a6efdf8936dcb110a22992e65a8e2e04b851b",
+    "html_url": "https://github.com/hhyo/Archery/commit/440a6efdf8936dcb110a22992e65a8e2e04b851b",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/440a6efdf8936dcb110a22992e65a8e2e04b851b/comments",
+    "author": {
+      "login": "jarrenL",
+      "id": 104139391,
+      "node_id": "U_kgDOBjUKfw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/104139391?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jarrenL",
+      "html_url": "https://github.com/jarrenL",
+      "followers_url": "https://api.github.com/users/jarrenL/followers",
+      "following_url": "https://api.github.com/users/jarrenL/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jarrenL/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jarrenL/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jarrenL/subscriptions",
+      "organizations_url": "https://api.github.com/users/jarrenL/orgs",
+      "repos_url": "https://api.github.com/users/jarrenL/repos",
+      "events_url": "https://api.github.com/users/jarrenL/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jarrenL/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c5a63c2397e708b38081039b4c4d0bfc704fc5d6",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/c5a63c2397e708b38081039b4c4d0bfc704fc5d6",
+        "html_url": "https://github.com/hhyo/Archery/commit/c5a63c2397e708b38081039b4c4d0bfc704fc5d6"
+      }
+    ]
+  },
+  {
+    "sha": "c5a63c2397e708b38081039b4c4d0bfc704fc5d6",
+    "node_id": "C_kwDOCPspSNoAKGM1YTYzYzIzOTdlNzA4YjM4MDgxMDM5YjRjNGQwYmZjNzA0ZmM1ZDY",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "mengyukatu@163.com",
+        "date": "2026-07-27T08:01:18Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-27T08:01:18Z"
+      },
+      "message": "Feat(ace):\u4f18\u5316sql ace\u7f16\u8f91\u5668 (#3222)\n\n* \u4f18\u5316\u81ea\u52a8\u8865\u5168\uff0c\u907f\u514d\u5019\u9009\u8bcd\u4e00\u76f4\u79ef\u7d2f\u7684\u95ee\u9898\n\n* * \u4e0a\u4e0b\u6587\u611f\u77e5\u8865\u5168\uff1a\u901a\u8fc7\u70b9\u53f7.\uff0c\u5c06\u8868\u4e0b\u7684\u5b57\u6bb5\u5173\u8054\u51fa\u6765\uff0c\u652f\u6301as\u91cd\u547d\u540d\u7684\u8868\u3002\n\n* \u4f18\u5316mode\u548ctheme\n\n* ace\u7f16\u8f91\u5668\uff1a\u589e\u52a0server_info\uff0c\u4e25\u683c\u533a\u5206mysql\u548cmariadb\u6570\u636e\u5e93\u7248\u672c\n\n* \u4fee\u590d\u5f02\u6b65\u83b7\u53d6\u53ef\u80fd\u7684\u5ef6\u8fdf\u5bfc\u81f4\u8bbe\u7f6emode\u9519\u8bef\n\n* \u589e\u52a0\u515c\u5e95\u903b\u8f91\n\n* \u8865\u5145\u5355\u5143\u6d4b\u8bd5\n\n* 1\u3001\u4fee\u590d\u9057\u6f0f\u53c2\u6570\uff0cdatabase\n2\u3001\u683c\u5f0f\u5316sql/test_services.py\u548csql_api/api_instance.py\u6587\u4ef6\n3\u3001\u63d0\u9ad8\u5355\u5143\u6d4b\u8bd5\u8986\u76d6\u7387\uff0csql_api/api_instance.py\n\n---------\n\nCo-authored-by: rank <rank_rao@163.com>",
+      "tree": {
+        "sha": "e3dc92e43143c4b3eeae9e6b96a9b6a2e3762aa1",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/e3dc92e43143c4b3eeae9e6b96a9b6a2e3762aa1"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/c5a63c2397e708b38081039b4c4d0bfc704fc5d6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqZxBOCRC1aQ7uu5UhlAAAuxUQAH7SVZyt4a8arEAFpYYa9lbG\nIguPCLaCjXXKKAx9dLRl5sjKHkvltf0LOZW5mGZwcqYz5rdSENjmtIljHVgOpZc3\n732fuXvSf/SRwkPRSQTQbZ8UWBy/Ve4lLPNXwfP3uziAd7KCJa9/S5hSJ7z6tDMO\n0jWphyHSIVMH3uwm8rT1wji+ExZdz369whVkLtewRSWATkVffHYKMJWm5HnohhVj\nFeNXu8G18g0Z5vHN+WyU9aTRw6MvKuV7heUZjpl56mqjYXTC079Kp9bHWC22hILS\nKLSC8AP9+5CfRyf7Wr4so87JvMIU3QQvZB/c6VxSV6pn2BViHPN9txykuWz0fej0\nVJ6EcGg7pEslN3K89tymvbu3aNgtiGEc/mwAWUzdvFv0GiNf+Xa8MrMaa4MC/Tfw\npejnWrKyMCcJZAsbiqrsbbobf7jfCG91KpaIkzLpYunFwm0Oz3SScmBzb287i6DU\n/WZcQcpHc0Ax4gMPwx7NsK4jxhJeqvg/U9bShXe1ox1Vkccj+61si9lpm/ior6BG\nJBNlJ0T7VATccXO3esviZvxnrLsALmHEzmmDxrIpXyRMxap9mgu835SmXnJBjwz2\nBAGX3XqmMhZR28ucVxKGzRugdSwVj/ARGy9TQr5PuLm518OoXM/wBOn6kyWjr66R\nKWDV9hulJeDncctnToa/\n=J8qM\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e3dc92e43143c4b3eeae9e6b96a9b6a2e3762aa1\nparent e93f3f90a85827e586224e2be457494a58c8013d\nauthor RankRao <mengyukatu@163.com> 1785139278 +0800\ncommitter GitHub <noreply@github.com> 1785139278 +0800\n\nFeat(ace):\u4f18\u5316sql ace\u7f16\u8f91\u5668 (#3222)\n\n* \u4f18\u5316\u81ea\u52a8\u8865\u5168\uff0c\u907f\u514d\u5019\u9009\u8bcd\u4e00\u76f4\u79ef\u7d2f\u7684\u95ee\u9898\n\n* * \u4e0a\u4e0b\u6587\u611f\u77e5\u8865\u5168\uff1a\u901a\u8fc7\u70b9\u53f7.\uff0c\u5c06\u8868\u4e0b\u7684\u5b57\u6bb5\u5173\u8054\u51fa\u6765\uff0c\u652f\u6301as\u91cd\u547d\u540d\u7684\u8868\u3002\n\n* \u4f18\u5316mode\u548ctheme\n\n* ace\u7f16\u8f91\u5668\uff1a\u589e\u52a0server_info\uff0c\u4e25\u683c\u533a\u5206mysql\u548cmariadb\u6570\u636e\u5e93\u7248\u672c\n\n* \u4fee\u590d\u5f02\u6b65\u83b7\u53d6\u53ef\u80fd\u7684\u5ef6\u8fdf\u5bfc\u81f4\u8bbe\u7f6emode\u9519\u8bef\n\n* \u589e\u52a0\u515c\u5e95\u903b\u8f91\n\n* \u8865\u5145\u5355\u5143\u6d4b\u8bd5\n\n* 1\u3001\u4fee\u590d\u9057\u6f0f\u53c2\u6570\uff0cdatabase\n2\u3001\u683c\u5f0f\u5316sql/test_services.py\u548csql_api/api_instance.py\u6587\u4ef6\n3\u3001\u63d0\u9ad8\u5355\u5143\u6d4b\u8bd5\u8986\u76d6\u7387\uff0csql_api/api_instance.py\n\n---------\n\nCo-authored-by: rank <rank_rao@163.com>",
+        "verified_at": "2026-07-27T08:01:19Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/c5a63c2397e708b38081039b4c4d0bfc704fc5d6",
+    "html_url": "https://github.com/hhyo/Archery/commit/c5a63c2397e708b38081039b4c4d0bfc704fc5d6",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/c5a63c2397e708b38081039b4c4d0bfc704fc5d6/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e93f3f90a85827e586224e2be457494a58c8013d",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/e93f3f90a85827e586224e2be457494a58c8013d",
+        "html_url": "https://github.com/hhyo/Archery/commit/e93f3f90a85827e586224e2be457494a58c8013d"
+      }
+    ]
+  },
+  {
+    "sha": "e93f3f90a85827e586224e2be457494a58c8013d",
+    "node_id": "C_kwDOCPspSNoAKGU5M2YzZjkwYTg1ODI3ZTU4NjIyNGUyYmU0NTc0OTRhNThjODAxM2Q",
+    "commit": {
+      "author": {
+        "name": "\u798f",
+        "email": "69781045+zhuatuzilo@users.noreply.github.com",
+        "date": "2026-07-27T05:06:55Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-27T05:06:55Z"
+      },
+      "message": "Change AJAX URL for SQL export pre-check (#3227)",
+      "tree": {
+        "sha": "ac83aaad821340942adb84712116b92339e1096c",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/ac83aaad821340942adb84712116b92339e1096c"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/e93f3f90a85827e586224e2be457494a58c8013d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqZudvCRC1aQ7uu5UhlAAAYDoQABbNqNL9VnVaKuBxntMrmu2H\nm3xiDWdKYEB8QwQpiH4byFd3jEhUKBfSNeu6cyAi9om8kDyFi0xbvl2jBXm9RxRi\npyw3V7Yw7YapW0p+W2L5rFzR2jTPM1Q2Eu0xHT+hCdQ4CtxwAOPEb3J8ieE7vK4U\npspDitp5KQPP0BpnvsXW5GGmX9ykcED5Y+xGGUy5lvPMtVjTABpygX/vCGZeed7L\noK5rGp5YIZubhyFyonLloRHrt6kpgbZWWO6/+or1IGyPyOK3vdyha6V9nN+2r+X6\ndr4S1LD6TwKSEcXk3RgGVTmtr2pl8G/MPQfMd8C/0f/QTL//SDfyUE+IQSyWM7I8\nGiNDaRnBjXgtXE4W3cxtGyXLSPIGbo07JNaNBt8p8As64IWm5v4fvpvzJU53b45z\noTpAa6bR2C7QBnI/0SkpcKFOLBnO89vxjvZ/jUwkXO3G/TfSzJNDyPG2xe0urv0x\nPy6K3cEQucKYUpldcirTmBnIkGfTOg1n8MUup3ZTMiL86Gp3V/vsht5cSTEfq16o\nW4At670lFTKSLbgReWD+J33s/GKl2p1utSSq7IEbfIkLEHhiwNzysU9P5CqPs1lM\nXSDcux1fzrcGflfVFY1zq0+I6xvtQhHVXDbc5tC1hdX0V9ed61vmnPzziB1Wtltc\nwSwuE0YjGxDIRhzO4Bwd\n=KMrR\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ac83aaad821340942adb84712116b92339e1096c\nparent 4b99b27887ccf7da67bc6a22384d678a9f40e0f7\nauthor \u798f <69781045+zhuatuzilo@users.noreply.github.com> 1785128815 +0800\ncommitter GitHub <noreply@github.com> 1785128815 +0800\n\nChange AJAX URL for SQL export pre-check (#3227)",
+        "verified_at": "2026-07-27T05:06:55Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/e93f3f90a85827e586224e2be457494a58c8013d",
+    "html_url": "https://github.com/hhyo/Archery/commit/e93f3f90a85827e586224e2be457494a58c8013d",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/e93f3f90a85827e586224e2be457494a58c8013d/comments",
+    "author": {
+      "login": "zhuatuzilo",
+      "id": 69781045,
+      "node_id": "MDQ6VXNlcjY5NzgxMDQ1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69781045?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhuatuzilo",
+      "html_url": "https://github.com/zhuatuzilo",
+      "followers_url": "https://api.github.com/users/zhuatuzilo/followers",
+      "following_url": "https://api.github.com/users/zhuatuzilo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhuatuzilo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhuatuzilo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhuatuzilo/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhuatuzilo/orgs",
+      "repos_url": "https://api.github.com/users/zhuatuzilo/repos",
+      "events_url": "https://api.github.com/users/zhuatuzilo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhuatuzilo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4b99b27887ccf7da67bc6a22384d678a9f40e0f7",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/4b99b27887ccf7da67bc6a22384d678a9f40e0f7",
+        "html_url": "https://github.com/hhyo/Archery/commit/4b99b27887ccf7da67bc6a22384d678a9f40e0f7"
+      }
+    ]
+  },
+  {
+    "sha": "4b99b27887ccf7da67bc6a22384d678a9f40e0f7",
+    "node_id": "C_kwDOCPspSNoAKDRiOTliMjc4ODdjY2Y3ZGE2N2JjNmEyMjM4NGQ2NzhhOWY0MGUwZjc",
+    "commit": {
+      "author": {
+        "name": "\u798f",
+        "email": "69781045+zhuatuzilo@users.noreply.github.com",
+        "date": "2026-07-24T04:31:03Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-24T04:31:03Z"
+      },
+      "message": "Add int_as_string_bitcount parameter to JSON renderer (#3230)",
+      "tree": {
+        "sha": "d99205b993d2b71f84c65f71aaf4f71c84ea711e",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/d99205b993d2b71f84c65f71aaf4f71c84ea711e"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/4b99b27887ccf7da67bc6a22384d678a9f40e0f7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqYuqHCRC1aQ7uu5UhlAAAH3oQABEA6Vjyc9UJbrA4gJk2PdGO\nHokL/MNzduerev9izlTD9JSi/zQYEWyamfEX8t7UEQ0XMn55C6W7UgOJTzoO/a+z\n+Ev3HocnBdGLEVjdDc8+JyOl/O9CYRbi0d6eXvs1vA+uLTMXs70X9PKPI1ZfBPxW\nigVO3BZWdoDdMeRdfBoxyq7nG7YbbxZaryfPqqI4o8n7gwd6Pc1ArCUGr9r3nNHo\nW7wisScQAsaaRwYK8Pd65AI2g0Nl9LsENgi/5Mxq0Kk7EINg2TV0x3w9ljUTBhoN\neu4hd6Tki8oO/QGjK3JpP9+w9k9x8bHkzz7OIAReghQU15hTX/bW1peQjidPmr6A\nVlATzZOjPFSct1DMdRHtRwA34DGd7iQsvl7yK1UPVez6A3s1wSWvRUSLCaXmV2Jo\nTxfSEpRAaKoUBGjUznLWriEJOq26/a7MI5DHHc+vI7kz82UhQFlhFEtrRqhoUzCf\nCRT93DUXg6/VRRuBsj1wbZUM1SANyDE70agigvIypQyX9tJyyUOn5lxKUBHBAKoJ\nRm1EHRp6wP5akw/B3byOyXfzeJgLGRlZi3ZSt4BrJFRCV3ScQqL0D3e1P1r3kkIS\nwetXnsTdqJJtApktbWfsPh8OaA+v5kUBUqklaiUd3Rf99kGiAbxlgnveemHfDSKW\n5tMqk707utawvM9QlMIm\n=Vhj9\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d99205b993d2b71f84c65f71aaf4f71c84ea711e\nparent 7e934a320a28018d07cfe29574d0abfbb1565842\nauthor \u798f <69781045+zhuatuzilo@users.noreply.github.com> 1784867463 +0800\ncommitter GitHub <noreply@github.com> 1784867463 +0800\n\nAdd int_as_string_bitcount parameter to JSON renderer (#3230)",
+        "verified_at": "2026-07-24T04:31:03Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/4b99b27887ccf7da67bc6a22384d678a9f40e0f7",
+    "html_url": "https://github.com/hhyo/Archery/commit/4b99b27887ccf7da67bc6a22384d678a9f40e0f7",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/4b99b27887ccf7da67bc6a22384d678a9f40e0f7/comments",
+    "author": {
+      "login": "zhuatuzilo",
+      "id": 69781045,
+      "node_id": "MDQ6VXNlcjY5NzgxMDQ1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69781045?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhuatuzilo",
+      "html_url": "https://github.com/zhuatuzilo",
+      "followers_url": "https://api.github.com/users/zhuatuzilo/followers",
+      "following_url": "https://api.github.com/users/zhuatuzilo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhuatuzilo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhuatuzilo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhuatuzilo/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhuatuzilo/orgs",
+      "repos_url": "https://api.github.com/users/zhuatuzilo/repos",
+      "events_url": "https://api.github.com/users/zhuatuzilo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhuatuzilo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7e934a320a28018d07cfe29574d0abfbb1565842",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/7e934a320a28018d07cfe29574d0abfbb1565842",
+        "html_url": "https://github.com/hhyo/Archery/commit/7e934a320a28018d07cfe29574d0abfbb1565842"
+      }
+    ]
+  },
+  {
+    "sha": "7e934a320a28018d07cfe29574d0abfbb1565842",
+    "node_id": "C_kwDOCPspSNoAKDdlOTM0YTMyMGEyODAxOGQwN2NmZTI5NTc0ZDBhYmZiYjE1NjU4NDI",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "mengyukatu@163.com",
+        "date": "2026-07-19T07:01:55Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-19T07:01:55Z"
+      },
+      "message": "feat(queryuserprivileges): \u6743\u9650\u7ba1\u7406\uff1a\u67e5\u8be2\u6743\u9650\u589e\u52a0\u6279\u91cf\u53d8\u66f4\u548c\u6279\u91cf\u5220\u9664\u64cd\u4f5c (#3183)\n\n* feat(queryuserprivileges): \u6743\u9650\u7ba1\u7406\uff1a\u67e5\u8be2\u6743\u9650\u589e\u52a0\u6279\u91cf\u53d8\u66f4\u548c\u6279\u91cf\u5220\u9664\u64cd\u4f5c\n\n* \u8865\u5145query_priv_modify\u7684\u5355\u5143\u6d4b\u8bd5\n\n---------\n\nCo-authored-by: rank <rank_rao@163.com>",
+      "tree": {
+        "sha": "a358ef9ced581c4a897f01eb2f39a9809dfe3402",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/a358ef9ced581c4a897f01eb2f39a9809dfe3402"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/7e934a320a28018d07cfe29574d0abfbb1565842",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqXHZjCRC1aQ7uu5UhlAAAL6MQAFDBLR6mbe0tP4NXptyKwU40\nLTAxIsmLwKVULHCpOmE/r4acqEFFjFo4hzXtZd1tuvDguMSOAaVRA/vysAeycLzN\nX9ujA+IGkhaeZ91ePhwSbwjRMImXo5NbWg+4FZanGg6NhbB5BPInbgyL98SFHPSn\n80CIQqHN+wQFk3T0EwL+aLYsU45iKaVqN6iPfjJkGhAcT+ZZqqsI3cm35LnUdDCu\nTBGqu1j8VcoDGpTtpMYDfs/rE40CRxSR0QwhkhdizPcXPXV2w3b+AT2HzDQSmLpP\ngs0XGtL5MEAIzBliN6TUoOzyDCUrZSukI8RPb1JbHG6VIJQgC+xOgEVpNeSNxlaa\n74HoeUJzTSUCnNzutZYJMvLAgXzStfoSO55IbHX/1giEH896DSNHpKNo3cuOPVVm\nE43x9I9ykr/9T6AI6A4AzRSCrsB1sTmxu14A8vGBjMosD/MS4lewSm7opzYPey8X\nCh1kJ31H/HMKUrsG8nOnVRDA1Lpj1cDKXrc1J0aj2bA+j/vcuGU0/YO3wMO1IqOU\nwfQCNdEpBlzFXtSh2V7sKXXBS6PtgInpOBxC7YJwQ9iLjkLX+X/fJN2j8KVqpg9y\nHWtTqdPeEo3W5InvYMDPpO4lWanyY4cn2t1lEQDqVCPxLGAEFV3swrxLBYYT2CcL\nLH6lFylORUVbc6nfJQFu\n=811K\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a358ef9ced581c4a897f01eb2f39a9809dfe3402\nparent 2e221b429c3ffd19edbe1ebbbd68bf885380c4a8\nauthor RankRao <mengyukatu@163.com> 1784444515 +0800\ncommitter GitHub <noreply@github.com> 1784444515 +0800\n\nfeat(queryuserprivileges): \u6743\u9650\u7ba1\u7406\uff1a\u67e5\u8be2\u6743\u9650\u589e\u52a0\u6279\u91cf\u53d8\u66f4\u548c\u6279\u91cf\u5220\u9664\u64cd\u4f5c (#3183)\n\n* feat(queryuserprivileges): \u6743\u9650\u7ba1\u7406\uff1a\u67e5\u8be2\u6743\u9650\u589e\u52a0\u6279\u91cf\u53d8\u66f4\u548c\u6279\u91cf\u5220\u9664\u64cd\u4f5c\n\n* \u8865\u5145query_priv_modify\u7684\u5355\u5143\u6d4b\u8bd5\n\n---------\n\nCo-authored-by: rank <rank_rao@163.com>",
+        "verified_at": "2026-07-19T07:01:55Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/7e934a320a28018d07cfe29574d0abfbb1565842",
+    "html_url": "https://github.com/hhyo/Archery/commit/7e934a320a28018d07cfe29574d0abfbb1565842",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/7e934a320a28018d07cfe29574d0abfbb1565842/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2e221b429c3ffd19edbe1ebbbd68bf885380c4a8",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/2e221b429c3ffd19edbe1ebbbd68bf885380c4a8",
+        "html_url": "https://github.com/hhyo/Archery/commit/2e221b429c3ffd19edbe1ebbbd68bf885380c4a8"
+      }
+    ]
+  },
+  {
+    "sha": "2e221b429c3ffd19edbe1ebbbd68bf885380c4a8",
+    "node_id": "C_kwDOCPspSNoAKDJlMjIxYjQyOWMzZmZkMTllZGJlMWViYmJkNjhiZjg4NTM4MGM0YTg",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "mengyukatu@163.com",
+        "date": "2026-07-19T07:01:13Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-19T07:01:13Z"
+      },
+      "message": "refactor(ace):\u5347\u7ea7ace v1.15.0\u5230\u6700\u65b0\u7248v1.44.0 (#3209)\n\n* refactor(ace):\u5347\u7ea7ace v1.15.0\u5230\u6700\u65b0\u7248v1.44.0\n\n* \u66f4\u65b0mongodb\u6a21\u5f0f\n\n---------\n\nCo-authored-by: rank <rank_rao@163.com>",
+      "tree": {
+        "sha": "487f71324223af5d9aeb48a8a3a92079f78a0f20",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/487f71324223af5d9aeb48a8a3a92079f78a0f20"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/2e221b429c3ffd19edbe1ebbbd68bf885380c4a8",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqXHY5CRC1aQ7uu5UhlAAAjqkQAC3zXRxsH/lUmbicYE9xy32A\ngPAz4m8ouiMmese23KXIxPG1mtdZFDVUb++zGpKtOOdpW+Z2r9WOeECP0+RQI9cN\nGqn7Wevvxm4R6gFlw1+gU0BywNmjjZ9gdSxP9XUOKUM/EVMa7IC8sIfKdLnm9FNj\npBukgwSS5l7d3TAdcXPFrvypQv0XzG9oIHVGruOQxCle6rKMHM9EnCfKXGMdW/tY\nRANEr37bn4prdasvV3mLkUBH6lq7kuWoPpSxdcazjkzWrX77pnA54gGMQGIu/n+J\nqh4u5P7Z5kdk+xO4TrK95X7/TmRK14vRFdTdrAmNq7lq5jzER1yB5+PcBAlbB/cT\nsUQn/bUnZz51fFcRPCawlxGZrJBdMqs/DsN9q771qSk/FHpbHRu4ivHxPaGoAiQF\nm+a3giEIXS3KuZ+Fhrc4qe2KWn3WnSQ9iwLJ+qaNIbTleXRW6A6KZQugcFjnNh62\nz4x4wGHCedU6HysG/qFjujnoBNi9P7GFHpELh7IRE+YtRlSVheFIHahYiCW0jXQ3\nRrR33yhKCuuXgD5+yqeJ97FSYMGeKuMBUQFEmVVRKwkVSpGK3Zo3rOVV5l7uvc3b\nOfbR39R7k3tW+wpr1ojeGpmxWPk2jv+d0C1X7Nc5Irus/0vgZ0SZH5fW98RZJN3V\n67qVPBocH17sQXbi957u\n=3Tdk\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 487f71324223af5d9aeb48a8a3a92079f78a0f20\nparent 5088443da2c4459afc463e50e07d07718ea49cbe\nauthor RankRao <mengyukatu@163.com> 1784444473 +0800\ncommitter GitHub <noreply@github.com> 1784444473 +0800\n\nrefactor(ace):\u5347\u7ea7ace v1.15.0\u5230\u6700\u65b0\u7248v1.44.0 (#3209)\n\n* refactor(ace):\u5347\u7ea7ace v1.15.0\u5230\u6700\u65b0\u7248v1.44.0\n\n* \u66f4\u65b0mongodb\u6a21\u5f0f\n\n---------\n\nCo-authored-by: rank <rank_rao@163.com>",
+        "verified_at": "2026-07-19T07:01:13Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/2e221b429c3ffd19edbe1ebbbd68bf885380c4a8",
+    "html_url": "https://github.com/hhyo/Archery/commit/2e221b429c3ffd19edbe1ebbbd68bf885380c4a8",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/2e221b429c3ffd19edbe1ebbbd68bf885380c4a8/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5088443da2c4459afc463e50e07d07718ea49cbe",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/5088443da2c4459afc463e50e07d07718ea49cbe",
+        "html_url": "https://github.com/hhyo/Archery/commit/5088443da2c4459afc463e50e07d07718ea49cbe"
+      }
+    ]
+  },
+  {
+    "sha": "5088443da2c4459afc463e50e07d07718ea49cbe",
+    "node_id": "C_kwDOCPspSNoAKDUwODg0NDNkYTJjNDQ1OWFmYzQ2M2U1MGUwN2QwNzcxOGVhNDljYmU",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "mengyukatu@163.com",
+        "date": "2026-07-15T04:43:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-15T04:43:31Z"
+      },
+      "message": "fix(oracle):cx-Oracle\u5347\u7ea7\u5230\u5b98\u65b9\u7ee7\u4efb\u8005oracledb (#3216)\n\n* fix(oracle):cx-Oracle\u5347\u7ea7\u5230\u5b98\u65b9\u7ee7\u4efb\u8005oracledb\n\n* black\n\n* fix cx_Oracle.CLOB and cx_Oracle.LOB\n\n* fix bug\n\n---------\n\nCo-authored-by: rank <rank_rao@163.com>",
+      "tree": {
+        "sha": "5acc16fdca3b1de4c0ea33a97efd1f031db67869",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/5acc16fdca3b1de4c0ea33a97efd1f031db67869"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/5088443da2c4459afc463e50e07d07718ea49cbe",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqVw/zCRC1aQ7uu5UhlAAAOQwQAGEFVHoZS8gyuvQT3MIIwJh0\nSGHw/oAc7N1XLFsrD3/LQEeKao6alm9ZM7kJq+86aut+wTd9W91uy03OR8ed0n/J\n/ntvtMwVwK4QL46/rsoSN99AwjrmvXxR3qojOyw8RfpS+WFp9vvfE4y9gP85MF2O\nsXmEG8crMoZqeIhZymtZsZMHcvVjS7v4c1cF7FHyEULzgop7SL/qmkmSYo9CIkC1\nAZp04iD30feWZ2OfWHcqsSzr4ikQmY8H9+GKqS9ca8F9S59Fzq9mS7v5wVMlXAzr\nFxtrmv19sqLGKT1ietHvRQ2jhKE0vuGr5lcn8OX1uVdmNsIaeXzEBHaj1N4ITXof\nKeczuPcsQDEhAFv4LdLeJwThsODWu2RFvOu5xTrAEci6DePcIEq4ENbBqN+PD/Uu\nml+YR+G5WrySTovpUfm1pseiWmcIrJXAKUm4Qj5lPr7+lxvbYYmXl7JhV2sTzavW\n82+0FawI/oxyk+aeTjuJJWcvXlSLtFvPL+vDWIy0ZljMlIurTkmS/i4TIH6MAuOD\nqHJLRZF1SYPdSSMQLfFLK1DGEMzmOGnOyyg3wwf1zO2CLdG2aynoKrcJEghZfVKp\nvCHRyOAgdzNQxYRe7pxuA41MN374FD3P/Odkwf4AN4+upnhp/bg8H0U9Hi1ejKur\nhbf1TcFx55rnDvdsLD6c\n=Hos6\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5acc16fdca3b1de4c0ea33a97efd1f031db67869\nparent fb4a21d009f24002cb2573dc247783845cac606c\nauthor RankRao <mengyukatu@163.com> 1784090611 +0800\ncommitter GitHub <noreply@github.com> 1784090611 +0800\n\nfix(oracle):cx-Oracle\u5347\u7ea7\u5230\u5b98\u65b9\u7ee7\u4efb\u8005oracledb (#3216)\n\n* fix(oracle):cx-Oracle\u5347\u7ea7\u5230\u5b98\u65b9\u7ee7\u4efb\u8005oracledb\n\n* black\n\n* fix cx_Oracle.CLOB and cx_Oracle.LOB\n\n* fix bug\n\n---------\n\nCo-authored-by: rank <rank_rao@163.com>",
+        "verified_at": "2026-07-15T04:43:32Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/5088443da2c4459afc463e50e07d07718ea49cbe",
+    "html_url": "https://github.com/hhyo/Archery/commit/5088443da2c4459afc463e50e07d07718ea49cbe",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/5088443da2c4459afc463e50e07d07718ea49cbe/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fb4a21d009f24002cb2573dc247783845cac606c",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/fb4a21d009f24002cb2573dc247783845cac606c",
+        "html_url": "https://github.com/hhyo/Archery/commit/fb4a21d009f24002cb2573dc247783845cac606c"
+      }
+    ]
+  },
+  {
+    "sha": "fb4a21d009f24002cb2573dc247783845cac606c",
+    "node_id": "C_kwDOCPspSNoAKGZiNGEyMWQwMDlmMjQwMDJjYjI1NzNkYzI0Nzc4Mzg0NWNhYzYwNmM",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "mengyukatu@163.com",
+        "date": "2026-06-17T10:46:33Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-06-17T10:46:33Z"
+      },
+      "message": "fix(search):\u4fee\u590dTop\u8868\u7a7a\u95f4\u7684\u540e\u7aef\u641c\u7d22\u529f\u80fd (#3180)\n\n* fix(search):\u4fee\u590dTop\u8868\u7a7a\u95f4\u7684\u540e\u7aef\u641c\u7d22\u529f\u80fd\n\n* black formatter\n\n* \u4ee3\u7801\u4f18\u5316\n\n* \u4fee\u590dbug\n\n* \u8865\u5145\u5355\u5143\u6d4b\u8bd5\n\n* \u4fee\u590d\u5355\u5143\u6d4b\u8bd5\n\n* \u4fee\u590dclickhouse\n\n---------\n\nCo-authored-by: rank <rank_rao@163.com>",
+      "tree": {
+        "sha": "ab19b6ead6f46dfd640e07054c1ccab988a8b139",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/ab19b6ead6f46dfd640e07054c1ccab988a8b139"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/fb4a21d009f24002cb2573dc247783845cac606c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqMnsJCRC1aQ7uu5UhlAAAicMQAKg4BtqRzX2upTyX7leaz4Lo\nRW7qZHTEBWbMTP8nXnemwoGRxb5gArjhq3UtS+ijIMhVJ1NtR5lpb8ZvDvTdYnb1\nHjNouI4KfjrMQOfOubLizHc8qfRs3ZVELS48F5+uyjghGWgY1A+hlj+KfKH+o8/7\n1kUPs/RHkmM5PFGOwLjph6xnqtosgtxUe1vLV7ijFzSm6Gzr+DYC7s8OAwpF8IDH\nWYdklTJF3wKea0dG1VMbSiw5hrAvbmnEmvt+CBXJ/KsEKcLV7CynZg0bLxtOm4B7\nLuKL1RR5D9OZ/MzpBniSCbhLgAiJPkyoFKYuOES0jf2GOz7bX79WBjxx8Cd0x1PQ\ns2lb3bJR7miqDpnXWcTQDMT1a9/J4Aarom3OC1cbK82v5uBfOPuS3WKmeeA/rkK/\nZGRnk/f3OUaU+gjlYlu723pRRf91fSTMTImmmgr2Jd/5btxYz5xXQDOLtQD7RJjj\nUcR+lBzkNrWRZsw+8HNWmjW5KZSVi7BYGXrdadsBhZ/UqQxasmNRed7oCQmLyHRH\nF8B0cxujWVojngffcG3SKHMNlFEpU8LKl0+KTgrBdQnf2xSOGuyJTz7fucBRQpAO\nCr3TLjRPAYpNPVmLoxmPWtuA9ZWh/cOty29Hr0w+FHFAcMtc5fCTiQYZNPuRrt8M\nttYi57OGj07IaY4xzlDt\n=t03K\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ab19b6ead6f46dfd640e07054c1ccab988a8b139\nparent 34281eaa65517fb5b27f09cd3a730c46f1776179\nauthor RankRao <mengyukatu@163.com> 1781693193 +0800\ncommitter GitHub <noreply@github.com> 1781693193 +0800\n\nfix(search):\u4fee\u590dTop\u8868\u7a7a\u95f4\u7684\u540e\u7aef\u641c\u7d22\u529f\u80fd (#3180)\n\n* fix(search):\u4fee\u590dTop\u8868\u7a7a\u95f4\u7684\u540e\u7aef\u641c\u7d22\u529f\u80fd\n\n* black formatter\n\n* \u4ee3\u7801\u4f18\u5316\n\n* \u4fee\u590dbug\n\n* \u8865\u5145\u5355\u5143\u6d4b\u8bd5\n\n* \u4fee\u590d\u5355\u5143\u6d4b\u8bd5\n\n* \u4fee\u590dclickhouse\n\n---------\n\nCo-authored-by: rank <rank_rao@163.com>",
+        "verified_at": "2026-06-17T10:46:34Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/fb4a21d009f24002cb2573dc247783845cac606c",
+    "html_url": "https://github.com/hhyo/Archery/commit/fb4a21d009f24002cb2573dc247783845cac606c",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/fb4a21d009f24002cb2573dc247783845cac606c/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "34281eaa65517fb5b27f09cd3a730c46f1776179",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/34281eaa65517fb5b27f09cd3a730c46f1776179",
+        "html_url": "https://github.com/hhyo/Archery/commit/34281eaa65517fb5b27f09cd3a730c46f1776179"
+      }
+    ]
+  },
+  {
+    "sha": "34281eaa65517fb5b27f09cd3a730c46f1776179",
+    "node_id": "C_kwDOCPspSNoAKDM0MjgxZWFhNjU1MTdmYjViMjdmMDljZDNhNzMwYzQ2ZjE3NzYxNzk",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "mengyukatu@163.com",
+        "date": "2026-06-17T09:45:32Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-06-17T09:45:32Z"
+      },
+      "message": "fix(debug):\u7cfb\u7edf\u4fe1\u606f\u9875\u9762\u589e\u52a0openai_api_key\u7684\u5c4f\u853d\u9879 (#3205)\n\n\u589e\u52a0openai_api_key\u7684\u5c4f\u853d\u9879\n\nCo-authored-by: rank <rank_rao@163.com>",
+      "tree": {
+        "sha": "c504d602f1221a0504f5ba8fb569d76692ea1d60",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/c504d602f1221a0504f5ba8fb569d76692ea1d60"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/34281eaa65517fb5b27f09cd3a730c46f1776179",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqMmy8CRC1aQ7uu5UhlAAAzFIQADhwa/RgEk1/0/G6xQ0UQ/gk\nqJgZ69TBA2Db5aId4MYN8sarJJBJKJm/4VpjjDcWhX9wG+Gl2sY/zqL1pHUxkAyQ\n13QrWoph2a/QDPMpUS2QFb8sOYYqAoPwJ62rK0HBdlVLEs998cxuJTLwwopNzPKY\nHTxONoBJlZLsKymHUXkVJFycsKBAPPBBnhuLuE1AK1C3b8fys9MHusEVYNVhaiCt\n12hievmltMjtabBFoKM+zfIwgCXJPrAusUJzqwiSYl80pBnHZfl6nGBinSb/YimV\nOBlMeYiVo4ThS9IPV1ezSPn3OoYcMu1l4BfWIAy2YoCWE6bIk4vYC5bstizSTy88\nbP1xGRMOCgLXTwsnvnsTYgLPsZr9DcdO6fVgvAq6rbK3NkpxvpJ8FudoPJYwqjIo\nFgGQ7yE34Ztx2hCM+ZQ4FwLdD90ozQXCiNI8fRbqTDoR9qi2WMX4HRHpvrtfUHXX\nk9dwjved7WpOU6Q92zKgEfVrTwkC1uVXdl+GDneLmT/DpH5t9Xp28T42c1T6Mzfy\nVZH1qJ5URA5/gwOICa77R/NvznoP2+RatMvAswNm4oK0Z6ndtl8EtsxMtsmev9U3\n0JrHHjrx+z6XljlGPZ0etEB+lWXO86TOOeyaTP+GykLVZK/v/P4li+lEK2f0S9Gr\nIaXpEgwhvTnHIF+ph9Md\n=3ZZQ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c504d602f1221a0504f5ba8fb569d76692ea1d60\nparent ee42634f9ed4949e2c4af77975587647b376815a\nauthor RankRao <mengyukatu@163.com> 1781689532 +0800\ncommitter GitHub <noreply@github.com> 1781689532 +0800\n\nfix(debug):\u7cfb\u7edf\u4fe1\u606f\u9875\u9762\u589e\u52a0openai_api_key\u7684\u5c4f\u853d\u9879 (#3205)\n\n\u589e\u52a0openai_api_key\u7684\u5c4f\u853d\u9879\n\nCo-authored-by: rank <rank_rao@163.com>",
+        "verified_at": "2026-06-17T09:45:33Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/34281eaa65517fb5b27f09cd3a730c46f1776179",
+    "html_url": "https://github.com/hhyo/Archery/commit/34281eaa65517fb5b27f09cd3a730c46f1776179",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/34281eaa65517fb5b27f09cd3a730c46f1776179/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ee42634f9ed4949e2c4af77975587647b376815a",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/ee42634f9ed4949e2c4af77975587647b376815a",
+        "html_url": "https://github.com/hhyo/Archery/commit/ee42634f9ed4949e2c4af77975587647b376815a"
+      }
+    ]
+  },
+  {
+    "sha": "ee42634f9ed4949e2c4af77975587647b376815a",
+    "node_id": "C_kwDOCPspSNoAKGVlNDI2MzRmOWVkNDk0OWUyYzRhZjc3OTc1NTg3NjQ3YjM3NjgxNWE",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "mengyukatu@163.com",
+        "date": "2026-06-16T07:09:58Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-06-16T07:09:58Z"
+      },
+      "message": "refactor(sqlquery):\u589e\u52a0\u52a8\u6001\u53c2\u6570\u529f\u80fd;\u589e\u52a0\u9009\u4e2d\u591a\u8868\u901a\u8fc7AI\u751f\u6210SQL\u8bed\u53e5\u529f\u80fd (#3159)",
+      "tree": {
+        "sha": "15e60bc65c31185041f8511e6eaf9ef006b96d5f",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/15e60bc65c31185041f8511e6eaf9ef006b96d5f"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/ee42634f9ed4949e2c4af77975587647b376815a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqMPbGCRC1aQ7uu5UhlAAA5IYQAJvHnYvsJa4UnGp50LqHFCCv\nuZJUtqSLzedrbkLlC1gASBCltskVDv4BiAB2TsJye8SsfLT9o5Or3l2KAZuIYxFh\n/Uxnl2zYoqNWTQoXW27jvC2Dt/mJ9Ga2AQsMyyG+HTQh+nBMFeWc+M8LOoFFOxZF\ns97irr4x7Jqr9VsN59LKNbqI2vBzrGi+pu7AWC8kYAikgn9d7Dt0LoZMcV7QEDKj\n8TKN/QL5wtCZwOGQ7s/ZYwxYWVZ5XJVLrFT+HcmJyz63946ZsBn9WfInJ2cydc8u\nnpcMOZ7IRyxlD4wO1ZnGFa8Q2rQH9mEWL6zCK3dq9HGzaeMdOtiDNL3xnZzauRQI\nASg0z7TR/NoZUR4DNELBxC+4Zal4SJHyy1zwzi8hd7pzO4kyuMpAMEKtAnPVWdgL\n51EXzW77ziBJyNHbSdqZ3GyjRDv7htBU0tV3ZjTtG35hIYZFl/8+u2+7xjHU8LEU\nevxKmdssrz+TrEllqICzJxPO4gKWiARMPxdEOfnQJcQwvXAPgZEW5L1Vp9OmFGuG\nKGY2UiXRboFLIboKxzAvpoYfYmRKjXIyE76ukG6+jT1Qmvfv6EJ0BksieVEWQJU+\nbUQQuGNbuxU9havg++NDfKY8AtG8vtwYCuyKX9Tw1YRrxlUCV9UK9E9kEE67AHDj\nM0ldexJNfW05XhktPLe3\n=ateT\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 15e60bc65c31185041f8511e6eaf9ef006b96d5f\nparent 7be8424bcd9f1afcb9831ffd7d70f500e359e4b2\nauthor RankRao <mengyukatu@163.com> 1781593798 +0800\ncommitter GitHub <noreply@github.com> 1781593798 +0800\n\nrefactor(sqlquery):\u589e\u52a0\u52a8\u6001\u53c2\u6570\u529f\u80fd;\u589e\u52a0\u9009\u4e2d\u591a\u8868\u901a\u8fc7AI\u751f\u6210SQL\u8bed\u53e5\u529f\u80fd (#3159)",
+        "verified_at": "2026-06-16T07:09:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/ee42634f9ed4949e2c4af77975587647b376815a",
+    "html_url": "https://github.com/hhyo/Archery/commit/ee42634f9ed4949e2c4af77975587647b376815a",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/ee42634f9ed4949e2c4af77975587647b376815a/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7be8424bcd9f1afcb9831ffd7d70f500e359e4b2",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/7be8424bcd9f1afcb9831ffd7d70f500e359e4b2",
+        "html_url": "https://github.com/hhyo/Archery/commit/7be8424bcd9f1afcb9831ffd7d70f500e359e4b2"
+      }
+    ]
+  },
+  {
+    "sha": "7be8424bcd9f1afcb9831ffd7d70f500e359e4b2",
+    "node_id": "C_kwDOCPspSNoAKDdiZTg0MjRiY2Q5ZjFhZmNiOTgzMWZmZDdkNzBmNTAwZTM1OWU0YjI",
+    "commit": {
+      "author": {
+        "name": "Leo Q",
+        "email": "LeoQuote@users.noreply.github.com",
+        "date": "2026-06-12T11:09:28Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-06-12T11:09:28Z"
+      },
+      "message": "\u65b0\u589e renderer, \u6062\u590d\u67e5\u8be2\u8bb0\u5f55\u7684\u8f6c\u7801 (#3199)\n\n* \u65b0\u589e renderer, \u6062\u590d\u67e5\u8be2\u8bb0\u5f55\u7684\u8f6c\u7801\n\n* black\n\n* \u66f4\u6539\u914d\u7f6e, \u51cf\u5c11\u5f71\u54cd\u8303\u56f4",
+      "tree": {
+        "sha": "67089ed84d1f620ec5addb37b8efbf03bc34ec9f",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/67089ed84d1f620ec5addb37b8efbf03bc34ec9f"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/7be8424bcd9f1afcb9831ffd7d70f500e359e4b2",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqK+joCRC1aQ7uu5UhlAAALWcQAG4IVy3aAl3GTG+lSVw5u/eh\nIF4LUFwgutyqLmVfH7GPaUXCa+1aNCZPmvUqbJxNMAWmTz1PmqZVz5ZYF//91/oy\n4nTTJuValbXX/GT/+vS+mNCnYVHmio0W0gzTcpOJnUM4OEnYPx064wk1mwLO769X\ng2gix+113R/NkO6tqOhMJ39S0rWmXVH48wPKxGYlmEH114rMtKdvvKm1ULJr5yUF\n2Z2Yh/BkLELQctcbxT/RhMxEK/l0gNXpF3daeCF5sOqqrzu/WdlA5sewkhhh5LAL\nVRYYdU9d2wozEuCX2r91FAHyQUAKq40QA2WZryLIiBpabDGU9nRrYr16GPHSEo1Z\nucgJzIudyJeNrSThzTl2LeQzVDuke6KajDZ5J8pb2Ox8o0dS5vzZoAsfoCjxcBou\nDo1OC2quBxerrDnQmdwJrJyEOgMnke/yqy1qWDkIdL8Ayjse4AyeCMP5KXQhGGpo\nQVlHb1cG/T91wjejuu8T3k+F9SwGNbnhZ76WgdZ+s51GFNIlJ0kmvH2ehvSExKZY\naS6XUmfHYvtndA2bgJsi9JCNWRVBS5pzoe8niKzKIAWNksSrzrIb5t8oQBnvlNwr\nMvla9BX3SuaIIsLNAPr6O4ZnIlTIklpMT1xSuEpTZ2QZRdtpT3oESVfhm4SpeRQs\ng5JhD9N6SIx2fy+pXpZo\n=vC5A\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 67089ed84d1f620ec5addb37b8efbf03bc34ec9f\nparent 6fd8bdf3b08814fa0a1c6a9a3c342292021269fc\nauthor Leo Q <LeoQuote@users.noreply.github.com> 1781262568 +0800\ncommitter GitHub <noreply@github.com> 1781262568 +0800\n\n\u65b0\u589e renderer, \u6062\u590d\u67e5\u8be2\u8bb0\u5f55\u7684\u8f6c\u7801 (#3199)\n\n* \u65b0\u589e renderer, \u6062\u590d\u67e5\u8be2\u8bb0\u5f55\u7684\u8f6c\u7801\n\n* black\n\n* \u66f4\u6539\u914d\u7f6e, \u51cf\u5c11\u5f71\u54cd\u8303\u56f4",
+        "verified_at": "2026-06-12T11:09:29Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/7be8424bcd9f1afcb9831ffd7d70f500e359e4b2",
+    "html_url": "https://github.com/hhyo/Archery/commit/7be8424bcd9f1afcb9831ffd7d70f500e359e4b2",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/7be8424bcd9f1afcb9831ffd7d70f500e359e4b2/comments",
+    "author": {
+      "login": "LeoQuote",
+      "id": 4143818,
+      "node_id": "MDQ6VXNlcjQxNDM4MTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4143818?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LeoQuote",
+      "html_url": "https://github.com/LeoQuote",
+      "followers_url": "https://api.github.com/users/LeoQuote/followers",
+      "following_url": "https://api.github.com/users/LeoQuote/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LeoQuote/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LeoQuote/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LeoQuote/subscriptions",
+      "organizations_url": "https://api.github.com/users/LeoQuote/orgs",
+      "repos_url": "https://api.github.com/users/LeoQuote/repos",
+      "events_url": "https://api.github.com/users/LeoQuote/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LeoQuote/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6fd8bdf3b08814fa0a1c6a9a3c342292021269fc",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/6fd8bdf3b08814fa0a1c6a9a3c342292021269fc",
+        "html_url": "https://github.com/hhyo/Archery/commit/6fd8bdf3b08814fa0a1c6a9a3c342292021269fc"
+      }
+    ]
+  },
+  {
+    "sha": "6fd8bdf3b08814fa0a1c6a9a3c342292021269fc",
+    "node_id": "C_kwDOCPspSNoAKDZmZDhiZGYzYjA4ODE0ZmEwYTFjNmE5YTNjMzQyMjkyMDIxMjY5ZmM",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "mengyukatu@163.com",
+        "date": "2026-06-12T04:11:50Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-06-12T04:11:50Z"
+      },
+      "message": "fix(mariadb):mariadb\u517c\u5bb9\u6027\u4fee\u590d\u548c\u9519\u8bef\u4fee\u590d (#3197)\n\n* mariadb\u517c\u5bb9\u6027\u4fee\u590d\u548c\u9519\u8bef\u4fee\u590d\n1\u3001\u517c\u5bb9mariadb\u53c2\u6570\uff1a\u5df2\u6709mysql\u53c2\u6570max_execution_time\uff0c\u589e\u52a0\u517c\u5bb9mariadb\u7248\u672c\u5bf9\u5e94\u53c2\u6570max_statement_time\uff0c\u6ce8\u610f\u5355\u4f4d\u4e0d\u4e00\u81f4\u3002\n2\u3001\u53c2\u6570\u83b7\u53d6\uff1aglobal_variables\u8868\u5728mysql5.7\u4e4b\u540e\u5728performance_schema\u5e93\u4e2d\uff0c\u800cmariadb\u7248\u672c\u4e00\u76f4\u4f7f\u7528information_schema.global_variables\u3002\u4e0d\u518d\u8003\u8651global_variables\u8868\u662f\u54ea\u4e2a\u5e93\u4e2d\uff0c\u7edf\u4e00\u4f7f\u7528show global variables where variable_name in ({}); \u7684\u65b9\u5f0f\u3002\n3\u3001\u4fee\u590d\u94fe\u63a5\u5173\u95ed\u95ee\u9898\uff1asql\\sql_tuning.py\u7684\u5168\u5c40\u67e5\u8be2basic_information()\u3001sys_parameter()\u3001optimizer_switch()\u672a\u5173\u95ed\u94fe\u63a5\uff0c\u5bfc\u81f4\u5982\u679c\u65b9\u6cd5\u62a5\u9519\uff0c\u540e\u7eed\u5176\u4ed6\u6b63\u5e38\u67e5\u8be2\u590d\u7528\u94fe\u63a5\u7684\u65f6\u5019\uff0c\u8fd8\u662f\u53d6\u9ed8\u8ba4\u5e93\uff0c\u800c\u4e0d\u662f\u524d\u7aefdb_name\u4f20\u53c2\uff0c\u5bfc\u81f4\u62a5\u9519\uff08No database selected\uff09\u3002\n4\u3001\u517c\u5bb9mariadb\u8868\uff1asql\\sql_tuning.py\u4e2d\u7684\u53c2\u6570\u67e5\u8be2\uff0c\u6539\u4e3a\u9ed8\u8ba4\u4f7f\u7528information_schema.global_variables\uff0c\u8d85\u8fc7\u6307\u5b9a\u7248\u672c\u624d\u66ff\u6362\u4e3aperformance_schema.global_variables\u3002\n\n* \u4fee\u590dmariadb\u66ff\u6362\u89c4\u5219\n\n* black formatter\n\n* black formatter\n\n---------\n\nCo-authored-by: rank <rank_rao@163.com>",
+      "tree": {
+        "sha": "56b0544b42efcc25f926b1661c09156756d199fa",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/56b0544b42efcc25f926b1661c09156756d199fa"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/6fd8bdf3b08814fa0a1c6a9a3c342292021269fc",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqK4cGCRC1aQ7uu5UhlAAAWZcQAJm6xlE3HTevUCnoObPxN4lo\n6VPzEjbn1nqRsmCpL6kjwr+qNXtWrxT7WxP/COTOTlOzzu3Txiaa/54sMwgN+79S\n47QCWsZUMnpdkE+TB9hqof2BqORD109qPxZu5wcb8L43HDtVnvQ0+GoHvzgDsVzU\nWuGIkjeX96NHGoKt/ZdCcmwKaq0Amr2sILmcnJi+u9mnit0rr3xQ47jlXZAeI9mM\n4TkvqoLx2KyBvXehjnO4o83gbTEuU1qXIXlzZ99gpoUabQbpmZLxbhvWYfs/OlTg\nK4A0IC0DYULQdXJtysBvlD0FnKTUgX8USJ2tYUKaE2cSFLjTM/evJxt23EUCqCzC\nkdIQ9EjsybI2tGN3ULnu1blKlYOaZ7/BQE4kv7LZmMlwAmmmYD7zqFk7TYl5T8vG\nRinE4DHGx2uVnq4SibrkLDqHW+32n1pnUfyg525eysfvCqgoG3HRaQHxYJfsx1Or\ny2FWKsHLA/FCevHqNPyl9OZanDKHt4P+kQkYLUSOTN1iCEgIiKEFlKHooi8bVoJE\nzxZLHLSik4L5I5jJt/ocOxBSWx5U+eftxgOzpZ8F87Eab5gkVdngWx7Fe+5hZRue\nl4dxtG1y56G3cWEGXdwVeAngHpi73mCSJQAHDKmb6W2wBp40OqIFXwd1jm6R4yXC\ngopAp5AJEM3pHXrmC0tA\n=1tUJ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 56b0544b42efcc25f926b1661c09156756d199fa\nparent 03db09928afa7f2c4608b05b9515f31972798f68\nauthor RankRao <mengyukatu@163.com> 1781237510 +0800\ncommitter GitHub <noreply@github.com> 1781237510 +0800\n\nfix(mariadb):mariadb\u517c\u5bb9\u6027\u4fee\u590d\u548c\u9519\u8bef\u4fee\u590d (#3197)\n\n* mariadb\u517c\u5bb9\u6027\u4fee\u590d\u548c\u9519\u8bef\u4fee\u590d\n1\u3001\u517c\u5bb9mariadb\u53c2\u6570\uff1a\u5df2\u6709mysql\u53c2\u6570max_execution_time\uff0c\u589e\u52a0\u517c\u5bb9mariadb\u7248\u672c\u5bf9\u5e94\u53c2\u6570max_statement_time\uff0c\u6ce8\u610f\u5355\u4f4d\u4e0d\u4e00\u81f4\u3002\n2\u3001\u53c2\u6570\u83b7\u53d6\uff1aglobal_variables\u8868\u5728mysql5.7\u4e4b\u540e\u5728performance_schema\u5e93\u4e2d\uff0c\u800cmariadb\u7248\u672c\u4e00\u76f4\u4f7f\u7528information_schema.global_variables\u3002\u4e0d\u518d\u8003\u8651global_variables\u8868\u662f\u54ea\u4e2a\u5e93\u4e2d\uff0c\u7edf\u4e00\u4f7f\u7528show global variables where variable_name in ({}); \u7684\u65b9\u5f0f\u3002\n3\u3001\u4fee\u590d\u94fe\u63a5\u5173\u95ed\u95ee\u9898\uff1asql\\sql_tuning.py\u7684\u5168\u5c40\u67e5\u8be2basic_information()\u3001sys_parameter()\u3001optimizer_switch()\u672a\u5173\u95ed\u94fe\u63a5\uff0c\u5bfc\u81f4\u5982\u679c\u65b9\u6cd5\u62a5\u9519\uff0c\u540e\u7eed\u5176\u4ed6\u6b63\u5e38\u67e5\u8be2\u590d\u7528\u94fe\u63a5\u7684\u65f6\u5019\uff0c\u8fd8\u662f\u53d6\u9ed8\u8ba4\u5e93\uff0c\u800c\u4e0d\u662f\u524d\u7aefdb_name\u4f20\u53c2\uff0c\u5bfc\u81f4\u62a5\u9519\uff08No database selected\uff09\u3002\n4\u3001\u517c\u5bb9mariadb\u8868\uff1asql\\sql_tuning.py\u4e2d\u7684\u53c2\u6570\u67e5\u8be2\uff0c\u6539\u4e3a\u9ed8\u8ba4\u4f7f\u7528information_schema.global_variables\uff0c\u8d85\u8fc7\u6307\u5b9a\u7248\u672c\u624d\u66ff\u6362\u4e3aperformance_schema.global_variables\u3002\n\n* \u4fee\u590dmariadb\u66ff\u6362\u89c4\u5219\n\n* black formatter\n\n* black formatter\n\n---------\n\nCo-authored-by: rank <rank_rao@163.com>",
+        "verified_at": "2026-06-12T04:11:51Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/6fd8bdf3b08814fa0a1c6a9a3c342292021269fc",
+    "html_url": "https://github.com/hhyo/Archery/commit/6fd8bdf3b08814fa0a1c6a9a3c342292021269fc",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/6fd8bdf3b08814fa0a1c6a9a3c342292021269fc/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "03db09928afa7f2c4608b05b9515f31972798f68",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/03db09928afa7f2c4608b05b9515f31972798f68",
+        "html_url": "https://github.com/hhyo/Archery/commit/03db09928afa7f2c4608b05b9515f31972798f68"
+      }
+    ]
+  },
+  {
+    "sha": "03db09928afa7f2c4608b05b9515f31972798f68",
+    "node_id": "C_kwDOCPspSNoAKDAzZGIwOTkyOGFmYTdmMmM0NjA4YjA1Yjk1MTVmMzE5NzI3OThmNjg",
+    "commit": {
+      "author": {
+        "name": "RankRao",
+        "email": "mengyukatu@163.com",
+        "date": "2026-06-12T04:05:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-06-12T04:05:31Z"
+      },
+      "message": "fix(my2sql):\u4fee\u590dextraInfo (#3198)\n\n* fix(my2sql):\u4fee\u590dextraInfo\n\u5728Archery\u4e2d\u52fe\u9009`-add-extraInfo`\u9700\u8981\u5c55\u793a\u5bf9\u5e94\u7684extraInfo\u4fe1\u606f\uff0c\u5305\u542b\u5173\u952e\u7684SQL\u6267\u884c\u65f6\u95f4\u3001\u5e93\u3001\u8868\u3001\u4f4d\u7f6e\u4fe1\u606f\u3002\n\n* \u4fee\u590d\u5355\u5143\u6d4b\u8bd5\n\n* fix(my2sql):\u4fee\u590dextraInfo\n\u5728Archery\u4e2d\u52fe\u9009`-add-extraInfo`\u9700\u8981\u5c55\u793a\u5bf9\u5e94\u7684extraInfo\u4fe1\u606f\uff0c\u5305\u542b\u5173\u952e\u7684SQL\u6267\u884c\u65f6\u95f4\u3001\u5e93\u3001\u8868\u3001\u4f4d\u7f6e\u4fe1\u606f\u3002\n\n* \u4fee\u590d\u5355\u5143\u6d4b\u8bd5\n\n* \u4f7f\u7528\u7eaf\u51fd\u6570\u5f0f\u6d4b\u8bd5\n\n---------\n\nCo-authored-by: rank <rank_rao@163.com>",
+      "tree": {
+        "sha": "abbab3d4d6d187cc44b68d161e79fc0ef6b88100",
+        "url": "https://api.github.com/repos/hhyo/Archery/git/trees/abbab3d4d6d187cc44b68d161e79fc0ef6b88100"
+      },
+      "url": "https://api.github.com/repos/hhyo/Archery/git/commits/03db09928afa7f2c4608b05b9515f31972798f68",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqK4WLCRC1aQ7uu5UhlAAAPw0QABIuKxjIJb/H/tYzaW9vUVnI\nocfT+VN0YGjefbJbGnXhTcVNaeJegUSSChjHn3QShZZxBluglV9e0+uAgp8LbFYF\nD5DEMDTskkrIbxJQ5YrPV/ZTcbGBuw7p8IQjxbBPNQeSiIyi3WZe5nP3zcww3AmB\nAtrFO2q/5nf7De3r+JjxJtN64CvEe+TTkdTIh/zitmzwwqJ5o6lmW0vk45NYpDtb\n/5n9b4t31alnlVtJuRJXB2Hnx8PDYkmcpLJRIK36+TGKkNzhM1Sv5IaNXN9FzIUb\na9tKQsp2GI0HLuya5FIYkqLRMSjm1bdZ+hI/We5s/SWTf9nBg3U3R6JG4rBma0XQ\nI3Pwy8RboMd6i23ErM4qo1nyDrb+T2J+j/INc89nsloNhw4lYcymcKLxPBf2lteD\nCZt2MyZRtIkAgKzmgS1E3bEXJRrRKCoF3sAKri0BTmc6dSxbk7u4bk+x3zI0gkcA\n0kVEwmyy0WS8jNMfnV5LEHlzqqEQtg4kCq76/NEshF2zP22T1lRFDkj12FIkmgGT\n6q+ljvNnZAMiLYI/KUV4TmOm99pK9JdlpR+WVT54ermg82uLP3QqHLg49zn4caX6\nh0Clr4iiKfNaQ3unJM6NMip1w9miOzjOWme8nqWOnaupRlaLFl6oySlEyZN96WRU\nyeT4dJLwp88nlaE+t+kM\n=k/MK\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree abbab3d4d6d187cc44b68d161e79fc0ef6b88100\nparent 09b96768b23bbf1406ded4dea0d270bd53a7cbc2\nauthor RankRao <mengyukatu@163.com> 1781237131 +0800\ncommitter GitHub <noreply@github.com> 1781237131 +0800\n\nfix(my2sql):\u4fee\u590dextraInfo (#3198)\n\n* fix(my2sql):\u4fee\u590dextraInfo\n\u5728Archery\u4e2d\u52fe\u9009`-add-extraInfo`\u9700\u8981\u5c55\u793a\u5bf9\u5e94\u7684extraInfo\u4fe1\u606f\uff0c\u5305\u542b\u5173\u952e\u7684SQL\u6267\u884c\u65f6\u95f4\u3001\u5e93\u3001\u8868\u3001\u4f4d\u7f6e\u4fe1\u606f\u3002\n\n* \u4fee\u590d\u5355\u5143\u6d4b\u8bd5\n\n* fix(my2sql):\u4fee\u590dextraInfo\n\u5728Archery\u4e2d\u52fe\u9009`-add-extraInfo`\u9700\u8981\u5c55\u793a\u5bf9\u5e94\u7684extraInfo\u4fe1\u606f\uff0c\u5305\u542b\u5173\u952e\u7684SQL\u6267\u884c\u65f6\u95f4\u3001\u5e93\u3001\u8868\u3001\u4f4d\u7f6e\u4fe1\u606f\u3002\n\n* \u4fee\u590d\u5355\u5143\u6d4b\u8bd5\n\n* \u4f7f\u7528\u7eaf\u51fd\u6570\u5f0f\u6d4b\u8bd5\n\n---------\n\nCo-authored-by: rank <rank_rao@163.com>",
+        "verified_at": "2026-06-12T04:05:31Z"
+      }
+    },
+    "url": "https://api.github.com/repos/hhyo/Archery/commits/03db09928afa7f2c4608b05b9515f31972798f68",
+    "html_url": "https://github.com/hhyo/Archery/commit/03db09928afa7f2c4608b05b9515f31972798f68",
+    "comments_url": "https://api.github.com/repos/hhyo/Archery/commits/03db09928afa7f2c4608b05b9515f31972798f68/comments",
+    "author": {
+      "login": "RankRao",
+      "id": 7961935,
+      "node_id": "MDQ6VXNlcjc5NjE5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7961935?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RankRao",
+      "html_url": "https://github.com/RankRao",
+      "followers_url": "https://api.github.com/users/RankRao/followers",
+      "following_url": "https://api.github.com/users/RankRao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RankRao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RankRao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RankRao/subscriptions",
+      "organizations_url": "https://api.github.com/users/RankRao/orgs",
+      "repos_url": "https://api.github.com/users/RankRao/repos",
+      "events_url": "https://api.github.com/users/RankRao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RankRao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "09b96768b23bbf1406ded4dea0d270bd53a7cbc2",
+        "url": "https://api.github.com/repos/hhyo/Archery/commits/09b96768b23bbf1406ded4dea0d270bd53a7cbc2",
+        "html_url": "https://github.com/hhyo/Archery/commit/09b96768b23bbf1406ded4dea0d270bd53a7cbc2"
+      }
+    ]
+  }
+]

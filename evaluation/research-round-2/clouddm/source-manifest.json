@@ -1,0 +1,347 @@
+{
+  "commit": "a9f16e78b8288c9a4158ee9df4378ee16b80021e",
+  "files": [
+    {
+      "path": "backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/scripts/V202605070005__add_rdp_license.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/scripts/V202605070005__add_rdp_license.java",
+      "sha256": "620c8baa0bdd72241c8f30df8f482a0666d30b403d99b80dd0f9d873c06ec381",
+      "bytes": 12233
+    },
+    {
+      "path": "backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/scripts/V202605070007__dm_order.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/scripts/V202605070007__dm_order.java",
+      "sha256": "60a9d319d7fc4461f77398eae933ca0b4a18f3cb24a20a47f789735f5b98afa7",
+      "bytes": 10154
+    },
+    {
+      "path": "backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/scripts/V202605070011__dm_license_support.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/scripts/V202605070011__dm_license_support.java",
+      "sha256": "1f336941e7810456dd15afdbb387fbdf1fea270d520dc8fc4ebbd313fe64cb0a",
+      "bytes": 1103
+    },
+    {
+      "path": "backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/scripts/V202605070018__dm_query_ds_count.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/scripts/V202605070018__dm_query_ds_count.java",
+      "sha256": "5dd62b6b92a4f72fc3d88612e8872c889d64b107375c9f2ed8392d27dd826c79",
+      "bytes": 1600
+    },
+    {
+      "path": "backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/scripts/V202607210001__gitlab_cicd_source.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/scripts/V202607210001__gitlab_cicd_source.java",
+      "sha256": "a451b26553aed5ba2158cca8052d018b617191f463100e41450d35bd244108b6",
+      "bytes": 9402
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-api/src/main/java/com/clougence/clouddm/api/console/autoexec/AutoExecTaskPackageInfo.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-api/src/main/java/com/clougence/clouddm/api/console/autoexec/AutoExecTaskPackageInfo.java",
+      "sha256": "d5259a08a941cfca43cdb0418d6e3c2c6fee635009657acedc6292e73916a29f",
+      "bytes": 858
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-api/src/main/java/com/clougence/clouddm/api/console/autoexec/ErrorStrategy.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-api/src/main/java/com/clougence/clouddm/api/console/autoexec/ErrorStrategy.java",
+      "sha256": "d1241f22ed860953f2d0b24bdeff9de944f87070d64699d279eba2a091ffea24",
+      "bytes": 729
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-api/src/main/java/com/clougence/clouddm/api/console/autoexec/ExecJobRService.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-api/src/main/java/com/clougence/clouddm/api/console/autoexec/ExecJobRService.java",
+      "sha256": "3d6d378c829b1b841c965ffdf664c23f3f3e59c67ce06f0e1cff2712d34b8fc1",
+      "bytes": 1257
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/analysis/impl/QueryAnalysisServiceImpl.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/analysis/impl/QueryAnalysisServiceImpl.java",
+      "sha256": "079cad6c56b4dab4cdbb91d35dd4d2d7dcc5024877474bec07aa5f60fe977165",
+      "bytes": 20799
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/approval/ApprovalFlowService.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/approval/ApprovalFlowService.java",
+      "sha256": "83c0b796701f1ad814765f0125197ddc4a025c1a38f79618e58d1533b2ad1460",
+      "bytes": 2767
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/approval/handler/ChangeApprovalHandler.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/approval/handler/ChangeApprovalHandler.java",
+      "sha256": "c249726d58ff0701e8f2a9f1229b6bec167f898ab22a14299eb5e2ec82b48e6f",
+      "bytes": 15842
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/approval/impl/ApprovalFlowServiceImpl.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/approval/impl/ApprovalFlowServiceImpl.java",
+      "sha256": "eb47b83cc535ee469afdf58364b9104033cf4345ce954e64a1a3ea8269eb4d08",
+      "bytes": 17661
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/approval/impl/ApprovalServiceImpl.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/approval/impl/ApprovalServiceImpl.java",
+      "sha256": "44f15af52ad45b59c491a12e40ff185d4a557ec49e5ae637f076fea3f8e0e51f",
+      "bytes": 5204
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/approval/impl/ApprovalStateServiceImpl.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/approval/impl/ApprovalStateServiceImpl.java",
+      "sha256": "73d46dbe0270c3316c6ae08f92ab8c7402a80a0172149fe6a3313cf826b53f8b",
+      "bytes": 19749
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/ChangeFlowConstants.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/ChangeFlowConstants.java",
+      "sha256": "d813525337df936e50384351d9163566771239952db5aa6978d31ebd066bf6bd",
+      "bytes": 2048
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/ChangeFlowWebhookPolicy.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/ChangeFlowWebhookPolicy.java",
+      "sha256": "7fa59f64bee1283529ac4af59e2734f225940d6bf7043ee36126446984a07fed",
+      "bytes": 1135
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/CicdSqlFileUtils.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/CicdSqlFileUtils.java",
+      "sha256": "eeb8f87b3d4904558ecfe609ac3e6376353f427eed4fe47c9013f4336a0b299f",
+      "bytes": 2867
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/action/AbstractChangeAction.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/action/AbstractChangeAction.java",
+      "sha256": "ef60032fac780770d88050bb280343c09a187fe0fcb1e8d9958433cde7d510a5",
+      "bytes": 5292
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/action/ChangeActionForApproval.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/action/ChangeActionForApproval.java",
+      "sha256": "68dba484a7781739a3864eb23e04e07338a69ecc63cb2fdb8f0baa09ef6a2c08",
+      "bytes": 11949
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/action/ChangeActionForFinish.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/action/ChangeActionForFinish.java",
+      "sha256": "75c296287399ea5719ee6cf203ad6675686e1f5526b30391b0d03c4c784818e2",
+      "bytes": 6502
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/action/ChangeActionForInit.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/action/ChangeActionForInit.java",
+      "sha256": "81536619512a4b36b35447b1084604b53f8058be45d50430a1c171fdd15f1307",
+      "bytes": 15938
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/execute/impl/AutoExecServiceImpl.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/execute/impl/AutoExecServiceImpl.java",
+      "sha256": "f02c1323a8a2c61f8bdfa36cafd031db5dc82d2dddd9c34b9d7a952c21e9f76e",
+      "bytes": 36358
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/file/impl/LocalFileServiceImpl.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/file/impl/LocalFileServiceImpl.java",
+      "sha256": "5bf93edc587cda4029257628df2272f4354cb4d34f810aec54a2f7e2c305ce79",
+      "bytes": 23542
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/controller/approval/ApprovalController.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/controller/approval/ApprovalController.java",
+      "sha256": "4bfc2f9ad94bea0dee3a135877eb590ad54a19c98043e274d012bfecaabe16e1",
+      "bytes": 24510
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/controller/cicd/DmChangeFlowWebhookController.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/controller/cicd/DmChangeFlowWebhookController.java",
+      "sha256": "a6af7ca5fb3fbf2ebb35848a87cf41c4f6f6ded90bcdf757f5e7844fc4a83833",
+      "bytes": 12792
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/provider/ExecJobRServiceProvider.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/provider/ExecJobRServiceProvider.java",
+      "sha256": "2e69e6a7db95b1cc330376e0aab90336421d8691b90370756d0f5e13e0790090",
+      "bytes": 13463
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/approval/ApprovalControlServiceImpl.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/approval/ApprovalControlServiceImpl.java",
+      "sha256": "1337c28c300b375d7c8a740cb1525c6b0d5d651d8e1f749f2664ab30f1ccb0df",
+      "bytes": 61653
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/cicd/DmChangeFlowServiceImpl.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/cicd/DmChangeFlowServiceImpl.java",
+      "sha256": "b8f43b6bf59415975d70e4c53ecea67ff8b501ca95eae24e5e6b397e046f8401",
+      "bytes": 68642
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/cicd/DmChangeServiceImpl.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/cicd/DmChangeServiceImpl.java",
+      "sha256": "1955bb9e7a575f07025685cc888d3c87dc80e2d2b50589da301c77982df0f80d",
+      "bytes": 42320
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-dao/src/main/java/com/clougence/clouddm/platform/dal/mapper/cicd/DmChangeTriggerReceiptMapper.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-dao/src/main/java/com/clougence/clouddm/platform/dal/mapper/cicd/DmChangeTriggerReceiptMapper.java",
+      "sha256": "673785aba76c647c6e6c7a171b623271ca3a8e1344e54fd1816f9c4cd1cba0f3",
+      "bytes": 1169
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-dao/src/main/java/com/clougence/clouddm/platform/dal/model/cicd/DmChangeFlowItemDO.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-dao/src/main/java/com/clougence/clouddm/platform/dal/model/cicd/DmChangeFlowItemDO.java",
+      "sha256": "bba3b8aa812acb0aeff66d93e650d01845aaf81b1071a692ae732a4b74757074",
+      "bytes": 1500
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-dao/src/main/java/com/clougence/clouddm/platform/dal/model/cicd/DmChangeTriggerReceiptDO.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-dao/src/main/java/com/clougence/clouddm/platform/dal/model/cicd/DmChangeTriggerReceiptDO.java",
+      "sha256": "a3cef37f86a7e3ab73025e8f4d3bd7afd330cc1e02dece0de79e027347eccb28",
+      "bytes": 1368
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-dao/src/main/resources/mybatis/mapper/DmChangeFlowMapper.xml",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-dao/src/main/resources/mybatis/mapper/DmChangeFlowMapper.xml",
+      "sha256": "767cafaf90f2de7a6e3b547d705d9a2a5d834da71a00e9b60c7ddfd32efb0afb",
+      "bytes": 18117
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-dao/src/main/resources/mybatis/mapper/DmChangeMapper.xml",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-dao/src/main/resources/mybatis/mapper/DmChangeMapper.xml",
+      "sha256": "d20bfcfdb061f87957007e7353d0826cef62f42fb0b5ef44f6e330036dcb8305",
+      "bytes": 7771
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-dao/src/main/resources/mybatis/mapper/DmChangeTriggerReceiptMapper.xml",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-dao/src/main/resources/mybatis/mapper/DmChangeTriggerReceiptMapper.xml",
+      "sha256": "0383b2e0d8d629d9279a8fc5e49f0165c9937d0237bad25f1be952a6190d572d",
+      "bytes": 1556
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-dao/src/main/resources/mybatis/mapper/DmSysAttachmentMapper.xml",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-dao/src/main/resources/mybatis/mapper/DmSysAttachmentMapper.xml",
+      "sha256": "5bb1c346e6b03c2258f0f291a165d6e8e501ce753138ae1a2343d8ed161c320c",
+      "bytes": 3673
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-plugin-sdk/src/main/java/com/clougence/clouddm/sdk/execute/session/QueryRequest.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-plugin-sdk/src/main/java/com/clougence/clouddm/sdk/execute/session/QueryRequest.java",
+      "sha256": "b4ac24fc1971ca9a2a33d05b05102a1f038ffa04672efd964f6f06c48be6efe6",
+      "bytes": 4343
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-plugin-sdk/src/main/java/com/clougence/clouddm/sdk/language/split/SplitRequest.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-plugin-sdk/src/main/java/com/clougence/clouddm/sdk/language/split/SplitRequest.java",
+      "sha256": "b5ed0c8e1e368688d2d912588f97eea545e2b1e96fdb00a075825df9a1a54d17",
+      "bytes": 781
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-plugin-sdk/src/main/java/com/clougence/clouddm/sdk/language/split/SplitResult.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-plugin-sdk/src/main/java/com/clougence/clouddm/sdk/language/split/SplitResult.java",
+      "sha256": "a56e763d3fc275a58cf712acc01a1592687b3d6f27333f1efc40e574030e19c7",
+      "bytes": 959
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-plugin-sdk/src/main/java/com/clougence/clouddm/sdk/language/split/SplitSqlStatement.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-plugin-sdk/src/main/java/com/clougence/clouddm/sdk/language/split/SplitSqlStatement.java",
+      "sha256": "b1a7dba9450d36af4bc86802f64ed33de379c55e6ccf800f9d7866d6d495b4e9",
+      "bytes": 886
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-plugin-sdk/src/main/java/com/clougence/clouddm/sdk/sql/parser/SplitScript.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-plugin-sdk/src/main/java/com/clougence/clouddm/sdk/sql/parser/SplitScript.java",
+      "sha256": "b091e85d9dda1f262721bf4c3b0b19cf444086c0adadefe7aff6e3fdf571b2af",
+      "bytes": 1494
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-sidecar/src/main/java/com/clougence/clouddm/worker/component/autoexec/AutoExecJob.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-sidecar/src/main/java/com/clougence/clouddm/worker/component/autoexec/AutoExecJob.java",
+      "sha256": "cd3271f280b577f97db255a8c3457369aa02354dde5706f075641460315e86fd",
+      "bytes": 19143
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-sidecar/src/main/java/com/clougence/clouddm/worker/component/autoexec/AutoExecJobManagerImpl.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-sidecar/src/main/java/com/clougence/clouddm/worker/component/autoexec/AutoExecJobManagerImpl.java",
+      "sha256": "c70d1e665a161eb6651338a943f7df042566365f4dd0e199f0275f41d5d51bc5",
+      "bytes": 4735
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-sidecar/src/main/java/com/clougence/clouddm/worker/provider/AutoExecRServiceProvider.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-sidecar/src/main/java/com/clougence/clouddm/worker/provider/AutoExecRServiceProvider.java",
+      "sha256": "117fbdffa69a10490501cd1f61338d872275b0da18f07013c7fc7338a7a0a4c6",
+      "bytes": 1834
+    },
+    {
+      "path": "backend/clouddm-plugins/clouddm-ds/ds-oceanbase/src/main/java/com/clougence/clouddm/ds/oceanbase/execute/ob4ora/ObForOraSession.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-ds/ds-oceanbase/src/main/java/com/clougence/clouddm/ds/oceanbase/execute/ob4ora/ObForOraSession.java",
+      "sha256": "2ea560715d9ccc1aebcc1e64ecae912a366e4735fea918b93439042ce2a222a2",
+      "bytes": 1118
+    },
+    {
+      "path": "backend/clouddm-plugins/clouddm-ds/ds-oceanbase/src/main/java/com/clougence/clouddm/ds/oceanbase/execute/ob4ora/ObForOraSessionFactory.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-ds/ds-oceanbase/src/main/java/com/clougence/clouddm/ds/oceanbase/execute/ob4ora/ObForOraSessionFactory.java",
+      "sha256": "50a0aa699db44b0fd0604d85e819cc4cb9a377b89a592dc4a1947ac256e69810",
+      "bytes": 1587
+    },
+    {
+      "path": "backend/clouddm-plugins/clouddm-ds/ds-oceanbase/src/main/java/com/clougence/clouddm/ds/oceanbase/sql/ob4ora/ObOraSqlEngineSpi.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-ds/ds-oceanbase/src/main/java/com/clougence/clouddm/ds/oceanbase/sql/ob4ora/ObOraSqlEngineSpi.java",
+      "sha256": "3195214e033b04d24d97813e414c9f54abf54c9e9be092bfc5996f37959bb53f",
+      "bytes": 3266
+    },
+    {
+      "path": "backend/clouddm-plugins/clouddm-ds/ds-oracle/src/main/java/com/clougence/clouddm/ds/oracle/execute/OraSessionFactory.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-ds/ds-oracle/src/main/java/com/clougence/clouddm/ds/oracle/execute/OraSessionFactory.java",
+      "sha256": "149a41ab608468ee02ada53da23a070befb9c1dbe0c1a314d5be22c510afd705",
+      "bytes": 1618
+    },
+    {
+      "path": "backend/clouddm-plugins/clouddm-ds/dsc-common-oracle/src/main/java/com/clougence/clouddm/dsfamily/oracle/execute/OraSession.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-ds/dsc-common-oracle/src/main/java/com/clougence/clouddm/dsfamily/oracle/execute/OraSession.java",
+      "sha256": "9a7df3aa2373243d66d916c9c793780d0c2479ea277c40e902ffcd651c630b79",
+      "bytes": 8769
+    },
+    {
+      "path": "backend/clouddm-plugins/clouddm-ds/dsc-common/src/main/java/com/clougence/clouddm/dsfamily/language/split/SplitStrategyCenter.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-ds/dsc-common/src/main/java/com/clougence/clouddm/dsfamily/language/split/SplitStrategyCenter.java",
+      "sha256": "c3576bd32f38d5808835b9a0d42b7c309d82db8c8f789ce3b4e32e6288e98024",
+      "bytes": 3149
+    },
+    {
+      "path": "backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/antlr/PlSqlLexer.g4",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/antlr/PlSqlLexer.g4",
+      "sha256": "30c045895ed1285735016879de5f1eb01a3d59d4def5582b4f6be66d83ccc01f",
+      "bytes": 184519
+    },
+    {
+      "path": "backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/antlr/PlSqlParser.g4",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/antlr/PlSqlParser.g4",
+      "sha256": "2e1732ff89193ca9d38de7be16e3a82df4bb36d11a2853d7e0f277551c922cc0",
+      "bytes": 238052
+    },
+    {
+      "path": "backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/java/com/clougence/sql/oracle/OraSqlEngineSpi.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/java/com/clougence/sql/oracle/OraSqlEngineSpi.java",
+      "sha256": "d573eccb3d3e3b32db430c832f77fc0ef739b126c79a3c04c532aa8c9881b969",
+      "bytes": 3206
+    },
+    {
+      "path": "backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/java/com/clougence/sql/oracle/parser/OraDslProvider.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/java/com/clougence/sql/oracle/parser/OraDslProvider.java",
+      "sha256": "cf03e6426fff98b4aafb55ffe7117ee9f4117d2f2b5c06aa93c70b83c2d1e186",
+      "bytes": 3299
+    },
+    {
+      "path": "backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/java/com/clougence/sql/oracle/parser/OraSplitAnalysisSpi.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/java/com/clougence/sql/oracle/parser/OraSplitAnalysisSpi.java",
+      "sha256": "12d8eb2937cc7cfb0caf392d9582f0462063a27534e8cd9b1e3ea07bf754178a",
+      "bytes": 13251
+    },
+    {
+      "path": "backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/java/com/clougence/sql/oracle/parser/OraSplitVisitor.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/java/com/clougence/sql/oracle/parser/OraSplitVisitor.java",
+      "sha256": "c4d4e1e011c2224ebca9fc167227dffd1c2e7967e4f9fda2e7ca3e6d3a945dd2",
+      "bytes": 12381
+    },
+    {
+      "path": "backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/java/com/clougence/sql/oracle/parser/OraStatementParser.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/java/com/clougence/sql/oracle/parser/OraStatementParser.java",
+      "sha256": "f23bdbc48dfe87cc435d246fd31891b94a0e56f473b30cb29157d8df63cf3979",
+      "bytes": 2931
+    }
+  ]
+}

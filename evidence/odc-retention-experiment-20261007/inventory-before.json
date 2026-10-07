@@ -1,0 +1,238 @@
+{
+  "timestamp": "2026-10-07T17:01:43.525224+00:00",
+  "historical": [
+    {
+      "id": 1000028,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "c2cedbc02566e916bb5a813ff0b326d4faa2f0a9da00440dd18766e0c051d0e7",
+      "metadata_sha256": "c305fe185d11771e3049c583ae1138d83fff131160894a87a6360b6a2dbaebcc"
+    },
+    {
+      "id": 1000027,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "7bf3ba0dddc9157660217eac28e6a9f1159c47cd50244b3e9cdd5fcf8136896e",
+      "metadata_sha256": "59cfbded803a2fcdc19f046cdc86b3201bea2ac0407b29d6d64b63059814927c"
+    },
+    {
+      "id": 1000026,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "7bf3ba0dddc9157660217eac28e6a9f1159c47cd50244b3e9cdd5fcf8136896e",
+      "metadata_sha256": "26598fa7774ea06c72ea0eb6fc3e8aef037bbb46fa0cf8225330b3db0ab96810"
+    },
+    {
+      "id": 1000025,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "f9303e977bdf105834ed59c292fb8f8cca35d742715a84e88d997a62111afc61",
+      "metadata_sha256": "eefcb7dba5bfdae0f6a19b4270179ba7e33883c466c89fede9126a321a5e48bf"
+    },
+    {
+      "id": 1000024,
+      "status": "EXECUTION_FAILED",
+      "sql_sha256": "fff0dd8fde07056c7b761dc3bc423e78ada9c87c957fa30913e746819b51199e",
+      "metadata_sha256": "07fd7ee950949c9165b93c1d0b455d34ccb8e39a5a3d2bdec50ae7859b33e17e"
+    },
+    {
+      "id": 1000023,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "64fc9afc35183e99ed70895b1a53e478a7ec66cf69cb948377e18441e61d6209",
+      "metadata_sha256": "6f278a650ac28c044a7f4e7ba80ae85d241d977fa4ca45f904a2b17824694401"
+    },
+    {
+      "id": 1000022,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "456da3e880655d6642ac427aa4b691d1fc87f5916edb0103044deeb3800f1bd2",
+      "metadata_sha256": "e433ac65f1c1d071227eb466c8b70407567ea8ddc622b439c94b72ae61aa2e15"
+    },
+    {
+      "id": 1000021,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "456da3e880655d6642ac427aa4b691d1fc87f5916edb0103044deeb3800f1bd2",
+      "metadata_sha256": "e38876e9927bd0e2408777a55dbbd2a9c02d74b03540b6dbc583cc715ace4f73"
+    },
+    {
+      "id": 1000020,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "456da3e880655d6642ac427aa4b691d1fc87f5916edb0103044deeb3800f1bd2",
+      "metadata_sha256": "ff5d187ca54ee02af1787332018d420fcf002aaf71fad242d07728c40f1b27eb"
+    },
+    {
+      "id": 1000019,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "456da3e880655d6642ac427aa4b691d1fc87f5916edb0103044deeb3800f1bd2",
+      "metadata_sha256": "9180e9315812334de86af0cfb0b260f1c17d4c22a76eb878efacf9287df4d19e"
+    },
+    {
+      "id": 1000018,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "69c792822900ece8e634c4d3b1c0a328de19915b0c2fd4a44002f6a282ee0d97",
+      "metadata_sha256": "3712b62a2e7da1a413e8633970f03a65fe1d7d9ebd2fb0c1dd6efff064be578f"
+    },
+    {
+      "id": 1000017,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "d305b09f90daf18584786b0d5676842d2799c660981e3aaf43a7c588f00976d1",
+      "metadata_sha256": "ce3ae8d7d38f50a2b149d440b8de9a6d0d7323e0f6bb019252b811b8c40ded5d"
+    },
+    {
+      "id": 1000016,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "d91aef1ba165fcabeab5d0413bbb2288caa7de0d4b724bcf1166ea1dbcc713ed",
+      "metadata_sha256": "c71fc034043812faa7748f271b75b5e4ece6fd006689e9f198f86be245746168"
+    },
+    {
+      "id": 1000015,
+      "status": "EXECUTION_FAILED",
+      "sql_sha256": "fc1d7a0e15f8e83465a35b28fd55c6d60287f7539170a6b9ca6673efba06b873",
+      "metadata_sha256": "62536881900401998d3d509c1afa986b897580c5c774fca0163f49ca4bbe8454"
+    },
+    {
+      "id": 1000014,
+      "status": "EXECUTION_FAILED",
+      "sql_sha256": "634b9f71791fa29783d3d92fd28e377f14613912c56235bd26b53ce2e6a25f83",
+      "metadata_sha256": "c95f5266f38188ce61b47b93d64a1225c83a113cfbc8c0a3af49711387b12f85"
+    },
+    {
+      "id": 1000013,
+      "status": "EXECUTION_FAILED",
+      "sql_sha256": "3d204e0a9e69912f4eb215200757215161460e583bc6c90be0a9a0e5ef13cb56",
+      "metadata_sha256": "2aed89382b9a24ed2deceb11a0423b6caef0f356c16d5eaa5ec776313d908660"
+    },
+    {
+      "id": 1000012,
+      "status": "EXECUTION_FAILED",
+      "sql_sha256": "7359427dcc705187a51e59f7ecfd11ad78354edeb96ab2e1733449db959006d3",
+      "metadata_sha256": "785efba11d8b6ed0b02315ca38e4162ac43ac0b4979c061a8cb90439ddbb7f7f"
+    },
+    {
+      "id": 1000011,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "8a9acc5cafabc1407d0d6acc415dc6b8ebd9ebe9a562683793b28571a42e5dde",
+      "metadata_sha256": "1a73fd916028b44a7ac50968f5dfc5704f54a5218eee992bccf1272b9d322ba1"
+    },
+    {
+      "id": 1000010,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "ccd4d1318f75a70f759e9304693fe9b856bfd617c2dfd94e721a8a715da1321b",
+      "metadata_sha256": "6525b74e023760c7ec8a614e0aeb592c56af9afdd2019867384bd9283c32def1"
+    },
+    {
+      "id": 1000009,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "f8e4a4f6350e9970501dbe43da2eedbb487ea198992947009fd38e78d744bb77",
+      "metadata_sha256": "b7a56e6b9d40e35294137922c666022b30775f05080ab0804d8c5d374f514d0a"
+    },
+    {
+      "id": 1000008,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "bc43658ab387a96831277a4591a34c1cbf03918af1cdd30fa113ed33929d5e25",
+      "metadata_sha256": "cb3dceb1cdbbaf0db9ded9094ba8f176c7a72078180cd0fe560aca900a4a201c"
+    },
+    {
+      "id": 1000007,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "5dc7412ddd558070f0bc584ebba8323aad15d526849682f947e9e763634d43fa",
+      "metadata_sha256": "4c8944a215950134338c5c4bd17fba34afb2a99161a48a6df676418357e3eef4"
+    },
+    {
+      "id": 1000006,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "a1c404672529208065a5aab8e53bbfb06f271f6b54ec9a5a7133c9066eb2df2d",
+      "metadata_sha256": "6e589aeb9be6532fada4c07a3d4b87ce471cf13fb4bf2446866f427bc1d1959f"
+    },
+    {
+      "id": 1000005,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "fff0dd8fde07056c7b761dc3bc423e78ada9c87c957fa30913e746819b51199e",
+      "metadata_sha256": "a8658d3ef25a1284478958e39d2d08603843076304384bd68fb3c2edc58844f5"
+    },
+    {
+      "id": 1000004,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "93b4ca1700b3410168693ebff820434df888d75c3b890455be2479a35a2b6591",
+      "metadata_sha256": "b7b1798b5b987097d3c045fdc6a003bfe040f0bc2c2d34c6e88500b4f3386221"
+    },
+    {
+      "id": 1000003,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "bdf276c54108a2874f11765badbc310ac90b7028ece0766babd7b3732e629088",
+      "metadata_sha256": "dee614d1642a6ede7191ead72afd6c0a2cb5d44f3855e38f4ce0b3315aa1ec8e"
+    }
+  ],
+  "practical_poc": [
+    {
+      "id": 2000012,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "73edb4120daa9f3ae1f07e3a81f9ba9d0701e8820232e40df591a2a093182704",
+      "metadata_sha256": "73b988fcbb7c7bbdee63756fbb3decd5320270cb4aebae2a7417168dd01d5d8c"
+    },
+    {
+      "id": 2000011,
+      "status": "EXECUTION_FAILED",
+      "sql_sha256": "4f817bf4d470c5baa34e6e0883a5e2f981aee87e0751998dc954a72a321dcd6a",
+      "metadata_sha256": "cd18615346e4eab490cb9641b1eb14de7d3ad2391929b6404d43276e8ea74779"
+    },
+    {
+      "id": 2000010,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "35393d0dcca9c497207958436be4501dd45507e707918c283130a9e532a3b2b9",
+      "metadata_sha256": "9edd2fc2c09675aaff8fc87f48b1ae27afddfb2bc4a662f5c1a8da9e8f44151d"
+    },
+    {
+      "id": 2000009,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "35393d0dcca9c497207958436be4501dd45507e707918c283130a9e532a3b2b9",
+      "metadata_sha256": "c38ce0b441e57cd3ec1ad997744be9a83d7e1eddff0231680b20c7f9536ae043"
+    },
+    {
+      "id": 2000008,
+      "status": "CANCELLED",
+      "sql_sha256": "04a45f172ec9ea6edd1431f79e39ba944c91b7b3e662910f802d6f5e2ce2e68f",
+      "metadata_sha256": "733ed5760da4ebf1aed5543902db71758600c7544e83bdcad83ed6fceaf3458a"
+    },
+    {
+      "id": 2000007,
+      "status": "EXECUTION_FAILED",
+      "sql_sha256": "a27cd8179218910b1c33517b3549b016661f20709f8f989d34551d92b38e4966",
+      "metadata_sha256": "52f709dbcef6583eb03a9a44e2833ee15bb9aa844b8ead4cc639019fbf13424e"
+    },
+    {
+      "id": 2000006,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "ffb43c21757ca4417e5790131368952d068ee43ff977b62d6e95cc06754479af",
+      "metadata_sha256": "43f23ae6949f8e57e339eb82fa4cdcb33a9eb0f45aad91efc43e58a9a25afc88"
+    },
+    {
+      "id": 2000005,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "3bd4abf3771d5af8b54e69b825a0f89461a9818d40c88189ee1c3fe99025e073",
+      "metadata_sha256": "053b981eb67e13a26799246c27c5d6ab1e06028b8bff2a3c8a06fea3377a86f6"
+    },
+    {
+      "id": 2000004,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "aed73da557bc7e746332cb4c55ca68bf4199b089120c50b4782a5f636b3880ce",
+      "metadata_sha256": "dc7f50da24ff5626ad14bc928f2439ce3d4a3ae37e83f4033e1294336a100fec"
+    },
+    {
+      "id": 2000003,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "0e56ce8a7293cb820e659c374cadc3ba8949c3c325b8f2dde7ddbb6e5055c5ae",
+      "metadata_sha256": "a3a912b70bff7270cb4558a2aa91c9d79bf3ab3e85bd7adb19cf9f00654bde9f"
+    },
+    {
+      "id": 2000002,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "e74e482a0f59a790dc1087b73f789aed7caadc5c8c9f7b8d5e9e65789e8c35b6",
+      "metadata_sha256": "692e1dc2233e90f322a8a6bddc345d319d77eb68f983b1bce0ec42392a53a7b4"
+    },
+    {
+      "id": 2000001,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "74c692623720c3d96b644dc87fd009286df4327e26790c986b4e3c58bb1f03f7",
+      "metadata_sha256": "bec5efcbe3e8ed4694ec35f9129fdd977e271c7376b2fe60d05691646a8d8c51"
+    }
+  ],
+  "retention": [],
+  "active": [],
+  "total": 38
+}

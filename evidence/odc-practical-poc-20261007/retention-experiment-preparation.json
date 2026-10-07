@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-07T10:54:30.299316+00:00",
+  "deployment_uid": "1e25ed2c-5ab1-4b4b-8edc-f4da5f5ea352",
+  "application_uid": "9962c792-2cf2-4124-b1dd-99307ea3f0c4",
+  "original_hostname": null,
+  "original_identity_env": [],
+  "original_log_mount": {
+    "mountPath": "/opt/odc/log",
+    "name": "logs"
+  },
+  "original_skip_reconcile": null,
+  "automated_sync": {
+    "allowEmpty": false,
+    "prune": false,
+    "selfHeal": true
+  },
+  "expected_replicas": 1
+}

@@ -1,0 +1,643 @@
+{
+  "case_id": "E2",
+  "timestamp": "2026-10-07T10:35:12.799914+00:00",
+  "original_ticket_id": 2000011,
+  "corrected_ticket_id": 2000012,
+  "model": "New reviewed correction ticket with original ticket reference; original SQL/history preserved.",
+  "original_after_correction": {
+    "affectedRows": 0,
+    "approvable": false,
+    "completeTime": 1791369297000,
+    "createTime": 1791369282000,
+    "creator": {
+      "accountName": "odc_poc_requester",
+      "id": 10000,
+      "name": "POC requester",
+      "roleNames": []
+    },
+    "database": {
+      "connectType": "ORACLE",
+      "dataSource": {
+        "connectType": "CONNECT_TYPE_OB",
+        "createTime": 1791074334000,
+        "creatorId": 1,
+        "defaultSchema": "ODC_POC_20261004_DEV",
+        "environmentId": 1,
+        "host": "adb.ap-mumbai-1.oraclecloud.com",
+        "id": 1000001,
+        "name": "odc-poc-dev",
+        "port": 1521,
+        "projectId": 1,
+        "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+        "status": null,
+        "type": "ORACLE",
+        "updateTime": 1791074334000,
+        "username": "ODC_POC_20261004_DEV"
+      },
+      "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+      "environment": {
+        "createTime": null,
+        "creator": null,
+        "description": null,
+        "id": 1,
+        "name": null,
+        "updateTime": null
+      },
+      "id": 1000069,
+      "name": "ODC_POC_20261004_DEV",
+      "project": {
+        "createTime": null,
+        "creator": null,
+        "description": null,
+        "id": 1,
+        "name": null,
+        "updateTime": null
+      },
+      "type": "PHYSICAL"
+    },
+    "description": "application=odc-adoption-poc; release=0.1.0-poc-E2; ref=harmless-correction-original",
+    "executionStrategy": "MANUAL",
+    "executionTime": null,
+    "id": 2000011,
+    "nodeList": [
+      {
+        "candidates": null,
+        "comment": null,
+        "completeTime": 1791369287000,
+        "createTime": 1791369282000,
+        "id": 2000075,
+        "nodeType": "SERVICE_TASK",
+        "operator": {
+          "accountName": "odc_poc_requester",
+          "id": 10000,
+          "name": "POC requester",
+          "roleNames": []
+        },
+        "status": "COMPLETED",
+        "taskType": "PRE_CHECK"
+      },
+      {
+        "candidates": null,
+        "comment": "system auto-approval",
+        "completeTime": 1791369288000,
+        "createTime": 1791369282000,
+        "id": 2000051,
+        "nodeType": "APPROVAL_TASK",
+        "operator": null,
+        "status": "COMPLETED",
+        "taskType": null
+      },
+      {
+        "candidates": null,
+        "comment": null,
+        "completeTime": 1791369297000,
+        "createTime": 1791369282000,
+        "id": 2000076,
+        "nodeType": "SERVICE_TASK",
+        "operator": {
+          "accountName": "odc_poc_requester",
+          "id": 10000,
+          "name": "POC requester",
+          "roleNames": []
+        },
+        "status": "FAILED",
+        "taskType": "ASYNC"
+      }
+    ],
+    "parameters": {
+      "delimiter": ";",
+      "errorStrategy": "ABORT",
+      "queryLimit": 100,
+      "retryTimes": 0,
+      "sqlContent": "SELECT P7_DELIBERATE_MISSPELLING FROM DUAL;\n",
+      "sqlObjectNames": null,
+      "timeoutMillis": 120000
+    },
+    "progressPercentage": 100.0,
+    "project": {
+      "createTime": 1791073053000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+      "id": 1,
+      "name": "odc-oracle-poc",
+      "updateTime": 1791073053000
+    },
+    "projectId": 1,
+    "status": "EXECUTION_FAILED",
+    "type": "ASYNC"
+  },
+  "original_evidence": {
+    "timestamp": "2026-10-07T10:35:12.800003+00:00",
+    "ticket_id": 2000011,
+    "detail": {
+      "affectedRows": 0,
+      "approvable": false,
+      "completeTime": 1791369297000,
+      "createTime": 1791369282000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "database": {
+        "connectType": "ORACLE",
+        "dataSource": {
+          "connectType": "CONNECT_TYPE_OB",
+          "createTime": 1791074334000,
+          "creatorId": 1,
+          "defaultSchema": "ODC_POC_20261004_DEV",
+          "environmentId": 1,
+          "host": "adb.ap-mumbai-1.oraclecloud.com",
+          "id": 1000001,
+          "name": "odc-poc-dev",
+          "port": 1521,
+          "projectId": 1,
+          "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+          "status": null,
+          "type": "ORACLE",
+          "updateTime": 1791074334000,
+          "username": "ODC_POC_20261004_DEV"
+        },
+        "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+        "environment": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "id": 1000069,
+        "name": "ODC_POC_20261004_DEV",
+        "project": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "type": "PHYSICAL"
+      },
+      "description": "application=odc-adoption-poc; release=0.1.0-poc-E2; ref=harmless-correction-original",
+      "executionStrategy": "MANUAL",
+      "executionTime": null,
+      "id": 2000011,
+      "nodeList": [
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": 1791369287000,
+          "createTime": 1791369282000,
+          "id": 2000075,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "COMPLETED",
+          "taskType": "PRE_CHECK"
+        },
+        {
+          "candidates": null,
+          "comment": "system auto-approval",
+          "completeTime": 1791369288000,
+          "createTime": 1791369282000,
+          "id": 2000051,
+          "nodeType": "APPROVAL_TASK",
+          "operator": null,
+          "status": "COMPLETED",
+          "taskType": null
+        },
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": 1791369297000,
+          "createTime": 1791369282000,
+          "id": 2000076,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "FAILED",
+          "taskType": "ASYNC"
+        }
+      ],
+      "parameters": {
+        "delimiter": ";",
+        "errorStrategy": "ABORT",
+        "queryLimit": 100,
+        "retryTimes": 0,
+        "sqlContent": "SELECT P7_DELIBERATE_MISSPELLING FROM DUAL;\n",
+        "sqlObjectNames": null,
+        "timeoutMillis": 120000
+      },
+      "progressPercentage": 100.0,
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "projectId": 1,
+      "status": "EXECUTION_FAILED",
+      "type": "ASYNC"
+    },
+    "result": {
+      "http_status": 200,
+      "successful": true,
+      "data": {
+        "contents": [
+          {
+            "failCount": 1,
+            "successCount": 0
+          }
+        ]
+      },
+      "error": null
+    },
+    "log": {
+      "http_status": 200,
+      "successful": true,
+      "data": "2026-10-07 18:34:55 INFO c.o.o.s.f.t.DatabaseChangeThread - Database change task start to run, taskId=2000022\n2026-10-07 18:34:55 INFO c.o.o.s.f.t.DatabaseChangeThread - Start read sql content, taskId=2000022\n2026-10-07 18:34:55 INFO c.o.o.s.f.t.DatabaseChangeThread - Read sql content successfully, taskId=2000022\n2026-10-07 18:34:55 INFO c.o.o.s.f.t.DatabaseChangeThread - Async sql: SELECT P7_DELIBERATE_MISSPELLING FROM DUAL\n2026-10-07 18:34:56 WARN c.o.o.s.f.t.DatabaseChangeThread - Error occurs when executing sql: SELECT P7_DELIBERATE_MISSPELLING FROM DUAL, error message: ErrorCode = 904, SQLState = 42000, Details = ORA-00904: \"P7_DELIBERATE_MISSPELLING\": invalid identifier\n\n2026-10-07 18:34:56 INFO c.o.o.s.f.t.DatabaseChangeThread - async task result set was saved as JSON file successfully, file name=data/ASYNC/0DAFA3A9-7C68-4BD6-8B10-EF1735F96948.json\n2026-10-07 18:34:56 INFO c.o.o.s.f.t.DatabaseChangeThread - database change task result set was saved as local zip file, file name=C15D63BD-8A70-4742-AF28-C46E98960818\n2026-10-07 18:34:56 INFO c.o.o.s.f.t.DatabaseChangeThread - Async task end up running, task id: 2000022\n",
+      "error": null
+    },
+    "async_result": {
+      "http_status": 200,
+      "successful": true,
+      "data": {
+        "contents": [
+          {
+            "columnLabels": null,
+            "errorCode": 904,
+            "existWarnings": false,
+            "rows": [],
+            "status": "FAILED",
+            "track": "ErrorCode = 904, SQLState = 42000, Details = ORA-00904: \"P7_DELIBERATE_MISSPELLING\": invalid identifier\n"
+          }
+        ]
+      },
+      "error": null
+    },
+    "attachment": {
+      "http_status": 200,
+      "bytes": 457,
+      "sha256": "ec24cdd557387dbf369d600b2dc17823f2a592a346b741e094f292f93b9c97ca",
+      "zip": true,
+      "entries": [
+        {
+          "name": "csv_execute_result.json",
+          "content": "[ ]"
+        }
+      ]
+    },
+    "log_download": {
+      "http_status": 200,
+      "bytes": 1140,
+      "sha256": "8dc421b7edb642d6ec312391de0508004e9c9541f22a81258bd73edce3557818",
+      "zip": false,
+      "text": "2026-10-07 18:34:55 INFO c.o.o.s.f.t.DatabaseChangeThread - Database change task start to run, taskId=2000022\n2026-10-07 18:34:55 INFO c.o.o.s.f.t.DatabaseChangeThread - Start read sql content, taskId=2000022\n2026-10-07 18:34:55 INFO c.o.o.s.f.t.DatabaseChangeThread - Read sql content successfully, taskId=2000022\n2026-10-07 18:34:55 INFO c.o.o.s.f.t.DatabaseChangeThread - Async sql: SELECT P7_DELIBERATE_MISSPELLING FROM DUAL\n2026-10-07 18:34:56 WARN c.o.o.s.f.t.DatabaseChangeThread - Error occurs when executing sql: SELECT P7_DELIBERATE_MISSPELLING FROM DUAL, error message: ErrorCode = 904, SQLState = 42000, Details = ORA-00904: \"P7_DELIBERATE_MISSPELLING\": invalid identifier\n\n2026-10-07 18:34:56 INFO c.o.o.s.f.t.DatabaseChangeThread - async task result set was saved as JSON file successfully, file name=data/ASYNC/0DAFA3A9-7C68-4BD6-8B10-EF1735F96948.json\n2026-10-07 18:34:56 INFO c.o.o.s.f.t.DatabaseChangeThread - database change task result set was saved as local zip file, file name=C15D63BD-8A70-4742-AF28-C46E98960818\n2026-10-07 18:34:56 INFO c.o.o.s.f.t.DatabaseChangeThread - Async task end up running, task id: 2000022\n"
+    }
+  },
+  "corrected_final": {
+    "affectedRows": 0,
+    "approvable": false,
+    "completeTime": 1791369312000,
+    "createTime": 1791369297000,
+    "creator": {
+      "accountName": "odc_poc_requester",
+      "id": 10000,
+      "name": "POC requester",
+      "roleNames": []
+    },
+    "database": {
+      "connectType": "ORACLE",
+      "dataSource": {
+        "connectType": "CONNECT_TYPE_OB",
+        "createTime": 1791074334000,
+        "creatorId": 1,
+        "defaultSchema": "ODC_POC_20261004_DEV",
+        "environmentId": 1,
+        "host": "adb.ap-mumbai-1.oraclecloud.com",
+        "id": 1000001,
+        "name": "odc-poc-dev",
+        "port": 1521,
+        "projectId": 1,
+        "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+        "status": null,
+        "type": "ORACLE",
+        "updateTime": 1791074334000,
+        "username": "ODC_POC_20261004_DEV"
+      },
+      "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+      "environment": {
+        "createTime": null,
+        "creator": null,
+        "description": null,
+        "id": 1,
+        "name": null,
+        "updateTime": null
+      },
+      "id": 1000069,
+      "name": "ODC_POC_20261004_DEV",
+      "project": {
+        "createTime": null,
+        "creator": null,
+        "description": null,
+        "id": 1,
+        "name": null,
+        "updateTime": null
+      },
+      "type": "PHYSICAL"
+    },
+    "description": "application=odc-adoption-poc; release=0.1.1-poc-E2; corrects-ticket=2000011; ref=correction",
+    "executionStrategy": "MANUAL",
+    "executionTime": null,
+    "id": 2000012,
+    "nodeList": [
+      {
+        "candidates": null,
+        "comment": null,
+        "completeTime": 1791369302000,
+        "createTime": 1791369297000,
+        "id": 2000080,
+        "nodeType": "SERVICE_TASK",
+        "operator": {
+          "accountName": "odc_poc_requester",
+          "id": 10000,
+          "name": "POC requester",
+          "roleNames": []
+        },
+        "status": "COMPLETED",
+        "taskType": "PRE_CHECK"
+      },
+      {
+        "candidates": null,
+        "comment": "system auto-approval",
+        "completeTime": 1791369304000,
+        "createTime": 1791369297000,
+        "id": 2000056,
+        "nodeType": "APPROVAL_TASK",
+        "operator": null,
+        "status": "COMPLETED",
+        "taskType": null
+      },
+      {
+        "candidates": null,
+        "comment": null,
+        "completeTime": 1791369312000,
+        "createTime": 1791369297000,
+        "id": 2000081,
+        "nodeType": "SERVICE_TASK",
+        "operator": {
+          "accountName": "odc_poc_requester",
+          "id": 10000,
+          "name": "POC requester",
+          "roleNames": []
+        },
+        "status": "COMPLETED",
+        "taskType": "ASYNC"
+      }
+    ],
+    "parameters": {
+      "delimiter": ";",
+      "errorStrategy": "ABORT",
+      "queryLimit": 100,
+      "retryTimes": 0,
+      "sqlContent": "SELECT 'P7_CORRECTED' AS MARKER FROM DUAL;\n",
+      "sqlObjectNames": null,
+      "timeoutMillis": 120000
+    },
+    "progressPercentage": 100.0,
+    "project": {
+      "createTime": 1791073053000,
+      "creator": {
+        "accountName": "odc_poc_executor",
+        "id": 10002,
+        "name": "POC executor",
+        "roleNames": []
+      },
+      "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+      "id": 1,
+      "name": "odc-oracle-poc",
+      "updateTime": 1791073053000
+    },
+    "projectId": 1,
+    "status": "EXECUTION_SUCCEEDED",
+    "type": "ASYNC"
+  },
+  "corrected_evidence": {
+    "timestamp": "2026-10-07T10:35:13.319807+00:00",
+    "ticket_id": 2000012,
+    "detail": {
+      "affectedRows": 0,
+      "approvable": false,
+      "completeTime": 1791369312000,
+      "createTime": 1791369297000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "database": {
+        "connectType": "ORACLE",
+        "dataSource": {
+          "connectType": "CONNECT_TYPE_OB",
+          "createTime": 1791074334000,
+          "creatorId": 1,
+          "defaultSchema": "ODC_POC_20261004_DEV",
+          "environmentId": 1,
+          "host": "adb.ap-mumbai-1.oraclecloud.com",
+          "id": 1000001,
+          "name": "odc-poc-dev",
+          "port": 1521,
+          "projectId": 1,
+          "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+          "status": null,
+          "type": "ORACLE",
+          "updateTime": 1791074334000,
+          "username": "ODC_POC_20261004_DEV"
+        },
+        "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+        "environment": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "id": 1000069,
+        "name": "ODC_POC_20261004_DEV",
+        "project": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "type": "PHYSICAL"
+      },
+      "description": "application=odc-adoption-poc; release=0.1.1-poc-E2; corrects-ticket=2000011; ref=correction",
+      "executionStrategy": "MANUAL",
+      "executionTime": null,
+      "id": 2000012,
+      "nodeList": [
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": 1791369302000,
+          "createTime": 1791369297000,
+          "id": 2000080,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "COMPLETED",
+          "taskType": "PRE_CHECK"
+        },
+        {
+          "candidates": null,
+          "comment": "system auto-approval",
+          "completeTime": 1791369304000,
+          "createTime": 1791369297000,
+          "id": 2000056,
+          "nodeType": "APPROVAL_TASK",
+          "operator": null,
+          "status": "COMPLETED",
+          "taskType": null
+        },
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": 1791369312000,
+          "createTime": 1791369297000,
+          "id": 2000081,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "COMPLETED",
+          "taskType": "ASYNC"
+        }
+      ],
+      "parameters": {
+        "delimiter": ";",
+        "errorStrategy": "ABORT",
+        "queryLimit": 100,
+        "retryTimes": 0,
+        "sqlContent": "SELECT 'P7_CORRECTED' AS MARKER FROM DUAL;\n",
+        "sqlObjectNames": null,
+        "timeoutMillis": 120000
+      },
+      "progressPercentage": 100.0,
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "projectId": 1,
+      "status": "EXECUTION_SUCCEEDED",
+      "type": "ASYNC"
+    },
+    "result": {
+      "http_status": 200,
+      "successful": true,
+      "data": {
+        "contents": [
+          {
+            "failCount": 0,
+            "successCount": 1
+          }
+        ]
+      },
+      "error": null
+    },
+    "log": {
+      "http_status": 200,
+      "successful": true,
+      "data": "2026-10-07 18:35:10 INFO c.o.o.s.f.t.DatabaseChangeThread - Database change task start to run, taskId=2000024\n2026-10-07 18:35:10 INFO c.o.o.s.f.t.DatabaseChangeThread - Start read sql content, taskId=2000024\n2026-10-07 18:35:10 INFO c.o.o.s.f.t.DatabaseChangeThread - Read sql content successfully, taskId=2000024\n2026-10-07 18:35:10 INFO c.o.o.s.f.t.DatabaseChangeThread - Async sql: SELECT 'P7_CORRECTED' AS MARKER FROM DUAL\n2026-10-07 18:35:12 INFO c.o.o.s.f.t.DatabaseChangeThread - async task result set was saved as JSON file successfully, file name=data/ASYNC/F3039154-D233-4850-A902-667B7BED1368.json\n2026-10-07 18:35:12 INFO c.o.o.s.f.t.DatabaseChangeThread - database change task result set was saved as local zip file, file name=9624382E-B9EA-4EB6-BB25-DB68C1835FF8\n2026-10-07 18:35:12 INFO c.o.o.s.f.t.DatabaseChangeThread - Async task end up running, task id: 2000024\n",
+      "error": null
+    },
+    "async_result": {
+      "http_status": 200,
+      "successful": true,
+      "data": {
+        "contents": [
+          {
+            "columnLabels": [
+              "MARKER"
+            ],
+            "errorCode": -1,
+            "existWarnings": false,
+            "rows": [
+              [
+                "P7_CORRECTED"
+              ]
+            ],
+            "status": "SUCCESS",
+            "track": null
+          }
+        ]
+      },
+      "error": null
+    },
+    "attachment": {
+      "http_status": 200,
+      "bytes": 765,
+      "sha256": "daa0b767bc6d7a4bc1fe7341133510dffbd9710a0c89bea2c83999932ef065c6",
+      "zip": true,
+      "entries": [
+        {
+          "name": "1.csv",
+          "content": "MARKER\nP7_CORRECTED\n"
+        },
+        {
+          "name": "csv_execute_result.json",
+          "content": "[ {\n  \"fileName\" : \"1.csv\",\n  \"sequence\" : 1,\n  \"sql\" : \"SELECT 'P7_CORRECTED' AS MARKER FROM DUAL\"\n} ]"
+        }
+      ]
+    },
+    "log_download": {
+      "http_status": 200,
+      "bytes": 882,
+      "sha256": "b430635492ddc9433dffd01e411d751bf6fdadbe2f7a7939935116a1dfd79be2",
+      "zip": false,
+      "text": "2026-10-07 18:35:10 INFO c.o.o.s.f.t.DatabaseChangeThread - Database change task start to run, taskId=2000024\n2026-10-07 18:35:10 INFO c.o.o.s.f.t.DatabaseChangeThread - Start read sql content, taskId=2000024\n2026-10-07 18:35:10 INFO c.o.o.s.f.t.DatabaseChangeThread - Read sql content successfully, taskId=2000024\n2026-10-07 18:35:10 INFO c.o.o.s.f.t.DatabaseChangeThread - Async sql: SELECT 'P7_CORRECTED' AS MARKER FROM DUAL\n2026-10-07 18:35:12 INFO c.o.o.s.f.t.DatabaseChangeThread - async task result set was saved as JSON file successfully, file name=data/ASYNC/F3039154-D233-4850-A902-667B7BED1368.json\n2026-10-07 18:35:12 INFO c.o.o.s.f.t.DatabaseChangeThread - database change task result set was saved as local zip file, file name=9624382E-B9EA-4EB6-BB25-DB68C1835FF8\n2026-10-07 18:35:12 INFO c.o.o.s.f.t.DatabaseChangeThread - Async task end up running, task id: 2000024\n"
+    }
+  }
+}

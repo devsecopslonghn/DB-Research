@@ -1,0 +1,101 @@
+CloudDM企业级数据管理工具
+跳到主要内容
+首页
+解决方案
+资源
+关于我们
+更多
+CloudDM 已全面开源
+一站式多数据源开发管理工具
+代码开放、透明迭代，支持 MySQL、PostgreSQL、Oracle、SQL Server、Gitee、Jenkins 等多种数据源与开发工具，覆盖安全数据访问、数据库变更发布与团队协作流程。
+GitHub
+Gitee
+数据库访问
+简洁而强大的数据库访问IDE，集成了可视化数据库对象管理、智能代码提示、及基于角色和资源的细粒度权限控制。
+查看更多功能细节
+数据库 CI/CD
+无论是通过 pipeline 还是 CLI，使用 CloudDM都能灵活组装、简化应用发布流程，涵盖 SQL 检查、审查及变更执行。
+查看更多功能细节
+数据脱敏
+基于规则的数据脱敏技术，通过结合数据、权限、自定义算法以及策略脚本代码的设定，有效保护敏感信息。
+查看更多功能细节
+丰富的数据源支持
+查看支持的数据源类型
+MySQL
+Oracle
+MariaDB
+PostgreSQL
+IBM Db2
+达梦数据库
+ClickHouse
+SQL Server
+OceanBase
+PolarDB-X
+TiDB
+Greenplum
+Apache Cloudberry
+MongoDB
+Redis
+OceanBase for Oracle
+StarRocks
+Hologres
+SelectDB
+Doris
+PolarDB for MySQL
+ADB for MySQL
+GaussDB
+OpenGauss
+PolarDB for PostgreSQL
+MaxCompute
+使用场景
+统一数据库访问
+多种数据源一站式访问，通过基于角色和资源的细粒度权限控制，实现多维度授权管理，无需暴露账号密码。
+GitOps & DataBase CI/CD
+标准化工单流程
+多种数据源统一管理
+SQL 开发规范
+敏感数据保护
+关注并使用开源 CloudDM，
+一起构建更安全的数据协作方式
+欢迎在 GitHub / Gitee 查看源码、提交 Issue、参与贡献，或在自己的环境中快速体验 CloudDM。
+关注 GitHub
+关注 Gitee
+了解更多
+发现 CloudDM 的更多可能性
+Data & AI
+SQL 审核工具深度体验（一）： CloudDM vs Archery vs Yearning vs Bytebase
+从工单场景出发横向对比 CloudDM、Archery、Yearning、Bytebase
+赵
+赵永春
+Sep 19, 2025
+Announcement
+强强联合｜CloudDM 与达梦数据库完成产品兼容互认证
+CloudDM 与达梦数据库正式完成产品兼容互认证
+刘
+刘琳玉
+Jul 19, 2025
+Tutorials
+使用 CloudDM 可视化操作 MySQL
+本文展示了如何使用可视化工具 CloudDM 个人版管理和操作 MySQL 数据库和数据表
+赵
+赵永春
+Jun 14, 2025
+CloudDM 是一款专注于团队化一站式数据库开发管理工具，通过语句级别权限、数据库 CI/CD、SQL 工单、审核流程等功能在保障数据库安全情况下提升团队协作效率。
+产品
+产品文档
+版本记录
+支持的数据库
+资源
+博客
+媒体资源
+合作认证
+公司
+公司简介
+联系我们
+服务条款
+隐私策略
+Copyright © 2026 杭州开云集致科技有限公司 备案号：
+浙ICP备20007605号-4
+联系我们
+×
+扫码添加微信，获取技术支持

@@ -1,0 +1,23 @@
+[
+  {
+    "repo": "bytebase/bytebase",
+    "commit": "a85f6cb4195299995e8554303550d672d5093e1d",
+    "file": "backend/plugin/db/oracle/oracle.go",
+    "source_url": "https://raw.githubusercontent.com/bytebase/bytebase/a85f6cb4195299995e8554303550d672d5093e1d/backend/plugin/db/oracle/oracle.go",
+    "sha256": "039f8e09fa9c67250441097d742877520eee3db71c7d35733e5e84a4be22c9ea"
+  },
+  {
+    "repo": "bytebase/bytebase",
+    "commit": "a85f6cb4195299995e8554303550d672d5093e1d",
+    "file": "backend/runner/taskrun/database_migrate_executor.go",
+    "source_url": "https://raw.githubusercontent.com/bytebase/bytebase/a85f6cb4195299995e8554303550d672d5093e1d/backend/runner/taskrun/database_migrate_executor.go",
+    "sha256": "a15c3ef10a3e9bea3ed2690670d169e7614824fc5fced86858be155aa8a8e031"
+  },
+  {
+    "repo": "bytebase/bytebase",
+    "commit": "a85f6cb4195299995e8554303550d672d5093e1d",
+    "file": "backend/api/v1/rollout_service.go",
+    "source_url": "https://raw.githubusercontent.com/bytebase/bytebase/a85f6cb4195299995e8554303550d672d5093e1d/backend/api/v1/rollout_service.go",
+    "sha256": "bf8f0e612550610819fbe5c30629ebd5360b3396851aa68b5fcfb6193a6c50d6"
+  }
+]

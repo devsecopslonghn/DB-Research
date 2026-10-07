@@ -1,0 +1,57 @@
+[
+  {
+    "local_path": "evidence/product-model/screenshots/accessflow-audit-log-light.webp",
+    "url": "https://github.com/bablsoft/accessflow/blob/55c209a4d9e4ba09a6c089f90e68a8b16b3f2133/website/images/docs/audit-log-light.webp",
+    "sha256": "ec687822466ffbe20df32dac144236aa6488b854623184785925af460a7c77a0"
+  },
+  {
+    "local_path": "evidence/product-model/screenshots/accessflow-datasources-create-light.webp",
+    "url": "https://github.com/bablsoft/accessflow/blob/55c209a4d9e4ba09a6c089f90e68a8b16b3f2133/website/images/docs/datasources-create-light.webp",
+    "sha256": "8132a8ad4965d87f3aa76018d71c47964efe6697dc24f8e15d9d34a894851b89"
+  },
+  {
+    "local_path": "evidence/product-model/screenshots/accessflow-deployment-detail-light.webp",
+    "url": "https://github.com/bablsoft/accessflow/blob/55c209a4d9e4ba09a6c089f90e68a8b16b3f2133/website/images/docs/deployment-detail-light.webp",
+    "sha256": "668cda35ca4adf3d3d4e39c47b786226978088684034c5cf8d8f2fe9ad0f6a61"
+  },
+  {
+    "local_path": "evidence/product-model/screenshots/accessflow-deployment-pipeline-environments-light.webp",
+    "url": "https://github.com/bablsoft/accessflow/blob/55c209a4d9e4ba09a6c089f90e68a8b16b3f2133/website/images/docs/deployment-pipeline-environments-light.webp",
+    "sha256": "3eacd8f29bedcd73789857677badcbfed82d7710c47027b9910cea76a9720682"
+  },
+  {
+    "local_path": "evidence/product-model/screenshots/accessflow-deployment-pipelines-list-light.webp",
+    "url": "https://github.com/bablsoft/accessflow/blob/55c209a4d9e4ba09a6c089f90e68a8b16b3f2133/website/images/docs/deployment-pipelines-list-light.webp",
+    "sha256": "b42a2a434b3f7187c812a407ec1878075d97e7a5e2630cd12cb1f7d6460c3909"
+  },
+  {
+    "local_path": "evidence/product-model/screenshots/odc-batch-change.png",
+    "url": "https://obbusiness-private.oss-cn-shanghai.aliyuncs.com/doc/img/odc/430/700.database-change-management/650.multiple-database-change/6EN.png",
+    "sha256": "f547e40ecbba8b6781c9ae6be43f09eace99dd9aa5b8b05a01a30731fa62939f"
+  },
+  {
+    "local_path": "evidence/product-model/screenshots/odc-change-review.png",
+    "url": "https://github.com/oceanbase/odc/assets/15030999/ac55b51b-28e2-42e6-977a-7eeb7c3f11fa",
+    "sha256": "7d222a73aa32afae6e5d9f59d240aa6c4d2f2cb60b3730712cb9ac90f341ba40"
+  },
+  {
+    "local_path": "evidence/product-model/screenshots/odc-change-task.png",
+    "url": "https://help-static-aliyun-doc.aliyuncs.com/assets/img/en-US/6378659361/p293273.png",
+    "sha256": "28e5ea9fd1e9b40e3d9e6293ca19b5cf60e2c75e3707eee792a4664bf6377d05"
+  },
+  {
+    "local_path": "evidence/product-model/screenshots/odc-overview.png",
+    "url": "https://github.com/oceanbase/odc/assets/15030999/e8f1afaf-26da-4de2-b634-e2061ec565d5",
+    "sha256": "88ece5c475c97bcff81f1b3c1172bef9683b3bf0b2a1bc9834c9ff273668b4d8"
+  },
+  {
+    "local_path": "evidence/product-model/screenshots/odc-project-databases.png",
+    "url": "https://obbusiness-private.oss-cn-shanghai.aliyuncs.com/doc/img/odc/430/700.database-change-management/650.multiple-database-change/3EN.png",
+    "sha256": "48234fd8bf3eff8f8f5ac0c09639f52bd091d781091d34a9c6c70702186b1edf"
+  },
+  {
+    "local_path": "evidence/product-model/screenshots/odc-projects.png",
+    "url": "https://obbusiness-private.oss-cn-shanghai.aliyuncs.com/doc/img/odc/433/700.database-change-management/200.project-collaborative-management/project5EN.png",
+    "sha256": "a278a7edb849ebb7bb5e0cfff402f4440568f977c96961ec6a1e2de411b77222"
+  }
+]

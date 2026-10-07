@@ -1,0 +1,99 @@
+[submodule "evidence/additional-source/cloudbeaver"]
+	path = evidence/additional-source/cloudbeaver
+	url = https://github.com/dbeaver/cloudbeaver.git
+[submodule "evidence/additional-source/dbdeploy"]
+	path = evidence/additional-source/dbdeploy
+	url = https://github.com/gigi81/dbdeploy.git
+[submodule "evidence/additional-source/dbmaintain"]
+	path = evidence/additional-source/dbmaintain
+	url = https://github.com/dbmaintain/dbmaintain.git
+[submodule "evidence/additional-source/dbpm"]
+	path = evidence/additional-source/dbpm
+	url = https://github.com/512itconsulting/dbpm.git
+[submodule "evidence/additional-source/dbward"]
+	path = evidence/additional-source/dbward
+	url = https://github.com/dbward-dev/dbward.git
+[submodule "evidence/product-model/forks/WQMYH__database-govern"]
+	path = evidence/product-model/forks/WQMYH__database-govern
+	url = https://github.com/WQMYH/database-govern.git
+[submodule "evidence/product-model/forks/bytebase-Database-governance"]
+	path = evidence/product-model/forks/bytebase-Database-governance
+	url = https://github.com/camillanapoles/bytebase-Database-governance.git
+[submodule "evidence/product-model/forks/fariskha-sqlite"]
+	path = evidence/product-model/forks/fariskha-sqlite
+	url = https://github.com/FarendraAugust/fariskha-sqlite.git
+[submodule "evidence/product-model/forks/hongweiyi__bytebase"]
+	path = evidence/product-model/forks/hongweiyi__bytebase
+	url = https://github.com/hongweiyi/bytebase.git
+[submodule "evidence/product-model/forks/nanzm__bytebase"]
+	path = evidence/product-model/forks/nanzm__bytebase
+	url = https://github.com/nanzm/bytebase.git
+[submodule "evidence/product-model/forks/whatif-dev-bytebase"]
+	path = evidence/product-model/forks/whatif-dev-bytebase
+	url = https://github.com/whatif-dev/db-tools-bytebase.git
+[submodule "evidence/product-model/sources/actiontech__dms"]
+	path = evidence/product-model/sources/actiontech__dms
+	url = https://github.com/actiontech/dms.git
+[submodule "evidence/product-model/sources/actiontech__sqle"]
+	path = evidence/product-model/sources/actiontech__sqle
+	url = https://github.com/actiontech/sqle.git
+[submodule "evidence/product-model/sources/actiontech__sqle-oracle-plugin"]
+	path = evidence/product-model/sources/actiontech__sqle-oracle-plugin
+	url = https://github.com/actiontech/sqle-oracle-plugin.git
+[submodule "evidence/product-model/sources/ninedata-cloud__ninedata-community"]
+	path = evidence/product-model/sources/ninedata-cloud__ninedata-community
+	url = https://github.com/ninedata-cloud/ninedata-community.git
+[submodule "evidence/product-model/sources/oceanbase__odc"]
+	path = evidence/product-model/sources/oceanbase__odc
+	url = https://github.com/oceanbase/odc.git
+[submodule "evidence/product-model/sources/oceanbase__odc-client"]
+	path = evidence/product-model/sources/oceanbase__odc-client
+	url = https://github.com/oceanbase/odc-client.git
+[submodule "evidence/product-model/sources/oceanbase__odc-doc"]
+	path = evidence/product-model/sources/oceanbase__odc-doc
+	url = https://github.com/oceanbase/odc-doc.git
+[submodule "evidence/source/Tareya__devops-archery"]
+	path = evidence/source/Tareya__devops-archery
+	url = https://github.com/Tareya/devops-archery.git
+[submodule "evidence/source/apegeek__schema-pilot"]
+	path = evidence/source/apegeek__schema-pilot
+	url = https://github.com/apegeek/schema-pilot.git
+[submodule "evidence/source/ariga__atlas"]
+	path = evidence/source/ariga__atlas
+	url = https://github.com/ariga/atlas.git
+[submodule "evidence/source/bablsoft__accessflow"]
+	path = evidence/source/bablsoft__accessflow
+	url = https://github.com/bablsoft/accessflow.git
+[submodule "evidence/source/binout__flyway-ui"]
+	path = evidence/source/binout__flyway-ui
+	url = https://github.com/binout/flyway-ui.git
+[submodule "evidence/source/bytebase__bytebase"]
+	path = evidence/source/bytebase__bytebase
+	url = https://github.com/bytebase/bytebase.git
+[submodule "evidence/source/cookieY__Yearning"]
+	path = evidence/source/cookieY__Yearning
+	url = https://github.com/cookieY/Yearning.git
+[submodule "evidence/source/dband-drm__drm-cli"]
+	path = evidence/source/dband-drm__drm-cli
+	url = https://github.com/dband-drm/drm-cli.git
+[submodule "evidence/source/flyway__flyway"]
+	path = evidence/source/flyway__flyway
+	url = https://github.com/flyway/flyway.git
+[submodule "evidence/source/hhyo__Archery"]
+	path = evidence/source/hhyo__Archery
+	url = https://github.com/hhyo/Archery.git
+[submodule "evidence/source/liquibase__liquibase"]
+	path = evidence/source/liquibase__liquibase
+	url = https://github.com/liquibase/liquibase.git
+[submodule "evidence/source/liquibase__liquibase__v4.33.0"]
+	path = evidence/source/liquibase__liquibase__v4.33.0
+	url = https://github.com/liquibase/liquibase.git
+[submodule "evidence/source/minuth__open-migration"]
+	path = evidence/source/minuth__open-migration
+	url = https://github.com/minuth/open-migration.git
+[submodule "evidence/source/playframework__flyway-play"]
+	path = evidence/source/playframework__flyway-play
+	url = https://github.com/playframework/flyway-play.git
+[submodule "evidence/source/sqitchers__sqitch"]
+	path = evidence/source/sqitchers__sqitch
+	url = https://github.com/sqitchers/sqitch.git

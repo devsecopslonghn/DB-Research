@@ -1,0 +1,2537 @@
+[
+  {
+    "sha": "85475380527415c65e7cc3b720f6f901dfc9cdf8",
+    "node_id": "C_kwDOAb4hmtoAKDg1NDc1MzgwNTI3NDE1YzY1ZTdjYzNiNzIwZjZmOTAxZGZjOWNkZjg",
+    "commit": {
+      "author": {
+        "name": "Matthias Kurz",
+        "email": "m.kurz@irregular.at",
+        "date": "2026-09-09T11:11:56Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-09T11:11:56Z"
+      },
+      "message": "Merge pull request #539 from xuwei-k/patch-2\n\nFix CI branch setting",
+      "tree": {
+        "sha": "95d15e8ca87497f2d47f39eb70fef53c20eaddbf",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/95d15e8ca87497f2d47f39eb70fef53c20eaddbf"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/85475380527415c65e7cc3b720f6f901dfc9cdf8",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqoT78CRC1aQ7uu5UhlAAAnjIQAB8lCZ4V36hJgbN/B2/ebFnE\nkrJKag9RsA3SY5BVCEr1wb1ENMKPrWarKw0MUwds4wngQJMrl3sDqx4N87Y/B/kH\nNZDOFPoiKLarR3FjxPrYS5bKB7BDn86SS+sC+pPkzzZUQ51LtVzNHXagqLoH9jsa\n3EkgmDNl9YmTroSZ6hE8FOo+cZKd9r+5dfY3Ky61wWlZNoFsirtvGBLP6ZcLqj0I\nQ55zvBvBb5gJhDdjeLYSaoBsMhtqcACAe1JGvRP40nVQKyLDQuyQwR/xMctQQRzI\nh7fMnZt7RxPjiRTwzeN4KGU0ZkLdtXOuOD07r+3cc69yyQgKxU1OBKaxiF4D08pb\nlkP4mDWTZWevP/LE1q2ybnrJyXcdnFKAgcC92JBa7jOG6j9udf4iu/DMVzUkfLC0\nz7il6pfPEh761BUlHjX2EwkQe7oiOJpeh0BODRyidewBPac0/mJZ1bWFJY6S0P/7\nXPpGIH8fadogauRKcshBx8YJENDN6rZ4Xxwrw1XNrXkYJozmbcVYZhemp1Mo1Ubw\nFnOemKXdXcp+i7H+jDQQ0eNbnUVe6AUUmKvC53gT2b4n1jxx3cqsz5mepZeEPAH1\nIdWHO1lDr5rNC0PXqWnQI7oNjqwDPJSY4q44rPlFT9H0O/m0amnlsx0wEv/dnnze\nLnyxHsiK97IQlzUnD8kE\n=O+C1\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 95d15e8ca87497f2d47f39eb70fef53c20eaddbf\nparent 9987ba2632cbc45ee56ae80a60df1d0bdb3c984c\nparent e02b1f84000a94e4025e3ac5785525c062d8bc09\nauthor Matthias Kurz <m.kurz@irregular.at> 1788952316 +0200\ncommitter GitHub <noreply@github.com> 1788952316 +0200\n\nMerge pull request #539 from xuwei-k/patch-2\n\nFix CI branch setting",
+        "verified_at": "2026-09-09T11:11:56Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/85475380527415c65e7cc3b720f6f901dfc9cdf8",
+    "html_url": "https://github.com/playframework/flyway-play/commit/85475380527415c65e7cc3b720f6f901dfc9cdf8",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/85475380527415c65e7cc3b720f6f901dfc9cdf8/comments",
+    "author": {
+      "login": "mkurz",
+      "id": 644927,
+      "node_id": "MDQ6VXNlcjY0NDkyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/644927?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mkurz",
+      "html_url": "https://github.com/mkurz",
+      "followers_url": "https://api.github.com/users/mkurz/followers",
+      "following_url": "https://api.github.com/users/mkurz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mkurz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mkurz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mkurz/subscriptions",
+      "organizations_url": "https://api.github.com/users/mkurz/orgs",
+      "repos_url": "https://api.github.com/users/mkurz/repos",
+      "events_url": "https://api.github.com/users/mkurz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mkurz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9987ba2632cbc45ee56ae80a60df1d0bdb3c984c",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/9987ba2632cbc45ee56ae80a60df1d0bdb3c984c",
+        "html_url": "https://github.com/playframework/flyway-play/commit/9987ba2632cbc45ee56ae80a60df1d0bdb3c984c"
+      },
+      {
+        "sha": "e02b1f84000a94e4025e3ac5785525c062d8bc09",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/e02b1f84000a94e4025e3ac5785525c062d8bc09",
+        "html_url": "https://github.com/playframework/flyway-play/commit/e02b1f84000a94e4025e3ac5785525c062d8bc09"
+      }
+    ]
+  },
+  {
+    "sha": "e02b1f84000a94e4025e3ac5785525c062d8bc09",
+    "node_id": "C_kwDOAb4hmtoAKGUwMmIxZjg0MDAwYTk0ZTQwMjVlM2FjNTc4NTUyNWMwNjJkOGJjMDk",
+    "commit": {
+      "author": {
+        "name": "kenji yoshida",
+        "email": "6b656e6a69@gmail.com",
+        "date": "2026-09-07T23:17:46Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-07T23:17:46Z"
+      },
+      "message": "Fix CI branch setting",
+      "tree": {
+        "sha": "95d15e8ca87497f2d47f39eb70fef53c20eaddbf",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/95d15e8ca87497f2d47f39eb70fef53c20eaddbf"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/e02b1f84000a94e4025e3ac5785525c062d8bc09",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqn0YaCRC1aQ7uu5UhlAAA16UQAGM8PfDLBB7To8YzUwWq3Q4S\nechlDVHQNu5rnM9zrewsUcmjgIwnKpd5bSdoeIXS4x6LghdrQx+UpN2SAAVUu/F7\nb0TRuEOsZXOkOU2x/gaf2SbnCeB0Oz04m5Ec2OZGE60Vf7PKrLchwxGWHOV3MMCI\nkIKMU+EyDoysxAqtS+eAXFYbLF6nYRJA/HhglfYqV7qaJFDJnXJSb37cg6HKoevL\nQaROL+yATiacixnaYuNAgq/mPid2pgKg41RuWAqOHik3SKuxMJfCfrxr6+LiyxQG\nLmgnIcEqaDTnhiYrzXWiLyWUUbNJ/6pqBYVHAKU3j/5qbMrInfJU5u6Qz5gE5L/l\nBHJHxiySe1TjUgwjZnPbIi7mwJxADGDk5F5O8CKuaK/ii/fHLsw0X3K2uwqGbJER\nM6qdW/WgIvDXDSyIvvRfc2txrLLyMTuvTR6zQwYoDyAducutzmPxRn+xpfzB5D8J\nyvlsS/T5RUpe/vBRCZGrWFmfWthO2Gv/q00/ucC4HuIH0Bhz0A2CV0hsEU7Et61h\ncRIMOSJA+uBO7waxYErmAlidgFUXyf2365IZ6zZ/IdvwT1N8cdRhccgUzmjXm/Hp\nN/3yKDH6SFGVqorOpxkV95Lzcch67zbwt/q4kAtTBn3UwJMvjVEQBSA4tznaJdDn\nYTRJuKqSYf6K/+3WipYk\n=znBO\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 95d15e8ca87497f2d47f39eb70fef53c20eaddbf\nparent 9987ba2632cbc45ee56ae80a60df1d0bdb3c984c\nauthor kenji yoshida <6b656e6a69@gmail.com> 1788823066 +0900\ncommitter GitHub <noreply@github.com> 1788823066 +0900\n\nFix CI branch setting",
+        "verified_at": "2026-09-07T23:17:47Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/e02b1f84000a94e4025e3ac5785525c062d8bc09",
+    "html_url": "https://github.com/playframework/flyway-play/commit/e02b1f84000a94e4025e3ac5785525c062d8bc09",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/e02b1f84000a94e4025e3ac5785525c062d8bc09/comments",
+    "author": {
+      "login": "xuwei-k",
+      "id": 389787,
+      "node_id": "MDQ6VXNlcjM4OTc4Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/389787?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xuwei-k",
+      "html_url": "https://github.com/xuwei-k",
+      "followers_url": "https://api.github.com/users/xuwei-k/followers",
+      "following_url": "https://api.github.com/users/xuwei-k/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xuwei-k/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xuwei-k/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xuwei-k/subscriptions",
+      "organizations_url": "https://api.github.com/users/xuwei-k/orgs",
+      "repos_url": "https://api.github.com/users/xuwei-k/repos",
+      "events_url": "https://api.github.com/users/xuwei-k/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xuwei-k/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9987ba2632cbc45ee56ae80a60df1d0bdb3c984c",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/9987ba2632cbc45ee56ae80a60df1d0bdb3c984c",
+        "html_url": "https://github.com/playframework/flyway-play/commit/9987ba2632cbc45ee56ae80a60df1d0bdb3c984c"
+      }
+    ]
+  },
+  {
+    "sha": "9987ba2632cbc45ee56ae80a60df1d0bdb3c984c",
+    "node_id": "C_kwDOAb4hmtoAKDk5ODdiYTI2MzJjYmM0NWVlNTZhZTgwYTYwZGYxZDBiZGIzYzk4NGM",
+    "commit": {
+      "author": {
+        "name": "Matthias Kurz",
+        "email": "m.kurz@irregular.at",
+        "date": "2026-09-01T15:43:25Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-01T15:43:25Z"
+      },
+      "message": "Merge pull request #538 from playframework/dependabot/github_actions/actions/setup-java-6\n\nBump actions/setup-java from 5 to 6",
+      "tree": {
+        "sha": "5ece99d76c00e116b97f407bc0f53f16eb0b5322",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/5ece99d76c00e116b97f407bc0f53f16eb0b5322"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/9987ba2632cbc45ee56ae80a60df1d0bdb3c984c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqlvKdCRC1aQ7uu5UhlAAALpwQAGJmeUfsShgV//mR0umVBQPH\nJU+smJ3bKIYsImTQRZw0HAzjOCcUWKxCBEundhZUOhHESAcZFoR+5Tc7YeAZwUTn\nVd2z8cPtlpcLJ0Fk+3GqJ3C/bJlQO2stRmDtpc+1Zjhj0PPmqXjb1Xk4LyHfr/YT\nFlPzYwpJ/l68x8U9CogViuInvCp8VtoIT6OpfAKMRCIFLsRN+tE4H9OiSHFhpoCo\nxzmvWuD0S3TfX59eGVtMm+GL4EmXWugj1b0uj9B3cIFXIgFiNRW4708IBA7BsaBy\nsrXONk1o8iHpujG0eI3nBKc4dF8b3aEH1berPtI3iE5dGrrtvDqz7KpGDhOwU46Y\nHOPKs5lRVnbN9Ltvy18xNEM9eid6xv1ii/I+uYvRb/ZJTPKNuIeAE3UIwcLGX+hO\nJzzSQ2Ps9rFd9h6/gyteTJv2X9/gGsdhv7fiBCJf2gM+4HkjVboI0VxguNSXqxF1\nG2Yi0GGB73Jdt4rSYXqNSjVgm850xDX7J8AZd+uztwqkYbXsBXXC/2ovvxfzFeyD\nGLLvpSu2akrqUxVC+1cz4ji1vJi7WKoIQhAyVh8KyEHUN+9tsZBafE4zNgm7IzIx\ndMJzriH8M0QjeMe00BZfEmeI1dwpcVx36e2fgGlXvbFwazAC0ls6VD9cQZRf9RaY\nBfkQCkUCH6hZrZt5dWNR\n=5MFq\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5ece99d76c00e116b97f407bc0f53f16eb0b5322\nparent faf0935986c41b16c3f969b7bfbf1a3bd223f89a\nparent a52300bcfabb9487357e9a1e69f28672fa823683\nauthor Matthias Kurz <m.kurz@irregular.at> 1788277405 +0200\ncommitter GitHub <noreply@github.com> 1788277405 +0200\n\nMerge pull request #538 from playframework/dependabot/github_actions/actions/setup-java-6\n\nBump actions/setup-java from 5 to 6",
+        "verified_at": "2026-09-01T16:01:02Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/9987ba2632cbc45ee56ae80a60df1d0bdb3c984c",
+    "html_url": "https://github.com/playframework/flyway-play/commit/9987ba2632cbc45ee56ae80a60df1d0bdb3c984c",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/9987ba2632cbc45ee56ae80a60df1d0bdb3c984c/comments",
+    "author": {
+      "login": "mkurz",
+      "id": 644927,
+      "node_id": "MDQ6VXNlcjY0NDkyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/644927?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mkurz",
+      "html_url": "https://github.com/mkurz",
+      "followers_url": "https://api.github.com/users/mkurz/followers",
+      "following_url": "https://api.github.com/users/mkurz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mkurz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mkurz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mkurz/subscriptions",
+      "organizations_url": "https://api.github.com/users/mkurz/orgs",
+      "repos_url": "https://api.github.com/users/mkurz/repos",
+      "events_url": "https://api.github.com/users/mkurz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mkurz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "faf0935986c41b16c3f969b7bfbf1a3bd223f89a",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/faf0935986c41b16c3f969b7bfbf1a3bd223f89a",
+        "html_url": "https://github.com/playframework/flyway-play/commit/faf0935986c41b16c3f969b7bfbf1a3bd223f89a"
+      },
+      {
+        "sha": "a52300bcfabb9487357e9a1e69f28672fa823683",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/a52300bcfabb9487357e9a1e69f28672fa823683",
+        "html_url": "https://github.com/playframework/flyway-play/commit/a52300bcfabb9487357e9a1e69f28672fa823683"
+      }
+    ]
+  },
+  {
+    "sha": "a52300bcfabb9487357e9a1e69f28672fa823683",
+    "node_id": "C_kwDOAb4hmtoAKGE1MjMwMGJjZmFiYjk0ODczNTdlOWExZTY5ZjI4NjcyZmE4MjM2ODM",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-08-31T12:22:47Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-31T12:22:47Z"
+      },
+      "message": "Bump actions/setup-java from 5 to 6\n\nBumps [actions/setup-java](https://github.com/actions/setup-java) from 5 to 6.\n- [Release notes](https://github.com/actions/setup-java/releases)\n- [Commits](https://github.com/actions/setup-java/compare/v5...v6)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-java\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "tree": {
+        "sha": "5ece99d76c00e116b97f407bc0f53f16eb0b5322",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/5ece99d76c00e116b97f407bc0f53f16eb0b5322"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/a52300bcfabb9487357e9a1e69f28672fa823683",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqlXIXCRC1aQ7uu5UhlAAAu/wQABUK4iqJQh4Q+DyxNog8xxUP\nSM2AjFNkYcaRLxHnQaPeqmq3o2nPqO9V+9vvp9BUHOfWymp8iP9fJ4ONFLEhJeAg\nj6YLF8Y/qnIb5zyDlzW8qdnPgwH2ctKeh9KFDOiNyZJBE8c7WLQ3vkRIxSOKC8hw\npPMDsD4277Fits6ew3SzrjmtsHuXMzT3rsxUMbBXcG/eZSdO7322RtYYDrMTQs7g\nmmuhtb/qwbQT3w18kOSwdi2gWN9YeJ87CnD6NQBvIs/bYO9DWg/rJ7wa5bOJG2eW\nX2RR4lSmNewRc1j9tPIvvTzFhhd73QLKNG3vzrZzcDaQbE6XR6cxuLcDsHhb0ZSj\nYE7uBsndtRZgQJgpAqiSxZYRnKj0KGMHbnfCDCE5/zjItVwjYEd5y+rAR8RcaN5v\nEBVul/H+tiOEB1ijYE4iH+mrONj0WRwh6Ap3HKxJyVdokV3hdJql43Q75BBhppDq\nRNdLejLANvRyLjhvoh2alO1n6KeylEX1nb2lf0zm3er4M5brSoNdOPgp0U2lRVCI\nzgmH54DAYEimxIvYNfI3jwxuPRLFHbnwD8WeR+O9aeRo4rDM1udNSAc38HxkFnIJ\nek9QlkhCeJkfrr9SuRiKvashLzLAg5QPGwBtBUj1CLam8yPo8b8/6QxhsJ1x9Vyn\nDBRD4yLMxgX4hpnrMg0q\n=vpT7\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5ece99d76c00e116b97f407bc0f53f16eb0b5322\nparent faf0935986c41b16c3f969b7bfbf1a3bd223f89a\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1788178967 +0000\ncommitter GitHub <noreply@github.com> 1788178967 +0000\n\nBump actions/setup-java from 5 to 6\n\nBumps [actions/setup-java](https://github.com/actions/setup-java) from 5 to 6.\n- [Release notes](https://github.com/actions/setup-java/releases)\n- [Commits](https://github.com/actions/setup-java/compare/v5...v6)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-java\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+        "verified_at": "2026-08-31T12:22:48Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/a52300bcfabb9487357e9a1e69f28672fa823683",
+    "html_url": "https://github.com/playframework/flyway-play/commit/a52300bcfabb9487357e9a1e69f28672fa823683",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/a52300bcfabb9487357e9a1e69f28672fa823683/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "faf0935986c41b16c3f969b7bfbf1a3bd223f89a",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/faf0935986c41b16c3f969b7bfbf1a3bd223f89a",
+        "html_url": "https://github.com/playframework/flyway-play/commit/faf0935986c41b16c3f969b7bfbf1a3bd223f89a"
+      }
+    ]
+  },
+  {
+    "sha": "faf0935986c41b16c3f969b7bfbf1a3bd223f89a",
+    "node_id": "C_kwDOAb4hmtoAKGZhZjA5MzU5ODZjNDFiMTZjM2Y5NjliN2JmYmYxYTNiZDIyM2Y4OWE",
+    "commit": {
+      "author": {
+        "name": "Matthias Kurz",
+        "email": "m.kurz@irregular.at",
+        "date": "2026-07-28T22:38:38Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-28T22:38:38Z"
+      },
+      "message": "Merge pull request #537 from scala-steward/update/scalafmt-core-3.11.5\n\nUpdate scalafmt-core to 3.11.5",
+      "tree": {
+        "sha": "b3db1e0b2de0c6dde13a59aeedc0804a14a77ca1",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/b3db1e0b2de0c6dde13a59aeedc0804a14a77ca1"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/faf0935986c41b16c3f969b7bfbf1a3bd223f89a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqaS9uCRC1aQ7uu5UhlAAAsYAQAGbXG5bobyPDk7PWD/gZMT9U\nuuZz/ZMMmUIQ6hk2l8VKjT0q6Ra3Id7CuJTYIMIKWonFDU+SUztJAW4B7qP+ThgI\nMufNUiRrFLJF2Vpm5sbypgE870GxL9n9A4nHtqtLqzeGyrpAQY5fAhUQ/vaKfIrQ\nFnjwTOcHsp6MVWYUtnMxaeY20MKz1zXDgNdkpsPe5vTRWnePGN/CsdvuzJpPzSF6\nSTwkwaAhzzv6gYhUqfaRiEqYjkYvKpEBXzAIKAVllsk9Sfq2LVo6B94xC2LXv3CV\n3E5PFIbjHMGY2GcMUJTBaHfm/3OSIbV2ZArDRzHKz4JTjTlKZSXzh5NTb0gI96Nj\nwyBapKxhh/f/s01X+/3JQCKcbyKAQxWj/QFSJu10dc4srOMyZcy2yejnboTBBgFh\nq7NEvp7Ih2x0eBobOSchjcJo02YZyvg/WE9dt6lnE+3YY+GtLme96zDL5mLL2YNJ\nwt+P7dDO34gntK9ewgRLwgKHrIUNlLFIIHkIW2G3aXQmWi3mcDpnpFsqer3LdpEe\nEBJrSZ/cPapRKdLausfHv5QIiGSqG/g1U4g4R3Cn+s9cC0DpUgc87N2tCreXRPB8\nWXlC0QkhTJ2QhQTenfxMjrXzxLPLcY3Ez4naxRV891GAzEHmJGuJPX0Z1KQkd178\nwXQyUixVeavskRvy9iyv\n=Dpso\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b3db1e0b2de0c6dde13a59aeedc0804a14a77ca1\nparent 89c2df5e12b827a59f5cd597b2f47216d2fa4d28\nparent 830dad5e251e8f8f08b9b2166618a73918501bc5\nauthor Matthias Kurz <m.kurz@irregular.at> 1785278318 +0200\ncommitter GitHub <noreply@github.com> 1785278318 +0200\n\nMerge pull request #537 from scala-steward/update/scalafmt-core-3.11.5\n\nUpdate scalafmt-core to 3.11.5",
+        "verified_at": "2026-07-28T22:38:39Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/faf0935986c41b16c3f969b7bfbf1a3bd223f89a",
+    "html_url": "https://github.com/playframework/flyway-play/commit/faf0935986c41b16c3f969b7bfbf1a3bd223f89a",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/faf0935986c41b16c3f969b7bfbf1a3bd223f89a/comments",
+    "author": {
+      "login": "mkurz",
+      "id": 644927,
+      "node_id": "MDQ6VXNlcjY0NDkyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/644927?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mkurz",
+      "html_url": "https://github.com/mkurz",
+      "followers_url": "https://api.github.com/users/mkurz/followers",
+      "following_url": "https://api.github.com/users/mkurz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mkurz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mkurz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mkurz/subscriptions",
+      "organizations_url": "https://api.github.com/users/mkurz/orgs",
+      "repos_url": "https://api.github.com/users/mkurz/repos",
+      "events_url": "https://api.github.com/users/mkurz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mkurz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "89c2df5e12b827a59f5cd597b2f47216d2fa4d28",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/89c2df5e12b827a59f5cd597b2f47216d2fa4d28",
+        "html_url": "https://github.com/playframework/flyway-play/commit/89c2df5e12b827a59f5cd597b2f47216d2fa4d28"
+      },
+      {
+        "sha": "830dad5e251e8f8f08b9b2166618a73918501bc5",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/830dad5e251e8f8f08b9b2166618a73918501bc5",
+        "html_url": "https://github.com/playframework/flyway-play/commit/830dad5e251e8f8f08b9b2166618a73918501bc5"
+      }
+    ]
+  },
+  {
+    "sha": "89c2df5e12b827a59f5cd597b2f47216d2fa4d28",
+    "node_id": "C_kwDOAb4hmtoAKDg5YzJkZjVlMTJiODI3YTU5ZjVjZDU5N2IyZjQ3MjE2ZDJmYTRkMjg",
+    "commit": {
+      "author": {
+        "name": "Matthias Kurz",
+        "email": "m.kurz@irregular.at",
+        "date": "2026-07-28T22:38:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-28T22:38:31Z"
+      },
+      "message": "Merge pull request #536 from scala-steward/update/sbt-2.0.4\n\nUpdate sbt to 2.0.4",
+      "tree": {
+        "sha": "512118f0b28178367442980a32f39aa109625e50",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/512118f0b28178367442980a32f39aa109625e50"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/89c2df5e12b827a59f5cd597b2f47216d2fa4d28",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqaS9nCRC1aQ7uu5UhlAAAjTwQAEJzD2wmy0/NpOFuzs0KvGj2\n2tYi7uTQQ3BvZ2NdT+QSEz6GlN1g4PJsOUGQmcbbE/Upnwsb7NTB2ffjIexeyq1O\nHFl2sGCXFpJImr86Pv0ycbnWCGfhaRntVJCAziKJR9POkyi5At6fUXz+Oje/nRM/\niFT8tQ+4W6vDGtznXaD4LSdWfDDkOnAmrZ/DiOYs30WsENS32sQHssj+WmS6HV8J\ne6TSJGN8nwznrGVG7dQMIKYiJyDo5ctLLjyb9tvZbs7AqCBuMZMfZrUMpzubmn0w\nN8fr72ws3+QPEA1XceXZE8TtuSSsGGbktng28H7hQMs6iDkG0tJiLBm5mUrr22yk\nNNnp077RgqGXvJP1fR1X9OmRd4R+mvB5sf2CAHxi8efFWZ/Iin6dRYCFVlp373ih\n2ZiPP49k1dbtuwIVyWoQbr+Lz1okFo82XYEe7lpA+8vaGgS+ChKJhjmxJxBs5Ghs\nY5ySgYChECXItCLP4z9uXMjCM1l9GoKIzUBFzEUmYjOz4MetAUtj8KDk+HPOAgxU\nipofp/6wxBX9xgaSwtkVio0ABcD/RFkf/QXQqwW4p32SuBpgo+U693fUli7sHhoi\n1U8E7hRaLqKDnDRB8wXxdkB7sgthqVn+EuOuvnuXH85ZcqMBRXavvV4P9wqzVOp+\ntY+46QXb0lLniv1wOZBi\n=4UFn\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 512118f0b28178367442980a32f39aa109625e50\nparent 3b689bc463420f6ea36d7317da8881c9f4780f0c\nparent 05b738b09bb2887bf24d536b600247897d42d19c\nauthor Matthias Kurz <m.kurz@irregular.at> 1785278311 +0200\ncommitter GitHub <noreply@github.com> 1785278311 +0200\n\nMerge pull request #536 from scala-steward/update/sbt-2.0.4\n\nUpdate sbt to 2.0.4",
+        "verified_at": "2026-07-28T22:38:31Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/89c2df5e12b827a59f5cd597b2f47216d2fa4d28",
+    "html_url": "https://github.com/playframework/flyway-play/commit/89c2df5e12b827a59f5cd597b2f47216d2fa4d28",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/89c2df5e12b827a59f5cd597b2f47216d2fa4d28/comments",
+    "author": {
+      "login": "mkurz",
+      "id": 644927,
+      "node_id": "MDQ6VXNlcjY0NDkyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/644927?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mkurz",
+      "html_url": "https://github.com/mkurz",
+      "followers_url": "https://api.github.com/users/mkurz/followers",
+      "following_url": "https://api.github.com/users/mkurz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mkurz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mkurz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mkurz/subscriptions",
+      "organizations_url": "https://api.github.com/users/mkurz/orgs",
+      "repos_url": "https://api.github.com/users/mkurz/repos",
+      "events_url": "https://api.github.com/users/mkurz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mkurz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3b689bc463420f6ea36d7317da8881c9f4780f0c",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/3b689bc463420f6ea36d7317da8881c9f4780f0c",
+        "html_url": "https://github.com/playframework/flyway-play/commit/3b689bc463420f6ea36d7317da8881c9f4780f0c"
+      },
+      {
+        "sha": "05b738b09bb2887bf24d536b600247897d42d19c",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/05b738b09bb2887bf24d536b600247897d42d19c",
+        "html_url": "https://github.com/playframework/flyway-play/commit/05b738b09bb2887bf24d536b600247897d42d19c"
+      }
+    ]
+  },
+  {
+    "sha": "830dad5e251e8f8f08b9b2166618a73918501bc5",
+    "node_id": "C_kwDOAb4hmtoAKDgzMGRhZDVlMjUxZThmOGYwOGI5YjIxNjY2MThhNzM5MTg1MDFiYzU",
+    "commit": {
+      "author": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-07-28T16:54:23Z"
+      },
+      "committer": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-07-28T16:54:23Z"
+      },
+      "message": "Update scalafmt-core to 3.11.5",
+      "tree": {
+        "sha": "1f5a6c5dd4e40a504a93d8d2f497bd2b856ffda9",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/1f5a6c5dd4e40a504a93d8d2f497bd2b856ffda9"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/830dad5e251e8f8f08b9b2166618a73918501bc5",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE+07CbnSZFTs2F0sif+F2Y1oUBQgFAmpo3r8ACgkQf+F2Y1oU\nBQh+1g/+M7wHZkMgmGBz92rAs7/vX33372U/RRt043uXUWcgex1BY0md4OgCG64I\n2wHEMI4giStkw5KRIDq27+cRpiMniEwK9XXEanpYBqSfKjEwPooCxCuJQEf3k2Ce\naDaSBoTM0JYvnf/WpT4QpMVvhwTD/qlPzC03gtnQVeP23BUm8HzEPlhorSgVF2Xe\nhtIxyP3mxJwIMb2+F3qAW+vjtf7r7cWD4RNPjXe9ml2PBoGtVGiBk//HUyLTxV+n\nfeje0ywXs39zgcNmLk5MENCWT7iBtERueQYQh++fhu0OdugfgrWPLfb98NlCAPzQ\nxlNkEgrX5iC4rzxiXmSoM5oSc7Uv92u8semFFjPHyGWjnz94OTbsQpzzYSwnd9gc\nC/mSgw5rs3b74iefWrUPkfYzbKjElMIALXwljx9ENCWCVWokXN7yznmF0brt97mN\n788dU8OwYLWfcps59xWVbQ68/kmjzPKHsGGwbBZ283muDQh+jPdwiKoEwRrsFImP\npti21m1ZvX0fL0qSOQ2jrRBlc4NFqKVHIR1uGgMX/r0y8aXn+Hfm4k/fRjmCNhhM\nsTCspT3NRzeJLLUr7ST/3UJMGZ14FomeryJ08GQelM5s+VifQhxZwN5Dj898rqsN\n6rPUNvWPV9r6LLThzQwEnAvwQDwtaxT9IXZ49QtBCbdroJx+gcg=\n=Oxne\n-----END PGP SIGNATURE-----",
+        "payload": "tree 1f5a6c5dd4e40a504a93d8d2f497bd2b856ffda9\nparent 3b689bc463420f6ea36d7317da8881c9f4780f0c\nauthor Scala Steward <scala_steward@virtuslab.com> 1785257663 +0000\ncommitter Scala Steward <scala_steward@virtuslab.com> 1785257663 +0000\n\nUpdate scalafmt-core to 3.11.5\n",
+        "verified_at": "2026-07-28T16:54:30Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/830dad5e251e8f8f08b9b2166618a73918501bc5",
+    "html_url": "https://github.com/playframework/flyway-play/commit/830dad5e251e8f8f08b9b2166618a73918501bc5",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/830dad5e251e8f8f08b9b2166618a73918501bc5/comments",
+    "author": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3b689bc463420f6ea36d7317da8881c9f4780f0c",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/3b689bc463420f6ea36d7317da8881c9f4780f0c",
+        "html_url": "https://github.com/playframework/flyway-play/commit/3b689bc463420f6ea36d7317da8881c9f4780f0c"
+      }
+    ]
+  },
+  {
+    "sha": "05b738b09bb2887bf24d536b600247897d42d19c",
+    "node_id": "C_kwDOAb4hmtoAKDA1YjczOGIwOWJiMjg4N2JmMjRkNTM2YjYwMDI0Nzg5N2Q0MmQxOWM",
+    "commit": {
+      "author": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-07-28T16:54:14Z"
+      },
+      "committer": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-07-28T16:54:14Z"
+      },
+      "message": "Update sbt to 2.0.4",
+      "tree": {
+        "sha": "512118f0b28178367442980a32f39aa109625e50",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/512118f0b28178367442980a32f39aa109625e50"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/05b738b09bb2887bf24d536b600247897d42d19c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE+07CbnSZFTs2F0sif+F2Y1oUBQgFAmpo3rYACgkQf+F2Y1oU\nBQjqDhAAkob9URZAd7nsO4FOpGxw08lUFqQJguUYKlvTXTKRNacfvP28hTnsda68\nDoj1Q0tIKkYd7hY8n3S/uYsCT2FHx8/mhlnpM2PqPv4eAgy1SR1OMX4sxFxNcPCr\n5rdioh2UCmQeidX5Qk0ZpO7HCvf1478tadiptq4OpOiIhYCqEJNFH2d4quz8kZny\nDsdMERyVSPI6E/84KOJ6jTNeEL3QCcQC9BRRR78q4xpx/TRxMBUJLqNKuUQIFp4z\nFJwcrraf/UVjabxp7vpGC27Xgn0ZN39aXeBZNSg8MBLfCJMISt6DOb9CJEbeJZVK\nxnHpCbAZ1rbrFHe/u6FAUmisxny8MyIN7UTzjfsQkGbSw9hfzcwaKkoD/t0oicte\nCUgsJS70x8RVWblxdqGnJbZ/Xndj9a3tuWF2L4qlb9LWZ4gdAsBhSyjMts3XcKQj\nAkj5JzsJs2ci0nB5v+f0McmvEJs9/DMCdyYZGpqGJWKnldKkOa8NZi7nQRy78ueI\nEHZhfBbEXqGq0CPf9bkLghdrpbJHIcBwRiBRZER5bRN5eFgN7sq3J0+TSO1YLrgQ\nUkA5SdNyJLkFsUZNjQFzKrL9dr6TeKDO6r21ABqKsBls+G4mR0nemHlQy8sEbtsM\n9JeDErfQ8nv3Tkp24UIxn+A5QM84ZAYmdMxOLcdEbR4B7+Fvsds=\n=gt/V\n-----END PGP SIGNATURE-----",
+        "payload": "tree 512118f0b28178367442980a32f39aa109625e50\nparent 3b689bc463420f6ea36d7317da8881c9f4780f0c\nauthor Scala Steward <scala_steward@virtuslab.com> 1785257654 +0000\ncommitter Scala Steward <scala_steward@virtuslab.com> 1785257654 +0000\n\nUpdate sbt to 2.0.4\n",
+        "verified_at": "2026-07-28T16:54:16Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/05b738b09bb2887bf24d536b600247897d42d19c",
+    "html_url": "https://github.com/playframework/flyway-play/commit/05b738b09bb2887bf24d536b600247897d42d19c",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/05b738b09bb2887bf24d536b600247897d42d19c/comments",
+    "author": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3b689bc463420f6ea36d7317da8881c9f4780f0c",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/3b689bc463420f6ea36d7317da8881c9f4780f0c",
+        "html_url": "https://github.com/playframework/flyway-play/commit/3b689bc463420f6ea36d7317da8881c9f4780f0c"
+      }
+    ]
+  },
+  {
+    "sha": "3b689bc463420f6ea36d7317da8881c9f4780f0c",
+    "node_id": "C_kwDOAb4hmtoAKDNiNjg5YmM0NjM0MjBmNmVhMzZkNzMxN2RhODg4MWM5ZjQ3ODBmMGM",
+    "commit": {
+      "author": {
+        "name": "Matthias Kurz",
+        "email": "m.kurz@irregular.at",
+        "date": "2026-07-19T08:29:14Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-19T08:29:14Z"
+      },
+      "message": "Merge pull request #534 from scala-steward/update/scalafmt-core-3.11.4\n\nUpdate scalafmt-core to 3.11.4",
+      "tree": {
+        "sha": "90e7e515d19b4ab441026cdcfaa1472fcae18ef2",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/90e7e515d19b4ab441026cdcfaa1472fcae18ef2"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/3b689bc463420f6ea36d7317da8881c9f4780f0c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqXIraCRC1aQ7uu5UhlAAAfh8QALBVF3UpYHd9tWm5/kdfwbHg\n2amgDh3M54s8X7+1NxIUn/p+6djPtShTiU1Z6UiMA+wIblWpw9CJNB8TXsRqmcrC\n2PQg5F+lpiKK7sw8abo2meeq/7vo+pWhIkxyvLKgCLFji1Sb63Dw/7ODWUUq5Z3M\nZY/47J/XorIqKj033YaMCPpm3xPjDf65AVNyR3SpxxlCV/y8p2clKkrGH14CiGlO\ns2wlusfPpOu/X+6z5SdhCtLGY042WfToSZ4idBjYlr4WqyBWTVy6nSSsfIkDp9y4\nTOPdZyrqEU2Gg0DKkY+zuEN1zjnhSe0l0uQHtDxOcENYOrt0Z5cI0wzdQHGOkODi\nA3hZVF42IIMbzvNazidN4uIw63XOmQxzy82TF7LhzvDYd5A092LuBvZMoqM2Ck+q\nCI7cp+6KvSvjfRrnuEd0ez3ZHKix2gYa0cCduVwIYp9ayOpbscA9vl5g8dPblsf0\na1pI2Zz3mxIcCMFpBUbD4UzgTHaCTcCi2TFglUkp+7TCojoEnMKYr6Gld8LHwAUu\ndr8yZpr+wrVXT6eYuY7OT4Nbt+1ahjaEuN3/cQ4wSjfl34wIbyP09UfNIiph0RIr\nf16WRoSiah2QpuxUKd3hzHB7mZoMM19CC7fCRYn2BxUpFs7V4l+OcIRO2k9qC4Ka\nrmjtn4KvKCaQ0MqlBhHS\n=MQeF\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 90e7e515d19b4ab441026cdcfaa1472fcae18ef2\nparent 84c63519bb15a25d3da462bd5ee75ad6e759bc84\nparent 4495f5b68e7fafd7ab6ae89874b1447d53f0fc46\nauthor Matthias Kurz <m.kurz@irregular.at> 1784449754 +0200\ncommitter GitHub <noreply@github.com> 1784449754 +0200\n\nMerge pull request #534 from scala-steward/update/scalafmt-core-3.11.4\n\nUpdate scalafmt-core to 3.11.4",
+        "verified_at": "2026-07-19T08:29:15Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/3b689bc463420f6ea36d7317da8881c9f4780f0c",
+    "html_url": "https://github.com/playframework/flyway-play/commit/3b689bc463420f6ea36d7317da8881c9f4780f0c",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/3b689bc463420f6ea36d7317da8881c9f4780f0c/comments",
+    "author": {
+      "login": "mkurz",
+      "id": 644927,
+      "node_id": "MDQ6VXNlcjY0NDkyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/644927?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mkurz",
+      "html_url": "https://github.com/mkurz",
+      "followers_url": "https://api.github.com/users/mkurz/followers",
+      "following_url": "https://api.github.com/users/mkurz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mkurz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mkurz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mkurz/subscriptions",
+      "organizations_url": "https://api.github.com/users/mkurz/orgs",
+      "repos_url": "https://api.github.com/users/mkurz/repos",
+      "events_url": "https://api.github.com/users/mkurz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mkurz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "84c63519bb15a25d3da462bd5ee75ad6e759bc84",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/84c63519bb15a25d3da462bd5ee75ad6e759bc84",
+        "html_url": "https://github.com/playframework/flyway-play/commit/84c63519bb15a25d3da462bd5ee75ad6e759bc84"
+      },
+      {
+        "sha": "4495f5b68e7fafd7ab6ae89874b1447d53f0fc46",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/4495f5b68e7fafd7ab6ae89874b1447d53f0fc46",
+        "html_url": "https://github.com/playframework/flyway-play/commit/4495f5b68e7fafd7ab6ae89874b1447d53f0fc46"
+      }
+    ]
+  },
+  {
+    "sha": "84c63519bb15a25d3da462bd5ee75ad6e759bc84",
+    "node_id": "C_kwDOAb4hmtoAKDg0YzYzNTE5YmIxNWEyNWQzZGE0NjJiZDVlZTc1YWQ2ZTc1OWJjODQ",
+    "commit": {
+      "author": {
+        "name": "Matthias Kurz",
+        "email": "m.kurz@irregular.at",
+        "date": "2026-07-19T08:29:09Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-19T08:29:09Z"
+      },
+      "message": "Merge pull request #533 from scala-steward/update/sbt-scalafmt-2.6.2\n\nUpdate sbt-scalafmt to 2.6.2",
+      "tree": {
+        "sha": "4753b98e87b0bc4610fba90ffb73bf0596b58fcf",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/4753b98e87b0bc4610fba90ffb73bf0596b58fcf"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/84c63519bb15a25d3da462bd5ee75ad6e759bc84",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqXIrVCRC1aQ7uu5UhlAAAT5sQAHLI4lxXmdhkioDhe6/22vV0\ny9yWox9Y3nHun8H0Rfxr7nkAbyM82kgVEnYOgLbliMykdRYRJ7R2kowRum5sJUZB\nfuGuQUvyF7aN2Kuw+KI1XRcCMStHizPmnOlO6xDdWWsnL95c1Sc28BPPLRZYo0rL\nBwM6vpMHH9oJqQkqobByINANy/M6dz573MoXxFLP4Pxnwx6LLLSiCzGaOfUvtyOY\nhqwnRIGkVuNDFJgx1Rm/pIlJ2BLTgJcKHdy9MtWEv+s+fZHGkqgqU8oGaE2tpTME\nsdx9qBcdt7W2PJq+ceb8bzISyWwbwwNWjFuN1qmitPnp77CqJduDMFkP9QvWODz5\nAsxUd5vYmOuGEb8YKoTIiuPWALodqjRJgmMhkTFCKFGvwrtOdwBw8C/8yscooDdq\nYQnQlQ5Y/D+c06F7KIrOS9ieHY97AgUj+tzzd4s3b9p6rhrcrz2eYn1OB09quu1I\nBwQgmXK7pmqJeijneKxOXpP1d3iMG7SWQ53hO4LLDsqA/d1n0yQ+gu6zwmnLCxfn\ntvHG5+QKcQemZNFuNpJp/4ME+48ugzS6r+euTnVr6y0n6xQrWiB34fR0bC9E9dey\n2aW17u/c0FjnCijd1+EhJubS6UeslaAMpTgQAY34lBZtO1SeyE4GkwnyFPgA4D0S\n29Ockrh+KGJLWUWSO/P6\n=ekZC\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4753b98e87b0bc4610fba90ffb73bf0596b58fcf\nparent 4a617608a71101d36e29e3c69a00997badc5e5ab\nparent 9a837ac187e3b5c5cd65ad472085e5132e84681b\nauthor Matthias Kurz <m.kurz@irregular.at> 1784449749 +0200\ncommitter GitHub <noreply@github.com> 1784449749 +0200\n\nMerge pull request #533 from scala-steward/update/sbt-scalafmt-2.6.2\n\nUpdate sbt-scalafmt to 2.6.2",
+        "verified_at": "2026-07-19T08:29:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/84c63519bb15a25d3da462bd5ee75ad6e759bc84",
+    "html_url": "https://github.com/playframework/flyway-play/commit/84c63519bb15a25d3da462bd5ee75ad6e759bc84",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/84c63519bb15a25d3da462bd5ee75ad6e759bc84/comments",
+    "author": {
+      "login": "mkurz",
+      "id": 644927,
+      "node_id": "MDQ6VXNlcjY0NDkyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/644927?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mkurz",
+      "html_url": "https://github.com/mkurz",
+      "followers_url": "https://api.github.com/users/mkurz/followers",
+      "following_url": "https://api.github.com/users/mkurz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mkurz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mkurz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mkurz/subscriptions",
+      "organizations_url": "https://api.github.com/users/mkurz/orgs",
+      "repos_url": "https://api.github.com/users/mkurz/repos",
+      "events_url": "https://api.github.com/users/mkurz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mkurz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4a617608a71101d36e29e3c69a00997badc5e5ab",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/4a617608a71101d36e29e3c69a00997badc5e5ab",
+        "html_url": "https://github.com/playframework/flyway-play/commit/4a617608a71101d36e29e3c69a00997badc5e5ab"
+      },
+      {
+        "sha": "9a837ac187e3b5c5cd65ad472085e5132e84681b",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/9a837ac187e3b5c5cd65ad472085e5132e84681b",
+        "html_url": "https://github.com/playframework/flyway-play/commit/9a837ac187e3b5c5cd65ad472085e5132e84681b"
+      }
+    ]
+  },
+  {
+    "sha": "4a617608a71101d36e29e3c69a00997badc5e5ab",
+    "node_id": "C_kwDOAb4hmtoAKDRhNjE3NjA4YTcxMTAxZDM2ZTI5ZTNjNjlhMDA5OTdiYWRjNWU1YWI",
+    "commit": {
+      "author": {
+        "name": "Matthias Kurz",
+        "email": "m.kurz@irregular.at",
+        "date": "2026-07-19T08:29:04Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-19T08:29:04Z"
+      },
+      "message": "Merge pull request #532 from scala-steward/update/sbt-1.12.14\n\nUpdate sbt, scripted-plugin to 1.12.14",
+      "tree": {
+        "sha": "7652b69a6c3ab87c24515d68f6b8baf0cde6001e",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/7652b69a6c3ab87c24515d68f6b8baf0cde6001e"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/4a617608a71101d36e29e3c69a00997badc5e5ab",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqXIrQCRC1aQ7uu5UhlAAAE8gQAAfCFCutVEeKuXxMLMmNJA2u\nhAd+9aqlqicE49VrHa5eatT5Zy0aWHzcAK2b4scEhO0trRKQVXIXdOKRbfiZzrMs\nEz9xp+4IohjVXBkbRa6oevIUozuRq94Ln0xyEPwZn/s/oKQXyNZ4396MmVZTOfVa\nMntf5+Ex8guK2XmEVpXsRMr1P9T73ykQThG/1h9E6k0I5IEN3ha2AyRHMv0P1wMy\n2CH2B6NX5IH9s+ChJ0NCmronGMeUdMyKQQ47TqrPvYyplcOSs94rBzFxtT/I+ayV\n6A0ZPxEaizcbDFOKvPgR1bvONgZutUiBT9SrAyg750NN5vLvu46keUMyOiO6oGOl\nKzmQCE2fzvYhhD5rTwXb7TgWwhJCdc5YtNaMW+4wG9jAp5DSkrX/jNqa4xYDx13r\naYe0CNkaTbeQHJmNv2HMjQmZEZNWbIGn+3Gv1mbZQeNmf57uHQLgd51uH2l7CMG0\nba9zn9XCxZ6dWa7H1rq9nzt+eC+b0P1W2zquo4bZebLB2PhwfO8D3c62NhhdgUBV\nLUnw3/gwRViPbeh0GKEcxO2AvhmNBBKRxe/Gcrz9VWQEDVSQMomoUXk8hfN+iKny\npFW7gCxVrEs1HG0VHBqP8lV+yyox64ZCUtSUHa7laURX5NpUkUSDyXlY7AHOupZG\nA2ibcSDObFq77mlnDHgq\n=mDrx\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 7652b69a6c3ab87c24515d68f6b8baf0cde6001e\nparent 880b0cee16f62cf22be17f856af73d033473c72b\nparent a66ff2945875b83bc12a0d7a468f4a25903b4de7\nauthor Matthias Kurz <m.kurz@irregular.at> 1784449744 +0200\ncommitter GitHub <noreply@github.com> 1784449744 +0200\n\nMerge pull request #532 from scala-steward/update/sbt-1.12.14\n\nUpdate sbt, scripted-plugin to 1.12.14",
+        "verified_at": "2026-07-19T08:29:05Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/4a617608a71101d36e29e3c69a00997badc5e5ab",
+    "html_url": "https://github.com/playframework/flyway-play/commit/4a617608a71101d36e29e3c69a00997badc5e5ab",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/4a617608a71101d36e29e3c69a00997badc5e5ab/comments",
+    "author": {
+      "login": "mkurz",
+      "id": 644927,
+      "node_id": "MDQ6VXNlcjY0NDkyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/644927?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mkurz",
+      "html_url": "https://github.com/mkurz",
+      "followers_url": "https://api.github.com/users/mkurz/followers",
+      "following_url": "https://api.github.com/users/mkurz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mkurz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mkurz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mkurz/subscriptions",
+      "organizations_url": "https://api.github.com/users/mkurz/orgs",
+      "repos_url": "https://api.github.com/users/mkurz/repos",
+      "events_url": "https://api.github.com/users/mkurz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mkurz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "880b0cee16f62cf22be17f856af73d033473c72b",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/880b0cee16f62cf22be17f856af73d033473c72b",
+        "html_url": "https://github.com/playframework/flyway-play/commit/880b0cee16f62cf22be17f856af73d033473c72b"
+      },
+      {
+        "sha": "a66ff2945875b83bc12a0d7a468f4a25903b4de7",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/a66ff2945875b83bc12a0d7a468f4a25903b4de7",
+        "html_url": "https://github.com/playframework/flyway-play/commit/a66ff2945875b83bc12a0d7a468f4a25903b4de7"
+      }
+    ]
+  },
+  {
+    "sha": "4495f5b68e7fafd7ab6ae89874b1447d53f0fc46",
+    "node_id": "C_kwDOAb4hmtoAKDQ0OTVmNWI2OGU3ZmFmZDdhYjZhZTg5ODc0YjE0NDdkNTNmMGZjNDY",
+    "commit": {
+      "author": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-07-18T17:32:37Z"
+      },
+      "committer": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-07-18T17:32:37Z"
+      },
+      "message": "Update scalafmt-core to 3.11.4",
+      "tree": {
+        "sha": "ea1117283213a973a7f360a26fd7258b94192559",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/ea1117283213a973a7f360a26fd7258b94192559"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/4495f5b68e7fafd7ab6ae89874b1447d53f0fc46",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE+07CbnSZFTs2F0sif+F2Y1oUBQgFAmpbuLUACgkQf+F2Y1oU\nBQg2TQ/+Lx6N9HLdBgwMW84KMY66tQGMGsiaYeRmj3qctkxIWNXNr+0afq0YN+LJ\nkTI25ZbKhxQO0oVnkF21kq30rPoNAFiYPJ7ryUP6/ghXweYze41+A+AHL/6s9fm7\n8CAutbfrsLlCRb+xe9bRknQf5XU/UnqzF/4qQGbitqNYIVTIXAW78iGpOnstQ4qN\nMjb23jfLsKVyxq9HjoUWr8GSATcMr3xzsi3nea+xR0IprChDakDRH8AXQ6QNoI3C\nT+nD2bYd5MxNzgDjOTFmQhcYTx9A/8REE/mizxkpWCGKg912DOHkSrcSCQlv06qR\nj4O35+C9lqmA5GhWPCPwEdPv1vsIBuSBLD4QvudOHkG+sR8OzEDmqySbroxTPIBV\nk+YGnrGlJnVly6UmGC6RQ8GUNdjBfIWtS0O+uVyM6P/mq4iJRgX++P4vQXcz+XiN\nWuUJQohfzlOR2lJLCp6EniATZ9VLvbF158QWeewZSAsERxM6Jife/ME84J2cBSQP\n3+M50rzdK9Jqjq3wGLCc3tm+9d7FlRdrHN/wQ1Bv64xcKeHkNF/2GNPMwqsGExdu\nB/brjKOjwPiEtSI9vbknhO3jrri/vHhaBB5xMrcY9B/6Znepi3nsUXcpOo94CyNs\nTSZRZXtYLU3I78ZHG263TOeWc0+yBFXAvb70igewBT2ZchwQGNc=\n=e4/O\n-----END PGP SIGNATURE-----",
+        "payload": "tree ea1117283213a973a7f360a26fd7258b94192559\nparent 880b0cee16f62cf22be17f856af73d033473c72b\nauthor Scala Steward <scala_steward@virtuslab.com> 1784395957 +0000\ncommitter Scala Steward <scala_steward@virtuslab.com> 1784395957 +0000\n\nUpdate scalafmt-core to 3.11.4\n",
+        "verified_at": "2026-07-18T17:32:42Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/4495f5b68e7fafd7ab6ae89874b1447d53f0fc46",
+    "html_url": "https://github.com/playframework/flyway-play/commit/4495f5b68e7fafd7ab6ae89874b1447d53f0fc46",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/4495f5b68e7fafd7ab6ae89874b1447d53f0fc46/comments",
+    "author": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "880b0cee16f62cf22be17f856af73d033473c72b",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/880b0cee16f62cf22be17f856af73d033473c72b",
+        "html_url": "https://github.com/playframework/flyway-play/commit/880b0cee16f62cf22be17f856af73d033473c72b"
+      }
+    ]
+  },
+  {
+    "sha": "9a837ac187e3b5c5cd65ad472085e5132e84681b",
+    "node_id": "C_kwDOAb4hmtoAKDlhODM3YWMxODdlM2I1YzVjZDY1YWQ0NzIwODVlNTEzMmU4NDY4MWI",
+    "commit": {
+      "author": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-07-18T17:32:31Z"
+      },
+      "committer": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-07-18T17:32:31Z"
+      },
+      "message": "Update sbt-scalafmt to 2.6.2",
+      "tree": {
+        "sha": "e4751b6ccac53292a0002c928fb0cfd6adf0e261",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/e4751b6ccac53292a0002c928fb0cfd6adf0e261"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/9a837ac187e3b5c5cd65ad472085e5132e84681b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE+07CbnSZFTs2F0sif+F2Y1oUBQgFAmpbuK8ACgkQf+F2Y1oU\nBQh9hg//ePXHd7MMrAayWIvgXVwZ1XV4UTKy6H4e6ZnhB1HZzMt3fPcsgHmNtHRj\neu3gJ4K4i3zMR8gOAyCY5zne/EWp8SV9QTksK7W9iU8VQZ1xfAZ1VrFvkF/yG0SO\nMzLKFicHERKR/chyQ5inSkmd67MJjVj95bOyombBWepo0zNrpnbhnJSZtbtwbmNp\nZyVVO6z6ycMs8vZyklT3x5ObuTA+4lQw+fjYkivlhTb0vxe8cLlvEr3eTgi+0e1h\n+bGMUeyt0gvIk7se3VOa8SO4Eo3kypqbbu56pD9rFET7xKkD7AtXavIMOn9eHtt1\nzY+rDRzZUzKO2bEW9OmB2CyLtfsDUicYlKWsTXPE8e/bk0pLzgLFJuG6dub/wbxH\nbFZZwbFdH4lYbO4UkukSW2Y+TVCIjutKZLMVBiz0SuaQptC083nhTR9eACP57zXx\nTyMWh/7qEZHDmAPQDT/EHiAyAlQx231yo74NVUnw6dsQJ3md97MC6DghY2d+kGhX\n8gZDgbEAOsigT4e7TyoePXyDZGPGZO08JTScHh02JOphBs4rYEG1bkBM9uWycWu1\nUkPJq5axq2gSajI4geozu2rey9s5WmiBdoWeUpHWm6EjOSU8eMqpEPeddZOkpviv\nhEJ+W8A1Je3T0QE5TCecYyASXxB8oTCgMJmkY+RtQbzhtfa7MSw=\n=St5W\n-----END PGP SIGNATURE-----",
+        "payload": "tree e4751b6ccac53292a0002c928fb0cfd6adf0e261\nparent 880b0cee16f62cf22be17f856af73d033473c72b\nauthor Scala Steward <scala_steward@virtuslab.com> 1784395951 +0000\ncommitter Scala Steward <scala_steward@virtuslab.com> 1784395951 +0000\n\nUpdate sbt-scalafmt to 2.6.2\n",
+        "verified_at": "2026-07-18T17:32:34Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/9a837ac187e3b5c5cd65ad472085e5132e84681b",
+    "html_url": "https://github.com/playframework/flyway-play/commit/9a837ac187e3b5c5cd65ad472085e5132e84681b",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/9a837ac187e3b5c5cd65ad472085e5132e84681b/comments",
+    "author": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "880b0cee16f62cf22be17f856af73d033473c72b",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/880b0cee16f62cf22be17f856af73d033473c72b",
+        "html_url": "https://github.com/playframework/flyway-play/commit/880b0cee16f62cf22be17f856af73d033473c72b"
+      }
+    ]
+  },
+  {
+    "sha": "a66ff2945875b83bc12a0d7a468f4a25903b4de7",
+    "node_id": "C_kwDOAb4hmtoAKGE2NmZmMjk0NTg3NWI4M2JjMTJhMGQ3YTQ2OGY0YTI1OTAzYjRkZTc",
+    "commit": {
+      "author": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-07-18T17:32:26Z"
+      },
+      "committer": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-07-18T17:32:26Z"
+      },
+      "message": "Update sbt, scripted-plugin to 1.12.14",
+      "tree": {
+        "sha": "7652b69a6c3ab87c24515d68f6b8baf0cde6001e",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/7652b69a6c3ab87c24515d68f6b8baf0cde6001e"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/a66ff2945875b83bc12a0d7a468f4a25903b4de7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE+07CbnSZFTs2F0sif+F2Y1oUBQgFAmpbuKoACgkQf+F2Y1oU\nBQi5jRAAlyiLIf7uRFK1Dof/paa6YcjqfWzkGldqB+8XtU7z7uebLAzp0h5UTqZf\n00cNgj4B9K8RJfurORtBVm0prbghf9OqgPfpHuLrpEYQHw2zDleQGTv5fUlMboHm\nmUHnjkyfkCzOxjHEVzVgCcJyLB78GVuKW65hAKhtdTm3a1GU9CyuZHHrse2rodup\naYj2fgxxObklOKPM9Yo7KEzZiU/2VARmrXFDzDm8LtwU+5YwjZ+kJhwwa6P2Yg+T\nIjNt1FOUW/Q45Mp6YRCRhylNluoz4QZz+qOxbE9uL9uswh1Lmtfnx43xXODfRqzO\nur4tI4pmgaiiEhkYAOTjuvDsWnz7MfexPNYaG1H6mw/hb2Zwm6dqKI1g6MgynWv2\nh3CdrVYN/5hTSYH7+3LtxyxapYivKsKjNiNON+M0Vb3eN1tZu3K5Fj9Q4UiRX/Nf\nT4njL/SMvOoDVi5D72MOl81j8PJjMOlO26dJkWHr3P9Pl9rYFNMCdbX8o8cDRmlv\nXqace1GdVmKU3reGSKvbQmVKXu9A/yFxCV19KjALlT+UIOOlMBhS439gU1Av0xru\nrBmXf5wRWf8QHuMiaW3VzjmEsj456lmzdmLxu8DByBqyyZQELjoMe2Y01rVDc8Vt\nC0HJVfyW6qTp3rG7T8KVsXfi6W0LyvJtcMccI5eaaQnZ2ykgbIw=\n=U5bc\n-----END PGP SIGNATURE-----",
+        "payload": "tree 7652b69a6c3ab87c24515d68f6b8baf0cde6001e\nparent 880b0cee16f62cf22be17f856af73d033473c72b\nauthor Scala Steward <scala_steward@virtuslab.com> 1784395946 +0000\ncommitter Scala Steward <scala_steward@virtuslab.com> 1784395946 +0000\n\nUpdate sbt, scripted-plugin to 1.12.14\n",
+        "verified_at": "2026-07-18T17:32:28Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/a66ff2945875b83bc12a0d7a468f4a25903b4de7",
+    "html_url": "https://github.com/playframework/flyway-play/commit/a66ff2945875b83bc12a0d7a468f4a25903b4de7",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/a66ff2945875b83bc12a0d7a468f4a25903b4de7/comments",
+    "author": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "880b0cee16f62cf22be17f856af73d033473c72b",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/880b0cee16f62cf22be17f856af73d033473c72b",
+        "html_url": "https://github.com/playframework/flyway-play/commit/880b0cee16f62cf22be17f856af73d033473c72b"
+      }
+    ]
+  },
+  {
+    "sha": "880b0cee16f62cf22be17f856af73d033473c72b",
+    "node_id": "C_kwDOAb4hmtoAKDg4MGIwY2VlMTZmNjJjZjIyYmUxN2Y4NTZhZjczZDAzMzQ3M2M3MmI",
+    "commit": {
+      "author": {
+        "name": "Matthias Kurz",
+        "email": "m.kurz@irregular.at",
+        "date": "2026-07-13T07:22:11Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-13T07:22:11Z"
+      },
+      "message": "Merge pull request #530 from scala-steward/update/scalafmt-core-3.11.3\n\nUpdate scalafmt-core to 3.11.3",
+      "tree": {
+        "sha": "0fae1ca26fb0f0e1fdb446fa8f6fbaa3d85de79b",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/0fae1ca26fb0f0e1fdb446fa8f6fbaa3d85de79b"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/880b0cee16f62cf22be17f856af73d033473c72b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqVJIjCRC1aQ7uu5UhlAAAKyEQAG3hhsl/Azw5036QZj6ZgAdI\nFYJ1IblP9sUWBx8nl4o13BwENa2GoopQeZp9E1zkZIWpsZ8QkuW+tOvpO3Jfyest\nbWplsDEZBPpFxUsySh0V4i0pc3eSJ9JMkmoCAY+CIK5TdPPm7n+Pl6K/b0WY1i+N\nc4Q2vQ4HRiYn8NhVB4uqHtMHD3OLydk6iEApn9JT51TNNLdQ0d3pf5ckUeN6QPZ3\nPf7pRc5Qg5FKpCdxT4rKI+FSkq0y38181u3H91p9psHl0C+b2hNeYT1OLVu+UshJ\nIzhpEic75JXRLDnOmwxEMIhKCYSNVMEQCpe6FFKmKkuW1Si4kJ8nQnDTCc0JTf+5\n8H80HJghtiWPljRxgtV1rehuT28R/bMnTASzNHqrKz8ItbDi3zcdzdz8sIRThC9d\noGDEuHRcyZZdW64+8gqxJWmNjjPUnH8HRfUDQoNBMqf+uvzBxGM9cD92eriRFpf5\ndDV8vfj9MwO5EPvYA0SaNSMUSDgeINNfGOpEr94fg93bwvjiIKYK/UihRKRFzQmP\n1SxJr+S3qeZSc+X2/cuNAu6L9p8zzFz5W3EOo/JYiim2h9fAibC5ZBjEe19J0Vlp\nc+8YaUlYHw80O8d8pBfXA+QQOX9sPc+O5bl9n1B+GQXz/AOthXAyBQtUVyAkGdRw\n12TOS+sgcaJS1+Lh2j8v\n=Xw2e\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0fae1ca26fb0f0e1fdb446fa8f6fbaa3d85de79b\nparent 2a2f09dd3254778799559f3e07dd35aa1ac0a2b7\nparent 88c55c0944ba07592e3084c6f3944100c3ae8eaa\nauthor Matthias Kurz <m.kurz@irregular.at> 1783927331 +0200\ncommitter GitHub <noreply@github.com> 1783927331 +0200\n\nMerge pull request #530 from scala-steward/update/scalafmt-core-3.11.3\n\nUpdate scalafmt-core to 3.11.3",
+        "verified_at": "2026-07-13T07:22:12Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/880b0cee16f62cf22be17f856af73d033473c72b",
+    "html_url": "https://github.com/playframework/flyway-play/commit/880b0cee16f62cf22be17f856af73d033473c72b",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/880b0cee16f62cf22be17f856af73d033473c72b/comments",
+    "author": {
+      "login": "mkurz",
+      "id": 644927,
+      "node_id": "MDQ6VXNlcjY0NDkyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/644927?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mkurz",
+      "html_url": "https://github.com/mkurz",
+      "followers_url": "https://api.github.com/users/mkurz/followers",
+      "following_url": "https://api.github.com/users/mkurz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mkurz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mkurz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mkurz/subscriptions",
+      "organizations_url": "https://api.github.com/users/mkurz/orgs",
+      "repos_url": "https://api.github.com/users/mkurz/repos",
+      "events_url": "https://api.github.com/users/mkurz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mkurz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2a2f09dd3254778799559f3e07dd35aa1ac0a2b7",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/2a2f09dd3254778799559f3e07dd35aa1ac0a2b7",
+        "html_url": "https://github.com/playframework/flyway-play/commit/2a2f09dd3254778799559f3e07dd35aa1ac0a2b7"
+      },
+      {
+        "sha": "88c55c0944ba07592e3084c6f3944100c3ae8eaa",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/88c55c0944ba07592e3084c6f3944100c3ae8eaa",
+        "html_url": "https://github.com/playframework/flyway-play/commit/88c55c0944ba07592e3084c6f3944100c3ae8eaa"
+      }
+    ]
+  },
+  {
+    "sha": "88c55c0944ba07592e3084c6f3944100c3ae8eaa",
+    "node_id": "C_kwDOAb4hmtoAKDg4YzU1YzA5NDRiYTA3NTkyZTMwODRjNmYzOTQ0MTAwYzNhZThlYWE",
+    "commit": {
+      "author": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-07-12T16:56:46Z"
+      },
+      "committer": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-07-12T16:56:46Z"
+      },
+      "message": "Update scalafmt-core to 3.11.3",
+      "tree": {
+        "sha": "0fae1ca26fb0f0e1fdb446fa8f6fbaa3d85de79b",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/0fae1ca26fb0f0e1fdb446fa8f6fbaa3d85de79b"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/88c55c0944ba07592e3084c6f3944100c3ae8eaa",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE+07CbnSZFTs2F0sif+F2Y1oUBQgFAmpTx04ACgkQf+F2Y1oU\nBQi6hg//Vu9kkWAUesi2lgb3p/pEgHrJ8Zbb0EKWXuDd5RMzUGVZKzHIU+BunKc/\nNmNflDf4XBrfM2FuQVP5YdHPmxwpsTr0rFdPkN0o8ocm4N9Wp4P3uW2+gMYSLxbs\n25H58F9sWnUZ4o4J6skuw8q42x3Q4qSgBMtQvQXIUriPScdEHBSCv0T6C9o30Q/9\nMhiwHaoUErCLWKwT4Je7zKvxOL+dz1/Kw7YMmEx0stW64uzKYd4YAqMHfpD8Nwl8\nxsPsfkpmkKAi8KNDzeBl3y7P0w/eGQOD6X7N4BSM8fKg5lmsQmULtbf2pOJHCnQP\nxYyFMmbjqhNJvXyWBwPKAemxZYNPIdpQr1l+ABdM4pxmxqESUkvf/19sNQz1sxkC\nVPRysfw46NgdKf9BzP/XVM6S1zd7gkP9VzoMg8OtrAfqXQJmVCYHvKqnoB7l4jS2\nhjFnP3gvmanEn+cxN966fSlsA+O8Avd+TLPP+HftdDEttrNiyijfg18+ipqqpmuX\nxCUZ1SnGdWFkgCljLTBWuEbs2HI25zKL7Rr6BmvOypK9Gh6l5O3f0I6h33xkViGu\nQXzhMPSnANSq222KrzDwyMAp/GKNnuDz5oj7nOlHv24A7sINoOb+7K2dAfMJMsXv\nEve2d6G5nY7zNCLQRgZskKkw7o2JA2cdc5B+G/oCpg+tn8mh7y4=\n=4Wka\n-----END PGP SIGNATURE-----",
+        "payload": "tree 0fae1ca26fb0f0e1fdb446fa8f6fbaa3d85de79b\nparent 2a2f09dd3254778799559f3e07dd35aa1ac0a2b7\nauthor Scala Steward <scala_steward@virtuslab.com> 1783875406 +0000\ncommitter Scala Steward <scala_steward@virtuslab.com> 1783875406 +0000\n\nUpdate scalafmt-core to 3.11.3\n",
+        "verified_at": "2026-07-12T16:56:52Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/88c55c0944ba07592e3084c6f3944100c3ae8eaa",
+    "html_url": "https://github.com/playframework/flyway-play/commit/88c55c0944ba07592e3084c6f3944100c3ae8eaa",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/88c55c0944ba07592e3084c6f3944100c3ae8eaa/comments",
+    "author": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2a2f09dd3254778799559f3e07dd35aa1ac0a2b7",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/2a2f09dd3254778799559f3e07dd35aa1ac0a2b7",
+        "html_url": "https://github.com/playframework/flyway-play/commit/2a2f09dd3254778799559f3e07dd35aa1ac0a2b7"
+      }
+    ]
+  },
+  {
+    "sha": "2a2f09dd3254778799559f3e07dd35aa1ac0a2b7",
+    "node_id": "C_kwDOAb4hmtoAKDJhMmYwOWRkMzI1NDc3ODc5OTU1OWYzZTA3ZGQzNWFhMWFjMGEyYjc",
+    "commit": {
+      "author": {
+        "name": "Matthias Kurz",
+        "email": "m.kurz@irregular.at",
+        "date": "2026-06-23T08:28:14Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-06-23T08:28:14Z"
+      },
+      "message": "Merge pull request #526 from scala-steward/update/sbt-1.12.13\n\nUpdate sbt, scripted-plugin to 1.12.13",
+      "tree": {
+        "sha": "81c5df2f42cf9ed91c6a2d91b1dd7aa8e9fc5e38",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/81c5df2f42cf9ed91c6a2d91b1dd7aa8e9fc5e38"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/2a2f09dd3254778799559f3e07dd35aa1ac0a2b7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqOkOeCRC1aQ7uu5UhlAAAF7sQAFUnkuA58aQsCMvAj56kA3Xd\nVZ2GpZ1aLN7MJmYU3NpUC5I6tJd+ykFTaluT9NmdiDojJwqtrKtHPpWc4hsGWYrZ\nTFGJ6nAnVoH82R00+6NelqIEIkCCKSkdNF5XKZrjge0c1ViCC6UvnV2sHpIaTdDz\nA55GiRey8k+Vebw3KIUaGaQdQz3bGolWxaO0LR+2Mxgc6g5OIhQacL6m2W/J71nK\npi+0qa7VZXA1vrbo9YYTSkQBFm4wnFXpfN3e2SstOiqJFwSqehOexPN+UsIf8VQb\n50WsgioQqZhKacyTCsy61qwNxhoqCLnM1sASucXMX/8s0K/QJaWgVFYjO4f5sbkU\n7FKNL/59YHc9iJONGzynjoeUfdPZJ0gfI9zhMs5lnxHXmXulnAp0IzwdIpjgdmIE\n1Vt7vEj+NZoxvSM1+y8v26JMbgLmuyy9TLC9XKdhfZIrzzJiuQuLwPE5xOarMijz\ndq/zkRH0pM8AMuuyjJU96BqNA4RqjEIF6tEPypWruMDjd94Kvbzz+wJGNwJOaf7P\nz7eF2prJ8dQht1GyRxiLLR6mcjAHwuF7oXbe4ITuxl9OcfcyV1zjYEGIudZzzYt8\nbNm/2z2TgJUDHbsIs/gglCi7P6qtG8aPpMtKARK8namOqJ1BeYBpgOllNLgUBedt\nVGcNXQtpONsnQ8xbQlHN\n=o2P0\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 81c5df2f42cf9ed91c6a2d91b1dd7aa8e9fc5e38\nparent 19bb69c52378481597773e21eca5a93d4762e31b\nparent 2bcf5322f411003859d14b41b8d4373d3e2a461a\nauthor Matthias Kurz <m.kurz@irregular.at> 1782203294 +0200\ncommitter GitHub <noreply@github.com> 1782203294 +0200\n\nMerge pull request #526 from scala-steward/update/sbt-1.12.13\n\nUpdate sbt, scripted-plugin to 1.12.13",
+        "verified_at": "2026-06-23T08:28:14Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/2a2f09dd3254778799559f3e07dd35aa1ac0a2b7",
+    "html_url": "https://github.com/playframework/flyway-play/commit/2a2f09dd3254778799559f3e07dd35aa1ac0a2b7",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/2a2f09dd3254778799559f3e07dd35aa1ac0a2b7/comments",
+    "author": {
+      "login": "mkurz",
+      "id": 644927,
+      "node_id": "MDQ6VXNlcjY0NDkyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/644927?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mkurz",
+      "html_url": "https://github.com/mkurz",
+      "followers_url": "https://api.github.com/users/mkurz/followers",
+      "following_url": "https://api.github.com/users/mkurz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mkurz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mkurz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mkurz/subscriptions",
+      "organizations_url": "https://api.github.com/users/mkurz/orgs",
+      "repos_url": "https://api.github.com/users/mkurz/repos",
+      "events_url": "https://api.github.com/users/mkurz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mkurz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "19bb69c52378481597773e21eca5a93d4762e31b",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/19bb69c52378481597773e21eca5a93d4762e31b",
+        "html_url": "https://github.com/playframework/flyway-play/commit/19bb69c52378481597773e21eca5a93d4762e31b"
+      },
+      {
+        "sha": "2bcf5322f411003859d14b41b8d4373d3e2a461a",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/2bcf5322f411003859d14b41b8d4373d3e2a461a",
+        "html_url": "https://github.com/playframework/flyway-play/commit/2bcf5322f411003859d14b41b8d4373d3e2a461a"
+      }
+    ]
+  },
+  {
+    "sha": "2bcf5322f411003859d14b41b8d4373d3e2a461a",
+    "node_id": "C_kwDOAb4hmtoAKDJiY2Y1MzIyZjQxMTAwMzg1OWQxNGI0MWI4ZDQzNzNkM2UyYTQ2MWE",
+    "commit": {
+      "author": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-06-22T16:57:29Z"
+      },
+      "committer": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-06-22T16:57:29Z"
+      },
+      "message": "Update sbt, scripted-plugin to 1.12.13",
+      "tree": {
+        "sha": "81c5df2f42cf9ed91c6a2d91b1dd7aa8e9fc5e38",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/81c5df2f42cf9ed91c6a2d91b1dd7aa8e9fc5e38"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/2bcf5322f411003859d14b41b8d4373d3e2a461a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE+07CbnSZFTs2F0sif+F2Y1oUBQgFAmo5aXkACgkQf+F2Y1oU\nBQgMZg//RBGPQMNVBieienzFi4Jhm/uiOZ5Xx2tXxj5a75l86z6w+RVKNTMxbVB+\nySDiJ7aB+VVPARzddU5ssV3fOUz5mPPCugKXtvlelaW/X1b6j+tJfN7gAejB74iX\nLh0y6klADNBGLJHp++xuAS37S8wPlkLy/oEt50hFzok/F399KAh16he4r3Bz2GsK\nXPnH9gJ8bY733MCgJnrUXdewT3CSWvBMMMVmHcbrrxhFysASsHUtGcYNd5eqcDrz\nR+iVbs7irURt3tha7NilSiBrCYI5OAbBc/IvDMgPtBkJQcqaTmLjHfvfMIPi1IfV\nJNyA9pqdQPTkflqr6aoJgyHsspuCbJ3DAdrAcMP0KOK2baEdM20pkhJPl68j2Y2G\nWn6+LlwIfmIHd95rWexTcWlP3j015s3ATSa30oUwgtg11b2nxguhN+7kfIQusr+O\njV5GDmiYeT61zwJIaOhGjb1q7vWvwDBUjzndjUtwpVUlLUnoiKYq3RFo6Yw6QPx1\nfdk2Pwo06eeorRjyBCNFsMNlK12zMwXlInQoJxoJJ8e/RDtQAdR1neQjJMk21HOE\nm2jgD/2bTjypKVUiQDNRJuuaG0iu0DMPXZa6vbQY9j6/Kq2wwA5I5WkBmCci6xyl\nadbG3Wz+eMjrtaMZoPswg+RwRRO8WEe6OzujyiSlpPdxcmYNYGw=\n=v2Om\n-----END PGP SIGNATURE-----",
+        "payload": "tree 81c5df2f42cf9ed91c6a2d91b1dd7aa8e9fc5e38\nparent 19bb69c52378481597773e21eca5a93d4762e31b\nauthor Scala Steward <scala_steward@virtuslab.com> 1782147449 +0000\ncommitter Scala Steward <scala_steward@virtuslab.com> 1782147449 +0000\n\nUpdate sbt, scripted-plugin to 1.12.13\n",
+        "verified_at": "2026-06-22T16:57:31Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/2bcf5322f411003859d14b41b8d4373d3e2a461a",
+    "html_url": "https://github.com/playframework/flyway-play/commit/2bcf5322f411003859d14b41b8d4373d3e2a461a",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/2bcf5322f411003859d14b41b8d4373d3e2a461a/comments",
+    "author": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "19bb69c52378481597773e21eca5a93d4762e31b",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/19bb69c52378481597773e21eca5a93d4762e31b",
+        "html_url": "https://github.com/playframework/flyway-play/commit/19bb69c52378481597773e21eca5a93d4762e31b"
+      }
+    ]
+  },
+  {
+    "sha": "19bb69c52378481597773e21eca5a93d4762e31b",
+    "node_id": "C_kwDOAb4hmtoAKDE5YmI2OWM1MjM3ODQ4MTU5Nzc3M2UyMWVjYTVhOTNkNDc2MmUzMWI",
+    "commit": {
+      "author": {
+        "name": "Matthias Kurz",
+        "email": "m.kurz@irregular.at",
+        "date": "2026-06-22T13:31:19Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-06-22T13:31:19Z"
+      },
+      "message": "Merge pull request #525 from playframework/dependabot/github_actions/actions/checkout-7\n\nBump actions/checkout from 6 to 7",
+      "tree": {
+        "sha": "56832ab382242c8a9eda5289d3196d3faa36413e",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/56832ab382242c8a9eda5289d3196d3faa36413e"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/19bb69c52378481597773e21eca5a93d4762e31b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqOTknCRC1aQ7uu5UhlAAAdV4QAHuDZsmjb/Shr1mlFYJeogrV\nSjvxG8+LfXAb4MvGleYwOiAaRXSPAa5Wccs/lr3clrxmKC9rRu9jHuGU0jLzymYf\nreYOHmwa0H9NaW7p3Bf6Q243LOfcORMP8jm1EOqzy3QH1rTwWGQGeoMMitxed3n2\n/hncJJQGd/eC5VeBxlJKTvMpAn7NsuDA9c55dsh4PsyUPM17CY6TIgCh+O2begQ4\nKFdN7OyLAE2vulv6WPOx9l+gIzcTNp0doK/DG9VthJyCCq42ycT0lEhsNP6ciOVo\nYCKeKAbEGuAayfjOFIBzbwYSHBFvAxqL5nMXdimX5ydiCLkJ+mxh9Iqy/Hi/nenl\n/NbjnfRjTsAF5GnRbUBhc/6Vgv99oa9tysVmN5lrVF12HjwRsloUmIAq/RDIHe7z\nqVzJkRemEl0QQ1iLYtxDhXboUD7uNwJ06ptwb1hyBNaiMwqD+jlwf1B+AA/ULuUn\ne5vpYhSjtP412vmhMJpvHt9x3u9Fk6y7NEdpqBYDTW73MB37Hg1+HxJdP0tmaad5\nyQoBSFKyHR55DWmt/2UoAzz0ZETWDQ/v78GN5JvXycbNTUfEHdaM2f4ox/rZU6mT\ngsn0D70ShI1aFZzcO5a1g9/DyrU1OdeV+YIiU7pZkwi50xoa/Rl325HQHWCd4ZAx\nvcYbvt7N0NH0xJ0n2nvl\n=Bvm6\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 56832ab382242c8a9eda5289d3196d3faa36413e\nparent 0948aee1344b17b71906a6a8c75cbb49dc570a22\nparent 9d9b6f6a1e4a1e38dbff88fcf09c2ae1387cd78f\nauthor Matthias Kurz <m.kurz@irregular.at> 1782135079 +0200\ncommitter GitHub <noreply@github.com> 1782135079 +0200\n\nMerge pull request #525 from playframework/dependabot/github_actions/actions/checkout-7\n\nBump actions/checkout from 6 to 7",
+        "verified_at": "2026-06-22T13:31:19Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/19bb69c52378481597773e21eca5a93d4762e31b",
+    "html_url": "https://github.com/playframework/flyway-play/commit/19bb69c52378481597773e21eca5a93d4762e31b",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/19bb69c52378481597773e21eca5a93d4762e31b/comments",
+    "author": {
+      "login": "mkurz",
+      "id": 644927,
+      "node_id": "MDQ6VXNlcjY0NDkyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/644927?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mkurz",
+      "html_url": "https://github.com/mkurz",
+      "followers_url": "https://api.github.com/users/mkurz/followers",
+      "following_url": "https://api.github.com/users/mkurz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mkurz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mkurz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mkurz/subscriptions",
+      "organizations_url": "https://api.github.com/users/mkurz/orgs",
+      "repos_url": "https://api.github.com/users/mkurz/repos",
+      "events_url": "https://api.github.com/users/mkurz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mkurz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0948aee1344b17b71906a6a8c75cbb49dc570a22",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/0948aee1344b17b71906a6a8c75cbb49dc570a22",
+        "html_url": "https://github.com/playframework/flyway-play/commit/0948aee1344b17b71906a6a8c75cbb49dc570a22"
+      },
+      {
+        "sha": "9d9b6f6a1e4a1e38dbff88fcf09c2ae1387cd78f",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/9d9b6f6a1e4a1e38dbff88fcf09c2ae1387cd78f",
+        "html_url": "https://github.com/playframework/flyway-play/commit/9d9b6f6a1e4a1e38dbff88fcf09c2ae1387cd78f"
+      }
+    ]
+  },
+  {
+    "sha": "9d9b6f6a1e4a1e38dbff88fcf09c2ae1387cd78f",
+    "node_id": "C_kwDOAb4hmtoAKDlkOWI2ZjZhMWU0YTFlMzhkYmZmODhmY2YwOWMyYWUxMzg3Y2Q3OGY",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-06-22T12:22:39Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-06-22T12:22:39Z"
+      },
+      "message": "Bump actions/checkout from 6 to 7\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 6 to 7.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v6...v7)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '7'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "tree": {
+        "sha": "56832ab382242c8a9eda5289d3196d3faa36413e",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/56832ab382242c8a9eda5289d3196d3faa36413e"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/9d9b6f6a1e4a1e38dbff88fcf09c2ae1387cd78f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqOSkPCRC1aQ7uu5UhlAAA++kQAHSh4s2cISriLc0fterGHQlx\ne1+vUVzkjadtvZQwF9dTXrYlyUWWk4SDaHHcY6co81KD9e7sP3H+DgO6brJSrG40\nH01BCvm2DF5p7eHErY9GEmzO2VQ4YFshFG5RVl3/mPbVs8rHLsWQDxmQqmWZz6oa\nyBHw1mg0R9HYk3UwN7k2rlH78hplLiBofhQZf0KZfgobGa3C89XJ2vQwjAyMPNP7\nvAL+iK/Nrvmkebl+8l+QZIV/OKGjJfsQ6f0O/gMO07bB8tdcB9jzmfn+YUoj5Zwb\nQAQy/G5UlWy7ELpNOtf8tTbMRttHxWm7oD4Tgiwxfo1UfZjzb7vObz7steICMt4Z\nFG5lTT6+djINpny2Ei9x0ujH14uLclBdLorMb/dS7ybrUD/8qcDZoAe1bv0z2XvV\ns+/HwBZKO3GHtEP+kIEuSbUfI7AuIdqwL2R1YBxfVYIq18teoT0VxPCeDraAgjAi\nqNC9ge0990nQdXNN1C0K5Lkq2TK7DujVnJTcZxi63vJzQ3ystQ6jBzPX8hwxAiZ3\nuVjMHFaL1OWjznVoj/IpHWOsZSpF755FNCKLFPv4U4/HcZHD6J8R4rGPmeGvDVuv\ne92Mvv6AJ1gAAboq5CBdgk5gz6uS8OwMtmxJtV01likPg0QvJmXD0RTWiqreuyaB\nYkhdmvZHnNvpRV5rqY+y\n=BPK8\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 56832ab382242c8a9eda5289d3196d3faa36413e\nparent 0948aee1344b17b71906a6a8c75cbb49dc570a22\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1782130959 +0000\ncommitter GitHub <noreply@github.com> 1782130959 +0000\n\nBump actions/checkout from 6 to 7\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 6 to 7.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v6...v7)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '7'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+        "verified_at": "2026-06-22T12:22:40Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/9d9b6f6a1e4a1e38dbff88fcf09c2ae1387cd78f",
+    "html_url": "https://github.com/playframework/flyway-play/commit/9d9b6f6a1e4a1e38dbff88fcf09c2ae1387cd78f",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/9d9b6f6a1e4a1e38dbff88fcf09c2ae1387cd78f/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0948aee1344b17b71906a6a8c75cbb49dc570a22",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/0948aee1344b17b71906a6a8c75cbb49dc570a22",
+        "html_url": "https://github.com/playframework/flyway-play/commit/0948aee1344b17b71906a6a8c75cbb49dc570a22"
+      }
+    ]
+  },
+  {
+    "sha": "0948aee1344b17b71906a6a8c75cbb49dc570a22",
+    "node_id": "C_kwDOAb4hmtoAKDA5NDhhZWUxMzQ0YjE3YjcxOTA2YTZhOGM3NWNiYjQ5ZGM1NzBhMjI",
+    "commit": {
+      "author": {
+        "name": "Matthias Kurz",
+        "email": "m.kurz@irregular.at",
+        "date": "2026-06-15T08:36:26Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-06-15T08:36:26Z"
+      },
+      "message": "Merge pull request #522 from scala-steward/update/scala3-library-3.3.8\n\nUpdate scala3-library to 3.3.8",
+      "tree": {
+        "sha": "ea2b7a074be2ecf4308c613adedf5ebbfef8048f",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/ea2b7a074be2ecf4308c613adedf5ebbfef8048f"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/0948aee1344b17b71906a6a8c75cbb49dc570a22",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqL7mKCRC1aQ7uu5UhlAAAUcAQADJhCJXARRlKPbYlx6laR+Qp\n1wkb360CXiVbeLvCB94naviapTANv2GBDeLTbjwtGK5UFc6vLw5XLxJxTqtspp1n\nP4YT/KKYHUGGAra2LigfqC78/2v902lTztEgecMh7kVjQOEE7WWvZ9CJUdQ9I6Fp\n6pIzuMYZZ4om5lKIaPCNiV4RcZnCP/18m4jyZDvuVT3iCy0Mg5o40U6rZ3fJ+Jw/\nSAlQc4dz4aJW1dQC3mhWkmT2tDDegM49rqcd7iJZnzUidLSY4z2CXWECSmVl7wcb\n+IDASCxc7ZnKOEdRFAkFSp7DH5C9oEfOFgtbxtii/P6nWDd8syPfml0uXG2ysrt5\nnnAoH76NVWtWHgKqwSMsTtobqkB3ygrtJsdMIh3rwI/1G0TaAujtFVCyWN3lHsc6\nrzc8jICy6pdre+rP0oJJcbptRtFvpu1RejLxQO3S6XXLV8ARxZ70QUlOAIJEHKvI\nhqx9BBLo2Rx8W3PIKpnxazLu9/+CfIHDmrZGf3H7p6Q3I00IZxafxK+T8HJFx9Nx\nXVXOCD/6fBRjQ/+4w65Gjm/Ayy2qhT1W48jut7gO2EFDYWzdiGTrWLwtAC/+cULr\n/xO8LeZ23ykThVfJ4E8VieUK4zIozKayYxFeymyRs0r1HEZH5yl55v7CIr4Kn4aV\nNdz6rxapf52idgWEUzf+\n=teI6\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ea2b7a074be2ecf4308c613adedf5ebbfef8048f\nparent e38ab044012d194d8a90d5a80ab4448e315b47cd\nparent 4b0f4567f6651c0bfc7429311693303f22b7ad39\nauthor Matthias Kurz <m.kurz@irregular.at> 1781512586 +0200\ncommitter GitHub <noreply@github.com> 1781512586 +0200\n\nMerge pull request #522 from scala-steward/update/scala3-library-3.3.8\n\nUpdate scala3-library to 3.3.8",
+        "verified_at": "2026-06-15T08:36:28Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/0948aee1344b17b71906a6a8c75cbb49dc570a22",
+    "html_url": "https://github.com/playframework/flyway-play/commit/0948aee1344b17b71906a6a8c75cbb49dc570a22",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/0948aee1344b17b71906a6a8c75cbb49dc570a22/comments",
+    "author": {
+      "login": "mkurz",
+      "id": 644927,
+      "node_id": "MDQ6VXNlcjY0NDkyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/644927?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mkurz",
+      "html_url": "https://github.com/mkurz",
+      "followers_url": "https://api.github.com/users/mkurz/followers",
+      "following_url": "https://api.github.com/users/mkurz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mkurz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mkurz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mkurz/subscriptions",
+      "organizations_url": "https://api.github.com/users/mkurz/orgs",
+      "repos_url": "https://api.github.com/users/mkurz/repos",
+      "events_url": "https://api.github.com/users/mkurz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mkurz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e38ab044012d194d8a90d5a80ab4448e315b47cd",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/e38ab044012d194d8a90d5a80ab4448e315b47cd",
+        "html_url": "https://github.com/playframework/flyway-play/commit/e38ab044012d194d8a90d5a80ab4448e315b47cd"
+      },
+      {
+        "sha": "4b0f4567f6651c0bfc7429311693303f22b7ad39",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/4b0f4567f6651c0bfc7429311693303f22b7ad39",
+        "html_url": "https://github.com/playframework/flyway-play/commit/4b0f4567f6651c0bfc7429311693303f22b7ad39"
+      }
+    ]
+  },
+  {
+    "sha": "e38ab044012d194d8a90d5a80ab4448e315b47cd",
+    "node_id": "C_kwDOAb4hmtoAKGUzOGFiMDQ0MDEyZDE5NGQ4YTkwZDVhODBhYjQ0NDhlMzE1YjQ3Y2Q",
+    "commit": {
+      "author": {
+        "name": "Matthias Kurz",
+        "email": "m.kurz@irregular.at",
+        "date": "2026-06-15T08:36:16Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-06-15T08:36:16Z"
+      },
+      "message": "Merge pull request #523 from scala-steward/update/sbt-1.12.12\n\nUpdate sbt, scripted-plugin to 1.12.12",
+      "tree": {
+        "sha": "d3770cd5a8f94b65950d95cc2ebf5db97eda6820",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/d3770cd5a8f94b65950d95cc2ebf5db97eda6820"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/e38ab044012d194d8a90d5a80ab4448e315b47cd",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqL7mACRC1aQ7uu5UhlAAA+O8QAFDCRjy95n7s55iAnjeJ4iFD\n8Px50l6RegHc7UYzYVgAfD8m9rlZiGt2E9O52JAxxDVrn0zOBjfD6++E2D6TmgVe\nu6x1mU+DHZq76nf19kAaPLBApKwvwvKCJh2UUUC3eN6ka8ErLlZ+xyRDpEMyngij\nXMByHx1YcpyhgXDEsWiC/aNMSd/h/PNtOMGcJUNZbc724Y1aRQOImEkX5EE9xXp9\niWJImWgT/isz1Z2DgsPcHCCL8zcA8QZFvlcyX3B5JNywYcRUkKiVwJHzs0sYrV90\nEJAIpIqI7eMxthXybc/Camp0bha0Kju0YRSE5ZfrZUsb2aZJiZWn9N/G9GDwrV7a\nFRpuBnul8oHPLxXGH+PaiPIffqQqU0FvyLFHP89BbSg+M0PxfmZTX2SZ/pN2Fzh5\nhRgQDvAT/oQN8fS5DfZcpQo+H7bgb43HnIfnqedqS/oJ3DDCv3JAHEkZ1MczuDHc\nf53dp6H3VNKZeB67GksmJGlinBXUXAU1HUbqCod4h3FsAdNNyHT8RPT0jKS16kOC\nI+bOIwjLHT9EePE6DCAkjFCcczeKcX7uyEa6qxZwCXGIjAeRwgclYU/NSlnrzfN6\ndPehD4zfEpnnrl8T83Jc36IFWligTq7FwUrBMj2opqBWQwVDp7SYyYqFKWr8lXfC\n98SZvaDj+zoRqQcXGkj+\n=VFd5\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d3770cd5a8f94b65950d95cc2ebf5db97eda6820\nparent 9e0c5081e3338423dd57ceb48cdb5bea4216f8e6\nparent 2b7211261e9713f3434d22986737e373291953ee\nauthor Matthias Kurz <m.kurz@irregular.at> 1781512576 +0200\ncommitter GitHub <noreply@github.com> 1781512576 +0200\n\nMerge pull request #523 from scala-steward/update/sbt-1.12.12\n\nUpdate sbt, scripted-plugin to 1.12.12",
+        "verified_at": "2026-06-15T08:36:16Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/e38ab044012d194d8a90d5a80ab4448e315b47cd",
+    "html_url": "https://github.com/playframework/flyway-play/commit/e38ab044012d194d8a90d5a80ab4448e315b47cd",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/e38ab044012d194d8a90d5a80ab4448e315b47cd/comments",
+    "author": {
+      "login": "mkurz",
+      "id": 644927,
+      "node_id": "MDQ6VXNlcjY0NDkyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/644927?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mkurz",
+      "html_url": "https://github.com/mkurz",
+      "followers_url": "https://api.github.com/users/mkurz/followers",
+      "following_url": "https://api.github.com/users/mkurz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mkurz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mkurz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mkurz/subscriptions",
+      "organizations_url": "https://api.github.com/users/mkurz/orgs",
+      "repos_url": "https://api.github.com/users/mkurz/repos",
+      "events_url": "https://api.github.com/users/mkurz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mkurz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9e0c5081e3338423dd57ceb48cdb5bea4216f8e6",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/9e0c5081e3338423dd57ceb48cdb5bea4216f8e6",
+        "html_url": "https://github.com/playframework/flyway-play/commit/9e0c5081e3338423dd57ceb48cdb5bea4216f8e6"
+      },
+      {
+        "sha": "2b7211261e9713f3434d22986737e373291953ee",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/2b7211261e9713f3434d22986737e373291953ee",
+        "html_url": "https://github.com/playframework/flyway-play/commit/2b7211261e9713f3434d22986737e373291953ee"
+      }
+    ]
+  },
+  {
+    "sha": "2b7211261e9713f3434d22986737e373291953ee",
+    "node_id": "C_kwDOAb4hmtoAKDJiNzIxMTI2MWU5NzEzZjM0MzRkMjI5ODY3MzdlMzczMjkxOTUzZWU",
+    "commit": {
+      "author": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-06-14T17:21:50Z"
+      },
+      "committer": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-06-14T17:21:50Z"
+      },
+      "message": "Update sbt, scripted-plugin to 1.12.12",
+      "tree": {
+        "sha": "d3770cd5a8f94b65950d95cc2ebf5db97eda6820",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/d3770cd5a8f94b65950d95cc2ebf5db97eda6820"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/2b7211261e9713f3434d22986737e373291953ee",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE+07CbnSZFTs2F0sif+F2Y1oUBQgFAmou4y4ACgkQf+F2Y1oU\nBQjxCxAAtRtC8GB9RCgfpT2lWSqQa5+ClFg8/XoPhF68Ksd0GCMP9oHOnYah/N7e\ntJOLIavzwAYMj32kxmF8dWrtYzEafXuPqA0OjzD8QqPtU01HKctTaHYoayUQ9YRS\n4y24qmKmITFszd/o74alzmYzbFxenB8na54oeSbMN2FUksHDom4YAK8ol5mgL7RL\nol5LV7AL/IydmlB8Ca1LR0kZCvaRhI5tJ3H+AVeOPX+gi+5hmJF1u02r9UH8Rjih\nZO6qTxs+e9f8HzwtEzIk4aWwdhweGExouxVYZUolb/ZFRxvH3s8LSYz8gexhSysq\nD6WDrFKqOs3aWI15dUKOT/64Hvm5LYwoUy8pgcWrhTum3n0Q/x1gGVzopF9BEPAB\nogZvpGjH0mgzMqAJXcggQlSGsKhe4uUM2MQr+pVmvOcp7iS+c3mv7hf0h8Yf/r+A\n5psmW/aGJsSOoTp12UIqTPbta3qkY2wJdKnUJceALnBMp5bvugBD5UXTTES8iMhc\nnnocyXT5oQly5EA3kV4jnC3aQdWe6CvEfSA/YLY0cOHkbq7DOK7+R5/gQiJ6mlVQ\nl4mwKY1NW2n7aEtVvotq1grSnLoejfoMSIE9vxsAiCsUvQs0p/maaqSVntDwwwfP\ncKYyPNDx3fcWCAByAN6EGyTLhUjGsppRdmJH25j2WXwbO7TSOTc=\n=eCpu\n-----END PGP SIGNATURE-----",
+        "payload": "tree d3770cd5a8f94b65950d95cc2ebf5db97eda6820\nparent 9e0c5081e3338423dd57ceb48cdb5bea4216f8e6\nauthor Scala Steward <scala_steward@virtuslab.com> 1781457710 +0000\ncommitter Scala Steward <scala_steward@virtuslab.com> 1781457710 +0000\n\nUpdate sbt, scripted-plugin to 1.12.12\n",
+        "verified_at": "2026-06-14T17:21:52Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/2b7211261e9713f3434d22986737e373291953ee",
+    "html_url": "https://github.com/playframework/flyway-play/commit/2b7211261e9713f3434d22986737e373291953ee",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/2b7211261e9713f3434d22986737e373291953ee/comments",
+    "author": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9e0c5081e3338423dd57ceb48cdb5bea4216f8e6",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/9e0c5081e3338423dd57ceb48cdb5bea4216f8e6",
+        "html_url": "https://github.com/playframework/flyway-play/commit/9e0c5081e3338423dd57ceb48cdb5bea4216f8e6"
+      }
+    ]
+  },
+  {
+    "sha": "4b0f4567f6651c0bfc7429311693303f22b7ad39",
+    "node_id": "C_kwDOAb4hmtoAKDRiMGY0NTY3ZjY2NTFjMGJmYzc0MjkzMTE2OTMzMDNmMjJiN2FkMzk",
+    "commit": {
+      "author": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-06-12T16:57:48Z"
+      },
+      "committer": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-06-12T16:57:48Z"
+      },
+      "message": "Update scala3-library to 3.3.8",
+      "tree": {
+        "sha": "1724da74d2445dc3d8511271cda2b96e19e40782",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/1724da74d2445dc3d8511271cda2b96e19e40782"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/4b0f4567f6651c0bfc7429311693303f22b7ad39",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE+07CbnSZFTs2F0sif+F2Y1oUBQgFAmosOo0ACgkQf+F2Y1oU\nBQg7VhAAysK3g0Rw/zFdK9Z9CRFT8uRJ2kzk1va0XfyQYGf9qgaNqZtKa2+Jbxf6\nOs4lMwoyOd9/D7F39AQnw9XVg8lyCy9EgjeBPk/HOt0m/yuvXeN6bjSwd6E7mPFT\npCPgk4pzUIpZ24cvYj21h27KqF9q2ZVklvQvhcb0uDOt2RG3dNSAzN/ZJCIE3Tyd\nRAym5j3I1OSiJPu3f5PxM2vYCK0G56s5H38AL3DfaPUuPJlM9Co4uUJ1GPbi/j0G\nKBoTHvullZcZtVDd3v0hKXhqWNv/zb2NSN1y1b2HUPf6z3Wf+kKOVdBRJEbQuSeE\ny2JXNV55emKkSrUN98Q61kIC8iHoM9a4CdGFUqoxXWA09y/8wzjfEu8x48M6vpBD\ntToDi903tTwUznL0KaORIhEVOOD1NY58NuOuGmJxutAFOxywxi1qcmgRNouiM3s6\n3gNJKXQoKUK3bqsT7rmw0nnYj0lHryw26AMT35Lhqg2XWL+SKdPWku7sfFLV4HDW\nBEWZhfrCh5FGrlQjUsNk20ZivBqTOCVitucOMUniH9lZvjknlIR/sV5YLP6HZzJ2\nPtGJGfReKIO1pEsd+suliG6QDpcqJXv0880M/hXuzjRxKAawRb9VUvUC1Q6zcExR\nv2JowqG04LmCt/+1o+qGZ8vFVZnlVJCO+BsQVgGGXGLOoHDZhEo=\n=xwun\n-----END PGP SIGNATURE-----",
+        "payload": "tree 1724da74d2445dc3d8511271cda2b96e19e40782\nparent 9e0c5081e3338423dd57ceb48cdb5bea4216f8e6\nauthor Scala Steward <scala_steward@virtuslab.com> 1781283468 +0000\ncommitter Scala Steward <scala_steward@virtuslab.com> 1781283468 +0000\n\nUpdate scala3-library to 3.3.8\n",
+        "verified_at": "2026-06-12T16:57:51Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/4b0f4567f6651c0bfc7429311693303f22b7ad39",
+    "html_url": "https://github.com/playframework/flyway-play/commit/4b0f4567f6651c0bfc7429311693303f22b7ad39",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/4b0f4567f6651c0bfc7429311693303f22b7ad39/comments",
+    "author": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9e0c5081e3338423dd57ceb48cdb5bea4216f8e6",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/9e0c5081e3338423dd57ceb48cdb5bea4216f8e6",
+        "html_url": "https://github.com/playframework/flyway-play/commit/9e0c5081e3338423dd57ceb48cdb5bea4216f8e6"
+      }
+    ]
+  },
+  {
+    "sha": "9e0c5081e3338423dd57ceb48cdb5bea4216f8e6",
+    "node_id": "C_kwDOAb4hmtoAKDllMGM1MDgxZTMzMzg0MjNkZDU3Y2ViNDhjZGI1YmVhNDIxNmY4ZTY",
+    "commit": {
+      "author": {
+        "name": "Matthias Kurz",
+        "email": "m.kurz@irregular.at",
+        "date": "2026-05-21T16:43:03Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-21T16:43:03Z"
+      },
+      "message": "Merge pull request #519 from scala-steward/update/play-3.0.11\n\nUpdate play, play-filters-helpers, ... to 3.0.11",
+      "tree": {
+        "sha": "caf911474af2e08e29d832cce6b44efebd55c262",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/caf911474af2e08e29d832cce6b44efebd55c262"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/9e0c5081e3338423dd57ceb48cdb5bea4216f8e6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqDzYXCRC1aQ7uu5UhlAAADs4QAJd904wS0Ek8QQfUjkQLODXL\nNZucioJFKlsbdq4Fib7ij8pqF58m+ugjq/QfTtW65R2cwUmY1ytpRjg/a/4zssFW\nlUrFWW0kudJcWaG6V/76xNOXn4Xfwc/4OSl88GXrbinNH60kHFnO2p7iqwEdjuhc\nhkMql/bWeW2dopPOBo9WaugiKTcXK8p+vFrUYVkQgEkZsMQW1Pk8XiNu4KBPp0i4\n5I3pYCZJqlkoTodjc7oJn4KU9RLxOuaFSvAtS68nfXmOk3SLCZZxlUN7SnTQoiMY\nPJznp17YCdTzp/J78p/xFAfs9T8JyMA5UYHmfm2MgmTKNPJr64t5uU0C3/XKBAJm\nF1RhpeiItAkfL1S543LDedjl/NhcdUft4fA2l6+p4m3DQGhC2iiNR+EG0vSO/Yi+\n3oRKkug7dTbJyCFFKOQ0Qv9lSWSuiZWx8OYCJ/H8pjMne0SsxylT3ud+BbiUF2Yx\ngweuUYqGKgtBijiIidwITzPYwVr+TZ+4wxaBTAQpFQVYI4iOazq8I6rroiJrXxkL\nXmjEQUk3d0nXdrp7cjZO/gxVlx4qRH56pnt1ZAVp1810AbyVQxvUDVhxaqgNZwPG\nkDW0qp87GETMYJVO52BBbXxlDryLVgmFuJB45J9B3cCN54hEvOWZOI0TDqhLiE2V\n0BG508IgYu07IDhV/Uvw\n=FOAQ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree caf911474af2e08e29d832cce6b44efebd55c262\nparent 0573c47241988226070fd18dc6033fc782afed9f\nparent 3bea5f8aae29fa08c32601d48802d30e2f1cae69\nauthor Matthias Kurz <m.kurz@irregular.at> 1779381783 +0200\ncommitter GitHub <noreply@github.com> 1779381783 +0200\n\nMerge pull request #519 from scala-steward/update/play-3.0.11\n\nUpdate play, play-filters-helpers, ... to 3.0.11",
+        "verified_at": "2026-05-21T16:43:04Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/9e0c5081e3338423dd57ceb48cdb5bea4216f8e6",
+    "html_url": "https://github.com/playframework/flyway-play/commit/9e0c5081e3338423dd57ceb48cdb5bea4216f8e6",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/9e0c5081e3338423dd57ceb48cdb5bea4216f8e6/comments",
+    "author": {
+      "login": "mkurz",
+      "id": 644927,
+      "node_id": "MDQ6VXNlcjY0NDkyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/644927?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mkurz",
+      "html_url": "https://github.com/mkurz",
+      "followers_url": "https://api.github.com/users/mkurz/followers",
+      "following_url": "https://api.github.com/users/mkurz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mkurz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mkurz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mkurz/subscriptions",
+      "organizations_url": "https://api.github.com/users/mkurz/orgs",
+      "repos_url": "https://api.github.com/users/mkurz/repos",
+      "events_url": "https://api.github.com/users/mkurz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mkurz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0573c47241988226070fd18dc6033fc782afed9f",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/0573c47241988226070fd18dc6033fc782afed9f",
+        "html_url": "https://github.com/playframework/flyway-play/commit/0573c47241988226070fd18dc6033fc782afed9f"
+      },
+      {
+        "sha": "3bea5f8aae29fa08c32601d48802d30e2f1cae69",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/3bea5f8aae29fa08c32601d48802d30e2f1cae69",
+        "html_url": "https://github.com/playframework/flyway-play/commit/3bea5f8aae29fa08c32601d48802d30e2f1cae69"
+      }
+    ]
+  },
+  {
+    "sha": "3bea5f8aae29fa08c32601d48802d30e2f1cae69",
+    "node_id": "C_kwDOAb4hmtoAKDNiZWE1ZjhhYWUyOWZhMDhjMzI2MDFkNDg4MDJkMzBlMmYxY2FlNjk",
+    "commit": {
+      "author": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-05-21T15:13:28Z"
+      },
+      "committer": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-05-21T15:13:28Z"
+      },
+      "message": "Update play, play-filters-helpers, ... to 3.0.11",
+      "tree": {
+        "sha": "caf911474af2e08e29d832cce6b44efebd55c262",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/caf911474af2e08e29d832cce6b44efebd55c262"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/3bea5f8aae29fa08c32601d48802d30e2f1cae69",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE+07CbnSZFTs2F0sif+F2Y1oUBQgFAmoPIRgACgkQf+F2Y1oU\nBQgFTg//Zn/wISyAO6JJbk0Kxl+tWeWSRhGKTa6hQSudxgKZIlReiuBz0liwve1p\n3jQi3cvKbgu7xP6QxaZoge3n0zSIU5bqOu2g/tqesyvJl13T17GbCD0pf4M7TR7q\ng587+0RCDIgAIo9zh7XLN5espVYuYdSQNlcSaf59ICzmjsdRhxz5x/ZiVPFN9rIr\nHhcf5Xk5rzfPEicQb68hdzUtSv3w0GJz+IKFPPaQoH4BON3Ten1oNC1lhjYWTubt\n3MLqc+FwulY0u6Am6xEJXiVHUdUmomPhWrtRJ/PY1fr68TxmYCxHu4uOsfdPvSiN\nhTb9UH2ODvoPvIHGcRBeT7uutKsfNsXtgb4HbxLOvxlzYJPEFFDJjftLEmqcuIdI\nasXzI04crqQQ6pv3rDImjMhkxE8ca4+7RnTzANuFmxqUXQ3Z2ydfFw3G81wexoHi\nIbRiBZGIt0GFBuiPE/u3qs9zXFhHu0n72bGXeMw6z++4GETvNa6v7VZxTYAj06oI\nYOUHuizAVZrSVu6OUoUCQy/B+7csNPcXkrC0QZn+XF1Rf+uGpFfDUefDyZPRbbTC\nCBEp+wXP8Uykzhj2oHBEs3Hc9yRDnoBK0v8f4Zk4/5CkAh+AxD8WIA3y9LVOcJPi\nX+TKvD4AY+APo/7qrAuBkU/Wc/CuUOPUfyiYzULLh/x8qhYb9kc=\n=s/+/\n-----END PGP SIGNATURE-----",
+        "payload": "tree caf911474af2e08e29d832cce6b44efebd55c262\nparent 0573c47241988226070fd18dc6033fc782afed9f\nauthor Scala Steward <scala_steward@virtuslab.com> 1779376408 +0000\ncommitter Scala Steward <scala_steward@virtuslab.com> 1779376408 +0000\n\nUpdate play, play-filters-helpers, ... to 3.0.11\n",
+        "verified_at": "2026-05-21T15:14:50Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/3bea5f8aae29fa08c32601d48802d30e2f1cae69",
+    "html_url": "https://github.com/playframework/flyway-play/commit/3bea5f8aae29fa08c32601d48802d30e2f1cae69",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/3bea5f8aae29fa08c32601d48802d30e2f1cae69/comments",
+    "author": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0573c47241988226070fd18dc6033fc782afed9f",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/0573c47241988226070fd18dc6033fc782afed9f",
+        "html_url": "https://github.com/playframework/flyway-play/commit/0573c47241988226070fd18dc6033fc782afed9f"
+      }
+    ]
+  },
+  {
+    "sha": "0573c47241988226070fd18dc6033fc782afed9f",
+    "node_id": "C_kwDOAb4hmtoAKDA1NzNjNDcyNDE5ODgyMjYwNzBmZDE4ZGM2MDMzZmM3ODJhZmVkOWY",
+    "commit": {
+      "author": {
+        "name": "Matthias Kurz",
+        "email": "m.kurz@irregular.at",
+        "date": "2026-05-11T20:39:09Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-11T20:39:09Z"
+      },
+      "message": "Merge pull request #518 from scala-steward/update/scalafmt-core-3.11.1\n\nUpdate scalafmt-core to 3.11.1",
+      "tree": {
+        "sha": "1a60321acd745a223b3d3b8b6eafffcbb0c397ec",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/1a60321acd745a223b3d3b8b6eafffcbb0c397ec"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/0573c47241988226070fd18dc6033fc782afed9f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqAj5tCRC1aQ7uu5UhlAAAn+wQAJarYVZHhgPH+CcLBAnnENqp\n9KdGD5lyCu6kADPTNpw0orZybO0s7Vsyg/I584zJtOgOvbKmSmaiZgdmJIWXRlL+\ndsD68jLEpZKwWe/3ZMfvOcevgYM+rj6X4BX61/BJICrNhLdi+53y6dSHsL5bZBR/\neHcsKAzqyJCSDQbedyKHub7trA8A9ExsKQsA1FPW/ipLt0AnnHXfhMBKgHhFUQoo\nO5NDopbTIrENOFJq8eE/Y4y20Vp/lVmCW9OB/kD4YWIFDfUHDNgmCeW4oL6Do4M0\n/mpzQBjW4hp7nW1lkhbgIJyjuMR+sarpjbgZuc7jEalx0br2YmK1lcCaoQFs8TaD\nexrNnXfsTWtmRPiuY718QWqQes7ggfVXxIBYUPpMECndyIpUgkDrbxxn0Fb8GgRs\nlvNrMztfPUiqyY3eYrLwD5jdYEAxeOyRhFYN9P1jFEbWzYUrz/+N3ria7IcEkQHZ\nZsojsYxqTMjZZPFsnS14C8mAE9yih+8AUQMpM6RQ3EnoGy7T3nZ3S8FBAbo4OUyu\nxUPHjxd6x/qXCbUxwaPyrOjQ01KinPpoCqmzKBtI7D/FKwIuNsK34ntJq2RqH6b1\nq1VGhEngTy2p64YmDPx4gNBdKD3zjZ1Gu7PvqeNXrtQCczOhqcfHuMhkPw/jvsJq\nYIS9wpNisHYUDV/0Th71\n=zoW6\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 1a60321acd745a223b3d3b8b6eafffcbb0c397ec\nparent c66aa19f3a753e633fa172e6bd21cda3c51f558c\nparent bc97e82fdfd28d6ad078c58a7c5cb960be9ae7e9\nauthor Matthias Kurz <m.kurz@irregular.at> 1778531949 +0200\ncommitter GitHub <noreply@github.com> 1778531949 +0200\n\nMerge pull request #518 from scala-steward/update/scalafmt-core-3.11.1\n\nUpdate scalafmt-core to 3.11.1",
+        "verified_at": "2026-05-11T20:39:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/0573c47241988226070fd18dc6033fc782afed9f",
+    "html_url": "https://github.com/playframework/flyway-play/commit/0573c47241988226070fd18dc6033fc782afed9f",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/0573c47241988226070fd18dc6033fc782afed9f/comments",
+    "author": {
+      "login": "mkurz",
+      "id": 644927,
+      "node_id": "MDQ6VXNlcjY0NDkyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/644927?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mkurz",
+      "html_url": "https://github.com/mkurz",
+      "followers_url": "https://api.github.com/users/mkurz/followers",
+      "following_url": "https://api.github.com/users/mkurz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mkurz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mkurz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mkurz/subscriptions",
+      "organizations_url": "https://api.github.com/users/mkurz/orgs",
+      "repos_url": "https://api.github.com/users/mkurz/repos",
+      "events_url": "https://api.github.com/users/mkurz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mkurz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c66aa19f3a753e633fa172e6bd21cda3c51f558c",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/c66aa19f3a753e633fa172e6bd21cda3c51f558c",
+        "html_url": "https://github.com/playframework/flyway-play/commit/c66aa19f3a753e633fa172e6bd21cda3c51f558c"
+      },
+      {
+        "sha": "bc97e82fdfd28d6ad078c58a7c5cb960be9ae7e9",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/bc97e82fdfd28d6ad078c58a7c5cb960be9ae7e9",
+        "html_url": "https://github.com/playframework/flyway-play/commit/bc97e82fdfd28d6ad078c58a7c5cb960be9ae7e9"
+      }
+    ]
+  },
+  {
+    "sha": "c66aa19f3a753e633fa172e6bd21cda3c51f558c",
+    "node_id": "C_kwDOAb4hmtoAKGM2NmFhMTlmM2E3NTNlNjMzZmExNzJlNmJkMjFjZGEzYzUxZjU1OGM",
+    "commit": {
+      "author": {
+        "name": "Matthias Kurz",
+        "email": "m.kurz@irregular.at",
+        "date": "2026-05-11T20:38:57Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-11T20:38:57Z"
+      },
+      "message": "Merge pull request #517 from scala-steward/update/sbt-scalafmt-2.6.1\n\nUpdate sbt-scalafmt to 2.6.1",
+      "tree": {
+        "sha": "a6b036df720721b6c6c928a1276ea0c8e20a9edf",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/a6b036df720721b6c6c928a1276ea0c8e20a9edf"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/c66aa19f3a753e633fa172e6bd21cda3c51f558c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqAj5hCRC1aQ7uu5UhlAAAOF0QAIvwTmqZP7S7BAs+F5dvxcqv\ntyGRgXOP/+4YvigGCMYIn6BoUE+YfLXa3nbiPJnnqlJKK6yQZ7KbVk70plsP6M+x\n/ctrYpOtz4U0E6bfeqLNT7L0hcm5kHDQzswCW1PV9zmGbORncOhnsNGMiPFCDGbT\nBZS6jPbe6ibY5G2/dbONQnpw3V/ORLSUhY9NjsUw+3f6o59EqubHXz8oU5AjGRqK\nLPZXk8rXttmtK6zLbsTrK7pj2NRr0UzKrnacPhF40iC2nlrQDrBvMxkBAlWlTATd\nb8/M5hsAAuQI1ZRMbJ7uUuDCU5cZdWbGFMMvSQtVzm+6oaQQaRxpHuP8Ophw62vh\nouhftiWxdubhuKoLteZFB63WauJbtKvZ5HROX/DzBzrySUmZGBXa+kSSfCiQefPl\np6s4axZxlJBdwXnziIfIabntJ11glBu3+RxuZmiKGx4Vue+eLE1xZxB7LBmvkA1z\n3Bu/rqrF8lccNyowOO6M3lGeVKD59hmzJrpk1RHoE+L/FdURM6xrUr6n8CzmPDdq\namPAP7sRz2ANZ9Yoat+YGNPU9eDITlaFD8JM5WMG4Wo+282tiUdox/f4NUHNrQI4\nRIgnry+7TWU3etE0P5yU9owAPkpwlirDelJO+xeZiHOxsE88nlDznC3CVDQ/uiDV\nkUSuzsl/rQ+unQ4ddOtI\n=9Ydt\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a6b036df720721b6c6c928a1276ea0c8e20a9edf\nparent 17cb7de4570677341c622febe64f17e1b8199710\nparent 23d67c94dde1ed75e7a05bd0236b5673a46402ed\nauthor Matthias Kurz <m.kurz@irregular.at> 1778531937 +0200\ncommitter GitHub <noreply@github.com> 1778531937 +0200\n\nMerge pull request #517 from scala-steward/update/sbt-scalafmt-2.6.1\n\nUpdate sbt-scalafmt to 2.6.1",
+        "verified_at": "2026-05-11T20:38:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/c66aa19f3a753e633fa172e6bd21cda3c51f558c",
+    "html_url": "https://github.com/playframework/flyway-play/commit/c66aa19f3a753e633fa172e6bd21cda3c51f558c",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/c66aa19f3a753e633fa172e6bd21cda3c51f558c/comments",
+    "author": {
+      "login": "mkurz",
+      "id": 644927,
+      "node_id": "MDQ6VXNlcjY0NDkyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/644927?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mkurz",
+      "html_url": "https://github.com/mkurz",
+      "followers_url": "https://api.github.com/users/mkurz/followers",
+      "following_url": "https://api.github.com/users/mkurz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mkurz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mkurz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mkurz/subscriptions",
+      "organizations_url": "https://api.github.com/users/mkurz/orgs",
+      "repos_url": "https://api.github.com/users/mkurz/repos",
+      "events_url": "https://api.github.com/users/mkurz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mkurz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "17cb7de4570677341c622febe64f17e1b8199710",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/17cb7de4570677341c622febe64f17e1b8199710",
+        "html_url": "https://github.com/playframework/flyway-play/commit/17cb7de4570677341c622febe64f17e1b8199710"
+      },
+      {
+        "sha": "23d67c94dde1ed75e7a05bd0236b5673a46402ed",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/23d67c94dde1ed75e7a05bd0236b5673a46402ed",
+        "html_url": "https://github.com/playframework/flyway-play/commit/23d67c94dde1ed75e7a05bd0236b5673a46402ed"
+      }
+    ]
+  },
+  {
+    "sha": "bc97e82fdfd28d6ad078c58a7c5cb960be9ae7e9",
+    "node_id": "C_kwDOAb4hmtoAKGJjOTdlODJmZGZkMjhkNmFkMDc4YzU4YTdjNWNiOTYwYmU5YWU3ZTk",
+    "commit": {
+      "author": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-05-11T18:55:42Z"
+      },
+      "committer": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-05-11T18:55:42Z"
+      },
+      "message": "Update scalafmt-core to 3.11.1",
+      "tree": {
+        "sha": "b62a73e0b476b56c0c9b37878619bd131c813bd9",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/b62a73e0b476b56c0c9b37878619bd131c813bd9"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/bc97e82fdfd28d6ad078c58a7c5cb960be9ae7e9",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE+07CbnSZFTs2F0sif+F2Y1oUBQgFAmoCJi4ACgkQf+F2Y1oU\nBQjK8BAAnPsHFoBFTo8MBvbJUrAV5l967qz5Fg60Y8v58CqmzzeKAw90jan/GYyG\nJ5q3q+ps/omwDTZpkSgFZYErGxlb+GFaPXs+iEQoCxpYa56OrTRBT7dkv8evSdLx\nU8ChW4ftbS2v5oFgaabrpFDRsJp76Lsg99x1Aw3YiRLBCucmAGShXBEbuceZMkE5\ndE2UZtpY/EacuRhjqJwyYxvNVXO1UasVRzkT59pu9YtKqY499Wza0+xyi2iX8miv\nRELT8NKK2xhnCoXsR7bMumSzykfbH2Jpu5Ve0O7gu8rc3wLnd+yFC9Jxgx0Aa3bC\nzxqyZXOMuQftpQ/aoasFBPZuOaDXCgahRdeZ0OMDJAHczWpiUeBQoQxy1nhCxf/2\nBWByzmU0YPwmauLPihABYQ5ivF89LMHOPok95LFXyGVQ8x6s+ddnouiWcwgOtqL/\nySlxWLphZ0UoTNVl6dHNlrjHwHDq07uWo2wydYO+1UhjDIG4rbMAVoV+rcnq7wyS\nx+XbSCVVDSFy2SMevhPukqh1fUCkomfmG+CBVPcDDDIjefAgiX1nIkMIqjce2yiz\nigezdD1dtTQDALsdBcYSUc7sUYNoOmXMCgBgXmOb7uSG7XViIS9ktg6zD6wOfsOi\nGCGFZ17KsOY55pFQhZkYYJAgJ/PSLzrRF9EGoDAWkktp0utRxM0=\n=EIKL\n-----END PGP SIGNATURE-----",
+        "payload": "tree b62a73e0b476b56c0c9b37878619bd131c813bd9\nparent 17cb7de4570677341c622febe64f17e1b8199710\nauthor Scala Steward <scala_steward@virtuslab.com> 1778525742 +0000\ncommitter Scala Steward <scala_steward@virtuslab.com> 1778525742 +0000\n\nUpdate scalafmt-core to 3.11.1\n",
+        "verified_at": "2026-05-11T18:55:53Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/bc97e82fdfd28d6ad078c58a7c5cb960be9ae7e9",
+    "html_url": "https://github.com/playframework/flyway-play/commit/bc97e82fdfd28d6ad078c58a7c5cb960be9ae7e9",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/bc97e82fdfd28d6ad078c58a7c5cb960be9ae7e9/comments",
+    "author": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "17cb7de4570677341c622febe64f17e1b8199710",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/17cb7de4570677341c622febe64f17e1b8199710",
+        "html_url": "https://github.com/playframework/flyway-play/commit/17cb7de4570677341c622febe64f17e1b8199710"
+      }
+    ]
+  },
+  {
+    "sha": "23d67c94dde1ed75e7a05bd0236b5673a46402ed",
+    "node_id": "C_kwDOAb4hmtoAKDIzZDY3Yzk0ZGRlMWVkNzVlN2EwNWJkMDIzNmI1NjczYTQ2NDAyZWQ",
+    "commit": {
+      "author": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-05-11T18:55:29Z"
+      },
+      "committer": {
+        "name": "Scala Steward",
+        "email": "scala_steward@virtuslab.com",
+        "date": "2026-05-11T18:55:29Z"
+      },
+      "message": "Update sbt-scalafmt to 2.6.1",
+      "tree": {
+        "sha": "a6b036df720721b6c6c928a1276ea0c8e20a9edf",
+        "url": "https://api.github.com/repos/playframework/flyway-play/git/trees/a6b036df720721b6c6c928a1276ea0c8e20a9edf"
+      },
+      "url": "https://api.github.com/repos/playframework/flyway-play/git/commits/23d67c94dde1ed75e7a05bd0236b5673a46402ed",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE+07CbnSZFTs2F0sif+F2Y1oUBQgFAmoCJiEACgkQf+F2Y1oU\nBQhELhAAtGs7IyS/V+fBi5lynHl08bLjonW3kjz+lfK377yXeDNYblhzdwgqOdXJ\nTzLEjAxCNdtm2WkbXYLfH6Pt+S6PBzPDTWS0W7db9qHk68CdYoQWl2F9YSPxyDnH\n/f0P1ATlPbR+zI3NchbgrDrLfR2l8FwhqWLoWKIduMUAleNKuLaaLuV1rfVl7SX1\nwAjlTXukIT2L+DIRin+Io4kjRVi8S40xMAAEkMS+ODJvHlFW2jgrY31d6PVJhz/l\nLC1e3RjATncBW2U7uJJdt9fY9SeU8clOHvc4GKdiTB3HjMBqdmnNzO4X24jFF+m9\nGfbRbVzc+Hudx4mJmoiZqOOgqZVD8oq070Xady1cobRRjVAtYMKtep3U0f54jjcq\nKNjnqV93r62Zrc2O64XWtoV9zw7R8RVcEK0OorgWloD2pgCSugWvmjzTXwxFM5ta\n4lszgaF7lTD6VQCXannBrbSGeQ76jNSKghUkA4aupP2LUfS1db0UKaG6y2mQBYXF\nGv7jxMiZ5DuzmD+QRkgfufFOXLfpzBPmi0WWM3Hg48yVUQX5a2OJfvfpFgTtFz+H\nqH1HHs14xDjoWNm5vlBn58OCE9as3JRI3eHSijBxhnM6rF7YB8IgNDPrzHprl8Ev\nCYSAFwkKw9hsdlBHqAjIqXkTsW83M5e442ceGwexpR+G59xgDMA=\n=M5ZW\n-----END PGP SIGNATURE-----",
+        "payload": "tree a6b036df720721b6c6c928a1276ea0c8e20a9edf\nparent 17cb7de4570677341c622febe64f17e1b8199710\nauthor Scala Steward <scala_steward@virtuslab.com> 1778525729 +0000\ncommitter Scala Steward <scala_steward@virtuslab.com> 1778525729 +0000\n\nUpdate sbt-scalafmt to 2.6.1\n",
+        "verified_at": "2026-05-11T18:55:31Z"
+      }
+    },
+    "url": "https://api.github.com/repos/playframework/flyway-play/commits/23d67c94dde1ed75e7a05bd0236b5673a46402ed",
+    "html_url": "https://github.com/playframework/flyway-play/commit/23d67c94dde1ed75e7a05bd0236b5673a46402ed",
+    "comments_url": "https://api.github.com/repos/playframework/flyway-play/commits/23d67c94dde1ed75e7a05bd0236b5673a46402ed/comments",
+    "author": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "scala-steward",
+      "id": 43047562,
+      "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scala-steward",
+      "html_url": "https://github.com/scala-steward",
+      "followers_url": "https://api.github.com/users/scala-steward/followers",
+      "following_url": "https://api.github.com/users/scala-steward/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scala-steward/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scala-steward/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scala-steward/subscriptions",
+      "organizations_url": "https://api.github.com/users/scala-steward/orgs",
+      "repos_url": "https://api.github.com/users/scala-steward/repos",
+      "events_url": "https://api.github.com/users/scala-steward/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scala-steward/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "17cb7de4570677341c622febe64f17e1b8199710",
+        "url": "https://api.github.com/repos/playframework/flyway-play/commits/17cb7de4570677341c622febe64f17e1b8199710",
+        "html_url": "https://github.com/playframework/flyway-play/commit/17cb7de4570677341c622febe64f17e1b8199710"
+      }
+    ]
+  }
+]

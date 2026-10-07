@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-07T10:34:57.911997+00:00",
+  "request": {
+    "databaseId": 1000069,
+    "taskType": "ASYNC",
+    "executionStrategy": "MANUAL",
+    "description": "application=odc-adoption-poc; release=0.1.1-poc-E2; corrects-ticket=2000011; ref=correction",
+    "parameters": {
+      "sqlContent": "SELECT 'P7_CORRECTED' AS MARKER FROM DUAL;\n",
+      "timeoutMillis": 120000,
+      "errorStrategy": "ABORT",
+      "generateRollbackPlan": false,
+      "queryLimit": 100,
+      "delimiter": ";",
+      "retryTimes": 0,
+      "markAsFailedWhenAnyErrorsHappened": true
+    }
+  },
+  "response": {
+    "contents": [
+      {
+        "affectedRows": null,
+        "approvable": false,
+        "completeTime": null,
+        "createTime": null,
+        "creator": null,
+        "database": null,
+        "description": null,
+        "executionStrategy": null,
+        "executionTime": null,
+        "id": 2000012,
+        "nodeList": null,
+        "parameters": null,
+        "progressPercentage": 0.0,
+        "project": null,
+        "projectId": null,
+        "status": null,
+        "type": "ASYNC"
+      }
+    ]
+  }
+}

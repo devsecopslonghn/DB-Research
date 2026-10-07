@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-10-07T17:14:53.627233+00:00",
+  "deployment_original_spec_restored": true,
+  "application_original_spec_unchanged": true,
+  "argo_cd_reconciliation_active": true,
+  "argo_sync": "Synced",
+  "argo_health": "Healthy",
+  "odc_healthy": true,
+  "metadb_healthy": true,
+  "metadb_uid_unchanged": true,
+  "pvc_uids_unchanged": true,
+  "service_unchanged": true,
+  "historical_ticket_count": 26,
+  "historical_ticket_sql_status_metadata_preserved": true,
+  "practical_poc_ticket_count": 12,
+  "practical_poc_ticket_sql_status_metadata_preserved": true,
+  "fresh_retention_tickets": [
+    {
+      "id": 2000014,
+      "status": "EXECUTION_FAILED",
+      "sql_sha256": "7eb413991f81d46b256794074a26c29bab825e87820f1ca074bc08de83922588",
+      "metadata_sha256": "f2e600f5357d229c24977408a426bd78781e677695d8291bedc95b44737efa12"
+    },
+    {
+      "id": 2000013,
+      "status": "EXECUTION_SUCCEEDED",
+      "sql_sha256": "a4f519ae9353ba896e1ff7fa6b23bc1f0be1455e62f61109819a82fa9173e808",
+      "metadata_sha256": "bad7b6b61630b7aac612f36689d7b15f7f3bd28ada9ddf7fee5dfb0f2b059c11"
+    }
+  ],
+  "active_unfinished_tickets": [],
+  "async_files_preserved": true,
+  "async_file_count": 101,
+  "persistent_task_logs_retained_after_rollback": [
+    {
+      "ticket_id": 2000013,
+      "path": "/opt/odc/data/task-logs/async/10000/2000026/asynctask.all",
+      "sha256": "f3aef103873c001c10dd9a40886581c295d8268a1d0c06579987cf87cca06738"
+    },
+    {
+      "ticket_id": 2000013,
+      "path": "/opt/odc/data/task-logs/async/10000/2000026/asynctask.warn",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "ticket_id": 2000014,
+      "path": "/opt/odc/data/task-logs/async/10000/2000028/asynctask.all",
+      "sha256": "94645b7cadbd33ef1882fa659881564ca3dca6d6fdabfef3eed863057b51e209"
+    },
+    {
+      "ticket_id": 2000014,
+      "path": "/opt/odc/data/task-logs/async/10000/2000028/asynctask.warn",
+      "sha256": "6879d4d8076bcec9ffb6707d6161fa2cd10417c419c73ea3be85f64f3bf90153"
+    }
+  ],
+  "remaining_lab_configuration": "Original baseline; applying demonstrated GitOps settings is required before pilot operation. Retention experiment proves configured behavior, not baseline repair."
+}

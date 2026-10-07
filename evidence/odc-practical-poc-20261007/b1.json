@@ -1,0 +1,3862 @@
+{
+  "case_id": "B1",
+  "timestamp": "2026-10-07T10:28:02.979835+00:00",
+  "groups": [
+    [
+      1000069
+    ],
+    [
+      1000122
+    ],
+    [
+      1000184
+    ],
+    [
+      1000218
+    ]
+  ],
+  "boundaries": [
+    {
+      "stage": 1,
+      "timestamp": "2026-10-07T10:30:59.308444+00:00",
+      "observation": "First native Execute already completed DEV; initial probe incorrectly expected separate child-list records. Resume this same batch from native per-target result, without replay.",
+      "result": [
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000001,
+              "name": "odc-poc-dev",
+              "type": "ORACLE"
+            },
+            "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+            "environment": {
+              "id": 1,
+              "name": "dev"
+            },
+            "id": 1000069,
+            "name": "ODC_POC_20261004_DEV",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791368907712,
+            "createTime": 1791368883507,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000002,
+              "name": "odc-poc-sit",
+              "type": "ORACLE"
+            },
+            "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+            "environment": {
+              "id": 2,
+              "name": "sit"
+            },
+            "id": 1000122,
+            "name": "ODC_POC_20261004_SIT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000003,
+              "name": "odc-poc-uat",
+              "type": "ORACLE"
+            },
+            "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+            "environment": {
+              "id": 1000021,
+              "name": "POCUAT"
+            },
+            "id": 1000184,
+            "name": "ODC_POC_20261004_UAT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000004,
+              "name": "odc-poc-mockprod",
+              "type": "ORACLE"
+            },
+            "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+            "environment": {
+              "id": 1000022,
+              "name": "POCPROD"
+            },
+            "id": 1000218,
+            "name": "ODC_POC_20261004_MOCKPROD",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        }
+      ],
+      "object_check": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "OBJECT_NAME",
+              "OBJECT_TYPE",
+              "STATUS"
+            ],
+            "rows": [
+              [
+                "P7_BATCH_HAPPY",
+                "TABLE",
+                "VALID"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-10-07T10:31:12.773677+00:00",
+      "stage": 2,
+      "before": {
+        "affectedRows": null,
+        "approvable": false,
+        "completeTime": 1791368910000,
+        "createTime": 1791368883000,
+        "creator": {
+          "accountName": "odc_poc_requester",
+          "id": 10000,
+          "name": "POC requester",
+          "roleNames": []
+        },
+        "database": {
+          "connectType": "ORACLE",
+          "dataSource": {
+            "connectType": "CONNECT_TYPE_OB",
+            "createTime": 1791074334000,
+            "creatorId": 1,
+            "defaultSchema": "ODC_POC_20261004_DEV",
+            "environmentId": 1,
+            "host": "adb.ap-mumbai-1.oraclecloud.com",
+            "id": 1000001,
+            "name": "odc-poc-dev",
+            "port": 1521,
+            "projectId": 1,
+            "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+            "status": null,
+            "type": "ORACLE",
+            "updateTime": 1791074334000,
+            "username": "ODC_POC_20261004_DEV"
+          },
+          "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+          "environment": {
+            "createTime": null,
+            "creator": null,
+            "description": null,
+            "id": 1,
+            "name": null,
+            "updateTime": null
+          },
+          "id": 1000069,
+          "name": "ODC_POC_20261004_DEV",
+          "project": {
+            "createTime": null,
+            "creator": null,
+            "description": null,
+            "id": 1,
+            "name": null,
+            "updateTime": null
+          },
+          "type": "PHYSICAL"
+        },
+        "description": "app=odc-adoption-poc; release=20261007-B1; ref=native-four-stage",
+        "executionStrategy": "MANUAL",
+        "executionTime": null,
+        "id": 2000003,
+        "nodeList": [
+          {
+            "candidates": null,
+            "comment": null,
+            "completeTime": 1791368893000,
+            "createTime": 1791368883000,
+            "id": 2000011,
+            "nodeType": "SERVICE_TASK",
+            "operator": {
+              "accountName": "odc_poc_requester",
+              "id": 10000,
+              "name": "POC requester",
+              "roleNames": []
+            },
+            "status": "COMPLETED",
+            "taskType": "PRE_CHECK"
+          },
+          {
+            "candidates": [
+              {
+                "accountName": "admin",
+                "id": 1,
+                "name": "admin",
+                "roleNames": [
+                  "system_admin"
+                ]
+              },
+              {
+                "accountName": "odc_poc_approver",
+                "id": 10001,
+                "name": "POC approver",
+                "roleNames": []
+              }
+            ],
+            "comment": "Practical POC reviewed SQL and exact isolated target; actor approver",
+            "completeTime": 1791368894000,
+            "createTime": 1791368883000,
+            "id": 2000012,
+            "nodeType": "APPROVAL_TASK",
+            "operator": {
+              "accountName": "odc_poc_approver",
+              "id": 10001,
+              "name": "POC approver",
+              "roleNames": []
+            },
+            "status": "COMPLETED",
+            "taskType": null
+          },
+          {
+            "candidates": [
+              {
+                "accountName": "odc_poc_executor",
+                "id": 10002,
+                "name": "POC executor",
+                "roleNames": []
+              }
+            ],
+            "comment": "Practical POC reviewed SQL and exact isolated target; actor executor",
+            "completeTime": 1791368895000,
+            "createTime": 1791368883000,
+            "id": 2000013,
+            "nodeType": "APPROVAL_TASK",
+            "operator": {
+              "accountName": "odc_poc_executor",
+              "id": 10002,
+              "name": "POC executor",
+              "roleNames": []
+            },
+            "status": "COMPLETED",
+            "taskType": null
+          },
+          {
+            "candidates": null,
+            "comment": null,
+            "completeTime": 1791368910000,
+            "createTime": 1791368883000,
+            "id": 2000016,
+            "nodeType": "SERVICE_TASK",
+            "operator": {
+              "accountName": "odc_poc_requester",
+              "id": 10000,
+              "name": "POC requester",
+              "roleNames": []
+            },
+            "status": "COMPLETED",
+            "taskType": "MULTIPLE_ASYNC"
+          },
+          {
+            "candidates": null,
+            "comment": null,
+            "completeTime": null,
+            "createTime": 1791368883000,
+            "id": 2000017,
+            "nodeType": "SERVICE_TASK",
+            "operator": {
+              "accountName": "odc_poc_requester",
+              "id": 10000,
+              "name": "POC requester",
+              "roleNames": []
+            },
+            "status": "PENDING",
+            "taskType": "MULTIPLE_ASYNC"
+          },
+          {
+            "candidates": null,
+            "comment": null,
+            "completeTime": null,
+            "createTime": 1791368883000,
+            "id": 2000018,
+            "nodeType": "SERVICE_TASK",
+            "operator": {
+              "accountName": "odc_poc_requester",
+              "id": 10000,
+              "name": "POC requester",
+              "roleNames": []
+            },
+            "status": "CREATED",
+            "taskType": "MULTIPLE_ASYNC"
+          },
+          {
+            "candidates": null,
+            "comment": null,
+            "completeTime": null,
+            "createTime": 1791368883000,
+            "id": 2000019,
+            "nodeType": "SERVICE_TASK",
+            "operator": {
+              "accountName": "odc_poc_requester",
+              "id": 10000,
+              "name": "POC requester",
+              "roleNames": []
+            },
+            "status": "CREATED",
+            "taskType": "MULTIPLE_ASYNC"
+          }
+        ],
+        "parameters": {
+          "autoErrorStrategy": "ABORT",
+          "batchId": 1,
+          "databases": [
+            {
+              "dataSource": {
+                "id": 1000001,
+                "name": "odc-poc-dev",
+                "type": "ORACLE"
+              },
+              "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+              "environment": {
+                "id": 1,
+                "name": "dev"
+              },
+              "id": 1000069,
+              "name": "ODC_POC_20261004_DEV",
+              "project": {
+                "id": 1,
+                "name": "odc-oracle-poc"
+              }
+            },
+            {
+              "dataSource": {
+                "id": 1000002,
+                "name": "odc-poc-sit",
+                "type": "ORACLE"
+              },
+              "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+              "environment": {
+                "id": 2,
+                "name": "sit"
+              },
+              "id": 1000122,
+              "name": "ODC_POC_20261004_SIT",
+              "project": {
+                "id": 1,
+                "name": "odc-oracle-poc"
+              }
+            },
+            {
+              "dataSource": {
+                "id": 1000003,
+                "name": "odc-poc-uat",
+                "type": "ORACLE"
+              },
+              "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+              "environment": {
+                "id": 1000021,
+                "name": "POCUAT"
+              },
+              "id": 1000184,
+              "name": "ODC_POC_20261004_UAT",
+              "project": {
+                "id": 1,
+                "name": "odc-oracle-poc"
+              }
+            },
+            {
+              "dataSource": {
+                "id": 1000004,
+                "name": "odc-poc-mockprod",
+                "type": "ORACLE"
+              },
+              "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+              "environment": {
+                "id": 1000022,
+                "name": "POCPROD"
+              },
+              "id": 1000218,
+              "name": "ODC_POC_20261004_MOCKPROD",
+              "project": {
+                "id": 1,
+                "name": "odc-oracle-poc"
+              }
+            }
+          ],
+          "delimiter": ";",
+          "errorStrategy": "ABORT",
+          "flowTaskExecutionStrategy": "MANUAL",
+          "manualTimeoutMillis": 3600000,
+          "orderedDatabaseIds": [
+            [
+              1000069
+            ],
+            [
+              1000122
+            ],
+            [
+              1000184
+            ],
+            [
+              1000218
+            ]
+          ],
+          "project": {
+            "id": 1,
+            "name": "odc-oracle-poc"
+          },
+          "projectId": 1,
+          "queryLimit": 100,
+          "retryTimes": 0,
+          "sqlContent": "CREATE TABLE P7_BATCH_HAPPY (ID NUMBER PRIMARY KEY, NOTE VARCHAR2(60));\n",
+          "sqlObjectNames": null,
+          "timeoutMillis": 120000
+        },
+        "progressPercentage": 25.0,
+        "project": {
+          "createTime": 1791073053000,
+          "creator": {
+            "accountName": "odc_poc_executor",
+            "id": 10002,
+            "name": "POC executor",
+            "roleNames": []
+          },
+          "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+          "id": 1,
+          "name": "odc-oracle-poc",
+          "updateTime": 1791073053000
+        },
+        "projectId": 1,
+        "status": "WAIT_FOR_EXECUTION",
+        "type": "MULTIPLE_ASYNC"
+      },
+      "targets_before": [
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000001,
+              "name": "odc-poc-dev",
+              "type": "ORACLE"
+            },
+            "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+            "environment": {
+              "id": 1,
+              "name": "dev"
+            },
+            "id": 1000069,
+            "name": "ODC_POC_20261004_DEV",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791368907712,
+            "createTime": 1791368883507,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000002,
+              "name": "odc-poc-sit",
+              "type": "ORACLE"
+            },
+            "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+            "environment": {
+              "id": 2,
+              "name": "sit"
+            },
+            "id": 1000122,
+            "name": "ODC_POC_20261004_SIT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000003,
+              "name": "odc-poc-uat",
+              "type": "ORACLE"
+            },
+            "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+            "environment": {
+              "id": 1000021,
+              "name": "POCUAT"
+            },
+            "id": 1000184,
+            "name": "ODC_POC_20261004_UAT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000004,
+              "name": "odc-poc-mockprod",
+              "type": "ORACLE"
+            },
+            "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+            "environment": {
+              "id": 1000022,
+              "name": "POCPROD"
+            },
+            "id": 1000218,
+            "name": "ODC_POC_20261004_MOCKPROD",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        }
+      ],
+      "target_absent_before": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "OBJECT_NAME"
+            ],
+            "rows": [],
+            "total": 0,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "after_wait": [
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000001,
+              "name": "odc-poc-dev",
+              "type": "ORACLE"
+            },
+            "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+            "environment": {
+              "id": 1,
+              "name": "dev"
+            },
+            "id": 1000069,
+            "name": "ODC_POC_20261004_DEV",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791368907712,
+            "createTime": 1791368883507,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000002,
+              "name": "odc-poc-sit",
+              "type": "ORACLE"
+            },
+            "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+            "environment": {
+              "id": 2,
+              "name": "sit"
+            },
+            "id": 1000122,
+            "name": "ODC_POC_20261004_SIT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000003,
+              "name": "odc-poc-uat",
+              "type": "ORACLE"
+            },
+            "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+            "environment": {
+              "id": 1000021,
+              "name": "POCUAT"
+            },
+            "id": 1000184,
+            "name": "ODC_POC_20261004_UAT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000004,
+              "name": "odc-poc-mockprod",
+              "type": "ORACLE"
+            },
+            "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+            "environment": {
+              "id": 1000022,
+              "name": "POCPROD"
+            },
+            "id": 1000218,
+            "name": "ODC_POC_20261004_MOCKPROD",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        }
+      ],
+      "continue": {
+        "timestamp": "2026-10-07T10:31:29.761693+00:00",
+        "actor": "odc_poc_executor",
+        "http_status": 200,
+        "successful": true
+      },
+      "targets_after": [
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000001,
+              "name": "odc-poc-dev",
+              "type": "ORACLE"
+            },
+            "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+            "environment": {
+              "id": 1,
+              "name": "dev"
+            },
+            "id": 1000069,
+            "name": "ODC_POC_20261004_DEV",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791368907712,
+            "createTime": 1791368883507,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000002,
+              "name": "odc-poc-sit",
+              "type": "ORACLE"
+            },
+            "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+            "environment": {
+              "id": 2,
+              "name": "sit"
+            },
+            "id": 1000122,
+            "name": "ODC_POC_20261004_SIT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791369097361,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000003,
+              "name": "odc-poc-uat",
+              "type": "ORACLE"
+            },
+            "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+            "environment": {
+              "id": 1000021,
+              "name": "POCUAT"
+            },
+            "id": 1000184,
+            "name": "ODC_POC_20261004_UAT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000004,
+              "name": "odc-poc-mockprod",
+              "type": "ORACLE"
+            },
+            "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+            "environment": {
+              "id": 1000022,
+              "name": "POCPROD"
+            },
+            "id": 1000218,
+            "name": "ODC_POC_20261004_MOCKPROD",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        }
+      ],
+      "object_check": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "OBJECT_NAME",
+              "OBJECT_TYPE",
+              "STATUS"
+            ],
+            "rows": [
+              [
+                "P7_BATCH_HAPPY",
+                "TABLE",
+                "VALID"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-10-07T10:31:54.364392+00:00",
+      "stage": 3,
+      "before": {
+        "affectedRows": null,
+        "approvable": false,
+        "completeTime": 1791369099000,
+        "createTime": 1791368883000,
+        "creator": {
+          "accountName": "odc_poc_requester",
+          "id": 10000,
+          "name": "POC requester",
+          "roleNames": []
+        },
+        "database": {
+          "connectType": "ORACLE",
+          "dataSource": {
+            "connectType": "CONNECT_TYPE_OB",
+            "createTime": 1791074334000,
+            "creatorId": 1,
+            "defaultSchema": "ODC_POC_20261004_DEV",
+            "environmentId": 1,
+            "host": "adb.ap-mumbai-1.oraclecloud.com",
+            "id": 1000001,
+            "name": "odc-poc-dev",
+            "port": 1521,
+            "projectId": 1,
+            "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+            "status": null,
+            "type": "ORACLE",
+            "updateTime": 1791074334000,
+            "username": "ODC_POC_20261004_DEV"
+          },
+          "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+          "environment": {
+            "createTime": null,
+            "creator": null,
+            "description": null,
+            "id": 1,
+            "name": null,
+            "updateTime": null
+          },
+          "id": 1000069,
+          "name": "ODC_POC_20261004_DEV",
+          "project": {
+            "createTime": null,
+            "creator": null,
+            "description": null,
+            "id": 1,
+            "name": null,
+            "updateTime": null
+          },
+          "type": "PHYSICAL"
+        },
+        "description": "app=odc-adoption-poc; release=20261007-B1; ref=native-four-stage",
+        "executionStrategy": "MANUAL",
+        "executionTime": null,
+        "id": 2000003,
+        "nodeList": [
+          {
+            "candidates": null,
+            "comment": null,
+            "completeTime": 1791368893000,
+            "createTime": 1791368883000,
+            "id": 2000011,
+            "nodeType": "SERVICE_TASK",
+            "operator": {
+              "accountName": "odc_poc_requester",
+              "id": 10000,
+              "name": "POC requester",
+              "roleNames": []
+            },
+            "status": "COMPLETED",
+            "taskType": "PRE_CHECK"
+          },
+          {
+            "candidates": [
+              {
+                "accountName": "admin",
+                "id": 1,
+                "name": "admin",
+                "roleNames": [
+                  "system_admin"
+                ]
+              },
+              {
+                "accountName": "odc_poc_approver",
+                "id": 10001,
+                "name": "POC approver",
+                "roleNames": []
+              }
+            ],
+            "comment": "Practical POC reviewed SQL and exact isolated target; actor approver",
+            "completeTime": 1791368894000,
+            "createTime": 1791368883000,
+            "id": 2000012,
+            "nodeType": "APPROVAL_TASK",
+            "operator": {
+              "accountName": "odc_poc_approver",
+              "id": 10001,
+              "name": "POC approver",
+              "roleNames": []
+            },
+            "status": "COMPLETED",
+            "taskType": null
+          },
+          {
+            "candidates": [
+              {
+                "accountName": "odc_poc_executor",
+                "id": 10002,
+                "name": "POC executor",
+                "roleNames": []
+              }
+            ],
+            "comment": "Practical POC reviewed SQL and exact isolated target; actor executor",
+            "completeTime": 1791368895000,
+            "createTime": 1791368883000,
+            "id": 2000013,
+            "nodeType": "APPROVAL_TASK",
+            "operator": {
+              "accountName": "odc_poc_executor",
+              "id": 10002,
+              "name": "POC executor",
+              "roleNames": []
+            },
+            "status": "COMPLETED",
+            "taskType": null
+          },
+          {
+            "candidates": null,
+            "comment": null,
+            "completeTime": 1791368910000,
+            "createTime": 1791368883000,
+            "id": 2000016,
+            "nodeType": "SERVICE_TASK",
+            "operator": {
+              "accountName": "odc_poc_requester",
+              "id": 10000,
+              "name": "POC requester",
+              "roleNames": []
+            },
+            "status": "COMPLETED",
+            "taskType": "MULTIPLE_ASYNC"
+          },
+          {
+            "candidates": null,
+            "comment": null,
+            "completeTime": 1791369099000,
+            "createTime": 1791368883000,
+            "id": 2000017,
+            "nodeType": "SERVICE_TASK",
+            "operator": {
+              "accountName": "odc_poc_requester",
+              "id": 10000,
+              "name": "POC requester",
+              "roleNames": []
+            },
+            "status": "COMPLETED",
+            "taskType": "MULTIPLE_ASYNC"
+          },
+          {
+            "candidates": null,
+            "comment": null,
+            "completeTime": null,
+            "createTime": 1791368883000,
+            "id": 2000018,
+            "nodeType": "SERVICE_TASK",
+            "operator": {
+              "accountName": "odc_poc_requester",
+              "id": 10000,
+              "name": "POC requester",
+              "roleNames": []
+            },
+            "status": "PENDING",
+            "taskType": "MULTIPLE_ASYNC"
+          },
+          {
+            "candidates": null,
+            "comment": null,
+            "completeTime": null,
+            "createTime": 1791368883000,
+            "id": 2000019,
+            "nodeType": "SERVICE_TASK",
+            "operator": {
+              "accountName": "odc_poc_requester",
+              "id": 10000,
+              "name": "POC requester",
+              "roleNames": []
+            },
+            "status": "CREATED",
+            "taskType": "MULTIPLE_ASYNC"
+          }
+        ],
+        "parameters": {
+          "autoErrorStrategy": "ABORT",
+          "batchId": 2,
+          "databases": [
+            {
+              "dataSource": {
+                "id": 1000001,
+                "name": "odc-poc-dev",
+                "type": "ORACLE"
+              },
+              "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+              "environment": {
+                "id": 1,
+                "name": "dev"
+              },
+              "id": 1000069,
+              "name": "ODC_POC_20261004_DEV",
+              "project": {
+                "id": 1,
+                "name": "odc-oracle-poc"
+              }
+            },
+            {
+              "dataSource": {
+                "id": 1000002,
+                "name": "odc-poc-sit",
+                "type": "ORACLE"
+              },
+              "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+              "environment": {
+                "id": 2,
+                "name": "sit"
+              },
+              "id": 1000122,
+              "name": "ODC_POC_20261004_SIT",
+              "project": {
+                "id": 1,
+                "name": "odc-oracle-poc"
+              }
+            },
+            {
+              "dataSource": {
+                "id": 1000003,
+                "name": "odc-poc-uat",
+                "type": "ORACLE"
+              },
+              "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+              "environment": {
+                "id": 1000021,
+                "name": "POCUAT"
+              },
+              "id": 1000184,
+              "name": "ODC_POC_20261004_UAT",
+              "project": {
+                "id": 1,
+                "name": "odc-oracle-poc"
+              }
+            },
+            {
+              "dataSource": {
+                "id": 1000004,
+                "name": "odc-poc-mockprod",
+                "type": "ORACLE"
+              },
+              "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+              "environment": {
+                "id": 1000022,
+                "name": "POCPROD"
+              },
+              "id": 1000218,
+              "name": "ODC_POC_20261004_MOCKPROD",
+              "project": {
+                "id": 1,
+                "name": "odc-oracle-poc"
+              }
+            }
+          ],
+          "delimiter": ";",
+          "errorStrategy": "ABORT",
+          "flowTaskExecutionStrategy": "MANUAL",
+          "manualTimeoutMillis": 3600000,
+          "orderedDatabaseIds": [
+            [
+              1000069
+            ],
+            [
+              1000122
+            ],
+            [
+              1000184
+            ],
+            [
+              1000218
+            ]
+          ],
+          "project": {
+            "id": 1,
+            "name": "odc-oracle-poc"
+          },
+          "projectId": 1,
+          "queryLimit": 100,
+          "retryTimes": 0,
+          "sqlContent": "CREATE TABLE P7_BATCH_HAPPY (ID NUMBER PRIMARY KEY, NOTE VARCHAR2(60));\n",
+          "sqlObjectNames": null,
+          "timeoutMillis": 120000
+        },
+        "progressPercentage": 50.0,
+        "project": {
+          "createTime": 1791073053000,
+          "creator": {
+            "accountName": "odc_poc_executor",
+            "id": 10002,
+            "name": "POC executor",
+            "roleNames": []
+          },
+          "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+          "id": 1,
+          "name": "odc-oracle-poc",
+          "updateTime": 1791073053000
+        },
+        "projectId": 1,
+        "status": "WAIT_FOR_EXECUTION",
+        "type": "MULTIPLE_ASYNC"
+      },
+      "targets_before": [
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000001,
+              "name": "odc-poc-dev",
+              "type": "ORACLE"
+            },
+            "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+            "environment": {
+              "id": 1,
+              "name": "dev"
+            },
+            "id": 1000069,
+            "name": "ODC_POC_20261004_DEV",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791368907712,
+            "createTime": 1791368883507,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000002,
+              "name": "odc-poc-sit",
+              "type": "ORACLE"
+            },
+            "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+            "environment": {
+              "id": 2,
+              "name": "sit"
+            },
+            "id": 1000122,
+            "name": "ODC_POC_20261004_SIT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791369097361,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000003,
+              "name": "odc-poc-uat",
+              "type": "ORACLE"
+            },
+            "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+            "environment": {
+              "id": 1000021,
+              "name": "POCUAT"
+            },
+            "id": 1000184,
+            "name": "ODC_POC_20261004_UAT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000004,
+              "name": "odc-poc-mockprod",
+              "type": "ORACLE"
+            },
+            "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+            "environment": {
+              "id": 1000022,
+              "name": "POCPROD"
+            },
+            "id": 1000218,
+            "name": "ODC_POC_20261004_MOCKPROD",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        }
+      ],
+      "target_absent_before": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "OBJECT_NAME"
+            ],
+            "rows": [],
+            "total": 0,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "after_wait": [
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000001,
+              "name": "odc-poc-dev",
+              "type": "ORACLE"
+            },
+            "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+            "environment": {
+              "id": 1,
+              "name": "dev"
+            },
+            "id": 1000069,
+            "name": "ODC_POC_20261004_DEV",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791368907712,
+            "createTime": 1791368883507,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000002,
+              "name": "odc-poc-sit",
+              "type": "ORACLE"
+            },
+            "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+            "environment": {
+              "id": 2,
+              "name": "sit"
+            },
+            "id": 1000122,
+            "name": "ODC_POC_20261004_SIT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791369097361,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000003,
+              "name": "odc-poc-uat",
+              "type": "ORACLE"
+            },
+            "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+            "environment": {
+              "id": 1000021,
+              "name": "POCUAT"
+            },
+            "id": 1000184,
+            "name": "ODC_POC_20261004_UAT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000004,
+              "name": "odc-poc-mockprod",
+              "type": "ORACLE"
+            },
+            "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+            "environment": {
+              "id": 1000022,
+              "name": "POCPROD"
+            },
+            "id": 1000218,
+            "name": "ODC_POC_20261004_MOCKPROD",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        }
+      ],
+      "continue": {
+        "timestamp": "2026-10-07T10:32:11.287218+00:00",
+        "actor": "odc_poc_executor",
+        "http_status": 200,
+        "successful": true
+      },
+      "targets_after": [
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000001,
+              "name": "odc-poc-dev",
+              "type": "ORACLE"
+            },
+            "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+            "environment": {
+              "id": 1,
+              "name": "dev"
+            },
+            "id": 1000069,
+            "name": "ODC_POC_20261004_DEV",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791368907712,
+            "createTime": 1791368883507,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000002,
+              "name": "odc-poc-sit",
+              "type": "ORACLE"
+            },
+            "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+            "environment": {
+              "id": 2,
+              "name": "sit"
+            },
+            "id": 1000122,
+            "name": "ODC_POC_20261004_SIT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791369097361,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000003,
+              "name": "odc-poc-uat",
+              "type": "ORACLE"
+            },
+            "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+            "environment": {
+              "id": 1000021,
+              "name": "POCUAT"
+            },
+            "id": 1000184,
+            "name": "ODC_POC_20261004_UAT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791369139391,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000004,
+              "name": "odc-poc-mockprod",
+              "type": "ORACLE"
+            },
+            "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+            "environment": {
+              "id": 1000022,
+              "name": "POCPROD"
+            },
+            "id": 1000218,
+            "name": "ODC_POC_20261004_MOCKPROD",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        }
+      ],
+      "object_check": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "OBJECT_NAME",
+              "OBJECT_TYPE",
+              "STATUS"
+            ],
+            "rows": [
+              [
+                "P7_BATCH_HAPPY",
+                "TABLE",
+                "VALID"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-10-07T10:32:34.859848+00:00",
+      "stage": 4,
+      "before": {
+        "affectedRows": null,
+        "approvable": false,
+        "completeTime": 1791369141000,
+        "createTime": 1791368883000,
+        "creator": {
+          "accountName": "odc_poc_requester",
+          "id": 10000,
+          "name": "POC requester",
+          "roleNames": []
+        },
+        "database": {
+          "connectType": "ORACLE",
+          "dataSource": {
+            "connectType": "CONNECT_TYPE_OB",
+            "createTime": 1791074334000,
+            "creatorId": 1,
+            "defaultSchema": "ODC_POC_20261004_DEV",
+            "environmentId": 1,
+            "host": "adb.ap-mumbai-1.oraclecloud.com",
+            "id": 1000001,
+            "name": "odc-poc-dev",
+            "port": 1521,
+            "projectId": 1,
+            "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+            "status": null,
+            "type": "ORACLE",
+            "updateTime": 1791074334000,
+            "username": "ODC_POC_20261004_DEV"
+          },
+          "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+          "environment": {
+            "createTime": null,
+            "creator": null,
+            "description": null,
+            "id": 1,
+            "name": null,
+            "updateTime": null
+          },
+          "id": 1000069,
+          "name": "ODC_POC_20261004_DEV",
+          "project": {
+            "createTime": null,
+            "creator": null,
+            "description": null,
+            "id": 1,
+            "name": null,
+            "updateTime": null
+          },
+          "type": "PHYSICAL"
+        },
+        "description": "app=odc-adoption-poc; release=20261007-B1; ref=native-four-stage",
+        "executionStrategy": "MANUAL",
+        "executionTime": null,
+        "id": 2000003,
+        "nodeList": [
+          {
+            "candidates": null,
+            "comment": null,
+            "completeTime": 1791368893000,
+            "createTime": 1791368883000,
+            "id": 2000011,
+            "nodeType": "SERVICE_TASK",
+            "operator": {
+              "accountName": "odc_poc_requester",
+              "id": 10000,
+              "name": "POC requester",
+              "roleNames": []
+            },
+            "status": "COMPLETED",
+            "taskType": "PRE_CHECK"
+          },
+          {
+            "candidates": [
+              {
+                "accountName": "admin",
+                "id": 1,
+                "name": "admin",
+                "roleNames": [
+                  "system_admin"
+                ]
+              },
+              {
+                "accountName": "odc_poc_approver",
+                "id": 10001,
+                "name": "POC approver",
+                "roleNames": []
+              }
+            ],
+            "comment": "Practical POC reviewed SQL and exact isolated target; actor approver",
+            "completeTime": 1791368894000,
+            "createTime": 1791368883000,
+            "id": 2000012,
+            "nodeType": "APPROVAL_TASK",
+            "operator": {
+              "accountName": "odc_poc_approver",
+              "id": 10001,
+              "name": "POC approver",
+              "roleNames": []
+            },
+            "status": "COMPLETED",
+            "taskType": null
+          },
+          {
+            "candidates": [
+              {
+                "accountName": "odc_poc_executor",
+                "id": 10002,
+                "name": "POC executor",
+                "roleNames": []
+              }
+            ],
+            "comment": "Practical POC reviewed SQL and exact isolated target; actor executor",
+            "completeTime": 1791368895000,
+            "createTime": 1791368883000,
+            "id": 2000013,
+            "nodeType": "APPROVAL_TASK",
+            "operator": {
+              "accountName": "odc_poc_executor",
+              "id": 10002,
+              "name": "POC executor",
+              "roleNames": []
+            },
+            "status": "COMPLETED",
+            "taskType": null
+          },
+          {
+            "candidates": null,
+            "comment": null,
+            "completeTime": 1791368910000,
+            "createTime": 1791368883000,
+            "id": 2000016,
+            "nodeType": "SERVICE_TASK",
+            "operator": {
+              "accountName": "odc_poc_requester",
+              "id": 10000,
+              "name": "POC requester",
+              "roleNames": []
+            },
+            "status": "COMPLETED",
+            "taskType": "MULTIPLE_ASYNC"
+          },
+          {
+            "candidates": null,
+            "comment": null,
+            "completeTime": 1791369099000,
+            "createTime": 1791368883000,
+            "id": 2000017,
+            "nodeType": "SERVICE_TASK",
+            "operator": {
+              "accountName": "odc_poc_requester",
+              "id": 10000,
+              "name": "POC requester",
+              "roleNames": []
+            },
+            "status": "COMPLETED",
+            "taskType": "MULTIPLE_ASYNC"
+          },
+          {
+            "candidates": null,
+            "comment": null,
+            "completeTime": 1791369141000,
+            "createTime": 1791368883000,
+            "id": 2000018,
+            "nodeType": "SERVICE_TASK",
+            "operator": {
+              "accountName": "odc_poc_requester",
+              "id": 10000,
+              "name": "POC requester",
+              "roleNames": []
+            },
+            "status": "COMPLETED",
+            "taskType": "MULTIPLE_ASYNC"
+          },
+          {
+            "candidates": null,
+            "comment": null,
+            "completeTime": null,
+            "createTime": 1791368883000,
+            "id": 2000019,
+            "nodeType": "SERVICE_TASK",
+            "operator": {
+              "accountName": "odc_poc_requester",
+              "id": 10000,
+              "name": "POC requester",
+              "roleNames": []
+            },
+            "status": "PENDING",
+            "taskType": "MULTIPLE_ASYNC"
+          }
+        ],
+        "parameters": {
+          "autoErrorStrategy": "ABORT",
+          "batchId": 3,
+          "databases": [
+            {
+              "dataSource": {
+                "id": 1000001,
+                "name": "odc-poc-dev",
+                "type": "ORACLE"
+              },
+              "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+              "environment": {
+                "id": 1,
+                "name": "dev"
+              },
+              "id": 1000069,
+              "name": "ODC_POC_20261004_DEV",
+              "project": {
+                "id": 1,
+                "name": "odc-oracle-poc"
+              }
+            },
+            {
+              "dataSource": {
+                "id": 1000002,
+                "name": "odc-poc-sit",
+                "type": "ORACLE"
+              },
+              "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+              "environment": {
+                "id": 2,
+                "name": "sit"
+              },
+              "id": 1000122,
+              "name": "ODC_POC_20261004_SIT",
+              "project": {
+                "id": 1,
+                "name": "odc-oracle-poc"
+              }
+            },
+            {
+              "dataSource": {
+                "id": 1000003,
+                "name": "odc-poc-uat",
+                "type": "ORACLE"
+              },
+              "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+              "environment": {
+                "id": 1000021,
+                "name": "POCUAT"
+              },
+              "id": 1000184,
+              "name": "ODC_POC_20261004_UAT",
+              "project": {
+                "id": 1,
+                "name": "odc-oracle-poc"
+              }
+            },
+            {
+              "dataSource": {
+                "id": 1000004,
+                "name": "odc-poc-mockprod",
+                "type": "ORACLE"
+              },
+              "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+              "environment": {
+                "id": 1000022,
+                "name": "POCPROD"
+              },
+              "id": 1000218,
+              "name": "ODC_POC_20261004_MOCKPROD",
+              "project": {
+                "id": 1,
+                "name": "odc-oracle-poc"
+              }
+            }
+          ],
+          "delimiter": ";",
+          "errorStrategy": "ABORT",
+          "flowTaskExecutionStrategy": "MANUAL",
+          "manualTimeoutMillis": 3600000,
+          "orderedDatabaseIds": [
+            [
+              1000069
+            ],
+            [
+              1000122
+            ],
+            [
+              1000184
+            ],
+            [
+              1000218
+            ]
+          ],
+          "project": {
+            "id": 1,
+            "name": "odc-oracle-poc"
+          },
+          "projectId": 1,
+          "queryLimit": 100,
+          "retryTimes": 0,
+          "sqlContent": "CREATE TABLE P7_BATCH_HAPPY (ID NUMBER PRIMARY KEY, NOTE VARCHAR2(60));\n",
+          "sqlObjectNames": null,
+          "timeoutMillis": 120000
+        },
+        "progressPercentage": 75.0,
+        "project": {
+          "createTime": 1791073053000,
+          "creator": {
+            "accountName": "odc_poc_executor",
+            "id": 10002,
+            "name": "POC executor",
+            "roleNames": []
+          },
+          "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+          "id": 1,
+          "name": "odc-oracle-poc",
+          "updateTime": 1791073053000
+        },
+        "projectId": 1,
+        "status": "WAIT_FOR_EXECUTION",
+        "type": "MULTIPLE_ASYNC"
+      },
+      "targets_before": [
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000001,
+              "name": "odc-poc-dev",
+              "type": "ORACLE"
+            },
+            "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+            "environment": {
+              "id": 1,
+              "name": "dev"
+            },
+            "id": 1000069,
+            "name": "ODC_POC_20261004_DEV",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791368907712,
+            "createTime": 1791368883507,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000002,
+              "name": "odc-poc-sit",
+              "type": "ORACLE"
+            },
+            "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+            "environment": {
+              "id": 2,
+              "name": "sit"
+            },
+            "id": 1000122,
+            "name": "ODC_POC_20261004_SIT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791369097361,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000003,
+              "name": "odc-poc-uat",
+              "type": "ORACLE"
+            },
+            "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+            "environment": {
+              "id": 1000021,
+              "name": "POCUAT"
+            },
+            "id": 1000184,
+            "name": "ODC_POC_20261004_UAT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791369139391,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000004,
+              "name": "odc-poc-mockprod",
+              "type": "ORACLE"
+            },
+            "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+            "environment": {
+              "id": 1000022,
+              "name": "POCPROD"
+            },
+            "id": 1000218,
+            "name": "ODC_POC_20261004_MOCKPROD",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        }
+      ],
+      "target_absent_before": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "OBJECT_NAME"
+            ],
+            "rows": [],
+            "total": 0,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      },
+      "after_wait": [
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000001,
+              "name": "odc-poc-dev",
+              "type": "ORACLE"
+            },
+            "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+            "environment": {
+              "id": 1,
+              "name": "dev"
+            },
+            "id": 1000069,
+            "name": "ODC_POC_20261004_DEV",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791368907712,
+            "createTime": 1791368883507,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000002,
+              "name": "odc-poc-sit",
+              "type": "ORACLE"
+            },
+            "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+            "environment": {
+              "id": 2,
+              "name": "sit"
+            },
+            "id": 1000122,
+            "name": "ODC_POC_20261004_SIT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791369097361,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000003,
+              "name": "odc-poc-uat",
+              "type": "ORACLE"
+            },
+            "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+            "environment": {
+              "id": 1000021,
+              "name": "POCUAT"
+            },
+            "id": 1000184,
+            "name": "ODC_POC_20261004_UAT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791369139391,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000004,
+              "name": "odc-poc-mockprod",
+              "type": "ORACLE"
+            },
+            "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+            "environment": {
+              "id": 1000022,
+              "name": "POCPROD"
+            },
+            "id": 1000218,
+            "name": "ODC_POC_20261004_MOCKPROD",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": null,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 0.0
+          },
+          "status": "WAIT_FOR_EXECUTION"
+        }
+      ],
+      "continue": {
+        "timestamp": "2026-10-07T10:32:51.344514+00:00",
+        "actor": "odc_poc_executor",
+        "http_status": 200,
+        "successful": true
+      },
+      "targets_after": [
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000001,
+              "name": "odc-poc-dev",
+              "type": "ORACLE"
+            },
+            "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+            "environment": {
+              "id": 1,
+              "name": "dev"
+            },
+            "id": 1000069,
+            "name": "ODC_POC_20261004_DEV",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791368907712,
+            "createTime": 1791368883507,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000002,
+              "name": "odc-poc-sit",
+              "type": "ORACLE"
+            },
+            "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+            "environment": {
+              "id": 2,
+              "name": "sit"
+            },
+            "id": 1000122,
+            "name": "ODC_POC_20261004_SIT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791369097361,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000003,
+              "name": "odc-poc-uat",
+              "type": "ORACLE"
+            },
+            "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+            "environment": {
+              "id": 1000021,
+              "name": "POCUAT"
+            },
+            "id": 1000184,
+            "name": "ODC_POC_20261004_UAT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791369139391,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        },
+        {
+          "database": {
+            "dataSource": {
+              "id": 1000004,
+              "name": "odc-poc-mockprod",
+              "type": "ORACLE"
+            },
+            "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+            "environment": {
+              "id": 1000022,
+              "name": "POCPROD"
+            },
+            "id": 1000218,
+            "name": "ODC_POC_20261004_MOCKPROD",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          "flowInstanceDetailResp": {
+            "completeTime": 1791369178795,
+            "createTime": 1791368883508,
+            "executionTime": null,
+            "id": 2000003,
+            "progressPercentage": 100.0
+          },
+          "status": "EXECUTION_SUCCEEDED"
+        }
+      ],
+      "object_check": {
+        "http_status": 200,
+        "successful": true,
+        "error_code": null,
+        "approval_required": null,
+        "results": [
+          {
+            "status": "SUCCESS",
+            "errorCode": -1,
+            "columnLabels": [
+              "OBJECT_NAME",
+              "OBJECT_TYPE",
+              "STATUS"
+            ],
+            "rows": [
+              [
+                "P7_BATCH_HAPPY",
+                "TABLE",
+                "VALID"
+              ]
+            ],
+            "total": 1,
+            "track": null,
+            "existWarnings": false,
+            "checkViolations": []
+          }
+        ]
+      }
+    }
+  ],
+  "ticket_id": 2000003,
+  "approvals": [
+    {
+      "timestamp": "2026-10-07T10:28:14.537697+00:00",
+      "actor": "odc_poc_approver",
+      "node_id": 2000012,
+      "http_status": 200,
+      "successful": true
+    },
+    {
+      "timestamp": "2026-10-07T10:28:15.520854+00:00",
+      "actor": "odc_poc_executor",
+      "node_id": 2000013,
+      "http_status": 200,
+      "successful": true
+    }
+  ],
+  "review_before_execution": {
+    "approver": {
+      "affectedRows": null,
+      "approvable": false,
+      "completeTime": 1791368895000,
+      "createTime": 1791368883000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "database": {
+        "connectType": "ORACLE",
+        "dataSource": {
+          "connectType": "CONNECT_TYPE_OB",
+          "createTime": 1791074334000,
+          "creatorId": 1,
+          "defaultSchema": "ODC_POC_20261004_DEV",
+          "environmentId": 1,
+          "host": "adb.ap-mumbai-1.oraclecloud.com",
+          "id": 1000001,
+          "name": "odc-poc-dev",
+          "port": 1521,
+          "projectId": 1,
+          "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+          "status": null,
+          "type": "ORACLE",
+          "updateTime": 1791074334000,
+          "username": "ODC_POC_20261004_DEV"
+        },
+        "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+        "environment": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "id": 1000069,
+        "name": "ODC_POC_20261004_DEV",
+        "project": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "type": "PHYSICAL"
+      },
+      "description": "app=odc-adoption-poc; release=20261007-B1; ref=native-four-stage",
+      "executionStrategy": "MANUAL",
+      "executionTime": null,
+      "id": 2000003,
+      "nodeList": [
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": 1791368893000,
+          "createTime": 1791368883000,
+          "id": 2000011,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "COMPLETED",
+          "taskType": "PRE_CHECK"
+        },
+        {
+          "candidates": [
+            {
+              "accountName": "admin",
+              "id": 1,
+              "name": "admin",
+              "roleNames": [
+                "system_admin"
+              ]
+            },
+            {
+              "accountName": "odc_poc_approver",
+              "id": 10001,
+              "name": "POC approver",
+              "roleNames": []
+            }
+          ],
+          "comment": "Practical POC reviewed SQL and exact isolated target; actor approver",
+          "completeTime": 1791368894000,
+          "createTime": 1791368883000,
+          "id": 2000012,
+          "nodeType": "APPROVAL_TASK",
+          "operator": {
+            "accountName": "odc_poc_approver",
+            "id": 10001,
+            "name": "POC approver",
+            "roleNames": []
+          },
+          "status": "COMPLETED",
+          "taskType": null
+        },
+        {
+          "candidates": [
+            {
+              "accountName": "odc_poc_executor",
+              "id": 10002,
+              "name": "POC executor",
+              "roleNames": []
+            }
+          ],
+          "comment": "Practical POC reviewed SQL and exact isolated target; actor executor",
+          "completeTime": 1791368895000,
+          "createTime": 1791368883000,
+          "id": 2000013,
+          "nodeType": "APPROVAL_TASK",
+          "operator": {
+            "accountName": "odc_poc_executor",
+            "id": 10002,
+            "name": "POC executor",
+            "roleNames": []
+          },
+          "status": "COMPLETED",
+          "taskType": null
+        },
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": null,
+          "createTime": 1791368883000,
+          "id": 2000016,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "PENDING",
+          "taskType": "MULTIPLE_ASYNC"
+        },
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": null,
+          "createTime": 1791368883000,
+          "id": 2000017,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "CREATED",
+          "taskType": "MULTIPLE_ASYNC"
+        },
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": null,
+          "createTime": 1791368883000,
+          "id": 2000018,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "CREATED",
+          "taskType": "MULTIPLE_ASYNC"
+        },
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": null,
+          "createTime": 1791368883000,
+          "id": 2000019,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "CREATED",
+          "taskType": "MULTIPLE_ASYNC"
+        }
+      ],
+      "parameters": {
+        "autoErrorStrategy": "ABORT",
+        "batchId": null,
+        "databases": [
+          {
+            "dataSource": {
+              "id": 1000001,
+              "name": "odc-poc-dev",
+              "type": "ORACLE"
+            },
+            "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+            "environment": {
+              "id": 1,
+              "name": "dev"
+            },
+            "id": 1000069,
+            "name": "ODC_POC_20261004_DEV",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          {
+            "dataSource": {
+              "id": 1000002,
+              "name": "odc-poc-sit",
+              "type": "ORACLE"
+            },
+            "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+            "environment": {
+              "id": 2,
+              "name": "sit"
+            },
+            "id": 1000122,
+            "name": "ODC_POC_20261004_SIT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          {
+            "dataSource": {
+              "id": 1000003,
+              "name": "odc-poc-uat",
+              "type": "ORACLE"
+            },
+            "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+            "environment": {
+              "id": 1000021,
+              "name": "POCUAT"
+            },
+            "id": 1000184,
+            "name": "ODC_POC_20261004_UAT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          {
+            "dataSource": {
+              "id": 1000004,
+              "name": "odc-poc-mockprod",
+              "type": "ORACLE"
+            },
+            "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+            "environment": {
+              "id": 1000022,
+              "name": "POCPROD"
+            },
+            "id": 1000218,
+            "name": "ODC_POC_20261004_MOCKPROD",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          }
+        ],
+        "delimiter": ";",
+        "errorStrategy": "ABORT",
+        "flowTaskExecutionStrategy": "MANUAL",
+        "manualTimeoutMillis": 3600000,
+        "orderedDatabaseIds": [
+          [
+            1000069
+          ],
+          [
+            1000122
+          ],
+          [
+            1000184
+          ],
+          [
+            1000218
+          ]
+        ],
+        "project": {
+          "id": 1,
+          "name": "odc-oracle-poc"
+        },
+        "projectId": 1,
+        "queryLimit": 100,
+        "retryTimes": 0,
+        "sqlContent": "CREATE TABLE P7_BATCH_HAPPY (ID NUMBER PRIMARY KEY, NOTE VARCHAR2(60));\n",
+        "sqlObjectNames": null,
+        "timeoutMillis": 120000
+      },
+      "progressPercentage": 0.0,
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": "odc_poc_approver",
+          "id": 10001,
+          "name": "POC approver",
+          "roleNames": []
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "projectId": 1,
+      "status": "WAIT_FOR_EXECUTION",
+      "type": "MULTIPLE_ASYNC"
+    },
+    "executor": {
+      "affectedRows": null,
+      "approvable": false,
+      "completeTime": 1791368895000,
+      "createTime": 1791368883000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "database": {
+        "connectType": "ORACLE",
+        "dataSource": {
+          "connectType": "CONNECT_TYPE_OB",
+          "createTime": 1791074334000,
+          "creatorId": 1,
+          "defaultSchema": "ODC_POC_20261004_DEV",
+          "environmentId": 1,
+          "host": "adb.ap-mumbai-1.oraclecloud.com",
+          "id": 1000001,
+          "name": "odc-poc-dev",
+          "port": 1521,
+          "projectId": 1,
+          "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+          "status": null,
+          "type": "ORACLE",
+          "updateTime": 1791074334000,
+          "username": "ODC_POC_20261004_DEV"
+        },
+        "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+        "environment": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "id": 1000069,
+        "name": "ODC_POC_20261004_DEV",
+        "project": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "type": "PHYSICAL"
+      },
+      "description": "app=odc-adoption-poc; release=20261007-B1; ref=native-four-stage",
+      "executionStrategy": "MANUAL",
+      "executionTime": null,
+      "id": 2000003,
+      "nodeList": [
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": 1791368893000,
+          "createTime": 1791368883000,
+          "id": 2000011,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "COMPLETED",
+          "taskType": "PRE_CHECK"
+        },
+        {
+          "candidates": [
+            {
+              "accountName": "admin",
+              "id": 1,
+              "name": "admin",
+              "roleNames": [
+                "system_admin"
+              ]
+            },
+            {
+              "accountName": "odc_poc_approver",
+              "id": 10001,
+              "name": "POC approver",
+              "roleNames": []
+            }
+          ],
+          "comment": "Practical POC reviewed SQL and exact isolated target; actor approver",
+          "completeTime": 1791368894000,
+          "createTime": 1791368883000,
+          "id": 2000012,
+          "nodeType": "APPROVAL_TASK",
+          "operator": {
+            "accountName": "odc_poc_approver",
+            "id": 10001,
+            "name": "POC approver",
+            "roleNames": []
+          },
+          "status": "COMPLETED",
+          "taskType": null
+        },
+        {
+          "candidates": [
+            {
+              "accountName": "odc_poc_executor",
+              "id": 10002,
+              "name": "POC executor",
+              "roleNames": []
+            }
+          ],
+          "comment": "Practical POC reviewed SQL and exact isolated target; actor executor",
+          "completeTime": 1791368895000,
+          "createTime": 1791368883000,
+          "id": 2000013,
+          "nodeType": "APPROVAL_TASK",
+          "operator": {
+            "accountName": "odc_poc_executor",
+            "id": 10002,
+            "name": "POC executor",
+            "roleNames": []
+          },
+          "status": "COMPLETED",
+          "taskType": null
+        },
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": null,
+          "createTime": 1791368883000,
+          "id": 2000016,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "PENDING",
+          "taskType": "MULTIPLE_ASYNC"
+        },
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": null,
+          "createTime": 1791368883000,
+          "id": 2000017,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "CREATED",
+          "taskType": "MULTIPLE_ASYNC"
+        },
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": null,
+          "createTime": 1791368883000,
+          "id": 2000018,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "CREATED",
+          "taskType": "MULTIPLE_ASYNC"
+        },
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": null,
+          "createTime": 1791368883000,
+          "id": 2000019,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "CREATED",
+          "taskType": "MULTIPLE_ASYNC"
+        }
+      ],
+      "parameters": {
+        "autoErrorStrategy": "ABORT",
+        "batchId": null,
+        "databases": [
+          {
+            "dataSource": {
+              "id": 1000001,
+              "name": "odc-poc-dev",
+              "type": "ORACLE"
+            },
+            "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+            "environment": {
+              "id": 1,
+              "name": "dev"
+            },
+            "id": 1000069,
+            "name": "ODC_POC_20261004_DEV",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          {
+            "dataSource": {
+              "id": 1000002,
+              "name": "odc-poc-sit",
+              "type": "ORACLE"
+            },
+            "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+            "environment": {
+              "id": 2,
+              "name": "sit"
+            },
+            "id": 1000122,
+            "name": "ODC_POC_20261004_SIT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          {
+            "dataSource": {
+              "id": 1000003,
+              "name": "odc-poc-uat",
+              "type": "ORACLE"
+            },
+            "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+            "environment": {
+              "id": 1000021,
+              "name": "POCUAT"
+            },
+            "id": 1000184,
+            "name": "ODC_POC_20261004_UAT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          {
+            "dataSource": {
+              "id": 1000004,
+              "name": "odc-poc-mockprod",
+              "type": "ORACLE"
+            },
+            "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+            "environment": {
+              "id": 1000022,
+              "name": "POCPROD"
+            },
+            "id": 1000218,
+            "name": "ODC_POC_20261004_MOCKPROD",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          }
+        ],
+        "delimiter": ";",
+        "errorStrategy": "ABORT",
+        "flowTaskExecutionStrategy": "MANUAL",
+        "manualTimeoutMillis": 3600000,
+        "orderedDatabaseIds": [
+          [
+            1000069
+          ],
+          [
+            1000122
+          ],
+          [
+            1000184
+          ],
+          [
+            1000218
+          ]
+        ],
+        "project": {
+          "id": 1,
+          "name": "odc-oracle-poc"
+        },
+        "projectId": 1,
+        "queryLimit": 100,
+        "retryTimes": 0,
+        "sqlContent": "CREATE TABLE P7_BATCH_HAPPY (ID NUMBER PRIMARY KEY, NOTE VARCHAR2(60));\n",
+        "sqlObjectNames": null,
+        "timeoutMillis": 120000
+      },
+      "progressPercentage": 0.0,
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "projectId": 1,
+      "status": "WAIT_FOR_EXECUTION",
+      "type": "MULTIPLE_ASYNC"
+    }
+  },
+  "final": {
+    "affectedRows": null,
+    "approvable": false,
+    "completeTime": 1791369181000,
+    "createTime": 1791368883000,
+    "creator": {
+      "accountName": "odc_poc_requester",
+      "id": 10000,
+      "name": "POC requester",
+      "roleNames": []
+    },
+    "database": {
+      "connectType": "ORACLE",
+      "dataSource": {
+        "connectType": "CONNECT_TYPE_OB",
+        "createTime": 1791074334000,
+        "creatorId": 1,
+        "defaultSchema": "ODC_POC_20261004_DEV",
+        "environmentId": 1,
+        "host": "adb.ap-mumbai-1.oraclecloud.com",
+        "id": 1000001,
+        "name": "odc-poc-dev",
+        "port": 1521,
+        "projectId": 1,
+        "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+        "status": null,
+        "type": "ORACLE",
+        "updateTime": 1791074334000,
+        "username": "ODC_POC_20261004_DEV"
+      },
+      "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+      "environment": {
+        "createTime": null,
+        "creator": null,
+        "description": null,
+        "id": 1,
+        "name": null,
+        "updateTime": null
+      },
+      "id": 1000069,
+      "name": "ODC_POC_20261004_DEV",
+      "project": {
+        "createTime": null,
+        "creator": null,
+        "description": null,
+        "id": 1,
+        "name": null,
+        "updateTime": null
+      },
+      "type": "PHYSICAL"
+    },
+    "description": "app=odc-adoption-poc; release=20261007-B1; ref=native-four-stage",
+    "executionStrategy": "MANUAL",
+    "executionTime": null,
+    "id": 2000003,
+    "nodeList": [
+      {
+        "candidates": null,
+        "comment": null,
+        "completeTime": 1791368893000,
+        "createTime": 1791368883000,
+        "id": 2000011,
+        "nodeType": "SERVICE_TASK",
+        "operator": {
+          "accountName": "odc_poc_requester",
+          "id": 10000,
+          "name": "POC requester",
+          "roleNames": []
+        },
+        "status": "COMPLETED",
+        "taskType": "PRE_CHECK"
+      },
+      {
+        "candidates": [
+          {
+            "accountName": "admin",
+            "id": 1,
+            "name": "admin",
+            "roleNames": [
+              "system_admin"
+            ]
+          },
+          {
+            "accountName": "odc_poc_approver",
+            "id": 10001,
+            "name": "POC approver",
+            "roleNames": []
+          }
+        ],
+        "comment": "Practical POC reviewed SQL and exact isolated target; actor approver",
+        "completeTime": 1791368894000,
+        "createTime": 1791368883000,
+        "id": 2000012,
+        "nodeType": "APPROVAL_TASK",
+        "operator": {
+          "accountName": "odc_poc_approver",
+          "id": 10001,
+          "name": "POC approver",
+          "roleNames": []
+        },
+        "status": "COMPLETED",
+        "taskType": null
+      },
+      {
+        "candidates": [
+          {
+            "accountName": "odc_poc_executor",
+            "id": 10002,
+            "name": "POC executor",
+            "roleNames": []
+          }
+        ],
+        "comment": "Practical POC reviewed SQL and exact isolated target; actor executor",
+        "completeTime": 1791368895000,
+        "createTime": 1791368883000,
+        "id": 2000013,
+        "nodeType": "APPROVAL_TASK",
+        "operator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "status": "COMPLETED",
+        "taskType": null
+      },
+      {
+        "candidates": null,
+        "comment": null,
+        "completeTime": 1791368910000,
+        "createTime": 1791368883000,
+        "id": 2000016,
+        "nodeType": "SERVICE_TASK",
+        "operator": {
+          "accountName": "odc_poc_requester",
+          "id": 10000,
+          "name": "POC requester",
+          "roleNames": []
+        },
+        "status": "COMPLETED",
+        "taskType": "MULTIPLE_ASYNC"
+      },
+      {
+        "candidates": null,
+        "comment": null,
+        "completeTime": 1791369099000,
+        "createTime": 1791368883000,
+        "id": 2000017,
+        "nodeType": "SERVICE_TASK",
+        "operator": {
+          "accountName": "odc_poc_requester",
+          "id": 10000,
+          "name": "POC requester",
+          "roleNames": []
+        },
+        "status": "COMPLETED",
+        "taskType": "MULTIPLE_ASYNC"
+      },
+      {
+        "candidates": null,
+        "comment": null,
+        "completeTime": 1791369141000,
+        "createTime": 1791368883000,
+        "id": 2000018,
+        "nodeType": "SERVICE_TASK",
+        "operator": {
+          "accountName": "odc_poc_requester",
+          "id": 10000,
+          "name": "POC requester",
+          "roleNames": []
+        },
+        "status": "COMPLETED",
+        "taskType": "MULTIPLE_ASYNC"
+      },
+      {
+        "candidates": null,
+        "comment": null,
+        "completeTime": 1791369181000,
+        "createTime": 1791368883000,
+        "id": 2000019,
+        "nodeType": "SERVICE_TASK",
+        "operator": {
+          "accountName": "odc_poc_requester",
+          "id": 10000,
+          "name": "POC requester",
+          "roleNames": []
+        },
+        "status": "COMPLETED",
+        "taskType": "MULTIPLE_ASYNC"
+      }
+    ],
+    "parameters": {
+      "autoErrorStrategy": "ABORT",
+      "batchId": 4,
+      "databases": [
+        {
+          "dataSource": {
+            "id": 1000001,
+            "name": "odc-poc-dev",
+            "type": "ORACLE"
+          },
+          "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+          "environment": {
+            "id": 1,
+            "name": "dev"
+          },
+          "id": 1000069,
+          "name": "ODC_POC_20261004_DEV",
+          "project": {
+            "id": 1,
+            "name": "odc-oracle-poc"
+          }
+        },
+        {
+          "dataSource": {
+            "id": 1000002,
+            "name": "odc-poc-sit",
+            "type": "ORACLE"
+          },
+          "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+          "environment": {
+            "id": 2,
+            "name": "sit"
+          },
+          "id": 1000122,
+          "name": "ODC_POC_20261004_SIT",
+          "project": {
+            "id": 1,
+            "name": "odc-oracle-poc"
+          }
+        },
+        {
+          "dataSource": {
+            "id": 1000003,
+            "name": "odc-poc-uat",
+            "type": "ORACLE"
+          },
+          "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+          "environment": {
+            "id": 1000021,
+            "name": "POCUAT"
+          },
+          "id": 1000184,
+          "name": "ODC_POC_20261004_UAT",
+          "project": {
+            "id": 1,
+            "name": "odc-oracle-poc"
+          }
+        },
+        {
+          "dataSource": {
+            "id": 1000004,
+            "name": "odc-poc-mockprod",
+            "type": "ORACLE"
+          },
+          "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+          "environment": {
+            "id": 1000022,
+            "name": "POCPROD"
+          },
+          "id": 1000218,
+          "name": "ODC_POC_20261004_MOCKPROD",
+          "project": {
+            "id": 1,
+            "name": "odc-oracle-poc"
+          }
+        }
+      ],
+      "delimiter": ";",
+      "errorStrategy": "ABORT",
+      "flowTaskExecutionStrategy": "MANUAL",
+      "manualTimeoutMillis": 3600000,
+      "orderedDatabaseIds": [
+        [
+          1000069
+        ],
+        [
+          1000122
+        ],
+        [
+          1000184
+        ],
+        [
+          1000218
+        ]
+      ],
+      "project": {
+        "id": 1,
+        "name": "odc-oracle-poc"
+      },
+      "projectId": 1,
+      "queryLimit": 100,
+      "retryTimes": 0,
+      "sqlContent": "CREATE TABLE P7_BATCH_HAPPY (ID NUMBER PRIMARY KEY, NOTE VARCHAR2(60));\n",
+      "sqlObjectNames": null,
+      "timeoutMillis": 120000
+    },
+    "progressPercentage": 100.0,
+    "project": {
+      "createTime": 1791073053000,
+      "creator": {
+        "accountName": "odc_poc_executor",
+        "id": 10002,
+        "name": "POC executor",
+        "roleNames": []
+      },
+      "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+      "id": 1,
+      "name": "odc-oracle-poc",
+      "updateTime": 1791073053000
+    },
+    "projectId": 1,
+    "status": "EXECUTION_SUCCEEDED",
+    "type": "MULTIPLE_ASYNC"
+  },
+  "evidence": {
+    "timestamp": "2026-10-07T10:33:15.823174+00:00",
+    "ticket_id": 2000003,
+    "detail": {
+      "affectedRows": null,
+      "approvable": false,
+      "completeTime": 1791369181000,
+      "createTime": 1791368883000,
+      "creator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      },
+      "database": {
+        "connectType": "ORACLE",
+        "dataSource": {
+          "connectType": "CONNECT_TYPE_OB",
+          "createTime": 1791074334000,
+          "creatorId": 1,
+          "defaultSchema": "ODC_POC_20261004_DEV",
+          "environmentId": 1,
+          "host": "adb.ap-mumbai-1.oraclecloud.com",
+          "id": 1000001,
+          "name": "odc-poc-dev",
+          "port": 1521,
+          "projectId": 1,
+          "serviceName": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+          "status": null,
+          "type": "ORACLE",
+          "updateTime": 1791074334000,
+          "username": "ODC_POC_20261004_DEV"
+        },
+        "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+        "environment": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "id": 1000069,
+        "name": "ODC_POC_20261004_DEV",
+        "project": {
+          "createTime": null,
+          "creator": null,
+          "description": null,
+          "id": 1,
+          "name": null,
+          "updateTime": null
+        },
+        "type": "PHYSICAL"
+      },
+      "description": "app=odc-adoption-poc; release=20261007-B1; ref=native-four-stage",
+      "executionStrategy": "MANUAL",
+      "executionTime": null,
+      "id": 2000003,
+      "nodeList": [
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": 1791368893000,
+          "createTime": 1791368883000,
+          "id": 2000011,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "COMPLETED",
+          "taskType": "PRE_CHECK"
+        },
+        {
+          "candidates": [
+            {
+              "accountName": "admin",
+              "id": 1,
+              "name": "admin",
+              "roleNames": [
+                "system_admin"
+              ]
+            },
+            {
+              "accountName": "odc_poc_approver",
+              "id": 10001,
+              "name": "POC approver",
+              "roleNames": []
+            }
+          ],
+          "comment": "Practical POC reviewed SQL and exact isolated target; actor approver",
+          "completeTime": 1791368894000,
+          "createTime": 1791368883000,
+          "id": 2000012,
+          "nodeType": "APPROVAL_TASK",
+          "operator": {
+            "accountName": "odc_poc_approver",
+            "id": 10001,
+            "name": "POC approver",
+            "roleNames": []
+          },
+          "status": "COMPLETED",
+          "taskType": null
+        },
+        {
+          "candidates": [
+            {
+              "accountName": "odc_poc_executor",
+              "id": 10002,
+              "name": "POC executor",
+              "roleNames": []
+            }
+          ],
+          "comment": "Practical POC reviewed SQL and exact isolated target; actor executor",
+          "completeTime": 1791368895000,
+          "createTime": 1791368883000,
+          "id": 2000013,
+          "nodeType": "APPROVAL_TASK",
+          "operator": {
+            "accountName": "odc_poc_executor",
+            "id": 10002,
+            "name": "POC executor",
+            "roleNames": []
+          },
+          "status": "COMPLETED",
+          "taskType": null
+        },
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": 1791368910000,
+          "createTime": 1791368883000,
+          "id": 2000016,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "COMPLETED",
+          "taskType": "MULTIPLE_ASYNC"
+        },
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": 1791369099000,
+          "createTime": 1791368883000,
+          "id": 2000017,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "COMPLETED",
+          "taskType": "MULTIPLE_ASYNC"
+        },
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": 1791369141000,
+          "createTime": 1791368883000,
+          "id": 2000018,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "COMPLETED",
+          "taskType": "MULTIPLE_ASYNC"
+        },
+        {
+          "candidates": null,
+          "comment": null,
+          "completeTime": 1791369181000,
+          "createTime": 1791368883000,
+          "id": 2000019,
+          "nodeType": "SERVICE_TASK",
+          "operator": {
+            "accountName": "odc_poc_requester",
+            "id": 10000,
+            "name": "POC requester",
+            "roleNames": []
+          },
+          "status": "COMPLETED",
+          "taskType": "MULTIPLE_ASYNC"
+        }
+      ],
+      "parameters": {
+        "autoErrorStrategy": "ABORT",
+        "batchId": 4,
+        "databases": [
+          {
+            "dataSource": {
+              "id": 1000001,
+              "name": "odc-poc-dev",
+              "type": "ORACLE"
+            },
+            "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+            "environment": {
+              "id": 1,
+              "name": "dev"
+            },
+            "id": 1000069,
+            "name": "ODC_POC_20261004_DEV",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          {
+            "dataSource": {
+              "id": 1000002,
+              "name": "odc-poc-sit",
+              "type": "ORACLE"
+            },
+            "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+            "environment": {
+              "id": 2,
+              "name": "sit"
+            },
+            "id": 1000122,
+            "name": "ODC_POC_20261004_SIT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          {
+            "dataSource": {
+              "id": 1000003,
+              "name": "odc-poc-uat",
+              "type": "ORACLE"
+            },
+            "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+            "environment": {
+              "id": 1000021,
+              "name": "POCUAT"
+            },
+            "id": 1000184,
+            "name": "ODC_POC_20261004_UAT",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          },
+          {
+            "dataSource": {
+              "id": 1000004,
+              "name": "odc-poc-mockprod",
+              "type": "ORACLE"
+            },
+            "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+            "environment": {
+              "id": 1000022,
+              "name": "POCPROD"
+            },
+            "id": 1000218,
+            "name": "ODC_POC_20261004_MOCKPROD",
+            "project": {
+              "id": 1,
+              "name": "odc-oracle-poc"
+            }
+          }
+        ],
+        "delimiter": ";",
+        "errorStrategy": "ABORT",
+        "flowTaskExecutionStrategy": "MANUAL",
+        "manualTimeoutMillis": 3600000,
+        "orderedDatabaseIds": [
+          [
+            1000069
+          ],
+          [
+            1000122
+          ],
+          [
+            1000184
+          ],
+          [
+            1000218
+          ]
+        ],
+        "project": {
+          "id": 1,
+          "name": "odc-oracle-poc"
+        },
+        "projectId": 1,
+        "queryLimit": 100,
+        "retryTimes": 0,
+        "sqlContent": "CREATE TABLE P7_BATCH_HAPPY (ID NUMBER PRIMARY KEY, NOTE VARCHAR2(60));\n",
+        "sqlObjectNames": null,
+        "timeoutMillis": 120000
+      },
+      "progressPercentage": 100.0,
+      "project": {
+        "createTime": 1791073053000,
+        "creator": {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        },
+        "description": "Isolated Oracle schemas; real API and UI POC, 2026-10-04",
+        "id": 1,
+        "name": "odc-oracle-poc",
+        "updateTime": 1791073053000
+      },
+      "projectId": 1,
+      "status": "EXECUTION_SUCCEEDED",
+      "type": "MULTIPLE_ASYNC"
+    },
+    "result": {
+      "http_status": 200,
+      "successful": true,
+      "data": {
+        "contents": [
+          {
+            "databaseChangingRecordList": [
+              {
+                "database": {
+                  "dataSource": {
+                    "id": 1000001,
+                    "name": "odc-poc-dev",
+                    "type": "ORACLE"
+                  },
+                  "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+                  "environment": {
+                    "id": 1,
+                    "name": "dev"
+                  },
+                  "id": 1000069,
+                  "name": "ODC_POC_20261004_DEV",
+                  "project": {
+                    "id": 1,
+                    "name": "odc-oracle-poc"
+                  }
+                },
+                "flowInstanceDetailResp": {
+                  "completeTime": 1791368907712,
+                  "createTime": 1791368883507,
+                  "executionTime": null,
+                  "id": 2000003,
+                  "progressPercentage": 100.0
+                },
+                "status": "EXECUTION_SUCCEEDED"
+              },
+              {
+                "database": {
+                  "dataSource": {
+                    "id": 1000002,
+                    "name": "odc-poc-sit",
+                    "type": "ORACLE"
+                  },
+                  "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+                  "environment": {
+                    "id": 2,
+                    "name": "sit"
+                  },
+                  "id": 1000122,
+                  "name": "ODC_POC_20261004_SIT",
+                  "project": {
+                    "id": 1,
+                    "name": "odc-oracle-poc"
+                  }
+                },
+                "flowInstanceDetailResp": {
+                  "completeTime": 1791369097361,
+                  "createTime": 1791368883508,
+                  "executionTime": null,
+                  "id": 2000003,
+                  "progressPercentage": 100.0
+                },
+                "status": "EXECUTION_SUCCEEDED"
+              },
+              {
+                "database": {
+                  "dataSource": {
+                    "id": 1000003,
+                    "name": "odc-poc-uat",
+                    "type": "ORACLE"
+                  },
+                  "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+                  "environment": {
+                    "id": 1000021,
+                    "name": "POCUAT"
+                  },
+                  "id": 1000184,
+                  "name": "ODC_POC_20261004_UAT",
+                  "project": {
+                    "id": 1,
+                    "name": "odc-oracle-poc"
+                  }
+                },
+                "flowInstanceDetailResp": {
+                  "completeTime": 1791369139391,
+                  "createTime": 1791368883508,
+                  "executionTime": null,
+                  "id": 2000003,
+                  "progressPercentage": 100.0
+                },
+                "status": "EXECUTION_SUCCEEDED"
+              },
+              {
+                "database": {
+                  "dataSource": {
+                    "id": 1000004,
+                    "name": "odc-poc-mockprod",
+                    "type": "ORACLE"
+                  },
+                  "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+                  "environment": {
+                    "id": 1000022,
+                    "name": "POCPROD"
+                  },
+                  "id": 1000218,
+                  "name": "ODC_POC_20261004_MOCKPROD",
+                  "project": {
+                    "id": 1,
+                    "name": "odc-oracle-poc"
+                  }
+                },
+                "flowInstanceDetailResp": {
+                  "completeTime": 1791369178795,
+                  "createTime": 1791368883508,
+                  "executionTime": null,
+                  "id": 2000003,
+                  "progressPercentage": 100.0
+                },
+                "status": "EXECUTION_SUCCEEDED"
+              }
+            ]
+          }
+        ]
+      },
+      "error": null
+    },
+    "log": {
+      "http_status": 200,
+      "successful": true,
+      "data": "2026-10-07 18:28:20 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Multiple database task start, taskId=2000006, batchId=1\n2026-10-07 18:28:20 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Creating callback database change thread for database, databaseId = 1000069. taskId = 2000006\n2026-10-07 18:28:20 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Starting database change task for databaseId=1000069\n2026-10-07 18:28:30 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Multiple database task succeed, taskId=2000006, batchId=1\n2026-10-07 18:31:29 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Multiple database task start, taskId=2000006, batchId=2\n2026-10-07 18:31:29 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Creating callback database change thread for database, databaseId = 1000122. taskId = 2000006\n2026-10-07 18:31:29 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Starting database change task for databaseId=1000122\n2026-10-07 18:31:39 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Multiple database task succeed, taskId=2000006, batchId=2\n2026-10-07 18:32:11 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Multiple database task start, taskId=2000006, batchId=3\n2026-10-07 18:32:11 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Creating callback database change thread for database, databaseId = 1000184. taskId = 2000006\n2026-10-07 18:32:11 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Starting database change task for databaseId=1000184\n2026-10-07 18:32:21 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Multiple database task succeed, taskId=2000006, batchId=3\n2026-10-07 18:32:51 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Multiple database task start, taskId=2000006, batchId=4\n2026-10-07 18:32:51 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Creating callback database change thread for database, databaseId = 1000218. taskId = 2000006\n2026-10-07 18:32:51 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Starting database change task for databaseId=1000218\n2026-10-07 18:33:01 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Multiple database task succeed, taskId=2000006, batchId=4\n",
+      "error": null
+    },
+    "async_result": {
+      "http_status": 400,
+      "successful": false,
+      "data": null,
+      "error": {
+        "code": "BadRequest",
+        "message": "Bad request. Details: BadRequest exception, type=NullPointerException, message=Cannot invoke \"Object.toString()\" because \"parameterValue\" is null."
+      }
+    },
+    "attachment": {
+      "http_status": 417,
+      "bytes": 666,
+      "sha256": "197bd333df4e5f432b9be15589302ddb3ee3ff5b8c292c81ead09f83f1a98eee",
+      "zip": false
+    },
+    "log_download": {
+      "http_status": 200,
+      "bytes": 2340,
+      "sha256": "1f00f66664a567b4eea7d74657eca11e5e46adf843fe5a553e406084d95a4836",
+      "zip": false,
+      "text": "2026-10-07 18:28:20 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Multiple database task start, taskId=2000006, batchId=1\n2026-10-07 18:28:20 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Creating callback database change thread for database, databaseId = 1000069. taskId = 2000006\n2026-10-07 18:28:20 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Starting database change task for databaseId=1000069\n2026-10-07 18:28:30 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Multiple database task succeed, taskId=2000006, batchId=1\n2026-10-07 18:31:29 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Multiple database task start, taskId=2000006, batchId=2\n2026-10-07 18:31:29 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Creating callback database change thread for database, databaseId = 1000122. taskId = 2000006\n2026-10-07 18:31:29 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Starting database change task for databaseId=1000122\n2026-10-07 18:31:39 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Multiple database task succeed, taskId=2000006, batchId=2\n2026-10-07 18:32:11 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Multiple database task start, taskId=2000006, batchId=3\n2026-10-07 18:32:11 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Creating callback database change thread for database, databaseId = 1000184. taskId = 2000006\n2026-10-07 18:32:11 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Starting database change task for databaseId=1000184\n2026-10-07 18:32:21 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Multiple database task succeed, taskId=2000006, batchId=3\n2026-10-07 18:32:51 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Multiple database task start, taskId=2000006, batchId=4\n2026-10-07 18:32:51 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Creating callback database change thread for database, databaseId = 1000218. taskId = 2000006\n2026-10-07 18:32:51 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Starting database change task for databaseId=1000218\n2026-10-07 18:33:01 INFO c.o.o.s.f.t.MultipleDatabaseChangeRuntimeFlowableTask - Multiple database task succeed, taskId=2000006, batchId=4\n"
+    }
+  },
+  "native_target_records": [
+    {
+      "database": {
+        "dataSource": {
+          "id": 1000001,
+          "name": "odc-poc-dev",
+          "type": "ORACLE"
+        },
+        "databaseId": "DCC96473-125A-427D-9334-B0F2BB73BB22",
+        "environment": {
+          "id": 1,
+          "name": "dev"
+        },
+        "id": 1000069,
+        "name": "ODC_POC_20261004_DEV",
+        "project": {
+          "id": 1,
+          "name": "odc-oracle-poc"
+        }
+      },
+      "flowInstanceDetailResp": {
+        "completeTime": 1791368907712,
+        "createTime": 1791368883507,
+        "executionTime": null,
+        "id": 2000003,
+        "progressPercentage": 100.0
+      },
+      "status": "EXECUTION_SUCCEEDED"
+    },
+    {
+      "database": {
+        "dataSource": {
+          "id": 1000002,
+          "name": "odc-poc-sit",
+          "type": "ORACLE"
+        },
+        "databaseId": "5B473FA9-E5F5-4DC6-8580-0FB588AEF5E0",
+        "environment": {
+          "id": 2,
+          "name": "sit"
+        },
+        "id": 1000122,
+        "name": "ODC_POC_20261004_SIT",
+        "project": {
+          "id": 1,
+          "name": "odc-oracle-poc"
+        }
+      },
+      "flowInstanceDetailResp": {
+        "completeTime": 1791369097361,
+        "createTime": 1791368883508,
+        "executionTime": null,
+        "id": 2000003,
+        "progressPercentage": 100.0
+      },
+      "status": "EXECUTION_SUCCEEDED"
+    },
+    {
+      "database": {
+        "dataSource": {
+          "id": 1000003,
+          "name": "odc-poc-uat",
+          "type": "ORACLE"
+        },
+        "databaseId": "889C7959-1AE0-4AF7-B31F-B8432CE564A4",
+        "environment": {
+          "id": 1000021,
+          "name": "POCUAT"
+        },
+        "id": 1000184,
+        "name": "ODC_POC_20261004_UAT",
+        "project": {
+          "id": 1,
+          "name": "odc-oracle-poc"
+        }
+      },
+      "flowInstanceDetailResp": {
+        "completeTime": 1791369139391,
+        "createTime": 1791368883508,
+        "executionTime": null,
+        "id": 2000003,
+        "progressPercentage": 100.0
+      },
+      "status": "EXECUTION_SUCCEEDED"
+    },
+    {
+      "database": {
+        "dataSource": {
+          "id": 1000004,
+          "name": "odc-poc-mockprod",
+          "type": "ORACLE"
+        },
+        "databaseId": "C8D16EA9-F407-458F-8539-A55899DF46EC",
+        "environment": {
+          "id": 1000022,
+          "name": "POCPROD"
+        },
+        "id": 1000218,
+        "name": "ODC_POC_20261004_MOCKPROD",
+        "project": {
+          "id": 1,
+          "name": "odc-oracle-poc"
+        }
+      },
+      "flowInstanceDetailResp": {
+        "completeTime": 1791369178795,
+        "createTime": 1791368883508,
+        "executionTime": null,
+        "id": 2000003,
+        "progressPercentage": 100.0
+      },
+      "status": "EXECUTION_SUCCEEDED"
+    }
+  ]
+}

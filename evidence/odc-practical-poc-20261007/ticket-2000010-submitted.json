@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-07T10:34:24.552746+00:00",
+  "request": {
+    "databaseId": 1000218,
+    "taskType": "ASYNC",
+    "executionStrategy": "MANUAL",
+    "description": "application=odc-adoption-poc; release=0.1.0-poc; git-ref=practical-poc-20261007/E1",
+    "parameters": {
+      "sqlContent": "SELECT 'P7_SAFE_DUPLICATE' AS MARKER FROM DUAL;\n",
+      "timeoutMillis": 120000,
+      "errorStrategy": "ABORT",
+      "generateRollbackPlan": false,
+      "queryLimit": 100,
+      "delimiter": ";",
+      "retryTimes": 0,
+      "markAsFailedWhenAnyErrorsHappened": true
+    }
+  },
+  "response": {
+    "contents": [
+      {
+        "affectedRows": null,
+        "approvable": false,
+        "completeTime": null,
+        "createTime": null,
+        "creator": null,
+        "database": null,
+        "description": null,
+        "executionStrategy": null,
+        "executionTime": null,
+        "id": 2000010,
+        "nodeList": null,
+        "parameters": null,
+        "progressPercentage": 0.0,
+        "project": null,
+        "projectId": null,
+        "status": null,
+        "type": "ASYNC"
+      }
+    ]
+  }
+}

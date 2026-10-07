@@ -1,0 +1,112 @@
+[
+  {
+    "commit": "3aa1238a471afca2579e76e6fbf0a922d9be5579",
+    "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/action/ChangeActionForApproval.java",
+    "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/action/ChangeActionForApproval.java",
+    "local_path": "evaluation/research-round-2/coordinator/source/clouddm-v4.3.0__ChangeActionForApproval.java",
+    "sha256": "68dba484a7781739a3864eb23e04e07338a69ecc63cb2fdb8f0baa09ef6a2c08",
+    "byte_identical_to_inspected_pin": true,
+    "compared_to_commit": "a9f16e78b8288c9a4158ee9df4378ee16b80021e",
+    "status": "FETCHED"
+  },
+  {
+    "commit": "3aa1238a471afca2579e76e6fbf0a922d9be5579",
+    "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/execute/impl/AutoExecServiceImpl.java",
+    "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/execute/impl/AutoExecServiceImpl.java",
+    "local_path": "evaluation/research-round-2/coordinator/source/clouddm-v4.3.0__AutoExecServiceImpl.java",
+    "sha256": "f02c1323a8a2c61f8bdfa36cafd031db5dc82d2dddd9c34b9d7a952c21e9f76e",
+    "byte_identical_to_inspected_pin": true,
+    "compared_to_commit": "a9f16e78b8288c9a4158ee9df4378ee16b80021e",
+    "status": "FETCHED"
+  },
+  {
+    "commit": "3aa1238a471afca2579e76e6fbf0a922d9be5579",
+    "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/approval/ApprovalControlServiceImpl.java",
+    "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/approval/ApprovalControlServiceImpl.java",
+    "local_path": "evaluation/research-round-2/coordinator/source/clouddm-v4.3.0__ApprovalControlServiceImpl.java",
+    "sha256": "1337c28c300b375d7c8a740cb1525c6b0d5d651d8e1f749f2664ab30f1ccb0df",
+    "byte_identical_to_inspected_pin": true,
+    "compared_to_commit": "a9f16e78b8288c9a4158ee9df4378ee16b80021e",
+    "status": "FETCHED"
+  },
+  {
+    "commit": "3aa1238a471afca2579e76e6fbf0a922d9be5579",
+    "path": "backend/clouddm-plugins/clouddm-ds/dsc-common-oracle/src/main/java/com/clougence/clouddm/dsfamily/oracle/execute/OraSession.java",
+    "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-plugins/clouddm-ds/dsc-common-oracle/src/main/java/com/clougence/clouddm/dsfamily/oracle/execute/OraSession.java",
+    "local_path": "evaluation/research-round-2/coordinator/source/clouddm-v4.3.0__OraSession.java",
+    "sha256": "9a7df3aa2373243d66d916c9c793780d0c2479ea277c40e902ffcd651c630b79",
+    "byte_identical_to_inspected_pin": true,
+    "compared_to_commit": "a9f16e78b8288c9a4158ee9df4378ee16b80021e",
+    "status": "FETCHED"
+  },
+  {
+    "commit": "3aa1238a471afca2579e76e6fbf0a922d9be5579",
+    "path": "backend/clouddm-platform/cgdm-sidecar/src/main/java/com/clougence/clouddm/worker/component/autoexec/AutoExecJob.java",
+    "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-sidecar/src/main/java/com/clougence/clouddm/worker/component/autoexec/AutoExecJob.java",
+    "local_path": "evaluation/research-round-2/coordinator/source/clouddm-v4.3.0__AutoExecJob.java",
+    "sha256": "cd3271f280b577f97db255a8c3457369aa02354dde5706f075641460315e86fd",
+    "byte_identical_to_inspected_pin": true,
+    "compared_to_commit": "a9f16e78b8288c9a4158ee9df4378ee16b80021e",
+    "status": "FETCHED"
+  },
+  {
+    "commit": "3aa1238a471afca2579e76e6fbf0a922d9be5579",
+    "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/cicd/DmChangeServiceImpl.java",
+    "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/service/cicd/DmChangeServiceImpl.java",
+    "local_path": "evaluation/research-round-2/coordinator/source/clouddm-v4.3.0__DmChangeServiceImpl.java",
+    "sha256": "1955bb9e7a575f07025685cc888d3c87dc80e2d2b50589da301c77982df0f80d",
+    "byte_identical_to_inspected_pin": true,
+    "compared_to_commit": "a9f16e78b8288c9a4158ee9df4378ee16b80021e",
+    "status": "FETCHED"
+  },
+  {
+    "commit": "3aa1238a471afca2579e76e6fbf0a922d9be5579",
+    "path": "backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/java/com/clougence/sql/oracle/parser/OraSplitAnalysisSpi.java",
+    "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/java/com/clougence/sql/oracle/parser/OraSplitAnalysisSpi.java",
+    "local_path": "evaluation/research-round-2/coordinator/source/clouddm-v4.3.0__OraSplitAnalysisSpi.java",
+    "sha256": "12d8eb2937cc7cfb0caf392d9582f0462063a27534e8cd9b1e3ea07bf754178a",
+    "byte_identical_to_inspected_pin": true,
+    "compared_to_commit": "a9f16e78b8288c9a4158ee9df4378ee16b80021e",
+    "status": "FETCHED"
+  },
+  {
+    "commit": "3aa1238a471afca2579e76e6fbf0a922d9be5579",
+    "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/analysis/impl/QueryAnalysisServiceImpl.java",
+    "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/analysis/impl/QueryAnalysisServiceImpl.java",
+    "local_path": "evaluation/research-round-2/coordinator/source/clouddm-v4.3.0__QueryAnalysisServiceImpl.java",
+    "sha256": "079cad6c56b4dab4cdbb91d35dd4d2d7dcc5024877474bec07aa5f60fe977165",
+    "byte_identical_to_inspected_pin": true,
+    "compared_to_commit": "a9f16e78b8288c9a4158ee9df4378ee16b80021e",
+    "status": "FETCHED"
+  },
+  {
+    "commit": "3aa1238a471afca2579e76e6fbf0a922d9be5579",
+    "path": "backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/scripts/V202607210001__gitlab_cicd_source.java",
+    "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/scripts/V202607210001__gitlab_cicd_source.java",
+    "local_path": "evaluation/research-round-2/coordinator/source/clouddm-v4.3.0__V202607210001__gitlab_cicd_source.java",
+    "sha256": "a451b26553aed5ba2158cca8052d018b617191f463100e41450d35bd244108b6",
+    "byte_identical_to_inspected_pin": true,
+    "compared_to_commit": "a9f16e78b8288c9a4158ee9df4378ee16b80021e",
+    "status": "FETCHED"
+  },
+  {
+    "commit": "3aa1238a471afca2579e76e6fbf0a922d9be5579",
+    "path": "backend/clouddm-platform/cgdm-plugin-sdk/src/main/java/com/clougence/clouddm/sdk/execute/session/QueryRequest.java",
+    "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-platform/cgdm-plugin-sdk/src/main/java/com/clougence/clouddm/sdk/execute/session/QueryRequest.java",
+    "local_path": "evaluation/research-round-2/coordinator/source/clouddm-v4.3.0__QueryRequest.java",
+    "sha256": "b4ac24fc1971ca9a2a33d05b05102a1f038ffa04672efd964f6f06c48be6efe6",
+    "byte_identical_to_inspected_pin": true,
+    "compared_to_commit": "a9f16e78b8288c9a4158ee9df4378ee16b80021e",
+    "status": "FETCHED"
+  },
+  {
+    "commit": "3aa1238a471afca2579e76e6fbf0a922d9be5579",
+    "path": "backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/java/com/clougence/sql/oracle/parser/OraDslProvider.java",
+    "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/3aa1238a471afca2579e76e6fbf0a922d9be5579/backend/clouddm-plugins/clouddm-sql/sql-oracle/src/main/java/com/clougence/sql/oracle/parser/OraDslProvider.java",
+    "local_path": "evaluation/research-round-2/coordinator/source/clouddm-v4.3.0__OraDslProvider.java",
+    "sha256": "cf03e6426fff98b4aafb55ffe7117ee9f4117d2f2b5c06aa93c70b83c2d1e186",
+    "byte_identical_to_inspected_pin": true,
+    "compared_to_commit": "a9f16e78b8288c9a4158ee9df4378ee16b80021e",
+    "status": "FETCHED"
+  }
+]

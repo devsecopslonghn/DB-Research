@@ -1,0 +1,356 @@
+{
+  "timestamp": "2026-10-07T10:51:56.885092+00:00",
+  "scope": "Only the five practical adoption areas",
+  "cases": [
+    {
+      "case_id": "A1",
+      "timestamp": "2026-10-07T10:25:41.266339+00:00",
+      "odc_version": "4.4.1-20260116",
+      "oracle_version": "Oracle AI Database 26ai EE 23.26.4.1.0",
+      "datasource_id": [
+        1000004
+      ],
+      "database_schema_id": [
+        1000218
+      ],
+      "ticket_id": [
+        2000001
+      ],
+      "requester": "odc_poc_requester (10000, DEVELOPER)",
+      "reviewer": [
+        "odc_poc_approver (10001, OWNER)",
+        "odc_poc_executor (10002, DBA)"
+      ],
+      "executor": "odc_poc_executor (10002, DBA)",
+      "sql_artifact_reference": "a-role-journey.sql",
+      "expected": "Distinct requester, OWNER/DBA approval, DBA Execute, visible SQL/target/result",
+      "observed": "Requester self-approval 404/NotFound with failed audit; OWNER then DBA approve; DBA Execute audit 3000029; task node incorrectly labels requester; table exists and result/log/history readable",
+      "result": "PASS",
+      "evidence_links": [
+        "a1.json"
+      ]
+    },
+    {
+      "case_id": "A2",
+      "timestamp": "2026-10-07T10:27:42.752540+00:00",
+      "odc_version": "4.4.1-20260116",
+      "oracle_version": "Oracle AI Database 26ai EE 23.26.4.1.0",
+      "datasource_id": [
+        1000004
+      ],
+      "database_schema_id": [
+        1000218
+      ],
+      "ticket_id": [
+        2000002
+      ],
+      "requester": "odc_poc_requester (10000, DEVELOPER)",
+      "reviewer": [
+        "odc_poc_approver (10001, OWNER)",
+        "odc_poc_executor (10002, DBA)"
+      ],
+      "executor": "odc_poc_requester (10000)",
+      "sql_artifact_reference": "ticket-2000002-submitted.json",
+      "expected": "Observe requester Execute after independent approval and classify policy",
+      "observed": "Allowed after OWNER/DBA approval; Execute audit 3000036 actor 10000; ACCEPTABLE_BY_POLICY under stated provisional pilot policy, NOT_ACCEPTABLE_BY_POLICY if enforced DBA-only required",
+      "result": "PASS",
+      "evidence_links": [
+        "a2.json"
+      ]
+    },
+    {
+      "case_id": "B1",
+      "timestamp": "2026-10-07T10:28:02.979835+00:00",
+      "odc_version": "4.4.1-20260116",
+      "oracle_version": "Oracle AI Database 26ai EE 23.26.4.1.0",
+      "datasource_id": [
+        1000001,
+        1000002,
+        1000003,
+        1000004
+      ],
+      "database_schema_id": [
+        1000069,
+        1000122,
+        1000184,
+        1000218
+      ],
+      "ticket_id": [
+        2000003
+      ],
+      "requester": "odc_poc_requester (10000, DEVELOPER)",
+      "reviewer": [
+        "odc_poc_approver (10001, OWNER)",
+        "odc_poc_executor (10002, DBA)"
+      ],
+      "executor": "odc_poc_executor (10002, DBA)",
+      "sql_artifact_reference": "b1-native-batch.sql",
+      "expected": "One native ordered batch, manual environment boundaries and all four targets succeed",
+      "observed": "One MULTIPLE_ASYNC ticket; native per-target records all succeed; each continuation invokes parent Execute; later targets wait and object absent before their continuation; binary returns per-target records referencing parent ID rather than queried separate child records",
+      "result": "PASS",
+      "evidence_links": [
+        "b1.json"
+      ]
+    },
+    {
+      "case_id": "B2",
+      "timestamp": "2026-10-07T10:34:06.280700+00:00",
+      "odc_version": "4.4.1-20260116",
+      "oracle_version": "Oracle AI Database 26ai EE 23.26.4.1.0",
+      "datasource_id": [
+        1000001,
+        1000002,
+        1000003,
+        1000004
+      ],
+      "database_schema_id": [
+        1000069,
+        1000122,
+        1000184,
+        1000218
+      ],
+      "ticket_id": [
+        2000008
+      ],
+      "requester": "odc_poc_requester (10000, DEVELOPER)",
+      "reviewer": [
+        "odc_poc_approver (10001, OWNER)",
+        "odc_poc_executor (10002, DBA)"
+      ],
+      "executor": "odc_poc_executor (10002, DBA)",
+      "sql_artifact_reference": "b2-controlled-failure.sql",
+      "expected": "Controlled SIT failure visible; later UAT/MOCKPROD do not run without operator continuation",
+      "observed": "DEV succeeded, SIT failed before CREATE, UAT/MOCKPROD stayed WAIT_FOR_EXECUTION; no table in SIT/UAT/MOCKPROD; operator cancelled new batch; MANUAL+ABORT pauses rather than terminally failing parent",
+      "result": "PASS",
+      "evidence_links": [
+        "b2.json"
+      ]
+    },
+    {
+      "case_id": "C1",
+      "timestamp": "2026-10-07T10:30:37.648807+00:00",
+      "odc_version": "4.4.1-20260116",
+      "oracle_version": "Oracle AI Database 26ai EE 23.26.4.1.0",
+      "datasource_id": [
+        1000001
+      ],
+      "database_schema_id": [
+        1000069
+      ],
+      "ticket_id": [
+        2000004
+      ],
+      "requester": "odc_poc_requester (10000, DEVELOPER)",
+      "reviewer": [
+        "Existing DEV automatic approval"
+      ],
+      "executor": "odc_poc_executor (10002, DBA)",
+      "sql_artifact_reference": "c1-function.sql",
+      "expected": "EDITIONABLE function/slash succeeds over intended Oracle/TCPS; VALID; no compile ERROR",
+      "observed": "Task success; DEV FUNCTION P7_VALID_FN VALID; USER_ERRORS empty; function(35)=42; service/PDB/protocol captured through ODC",
+      "result": "PASS",
+      "evidence_links": [
+        "c1.json"
+      ]
+    },
+    {
+      "case_id": "C2",
+      "timestamp": "2026-10-07T10:31:52.665736+00:00",
+      "odc_version": "4.4.1-20260116",
+      "oracle_version": "Oracle AI Database 26ai EE 23.26.4.1.0",
+      "datasource_id": [
+        1000001
+      ],
+      "database_schema_id": [
+        1000069
+      ],
+      "ticket_id": [
+        2000006
+      ],
+      "requester": "odc_poc_requester (10000, DEVELOPER)",
+      "reviewer": [
+        "Existing DEV automatic approval"
+      ],
+      "executor": "odc_poc_executor (10002, DBA)",
+      "sql_artifact_reference": "c2-function.sql",
+      "expected": "Observe invalid object and explicit DBA validity/diagnostic check",
+      "observed": "Task EXECUTION_SUCCEEDED while P7_INVALID_FN INVALID; DBA ODC queries reliably expose PLS-00201 and Statement ignored. Explicit pilot check usable; automatic detection remains a shared Bytebase gap",
+      "result": "PARTIAL",
+      "evidence_links": [
+        "c2.json"
+      ]
+    },
+    {
+      "case_id": "D1",
+      "timestamp": "2026-10-07T10:31:37.292806+00:00",
+      "odc_version": "4.4.1-20260116",
+      "oracle_version": "Oracle AI Database 26ai EE 23.26.4.1.0",
+      "datasource_id": [
+        1000001
+      ],
+      "database_schema_id": [
+        1000069
+      ],
+      "ticket_id": [
+        2000005
+      ],
+      "requester": "odc_poc_requester (10000, DEVELOPER)",
+      "reviewer": [
+        "Existing DEV automatic approval"
+      ],
+      "executor": "odc_poc_executor (10002, DBA)",
+      "sql_artifact_reference": "d-success.sql",
+      "expected": "Capture successful ticket metadata/SQL/result/log/download/audit before replacement",
+      "observed": "All captures available HTTP 200; corresponding Execute audit stored",
+      "result": "PASS",
+      "evidence_links": [
+        "d-before.json"
+      ]
+    },
+    {
+      "case_id": "D2",
+      "timestamp": "2026-10-07T10:31:37.292806+00:00",
+      "odc_version": "4.4.1-20260116",
+      "oracle_version": "Oracle AI Database 26ai EE 23.26.4.1.0",
+      "datasource_id": [
+        1000001
+      ],
+      "database_schema_id": [
+        1000069
+      ],
+      "ticket_id": [
+        2000007
+      ],
+      "requester": "odc_poc_requester (10000, DEVELOPER)",
+      "reviewer": [
+        "Existing DEV automatic approval"
+      ],
+      "executor": "odc_poc_executor (10002, DBA)",
+      "sql_artifact_reference": "d-failure.sql",
+      "expected": "Capture failed ticket metadata/SQL/result/log/download/audit before replacement",
+      "observed": "EXECUTION_FAILED from harmless missing table; all captures available HTTP 200; corresponding Execute audit stored",
+      "result": "PASS",
+      "evidence_links": [
+        "d-before.json"
+      ]
+    },
+    {
+      "case_id": "D3",
+      "timestamp": "2026-10-07T10:49:23.760499+00:00",
+      "odc_version": "4.4.1-20260116",
+      "oracle_version": "Oracle AI Database 26ai EE 23.26.4.1.0",
+      "datasource_id": [
+        1000001
+      ],
+      "database_schema_id": [
+        1000069
+      ],
+      "ticket_id": [
+        2000005,
+        2000007
+      ],
+      "requester": "odc_poc_requester (10000, DEVELOPER)",
+      "reviewer": [
+        "Existing DEV automatic approval"
+      ],
+      "executor": "odc_poc_executor (10002, DBA)",
+      "sql_artifact_reference": "d-success.sql; d-failure.sql",
+      "expected": "Compare the same new evidence after separately approved ordinary ODC replacement",
+      "observed": "Approved ordinary ODC replacement completed. Both new tickets: metadata/SQL/audit PRESERVED; logs, result APIs and downloads MISSING. All 96 data/ASYNC files preserve hashes; result API errors forward to retired pod IP 10.244.1.98. Supported persistence/stable-identity fix awaits separate approval.",
+      "result": "FAIL",
+      "evidence_links": [
+        "d-before.json",
+        "d-after.json",
+        "replacement-action.json",
+        "replacement-baseline.json",
+        "cluster-after.json",
+        "retention-config-review.json"
+      ]
+    },
+    {
+      "case_id": "E1",
+      "timestamp": "2026-10-07T10:34:07.380559+00:00",
+      "odc_version": "4.4.1-20260116",
+      "oracle_version": "Oracle AI Database 26ai EE 23.26.4.1.0",
+      "datasource_id": [
+        1000004
+      ],
+      "database_schema_id": [
+        1000218
+      ],
+      "ticket_id": [
+        2000009,
+        2000010
+      ],
+      "requester": "odc_poc_requester (10000, DEVELOPER)",
+      "reviewer": [
+        "odc_poc_approver (10001, OWNER)",
+        "odc_poc_executor (10002, DBA)"
+      ],
+      "executor": "odc_poc_executor (10002, DBA)",
+      "sql_artifact_reference": "e1-duplicate.sql",
+      "expected": "Understand duplicate submission and prior-ticket discovery; execute only idempotent artifact",
+      "observed": "Same SQL/release reference accepted as two tickets; both submissions accepted; GUI-specific duplicate prompts not tested; both harmless SELECT executions succeed, no skip; prior tickets visible together in project listing",
+      "result": "PASS",
+      "evidence_links": [
+        "e1.json"
+      ]
+    },
+    {
+      "case_id": "E2",
+      "timestamp": "2026-10-07T10:35:12.799914+00:00",
+      "odc_version": "4.4.1-20260116",
+      "oracle_version": "Oracle AI Database 26ai EE 23.26.4.1.0",
+      "datasource_id": [
+        1000001
+      ],
+      "database_schema_id": [
+        1000069
+      ],
+      "ticket_id": [
+        2000011,
+        2000012
+      ],
+      "requester": "odc_poc_requester (10000, DEVELOPER)",
+      "reviewer": [
+        "Existing DEV automatic approval"
+      ],
+      "executor": "odc_poc_executor (10002, DBA)",
+      "sql_artifact_reference": "e2-original-error.sql; e2-corrected.sql",
+      "expected": "Normal supported correction; original SQL/history remains available",
+      "observed": "Harmless bad-column SELECT fails; new ticket with corrects-ticket reference succeeds; original SQL/status/results remain retrievable; no automatic version reference established",
+      "result": "PASS",
+      "evidence_links": [
+        "e2.json"
+      ]
+    },
+    {
+      "case_id": "E3",
+      "timestamp": "2026-10-07T10:34:42.463777+00:00",
+      "odc_version": "4.4.1-20260116",
+      "oracle_version": "Oracle AI Database 26ai EE 23.26.4.1.0",
+      "datasource_id": [
+        1000004
+      ],
+      "database_schema_id": [
+        1000218
+      ],
+      "ticket_id": [
+        2000009
+      ],
+      "requester": "odc_poc_requester (10000, DEVELOPER)",
+      "reviewer": [
+        "odc_poc_approver (10001, OWNER)",
+        "odc_poc_executor (10002, DBA)"
+      ],
+      "executor": "odc_poc_executor (10002, DBA)",
+      "sql_artifact_reference": "e1-duplicate.sql",
+      "expected": "Trace application/release/reference to ticket/SQL/target/approvals/result by API",
+      "observed": "Description, stored SQL and exact MOCKPROD database, two approval actors, task result and Execute audit link the chain; Git label is illustrative, not verified SCM integration",
+      "result": "PASS",
+      "evidence_links": [
+        "e3.json"
+      ]
+    }
+  ]
+}

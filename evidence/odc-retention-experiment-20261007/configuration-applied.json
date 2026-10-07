@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-10-07T17:03:21.875362+00:00",
+  "authorization": "Explicit bounded mission attachment authorizes application-only reconciliation pause, prepared patch, rollout and rollback",
+  "actions": [
+    "application.argoproj.io/oceanbase-odc annotated",
+    "deployment.apps/odc patched"
+  ]
+}

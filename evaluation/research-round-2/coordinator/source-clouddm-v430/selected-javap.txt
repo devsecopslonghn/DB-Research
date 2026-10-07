@@ -1,0 +1,497 @@
+### com.clougence.rdp.service.impl.RdpUserServiceImpl / cgdm-console-4.3.0.jar
+
+private void addSubAccountCheck(com.clougence.clouddm.console.web.model.fo.user.AddSubAccountFO, com.clougence.clouddm.platform.dal.model.auth.DmAuthUserDO, boolean, boolean);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #756                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.getAccount:()Ljava/lang/String;
+       5: aload_1
+       6: invokevirtual #759                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.getPhone:()Ljava/lang/String;
+       9: aload_1
+      10: invokevirtual #760                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.getEmail:()Ljava/lang/String;
+      13: aload_2
+      14: aconst_null
+      15: iload_3
+      16: iload         4
+      18: invokevirtual #761                // Method checkSubAccountUniqueOnSave:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO;Ljava/lang/String;ZZ)Ljava/lang/String;
+      21: astore        5
+      23: aload         5
+      25: ifnull        38
+      28: new           #435                // class com/clougence/clouddm/api/common/exception/ErrorMessageException
+      31: dup
+      32: aload         5
+      34: invokespecial #555                // Method com/clougence/clouddm/api/common/exception/ErrorMessageException."<init>":(Ljava/lang/String;)V
+      37: athrow
+      38: aload_0
+      39: getfield      #715                // Field rdpRoleService:Lcom/clougence/clouddm/console/web/service/auth/RdpRoleService;
+      42: aload_1
+      43: invokevirtual #765                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.getRoleId:()J
+      46: invokeinterface #767,  3          // InterfaceMethod com/clougence/clouddm/console/web/service/auth/RdpRoleService.fetchRoleById:(J)Lcom/clougence/clouddm/platform/dal/model/auth/DmAuthRoleDO;
+      51: astore        6
+      53: aload         6
+      55: ifnonnull     75
+      58: new           #435                // class com/clougence/clouddm/api/common/exception/ErrorMessageException
+      61: dup
+      62: getstatic     #771                // Field com/clougence/clouddm/console/web/global/i18n/I18nRdpMsgKeys.USER_ROLE_NOT_EXIST_ERROR:Lcom/clougence/clouddm/console/web/global/i18n/I18nRdpMsgKeys;
+      65: invokevirtual #237                // Method com/clougence/clouddm/console/web/global/i18n/I18nRdpMsgKeys.name:()Ljava/lang/String;
+      68: invokestatic  #305                // Method com/clougence/clouddm/console/web/global/i18n/DmI18nUtils.getMessage:(Ljava/lang/String;)Ljava/lang/String;
+      71: invokespecial #555                // Method com/clougence/clouddm/api/common/exception/ErrorMessageException."<init>":(Ljava/lang/String;)V
+      74: athrow
+      75: aload         6
+      77: invokevirtual #774                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthRoleDO.getOwnerUid:()Ljava/lang/String;
+      80: aload_2
+      81: invokevirtual #568                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getUid:()Ljava/lang/String;
+      84: invokevirtual #777                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      87: ifne          107
+      90: new           #435                // class com/clougence/clouddm/api/common/exception/ErrorMessageException
+      93: dup
+      94: getstatic     #778                // Field com/clougence/clouddm/console/web/global/i18n/I18nRdpMsgKeys.USER_ROLE_IS_NOT_BELONG_YOU_ERROR:Lcom/clougence/clouddm/console/web/global/i18n/I18nRdpMsgKeys;
+      97: invokevirtual #237                // Method com/clougence/clouddm/console/web/global/i18n/I18nRdpMsgKeys.name:()Ljava/lang/String;
+     100: invokestatic  #305                // Method com/clougence/clouddm/console/web/global/i18n/DmI18nUtils.getMessage:(Ljava/lang/String;)Ljava/lang/String;
+     103: invokespecial #555                // Method com/clougence/clouddm/api/common/exception/ErrorMessageException."<init>":(Ljava/lang/String;)V
+     106: athrow
+     107: aload_0
+     108: aload_2
+     109: invokevirtual #568                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getUid:()Ljava/lang/String;
+     112: aload_1
+     113: invokevirtual #781                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.getPassword:()Ljava/lang/String;
+     116: invokevirtual #678                // Method validateSubAccountPwd:(Ljava/lang/String;Ljava/lang/String;)Lcom/clougence/rdp/service/model/ValidateResultMO;
+     119: astore        7
+     121: aload         7
+     123: ifnull        147
+     126: aload         7
+     128: invokevirtual #682                // Method com/clougence/rdp/service/model/ValidateResultMO.isSuccess:()Z
+     131: ifne          147
+     134: new           #435                // class com/clougence/clouddm/api/common/exception/ErrorMessageException
+     137: dup
+     138: aload         7
+     140: invokevirtual #683                // Method com/clougence/rdp/service/model/ValidateResultMO.getErrorMsg:()Ljava/lang/String;
+     143: invokespecial #555                // Method com/clougence/clouddm/api/common/exception/ErrorMessageException."<init>":(Ljava/lang/String;)V
+     146: athrow
+     147: return
+
+### com.clougence.rdp.service.impl.RdpUserServiceImpl / cgdm-console-4.3.0.jar
+
+public com.clougence.rdp.service.model.AddSubAccountMO addSubAccountForBind(java.lang.String, com.clougence.clouddm.platform.dal.model.auth.AccountBindType, com.clougence.clouddm.platform.dal.model.auth.DmAuthUserDO);
+    Code:
+       0: invokestatic  #808                // Method java/lang/System.currentTimeMillis:()J
+       3: invokestatic  #813                // Method java/lang/Long.toHexString:(J)Ljava/lang/String;
+       6: invokedynamic #817,  0            // InvokeDynamic #8:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      11: astore        4
+      13: aload_0
+      14: getfield      #25                 // Field authDal:Lcom/clougence/clouddm/platform/dal/access/AuthDal;
+      17: invokeinterface #29,  1           // InterfaceMethod com/clougence/clouddm/platform/dal/access/AuthDal.userMapper:()Lcom/clougence/clouddm/platform/dal/mapper/auth/DmAuthUserMapper;
+      22: aload_1
+      23: invokeinterface #35,  2           // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/auth/DmAuthUserMapper.queryByUid:(Ljava/lang/String;)Lcom/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO;
+      28: astore        5
+      30: new           #757                // class com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO
+      33: dup
+      34: invokespecial #818                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO."<init>":()V
+      37: astore        6
+      39: aload         6
+      41: aload_3
+      42: invokevirtual #483                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getUsername:()Ljava/lang/String;
+      45: invokevirtual #819                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.setUserName:(Ljava/lang/String;)V
+      48: aload         6
+      50: aconst_null
+      51: invokevirtual #822                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.setAccount:(Ljava/lang/String;)V
+      54: aload         6
+      56: aload_3
+      57: invokevirtual #41                 // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getRoleId:()Ljava/lang/Long;
+      60: invokevirtual #161                // Method java/lang/Long.longValue:()J
+      63: invokevirtual #825                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.setRoleId:(J)V
+      66: aload         6
+      68: aload         4
+      70: invokevirtual #829                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.setPassword:(Ljava/lang/String;)V
+      73: aload         6
+      75: aload_3
+      76: invokevirtual #466                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getEmail:()Ljava/lang/String;
+      79: invokevirtual #832                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.setEmail:(Ljava/lang/String;)V
+      82: aload         6
+      84: aload_3
+      85: invokevirtual #371                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getPhone:()Ljava/lang/String;
+      88: invokevirtual #835                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.setPhone:(Ljava/lang/String;)V
+      91: aload_0
+      92: aload         6
+      94: aload         5
+      96: iconst_0
+      97: iconst_0
+      98: invokevirtual #838                // Method addSubAccountCheck:(Lcom/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO;Lcom/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO;ZZ)V
+     101: goto          120
+     104: astore        6
+     106: new           #842                // class com/clougence/rdp/service/model/AddSubAccountMO
+     109: dup
+     110: iconst_0
+     111: aload         6
+     113: invokevirtual #437                // Method com/clougence/clouddm/api/common/exception/ErrorMessageException.getErrorMessage:()Ljava/lang/String;
+     116: invokespecial #844                // Method com/clougence/rdp/service/model/AddSubAccountMO."<init>":(ZLjava/lang/String;)V
+     119: areturn
+     120: new           #42                 // class com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO
+     123: dup
+     124: invokespecial #845                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO."<init>":()V
+     127: astore        6
+     129: aload         6
+     131: aload_0
+     132: getfield      #608                // Field namingDao:Lcom/clougence/clouddm/platform/dal/access/NamingDao;
+     135: invokeinterface #846,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/NamingDao.genUID:()Ljava/lang/String;
+     140: invokevirtual #849                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setUid:(Ljava/lang/String;)V
+     143: aload         6
+     145: aload_3
+     146: invokevirtual #483                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getUsername:()Ljava/lang/String;
+     149: invokevirtual #852                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setUsername:(Ljava/lang/String;)V
+     152: aload         6
+     154: aload_3
+     155: invokevirtual #855                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getAccount:()Ljava/lang/String;
+     158: invokevirtual #856                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setAccount:(Ljava/lang/String;)V
+     161: aload         6
+     163: aload_3
+     164: invokevirtual #466                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getEmail:()Ljava/lang/String;
+     167: invokevirtual #857                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setEmail:(Ljava/lang/String;)V
+     170: aload         6
+     172: aload_3
+     173: invokevirtual #371                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getPhone:()Ljava/lang/String;
+     176: invokevirtual #858                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setPhone:(Ljava/lang/String;)V
+     179: aload         6
+     181: getstatic     #309                // Field com/clougence/clouddm/api/common/crypt/CryptService.INSTANCE:Lcom/clougence/clouddm/api/common/crypt/CryptService;
+     184: aload         4
+     186: invokeinterface #320,  2          // InterfaceMethod com/clougence/clouddm/api/common/crypt/CryptService.encryptForOneWay:(Ljava/lang/String;)Lcom/clougence/clouddm/api/common/crypt/PasswordInfo;
+     191: invokevirtual #324                // Method com/clougence/clouddm/api/common/crypt/PasswordInfo.getEncryptPassword:()Ljava/lang/String;
+     194: invokevirtual #859                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setPassword:(Ljava/lang/String;)V
+     197: aload         6
+     199: getstatic     #390                // Field com/clougence/clouddm/platform/dal/model/auth/AccountType.SUB_ACCOUNT:Lcom/clougence/clouddm/platform/dal/model/auth/AccountType;
+     202: invokevirtual #860                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setAccountType:(Lcom/clougence/clouddm/platform/dal/model/auth/AccountType;)V
+     205: aload         6
+     207: aload_2
+     208: invokevirtual #864                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setBindType:(Lcom/clougence/clouddm/platform/dal/model/auth/AccountBindType;)V
+     211: aload         6
+     213: aload_3
+     214: invokevirtual #868                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getUnionId:()Ljava/lang/String;
+     217: invokevirtual #871                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setUnionId:(Ljava/lang/String;)V
+     220: aload         6
+     222: aload_3
+     223: invokevirtual #874                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getBindAccount:()Ljava/lang/String;
+     226: invokevirtual #877                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setBindAccount:(Ljava/lang/String;)V
+     229: aload         6
+     231: iconst_0
+     232: invokevirtual #880                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setAllowLocal:(Z)V
+     235: aload         6
+     237: aload         5
+     239: invokevirtual #329                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getId:()Ljava/lang/Long;
+     242: invokevirtual #883                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setParentId:(Ljava/lang/Long;)V
+     245: aload         6
+     247: aload_3
+     248: invokevirtual #41                 // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getRoleId:()Ljava/lang/Long;
+     251: invokevirtual #887                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setRoleId:(Ljava/lang/Long;)V
+     254: aload         6
+     256: aload_0
+     257: getfield      #608                // Field namingDao:Lcom/clougence/clouddm/platform/dal/access/NamingDao;
+     260: invokeinterface #612,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/NamingDao.genAccessKey:()Ljava/lang/String;
+     265: invokevirtual #889                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setAccessKey:(Ljava/lang/String;)V
+     268: aload         6
+     270: getstatic     #309                // Field com/clougence/clouddm/api/common/crypt/CryptService.INSTANCE:Lcom/clougence/clouddm/api/common/crypt/CryptService;
+     273: aload_0
+     274: getfield      #608                // Field namingDao:Lcom/clougence/clouddm/platform/dal/access/NamingDao;
+     277: invokeinterface #617,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/NamingDao.genSecretKey:()Ljava/lang/String;
+     282: invokeinterface #620,  2          // InterfaceMethod com/clougence/clouddm/api/common/crypt/CryptService.encryptUseDefaultKeyAndSalt:(Ljava/lang/String;)Ljava/lang/String;
+     287: invokevirtual #890                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setSecretKey:(Ljava/lang/String;)V
+     290: aload_0
+     291: getfield      #25                 // Field authDal:Lcom/clougence/clouddm/platform/dal/access/AuthDal;
+     294: invokeinterface #29,  1           // InterfaceMethod com/clougence/clouddm/platform/dal/access/AuthDal.userMapper:()Lcom/clougence/clouddm/platform/dal/mapper/auth/DmAuthUserMapper;
+     299: aload         6
+     301: invokeinterface #891,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/auth/DmAuthUserMapper.insert:(Ljava/lang/Object;)I
+     306: pop
+     307: aload_0
+     308: getfield      #895                // Field userConfigService:Lcom/clougence/clouddm/console/web/component/config/UserConfigService;
+     311: aload         6
+     313: invokevirtual #568                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getUid:()Ljava/lang/String;
+     316: invokeinterface #899,  2          // InterfaceMethod com/clougence/clouddm/console/web/component/config/UserConfigService.initSubAccountConfigs:(Ljava/lang/String;)V
+     321: aload_0
+     322: getfield      #904                // Field notifyServices:Ljava/util/List;
+     325: aload_1
+     326: aload         6
+     328: invokedynamic #908,  0            // InvokeDynamic #9:accept:(Ljava/lang/String;Lcom/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO;)Ljava/util/function/Consumer;
+     333: invokeinterface #912,  2          // InterfaceMethod java/util/List.forEach:(Ljava/util/function/Consumer;)V
+     338: new           #842                // class com/clougence/rdp/service/model/AddSubAccountMO
+     341: dup
+     342: iconst_1
+     343: aconst_null
+     344: aload         6
+     346: invokevirtual #568                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getUid:()Ljava/lang/String;
+     349: invokespecial #916                // Method com/clougence/rdp/service/model/AddSubAccountMO."<init>":(ZLjava/lang/String;Ljava/lang/String;)V
+     352: areturn
+    Exception table:
+       from    to  target type
+          30   101   104   Class com/clougence/clouddm/api/common/exception/ErrorMessageException
+public com.clougence.rdp.service.model.AddSubAccountMO addSubAccountForInternal(java.lang.String, com.clougence.clouddm.console.web.model.fo.user.AddSubAccountFO);
+    Code:
+       0: aload_0
+       1: getfield      #25                 // Field authDal:Lcom/clougence/clouddm/platform/dal/access/AuthDal;
+       4: invokeinterface #29,  1           // InterfaceMethod com/clougence/clouddm/platform/dal/access/AuthDal.userMapper:()Lcom/clougence/clouddm/platform/dal/mapper/auth/DmAuthUserMapper;
+       9: aload_1
+      10: invokeinterface #35,  2           // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/auth/DmAuthUserMapper.queryByUid:(Ljava/lang/String;)Lcom/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO;
+      15: astore_3
+      16: aload_0
+      17: aload_2
+      18: aload_3
+      19: iconst_0
+      20: iconst_0
+      21: invokevirtual #838                // Method addSubAccountCheck:(Lcom/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO;Lcom/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO;ZZ)V
+      24: goto          43
+      27: astore        4
+      29: new           #842                // class com/clougence/rdp/service/model/AddSubAccountMO
+      32: dup
+      33: iconst_0
+      34: aload         4
+      36: invokevirtual #437                // Method com/clougence/clouddm/api/common/exception/ErrorMessageException.getErrorMessage:()Ljava/lang/String;
+      39: invokespecial #844                // Method com/clougence/rdp/service/model/AddSubAccountMO."<init>":(ZLjava/lang/String;)V
+      42: areturn
+      43: new           #42                 // class com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO
+      46: dup
+      47: invokespecial #845                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO."<init>":()V
+      50: astore        4
+      52: aload         4
+      54: aload_0
+      55: getfield      #608                // Field namingDao:Lcom/clougence/clouddm/platform/dal/access/NamingDao;
+      58: invokeinterface #846,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/NamingDao.genUID:()Ljava/lang/String;
+      63: invokevirtual #849                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setUid:(Ljava/lang/String;)V
+      66: aload         4
+      68: aload_2
+      69: invokevirtual #919                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.getUserName:()Ljava/lang/String;
+      72: invokevirtual #852                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setUsername:(Ljava/lang/String;)V
+      75: aload         4
+      77: aload_2
+      78: invokevirtual #756                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.getAccount:()Ljava/lang/String;
+      81: invokevirtual #856                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setAccount:(Ljava/lang/String;)V
+      84: aload         4
+      86: aload_2
+      87: invokevirtual #760                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.getEmail:()Ljava/lang/String;
+      90: invokevirtual #857                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setEmail:(Ljava/lang/String;)V
+      93: aload         4
+      95: aload_2
+      96: invokevirtual #759                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.getPhone:()Ljava/lang/String;
+      99: invokevirtual #858                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setPhone:(Ljava/lang/String;)V
+     102: aload         4
+     104: getstatic     #309                // Field com/clougence/clouddm/api/common/crypt/CryptService.INSTANCE:Lcom/clougence/clouddm/api/common/crypt/CryptService;
+     107: aload_2
+     108: invokevirtual #781                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.getPassword:()Ljava/lang/String;
+     111: invokeinterface #320,  2          // InterfaceMethod com/clougence/clouddm/api/common/crypt/CryptService.encryptForOneWay:(Ljava/lang/String;)Lcom/clougence/clouddm/api/common/crypt/PasswordInfo;
+     116: invokevirtual #324                // Method com/clougence/clouddm/api/common/crypt/PasswordInfo.getEncryptPassword:()Ljava/lang/String;
+     119: invokevirtual #859                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setPassword:(Ljava/lang/String;)V
+     122: aload         4
+     124: getstatic     #390                // Field com/clougence/clouddm/platform/dal/model/auth/AccountType.SUB_ACCOUNT:Lcom/clougence/clouddm/platform/dal/model/auth/AccountType;
+     127: invokevirtual #860                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setAccountType:(Lcom/clougence/clouddm/platform/dal/model/auth/AccountType;)V
+     130: aload         4
+     132: getstatic     #531                // Field com/clougence/clouddm/platform/dal/model/auth/AccountBindType.INTERNAL:Lcom/clougence/clouddm/platform/dal/model/auth/AccountBindType;
+     135: invokevirtual #864                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setBindType:(Lcom/clougence/clouddm/platform/dal/model/auth/AccountBindType;)V
+     138: aload         4
+     140: ldc_w         #920                // String
+     143: invokevirtual #877                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setBindAccount:(Ljava/lang/String;)V
+     146: aload         4
+     148: iconst_1
+     149: invokevirtual #880                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setAllowLocal:(Z)V
+     152: aload         4
+     154: aload_3
+     155: invokevirtual #329                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getId:()Ljava/lang/Long;
+     158: invokevirtual #883                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setParentId:(Ljava/lang/Long;)V
+     161: aload         4
+     163: aload_2
+     164: invokevirtual #765                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.getRoleId:()J
+     167: invokestatic  #922                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+     170: invokevirtual #887                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setRoleId:(Ljava/lang/Long;)V
+     173: aload         4
+     175: getstatic     #274                // Field java/lang/Boolean.TRUE:Ljava/lang/Boolean;
+     178: aload_2
+     179: invokevirtual #925                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.getDisable:()Ljava/lang/Boolean;
+     182: invokevirtual #282                // Method java/lang/Boolean.equals:(Ljava/lang/Object;)Z
+     185: invokevirtual #928                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setDisable:(Z)V
+     188: getstatic     #274                // Field java/lang/Boolean.TRUE:Ljava/lang/Boolean;
+     191: aload_2
+     192: invokevirtual #931                // Method com/clougence/clouddm/console/web/model/fo/user/AddSubAccountFO.getLoginLocked:()Ljava/lang/Boolean;
+     195: invokevirtual #282                // Method java/lang/Boolean.equals:(Ljava/lang/Object;)Z
+     198: istore        5
+     200: aload         4
+     202: iload         5
+     204: invokevirtual #934                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setLoginLocked:(Z)V
+     207: aload         4
+     209: iload         5
+     211: ifeq          218
+     214: iconst_1
+     215: goto          219
+     218: iconst_0
+     219: invokevirtual #937                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setLoginFailCount:(I)V
+     222: aload         4
+     224: iload         5
+     226: ifeq          239
+     229: new           #941                // class java/util/Date
+     232: dup
+     233: invokespecial #943                // Method java/util/Date."<init>":()V
+     236: goto          247
+     239: new           #941                // class java/util/Date
+     242: dup
+     243: lconst_0
+     244: invokespecial #944                // Method java/util/Date."<init>":(J)V
+     247: invokevirtual #946                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setLastTryLoginTime:(Ljava/util/Date;)V
+     250: aload         4
+     252: aload_0
+     253: getfield      #608                // Field namingDao:Lcom/clougence/clouddm/platform/dal/access/NamingDao;
+     256: invokeinterface #612,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/NamingDao.genAccessKey:()Ljava/lang/String;
+     261: invokevirtual #889                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setAccessKey:(Ljava/lang/String;)V
+     264: aload         4
+     266: getstatic     #309                // Field com/clougence/clouddm/api/common/crypt/CryptService.INSTANCE:Lcom/clougence/clouddm/api/common/crypt/CryptService;
+     269: aload_0
+     270: getfield      #608                // Field namingDao:Lcom/clougence/clouddm/platform/dal/access/NamingDao;
+     273: invokeinterface #617,  1          // InterfaceMethod com/clougence/clouddm/platform/dal/access/NamingDao.genSecretKey:()Ljava/lang/String;
+     278: invokeinterface #620,  2          // InterfaceMethod com/clougence/clouddm/api/common/crypt/CryptService.encryptUseDefaultKeyAndSalt:(Ljava/lang/String;)Ljava/lang/String;
+     283: invokevirtual #890                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.setSecretKey:(Ljava/lang/String;)V
+     286: aload_0
+     287: getfield      #25                 // Field authDal:Lcom/clougence/clouddm/platform/dal/access/AuthDal;
+     290: invokeinterface #29,  1           // InterfaceMethod com/clougence/clouddm/platform/dal/access/AuthDal.userMapper:()Lcom/clougence/clouddm/platform/dal/mapper/auth/DmAuthUserMapper;
+     295: aload         4
+     297: invokeinterface #891,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/auth/DmAuthUserMapper.insert:(Ljava/lang/Object;)I
+     302: pop
+     303: aload_0
+     304: getfield      #895                // Field userConfigService:Lcom/clougence/clouddm/console/web/component/config/UserConfigService;
+     307: aload         4
+     309: invokevirtual #568                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getUid:()Ljava/lang/String;
+     312: invokeinterface #899,  2          // InterfaceMethod com/clougence/clouddm/console/web/component/config/UserConfigService.initSubAccountConfigs:(Ljava/lang/String;)V
+     317: aload_0
+     318: getfield      #904                // Field notifyServices:Ljava/util/List;
+     321: aload_1
+     322: aload         4
+     324: invokedynamic #950,  0            // InvokeDynamic #10:accept:(Ljava/lang/String;Lcom/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO;)Ljava/util/function/Consumer;
+     329: invokeinterface #912,  2          // InterfaceMethod java/util/List.forEach:(Ljava/util/function/Consumer;)V
+     334: new           #842                // class com/clougence/rdp/service/model/AddSubAccountMO
+     337: dup
+     338: iconst_1
+     339: aconst_null
+     340: aload         4
+     342: invokevirtual #568                // Method com/clougence/clouddm/platform/dal/model/auth/DmAuthUserDO.getUid:()Ljava/lang/String;
+     345: invokespecial #916                // Method com/clougence/rdp/service/model/AddSubAccountMO."<init>":(ZLjava/lang/String;Ljava/lang/String;)V
+     348: areturn
+    Exception table:
+       from    to  target type
+          16    24    27   Class com/clougence/clouddm/api/common/exception/ErrorMessageException
+
+### com.clougence.clouddm.console.web.service.datasource.DmDsWebServiceImpl / cgdm-console-4.3.0.jar
+
+private com.clougence.clouddm.api.common.rpc.ResWebData<java.lang.Long> persistAddDs(java.lang.String, com.clougence.clouddm.console.web.model.fo.datasource.DsConfigSubmitFO, java.util.Map<java.lang.String, java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_2
+       2: aload_3
+       3: invokevirtual #403                // Method resolveSubmitEntity:(Lcom/clougence/clouddm/console/web/model/fo/datasource/DsConfigSubmitFO;Ljava/util/Map;)Lcom/clougence/clouddm/platform/dal/model/datasource/DmDsDO;
+       6: astore        4
+       8: aload_0
+       9: getfield      #136                // Field configService:Lcom/clougence/clouddm/console/web/component/dsconfig/DmDsConfigService;
+      12: aload         4
+      14: aload_3
+      15: invokeinterface #407,  3          // InterfaceMethod com/clougence/clouddm/console/web/component/dsconfig/DmDsConfigService.fetchDsConfigFromNotExist:(Lcom/clougence/clouddm/platform/dal/model/datasource/DmDsDO;Ljava/util/Map;)Lcom/clougence/clouddm/base/metadata/ds/DataSourceConfig;
+      20: astore        5
+      22: aload         4
+      24: aload         5
+      26: invokevirtual #411                // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.getDataSourceType:()Lcom/clougence/clouddm/base/metadata/ds/DataSourceType;
+      29: invokevirtual #414                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.setDataSourceType:(Lcom/clougence/clouddm/base/metadata/ds/DataSourceType;)V
+      32: aload         4
+      34: aload         5
+      36: invokevirtual #418                // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.getHost:()Ljava/lang/String;
+      39: invokevirtual #421                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.setHost:(Ljava/lang/String;)V
+      42: aload         4
+      44: ldc_w         #426                // String 9999999999999999
+      47: invokevirtual #428                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.setUid:(Ljava/lang/String;)V
+      50: aload         4
+      52: ldc_w         #426                // String 9999999999999999
+      55: invokevirtual #431                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.setOwner:(Ljava/lang/String;)V
+      58: aload         4
+      60: aload         5
+      62: invokevirtual #434                // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.getSecurityType:()Lcom/clougence/clouddm/base/metadata/ds/SecurityType;
+      65: ifnonnull     74
+      68: getstatic     #435                // Field com/clougence/clouddm/base/metadata/ds/SecurityType.USER_PASSWD:Lcom/clougence/clouddm/base/metadata/ds/SecurityType;
+      71: goto          79
+      74: aload         5
+      76: invokevirtual #434                // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.getSecurityType:()Lcom/clougence/clouddm/base/metadata/ds/SecurityType;
+      79: invokevirtual #438                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.setSecurityType:(Lcom/clougence/clouddm/base/metadata/ds/SecurityType;)V
+      82: aload         4
+      84: getstatic     #442                // Field com/clougence/clouddm/platform/dal/model/LifeCycleState.CREATED:Lcom/clougence/clouddm/platform/dal/model/LifeCycleState;
+      87: invokevirtual #448                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.setLifeCycleState:(Lcom/clougence/clouddm/platform/dal/model/LifeCycleState;)V
+      90: aload         4
+      92: getstatic     #452                // Field com/clougence/clouddm/platform/dal/model/datasource/DataSourceStatus.Normal:Lcom/clougence/clouddm/platform/dal/model/datasource/DataSourceStatus;
+      95: invokevirtual #458                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.setStatus:(Lcom/clougence/clouddm/platform/dal/model/datasource/DataSourceStatus;)V
+      98: aload         4
+     100: ldc_w         #462                // String
+     103: invokevirtual #464                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.setStatusMessage:(Ljava/lang/String;)V
+     106: aload         4
+     108: aload         5
+     110: invokevirtual #467                // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.getDriverVersion:()Ljava/lang/String;
+     113: invokevirtual #470                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.setDriver:(Ljava/lang/String;)V
+     116: aload         4
+     118: aload         5
+     120: invokevirtual #473                // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.getVersion:()Ljava/lang/String;
+     123: invokevirtual #476                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.setVersion:(Ljava/lang/String;)V
+     126: aload         4
+     128: aload         5
+     130: invokevirtual #479                // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.getUserName:()Ljava/lang/String;
+     133: invokevirtual #480                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.setAccessKey:(Ljava/lang/String;)V
+     136: aload         4
+     138: getstatic     #218                // Field com/clougence/clouddm/api/common/crypt/CryptService.INSTANCE:Lcom/clougence/clouddm/api/common/crypt/CryptService;
+     141: aload         5
+     143: invokevirtual #483                // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.getPassword:()Ljava/lang/String;
+     146: invokestatic  #484                // Method com/clougence/utils/StringUtils.defaultString:(Ljava/lang/String;)Ljava/lang/String;
+     149: invokeinterface #224,  2          // InterfaceMethod com/clougence/clouddm/api/common/crypt/CryptService.encryptUseDefaultKeyAndSalt:(Ljava/lang/String;)Ljava/lang/String;
+     154: invokevirtual #117                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.setSecretKey:(Ljava/lang/String;)V
+     157: aload         5
+     159: invokevirtual #487                // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.getInstanceId:()Ljava/lang/String;
+     162: invokestatic  #380                // Method com/clougence/utils/StringUtils.isBlank:(Ljava/lang/String;)Z
+     165: ifeq          191
+     168: aload         5
+     170: aload         5
+     172: invokevirtual #411                // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.getDataSourceType:()Lcom/clougence/clouddm/base/metadata/ds/DataSourceType;
+     175: invokevirtual #490                // Method com/clougence/clouddm/base/metadata/ds/DataSourceType.getShortName:()Ljava/lang/String;
+     178: bipush        15
+     180: invokestatic  #495                // Method com/clougence/clouddm/console/web/util/RandomStrUtils.fixedLenRandomStr:(I)Ljava/lang/String;
+     183: invokedynamic #501,  0            // InvokeDynamic #9:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+     188: invokevirtual #505                // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.setInstanceId:(Ljava/lang/String;)V
+     191: aload         4
+     193: aload         5
+     195: invokevirtual #487                // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.getInstanceId:()Ljava/lang/String;
+     198: invokevirtual #508                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.setInstanceId:(Ljava/lang/String;)V
+     201: aload         4
+     203: invokevirtual #299                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.getInstanceDesc:()Ljava/lang/String;
+     206: invokestatic  #380                // Method com/clougence/utils/StringUtils.isBlank:(Ljava/lang/String;)Z
+     209: ifeq          222
+     212: aload         4
+     214: aload         5
+     216: invokevirtual #487                // Method com/clougence/clouddm/base/metadata/ds/DataSourceConfig.getInstanceId:()Ljava/lang/String;
+     219: invokevirtual #509                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.setInstanceDesc:(Ljava/lang/String;)V
+     222: aload_0
+     223: getfield      #7                  // Field dsDal:Lcom/clougence/clouddm/platform/dal/access/DataSourceDal;
+     226: invokeinterface #13,  1           // InterfaceMethod com/clougence/clouddm/platform/dal/access/DataSourceDal.dsMapper:()Lcom/clougence/clouddm/platform/dal/mapper/datasource/DmDsMapper;
+     231: aload         4
+     233: invokeinterface #512,  2          // InterfaceMethod com/clougence/clouddm/platform/dal/mapper/datasource/DmDsMapper.insert:(Ljava/lang/Object;)I
+     238: pop
+     239: aload_0
+     240: getfield      #136                // Field configService:Lcom/clougence/clouddm/console/web/component/dsconfig/DmDsConfigService;
+     243: aload         4
+     245: invokevirtual #273                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.getId:()Ljava/lang/Long;
+     248: invokevirtual #351                // Method java/lang/Long.longValue:()J
+     251: aload_3
+     252: invokeinterface #513,  4          // InterfaceMethod com/clougence/clouddm/console/web/component/dsconfig/DmDsConfigService.upsertDsConfigs:(JLjava/util/Map;)V
+     257: aload         4
+     259: invokevirtual #273                // Method com/clougence/clouddm/platform/dal/model/datasource/DmDsDO.getId:()Ljava/lang/Long;
+     262: invokevirtual #351                // Method java/lang/Long.longValue:()J
+     265: lstore        6
+     267: aload_0
+     268: aload_1
+     269: lload         6
+     271: invokestatic  #130                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+     274: invokevirtual #517                // Method addCreatorAuth:(Ljava/lang/String;Ljava/lang/Long;)V
+     277: aload_0
+     278: getfield      #288                // Field notifyServices:Ljava/util/List;
+     281: aload_1
+     282: lload         6
+     284: invokedynamic #521,  0            // InvokeDynamic #10:accept:(Ljava/lang/String;J)Ljava/util/function/Consumer;
+     289: invokeinterface #103,  2          // InterfaceMethod java/util/List.forEach:(Ljava/util/function/Consumer;)V
+     294: lload         6
+     296: invokestatic  #130                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+     299: invokestatic  #524                // Method com/clougence/clouddm/api/common/rpc/ResWebDataUtils.buildSuccess:(Ljava/lang/Object;)Lcom/clougence/clouddm/api/common/rpc/ResWebData;
+     302: areturn
+

@@ -1,0 +1,233 @@
+{
+  "observed_at": "2026-10-04T01:27:51.909927+00:00",
+  "scope": "ODC 4.4.1, Oracle 26ai 23.26.4.1.0; schema POC trên cùng một instance, ngày 04/10/2026.",
+  "acceptance_source": "poc/ORACLE-POC.md",
+  "criteria_preserved": true,
+  "cases": [
+    {
+      "id": "MODEL-01",
+      "status": "PASS",
+      "summary": "Project odc-oracle-poc id=1 có datasource/schema ID ổn định; bootstrap ADMIN ở project riêng id=2."
+    },
+    {
+      "id": "MODEL-02",
+      "status": "PASS",
+      "summary": "API đăng ký năm datasource POC. DEV/SIT/UAT/mock PROD và observer có schema, service và environment. Chỉ một Oracle instance."
+    },
+    {
+      "id": "MODEL-03",
+      "status": "PARTIAL",
+      "summary": "Ticket có ID và SQL. Runner lưu SHA-256/job reference. Chưa có immutable release hay checksum do ODC bắt buộc."
+    },
+    {
+      "id": "MODEL-04",
+      "status": "PARTIAL",
+      "summary": "Có requester, hai approver và timestamp. Service task operator có thể là creator; cần đối chiếu audit để xác định caller Execute."
+    },
+    {
+      "id": "MODEL-05",
+      "status": "PASS",
+      "summary": "UI hiển thị đúng CREATE POC_GOV_MANUAL và target MOCKPROD trước khi OWNER/DBA duyệt; CLI đối chiếu SHA-256."
+    },
+    {
+      "id": "MODEL-06",
+      "status": "PARTIAL",
+      "summary": "Ticket thủ công giữ SQL/target; PUT trực tiếp không có route cập nhật. Chưa kiểm mọi đường thay artifact hoặc target set sau duyệt."
+    },
+    {
+      "id": "MODEL-07",
+      "status": "PARTIAL",
+      "summary": "Bốn ticket DEV→SIT→UAT→MOCKPROD dùng cùng byte SQL và SHA-256. Thứ tự do runner điều khiển; chưa kiểm ordered batch native."
+    },
+    {
+      "id": "MODEL-08",
+      "status": "PASS",
+      "summary": "MANUAL dừng WAIT_FOR_EXECUTION. UI/API phải thực hiện Execute sau phê duyệt. Requester vẫn được thực thi sau duyệt."
+    },
+    {
+      "id": "MODEL-09",
+      "status": "PARTIAL",
+      "summary": "ABORT dừng sau lỗi bảng thiếu; dòng 1101 không được chèn. Chưa xác nhận stop policy giữa các stage của batch."
+    },
+    {
+      "id": "MODEL-10",
+      "status": "PARTIAL",
+      "summary": "Có ticket history/result và 97 audit record POC theo actor/action/time. Một số task log và attachment không còn đọc sau restart; chưa nghiệm thu retention."
+    },
+    {
+      "id": "MODEL-11",
+      "status": "PARTIAL",
+      "summary": "Outsider và Participant thiếu grant nhận 403. QUERY grant cho phép đọc; CHANGE bị chặn. Revoke lại nhận 403. Expiry được làm tròn cuối ngày nên chưa thử boundary."
+    },
+    {
+      "id": "MODEL-12",
+      "status": "PASS",
+      "summary": "Đã xác định thiếu target migration ledger, checksum enforcement, idempotency theo job reference và instrumentation recovery. Đây là kiểm kê gap, không phải production readiness."
+    },
+    {
+      "id": "SQL-01",
+      "status": "PARTIAL",
+      "summary": "Object/constraint và ticket thành công. USER_TABLES không có migration ledger; chưa có version order tại target."
+    },
+    {
+      "id": "SQL-02",
+      "status": "PARTIAL",
+      "summary": "Object/constraint và ticket thành công. USER_TABLES không có migration ledger; chưa có version order tại target."
+    },
+    {
+      "id": "SQL-03",
+      "status": "PARTIAL",
+      "summary": "INSERT/UPDATE đúng dữ liệu. Replay không được skip theo version và gặp ORA-00001; chưa đạt migration exactly-once."
+    },
+    {
+      "id": "SQL-04",
+      "status": "PASS",
+      "summary": "Procedure VALID; gọi procedure đổi STATUS=PAID."
+    },
+    {
+      "id": "SQL-05",
+      "status": "PASS",
+      "summary": "Function VALID; POC_ADD_TAX(100)=110."
+    },
+    {
+      "id": "SQL-06",
+      "status": "PASS",
+      "summary": "Package/spec/body VALID; initialization=42 và SET_NOTE thành công."
+    },
+    {
+      "id": "SQL-07",
+      "status": "PASS",
+      "summary": "Trigger VALID; UPDATE 150→200 tạo đúng một audit row."
+    },
+    {
+      "id": "SQL-08",
+      "status": "PASS",
+      "summary": "BEGIN và DECLARE chạy một lần, tạo đúng hai dòng 801/802."
+    },
+    {
+      "id": "SQL-09",
+      "status": "PASS",
+      "summary": "PL/SQL với slash riêng dòng thành công; function 10/2=5."
+    },
+    {
+      "id": "SQL-10",
+      "status": "PARTIAL",
+      "summary": "Ticket SQLPlus directive thất bại; marker 1001=0. Chưa kiểm từng directive riêng hoặc native SQLPlus path."
+    },
+    {
+      "id": "SQL-11",
+      "status": "FAIL",
+      "summary": "Ticket 1000011 EXECUTION_SUCCEEDED, successCount=1. Oracle POC_INVALID_PROC vẫn INVALID với PLS-00201 và Statement ignored."
+    },
+    {
+      "id": "SQL-12",
+      "status": "PASS",
+      "summary": "q-quote, comment trong literal, quoted identifier và nested block giữ đúng ba dòng."
+    },
+    {
+      "id": "REC-01",
+      "status": "PARTIAL",
+      "summary": "Ticket 1000012 EXECUTION_FAILED; ABORT không chèn dòng 1101. Log cũ không còn đọc được sau restart; exact error cần attachment."
+    },
+    {
+      "id": "REC-02",
+      "status": "FAIL",
+      "summary": "Replay SQL-03 tạo ticket 1000024 và chạy SQL lại; ORA-00001. Không có skip theo migration version."
+    },
+    {
+      "id": "REC-03",
+      "status": "PARTIAL",
+      "summary": "Hậu kiểm sau REC01 rồi tạo ticket sửa 1000025 chỉ chèn dòng 1101. Đây là recovery quyết định bởi operator, chưa có target-ledger reconciliation."
+    },
+    {
+      "id": "REC-04",
+      "status": "PARTIAL",
+      "summary": "CREATE POC_PARTIAL đã commit; ALTER thất bại và ticket báo EXECUTION_FAILED. Chưa có cơ chế target ledger khóa replay tự động."
+    },
+    {
+      "id": "REC-05",
+      "status": "NOT_RUN",
+      "summary": "Cần instrumentation commit checkpoint, network proxy hoặc topology/backup riêng. Không gây crash/mạng/restore trong lần POC này."
+    },
+    {
+      "id": "REC-06",
+      "status": "NOT_RUN",
+      "summary": "Cần instrumentation commit checkpoint, network proxy hoặc topology/backup riêng. Không gây crash/mạng/restore trong lần POC này."
+    },
+    {
+      "id": "REC-07",
+      "status": "NOT_RUN",
+      "summary": "Cần instrumentation commit checkpoint, network proxy hoặc topology/backup riêng. Không gây crash/mạng/restore trong lần POC này."
+    },
+    {
+      "id": "REC-08",
+      "status": "FAIL",
+      "summary": "Đổi SQL-01 nhưng giữ case ID vẫn tạo ticket mới 1000015. ODC không chặn checksum trước thực thi; không có migration version identity."
+    },
+    {
+      "id": "REC-09",
+      "status": "PARTIAL",
+      "summary": "Hai ticket cùng target được gửi Execute đồng thời và đều thành công. Chưa instrument lock owner/commit boundary để nghiệm thu serialization."
+    },
+    {
+      "id": "REC-10",
+      "status": "FAIL",
+      "summary": "Hai POST tạo ticket cùng artifact/job reference tạo ID 1000026/1000027 và hai marker rows. Gọi Execute lại ticket hoàn tất bị từ chối; không thay thế request-level dedup."
+    },
+    {
+      "id": "REC-11",
+      "status": "NOT_RUN",
+      "summary": "Cần instrumentation commit checkpoint, network proxy hoặc topology/backup riêng. Không gây crash/mạng/restore trong lần POC này."
+    },
+    {
+      "id": "REC-12",
+      "status": "NOT_RUN",
+      "summary": "Cần instrumentation commit checkpoint, network proxy hoặc topology/backup riêng. Không gây crash/mạng/restore trong lần POC này."
+    },
+    {
+      "id": "GOV-01",
+      "status": "PARTIAL",
+      "summary": "Có ticket, artifact SHA, target, actor, time và local job reference. Cần join audit và file evidence; chưa có một truy vấn release chuẩn."
+    },
+    {
+      "id": "GOV-02",
+      "status": "PARTIAL",
+      "summary": "Luồng phê duyệt trên ticket đã quan sát. Chưa kiểm toàn bộ thay SQL/target/environment/version và invalidation sau duyệt."
+    },
+    {
+      "id": "GOV-03",
+      "status": "FAIL",
+      "summary": "Rule POCPROD yêu cầu OWNER→DBA. Requester bị chặn trước duyệt nhưng POST Execute sau duyệt trả 200 và chạy thành công."
+    },
+    {
+      "id": "GOV-04",
+      "status": "PARTIAL",
+      "summary": "Cùng SHA-256 và marker trên bốn schema. Runner giữ thứ tự; chưa có immutable promotion enforcement ở ODC."
+    },
+    {
+      "id": "GOV-05",
+      "status": "NOT_RUN",
+      "summary": "Chỉ chạy API/CLI cục bộ với job reference. Chưa có runner GitLab/Jenkins và named CI service principal thực tế."
+    },
+    {
+      "id": "GOV-06",
+      "status": "NOT_RUN",
+      "summary": "Cần instrumentation commit checkpoint, network proxy hoặc topology/backup riêng. Không gây crash/mạng/restore trong lần POC này."
+    },
+    {
+      "id": "GOV-07",
+      "status": "NOT_RUN",
+      "summary": "Cần instrumentation commit checkpoint, network proxy hoặc topology/backup riêng. Không gây crash/mạng/restore trong lần POC này."
+    },
+    {
+      "id": "GOV-08",
+      "status": "PARTIAL",
+      "summary": "Evidence công bố dùng allowlist và so khớp secret thực tế trước publish. Chưa kiểm toàn bộ log, backing store hoặc secret-manager integration."
+    },
+    {
+      "id": "GOV-09",
+      "status": "PARTIAL",
+      "summary": "Audit API trả record POC theo actor/action/time. Chưa nghiệm thu export/hash binding sau rotation; một số task log và attachment không còn đọc sau restart."
+    }
+  ]
+}

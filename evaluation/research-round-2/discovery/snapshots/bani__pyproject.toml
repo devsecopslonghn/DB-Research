@@ -1,0 +1,153 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bani-tools"
+version = "1.0.2"
+description = "An open-source database migration engine powered by Apache Arrow"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+authors = [
+    { name = "David Mugume", email = "mugumedavid@gmail.com" },
+]
+keywords = ["database", "migration", "arrow", "etl"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Database",
+]
+dependencies = [
+    "pyarrow>=14.0",
+    "psycopg[binary]>=3.1",
+    "pymysql>=1.0",
+    "pymssql>=2.2",
+    "pyodbc>=5.0",
+    "oracledb>=2.0",
+    "typer>=0.9",
+    "rich>=13.0",
+    "lxml>=4.9",
+    "jsonschema>=4.17",
+    "tomli>=2.0; python_version < '3.11'",
+    "fastapi>=0.100",
+    "uvicorn[standard]>=0.20",
+]
+
+[project.optional-dependencies]
+sqlite-extras = ["apsw>=3.40"]
+macos-app = ["rumps>=0.4.0", "pyobjc-framework-Cocoa>=9.0"]
+tray = ["pystray>=0.19", "Pillow>=10.0"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.7.0",
+    "mypy>=1.0",
+    "pytest>=7.0",
+    "pytest-anyio>=0.0.0",
+    "httpx>=0.24.0",
+]
+
+[project.urls]
+Homepage = "https://bani.tools"
+Documentation = "https://docs.bani.tools"
+Repository = "https://github.com/mugumedavid/bani"
+
+[project.scripts]
+bani = "bani.cli.app:main"
+
+[project.entry-points."bani.connectors"]
+mysql = "bani.connectors.mysql:MySQLConnector"
+postgresql = "bani.connectors.postgresql:PostgreSQLConnector"
+mssql = "bani.connectors.mssql:MSSQLConnector"
+oracle = "bani.connectors.oracle:OracleConnector"
+sqlite = "bani.connectors.sqlite:SQLiteConnector"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bani"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"ui/dist" = "bani/ui/dist"
+
+# --- Ruff (Black-compatible formatting + isort) ---
+[tool.ruff]
+target-version = "py310"
+line-length = 88
+src = ["src"]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "B",    # flake8-bugbear
+    "UP",   # pyupgrade
+    "RUF",  # ruff-specific
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["bani"]
+
+# --- mypy (strict) ---
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+disable_error_code = ["import-untyped"]
+mypy_path = "src"
+namespace_packages = true
+explicit_package_bases = true
+
+# Integration tests may import MySQL connector from a separate feature branch.
+[[tool.mypy.overrides]]
+module = "tests.integration.end_to_end.*"
+disable_error_code = ["attr-defined"]
+warn_unused_ignores = false
+
+# Third-party libraries without type stubs or py.typed marker.
+[[tool.mypy.overrides]]
+module = [
+    "pyarrow", "pyarrow.*",
+    "lxml", "lxml.*",
+    "jsonschema", "jsonschema.*",
+    "pyodbc", "pyodbc.*",
+    "rumps", "rumps.*",
+    "pystray", "pystray.*",
+    "PIL", "PIL.*",
+]
+ignore_missing_imports = true
+
+# Cross-version compatibility: type: ignore comments that are only needed on
+# certain Python versions (e.g., tomllib on <3.11, entry_points on <3.12).
+[[tool.mypy.overrides]]
+module = ["bani.infra.config", "bani.connectors.registry"]
+warn_unused_ignores = false
+
+# --- pytest ---
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = [
+    "--strict-markers",
+    "--tb=short",
+    "-q",
+    "-m", "not integration and not benchmark",
+]
+markers = [
+    "integration: marks tests as integration tests (deselect with '-m \"not integration\"')",
+    "benchmark: marks tests as performance benchmarks",
+]

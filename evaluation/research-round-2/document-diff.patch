@@ -1,0 +1,88 @@
+--- initial-T00-T04/README.md
++++ README.md
+@@ -1,4 +1,12 @@
+ # Oracle database change platform research
++
++## Nghiên cứu sâu và quyết định hiện tại, 04/10/2026
++
++**Ưu tiên CloudDM và ODC cho platform POC. AccessFlow và Archery có nhánh governance riêng.**
++[Report hiện tại](evaluation/report.md) và [shortlist](evaluation/shortlist.md) giải thích source gates và các P0 chưa đạt.
++[Task tiếp theo](evaluation/research-round-2/poc-next-tasks.md) và [điều kiện benchmark](evaluation/research-round-2/benchmark-conditions.md) đã có acceptance/dependencies.
++Xem [index nghiên cứu sâu](evaluation/research-round-2/README.md) cho discovery, source, release/license và review chéo.
++45 criteria, 14 SQL workloads và evidence Bytebase/ODC giữ nguyên. Không có runtime hoặc benchmark mới.
+ 
+ ## Đánh giá T00–T04, 04/10/2026
+ 
+--- initial-T00-T04/REPORT.md
++++ REPORT.md
+@@ -1,4 +1,13 @@
+ # Open-source Oracle database change platform research
++
++## Quyết định sau nghiên cứu sâu, 04/10/2026
++
++[Kết luận hiện tại](evaluation/report.md) ưu tiên CloudDM/ODC cho platform POC. AccessFlow chuyển sang governance/DDL đơn giản.
++Source gate của AccessFlow chặn DML/BEGIN/internal semicolon, gồm source release v2.7.0 đã đối chiếu.
++CloudDM có native datasource splitter/webhook unique receipt SOURCE; compile/replay/promotion còn chưa nghiệm thu.
++Archery có package-body INVALID risk từ source, chưa tái hiện runtime.
++Không tìm được A OSS mới đủ evidence. [Discovery mở rộng](evaluation/research-round-2/discovery/source-review.md) giữ phân loại client/engine/commercial/docs-only.
++Các phần phía dưới là snapshot trước nghiên cứu sâu. Historical FAIL không đổi.
+ 
+ ## Cập nhật T00–T04, 04/10/2026
+ 
+--- initial-T00-T04/LICENSE-AUDIT.md
++++ LICENSE-AUDIT.md
+@@ -1,4 +1,12 @@
+ # License and edition audit
++
++## License/release review sâu, 04/10/2026
++
++[Component register](evaluation/research-round-2/licensing/license-components.csv) tách source, image, plugin, driver và edition.
++[Pricing provenance](evaluation/research-round-2/coordinator/public-docs/pricing-observation.md) ghi CloudDM index 10 instance/5 account và direct GET khác nội dung. Current enforcement chưa kiểm.
++[Oracle client review](evaluation/research-round-2/licensing/licensing-review.md) tách JDBC Thin với Instant Client và quyền dùng/phân phối/disclosure benchmark.
++[Release pins](evaluation/research-round-2/licensing/release-pins.csv) không thay historical image/source. Archive SHA không là OCI digest.
++Source license không xác nhận toàn image hoặc mọi feature entitled. Không có full SBOM audit mới.
+ 
+ ## Cập nhật license T03, 04/10/2026
+ 
+--- initial-T00-T04/FEATURE-MATRIX.md
++++ FEATURE-MATRIX.md
+@@ -1,4 +1,11 @@
+ # Desired and optional feature matrix
++
++## Evidence hiện tại sau nghiên cứu sâu, 04/10/2026
++
++[Ma trận F01–F12](evaluation/feature-matrix.csv) cập nhật source/license gates. Mọi runtime mới vẫn NOT_RUN.
++AccessFlow native release có DML/PLSQL source incompatibility. CloudDM datasource splitter và webhook uniqueness đã trace.
++Archery compile check có PACKAGE BODY inference cần POC. [Source review](evaluation/research-round-2/coordinator/oracle-governance-source.md) nêu phạm vi.
++[Candidate register](evaluation/candidates.csv) giữ các mục kế thừa và lead mới với loại evidence. Các bảng phía dưới giữ snapshot cũ.
+ 
+ ## Cập nhật coverage T01–T03, 04/10/2026
+ 
+--- initial-T00-T04/ORACLE-COMPATIBILITY.md
++++ ORACLE-COMPATIBILITY.md
+@@ -1,4 +1,11 @@
+ # Oracle implementation coverage
++
++## Source Oracle review sâu, 04/10/2026
++
++[Oracle/governance trace](evaluation/research-round-2/coordinator/oracle-governance-source.md) xác định AccessFlow gate, Archery package-body risk và ODC dialect warning scope.
++[CloudDM execution trace](evaluation/research-round-2/clouddm/deep-source-review.md) nối CI/ticket tới datasource splitter và Oracle session. Compile validation vẫn cần runtime.
++Source không chứng nhận handshake, correctness, recovery hoặc latency. Oracle 19c/21c chưa có POC mới.
++Evidence Oracle 26ai, Bytebase/ODC và các FAIL lịch sử giữ nguyên. [Task spec](evaluation/research-round-2/poc-next-tasks.md) ghi ca hậu kiểm.
+ 
+ ## Cập nhật Oracle T03, 04/10/2026
+ 
+--- initial-T00-T04/ADDITIONAL-PLATFORMS-20261004.md
++++ ADDITIONAL-PLATFORMS-20261004.md
+@@ -1,4 +1,11 @@
+ # Ứng viên mã nguồn mở gần Bytebase
++
++## Nghiên cứu sâu bổ sung cùng ngày
++
++[Discovery vòng tiếp](evaluation/research-round-2/discovery/source-review.md) kiểm thêm client, engine, data-transfer và source-incomplete leads.
++Chưa tìm được platform A OSS mới đủ evidence. [Shortlist hiện tại](evaluation/shortlist.md) ưu tiên CloudDM/ODC và giảm AccessFlow migration priority theo source gate.
++[CloudDM deep source](evaluation/research-round-2/clouddm/deep-source-review.md) và [license/release](evaluation/research-round-2/licensing/licensing-review.md) bổ sung execution và entitlement facts.
++Các nhận định phía dưới giữ snapshot ban đầu. Runtime mới NOT_RUN; không có performance ranking.
+ 
+ ## Đánh giá tiếp theo T03/T04
+ 

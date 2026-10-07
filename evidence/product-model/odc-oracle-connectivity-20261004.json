@@ -1,0 +1,51 @@
+{
+  "observed_at": "2026-10-03T23:01:54.180747+00:00",
+  "odc_version": "4.4.1-20260116",
+  "scope": "Troubleshoot the saved Oracle datasource. No datasource edits, application deployment, or target DDL/DML.",
+  "datasource": {
+    "id": 1,
+    "name": "oracle-cloud",
+    "type": "ORACLE",
+    "host": "adb.ap-mumbai-1.oraclecloud.com",
+    "port": 1521,
+    "service_name": "gaf051b0a6547f3_labdb_tp.adb.oraclecloud.com",
+    "ssl_enabled": false,
+    "jdbc_parameter_names": [
+      "SSL",
+      "SSL VERIFY"
+    ]
+  },
+  "connection_probes": [
+    {
+      "configuration": "Saved configuration",
+      "http_status": 400,
+      "code": "Unknown",
+      "message": "Connection reset."
+    },
+    {
+      "configuration": "Temporary request with protocol=tcps and oracle.net.ssl_server_dn_match=true. Not saved.",
+      "http_status": 400,
+      "code": "Unknown",
+      "message": "Connection reset."
+    }
+  ],
+  "tls_handshake": {
+    "origin": "Existing ODC pod",
+    "destination": "adb.ap-mumbai-1.oraclecloud.com:1521",
+    "result": "PASS",
+    "tls_version": "TLSv1.3",
+    "default_java_truststore_verified": true,
+    "hostname_verified": true,
+    "peer_common_name": "adb.ap-mumbai-1.oraclecloud.com",
+    "oracle_authentication_tested": false
+  },
+  "runtime_plugin_inspection": {
+    "jar": "/opt/odc/plugins/connect-plugin-oracle-4.4.1-20260116.jar",
+    "method": "OracleConnectionExtension.generateJdbcUrl, inspected with javap",
+    "service_name_url_prefix": "jdbc:oracle:thin:@//",
+    "explicit_tcps_scheme_generated": false
+  },
+  "assessment": "The current plugin generates a default TCP URL. The target accepts verified TLS. A proper TCPS URL is required before Oracle authentication can be assessed. Disabling certificate verification does not address the observed protocol mismatch.",
+  "oracle_acceptance_cases_executed": false,
+  "credentials_included": false
+}

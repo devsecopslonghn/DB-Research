@@ -1,0 +1,40 @@
+{
+  "observed_at": "2026-10-03T23:31:27.564601+00:00",
+  "product": "ODC 4.4.1-20260116",
+  "datasource_id": 1,
+  "datasource_name": "oracle-cloud",
+  "datasource_count": 1,
+  "connection_test": {
+    "http_status": 200,
+    "successful": true,
+    "active": true
+  },
+  "transport": {
+    "protocol": "tcps",
+    "ssl_server_dn_match": true,
+    "wallet_used": false,
+    "custom_lab_wrapper": true,
+    "implementation_pr": "https://github.com/devsecopslonghn/k8s-namepsace-chart/pull/32"
+  },
+  "read_only_query": {
+    "http_status": 200,
+    "status": "SUCCESS",
+    "sql": "SELECT USER AS SESSION_USER, SYS_CONTEXT('USERENV','DB_NAME') AS DB_NAME, SYS_CONTEXT('USERENV','CURRENT_SCHEMA') AS CURRENT_SCHEMA FROM DUAL",
+    "columns": [
+      "SESSION_USER",
+      "DB_NAME",
+      "CURRENT_SCHEMA"
+    ],
+    "rows": [
+      [
+        "ADMIN",
+        "GAF051B0A6547F3_LABDB",
+        "ADMIN"
+      ]
+    ],
+    "total": 1
+  },
+  "scope": "Saved connection and one metadata SELECT through ODC. SQL session closed after inspection. No target DDL/DML.",
+  "acceptance_cases_run": 0,
+  "credentials_included": false
+}

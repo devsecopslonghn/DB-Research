@@ -1,0 +1,16 @@
+{
+  "result": "PASS",
+  "existing_changes": [
+    "evaluation/README.md",
+    "poc/OSS-POC-README.md",
+    "poc/lab-topology.md",
+    "poc/results.md"
+  ],
+  "implementation_and_previous_evidence_unchanged": true,
+  "local_tests": 30,
+  "relative_links_checked": 125,
+  "runtime_cases_executed": 0,
+  "current_cases_blocked": 7,
+  "case_and_log_hashes_match": true,
+  "plaintext_secret_pattern_scan": "PASS"
+}

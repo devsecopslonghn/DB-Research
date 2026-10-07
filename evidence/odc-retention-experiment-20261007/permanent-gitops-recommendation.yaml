@@ -1,0 +1,23 @@
+# RECOMMENDATION ONLY: demonstrated in the temporary isolated lab experiment.
+# No permanent GitOps change has been pushed or applied.
+# Single-replica ODC; existing Service and data PVC remain prerequisites.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: odc
+  namespace: oceanbase-odc
+spec:
+  template:
+    spec:
+      hostname: odc
+      containers:
+        - name: odc
+          env:
+            - name: ODC_HOST
+              value: odc.oceanbase-odc.svc.cluster.local
+            - name: ODC_MAPPING_PORT
+              value: "8989"
+          volumeMounts:
+            - mountPath: /opt/odc/log
+              name: data
+              subPath: task-logs

@@ -1,0 +1,88 @@
+{
+  "immutable_files_unchanged": {
+    "criteria.csv": true,
+    "benchmark-spec.md": true,
+    "benchmark-config.json": true,
+    "workloads/manifest.json": true
+  },
+  "original_evidence_count": 15,
+  "original_evidence_mismatches": [],
+  "original_case_count": 45,
+  "criteria_row_count": 57,
+  "expected_mismatches": [],
+  "criteria_unique_ids": 57,
+  "new_criteria_statuses": [
+    "NOT_RUN"
+  ],
+  "malformed_csv_rows": [],
+  "register_entries": 47,
+  "register_unique_names": 47,
+  "new_discovery_entries": 11,
+  "register_count_scope": "47 entries includes inherited products/forks/components plus one composition sample; not47 independent platforms",
+  "feature_matrix_rows": 60,
+  "new_feature_runtime_statuses": [
+    "NOT_RUN"
+  ],
+  "performance_scores_present": [],
+  "sql_workload_count": 14,
+  "sql_workload_hash_mismatches": [],
+  "selected_source_hash_entries_checked": 127,
+  "selected_source_hash_mismatches": [],
+  "archive_not_retained": "DBGit npm archive read in memory; archive hash recorded;16selected npm files saved,34total discovery selected files; no install/execute",
+  "coordinator_independent_registry_body_hashes": [
+    {
+      "image": "docker.io/oceanbase/odc:4.4.1_bp1",
+      "body_hash_verified": true,
+      "matches_worker": true
+    },
+    {
+      "image": "docker.io/bladepipe/cgdm-alone:4.3.0",
+      "body_hash_verified": true,
+      "matches_worker": true
+    }
+  ],
+  "case_files": {
+    "clouddm": {
+      "count": 45,
+      "new_statuses": [
+        "NOT_RUN"
+      ]
+    },
+    "accessflow": {
+      "count": 45,
+      "new_statuses": [
+        "NOT_RUN"
+      ]
+    },
+    "archery": {
+      "count": 45,
+      "new_statuses": [
+        "NOT_RUN"
+      ]
+    },
+    "odc": {
+      "count": 45,
+      "new_statuses": [
+        "NOT_RUN"
+      ]
+    },
+    "bytebase": {
+      "count": 45,
+      "new_statuses": [
+        "NOT_RUN"
+      ]
+    }
+  },
+  "active_local_links_checked": 394,
+  "active_broken_local_links": [],
+  "link_scope": "Current evaluation/common/candidate/research MD and six affected root docs; source/vendor snapshots and historical byte-preserved archive excluded",
+  "status": "PASS",
+  "errors": [],
+  "inspection_only": true,
+  "product_tests_executed": false,
+  "deployment_build_service_sql_or_benchmark_executed": false,
+  "credential_or_live_oracle_access": false,
+  "runtime_new": "NOT_RUN",
+  "unverified": "Exact image layers/SBOM/source-image mapping/driver inventory/license hard enforcement; Oracle19c/21c; native correctness/races/real CI/recovery/performance",
+  "checked_at": "2026-10-04T13:50:53.204537+00:00"
+}

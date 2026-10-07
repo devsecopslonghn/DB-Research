@@ -1,0 +1,32 @@
+# Local credentials and environment overrides.
+*.cred
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.key
+*.p12
+*.pfx
+*.jks
+*.wallet
+.netrc
+
+# Python caches and build output.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Local tooling and generated runtime data.
+.idea/
+.vscode/
+.DS_Store
+node_modules/
+/poc/runner/java/target/
+/poc/local-state/
+/poc/reports/generated/

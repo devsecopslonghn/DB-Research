@@ -1,0 +1,121 @@
+--- README.md (before T00–T04)
++++ README.md
+@@ -1,4 +1,20 @@
+ # Oracle database change platform research
++
++## Đánh giá T00–T04, 04/10/2026
++
++**Shortlist POC có điều kiện: ODC, CloudDM, AccessFlow và Archery cho SQL governance.**
++Chưa ứng viên nào được chứng minh đạt toàn bộ yêu cầu migration Oracle và governance.
++
++1. Đọc [kết luận T00–T04](evaluation/report.md) và [shortlist có lý do](evaluation/shortlist.md).
++2. Kiểm [criteria](evaluation/criteria.csv), [register ứng viên](evaluation/candidates.csv) và [search log](evaluation/search-log.md).
++3. Xem [feature evidence](evaluation/feature-matrix.csv), [source reports](evaluation/README.md) và [review](evaluation/reviews/coordinator-review.md).
++4. Dùng [benchmark spec](evaluation/benchmark-spec.md), [config](evaluation/benchmark-config.json) và [SQL hashes](evaluation/workloads/manifest.json) cho lượt sau.
++
++Ba worker làm song song; coordinator tổng hợp và review chéo nguồn.
++Lượt này không deployment, test, service, SQL hoặc benchmark.
++Bằng chứng Bytebase/ODC giữ nguyên. Oracle 19c/21c, image/dependency gates và runtime mới còn chưa kiểm.
++
++## Nghiên cứu và POC trước T00–T04
+ 
+ **OceanBase ODC and AccessFlow remain in the existing open-source platform shortlist.**
+ ODC has Platform Fit HIGH and Migration Engine Fit LOW.
+--- REPORT.md (before T00–T04)
++++ REPORT.md
+@@ -1,5 +1,12 @@
+ # Open-source Oracle database change platform research
+ 
++## Cập nhật T00–T04, 04/10/2026
++
++[Kết luận mở rộng](evaluation/report.md) và [shortlist mới](evaluation/shortlist.md) bổ sung CloudDM và phạm vi governance của Archery.
++ODC/AccessFlow vẫn là POC platform có điều kiện. Bytebase là đối chứng riêng có edition gates.
++Các bảng phía dưới giữ phạm vi source/POC trước lượt T00–T04.
++Chúng không xếp hạng hiệu năng hoặc xác nhận ứng viên mới đạt runtime.
++[Register](evaluation/candidates.csv) ghi rõ phần được tái kiểm và phần kế thừa hồ sơ cũ.
+ 
+ Runtime update, 2026-10-04: ODC completed Oracle API/UI SQL and permission POC through a local TCPS wrapper.
+ See [connection POC](ODC-CONNECTION-POC.md). The 45 original criteria now have per-case results. See [API/UI results](ODC-ORACLE-POC-RESULTS.md).; earlier inspection statements retain their dated scope.
+--- LICENSE-AUDIT.md (before T00–T04)
++++ LICENSE-AUDIT.md
+@@ -1,4 +1,11 @@
+ # License and edition audit
++
++## Cập nhật license T03, 04/10/2026
++
++[Source reports T03](evaluation/README.md) tách repo, image, plugin, driver và feature edition.
++[Bytebase review](evaluation/candidates/bytebase/source-review.md) kiểm lại license/plan đúng runtime commit `a85f6cb4195299995e8554303550d672d5093e1d`.
++[CloudDM review](evaluation/candidates/clouddm/source-review.md) giữ current image/free limits là chưa xác minh.
++Các bảng cũ phía dưới vẫn thuộc snapshot đã ghi, không thay giấy phép image hoặc hợp đồng hiện tại.
+ 
+ The revised platform shortlist contains ODC and AccessFlow.
+ Neither shortlist entry establishes complete execution acceptance.
+--- FEATURE-MATRIX.md (before T00–T04)
++++ FEATURE-MATRIX.md
+@@ -1,4 +1,11 @@
+ # Desired and optional feature matrix
++
++## Cập nhật coverage T01–T03, 04/10/2026
++
++[Criteria](evaluation/criteria.csv) giữ nguyên 45 expected, thêm F01–F12.
++[Feature evidence](evaluation/feature-matrix.csv) tách DOC/SOURCE, runtime lịch sử và runtime mới NOT_RUN.
++[Shortlist](evaluation/shortlist.md) không tính điểm tổng khi coverage khác nhau.
++Các YES/PARTIAL phía dưới là feature fit của snapshot cũ, không là nghiệm thu Oracle runtime.
+ 
+ This register preserves twenty original candidates and adds OceanBase ODC.
+ The [product comparison](PRODUCT-MODEL.md) adds SQLE/DMS, frontend evidence, and separate platform scores.
+@@ -13,7 +20,7 @@
+ 
+ A positive feature entry does not establish Oracle support for that feature.
+ For example, Archery schema comparison primarily concerns MySQL tooling.
+-ODC deployment and authenticated GET endpoints received runtime inspection. Oracle feature acceptance remains NOT RUN.
++ODC deployment and authenticated GET endpoints received runtime inspection. Oracle 26ai API/UI results are recorded separately in ODC-ORACLE-POC-RESULTS.md.
+ The [ODC evaluation](ODC-EVALUATION.md) records the scope and dated runtime evidence.
+ 
+ An environment model means stored environment identities or selectable engine contexts.
+--- ORACLE-COMPATIBILITY.md (before T00–T04)
++++ ORACLE-COMPATIBILITY.md
+@@ -1,11 +1,19 @@
+ # Oracle implementation coverage
+ 
++## Cập nhật Oracle T03, 04/10/2026
++
++[Source reviews](evaluation/README.md) ghi giới hạn theo build và đường thực thi native.
++[ODC/Bytebase comparison](BYTEBASE-ODC-COMPARISON.md) giữ kết quả runtime Oracle 26ai.
++AccessFlow schema-change gate và raw query path có scope khác nhau.
++Archery có named PL/SQL INVALID check trong source, chưa nghiệm thu runtime.
++CloudDM có connector Oracle tích hợp. Parser/ledger/recovery chưa được chứng minh.
++Oracle 19c/21c và runtime ứng viên mới vẫn chưa kiểm.
+ 
+ Runtime update, 2026-10-04: ODC connected to Oracle through a local TCPS wrapper and completed one metadata SELECT.
+ See [connection POC](ODC-CONNECTION-POC.md). The subsequent API/UI POC has [per-case results](ODC-ORACLE-POC-RESULTS.md). Earlier source statements retain their dated scope.
+ 
+ This table describes source support. It does not describe runtime test results.
+-All Oracle execution acceptance results remain NOT RUN.
++Các ô trong bảng source không phải kết quả runtime. Kết quả Oracle 26ai nằm trong các báo cáo POC được liên kết ở trên.
+ ODC is deployed. Oracle plugin and driver presence received image inspection, as recorded in [ODC-EVALUATION.md](ODC-EVALUATION.md).
+ 
+ `YES` means an explicit implementation or documented native execution mechanism exists.
+@@ -81,7 +89,7 @@
+ 
+ Use a native Oracle datasource with a reachable listener, SID/service, environment, and evaluation account.
+ The [ODC guide](ODC-EVALUATION.md) provides connection fields and JDBC URL examples.
+-No external Oracle datasource is registered in the inspected deployment.
++Dòng này thuộc inspection cũ. POC Oracle 26ai sau đó đã đăng ký datasource riêng và có bằng chứng API/UI.
+ Oracle 19c/21c connection, schema discovery, package execution, and recovery remain unverified.
+ 
+ ODC project administrators, DBAs, and Developers inherit access to all project database records.
+--- ADDITIONAL-PLATFORMS-20261004.md (before T00–T04)
++++ ADDITIONAL-PLATFORMS-20261004.md
+@@ -1,4 +1,11 @@
+ # Ứng viên mã nguồn mở gần Bytebase
++
++## Đánh giá tiếp theo T03/T04
++
++[CloudDM review mới](evaluation/candidates/clouddm/source-review.md) kiểm connector tích hợp và các khoảng trống source.
++[AccessFlow](evaluation/candidates/accessflow/source-review.md) và [Archery](evaluation/candidates/archery/source-review.md) có review current source pin và review chéo.
++[Shortlist](evaluation/shortlist.md) giữ điều kiện license/image và Oracle native workflow trước POC.
++Lượt T00–T04 chỉ đọc nguồn và ghi artifact. Không có runtime hoặc benchmark mới.
+ 
+ Ngày kiểm tra: 2026-10-04.
+ 

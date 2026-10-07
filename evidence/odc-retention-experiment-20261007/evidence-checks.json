@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-07T17:19:25.815935+00:00",
+  "result": "PASS",
+  "json_files_validated": 47,
+  "text_or_zip_entries_secret_scanned": 58,
+  "actual_secret_values_absent": true,
+  "fresh_tickets_checked": 2,
+  "all_retrieval_classifications": "PRESERVED",
+  "download_files_verified": 4,
+  "all_async_hashes_checked": 101,
+  "source_edits": false,
+  "metadb_writes": false,
+  "historical_preservation": "PASS",
+  "rollback_template": "PASS",
+  "argo_restore": "PASS",
+  "parity_score_arithmetic": "PASS",
+  "relative_links_checked": 200,
+  "independent_readonly_review": "PASS; parent independently reviewed final reports/diffs afterward",
+  "note": "Disposable collection probes were corrected for unwrapped /api/v2/info, repeated placeholder workflow nodes, and canonical JSON ticket keys. No SQL replay or retention configuration correction was required."
+}

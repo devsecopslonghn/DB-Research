@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-10-07T10:53:18.269718+00:00",
+  "historical_files_unchanged": 54,
+  "intentional_existing_file_changes": [
+    "evaluation/README.md"
+  ],
+  "historical_runtime_tickets_preserved": 26,
+  "new_tickets": 12,
+  "active_new_tickets": [],
+  "case_schema_and_links": "PASS",
+  "json_parse": "PASS",
+  "new_case_counts": {
+    "PASS": 10,
+    "PARTIAL": 1,
+    "FAIL": 1,
+    "BLOCKED": 0,
+    "NOT_RUN": 0
+  },
+  "kubernetes_changes": true,
+  "kubernetes_change_scope": "Approved ordinary ODC pod replacement only; no configuration/PVC/MetaDB mutation",
+  "retention_baseline": "FAIL; metadata/SQL/audit preserved, log/result/download retrieval missing",
+  "async_files_preserved": 96
+}

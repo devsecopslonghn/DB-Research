@@ -1,0 +1,113 @@
+--- REPORT-before-odc-integration.txt
++++ REPORT.md
+@@ -20,7 +20,7 @@
+ 
+ | Existing platform shortlist | Category | Platform Fit | Migration Engine Fit | Material limits |
+ |---|---|---|---|---|
+-| OceanBase ODC | A | HIGH | LOW | Ticket-based SQL and ordered batches. Immutable version releases and target applied detection not established. Public main snapshot is from 2025. |
++| OceanBase ODC | A | HIGH | LOW | Ticket-based SQL and ordered batches. Immutable version releases and target applied detection not established. Public source snapshot is from 2025. ODC 4.4.1 is deployed. Oracle acceptance remains NOT RUN. |
+ | AccessFlow | A | MEDIUM | LOW | Existing schema change sets and environment promotion. Project/estate model is partial. Oracle script gate and target state gaps remain. |
+ 
+ Missing target state no longer makes this platform shortlist empty.
+@@ -55,9 +55,11 @@
+ SchemaPilot has a restricted custom license. DRM has unresolved complete payload license coverage.
+ The [license audit](LICENSE-AUDIT.md) preserves these distinctions.
+ 
+-No installation, application tests, or Oracle proof of concept ran.
+-The [verification plan](poc/ORACLE-POC.md) now starts with the existing platform operating model.
+-All runtime results remain `NOT RUN`.
++ODC is deployed at [oceanbase.apps.drgdevlab.com](https://oceanbase.apps.drgdevlab.com).
++Version, volume sizes, Oracle driver presence, administrator login, and selected authenticated GET routes were inspected.
++The [ODC evaluation](ODC-EVALUATION.md) records architecture, Oracle onboarding, inherited permissions, API integration, language, and licensing.
++No application tests or Oracle proof of concept ran.
++All 45 [platform and Oracle acceptance cases](poc/ORACLE-POC.md) remain `NOT RUN`.
+ 
+ ### Decision boundary
+ 
+@@ -88,7 +90,7 @@
+ | Platform | OSS License | Fully Free? | Self-hosted | Oracle | Target Ledger | Central Server | Web UI | History | Audit | RBAC | Approval | GitLab | Jenkins | Maturity |
+ |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+ | Bytebase Community | MIT subset / restricted enterprise and enablement | PARTIAL | YES | YES | NO | YES | YES | YES | NO | YES | NO | PARTIAL | PARTIAL | Established |
+-| OceanBase ODC | Apache-2.0 backend and frontend | YES | YES | YES | NO | YES | YES | YES | YES | YES | YES | UNKNOWN | PARTIAL | Established, public main stale |
++| OceanBase ODC | Apache-2.0 backend and frontend | YES | YES | YES | NO | YES | YES | YES | YES | YES | YES | PARTIAL | PARTIAL | Established. Deployed 4.4.1. Public snapshot older |
+ | SQLE + DMS Community | MPL-2.0 core. Oracle plugin coverage UNKNOWN | PARTIAL | YES | PARTIAL | UNKNOWN | YES | YES | YES | PARTIAL | YES | YES | UNKNOWN | PARTIAL | Active SQL governance |
+ | AccessFlow | Apache-2.0 | YES | YES | PARTIAL | NO | YES | YES | YES | YES | YES | YES | YES | PARTIAL | Young, active |
+ | D-Band DRM | ISC declaration, coverage UNKNOWN | PARTIAL | YES | YES | PARTIAL | NO | NO | PARTIAL | NO | NO | NO | PARTIAL | PARTIAL | Small CLI |
+@@ -124,6 +126,7 @@
+ | Candidate | Evidence IDs |
+ |---|---|
+ | Bytebase | BB-L, BB-ENT, BB-PLAN, BB-GATES, BB-STATE, BB-ORA, BB-DRIVER |
++| OceanBase ODC | P-ODC-LICENSE, P-ODC-PROJECT, P-ODC-ORACLE, P-ODC-GIT-API, P-ODC-DATASOURCE-API, P-ODC-FLOW-API, P-ODC-ROLE-INHERITANCE. Live evidence: ODC-EVALUATION.md |
+ | AccessFlow | AF-L, AF-PROM, AF-GATE, AF-SCAN, AF-GROUP, AF-JDBC, AF-ORA, AF-SSO, AF-VAULT, AF-DR, AF-CI |
+ | DRM | DRM-L, DRM-LOCAL, DRM-FW, DRM-LB, DRM-SQLPLUS, DRM-EXEC, DRM-RETRY |
+ | Open Migration | OM-L, OM-ENG, OM-STATE, OM-RUN, OM-META, OM-AUTH |
+@@ -133,7 +136,8 @@
+ | Yearning / Archery / derivative | YE-L, YE-SCOPE, AR-L, AR-ORA, AR-EXEC, AR-PARSER, AR-STATE, AR-SQLPLUS, FORK-L, FORK-EXEC |
+ | Additional candidates | DEP-L, DEP-ORA, MAINT-L, MAINT-SCOPE, PM-L, PM-SCOPE, PM-LIMITS, WARD-L, WARD-SCOPE, WARD-BOUNDARY, CB-L, CB-ORA |
+ 
+-Each ID resolves to a commit, file, and line range in [EVIDENCE.md](EVIDENCE.md#source-references).
++Original IDs resolve in [EVIDENCE.md](EVIDENCE.md#source-references).
++ODC IDs resolve in [PRODUCT-EVIDENCE.md](PRODUCT-EVIDENCE.md#source-references).
+ 
+ ### Execution and edition gap matrix
+ 
+@@ -183,7 +187,8 @@
+ The web deployment runs locally with central metadata services.
+ The documented container example uses an OceanBase MySQL metadata tenant.
+ This differs from the Oracle target databases.
+-Published images and third-party driver bundles were not inspected.
++The deployed image contains separate Oracle plugins and `ojdbc8-21.1.0.0.jar`.
++This inspection establishes packaging presence. Complete image dependency licensing and Oracle execution remain unverified.
+ [P-ODC-LICENSE, P-ODC-CLIENT-L, P-ODC-DEPLOY](PRODUCT-EVIDENCE.md#source-references)
+ 
+ ```text
+@@ -243,6 +248,38 @@
+ The screenshots show OceanBase MySQL examples. Oracle support is established separately by source.
+ The [product comparison](PRODUCT-MODEL.md) records Git and CI/CD limits without treating roadmap promises as implementations.
+ 
++#### Deployed topology, permissions, and API integration
++
++ODC 4.4.1 runs as one Java/web Deployment in namespace `oceanbase-odc`.
++Its application PVC is 5 GiB. A separate OceanBase CE StatefulSet provides a 10 GiB MetaDB PVC.
++The MetaDB uses OceanBase's MySQL tenant `test` and schema `odc_metadb`.
++It stores ODC application state. Managed Oracle data stays in the external Oracle target.
++Single application and database replicas do not provide high availability.
++Kubernetes is optional. The official repository also documents Docker deployment with a MetaDB.
++
++Project administrators, DBAs, and Developers inherit access to every project database.
++Participants need explicit grants and suit evaluation of access limited to selected database/schema records.
++ODC grants support QUERY, CHANGE, EXPORT, ACCESS, and expiry.
++They are application metadata. Oracle permissions still depend on the datasource account's native privileges.
++Actual cross-schema isolation, expiry, and approval duties remain NOT RUN.
++[P-ODC-ROLE-INHERITANCE, P-ODC-DB-PERMISSION-SERVICE](PRODUCT-EVIDENCE.md#source-references)
++
++The datasource API can register Oracle connections and synchronize schema records. It does not provision an Oracle instance.
++Flow APIs expose ticket creation, approval, execution, status, and logs.
++Project repository registration exists, so Git integration is PARTIAL rather than UNKNOWN.
++Native merge-to-deploy automation was not established.
++The current login uses encrypted credentials, session cookies, organization context, and CSRF protection.
++Authenticated list GET requests succeeded. CI write requests and Oracle task execution remain unverified.
++[P-ODC-DATASOURCE-API, P-ODC-FLOW-API, P-ODC-GIT-API](PRODUCT-EVIDENCE.md#source-references)
++
++The inspected deployment does not expose a working Swagger API catalog.
++The latest HTML route returned 200, but its resource endpoint returned 404 and its documentation route returned configuration-shaped JSON.
++Select English through the UI language selector. The setting is stored per browser.
++ODC's Apache-2.0 source rights remain separate from OceanBase commercial database trials and hosted-service charges.
++
++The [detailed ODC evaluation](ODC-EVALUATION.md) contains the architecture diagram, Bytebase mappings, Oracle procedure, API routes, and evidence limits.
++The [runtime record](evidence/product-model/odc-runtime-20261003.json) records sanitized deployment observations.
++
+ ### SQLE + DMS Community: project SQL governance with paid version releases
+ 
+ Category: B. Platform Fit: LOW. Migration Engine Fit: LOW.
+@@ -648,7 +685,9 @@
+ [MATURITY.md](MATURITY.md) reports available releases, activity, stars, forks, contributors, issues, deployment assets, documentation, and security evidence.
+ Missing or incomplete statistics remain explicit.
+ Repository popularity is not proof of production readiness.
+-Published container references were inspected. No image was pulled or scanned.
++ODC images were deployed, and Oracle plugin/driver presence was inspected.
++No image vulnerability scan or complete binary dependency audit ran.
++The other candidates retain their original source-only verification scope.
+ 
+ ## 9. Remaining gaps and engineering scope
+ 

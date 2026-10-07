@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-10-07T17:11:01.531583+00:00",
+  "reader": "admin (audit read only)",
+  "http_status": 200,
+  "successful": true,
+  "total_in_page": 254,
+  "records": [
+    {
+      "id": 3000139,
+      "userId": 10002,
+      "username": "POC executor",
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "taskId": "2000014",
+      "connectionId": null,
+      "databaseName": null,
+      "startTime": 1791392833000,
+      "endTime": null,
+      "result": "SUCCESS"
+    },
+    {
+      "id": 3000137,
+      "userId": 10002,
+      "username": "POC executor",
+      "action": "EXECUTE_ASYNC_TASK",
+      "actionName": "Execute database change task",
+      "taskId": "2000013",
+      "connectionId": null,
+      "databaseName": null,
+      "startTime": 1791392817000,
+      "endTime": null,
+      "result": "SUCCESS"
+    }
+  ]
+}

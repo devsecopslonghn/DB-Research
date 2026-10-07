@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-10-07T17:08:08.774648+00:00",
+  "access": "Read-only SELECT of current R1/R2 ASYNC task metadata; no writes",
+  "sql": "SELECT JSON_OBJECT('flow_id',n.flow_instance_id,'node_id',n.id,'task_id',t.id,'creator_id',t.creator_id,'task_type',t.task_type,'status',t.status,'executor',t.executor,'submitter',t.submitter,'result_json',t.result_json) FROM flow_instance_node_task n JOIN task_task t ON t.id=n.task_task_id WHERE n.flow_instance_id IN (2000013,2000014) AND t.task_type='ASYNC' AND n.status IN ('COMPLETED','FAILED') ORDER BY n.flow_instance_id;",
+  "tasks": [
+    {
+      "status": "DONE",
+      "flow_id": 2000013,
+      "node_id": 2000086,
+      "task_id": 2000026,
+      "executor": {
+        "host": "odc.oceanbase-odc.svc.cluster.local",
+        "hostName": "odc",
+        "jvmStartTime": 1791392628900,
+        "pid": 57,
+        "port": 8989
+      },
+      "submitter": {
+        "host": "odc.oceanbase-odc.svc.cluster.local",
+        "hostName": "odc",
+        "jvmStartTime": 1791392628900,
+        "pid": 57,
+        "port": 8989
+      },
+      "task_type": "ASYNC",
+      "creator_id": 10000,
+      "result_json": {
+        "containQuery": true,
+        "errorRecordsFilePath": null,
+        "failCount": 0,
+        "jsonFileName": "AF42F993-21CA-4352-9865-82C9453E7261",
+        "records": [],
+        "successCount": 1,
+        "zipFileId": "F8E8377A-03FC-41AD-A801-D9D1C63218B5"
+      }
+    },
+    {
+      "status": "FAILED",
+      "flow_id": 2000014,
+      "node_id": 2000091,
+      "task_id": 2000028,
+      "executor": {
+        "host": "odc.oceanbase-odc.svc.cluster.local",
+        "hostName": "odc",
+        "jvmStartTime": 1791392628900,
+        "pid": 57,
+        "port": 8989
+      },
+      "submitter": {
+        "host": "odc.oceanbase-odc.svc.cluster.local",
+        "hostName": "odc",
+        "jvmStartTime": 1791392628900,
+        "pid": 57,
+        "port": 8989
+      },
+      "task_type": "ASYNC",
+      "creator_id": 10000,
+      "result_json": {
+        "containQuery": true,
+        "errorRecordsFilePath": "data/ASYNC/FD718FC6-2C78-44F3-BC21-B46855F0D546.txt",
+        "failCount": 1,
+        "jsonFileName": "BA0B6D85-97BF-4C93-A3DB-E9A77AD6A2B1",
+        "records": [
+          "The execution failed on line 1.: SELECT 1/0 AS P7_RETENTION_CONFIG_FAILURE FROM DUAL ErrorCode = 1476, SQLState = 22012, Details = ORA-01476: divisor is equal to zero "
+        ],
+        "successCount": 0,
+        "zipFileId": "6669E8F5-D214-4540-8E2D-F0468E79F7E6"
+      }
+    }
+  ]
+}

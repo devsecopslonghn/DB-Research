@@ -1,0 +1,23 @@
+# UNAPPLIED, requires separate approval after the baseline retention test.
+# Strategic-merge patch for the existing single-replica isolated lab Deployment.
+# Qualify with new tickets after rollout, then a second ordinary replacement.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: odc
+  namespace: oceanbase-odc
+spec:
+  template:
+    spec:
+      hostname: odc
+      containers:
+        - name: odc
+          env:
+            - name: ODC_HOST
+              value: odc.oceanbase-odc.svc.cluster.local
+            - name: ODC_MAPPING_PORT
+              value: "8989"
+          volumeMounts:
+            - mountPath: /opt/odc/log
+              name: data
+              subPath: task-logs

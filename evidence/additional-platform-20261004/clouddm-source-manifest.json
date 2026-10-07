@@ -1,0 +1,53 @@
+{
+  "commit": "a9f16e78b8288c9a4158ee9df4378ee16b80021e",
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/README.md",
+      "sha256": "685c2fa243092f6e2e6b648d32ff698f819991b82ac6fe0d90f39b6525829fd9",
+      "bytes": 7566
+    },
+    {
+      "path": "LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/LICENSE.txt",
+      "sha256": "a714b40a28d8cefd070eb0b62e976edf3e85f3304ff4097971453da778ef7844",
+      "bytes": 11368
+    },
+    {
+      "path": "docs/guides/gitlab-cicd.en.md",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/docs/guides/gitlab-cicd.en.md",
+      "sha256": "20bf0f66ae4eff7144137e96a476da1e2592d50dfeabb8ca81bf1b21b46f1138",
+      "bytes": 3050
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/controller/cicd/DmChangeFlowWebhookController.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/controller/cicd/DmChangeFlowWebhookController.java",
+      "sha256": "a6af7ca5fb3fbf2ebb35848a87cf41c4f6f6ded90bcdf757f5e7844fc4a83833",
+      "bytes": 12792
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/impl/ChangeSqlServiceImpl.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/impl/ChangeSqlServiceImpl.java",
+      "sha256": "75db8638dfa7776f2a26d1d6b1fb51bc0b2f78d367296d4a910768d9106212fa",
+      "bytes": 3137
+    },
+    {
+      "path": "backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/action/ChangeActionForApproval.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-platform/cgdm-console/src/main/java/com/clougence/clouddm/console/web/component/cicd/action/ChangeActionForApproval.java",
+      "sha256": "68dba484a7781739a3864eb23e04e07338a69ecc63cb2fdb8f0baa09ef6a2c08",
+      "bytes": 11949
+    },
+    {
+      "path": "backend/clouddm-plugins/clouddm-ds/dsc-common-oracle/src/main/java/com/clougence/clouddm/dsfamily/oracle/execute/dsfactory/OracleDsFactory.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-plugins/clouddm-ds/dsc-common-oracle/src/main/java/com/clougence/clouddm/dsfamily/oracle/execute/dsfactory/OracleDsFactory.java",
+      "sha256": "27e677bd74b51910853da5a8ad558af51daddca720fe7f2f460501363b2e2a12",
+      "bytes": 10669
+    },
+    {
+      "path": "backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/scripts/V202605070011__dm_license_support.java",
+      "url": "https://raw.githubusercontent.com/ClouGence/open-cdm/a9f16e78b8288c9a4158ee9df4378ee16b80021e/backend/clouddm-boot/boot-initialization/src/main/java/com/clougence/clouddm/init/component/scripts/V202605070011__dm_license_support.java",
+      "sha256": "1f336941e7810456dd15afdbb387fbdf1fea270d520dc8fc4ebbd313fe64cb0a",
+      "bytes": 1103
+    }
+  ]
+}

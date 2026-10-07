@@ -1,0 +1,415 @@
+{
+  "tool": "odc",
+  "build": "ODC 4.4.1-20260116",
+  "oracle": "26ai 23.26.4.1.0",
+  "evidence_type": "RUNTIME_HISTORY",
+  "new_execution_status": "NOT_RUN",
+  "historical_evidence": "../../../evidence/oracle-poc-cases.json",
+  "cases": [
+    {
+      "id": "MODEL-01",
+      "expected": "Applications/projects and their database targets have stable identities.",
+      "feature": "F02",
+      "historical_status": "PASS",
+      "historical_observed": "Project odc-oracle-poc id=1 có datasource/schema ID ổn định; bootstrap ADMIN ở project riêng id=2.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-02",
+      "expected": "Register Oracle instances, services, databases/schemas, and environments centrally.",
+      "feature": "F02",
+      "historical_status": "PASS",
+      "historical_observed": "API đăng ký năm datasource POC. DEV/SIT/UAT/mock PROD và observer có schema, service và environment. Chỉ một Oracle instance.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-03",
+      "expected": "Retain a stable change/release identifier and exact SQL artifact.",
+      "feature": "F05",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Ticket có ID và SQL. Runner lưu SHA-256/job reference. Chưa có immutable release hay checksum do ODC bắt buộc.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-04",
+      "expected": "Retain requester, approver, executor, database account, and timestamps separately.",
+      "feature": "F09",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Có requester, hai approver và timestamp. Service task operator có thể là creator; cần đối chiếu audit để xác định caller Execute.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-05",
+      "expected": "Review the exact SQL intended for the selected Oracle targets.",
+      "feature": "F06",
+      "historical_status": "PASS",
+      "historical_observed": "UI hiển thị đúng CREATE POC_GOV_MANUAL và target MOCKPROD trước khi OWNER/DBA duyệt; CLI đối chiếu SHA-256.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-06",
+      "expected": "Bind approval to the artifact and target set. Record any later change.",
+      "feature": "F06",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Ticket thủ công giữ SQL/target; PUT trực tiếp không có route cập nhật. Chưa kiểm mọi đường thay artifact hoặc target set sau duyệt.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-07",
+      "expected": "Run the same approved change through DEV, SIT, UAT, and PROD in the accepted order.",
+      "feature": "F07",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Bốn ticket DEV→SIT→UAT→MOCKPROD dùng cùng byte SQL và SHA-256. Thứ tự do runner điều khiển; chưa kiểm ordered batch native.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-08",
+      "expected": "Stop between stages. Resume only through an authorized action.",
+      "feature": "F07",
+      "historical_status": "PASS",
+      "historical_observed": "MANUAL dừng WAIT_FOR_EXECUTION. UI/API phải thực hiện Execute sau phê duyệt. Requester vẫn được thực thi sau duyệt.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-09",
+      "expected": "Apply the accepted stop policy. Do not continue automatically after an uncertain result.",
+      "feature": "F07",
+      "historical_status": "PARTIAL",
+      "historical_observed": "ABORT dừng sau lỗi bảng thiếu; dòng 1101 không được chèn. Chưa xác nhận stop policy giữa các stage của batch.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-10",
+      "expected": "Display per-target status, execution records, errors, and central audit.",
+      "feature": "F09",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Có ticket history/result và 97 audit record POC theo actor/action/time. Một số task log và attachment không còn đọc sau restart; chưa nghiệm thu retention.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-11",
+      "expected": "Prevent unauthorized project, target, approval, and execution actions. Verify inherited project access, Participant grants, expiry, and denied Oracle cross-schema access.",
+      "feature": "F03;F06",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Outsider và Participant thiếu grant nhận 403. QUERY grant cho phép đọc; CHANGE bị chặn. Revoke lại nhận 403. Expiry được làm tròn cuối ngày nên chưa thử boundary.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "MODEL-12",
+      "expected": "Identify every missing release, checksum, ledger, locking, and recovery capability.",
+      "feature": "F05",
+      "historical_status": "PASS",
+      "historical_observed": "Đã xác định thiếu target migration ledger, checksum enforcement, idempotency theo job reference và instrumentation recovery. Đây là kiểm kê gap, không phải production readiness.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-01",
+      "expected": "Table exists. One successful target entry and one linked central result exist.",
+      "feature": "F04",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Object/constraint và ticket thành công. USER_TABLES không có migration ledger; chưa có version order tại target.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-02",
+      "expected": "Both objects exist. Version order and ledger are correct.",
+      "feature": "F04",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Object/constraint và ticket thành công. USER_TABLES không có migration ledger; chưa có version order tại target.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-03",
+      "expected": "The row changes once. Replay does not increase the row count or value.",
+      "feature": "F04",
+      "historical_status": "PARTIAL",
+      "historical_observed": "INSERT/UPDATE đúng dữ liệu. Replay không được skip theo version và gặp ORA-00001; chưa đạt migration exactly-once.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-04",
+      "expected": "Procedure is VALID. Invocation changes the expected row.",
+      "feature": "F04",
+      "historical_status": "PASS",
+      "historical_observed": "Procedure VALID; gọi procedure đổi STATUS=PAID.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-05",
+      "expected": "Function is VALID. SELECT from DUAL returns the expected value.",
+      "feature": "F04",
+      "historical_status": "PASS",
+      "historical_observed": "Function VALID; POC_ADD_TAX(100)=110.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-06",
+      "expected": "Both objects are VALID. Package invocation succeeds.",
+      "feature": "F04",
+      "historical_status": "PASS",
+      "historical_observed": "Package/spec/body VALID; initialization=42 và SET_NOTE thành công.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-07",
+      "expected": "Trigger is VALID. One event produces one expected effect.",
+      "feature": "F04",
+      "historical_status": "PASS",
+      "historical_observed": "Trigger VALID; UPDATE 150→200 tạo đúng một audit row.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-08",
+      "expected": "Each block executes once. Internal semicolons remain intact.",
+      "feature": "F04",
+      "historical_status": "PASS",
+      "historical_observed": "BEGIN và DECLARE chạy một lần, tạo đúng hai dòng 801/802.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-09",
+      "expected": "The parser uses the slash as a client delimiter. Oracle does not receive a bare slash statement.",
+      "feature": "F04",
+      "historical_status": "PASS",
+      "historical_observed": "PL/SQL với slash riêng dòng thành công; function 10/2=5.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-10",
+      "expected": "Required commands work through a supported execution path. Unsupported commands fail clearly before execution.",
+      "feature": "F04",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Ticket SQLPlus directive thất bại; marker 1001=0. Chưa kiểm từng directive riêng hoặc native SQLPlus path.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-11",
+      "expected": "The result reports invalid compilation. ALL_ERRORS identifies the error. The release is not reported as fully successful.",
+      "feature": "F04",
+      "historical_status": "FAIL",
+      "historical_observed": "Ticket 1000011 EXECUTION_SUCCEEDED, successCount=1. Oracle POC_INVALID_PROC vẫn INVALID với PLS-00201 và Statement ignored.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "SQL-12",
+      "expected": "The parser preserves the exact body and statement boundaries.",
+      "feature": "F04",
+      "historical_status": "PASS",
+      "historical_observed": "q-quote, comment trong literal, quoted identifier và nested block giữ đúng ba dòng.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-01",
+      "expected": "Execution stops according to policy. The central result contains the exact failed migration and Oracle error.",
+      "feature": "F05",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Ticket 1000012 EXECUTION_FAILED; ABORT không chèn dòng 1101. Log cũ không còn đọc được sau restart; exact error cần attachment.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-02",
+      "expected": "The engine skips the migration. The platform records the replay request without changing target state.",
+      "feature": "F05",
+      "historical_status": "FAIL",
+      "historical_observed": "Replay SQL-03 tạo ticket 1000024 và chạy SQL lại; ORA-00001. Không có skip theo migration version.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-03",
+      "expected": "Recovery follows a documented decision. The platform does not repeat committed work without review.",
+      "feature": "F05",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Hậu kiểm sau REC01 rồi tạo ticket sửa 1000025 chỉ chèn dòng 1101. Đây là recovery quyết định bởi operator, chưa có target-ledger reconciliation.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-04",
+      "expected": "The created table remains visible. The platform reports partial or uncertain state. Automatic replay is blocked.",
+      "feature": "F05",
+      "historical_status": "PARTIAL",
+      "historical_observed": "CREATE POC_PARTIAL đã commit; ALTER thất bại và ticket báo EXECUTION_FAILED. Chưa có cơ chế target ledger khóa replay tự động.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-05",
+      "expected": "Restart detects an uncertain result. An operator reconciles objects and history before resuming.",
+      "feature": "F05",
+      "historical_status": "NOT_RUN",
+      "historical_observed": "Cần instrumentation commit checkpoint, network proxy hoặc topology/backup riêng. Không gây crash/mạng/restore trong lần POC này.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-06",
+      "expected": "Restart reads target success and repairs central state. No SQL replay occurs.",
+      "feature": "F05",
+      "historical_status": "NOT_RUN",
+      "historical_observed": "Cần instrumentation commit checkpoint, network proxy hoặc topology/backup riêng. Không gây crash/mạng/restore trong lần POC này.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-07",
+      "expected": "The result distinguishes known failure from uncertain outcome. Recovery checks target history and object state.",
+      "feature": "F05",
+      "historical_status": "NOT_RUN",
+      "historical_observed": "Cần instrumentation commit checkpoint, network proxy hoặc topology/backup riêng. Không gây crash/mạng/restore trong lần POC này.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-08",
+      "expected": "Validation fails before new SQL executes. An authorized repair cannot be silent.",
+      "feature": "F05",
+      "historical_status": "FAIL",
+      "historical_observed": "Đổi SQL-01 nhưng giữ case ID vẫn tạo ticket mới 1000015. ODC không chặn checksum trước thực thi; không có migration version identity.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-09",
+      "expected": "Only one migration execution holds the target lock. Both central jobs have accurate results.",
+      "feature": "F05",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Hai ticket cùng target được gửi Execute đồng thời và đều thành công. Chưa instrument lock owner/commit boundary để nghiệm thu serialization.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-10",
+      "expected": "Stable request identity prevents duplicate work. Both API responses link to the same execution decision.",
+      "feature": "F05",
+      "historical_status": "FAIL",
+      "historical_observed": "Hai POST tạo ticket cùng artifact/job reference tạo ID 1000026/1000027 và hai marker rows. Gọi Execute lại ticket hoàn tất bị từ chối; không thay thế request-level dedup.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-11",
+      "expected": "The platform reconciles the durable job and target state without duplicate execution.",
+      "feature": "F05",
+      "historical_status": "NOT_RUN",
+      "historical_observed": "Cần instrumentation commit checkpoint, network proxy hoặc topology/backup riêng. Không gây crash/mạng/restore trong lần POC này.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "REC-12",
+      "expected": "Recovery distinguishes a dead worker from a slow worker. An operator can release a proven stale lock.",
+      "feature": "F05",
+      "historical_status": "NOT_RUN",
+      "historical_observed": "Cần instrumentation commit checkpoint, network proxy hoặc topology/backup riêng. Không gây crash/mạng/restore trong lần POC này.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-01",
+      "expected": "A query returns requester, approver, executor, SQL artifact, target, times, trigger, and result.",
+      "feature": "F09",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Có ticket, artifact SHA, target, actor, time và local job reference. Cần join audit và file evidence; chưa có một truy vấn release chuẩn.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-02",
+      "expected": "Changing the artifact, target, environment, or release version invalidates the previous approval.",
+      "feature": "F06",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Luồng phê duyệt trên ticket đã quan sát. Chưa kiểm toàn bộ thay SQL/target/environment/version và invalidation sau duyệt.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-03",
+      "expected": "An unauthorized requester cannot approve or execute their own production change. Document administrator powers separately.",
+      "feature": "F06",
+      "historical_status": "FAIL",
+      "historical_observed": "Rule POCPROD yêu cầu OWNER→DBA. Requester bị chặn trước duyệt nhưng POST Execute sau duyệt trả 200 và chạy thành công.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-04",
+      "expected": "Higher environments receive the same immutable artifact after required lower-environment success.",
+      "feature": "F07",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Cùng SHA-256 và marker trên bốn schema. Runner giữ thứ tự; chưa có immutable promotion enforcement ở ODC.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-05",
+      "expected": "GitLab and Jenkins triggers retain a named service principal and the initiating job reference.",
+      "feature": "F08",
+      "historical_status": "NOT_RUN",
+      "historical_observed": "Chỉ chạy API/CLI cục bộ với job reference. Chưa có runner GitLab/Jenkins và named CI service principal thực tế.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-06",
+      "expected": "Restored metadata, artifacts, and keys remain readable. Reconciliation detects target changes after the backup.",
+      "feature": "F10",
+      "historical_status": "NOT_RUN",
+      "historical_observed": "Cần instrumentation commit checkpoint, network proxy hoặc topology/backup riêng. Không gây crash/mạng/restore trong lần POC này.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-07",
+      "expected": "Concurrent API servers cannot dispatch duplicate target execution.",
+      "feature": "F10",
+      "historical_status": "NOT_RUN",
+      "historical_observed": "Cần instrumentation commit checkpoint, network proxy hoặc topology/backup riêng. Không gây crash/mạng/restore trong lần POC này.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-08",
+      "expected": "Logs and stored results contain no database passwords or secret-manager credentials.",
+      "feature": "F09;F10",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Evidence công bố dùng allowlist và so khớp secret thực tế trước publish. Chưa kiểm toàn bộ log, backing store hoặc secret-manager integration.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    },
+    {
+      "id": "GOV-09",
+      "expected": "Audit export preserves actor, artifact hash, target, time, trigger, and result after log rotation.",
+      "feature": "F09",
+      "historical_status": "PARTIAL",
+      "historical_observed": "Audit API trả record POC theo actor/action/time. Chưa nghiệm thu export/hash binding sau rotation; một số task log và attachment không còn đọc sau restart.",
+      "historical_evidence_type": "RUNTIME",
+      "new_status": "NOT_RUN"
+    }
+  ]
+}
