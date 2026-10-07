@@ -1,0 +1,58 @@
+{
+  "checks": {
+    "preservation": {
+      "historical_hashes_matching": 15,
+      "submodule_changes": []
+    },
+    "research_documents": {
+      "command": [
+        "python3",
+        "tools/verify_research_documents.py"
+      ],
+      "errors": [],
+      "exit_code": 0,
+      "relative_links_checked": 986,
+      "status": "PASS"
+    },
+    "unit_tests": {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts/db_demo/tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "tests": 33
+    },
+    "validation": {
+      "command": [
+        "python3",
+        "-m",
+        "scripts.db_demo.validate_manifest",
+        "--output",
+        "/tmp/db-demo-ready-validation"
+      ],
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    "workflow_lint": {
+      "command": [
+        "/tmp/db-demo-actionlint/actionlint",
+        "-shellcheck=",
+        "-pyflakes=",
+        ".github/workflows/db-validate.yml",
+        ".github/workflows/db-release.yml",
+        ".github/workflows/db-report.yml"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "tool_version": "actionlint 1.7.12 (official release checksum verified)"
+    }
+  },
+  "observed_at": "2026-10-07T18:36:26.808405+00:00",
+  "oracle_migration_execution": false
+}

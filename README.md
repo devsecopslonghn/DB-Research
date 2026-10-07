@@ -1,5 +1,7 @@
 # Oracle database change-management research
 
+**GitHub/ODC migration demo:** Start at [demo/README.md](demo/README.md) for the new `customer-profile` implementation, three releases, validation, native ODC handoff and reports. [Demo evaluation](evaluation/github-odc-migration-demo.md) separates implementation, local checks, GitHub Actions and live ODC/Oracle evidence. Historical research below retains its original conclusions.
+
 **Latest product comparison (7 October 2026): [ODC versus Bytebase for practical adoption](evaluation/odc-bytebase-practical-comparison.md).** The new research mission benchmarks Bytebase's evidenced daily workflow: ODC scores 80/100, has a moderate product gap and merits a focused adoption POC; production hardening risk remains HIGH. This documentation-only recommendation uses the practical workflow rather than the earlier custom-controller threshold. Earlier decisions and the separate CI implementation/runtime task below remain preserved; no SQL or new product test was run.
 
 **Current implementation task (7 October 2026): [OSS-only single-target POC](poc/OSS-POC-README.md).** The user has ruled out commercial software and selected reuse of the existing CI plus one Oracle engine. The runner/tests/reports are implemented; [runtime results and blockers](poc/results.md) govern this task. The research decision records below remain historical evidence, with no result rewrites.

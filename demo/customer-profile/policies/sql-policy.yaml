@@ -1,0 +1,22 @@
+version: 1
+rules:
+  ALTER_SYSTEM: BLOCKED
+  CREATE_USER: BLOCKED
+  DROP_USER: BLOCKED
+  GRANT_DBA: BLOCKED
+  ALTER_USER: BLOCKED
+  GRANT_ANY_PRIVILEGE: BLOCKED
+  DYNAMIC_SQL: REQUIRES_DBA_REVIEW
+  DROP_TABLE: REQUIRES_DBA_REVIEW
+  TRUNCATE_TABLE: REQUIRES_DBA_REVIEW
+  COMMIT: WARNING
+  ROLLBACK: WARNING
+  WHENEVER: REQUIRES_DBA_REVIEW
+  SPOOL: REQUIRES_DBA_REVIEW
+  AT_SCRIPT: REQUIRES_DBA_REVIEW
+  SUBSTITUTION: REQUIRES_DBA_REVIEW
+limitations: >-
+  Lexical checks identify common patterns and PL/SQL slash delimiters. They are not
+  a complete Oracle parser, a privilege proof, or a substitute for OWNER/DBA review.
+  Dynamic SQL, synonyms, dependencies and product-specific execution require review.
+  SQLPlus directives and substitution are reported, not interpreted or expanded.

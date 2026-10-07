@@ -1,0 +1,252 @@
+{
+  "evidence_source": "FIXTURE",
+  "sample_label": "SAMPLE / DEMO; never runtime proof",
+  "release_id": "REL-2026.10-DEMO02-FIX",
+  "odc_batch_id": "SAMPLE_BATCH_CORRECTION",
+  "native_status": "EXECUTION_SUCCEEDED",
+  "environments": {
+    "DEV": {
+      "ticket_id": "SAMPLE_BATCH_CORRECTION",
+      "native_status": "EXECUTION_SUCCEEDED",
+      "start": "SAMPLE_TIMESTAMP",
+      "end": "SAMPLE_TIMESTAMP",
+      "execution_actor": "SAMPLE_OPERATOR",
+      "oracle": {
+        "environment": "DEV",
+        "database_id": 1000069,
+        "schema": "ODC_POC_20261004_DEV",
+        "query_status": "SUCCESS",
+        "objects": [
+          {
+            "name": "DM_CP_CUSTOMER",
+            "type": "TABLE",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_CUSTOMER_SEQ",
+            "type": "SEQUENCE",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_CUSTOMER_STATUS_IX",
+            "type": "INDEX",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_LABEL",
+            "type": "FUNCTION",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_ACTIVE_CUSTOMERS",
+            "type": "VIEW",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_CUSTOMER_REGION_IX",
+            "type": "INDEX",
+            "status": "VALID"
+          }
+        ],
+        "errors": [],
+        "data": {
+          "row_count": 3,
+          "active_count": 2
+        },
+        "function": {
+          "result": "C0001:Demo Customer One"
+        },
+        "observed_at": "SAMPLE_TIMESTAMP"
+      }
+    },
+    "SIT": {
+      "ticket_id": "SAMPLE_BATCH_CORRECTION",
+      "native_status": "EXECUTION_SUCCEEDED",
+      "start": "SAMPLE_TIMESTAMP",
+      "end": "SAMPLE_TIMESTAMP",
+      "execution_actor": "SAMPLE_OPERATOR",
+      "oracle": {
+        "environment": "SIT",
+        "database_id": 1000122,
+        "schema": "ODC_POC_20261004_SIT",
+        "query_status": "SUCCESS",
+        "objects": [
+          {
+            "name": "DM_CP_CUSTOMER",
+            "type": "TABLE",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_CUSTOMER_SEQ",
+            "type": "SEQUENCE",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_CUSTOMER_STATUS_IX",
+            "type": "INDEX",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_LABEL",
+            "type": "FUNCTION",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_ACTIVE_CUSTOMERS",
+            "type": "VIEW",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_CUSTOMER_REGION_IX",
+            "type": "INDEX",
+            "status": "VALID"
+          }
+        ],
+        "errors": [],
+        "data": {
+          "row_count": 3,
+          "active_count": 2
+        },
+        "function": {
+          "result": "C0001:Demo Customer One"
+        },
+        "observed_at": "SAMPLE_TIMESTAMP"
+      }
+    },
+    "UAT": {
+      "ticket_id": "SAMPLE_BATCH_CORRECTION",
+      "native_status": "EXECUTION_SUCCEEDED",
+      "start": "SAMPLE_TIMESTAMP",
+      "end": "SAMPLE_TIMESTAMP",
+      "execution_actor": "SAMPLE_OPERATOR",
+      "oracle": {
+        "environment": "UAT",
+        "database_id": 1000184,
+        "schema": "ODC_POC_20261004_UAT",
+        "query_status": "SUCCESS",
+        "objects": [
+          {
+            "name": "DM_CP_CUSTOMER",
+            "type": "TABLE",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_CUSTOMER_SEQ",
+            "type": "SEQUENCE",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_CUSTOMER_STATUS_IX",
+            "type": "INDEX",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_LABEL",
+            "type": "FUNCTION",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_ACTIVE_CUSTOMERS",
+            "type": "VIEW",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_CUSTOMER_REGION_IX",
+            "type": "INDEX",
+            "status": "VALID"
+          }
+        ],
+        "errors": [],
+        "data": {
+          "row_count": 3,
+          "active_count": 2
+        },
+        "function": {
+          "result": "C0001:Demo Customer One"
+        },
+        "observed_at": "SAMPLE_TIMESTAMP"
+      }
+    },
+    "MOCKPROD": {
+      "ticket_id": "SAMPLE_BATCH_CORRECTION",
+      "native_status": "EXECUTION_SUCCEEDED",
+      "start": "SAMPLE_TIMESTAMP",
+      "end": "SAMPLE_TIMESTAMP",
+      "execution_actor": "SAMPLE_OPERATOR",
+      "oracle": {
+        "environment": "MOCKPROD",
+        "database_id": 1000218,
+        "schema": "ODC_POC_20261004_MOCKPROD",
+        "query_status": "SUCCESS",
+        "objects": [
+          {
+            "name": "DM_CP_CUSTOMER",
+            "type": "TABLE",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_CUSTOMER_SEQ",
+            "type": "SEQUENCE",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_CUSTOMER_STATUS_IX",
+            "type": "INDEX",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_LABEL",
+            "type": "FUNCTION",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_ACTIVE_CUSTOMERS",
+            "type": "VIEW",
+            "status": "VALID"
+          },
+          {
+            "name": "DM_CP_CUSTOMER_REGION_IX",
+            "type": "INDEX",
+            "status": "VALID"
+          }
+        ],
+        "errors": [],
+        "data": {
+          "row_count": 3,
+          "active_count": 2
+        },
+        "function": {
+          "result": "C0001:Demo Customer One"
+        },
+        "observed_at": "SAMPLE_TIMESTAMP"
+      }
+    }
+  },
+  "approvals": [
+    {
+      "node_id": "SAMPLE_OWNER",
+      "actor": "SAMPLE_OWNER",
+      "native_status": "COMPLETED",
+      "timestamp": "SAMPLE_TIMESTAMP",
+      "actor_roles": [
+        "OWNER"
+      ],
+      "actor_id": "SAMPLE_OWNER"
+    },
+    {
+      "node_id": "SAMPLE_DBA",
+      "actor": "SAMPLE_DBA",
+      "native_status": "COMPLETED",
+      "timestamp": "SAMPLE_TIMESTAMP",
+      "actor_roles": [
+        "DBA"
+      ],
+      "actor_id": "SAMPLE_DBA"
+    }
+  ],
+  "audit_references": [
+    "SAMPLE_ONLY: reviewed ODC approval/Execute audit"
+  ],
+  "audit_collection": "FIXTURE",
+  "requester_id": "SAMPLE_REQUESTER"
+}
