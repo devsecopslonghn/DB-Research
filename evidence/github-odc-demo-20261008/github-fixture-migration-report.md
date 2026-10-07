@@ -12,15 +12,15 @@ ODC execution success alone is insufficient; every environment also needs valid 
 
 Application: `customer-profile`\
 Release: `REL-2026.10-DEMO01`\
-Collected: SAMPLE_TIMESTAMP
+Collected: 2026-10-07T18:40:38.109227+00:00
 
 ## Source Provenance
 
 Repository: `devsecopslonghn/DB-Research`\
-Branch: `SAMPLE / DEMO`\
-Git commit: `0000000000000000000000000000000000000000`\
-GitHub actor: `SAMPLE_ACTOR`\
-GitHub run: `NOT_AVAILABLE`\
+Branch: `feature/github-odc-migration-demo`\
+Git commit: `848e0923f3c8e2ef854298184232352ea68ed9ce`\
+GitHub actor: `longhn0710`\
+GitHub run: `37668628840`\
 Manifest SHA-256: `406741b739cdec2d0c628950204319cb882ba3cd73961ce2992c374f051c1347`\
 Ordered SQL SHA-256: `3ddce47b1a7675f1f02f349b21f0647437cd7693229fd560472df2a7c0338854`
 
@@ -68,9 +68,9 @@ OWNER and DBA approve in ODC. Automation has no approval or Execute operation. N
 | Environment | Flow created | Execution start | Flow complete | Execution actor |
 | --- | --- | --- | --- | --- |
 | DEV | NOT_AVAILABLE | SAMPLE_TIMESTAMP | SAMPLE_TIMESTAMP | SAMPLE_OPERATOR |
+| MOCKPROD | NOT_AVAILABLE | SAMPLE_TIMESTAMP | SAMPLE_TIMESTAMP | SAMPLE_OPERATOR |
 | SIT | NOT_AVAILABLE | SAMPLE_TIMESTAMP | SAMPLE_TIMESTAMP | SAMPLE_OPERATOR |
 | UAT | NOT_AVAILABLE | SAMPLE_TIMESTAMP | SAMPLE_TIMESTAMP | SAMPLE_OPERATOR |
-| MOCKPROD | NOT_AVAILABLE | SAMPLE_TIMESTAMP | SAMPLE_TIMESTAMP | SAMPLE_OPERATOR |
 
 Task-node operator may identify the requester; the Execute audit is the authority for the caller. Uncollected timestamps/actors remain NOT_AVAILABLE.
 
@@ -83,6 +83,11 @@ Task-node operator may identify the requester; the Execute audit is the authorit
 | DEV | DM_CP_CUSTOMER_STATUS_IX | INDEX | VALID | 0 |
 | DEV | DM_CP_LABEL | FUNCTION | VALID | 0 |
 | DEV | DM_CP_ACTIVE_CUSTOMERS | VIEW | VALID | 0 |
+| MOCKPROD | DM_CP_CUSTOMER | TABLE | VALID | 0 |
+| MOCKPROD | DM_CP_CUSTOMER_SEQ | SEQUENCE | VALID | 0 |
+| MOCKPROD | DM_CP_CUSTOMER_STATUS_IX | INDEX | VALID | 0 |
+| MOCKPROD | DM_CP_LABEL | FUNCTION | VALID | 0 |
+| MOCKPROD | DM_CP_ACTIVE_CUSTOMERS | VIEW | VALID | 0 |
 | SIT | DM_CP_CUSTOMER | TABLE | VALID | 0 |
 | SIT | DM_CP_CUSTOMER_SEQ | SEQUENCE | VALID | 0 |
 | SIT | DM_CP_CUSTOMER_STATUS_IX | INDEX | VALID | 0 |
@@ -93,27 +98,22 @@ Task-node operator may identify the requester; the Execute audit is the authorit
 | UAT | DM_CP_CUSTOMER_STATUS_IX | INDEX | VALID | 0 |
 | UAT | DM_CP_LABEL | FUNCTION | VALID | 0 |
 | UAT | DM_CP_ACTIVE_CUSTOMERS | VIEW | VALID | 0 |
-| MOCKPROD | DM_CP_CUSTOMER | TABLE | VALID | 0 |
-| MOCKPROD | DM_CP_CUSTOMER_SEQ | SEQUENCE | VALID | 0 |
-| MOCKPROD | DM_CP_CUSTOMER_STATUS_IX | INDEX | VALID | 0 |
-| MOCKPROD | DM_CP_LABEL | FUNCTION | VALID | 0 |
-| MOCKPROD | DM_CP_ACTIVE_CUSTOMERS | VIEW | VALID | 0 |
 
 | Environment | Rows: expected / actual | Active: expected / actual | Function: expected / actual |
 | --- | --- | --- | --- |
 | DEV | 3 / 3 | 2 / 2 | C0001:Demo Customer One / C0001:Demo Customer One |
+| MOCKPROD | 3 / 3 | 2 / 2 | C0001:Demo Customer One / C0001:Demo Customer One |
 | SIT | 3 / 3 | 2 / 2 | C0001:Demo Customer One / C0001:Demo Customer One |
 | UAT | 3 / 3 | 2 / 2 | C0001:Demo Customer One / C0001:Demo Customer One |
-| MOCKPROD | 3 / 3 | 2 / 2 | C0001:Demo Customer One / C0001:Demo Customer One |
 
 ## Environment Results
 
 | Environment | ODC Ticket/Task | Native execution | Oracle verify | Demo result |
 | --- | --- | --- | --- | --- |
 | DEV | SAMPLE_BATCH_HAPPY | EXECUTION_SUCCEEDED | VERIFIED | VERIFIED |
+| MOCKPROD | SAMPLE_BATCH_HAPPY | EXECUTION_SUCCEEDED | VERIFIED | VERIFIED |
 | SIT | SAMPLE_BATCH_HAPPY | EXECUTION_SUCCEEDED | VERIFIED | VERIFIED |
 | UAT | SAMPLE_BATCH_HAPPY | EXECUTION_SUCCEEDED | VERIFIED | VERIFIED |
-| MOCKPROD | SAMPLE_BATCH_HAPPY | EXECUTION_SUCCEEDED | VERIFIED | VERIFIED |
 
 ## Failure / Correction
 
@@ -138,3 +138,7 @@ GitHub workflow run/artifact links are available when the envelope contains a re
 **CONDITIONAL GO** for the recorded scope. Live approval, rollout, verification and the proven retention GitOps settings are required before claiming a working internal application pilot.
 
 Operational effort is NOT_MEASURED unless captured by an operator. No custom execution platform, direct Oracle migration executor or automatic promotion controller is introduced.
+
+Source: [Git commit](https://github.com/devsecopslonghn/DB-Research/commit/848e0923f3c8e2ef854298184232352ea68ed9ce).
+
+Artifacts and logs: [GitHub Actions run](https://github.com/devsecopslonghn/DB-Research/actions/runs/37668628840).

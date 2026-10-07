@@ -49,6 +49,6 @@ Các schema `ODC_POC_20261004_DEV`, `..._SIT`, `..._UAT`, `..._MOCKPROD` đượ
 
 ## Credential và kết nối
 
-Live ODC dùng GitHub secrets `ODC_BASE_URL`, `ODC_USERNAME`, `ODC_PASSWORD` trên runner `self-hosted`, `linux`, `odc-demo`; module dùng `openssl` để xử lý thông tin đăng nhập. Không cần mật khẩu database vì execution do ODC quản lý. Repo ban đầu chưa có Actions secrets hay runner, và chưa có kết luận về network readiness. Cần kiểm tra hiện trạng trước khi tuyên bố tích hợp live sẵn sàng.
+Live ODC dùng GitHub secrets `ODC_BASE_URL`, `ODC_USERNAME`, `ODC_PASSWORD` trên runner `self-hosted`, `linux`, `odc-demo`; module dùng `openssl` để xử lý thông tin đăng nhập. Không cần mật khẩu database vì execution do ODC quản lý. Probe thực trong PR nhận HTTP 200 từ endpoint hiện có, authentication NOT_ATTEMPTED. Repo chưa có live secrets/runner; chọn runner lab để giữ credentials trong ranh giới vận hành, không mở endpoint mới. Xem [evaluation](../../../evaluation/github-odc-migration-demo.md) cho evidence và blockers.
 
-Lab ODC hiện ở baseline retention; khuyến nghị cấu hình lâu dài ở `evidence/odc-retention-experiment-20261007/permanent-gitops-recommendation.yaml`. Cần áp dụng và xác minh cấu hình đó trước pilot; tài liệu demo không coi khuyến nghị là cấu hình đã áp dụng. Network readiness cần được probe; không suy ra unreachable từ thiếu secrets/runner.
+Lab ODC hiện ở baseline retention; khuyến nghị cấu hình lâu dài ở `evidence/odc-retention-experiment-20261007/permanent-gitops-recommendation.yaml`. Cần áp dụng và xác minh cấu hình đó trước pilot; tài liệu demo không coi khuyến nghị là cấu hình đã áp dụng. Không suy ra unreachable từ thiếu secrets/runner.

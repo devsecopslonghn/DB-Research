@@ -2,9 +2,9 @@
 
 ## Executive Summary
 
-Evidence source: **FIXTURE**. Scope: **SAMPLE / DEMO — fixture simulation**.
+Evidence source: **LIVE**. Scope: **LIVE**.
 
-Derived result: **VERIFIED**. Runtime result: **NOT_AVAILABLE**. Runtime-proven complete migration: **False**.
+Derived result: **WAITING_APPROVAL**. Runtime result: **WAITING_APPROVAL**. Runtime-proven complete migration: **False**.
 
 ODC execution success alone is insufficient; every environment also needs valid objects, no compilation errors, expected rows and function result.
 
@@ -12,14 +12,14 @@ ODC execution success alone is insufficient; every environment also needs valid 
 
 Application: `customer-profile`\
 Release: `REL-2026.10-DEMO01`\
-Collected: SAMPLE_TIMESTAMP
+Collected: 2026-10-07T18:47:24.249876+00:00
 
 ## Source Provenance
 
 Repository: `devsecopslonghn/DB-Research`\
-Branch: `SAMPLE / DEMO`\
-Git commit: `0000000000000000000000000000000000000000`\
-GitHub actor: `SAMPLE_ACTOR`\
+Branch: `feature/github-odc-migration-demo`\
+Git commit: `848e0923f3c8e2ef854298184232352ea68ed9ce`\
+GitHub actor: `LOCAL_OPERATOR`\
 GitHub run: `NOT_AVAILABLE`\
 Manifest SHA-256: `406741b739cdec2d0c628950204319cb882ba3cd73961ce2992c374f051c1347`\
 Ordered SQL SHA-256: `3ddce47b1a7675f1f02f349b21f0647437cd7693229fd560472df2a7c0338854`
@@ -58,8 +58,8 @@ All four owner schemas are isolated logical environments on one Oracle service; 
 
 | Node | Actor | Native status | Timestamp |
 | --- | --- | --- | --- |
-| SAMPLE_OWNER | SAMPLE_OWNER | COMPLETED | SAMPLE_TIMESTAMP |
-| SAMPLE_DBA | SAMPLE_DBA | COMPLETED | SAMPLE_TIMESTAMP |
+| 2000072 | odc_poc_requester | EXECUTING | NOT_AVAILABLE |
+| 2000073 | odc_poc_requester | CREATED | NOT_AVAILABLE |
 
 OWNER and DBA approve in ODC. Automation has no approval or Execute operation. Native manual continuation remains an operator decision.
 
@@ -67,10 +67,10 @@ OWNER and DBA approve in ODC. Automation has no approval or Execute operation. N
 
 | Environment | Flow created | Execution start | Flow complete | Execution actor |
 | --- | --- | --- | --- | --- |
-| DEV | NOT_AVAILABLE | SAMPLE_TIMESTAMP | SAMPLE_TIMESTAMP | SAMPLE_OPERATOR |
-| SIT | NOT_AVAILABLE | SAMPLE_TIMESTAMP | SAMPLE_TIMESTAMP | SAMPLE_OPERATOR |
-| UAT | NOT_AVAILABLE | SAMPLE_TIMESTAMP | SAMPLE_TIMESTAMP | SAMPLE_OPERATOR |
-| MOCKPROD | NOT_AVAILABLE | SAMPLE_TIMESTAMP | SAMPLE_TIMESTAMP | SAMPLE_OPERATOR |
+| DEV | 1791398804138 | NOT_AVAILABLE | NOT_AVAILABLE | NOT_AVAILABLE |
+| SIT | 1791398804139 | NOT_AVAILABLE | NOT_AVAILABLE | NOT_AVAILABLE |
+| UAT | 1791398804139 | NOT_AVAILABLE | NOT_AVAILABLE | NOT_AVAILABLE |
+| MOCKPROD | 1791398804139 | NOT_AVAILABLE | NOT_AVAILABLE | NOT_AVAILABLE |
 
 Task-node operator may identify the requester; the Execute audit is the authority for the caller. Uncollected timestamps/actors remain NOT_AVAILABLE.
 
@@ -78,42 +78,26 @@ Task-node operator may identify the requester; the Execute audit is the authorit
 
 | Environment | Object | Type | Status | Errors |
 | --- | --- | --- | --- | --- |
-| DEV | DM_CP_CUSTOMER | TABLE | VALID | 0 |
-| DEV | DM_CP_CUSTOMER_SEQ | SEQUENCE | VALID | 0 |
-| DEV | DM_CP_CUSTOMER_STATUS_IX | INDEX | VALID | 0 |
-| DEV | DM_CP_LABEL | FUNCTION | VALID | 0 |
-| DEV | DM_CP_ACTIVE_CUSTOMERS | VIEW | VALID | 0 |
-| SIT | DM_CP_CUSTOMER | TABLE | VALID | 0 |
-| SIT | DM_CP_CUSTOMER_SEQ | SEQUENCE | VALID | 0 |
-| SIT | DM_CP_CUSTOMER_STATUS_IX | INDEX | VALID | 0 |
-| SIT | DM_CP_LABEL | FUNCTION | VALID | 0 |
-| SIT | DM_CP_ACTIVE_CUSTOMERS | VIEW | VALID | 0 |
-| UAT | DM_CP_CUSTOMER | TABLE | VALID | 0 |
-| UAT | DM_CP_CUSTOMER_SEQ | SEQUENCE | VALID | 0 |
-| UAT | DM_CP_CUSTOMER_STATUS_IX | INDEX | VALID | 0 |
-| UAT | DM_CP_LABEL | FUNCTION | VALID | 0 |
-| UAT | DM_CP_ACTIVE_CUSTOMERS | VIEW | VALID | 0 |
-| MOCKPROD | DM_CP_CUSTOMER | TABLE | VALID | 0 |
-| MOCKPROD | DM_CP_CUSTOMER_SEQ | SEQUENCE | VALID | 0 |
-| MOCKPROD | DM_CP_CUSTOMER_STATUS_IX | INDEX | VALID | 0 |
-| MOCKPROD | DM_CP_LABEL | FUNCTION | VALID | 0 |
-| MOCKPROD | DM_CP_ACTIVE_CUSTOMERS | VIEW | VALID | 0 |
+| DEV | NOT_AVAILABLE | NOT_AVAILABLE | NOT_AVAILABLE | NOT_AVAILABLE |
+| SIT | NOT_AVAILABLE | NOT_AVAILABLE | NOT_AVAILABLE | NOT_AVAILABLE |
+| UAT | NOT_AVAILABLE | NOT_AVAILABLE | NOT_AVAILABLE | NOT_AVAILABLE |
+| MOCKPROD | NOT_AVAILABLE | NOT_AVAILABLE | NOT_AVAILABLE | NOT_AVAILABLE |
 
 | Environment | Rows: expected / actual | Active: expected / actual | Function: expected / actual |
 | --- | --- | --- | --- |
-| DEV | 3 / 3 | 2 / 2 | C0001:Demo Customer One / C0001:Demo Customer One |
-| SIT | 3 / 3 | 2 / 2 | C0001:Demo Customer One / C0001:Demo Customer One |
-| UAT | 3 / 3 | 2 / 2 | C0001:Demo Customer One / C0001:Demo Customer One |
-| MOCKPROD | 3 / 3 | 2 / 2 | C0001:Demo Customer One / C0001:Demo Customer One |
+| DEV | 3 / NOT_AVAILABLE | 2 / NOT_AVAILABLE | C0001:Demo Customer One / NOT_AVAILABLE |
+| SIT | 3 / NOT_AVAILABLE | 2 / NOT_AVAILABLE | C0001:Demo Customer One / NOT_AVAILABLE |
+| UAT | 3 / NOT_AVAILABLE | 2 / NOT_AVAILABLE | C0001:Demo Customer One / NOT_AVAILABLE |
+| MOCKPROD | 3 / NOT_AVAILABLE | 2 / NOT_AVAILABLE | C0001:Demo Customer One / NOT_AVAILABLE |
 
 ## Environment Results
 
 | Environment | ODC Ticket/Task | Native execution | Oracle verify | Demo result |
 | --- | --- | --- | --- | --- |
-| DEV | SAMPLE_BATCH_HAPPY | EXECUTION_SUCCEEDED | VERIFIED | VERIFIED |
-| SIT | SAMPLE_BATCH_HAPPY | EXECUTION_SUCCEEDED | VERIFIED | VERIFIED |
-| UAT | SAMPLE_BATCH_HAPPY | EXECUTION_SUCCEEDED | VERIFIED | VERIFIED |
-| MOCKPROD | SAMPLE_BATCH_HAPPY | EXECUTION_SUCCEEDED | VERIFIED | VERIFIED |
+| DEV | 2000015 | WAIT_FOR_EXECUTION | NOT_AVAILABLE | WAITING_APPROVAL |
+| SIT | 2000015 | WAIT_FOR_EXECUTION | NOT_AVAILABLE | WAITING_APPROVAL |
+| UAT | 2000015 | WAIT_FOR_EXECUTION | NOT_AVAILABLE | WAITING_APPROVAL |
+| MOCKPROD | 2000015 | WAIT_FOR_EXECUTION | NOT_AVAILABLE | WAITING_APPROVAL |
 
 ## Failure / Correction
 
@@ -123,9 +107,12 @@ The failure release raises ORA-20042 in SIT before index creation. UAT/MOCKPROD 
 
 ## Audit Evidence
 
-Native batch: `SAMPLE_BATCH_HAPPY`. Audit collection: FIXTURE.
+Native batch: `2000015`. Audit collection: LIVE_PERSONAL_AUDIT_ONLY; only explicit taskId matches retained; create events may have no taskId.
 
-- `SAMPLE_ONLY: reviewed ODC approval/Execute audit`
+- `https://oceanbase.apps.drgdevlab.com/api/v2/flow/flowInstances/2000015`
+- `https://oceanbase.apps.drgdevlab.com/api/v2/flow/flowInstances/2000015/tasks/result`
+- `https://oceanbase.apps.drgdevlab.com/api/v2/flow/flowInstances/2000015/tasks/asyncExecuteResult`
+- `https://oceanbase.apps.drgdevlab.com/api/v2/audit/events`
 
 ## Artifacts
 
@@ -138,3 +125,5 @@ GitHub workflow run/artifact links are available when the envelope contains a re
 **CONDITIONAL GO** for the recorded scope. Live approval, rollout, verification and the proven retention GitOps settings are required before claiming a working internal application pilot.
 
 Operational effort is NOT_MEASURED unless captured by an operator. No custom execution platform, direct Oracle migration executor or automatic promotion controller is introduced.
+
+Source: [Git commit](https://github.com/devsecopslonghn/DB-Research/commit/848e0923f3c8e2ef854298184232352ea68ed9ce).

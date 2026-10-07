@@ -1,0 +1,93 @@
+{
+  "checked_at": "2026-10-07T18:54:13.802656+00:00",
+  "validation_artifact_id": 11502754605,
+  "report_artifact_id": 11503429204,
+  "report_bundle_verification": "PASS",
+  "release_checks": [
+    {
+      "release_id": "REL-2026.10-DEMO01",
+      "git_commit": "848e0923f3c8e2ef854298184232352ea68ed9ce",
+      "github_run_id": "37668628709",
+      "sql_sha256": "3ddce47b1a7675f1f02f349b21f0647437cd7693229fd560472df2a7c0338854",
+      "bundle_verification": "PASS: hashes and exact committed bytes",
+      "report_source": "FIXTURE",
+      "report_status": "VERIFIED",
+      "runtime_proven": false,
+      "environments": {
+        "DEV": {
+          "native_status": "EXECUTION_SUCCEEDED",
+          "verification": "VERIFIED"
+        },
+        "MOCKPROD": {
+          "native_status": "EXECUTION_SUCCEEDED",
+          "verification": "VERIFIED"
+        },
+        "SIT": {
+          "native_status": "EXECUTION_SUCCEEDED",
+          "verification": "VERIFIED"
+        },
+        "UAT": {
+          "native_status": "EXECUTION_SUCCEEDED",
+          "verification": "VERIFIED"
+        }
+      }
+    },
+    {
+      "release_id": "REL-2026.10-DEMO02-FAIL",
+      "git_commit": "848e0923f3c8e2ef854298184232352ea68ed9ce",
+      "github_run_id": "37668628709",
+      "sql_sha256": "5b696b547fe9203448dc829f8139987992078efc3b273658577e84c268e7edb8",
+      "bundle_verification": "PASS: hashes and exact committed bytes",
+      "report_source": "FIXTURE",
+      "report_status": "EXECUTION_FAILED",
+      "runtime_proven": false,
+      "environments": {
+        "DEV": {
+          "native_status": "EXECUTION_SUCCEEDED",
+          "verification": "VERIFIED"
+        },
+        "MOCKPROD": {
+          "native_status": "WAIT_FOR_EXECUTION",
+          "verification": "NOT_AVAILABLE"
+        },
+        "SIT": {
+          "native_status": "EXECUTION_FAILED",
+          "verification": "NOT_AVAILABLE"
+        },
+        "UAT": {
+          "native_status": "WAIT_FOR_EXECUTION",
+          "verification": "NOT_AVAILABLE"
+        }
+      }
+    },
+    {
+      "release_id": "REL-2026.10-DEMO02-FIX",
+      "git_commit": "848e0923f3c8e2ef854298184232352ea68ed9ce",
+      "github_run_id": "37668628709",
+      "sql_sha256": "db645a5be2eac9afd0cac908317729b211ce61cdc5a6fa74d6ec840dda5adc7c",
+      "bundle_verification": "PASS: hashes and exact committed bytes",
+      "report_source": "FIXTURE",
+      "report_status": "VERIFIED",
+      "runtime_proven": false,
+      "environments": {
+        "DEV": {
+          "native_status": "EXECUTION_SUCCEEDED",
+          "verification": "VERIFIED"
+        },
+        "MOCKPROD": {
+          "native_status": "EXECUTION_SUCCEEDED",
+          "verification": "VERIFIED"
+        },
+        "SIT": {
+          "native_status": "EXECUTION_SUCCEEDED",
+          "verification": "VERIFIED"
+        },
+        "UAT": {
+          "native_status": "EXECUTION_SUCCEEDED",
+          "verification": "VERIFIED"
+        }
+      }
+    }
+  ],
+  "scope": "Downloaded GitHub build/static/FIXTURE artifacts only; no ODC execution"
+}

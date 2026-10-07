@@ -8,7 +8,7 @@ from .common import DemoError, ENVIRONMENTS, STATES, fail_cli, sanitize, summary
 from .verify_oracle import assess
 
 
-def environment_state(record):
+def environment_state(record, parent_status=None):
     native = record["native_status"]
     if native == "EXECUTION_FAILED":
         return "EXECUTION_FAILED"
@@ -21,6 +21,12 @@ def environment_state(record):
     if native in ("EXECUTING", "RUNNING"):
         return "EXECUTING"
     if native in ("WAIT_FOR_EXECUTION", "APPROVED"):
+        # Native child tasks already wait for execution while the parent is
+        # still in precheck/approval. That does not prove human approval.
+        if parent_status in ("APPROVING", "WAIT_FOR_APPROVAL", "CREATED"):
+            return "WAITING_APPROVAL"
+        if parent_status == "PRE_CHECK_EXECUTING":
+            return "PARTIAL"
         return "APPROVED"
     return "PARTIAL"
 
@@ -36,7 +42,7 @@ def make_report(evidence):
             record.update(assess(report["envelope"]["verification"], record["oracle"], record["native_status"]))
         else:
             record["verification"] = "NOT_AVAILABLE"
-        record["demo_status"] = environment_state(record)
+        record["demo_status"] = environment_state(record, report.get("native_parent_status"))
     states = [r["demo_status"] for r in report["environments"].values()]
     if "EXECUTION_FAILED" in states:
         result = "EXECUTION_FAILED"
@@ -107,11 +113,13 @@ def render(report):
         lines.append("| NOT_AVAILABLE | NOT_AVAILABLE | NOT_AVAILABLE | NOT_AVAILABLE |")
     lines += ["", "OWNER and DBA approve in ODC. Automation has no approval or Execute operation. Native manual continuation remains an operator decision.", "",
               "## Execution Timeline", "", "| Environment | Flow created | Execution start | Flow complete | Execution actor |", "| --- | --- | --- | --- | --- |"]
-    for name, record in report["environments"].items():
+    for name in ENVIRONMENTS:
+        record = report["environments"][name]
         lines.append("| " + " | ".join(table_cell(v) for v in [name, record.get("flow_created_at"), record.get("execution_start"), record.get("execution_end"), record.get("execution_actor")]) + " |")
     lines += ["", "Task-node operator may identify the requester; the Execute audit is the authority for the caller. Uncollected timestamps/actors remain NOT_AVAILABLE.", "",
               "## Oracle Verification", "", "| Environment | Object | Type | Status | Errors |", "| --- | --- | --- | --- | --- |"]
-    for name, record in report["environments"].items():
+    for name in ENVIRONMENTS:
+        record = report["environments"][name]
         oracle = record["oracle"]
         for obj in oracle.get("objects", []):
             errors = [e for e in oracle.get("errors", []) if e.get("name") == obj["name"]]
@@ -119,11 +127,13 @@ def render(report):
         if not oracle.get("objects"):
             lines.append(f"| {name} | NOT_AVAILABLE | NOT_AVAILABLE | NOT_AVAILABLE | NOT_AVAILABLE |")
     lines += ["", "| Environment | Rows: expected / actual | Active: expected / actual | Function: expected / actual |", "| --- | --- | --- | --- |"]
-    for name, record in report["environments"].items():
+    for name in ENVIRONMENTS:
+        record = report["environments"][name]
         actual = record["oracle"]
         lines.append("| " + " | ".join(table_cell(v) for v in [name, f"3 / {actual.get('data', {}).get('row_count', 'NOT_AVAILABLE')}", f"2 / {actual.get('data', {}).get('active_count', 'NOT_AVAILABLE')}", f"{envelope['verification']['function']['expected']} / {actual.get('function', {}).get('result', 'NOT_AVAILABLE')}"]) + " |")
     lines += ["", "## Environment Results", "", "| Environment | ODC Ticket/Task | Native execution | Oracle verify | Demo result |", "| --- | --- | --- | --- | --- |"]
-    for name, record in report["environments"].items():
+    for name in ENVIRONMENTS:
+        record = report["environments"][name]
         lines.append("| " + " | ".join(table_cell(v) for v in [name, record["ticket_id"], record["native_status"], record["verification"], record["demo_status"]]) + " |")
     lines += ["", "## Failure / Correction", "", f"Corrects: `{envelope.get('corrects') or 'NOT_APPLICABLE'}`. Depends on: `{envelope.get('depends_on') or 'NOT_APPLICABLE'}`.", "",
               "The failure release raises ORA-20042 in SIT before index creation. UAT/MOCKPROD wait. Review/cancel the failed batch, then approve a new correction release; preserve old SQL, hashes, approvals and failure history. Already committed DDL is not automatically rolled back.", "",

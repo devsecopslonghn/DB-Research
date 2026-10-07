@@ -39,16 +39,25 @@ sequenceDiagram
   Ops->>ODC: Review/approve in UI; manually continue one stage
   ODC->>DB: Execute DEV
   DB-->>ODC: Native result
+  Ops->>ODC: Verify DEV with SELECT-only checks
+  ODC->>DB: Objects, errors, data and function checks
+  DB-->>ODC: DEV verification evidence
   Ops->>ODC: Review receipt; manually continue SIT
   ODC->>DB: Execute SIT
   DB-->>ODC: Native result
+  Ops->>ODC: Verify SIT with SELECT-only checks
+  ODC->>DB: Objects, errors, data and function checks
+  DB-->>ODC: SIT verification evidence
   Ops->>ODC: Review receipt; manually continue UAT
   ODC->>DB: Execute UAT
   DB-->>ODC: Native result
+  Ops->>ODC: Verify UAT with SELECT-only checks
+  ODC->>DB: Objects, errors, data and function checks
+  DB-->>ODC: UAT verification evidence
   Ops->>ODC: Review receipt; manually continue MOCKPROD
   ODC->>DB: Execute MOCKPROD
   DB-->>ODC: Native result
-  Ops->>ODC: Request SELECT-only checks
+  Ops->>ODC: Verify MOCKPROD with SELECT-only checks
   ODC->>DB: Read-only validity, object, data and function queries
   DB-->>ODC: Query results
   ODC-->>Ops: Verification receipt

@@ -1,0 +1,121 @@
+{
+  "changed_releases": [
+    "REL-2026.10-DEMO01",
+    "REL-2026.10-DEMO02-FAIL",
+    "REL-2026.10-DEMO02-FIX"
+  ],
+  "errors": [],
+  "releases": [
+    {
+      "errors": [],
+      "manifest_sha256": "406741b739cdec2d0c628950204319cb882ba3cd73961ce2992c374f051c1347",
+      "migrations": [
+        {
+          "errors": [],
+          "file": "001_create_customer_table.sql",
+          "findings": [],
+          "plsql": false,
+          "sha256": "09d5a78bf5e17b5686e56df8624870d2be0bb4c168cb658c0a7d3afe94f1d102",
+          "sql_types": [
+            "TABLE"
+          ]
+        },
+        {
+          "errors": [],
+          "file": "002_create_customer_sequence.sql",
+          "findings": [],
+          "plsql": false,
+          "sha256": "f7d0763c8ce610310b1320276aaad36083c5416ea634b4c41d9d0abebdd5f838",
+          "sql_types": [
+            "SEQUENCE"
+          ]
+        },
+        {
+          "errors": [],
+          "file": "003_create_customer_index.sql",
+          "findings": [],
+          "plsql": false,
+          "sha256": "6f6d297e90f75d07d5c916097712f783b8b31b09b9e419ec951c2a4a0641aef6",
+          "sql_types": [
+            "INDEX"
+          ]
+        },
+        {
+          "errors": [],
+          "file": "004_create_customer_function.sql",
+          "findings": [],
+          "plsql": true,
+          "sha256": "07c54e7d8105a171d9ecf6ad210903716e419d9dfb09066f3ca255d5b41b8da1",
+          "sql_types": [
+            "FUNCTION"
+          ]
+        },
+        {
+          "errors": [],
+          "file": "005_create_customer_view.sql",
+          "findings": [],
+          "plsql": false,
+          "sha256": "37b0b21e054c7d9370149903b4604b4c2bbc12742b0fd624bb96cbe12cc877bc",
+          "sql_types": [
+            "VIEW"
+          ]
+        },
+        {
+          "errors": [],
+          "file": "006_seed_reference_data.sql",
+          "findings": [],
+          "plsql": false,
+          "sha256": "b82e3f24b24e6ceabad4c571d564cdf294d7059af4af40fb4b3266d6b0c69991",
+          "sql_types": [
+            "INSERT"
+          ]
+        }
+      ],
+      "release_id": "REL-2026.10-DEMO01",
+      "status": "VALIDATED"
+    },
+    {
+      "errors": [],
+      "manifest_sha256": "caf71371333a2c34987319e53ae325c80f3398c164e71da474cbe515ec9f957d",
+      "migrations": [
+        {
+          "errors": [],
+          "file": "001_create_customer_region_index.sql",
+          "findings": [],
+          "plsql": true,
+          "sha256": "b83f01a3c43e504f7b7e174df6c8466d22623459d9a8bba853d1e67cfa868868",
+          "sql_types": [
+            "INDEX"
+          ]
+        }
+      ],
+      "release_id": "REL-2026.10-DEMO02-FAIL",
+      "status": "VALIDATED"
+    },
+    {
+      "errors": [],
+      "manifest_sha256": "23b02e15ea41db3d3dedd0c558baf7b3e00343489789fc59ddedf9d56699de22",
+      "migrations": [
+        {
+          "errors": [],
+          "file": "001_create_customer_region_index.sql",
+          "findings": [
+            {
+              "level": "REQUIRES_DBA_REVIEW",
+              "line": 8,
+              "rule": "DYNAMIC_SQL"
+            }
+          ],
+          "plsql": true,
+          "sha256": "8af6f2e891f034ee7bc131a49a5d41bb1999d1338c84ccdba272563fd6f1aa9d",
+          "sql_types": [
+            "PLSQL_BLOCK"
+          ]
+        }
+      ],
+      "release_id": "REL-2026.10-DEMO02-FIX",
+      "status": "VALIDATED"
+    }
+  ],
+  "status": "VALIDATED"
+}

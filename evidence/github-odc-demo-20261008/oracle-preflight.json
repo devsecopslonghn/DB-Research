@@ -1,0 +1,82 @@
+{
+  "environments": [
+    {
+      "database_id": 1000069,
+      "environment": "DEV",
+      "evidence_source": "LIVE",
+      "existing_demo_objects": [],
+      "identity_verified": true,
+      "schema": "ODC_POC_20261004_DEV",
+      "status": "READ_ONLY_PREFLIGHT_PASS"
+    },
+    {
+      "database_id": 1000122,
+      "environment": "SIT",
+      "evidence_source": "LIVE",
+      "existing_demo_objects": [],
+      "identity_verified": true,
+      "schema": "ODC_POC_20261004_SIT",
+      "status": "READ_ONLY_PREFLIGHT_PASS"
+    },
+    {
+      "database_id": 1000184,
+      "environment": "UAT",
+      "evidence_source": "LIVE",
+      "existing_demo_objects": [],
+      "identity_verified": true,
+      "schema": "ODC_POC_20261004_UAT",
+      "status": "READ_ONLY_PREFLIGHT_PASS"
+    },
+    {
+      "database_id": 1000218,
+      "environment": "MOCKPROD",
+      "evidence_source": "LIVE",
+      "existing_demo_objects": [],
+      "identity_verified": true,
+      "schema": "ODC_POC_20261004_MOCKPROD",
+      "status": "READ_ONLY_PREFLIGHT_PASS"
+    }
+  ],
+  "evidence_source": "LIVE",
+  "inventory": [
+    {
+      "database_id": 1000069,
+      "datasource_id": 1000001,
+      "environment": "DEV",
+      "odc_environment_id": 1,
+      "odc_environment_name": "dev",
+      "project_id": 1,
+      "schema": "ODC_POC_20261004_DEV"
+    },
+    {
+      "database_id": 1000122,
+      "datasource_id": 1000002,
+      "environment": "SIT",
+      "odc_environment_id": 2,
+      "odc_environment_name": "sit",
+      "project_id": 1,
+      "schema": "ODC_POC_20261004_SIT"
+    },
+    {
+      "database_id": 1000184,
+      "datasource_id": 1000003,
+      "environment": "UAT",
+      "odc_environment_id": 1000021,
+      "odc_environment_name": "POCUAT",
+      "project_id": 1,
+      "schema": "ODC_POC_20261004_UAT"
+    },
+    {
+      "database_id": 1000218,
+      "datasource_id": 1000004,
+      "environment": "MOCKPROD",
+      "odc_environment_id": 1000022,
+      "odc_environment_name": "POCPROD",
+      "project_id": 1,
+      "schema": "ODC_POC_20261004_MOCKPROD"
+    }
+  ],
+  "observed_at": "2026-10-07T18:43:52.400598+00:00",
+  "scope": "SELECT-only identity and object namespace; no migration execution or release acceptance",
+  "source_commit": "848e0923f3c8e2ef854298184232352ea68ed9ce"
+}

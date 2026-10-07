@@ -1,0 +1,24 @@
+{
+  "environments": {
+    "DEV": {
+      "reason": "ODC target is not EXECUTION_SUCCEEDED",
+      "verification": "NOT_AVAILABLE"
+    },
+    "MOCKPROD": {
+      "reason": "ODC target is not EXECUTION_SUCCEEDED",
+      "verification": "NOT_AVAILABLE"
+    },
+    "SIT": {
+      "reason": "ODC target is not EXECUTION_SUCCEEDED",
+      "verification": "NOT_AVAILABLE"
+    },
+    "UAT": {
+      "reason": "ODC target is not EXECUTION_SUCCEEDED",
+      "verification": "NOT_AVAILABLE"
+    }
+  },
+  "evidence_source": "LIVE",
+  "git_commit": "848e0923f3c8e2ef854298184232352ea68ed9ce",
+  "release_id": "REL-2026.10-DEMO01",
+  "sql_sha256": "3ddce47b1a7675f1f02f349b21f0647437cd7693229fd560472df2a7c0338854"
+}

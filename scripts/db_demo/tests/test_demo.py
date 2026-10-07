@@ -264,6 +264,27 @@ class EvidenceTests(unittest.TestCase):
         self.assertEqual(report["status"], "PARTIAL")
         self.assertFalse(report["runtime_proven"])
 
+    def test_waiting_native_children_do_not_prove_parent_approval(self):
+        evidence = collect(self.envelope, "NOT_AVAILABLE")
+        for record in evidence["environments"].values():
+            record["native_status"] = "WAIT_FOR_EXECUTION"
+        for parent, expected in (("PRE_CHECK_EXECUTING", "PARTIAL"),
+                                 ("APPROVING", "WAITING_APPROVAL")):
+            evidence["native_parent_status"] = parent
+            report = make_report(evidence)
+            self.assertEqual(report["status"], expected)
+            self.assertFalse(report["approval_evidence_complete"])
+            self.assertFalse(report["runtime_proven"])
+            for record in report["environments"].values():
+                self.assertEqual(record["native_status"], "WAIT_FOR_EXECUTION")
+                self.assertEqual(record["demo_status"], expected)
+            # Evidence JSON sorts keys alphabetically; the human report must
+            # retain the native rollout order rather than move MOCKPROD next.
+            report["environments"] = dict(sorted(report["environments"].items()))
+            results = render(report).split("## Environment Results", 1)[1]
+            offsets = [results.index("| " + name + " |") for name in ENVIRONMENTS]
+            self.assertEqual(offsets, sorted(offsets))
+
     def test_failure_stops_and_correction_has_new_hashes(self):
         failed = build_release(FAIL, self.output / "failed", metadata=sample_metadata(), committed=False)
         fixed = build_release(FIX, self.output / "fixed", metadata=sample_metadata(), committed=False)

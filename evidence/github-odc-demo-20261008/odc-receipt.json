@@ -1,0 +1,71 @@
+{
+  "approvals": [
+    {
+      "actor": "odc_poc_requester",
+      "actor_id": 10000,
+      "actor_roles": [],
+      "comment": null,
+      "native_status": "EXECUTING",
+      "node_id": 2000072,
+      "role_evidence": "native_operator_or_matching_project_candidate",
+      "timestamp": null
+    },
+    {
+      "actor": "odc_poc_requester",
+      "actor_id": 10000,
+      "actor_roles": [],
+      "comment": null,
+      "native_status": "CREATED",
+      "node_id": 2000073,
+      "role_evidence": "native_operator_or_matching_project_candidate",
+      "timestamp": null
+    }
+  ],
+  "audit_collection": "LIVE_PERSONAL_AUDIT_ONLY; only explicit taskId matches retained; create events may have no taskId",
+  "audit_events": [],
+  "audit_references": [
+    "https://oceanbase.apps.drgdevlab.com/api/v2/flow/flowInstances/2000015",
+    "https://oceanbase.apps.drgdevlab.com/api/v2/flow/flowInstances/2000015/tasks/result",
+    "https://oceanbase.apps.drgdevlab.com/api/v2/flow/flowInstances/2000015/tasks/asyncExecuteResult",
+    "https://oceanbase.apps.drgdevlab.com/api/v2/audit/events"
+  ],
+  "collection_errors": [],
+  "environments": {
+    "DEV": {
+      "end": null,
+      "flow_created_at": 1791398804138,
+      "native_status": "WAIT_FOR_EXECUTION",
+      "start": null,
+      "ticket_id": 2000015
+    },
+    "MOCKPROD": {
+      "end": null,
+      "flow_created_at": 1791398804139,
+      "native_status": "WAIT_FOR_EXECUTION",
+      "start": null,
+      "ticket_id": 2000015
+    },
+    "SIT": {
+      "end": null,
+      "flow_created_at": 1791398804139,
+      "native_status": "WAIT_FOR_EXECUTION",
+      "start": null,
+      "ticket_id": 2000015
+    },
+    "UAT": {
+      "end": null,
+      "flow_created_at": 1791398804139,
+      "native_status": "WAIT_FOR_EXECUTION",
+      "start": null,
+      "ticket_id": 2000015
+    }
+  },
+  "evidence_source": "LIVE",
+  "execution_actor": "NOT_AVAILABLE: read Execute audit; task-node operator may be requester",
+  "git_commit": "848e0923f3c8e2ef854298184232352ea68ed9ce",
+  "native_status": "APPROVING",
+  "odc_batch_id": 2000015,
+  "release_id": "REL-2026.10-DEMO01",
+  "requester_id": 10000,
+  "sql_sha256": "3ddce47b1a7675f1f02f349b21f0647437cd7693229fd560472df2a7c0338854"
+}
