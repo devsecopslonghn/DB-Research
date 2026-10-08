@@ -1,0 +1,16 @@
+{
+  "source_commit": "848e0923f3c8e2ef854298184232352ea68ed9ce",
+  "odc_batch_id": 2000015,
+  "github_validation_run_id": 37668628709,
+  "github_report_run_id": 37668628840,
+  "local_create_github_run_id": "NOT_AVAILABLE",
+  "payload_comparisons": {
+    "git_commit": true,
+    "manifest_sha256": true,
+    "sql_sha256": true,
+    "migrations": true,
+    "targets": true,
+    "policy_sha256": true
+  },
+  "scope": "Local ODC handoff uses the same committed payload as CI; it was NOT created by GitHub Actions. Actor/run provenance differs."
+}

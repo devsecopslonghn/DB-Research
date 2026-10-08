@@ -1,0 +1,49 @@
+schema_version: 1
+release_id: REL-2026.10-DEMO02-FAIL
+application: customer-profile
+description: Safely demonstrate a native batch stopping for review after SIT failure
+migrations:
+- 001_create_customer_region_index.sql
+targets:
+- DEV
+- SIT
+- UAT
+- MOCKPROD
+rollout:
+  mode: manual
+  order:
+  - DEV
+  - SIT
+  - UAT
+  - MOCKPROD
+approval:
+  reviewers:
+  - OWNER
+  - DBA
+  execution: authorized_manual_operator
+verification:
+  object_status: true
+  compile_errors: true
+  expected_data: true
+  objects:
+  - name: DM_CP_CUSTOMER
+    type: TABLE
+  - name: DM_CP_CUSTOMER_SEQ
+    type: SEQUENCE
+  - name: DM_CP_CUSTOMER_STATUS_IX
+    type: INDEX
+  - name: DM_CP_LABEL
+    type: FUNCTION
+  - name: DM_CP_ACTIVE_CUSTOMERS
+    type: VIEW
+  - name: DM_CP_CUSTOMER_REGION_IX
+    type: INDEX
+  data:
+    table: DM_CP_CUSTOMER
+    row_count: 3
+    active_count: 2
+  function:
+    name: DM_CP_LABEL
+    input: C0001
+    expected: C0001:Demo Customer One
+depends_on: REL-2026.10-DEMO01

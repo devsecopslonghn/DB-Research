@@ -1,0 +1,7 @@
+environment: UAT
+odc_target_id: 1000184
+odc_datasource_id: 1000003
+schema: ODC_POC_20261004_UAT
+project_id: 1
+odc_environment_id: 1000021
+odc_environment_name: POCUAT

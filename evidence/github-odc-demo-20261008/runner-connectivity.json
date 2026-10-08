@@ -1,0 +1,7 @@
+{
+  "authentication": "NOT_ATTEMPTED",
+  "classification": "REACHABLE_UNAUTHENTICATED",
+  "http_status": 200,
+  "reachable": true,
+  "runner": "GitHub Actions 1000001675"
+}

@@ -1,0 +1,90 @@
+{
+  "observed_at": "2026-10-07T18:55:43.206347+00:00",
+  "base_commit": "fd05666c44d0c4bf3cb94282b9163124db73ffa8",
+  "implementation_commit": "848e0923f3c8e2ef854298184232352ea68ed9ce",
+  "scope": "Final feature worktree before evidence commit; reporter source hashes identify the uncommitted regression fix",
+  "checks": {
+    "unit_tests": {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts/db_demo/tests",
+        "-v"
+      ],
+      "tests": 34,
+      "status": "PASS",
+      "exit_code": 0
+    },
+    "validation": {
+      "command": [
+        "python3",
+        "-m",
+        "scripts.db_demo.validate_manifest",
+        "--output",
+        "/tmp/db-demo-final-validation"
+      ],
+      "releases": 3,
+      "status": "PASS",
+      "exit_code": 0
+    },
+    "workflow_lint": {
+      "command": [
+        "/tmp/db-demo-actionlint/actionlint",
+        "-shellcheck=",
+        "-pyflakes=",
+        ".github/workflows/db-validate.yml",
+        ".github/workflows/db-release.yml",
+        ".github/workflows/db-report.yml"
+      ],
+      "tool_version": "actionlint 1.7.12; official checksum verified",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    "research_documents": {
+      "command": [
+        "python3",
+        "tools/verify_research_documents.py"
+      ],
+      "relative_links_checked": 1000,
+      "tables_checked": 292,
+      "errors": [],
+      "status": "PASS",
+      "exit_code": 0
+    },
+    "demo_relative_links": {
+      "files": 13,
+      "links": 60,
+      "errors": [],
+      "status": "PASS"
+    },
+    "preservation": {
+      "historical_hashes_matching": 15,
+      "gitlinks_unchanged": 33,
+      "changed_existing_baseline_files": [
+        "README.md",
+        "evaluation/README.md"
+      ],
+      "status": "PASS"
+    },
+    "diff_check": {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "status": "PASS",
+      "exit_code": 0
+    }
+  },
+  "source_sha256": {
+    "scripts/db_demo/generate_report.py": "88e13021744bbf60f90289ff574f6e2204a1d031408f2d634ce9ef5ee8152aef",
+    "scripts/db_demo/tests/test_demo.py": "e38b3fd73a736a690001124e00bbb32dd1dccddba09fdaf9cd18c78e2f2b5c1a"
+  },
+  "oracle_migration_execution": false,
+  "automatic_approval": false,
+  "cluster_mutation": false,
+  "merge": false
+}

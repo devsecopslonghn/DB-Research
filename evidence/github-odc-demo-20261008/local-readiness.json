@@ -1,0 +1,49 @@
+{
+  "authenticated_role": "existing_DEVELOPER_requester",
+  "evidence_source": "LIVE",
+  "inventory": [
+    {
+      "database_id": 1000069,
+      "datasource_id": 1000001,
+      "environment": "DEV",
+      "project_id": 1,
+      "schema": "ODC_POC_20261004_DEV"
+    },
+    {
+      "database_id": 1000122,
+      "datasource_id": 1000002,
+      "environment": "SIT",
+      "project_id": 1,
+      "schema": "ODC_POC_20261004_SIT"
+    },
+    {
+      "database_id": 1000184,
+      "datasource_id": 1000003,
+      "environment": "UAT",
+      "project_id": 1,
+      "schema": "ODC_POC_20261004_UAT"
+    },
+    {
+      "database_id": 1000218,
+      "datasource_id": 1000004,
+      "environment": "MOCKPROD",
+      "project_id": 1,
+      "schema": "ODC_POC_20261004_MOCKPROD"
+    }
+  ],
+  "mutations_performed": false,
+  "observed_at": "2026-10-07T18:23:18.837264+00:00",
+  "retention": {
+    "advertised_identity": {},
+    "demonstrated_settings_applied": false,
+    "deployment_ready": 1,
+    "hostname": null,
+    "log_mounts": [
+      {
+        "mountPath": "/opt/odc/log",
+        "name": "logs",
+        "subPath": null
+      }
+    ]
+  }
+}

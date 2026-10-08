@@ -1,0 +1,7 @@
+environment: DEV
+odc_target_id: 1000069
+odc_datasource_id: 1000001
+schema: ODC_POC_20261004_DEV
+project_id: 1
+odc_environment_id: 1
+odc_environment_name: dev

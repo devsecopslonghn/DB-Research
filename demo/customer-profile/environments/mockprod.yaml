@@ -1,0 +1,7 @@
+environment: MOCKPROD
+odc_target_id: 1000218
+odc_datasource_id: 1000004
+schema: ODC_POC_20261004_MOCKPROD
+project_id: 1
+odc_environment_id: 1000022
+odc_environment_name: POCPROD

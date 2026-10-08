@@ -1,0 +1,7 @@
+environment: SIT
+odc_target_id: 1000122
+odc_datasource_id: 1000002
+schema: ODC_POC_20261004_SIT
+project_id: 1
+odc_environment_id: 2
+odc_environment_name: sit

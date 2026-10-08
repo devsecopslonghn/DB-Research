@@ -1,0 +1,175 @@
+{
+  "application": "customer-profile",
+  "approval": {
+    "execution": "authorized_manual_operator",
+    "reviewers": [
+      "OWNER",
+      "DBA"
+    ]
+  },
+  "corrects": null,
+  "created_at": "2026-10-08T01:40:02+07:00",
+  "depends_on": null,
+  "evidence_source": "GIT",
+  "git_branch": "feature/github-odc-migration-demo",
+  "git_commit": "848e0923f3c8e2ef854298184232352ea68ed9ce",
+  "git_repository": "devsecopslonghn/DB-Research",
+  "github_actor": "LOCAL_OPERATOR",
+  "github_run_id": "NOT_AVAILABLE",
+  "manifest_sha256": "406741b739cdec2d0c628950204319cb882ba3cd73961ce2992c374f051c1347",
+  "migrations": [
+    {
+      "errors": [],
+      "file": "001_create_customer_table.sql",
+      "findings": [],
+      "plsql": false,
+      "sha256": "09d5a78bf5e17b5686e56df8624870d2be0bb4c168cb658c0a7d3afe94f1d102",
+      "sql_types": [
+        "TABLE"
+      ]
+    },
+    {
+      "errors": [],
+      "file": "002_create_customer_sequence.sql",
+      "findings": [],
+      "plsql": false,
+      "sha256": "f7d0763c8ce610310b1320276aaad36083c5416ea634b4c41d9d0abebdd5f838",
+      "sql_types": [
+        "SEQUENCE"
+      ]
+    },
+    {
+      "errors": [],
+      "file": "003_create_customer_index.sql",
+      "findings": [],
+      "plsql": false,
+      "sha256": "6f6d297e90f75d07d5c916097712f783b8b31b09b9e419ec951c2a4a0641aef6",
+      "sql_types": [
+        "INDEX"
+      ]
+    },
+    {
+      "errors": [],
+      "file": "004_create_customer_function.sql",
+      "findings": [],
+      "plsql": true,
+      "sha256": "07c54e7d8105a171d9ecf6ad210903716e419d9dfb09066f3ca255d5b41b8da1",
+      "sql_types": [
+        "FUNCTION"
+      ]
+    },
+    {
+      "errors": [],
+      "file": "005_create_customer_view.sql",
+      "findings": [],
+      "plsql": false,
+      "sha256": "37b0b21e054c7d9370149903b4604b4c2bbc12742b0fd624bb96cbe12cc877bc",
+      "sql_types": [
+        "VIEW"
+      ]
+    },
+    {
+      "errors": [],
+      "file": "006_seed_reference_data.sql",
+      "findings": [],
+      "plsql": false,
+      "sha256": "b82e3f24b24e6ceabad4c571d564cdf294d7059af4af40fb4b3266d6b0c69991",
+      "sql_types": [
+        "INSERT"
+      ]
+    }
+  ],
+  "policy_sha256": "865fbb1e2eb935e623f277c42adb643a5a16568f338b4e55b42632c46e430332",
+  "release_id": "REL-2026.10-DEMO01",
+  "rollout": {
+    "mode": "manual",
+    "order": [
+      "DEV",
+      "SIT",
+      "UAT",
+      "MOCKPROD"
+    ]
+  },
+  "schema_version": 1,
+  "sql_sha256": "3ddce47b1a7675f1f02f349b21f0647437cd7693229fd560472df2a7c0338854",
+  "state": "PREPARED",
+  "targets": [
+    {
+      "configuration_sha256": "0eb572b4f29a8b93adb22151670726ccfcd6709d4fe3506d517d67402bf9e023",
+      "environment": "DEV",
+      "odc_datasource_id": 1000001,
+      "odc_environment_id": 1,
+      "odc_environment_name": "dev",
+      "odc_target_id": 1000069,
+      "project_id": 1,
+      "schema": "ODC_POC_20261004_DEV"
+    },
+    {
+      "configuration_sha256": "5a9eaeedd466c4a27e3165617d329cc8b735c34a47add8da7acf325eea35ef54",
+      "environment": "SIT",
+      "odc_datasource_id": 1000002,
+      "odc_environment_id": 2,
+      "odc_environment_name": "sit",
+      "odc_target_id": 1000122,
+      "project_id": 1,
+      "schema": "ODC_POC_20261004_SIT"
+    },
+    {
+      "configuration_sha256": "93e0978f07914d529ec8c37c5eb0ad9d66aa79eaac4de7e1d7154cf215b1f0e5",
+      "environment": "UAT",
+      "odc_datasource_id": 1000003,
+      "odc_environment_id": 1000021,
+      "odc_environment_name": "POCUAT",
+      "odc_target_id": 1000184,
+      "project_id": 1,
+      "schema": "ODC_POC_20261004_UAT"
+    },
+    {
+      "configuration_sha256": "dbb857b83eba4a82a402681ab3b6d13c0e840bdf5b4362db48c15fd92b7fc263",
+      "environment": "MOCKPROD",
+      "odc_datasource_id": 1000004,
+      "odc_environment_id": 1000022,
+      "odc_environment_name": "POCPROD",
+      "odc_target_id": 1000218,
+      "project_id": 1,
+      "schema": "ODC_POC_20261004_MOCKPROD"
+    }
+  ],
+  "verification": {
+    "compile_errors": true,
+    "data": {
+      "active_count": 2,
+      "row_count": 3,
+      "table": "DM_CP_CUSTOMER"
+    },
+    "expected_data": true,
+    "function": {
+      "expected": "C0001:Demo Customer One",
+      "input": "C0001",
+      "name": "DM_CP_LABEL"
+    },
+    "object_status": true,
+    "objects": [
+      {
+        "name": "DM_CP_CUSTOMER",
+        "type": "TABLE"
+      },
+      {
+        "name": "DM_CP_CUSTOMER_SEQ",
+        "type": "SEQUENCE"
+      },
+      {
+        "name": "DM_CP_CUSTOMER_STATUS_IX",
+        "type": "INDEX"
+      },
+      {
+        "name": "DM_CP_LABEL",
+        "type": "FUNCTION"
+      },
+      {
+        "name": "DM_CP_ACTIVE_CUSTOMERS",
+        "type": "VIEW"
+      }
+    ]
+  }
+}
