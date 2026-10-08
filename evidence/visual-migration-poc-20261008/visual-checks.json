@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T02:18:57.417756+00:00",
+  "checked_at": "2026-10-08T02:24:08.033733+00:00",
   "static": {
     "standalone_embedded_assets": "PASS",
     "json_matches_both_html_pages": "PASS",
@@ -15,6 +15,7 @@
     "presentation_controls": "PASS",
     "mobile_390px": "PASS",
     "print_pdf": "PASS",
-    "oracle_pending_cells": 32
+    "oracle_pending_cells": 32,
+    "hostile_evidence_stays_text": "PASS"
   }
 }

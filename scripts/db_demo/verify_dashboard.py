@@ -10,7 +10,7 @@ import json
 from pathlib import Path
 import re
 
-from .build_dashboard import DASHBOARD, ROOT, sha
+from .build_dashboard import DASHBOARD, ROOT, safe_json, sha
 
 
 class EmbeddedData(HTMLParser):
@@ -130,6 +130,25 @@ def browser_checks(output, executable):
                         broken.append(href)
                     if parsed.fragment:
                         assert page.locator(f'[id="{parsed.fragment}"]').count(), f"Broken anchor {href}"
+        # Data values remain text even when an edited snapshot contains HTML.
+        page.emulate_media(media="screen")
+        hostile = json.loads((DASHBOARD / "data/demo-status.json").read_text())
+        payload = '\"><img src=x onerror="window.__dashboardXss=1">'
+        hostile["happy_path"] = payload
+        hostile["application"] = payload
+        hostile["files"][0]["file"] = payload
+        hostile["approvals"][0]["actor"] = payload
+        hostile["environments"][0]["status"] = payload
+        for filename in ("index.html", "migration-report.html"):
+            html = (DASHBOARD / filename).read_text()
+            html = re.sub(r'(<script id="demo-data" type="application/json">).*?(</script>)',
+                          lambda m: m[1] + safe_json(hostile) + m[2], html, flags=re.S)
+            page.set_content(html)
+            assert page.locator("img").count() == 0, "Evidence text introduced HTML"
+            assert page.evaluate("window.__dashboardXss === undefined"), "Evidence text executed code"
+            if filename == "index.html":
+                page.locator("#tab-actual").click()
+                assert page.locator("img").count() == 0
         assert not errors, errors
         assert not requests, f"Network dependency: {requests}"
         assert not broken, broken
@@ -137,6 +156,7 @@ def browser_checks(output, executable):
         findings.update({"file_url_load": "PASS", "network_requests": len(requests), "browser_errors": errors,
                          "missing_local_links": broken, "scenario_tabs_and_keyboard": "PASS", "presentation_controls": "PASS",
                          "mobile_390px": "PASS", "print_pdf": "PASS", "oracle_pending_cells": 32})
+        findings["hostile_evidence_stays_text"] = "PASS"
     return findings
 
 

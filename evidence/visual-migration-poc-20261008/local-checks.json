@@ -50,5 +50,6 @@
     "pages": 6,
     "reviewed": "Rendered PDF pages; no stranded section headings or trailing near-empty page"
   },
-  "runtime_scope": "No new ODC/Oracle acceptance, approval or execution"
+  "runtime_scope": "No new ODC/Oracle acceptance, approval or execution",
+  "browser_hostile_evidence_regression": "PASS: strings remain text in both pages and scenario rendering"
 }

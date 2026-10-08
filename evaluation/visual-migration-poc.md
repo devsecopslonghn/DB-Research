@@ -14,7 +14,7 @@ The dashboard walks through the manual problem, proposed architecture, release p
 | GitHub | PR #1 MERGED; `db-validate`, fixture `db-report`, CodeQL PASS; 34 historical tests PASS; package artifact 11504906993 verified |
 | Failure / correction | Existing FIXTURE demonstrations; SIT ORA-20042; immutable failed history, new release/hashes/review/approval/execution |
 | Retention | Historical LIVE PASS on 2000013/2000014, current retention configuration VERIFIED; separate from happy batch |
-| Offline, links, assets, credentials | PASS; no network dependencies or browser errors; embedded JSON matches machine data; input/SQL hashes verified |
+| Offline, links, assets, credentials | PASS; no network dependencies or browser errors; embedded JSON matches machine data; input/SQL hashes verified; hostile evidence text cannot inject HTML |
 | Responsive / interaction / printing | PASS at 390px and desktop; tabs, keyboard and presentation navigation; generated A4 PDF inspected |
 | Local checks | 42 tests PASS (34 existing + 8 evidence-integrity regressions); three manifests/packages/fixture reports; actionlint; research documents |
 | Runtime scope | No new runtime acceptance, approval, execution or infrastructure work |
