@@ -1,5 +1,11 @@
 # Demo phát hành migration Oracle qua GitHub và ODC
 
+## [Open Visual POC](dashboard/index.html)
+
+Mở dashboard trực tiếp trong browser; không cần server, npm hay database. [HTML migration report](dashboard/migration-report.html) có thể in PDF. [Hướng dẫn demo và refresh data](dashboard/README.md).
+
+Snapshot ngày 8 October 2026: PR #1 **MERGED**, GitHub validation/report/CodeQL **PASS**; happy batch **2000015 / APPROVING**, đang chờ approval, chưa migration execution/Oracle acceptance. Failure/correction là **FIXTURE DEMONSTRATION**. Retention là historical **LIVE PASS** với current configuration verified; production **NOT APPROVED**.
+
 Đây là demo có kiểm soát cho `customer-profile`: PR chạy kiểm tra tĩnh và fixture smoke; payload release tái tạo từ source commit; ODC điều phối execution, còn người vận hành xem xét và tiếp tục từng môi trường trong UI. Run actor/ID provenance có thể thay đổi theo lần build. SQL chỉ tạo đối tượng `DM_CP_*` trên bốn schema POC cô lập, dùng chung một Oracle database. `MOCKPROD` là schema mô phỏng, không phải production.
 
 ```mermaid

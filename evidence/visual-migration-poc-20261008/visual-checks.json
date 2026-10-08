@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-08T02:18:57.417756+00:00",
+  "static": {
+    "standalone_embedded_assets": "PASS",
+    "json_matches_both_html_pages": "PASS",
+    "source_and_sql_hashes": "PASS",
+    "credential_scan": "PASS"
+  },
+  "browser": {
+    "file_url_load": "PASS",
+    "network_requests": 0,
+    "browser_errors": [],
+    "missing_local_links": [],
+    "scenario_tabs_and_keyboard": "PASS",
+    "presentation_controls": "PASS",
+    "mobile_390px": "PASS",
+    "print_pdf": "PASS",
+    "oracle_pending_cells": 32
+  }
+}
