@@ -1,0 +1,677 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-08T02:23:32.387288+00:00",
+  "observed_at": "2026-10-08T01:54:34.970437+00:00",
+  "application": "customer-profile",
+  "release": "REL-2026.10-DEMO01",
+  "repository": "devsecopslonghn/DB-Research",
+  "source": "GitHub",
+  "odc_batch": "2000015",
+  "native_status": "APPROVING",
+  "overall_status": "WAITING_APPROVAL",
+  "happy_path": "PARTIAL",
+  "runtime_proven": false,
+  "active_environment": null,
+  "approval_complete": false,
+  "evidence_directory": "evidence/visual-migration-poc-20261008/inputs",
+  "environments": [
+    {
+      "name": "DEV",
+      "target": 1000069,
+      "schema": "ODC_POC_20261004_DEV",
+      "status": "WAITING",
+      "native_status": "WAIT_FOR_EXECUTION",
+      "source": "LIVE",
+      "verification": "NOT_AVAILABLE",
+      "verification_source": "NOT_AVAILABLE",
+      "start": null,
+      "end": null,
+      "actor": "NOT_AVAILABLE",
+      "checks": {
+        "Table": "NOT RUN",
+        "Sequence": "NOT RUN",
+        "Index": "NOT RUN",
+        "Function": "NOT RUN",
+        "View": "NOT RUN",
+        "USER_ERRORS": "NOT RUN",
+        "Seed data": "NOT RUN",
+        "Function test": "NOT RUN"
+      }
+    },
+    {
+      "name": "SIT",
+      "target": 1000122,
+      "schema": "ODC_POC_20261004_SIT",
+      "status": "WAITING",
+      "native_status": "WAIT_FOR_EXECUTION",
+      "source": "LIVE",
+      "verification": "NOT_AVAILABLE",
+      "verification_source": "NOT_AVAILABLE",
+      "start": null,
+      "end": null,
+      "actor": "NOT_AVAILABLE",
+      "checks": {
+        "Table": "NOT RUN",
+        "Sequence": "NOT RUN",
+        "Index": "NOT RUN",
+        "Function": "NOT RUN",
+        "View": "NOT RUN",
+        "USER_ERRORS": "NOT RUN",
+        "Seed data": "NOT RUN",
+        "Function test": "NOT RUN"
+      }
+    },
+    {
+      "name": "UAT",
+      "target": 1000184,
+      "schema": "ODC_POC_20261004_UAT",
+      "status": "WAITING",
+      "native_status": "WAIT_FOR_EXECUTION",
+      "source": "LIVE",
+      "verification": "NOT_AVAILABLE",
+      "verification_source": "NOT_AVAILABLE",
+      "start": null,
+      "end": null,
+      "actor": "NOT_AVAILABLE",
+      "checks": {
+        "Table": "NOT RUN",
+        "Sequence": "NOT RUN",
+        "Index": "NOT RUN",
+        "Function": "NOT RUN",
+        "View": "NOT RUN",
+        "USER_ERRORS": "NOT RUN",
+        "Seed data": "NOT RUN",
+        "Function test": "NOT RUN"
+      }
+    },
+    {
+      "name": "MOCKPROD",
+      "target": 1000218,
+      "schema": "ODC_POC_20261004_MOCKPROD",
+      "status": "WAITING",
+      "native_status": "WAIT_FOR_EXECUTION",
+      "source": "LIVE",
+      "verification": "NOT_AVAILABLE",
+      "verification_source": "NOT_AVAILABLE",
+      "start": null,
+      "end": null,
+      "actor": "NOT_AVAILABLE",
+      "checks": {
+        "Table": "NOT RUN",
+        "Sequence": "NOT RUN",
+        "Index": "NOT RUN",
+        "Function": "NOT RUN",
+        "View": "NOT RUN",
+        "USER_ERRORS": "NOT RUN",
+        "Seed data": "NOT RUN",
+        "Function test": "NOT RUN"
+      }
+    }
+  ],
+  "approvals": [
+    {
+      "role": "Requester",
+      "actor": "odc_poc_requester",
+      "status": "SUBMITTED",
+      "source": "LIVE",
+      "detail": "ODC requester ID 10000"
+    },
+    {
+      "role": "OWNER review",
+      "actor": "Pending",
+      "status": "PENDING",
+      "source": "LIVE",
+      "detail": "Node 2000072 · native EXECUTING; role assignment not proven"
+    },
+    {
+      "role": "DBA approval",
+      "actor": "Pending",
+      "status": "PENDING",
+      "source": "LIVE",
+      "detail": "Node 2000073 · native CREATED; role assignment not proven"
+    },
+    {
+      "role": "Execution",
+      "actor": "Authorized operator",
+      "status": "WAITING",
+      "source": "LIVE",
+      "detail": "Manual continuation in ODC after approval and stage verification"
+    }
+  ],
+  "files": [
+    {
+      "file": "001_create_customer_table.sql",
+      "type": "TABLE",
+      "sha256": "09d5a78bf5e17b5686e56df8624870d2be0bb4c168cb658c0a7d3afe94f1d102",
+      "policy": "PASS",
+      "path": "demo/customer-profile/migrations/REL-2026.10-DEMO01/001_create_customer_table.sql"
+    },
+    {
+      "file": "002_create_customer_sequence.sql",
+      "type": "SEQUENCE",
+      "sha256": "f7d0763c8ce610310b1320276aaad36083c5416ea634b4c41d9d0abebdd5f838",
+      "policy": "PASS",
+      "path": "demo/customer-profile/migrations/REL-2026.10-DEMO01/002_create_customer_sequence.sql"
+    },
+    {
+      "file": "003_create_customer_index.sql",
+      "type": "INDEX",
+      "sha256": "6f6d297e90f75d07d5c916097712f783b8b31b09b9e419ec951c2a4a0641aef6",
+      "policy": "PASS",
+      "path": "demo/customer-profile/migrations/REL-2026.10-DEMO01/003_create_customer_index.sql"
+    },
+    {
+      "file": "004_create_customer_function.sql",
+      "type": "FUNCTION",
+      "sha256": "07c54e7d8105a171d9ecf6ad210903716e419d9dfb09066f3ca255d5b41b8da1",
+      "policy": "PASS",
+      "path": "demo/customer-profile/migrations/REL-2026.10-DEMO01/004_create_customer_function.sql"
+    },
+    {
+      "file": "005_create_customer_view.sql",
+      "type": "VIEW",
+      "sha256": "37b0b21e054c7d9370149903b4604b4c2bbc12742b0fd624bb96cbe12cc877bc",
+      "policy": "PASS",
+      "path": "demo/customer-profile/migrations/REL-2026.10-DEMO01/005_create_customer_view.sql"
+    },
+    {
+      "file": "006_seed_reference_data.sql",
+      "type": "INSERT",
+      "sha256": "b82e3f24b24e6ceabad4c571d564cdf294d7059af4af40fb4b3266d6b0c69991",
+      "policy": "PASS",
+      "path": "demo/customer-profile/migrations/REL-2026.10-DEMO01/006_seed_reference_data.sql"
+    }
+  ],
+  "fixtures": {
+    "expected": {
+      "release": "REL-2026.10-DEMO01",
+      "source": "FIXTURE",
+      "batch": "SAMPLE_BATCH_HAPPY",
+      "environments": [
+        {
+          "name": "DEV",
+          "target": 1000069,
+          "schema": "ODC_POC_20261004_DEV",
+          "status": "VERIFIED",
+          "native_status": "EXECUTION_SUCCEEDED",
+          "source": "FIXTURE",
+          "verification": "PASS",
+          "verification_source": "FIXTURE",
+          "start": "SAMPLE_TIMESTAMP",
+          "end": "SAMPLE_TIMESTAMP",
+          "actor": "SAMPLE_OPERATOR",
+          "checks": {
+            "Table": "PASS",
+            "Sequence": "PASS",
+            "Index": "PASS",
+            "Function": "PASS",
+            "View": "PASS",
+            "USER_ERRORS": "PASS",
+            "Seed data": "PASS",
+            "Function test": "PASS"
+          }
+        },
+        {
+          "name": "SIT",
+          "target": 1000122,
+          "schema": "ODC_POC_20261004_SIT",
+          "status": "VERIFIED",
+          "native_status": "EXECUTION_SUCCEEDED",
+          "source": "FIXTURE",
+          "verification": "PASS",
+          "verification_source": "FIXTURE",
+          "start": "SAMPLE_TIMESTAMP",
+          "end": "SAMPLE_TIMESTAMP",
+          "actor": "SAMPLE_OPERATOR",
+          "checks": {
+            "Table": "PASS",
+            "Sequence": "PASS",
+            "Index": "PASS",
+            "Function": "PASS",
+            "View": "PASS",
+            "USER_ERRORS": "PASS",
+            "Seed data": "PASS",
+            "Function test": "PASS"
+          }
+        },
+        {
+          "name": "UAT",
+          "target": 1000184,
+          "schema": "ODC_POC_20261004_UAT",
+          "status": "VERIFIED",
+          "native_status": "EXECUTION_SUCCEEDED",
+          "source": "FIXTURE",
+          "verification": "PASS",
+          "verification_source": "FIXTURE",
+          "start": "SAMPLE_TIMESTAMP",
+          "end": "SAMPLE_TIMESTAMP",
+          "actor": "SAMPLE_OPERATOR",
+          "checks": {
+            "Table": "PASS",
+            "Sequence": "PASS",
+            "Index": "PASS",
+            "Function": "PASS",
+            "View": "PASS",
+            "USER_ERRORS": "PASS",
+            "Seed data": "PASS",
+            "Function test": "PASS"
+          }
+        },
+        {
+          "name": "MOCKPROD",
+          "target": 1000218,
+          "schema": "ODC_POC_20261004_MOCKPROD",
+          "status": "VERIFIED",
+          "native_status": "EXECUTION_SUCCEEDED",
+          "source": "FIXTURE",
+          "verification": "PASS",
+          "verification_source": "FIXTURE",
+          "start": "SAMPLE_TIMESTAMP",
+          "end": "SAMPLE_TIMESTAMP",
+          "actor": "SAMPLE_OPERATOR",
+          "checks": {
+            "Table": "PASS",
+            "Sequence": "PASS",
+            "Index": "PASS",
+            "Function": "PASS",
+            "View": "PASS",
+            "USER_ERRORS": "PASS",
+            "Seed data": "PASS",
+            "Function test": "PASS"
+          }
+        }
+      ]
+    },
+    "failure": {
+      "release": "REL-2026.10-DEMO02-FAIL",
+      "source": "FIXTURE",
+      "batch": "SAMPLE_BATCH_FAILURE",
+      "environments": [
+        {
+          "name": "DEV",
+          "target": 1000069,
+          "schema": "ODC_POC_20261004_DEV",
+          "status": "VERIFIED",
+          "native_status": "EXECUTION_SUCCEEDED",
+          "source": "FIXTURE",
+          "verification": "PASS",
+          "verification_source": "FIXTURE",
+          "start": "SAMPLE_TIMESTAMP",
+          "end": "SAMPLE_TIMESTAMP",
+          "actor": "SAMPLE_OPERATOR",
+          "checks": {
+            "Table": "PASS",
+            "Sequence": "PASS",
+            "Index": "PASS",
+            "Function": "PASS",
+            "View": "PASS",
+            "USER_ERRORS": "PASS",
+            "Seed data": "PASS",
+            "Function test": "PASS"
+          }
+        },
+        {
+          "name": "SIT",
+          "target": 1000122,
+          "schema": "ODC_POC_20261004_SIT",
+          "status": "FAILED",
+          "native_status": "EXECUTION_FAILED",
+          "source": "FIXTURE",
+          "verification": "NOT_AVAILABLE",
+          "verification_source": "NOT_AVAILABLE",
+          "start": "SAMPLE_TIMESTAMP",
+          "end": "SAMPLE_TIMESTAMP",
+          "actor": "SAMPLE_OPERATOR",
+          "checks": {
+            "Table": "NOT AVAILABLE",
+            "Sequence": "NOT AVAILABLE",
+            "Index": "NOT AVAILABLE",
+            "Function": "NOT AVAILABLE",
+            "View": "NOT AVAILABLE",
+            "USER_ERRORS": "NOT AVAILABLE",
+            "Seed data": "NOT AVAILABLE",
+            "Function test": "NOT AVAILABLE"
+          }
+        },
+        {
+          "name": "UAT",
+          "target": 1000184,
+          "schema": "ODC_POC_20261004_UAT",
+          "status": "WAITING",
+          "native_status": "WAIT_FOR_EXECUTION",
+          "source": "FIXTURE",
+          "verification": "NOT_AVAILABLE",
+          "verification_source": "NOT_AVAILABLE",
+          "start": null,
+          "end": null,
+          "actor": "SAMPLE_OPERATOR",
+          "checks": {
+            "Table": "NOT RUN",
+            "Sequence": "NOT RUN",
+            "Index": "NOT RUN",
+            "Function": "NOT RUN",
+            "View": "NOT RUN",
+            "USER_ERRORS": "NOT RUN",
+            "Seed data": "NOT RUN",
+            "Function test": "NOT RUN"
+          }
+        },
+        {
+          "name": "MOCKPROD",
+          "target": 1000218,
+          "schema": "ODC_POC_20261004_MOCKPROD",
+          "status": "WAITING",
+          "native_status": "WAIT_FOR_EXECUTION",
+          "source": "FIXTURE",
+          "verification": "NOT_AVAILABLE",
+          "verification_source": "NOT_AVAILABLE",
+          "start": null,
+          "end": null,
+          "actor": "SAMPLE_OPERATOR",
+          "checks": {
+            "Table": "NOT RUN",
+            "Sequence": "NOT RUN",
+            "Index": "NOT RUN",
+            "Function": "NOT RUN",
+            "View": "NOT RUN",
+            "USER_ERRORS": "NOT RUN",
+            "Seed data": "NOT RUN",
+            "Function test": "NOT RUN"
+          }
+        }
+      ]
+    },
+    "correction": {
+      "release": "REL-2026.10-DEMO02-FIX",
+      "source": "FIXTURE",
+      "batch": "SAMPLE_BATCH_CORRECTION",
+      "environments": [
+        {
+          "name": "DEV",
+          "target": 1000069,
+          "schema": "ODC_POC_20261004_DEV",
+          "status": "VERIFIED",
+          "native_status": "EXECUTION_SUCCEEDED",
+          "source": "FIXTURE",
+          "verification": "PASS",
+          "verification_source": "FIXTURE",
+          "start": "SAMPLE_TIMESTAMP",
+          "end": "SAMPLE_TIMESTAMP",
+          "actor": "SAMPLE_OPERATOR",
+          "checks": {
+            "Table": "PASS",
+            "Sequence": "PASS",
+            "Index": "PASS",
+            "Function": "PASS",
+            "View": "PASS",
+            "USER_ERRORS": "PASS",
+            "Seed data": "PASS",
+            "Function test": "PASS"
+          }
+        },
+        {
+          "name": "SIT",
+          "target": 1000122,
+          "schema": "ODC_POC_20261004_SIT",
+          "status": "VERIFIED",
+          "native_status": "EXECUTION_SUCCEEDED",
+          "source": "FIXTURE",
+          "verification": "PASS",
+          "verification_source": "FIXTURE",
+          "start": "SAMPLE_TIMESTAMP",
+          "end": "SAMPLE_TIMESTAMP",
+          "actor": "SAMPLE_OPERATOR",
+          "checks": {
+            "Table": "PASS",
+            "Sequence": "PASS",
+            "Index": "PASS",
+            "Function": "PASS",
+            "View": "PASS",
+            "USER_ERRORS": "PASS",
+            "Seed data": "PASS",
+            "Function test": "PASS"
+          }
+        },
+        {
+          "name": "UAT",
+          "target": 1000184,
+          "schema": "ODC_POC_20261004_UAT",
+          "status": "VERIFIED",
+          "native_status": "EXECUTION_SUCCEEDED",
+          "source": "FIXTURE",
+          "verification": "PASS",
+          "verification_source": "FIXTURE",
+          "start": "SAMPLE_TIMESTAMP",
+          "end": "SAMPLE_TIMESTAMP",
+          "actor": "SAMPLE_OPERATOR",
+          "checks": {
+            "Table": "PASS",
+            "Sequence": "PASS",
+            "Index": "PASS",
+            "Function": "PASS",
+            "View": "PASS",
+            "USER_ERRORS": "PASS",
+            "Seed data": "PASS",
+            "Function test": "PASS"
+          }
+        },
+        {
+          "name": "MOCKPROD",
+          "target": 1000218,
+          "schema": "ODC_POC_20261004_MOCKPROD",
+          "status": "VERIFIED",
+          "native_status": "EXECUTION_SUCCEEDED",
+          "source": "FIXTURE",
+          "verification": "PASS",
+          "verification_source": "FIXTURE",
+          "start": "SAMPLE_TIMESTAMP",
+          "end": "SAMPLE_TIMESTAMP",
+          "actor": "SAMPLE_OPERATOR",
+          "checks": {
+            "Table": "PASS",
+            "Sequence": "PASS",
+            "Index": "PASS",
+            "Function": "PASS",
+            "View": "PASS",
+            "USER_ERRORS": "PASS",
+            "Seed data": "PASS",
+            "Function test": "PASS"
+          }
+        }
+      ]
+    }
+  },
+  "chain": [
+    {
+      "title": "Git commit",
+      "source": "LIVE",
+      "detail": "848e0923f3c8"
+    },
+    {
+      "title": "Release manifest",
+      "source": "LIVE",
+      "detail": "406741b739cd"
+    },
+    {
+      "title": "Migration SHA-256",
+      "source": "LIVE",
+      "detail": "3ddce47b1a76"
+    },
+    {
+      "title": "ODC batch",
+      "source": "LIVE",
+      "detail": "2000015"
+    },
+    {
+      "title": "Approval",
+      "source": "LIVE",
+      "detail": "Incomplete approval nodes observed"
+    },
+    {
+      "title": "Execution",
+      "source": "NOT_AVAILABLE",
+      "detail": "No execution yet"
+    },
+    {
+      "title": "Oracle verification",
+      "source": "NOT_AVAILABLE",
+      "detail": "Post-migration acceptance required"
+    },
+    {
+      "title": "Report",
+      "source": "LIVE",
+      "detail": "Generated snapshot; runtime result unavailable"
+    }
+  ],
+  "provenance": {
+    "source_commit": "848e0923f3c8e2ef854298184232352ea68ed9ce",
+    "pr_head": "44b3ee7413204bdbddd587b1d5f220180eef3904",
+    "merge_commit": "9bb1215a317cf07657bddff99dff3b22a4035cce",
+    "manifest_sha256": "406741b739cdec2d0c628950204319cb882ba3cd73961ce2992c374f051c1347",
+    "sql_sha256": "3ddce47b1a7675f1f02f349b21f0647437cd7693229fd560472df2a7c0338854",
+    "github_run": "NOT_AVAILABLE",
+    "package_origin": "LOCAL_OPERATOR"
+  },
+  "github": {
+    "pr": {
+      "number": 1,
+      "html_url": "https://github.com/devsecopslonghn/DB-Research/pull/1",
+      "merged": true,
+      "merged_at": "2026-10-08T01:19:43Z",
+      "state": "closed",
+      "head_sha": "44b3ee7413204bdbddd587b1d5f220180eef3904",
+      "merge_commit": "9bb1215a317cf07657bddff99dff3b22a4035cce"
+    },
+    "observed_at": "2026-10-08T02:08:26.653031+00:00",
+    "workflows": [
+      {
+        "name": "db-validate",
+        "status": "PASS",
+        "run": 37670936711,
+        "commit": "44b3ee7413204bdbddd587b1d5f220180eef3904",
+        "url": "https://github.com/devsecopslonghn/DB-Research/actions/runs/37670936711",
+        "scope": "Static validation, tests and release packages",
+        "source": "LIVE",
+        "artifacts": [
+          {
+            "id": 11504906993,
+            "name": "db-demo-validation-37670936711",
+            "expired": false,
+            "digest": "sha256:4453eb389f08fbcc085028568a0f17ce50cecc049ad8e82542c6930998cdc4df"
+          }
+        ]
+      },
+      {
+        "name": "db-report",
+        "status": "PASS",
+        "run": 37670936411,
+        "commit": "44b3ee7413204bdbddd587b1d5f220180eef3904",
+        "url": "https://github.com/devsecopslonghn/DB-Research/actions/runs/37670936411",
+        "scope": "Fixture report rendering; no live execution",
+        "source": "LIVE",
+        "artifacts": [
+          {
+            "id": 11505351610,
+            "name": "db-demo-report-fixture-37670936411",
+            "expired": false,
+            "digest": "sha256:3b58ce659fffffee94f6cc336e5d9690e4c843af421f774b8d72a04b69d8065d"
+          }
+        ]
+      },
+      {
+        "name": "CodeQL",
+        "status": "PASS",
+        "run": 37712369490,
+        "commit": "9bb1215a317cf07657bddff99dff3b22a4035cce",
+        "url": "https://github.com/devsecopslonghn/DB-Research/actions/runs/37712369490",
+        "scope": "Code scanning on the merge commit",
+        "source": "LIVE",
+        "artifacts": []
+      }
+    ],
+    "tests": 34,
+    "package_status": "PASS",
+    "artifact_id": 11504906993,
+    "artifact_run": 37670936711
+  },
+  "retention": {
+    "status": "PASS",
+    "source": "LIVE",
+    "tickets": [
+      2000013,
+      2000014
+    ],
+    "observed_at": "2026-10-07T17:11:59.344305+00:00",
+    "checks": {
+      "Result": "PASS",
+      "Log": "PASS",
+      "Attachment": "PASS",
+      "Metadata": "PASS",
+      "Audit": "PASS"
+    },
+    "configuration": "VERIFIED",
+    "configuration_observed_at": "2026-10-08T01:50:04.938376+00:00",
+    "hostname": "odc",
+    "mount": "/opt/odc/log",
+    "identity": "Stable ODC service identity"
+  },
+  "correction": {
+    "failed_release": "REL-2026.10-DEMO02-FAIL",
+    "release": "REL-2026.10-DEMO02-FIX",
+    "failed_sha256": "5b696b547fe9203448dc829f8139987992078efc3b273658577e84c268e7edb8",
+    "sha256": "db645a5be2eac9afd0cac908317729b211ce61cdc5a6fa74d6ec840dda5adc7c",
+    "source": "FIXTURE",
+    "policy": "Dynamic SQL requires DBA review",
+    "live_status": "NOT_AVAILABLE — neither runtime ticket created"
+  },
+  "sources": [
+    {
+      "file": "evidence/visual-migration-poc-20261008/inputs/REL-2026.10-DEMO01/migration-report.json",
+      "sha256": "534483e8449db20d0ebf899face2d287d983ea128b35509d1efc96ef4f1922eb"
+    },
+    {
+      "file": "evidence/visual-migration-poc-20261008/inputs/REL-2026.10-DEMO02-FAIL/migration-report.json",
+      "sha256": "b1772003db9f55c601d8e7b8add70a40414d5bfb433624ac11e37b2c69dbdae6"
+    },
+    {
+      "file": "evidence/visual-migration-poc-20261008/inputs/REL-2026.10-DEMO02-FIX/migration-report.json",
+      "sha256": "23c46cc37a9ab827d1d5e2bcfb4ba30a6cbf691e57407592445ad62b51f37f33"
+    },
+    {
+      "file": "evidence/visual-migration-poc-20261008/inputs/github-artifacts-verified.json",
+      "sha256": "9031cba455e2042161cbab5a408319a10c992be44be3fbf5da776a7313aee3c9"
+    },
+    {
+      "file": "evidence/visual-migration-poc-20261008/inputs/github-current-state.json",
+      "sha256": "f96237e3020b8493379675d002115065eed8655fcb630c8c912bc912495c09b6"
+    },
+    {
+      "file": "evidence/visual-migration-poc-20261008/inputs/github-validation-report.json",
+      "sha256": "db9add4384f780f40f12f98a0ef56d496ed7300518d9694c104dfd79eef31c8d"
+    },
+    {
+      "file": "evidence/visual-migration-poc-20261008/inputs/happy-batch-approval-state.json",
+      "sha256": "a60ef4ab577a31de4fca69e0a499f1a84d7908891332d971c23e825a409a9cb4"
+    },
+    {
+      "file": "evidence/visual-migration-poc-20261008/inputs/happy-odc-receipt.json",
+      "sha256": "b835cc5117bf14fd97349060c574bc1c1449df1633963444b156ecb12c9fcf6a"
+    },
+    {
+      "file": "evidence/visual-migration-poc-20261008/inputs/retention-conclusion.json",
+      "sha256": "e3e3d1e7dfd5efdb7cd10ac6a35302d07d69fbff85f9cc28542f964517f194b8"
+    },
+    {
+      "file": "evidence/visual-migration-poc-20261008/inputs/retention-current-state.json",
+      "sha256": "7ae42f8ef5fa4bb6cb2987197244dcc08283c875911e9d429806b1c6b97dc614"
+    }
+  ],
+  "limitations": [
+    "OWNER/DBA approval and migration execution remain pending; Oracle preflight is not migration acceptance.",
+    "db-report Actions success proves fixture rendering. Authenticated Actions-to-ODC handoff still needs runner, environment, secrets and original handoff artifact.",
+    "DEV, SIT, UAT and MOCKPROD are four isolated schemas on one Oracle service. MOCKPROD is a simulation environment.",
+    "Failure and correction runtime have not been executed. Their visual demonstrations use repository fixtures.",
+    "ODC manual continuation requires an authorized operator; ABORT/retry 0 is not an automatic approval or Oracle verification gate.",
+    "Static SQL policy is lexical. ODC does not provide Flyway-style migration version ledger/replay, DDL rollback, backup or production readiness."
+  ]
+}

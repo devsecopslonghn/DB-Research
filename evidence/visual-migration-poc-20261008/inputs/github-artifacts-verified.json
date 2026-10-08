@@ -1,0 +1,31 @@
+{
+  "all_bundles_verified_against_committed_source": true,
+  "artifact_id": 11504906993,
+  "evidence_source": "LIVE",
+  "fixture_reports_are_runtime_proof": false,
+  "observed_at": "2026-10-08T01:41:22.681084+00:00",
+  "releases": {
+    "REL-2026.10-DEMO01": {
+      "bundle_verified": true,
+      "fixture_report_source": "FIXTURE",
+      "git_commit": "44b3ee7413204bdbddd587b1d5f220180eef3904",
+      "github_run_id": "37670936711",
+      "sql_sha256": "3ddce47b1a7675f1f02f349b21f0647437cd7693229fd560472df2a7c0338854"
+    },
+    "REL-2026.10-DEMO02-FAIL": {
+      "bundle_verified": true,
+      "fixture_report_source": "FIXTURE",
+      "git_commit": "44b3ee7413204bdbddd587b1d5f220180eef3904",
+      "github_run_id": "37670936711",
+      "sql_sha256": "5b696b547fe9203448dc829f8139987992078efc3b273658577e84c268e7edb8"
+    },
+    "REL-2026.10-DEMO02-FIX": {
+      "bundle_verified": true,
+      "fixture_report_source": "FIXTURE",
+      "git_commit": "44b3ee7413204bdbddd587b1d5f220180eef3904",
+      "github_run_id": "37670936711",
+      "sql_sha256": "db645a5be2eac9afd0cac908317729b211ce61cdc5a6fa74d6ec840dda5adc7c"
+    }
+  },
+  "workflow_run_id": 37670936711
+}

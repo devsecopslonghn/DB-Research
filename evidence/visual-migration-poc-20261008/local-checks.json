@@ -1,0 +1,55 @@
+{
+  "checked_at": "2026-10-08T02:17:23.992479+00:00",
+  "unit_tests": {
+    "command": "python3 -m unittest discover -s scripts/db_demo/tests -v",
+    "result": "PASS",
+    "tests": 42,
+    "original_committed_tests": 34,
+    "dashboard_integrity_tests": 8
+  },
+  "manifest_validation": {
+    "result": "PASS",
+    "releases": 3,
+    "errors": 0
+  },
+  "fixture_build_report_smoke": {
+    "happy": "VERIFIED / FIXTURE",
+    "failure": "EXECUTION_FAILED / FIXTURE",
+    "correction": "VERIFIED / FIXTURE"
+  },
+  "workflow_lint": {
+    "result": "PASS",
+    "version": "actionlint 1.7.12"
+  },
+  "research_document_check": {
+    "original_git_snapshots_checked": 0,
+    "supplemental_git_snapshots_checked": 0,
+    "evidence/source-references.json_references_checked": 103,
+    "evidence/product-model/source-references.json_references_checked": 80,
+    "screenshots_checked": 11,
+    "relative_links_checked": 1008,
+    "tables_checked": 293,
+    "eighteen_capability_comparisons_checked": 10,
+    "shortlist_page_checks": 20,
+    "authoritative_criteria_rows": 45,
+    "authoritative_criteria_unique_ids": 45,
+    "poc_case_ids": 45,
+    "poc_case_ids_unique": 45,
+    "odc_deployment_inspected": true,
+    "odc_runtime_api_checks": 6,
+    "odc_feature_rows": 6,
+    "odc_independent_review_status": "SUCCESS",
+    "independent_run_status": "SUCCESS",
+    "application_tests_run": false,
+    "oracle_execution_run": false
+  },
+  "javascript_syntax": "PASS",
+  "diff_whitespace": "PASS",
+  "pdf_review": {
+    "result": "PASS",
+    "pages": 6,
+    "reviewed": "Rendered PDF pages; no stranded section headings or trailing near-empty page"
+  },
+  "runtime_scope": "No new ODC/Oracle acceptance, approval or execution",
+  "browser_hostile_evidence_regression": "PASS: strings remain text in both pages and scenario rendering"
+}

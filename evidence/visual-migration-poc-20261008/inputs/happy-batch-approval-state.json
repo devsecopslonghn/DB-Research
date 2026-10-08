@@ -1,0 +1,145 @@
+{
+  "approvable": false,
+  "batch_id": 2000015,
+  "description": "app=customer-profile;release=REL-2026.10-DEMO01;git=848e0923f3c8e2ef854298184232352ea68ed9ce;github_run=NOT_AVAILABLE;sql_sha256=3ddce47b1a7675f1f02f349b21f0647437cd7693229fd560472df2a7c0338854",
+  "evidence_source": "LIVE",
+  "executable": null,
+  "execution_strategy": "MANUAL",
+  "native_status": "APPROVING",
+  "nodes": [
+    {
+      "candidates": [],
+      "complete_time": 1791398829000,
+      "native_status": "COMPLETED",
+      "node_id": 2000095,
+      "node_type": "SERVICE_TASK",
+      "operator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      }
+    },
+    {
+      "candidates": [
+        {
+          "accountName": "admin",
+          "id": 1,
+          "name": "admin",
+          "roleNames": [
+            "system_admin"
+          ]
+        },
+        {
+          "accountName": "odc_poc_approver",
+          "id": 10001,
+          "name": "POC approver",
+          "roleNames": []
+        }
+      ],
+      "complete_time": null,
+      "native_status": "EXECUTING",
+      "node_id": 2000072,
+      "node_type": "APPROVAL_TASK",
+      "operator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      }
+    },
+    {
+      "candidates": [
+        {
+          "accountName": "odc_poc_executor",
+          "id": 10002,
+          "name": "POC executor",
+          "roleNames": []
+        }
+      ],
+      "complete_time": null,
+      "native_status": "CREATED",
+      "node_id": 2000073,
+      "node_type": "APPROVAL_TASK",
+      "operator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      }
+    },
+    {
+      "candidates": [],
+      "complete_time": null,
+      "native_status": "CREATED",
+      "node_id": 2000100,
+      "node_type": "SERVICE_TASK",
+      "operator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      }
+    },
+    {
+      "candidates": [],
+      "complete_time": null,
+      "native_status": "CREATED",
+      "node_id": 2000101,
+      "node_type": "SERVICE_TASK",
+      "operator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      }
+    },
+    {
+      "candidates": [],
+      "complete_time": null,
+      "native_status": "CREATED",
+      "node_id": 2000102,
+      "node_type": "SERVICE_TASK",
+      "operator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      }
+    },
+    {
+      "candidates": [],
+      "complete_time": null,
+      "native_status": "CREATED",
+      "node_id": 2000103,
+      "node_type": "SERVICE_TASK",
+      "operator": {
+        "accountName": "odc_poc_requester",
+        "id": 10000,
+        "name": "POC requester",
+        "roleNames": []
+      }
+    }
+  ],
+  "observed_at": "2026-10-08T01:44:36.084233+00:00",
+  "ordered_database_ids": [
+    [
+      1000069
+    ],
+    [
+      1000122
+    ],
+    [
+      1000184
+    ],
+    [
+      1000218
+    ]
+  ],
+  "requester": {
+    "accountName": "odc_poc_requester",
+    "id": 10000,
+    "name": "POC requester"
+  },
+  "sql_sha256": "3ddce47b1a7675f1f02f349b21f0647437cd7693229fd560472df2a7c0338854"
+}

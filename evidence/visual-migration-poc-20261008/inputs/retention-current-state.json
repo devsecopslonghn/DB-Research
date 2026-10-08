@@ -1,0 +1,38 @@
+{
+  "advertised_identity": {
+    "ODC_HOST": "odc.oceanbase-odc.svc.cluster.local",
+    "ODC_MAPPING_PORT": "8989"
+  },
+  "authorized_gitops_mutation": true,
+  "checks": {
+    "ODC_HOST": true,
+    "ODC_MAPPING_PORT": true,
+    "hostname": true,
+    "persistent_task_log_mount": true
+  },
+  "data_pvc": "odc-data",
+  "deployment": "oceanbase-odc/odc",
+  "direct_cluster_patch": false,
+  "evidence_source": "LIVE",
+  "gitops_health": "Healthy",
+  "gitops_reconciliation_active": true,
+  "gitops_revision": "e38ba6de87a1f4dad47451c22cfc4428a649de4c",
+  "gitops_source": {
+    "path": "oceanbase-odc",
+    "repoURL": "git@github.com:devsecopslonghn/k8s-namepsace-chart.git",
+    "targetRevision": "master"
+  },
+  "gitops_sync": "Synced",
+  "hostname": "odc",
+  "log_mounts": [
+    {
+      "mountPath": "/opt/odc/log",
+      "name": "data",
+      "subPath": "task-logs"
+    }
+  ],
+  "observed_at": "2026-10-08T01:50:04.938376+00:00",
+  "ready_replicas": 1,
+  "retention_configuration": "VERIFIED",
+  "retention_poc_rerun": false
+}

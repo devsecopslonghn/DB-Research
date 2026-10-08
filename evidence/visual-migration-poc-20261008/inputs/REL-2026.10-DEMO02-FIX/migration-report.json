@@ -1,0 +1,281 @@
+{
+  "approval_evidence_complete": false,
+  "approval_state_observed": false,
+  "approvals": [],
+  "audit_collection": "NOT_AVAILABLE",
+  "audit_events": [],
+  "audit_references": [],
+  "collected_at": "2026-10-08T01:54:35.087637+00:00",
+  "collection_errors": [],
+  "decision": "CONDITIONAL GO",
+  "envelope": {
+    "application": "customer-profile",
+    "approval": {
+      "execution": "authorized_manual_operator",
+      "reviewers": [
+        "OWNER",
+        "DBA"
+      ]
+    },
+    "corrects": "REL-2026.10-DEMO02-FAIL",
+    "created_at": "2026-10-08T08:19:43+07:00",
+    "depends_on": "REL-2026.10-DEMO01",
+    "evidence_source": "GIT",
+    "git_branch": "main",
+    "git_commit": "9bb1215a317cf07657bddff99dff3b22a4035cce",
+    "git_repository": "devsecopslonghn/DB-Research",
+    "github_actor": "LOCAL_OPERATOR",
+    "github_run_id": "NOT_AVAILABLE",
+    "manifest_sha256": "23b02e15ea41db3d3dedd0c558baf7b3e00343489789fc59ddedf9d56699de22",
+    "migrations": [
+      {
+        "errors": [],
+        "file": "001_create_customer_region_index.sql",
+        "findings": [
+          {
+            "level": "REQUIRES_DBA_REVIEW",
+            "line": 8,
+            "rule": "DYNAMIC_SQL"
+          }
+        ],
+        "plsql": true,
+        "sha256": "8af6f2e891f034ee7bc131a49a5d41bb1999d1338c84ccdba272563fd6f1aa9d",
+        "sql_types": [
+          "PLSQL_BLOCK"
+        ]
+      }
+    ],
+    "policy_sha256": "865fbb1e2eb935e623f277c42adb643a5a16568f338b4e55b42632c46e430332",
+    "release_id": "REL-2026.10-DEMO02-FIX",
+    "rollout": {
+      "mode": "manual",
+      "order": [
+        "DEV",
+        "SIT",
+        "UAT",
+        "MOCKPROD"
+      ]
+    },
+    "schema_version": 1,
+    "sql_sha256": "db645a5be2eac9afd0cac908317729b211ce61cdc5a6fa74d6ec840dda5adc7c",
+    "state": "PREPARED",
+    "targets": [
+      {
+        "configuration_sha256": "0eb572b4f29a8b93adb22151670726ccfcd6709d4fe3506d517d67402bf9e023",
+        "environment": "DEV",
+        "odc_datasource_id": 1000001,
+        "odc_environment_id": 1,
+        "odc_environment_name": "dev",
+        "odc_target_id": 1000069,
+        "project_id": 1,
+        "schema": "ODC_POC_20261004_DEV"
+      },
+      {
+        "configuration_sha256": "5a9eaeedd466c4a27e3165617d329cc8b735c34a47add8da7acf325eea35ef54",
+        "environment": "SIT",
+        "odc_datasource_id": 1000002,
+        "odc_environment_id": 2,
+        "odc_environment_name": "sit",
+        "odc_target_id": 1000122,
+        "project_id": 1,
+        "schema": "ODC_POC_20261004_SIT"
+      },
+      {
+        "configuration_sha256": "93e0978f07914d529ec8c37c5eb0ad9d66aa79eaac4de7e1d7154cf215b1f0e5",
+        "environment": "UAT",
+        "odc_datasource_id": 1000003,
+        "odc_environment_id": 1000021,
+        "odc_environment_name": "POCUAT",
+        "odc_target_id": 1000184,
+        "project_id": 1,
+        "schema": "ODC_POC_20261004_UAT"
+      },
+      {
+        "configuration_sha256": "dbb857b83eba4a82a402681ab3b6d13c0e840bdf5b4362db48c15fd92b7fc263",
+        "environment": "MOCKPROD",
+        "odc_datasource_id": 1000004,
+        "odc_environment_id": 1000022,
+        "odc_environment_name": "POCPROD",
+        "odc_target_id": 1000218,
+        "project_id": 1,
+        "schema": "ODC_POC_20261004_MOCKPROD"
+      }
+    ],
+    "verification": {
+      "compile_errors": true,
+      "data": {
+        "active_count": 2,
+        "row_count": 3,
+        "table": "DM_CP_CUSTOMER"
+      },
+      "expected_data": true,
+      "function": {
+        "expected": "C0001:Demo Customer One",
+        "input": "C0001",
+        "name": "DM_CP_LABEL"
+      },
+      "object_status": true,
+      "objects": [
+        {
+          "name": "DM_CP_CUSTOMER",
+          "type": "TABLE"
+        },
+        {
+          "name": "DM_CP_CUSTOMER_SEQ",
+          "type": "SEQUENCE"
+        },
+        {
+          "name": "DM_CP_CUSTOMER_STATUS_IX",
+          "type": "INDEX"
+        },
+        {
+          "name": "DM_CP_LABEL",
+          "type": "FUNCTION"
+        },
+        {
+          "name": "DM_CP_ACTIVE_CUSTOMERS",
+          "type": "VIEW"
+        },
+        {
+          "name": "DM_CP_CUSTOMER_REGION_IX",
+          "type": "INDEX"
+        }
+      ]
+    }
+  },
+  "environments": {
+    "DEV": {
+      "demo_status": "PARTIAL",
+      "execution_actor": "NOT_AVAILABLE",
+      "execution_end": null,
+      "execution_start": null,
+      "final_stage_status": "BLOCKED",
+      "flow_created_at": null,
+      "native_flow_id": null,
+      "native_status": "NOT_AVAILABLE",
+      "oracle": {},
+      "problems": [
+        "Oracle verification evidence has not been collected"
+      ],
+      "target": {
+        "configuration_sha256": "0eb572b4f29a8b93adb22151670726ccfcd6709d4fe3506d517d67402bf9e023",
+        "environment": "DEV",
+        "odc_datasource_id": 1000001,
+        "odc_environment_id": 1,
+        "odc_environment_name": "dev",
+        "odc_target_id": 1000069,
+        "project_id": 1,
+        "schema": "ODC_POC_20261004_DEV"
+      },
+      "ticket_id": null,
+      "verification": "NOT_AVAILABLE"
+    },
+    "MOCKPROD": {
+      "demo_status": "PARTIAL",
+      "execution_actor": "NOT_AVAILABLE",
+      "execution_end": null,
+      "execution_start": null,
+      "final_stage_status": "BLOCKED",
+      "flow_created_at": null,
+      "native_flow_id": null,
+      "native_status": "NOT_AVAILABLE",
+      "oracle": {},
+      "problems": [
+        "Oracle verification evidence has not been collected"
+      ],
+      "target": {
+        "configuration_sha256": "dbb857b83eba4a82a402681ab3b6d13c0e840bdf5b4362db48c15fd92b7fc263",
+        "environment": "MOCKPROD",
+        "odc_datasource_id": 1000004,
+        "odc_environment_id": 1000022,
+        "odc_environment_name": "POCPROD",
+        "odc_target_id": 1000218,
+        "project_id": 1,
+        "schema": "ODC_POC_20261004_MOCKPROD"
+      },
+      "ticket_id": null,
+      "verification": "NOT_AVAILABLE"
+    },
+    "SIT": {
+      "demo_status": "PARTIAL",
+      "execution_actor": "NOT_AVAILABLE",
+      "execution_end": null,
+      "execution_start": null,
+      "final_stage_status": "BLOCKED",
+      "flow_created_at": null,
+      "native_flow_id": null,
+      "native_status": "NOT_AVAILABLE",
+      "oracle": {},
+      "problems": [
+        "Oracle verification evidence has not been collected"
+      ],
+      "target": {
+        "configuration_sha256": "5a9eaeedd466c4a27e3165617d329cc8b735c34a47add8da7acf325eea35ef54",
+        "environment": "SIT",
+        "odc_datasource_id": 1000002,
+        "odc_environment_id": 2,
+        "odc_environment_name": "sit",
+        "odc_target_id": 1000122,
+        "project_id": 1,
+        "schema": "ODC_POC_20261004_SIT"
+      },
+      "ticket_id": null,
+      "verification": "NOT_AVAILABLE"
+    },
+    "UAT": {
+      "demo_status": "PARTIAL",
+      "execution_actor": "NOT_AVAILABLE",
+      "execution_end": null,
+      "execution_start": null,
+      "final_stage_status": "BLOCKED",
+      "flow_created_at": null,
+      "native_flow_id": null,
+      "native_status": "NOT_AVAILABLE",
+      "oracle": {},
+      "problems": [
+        "Oracle verification evidence has not been collected"
+      ],
+      "target": {
+        "configuration_sha256": "93e0978f07914d529ec8c37c5eb0ad9d66aa79eaac4de7e1d7154cf215b1f0e5",
+        "environment": "UAT",
+        "odc_datasource_id": 1000003,
+        "odc_environment_id": 1000021,
+        "odc_environment_name": "POCUAT",
+        "odc_target_id": 1000184,
+        "project_id": 1,
+        "schema": "ODC_POC_20261004_UAT"
+      },
+      "ticket_id": null,
+      "verification": "NOT_AVAILABLE"
+    }
+  },
+  "evidence_source": "NOT_AVAILABLE",
+  "native_identity_complete": false,
+  "native_log_identity": null,
+  "native_logs_available": false,
+  "native_parent_status": "NOT_AVAILABLE",
+  "native_result_identity": null,
+  "next_action": "REVIEW_EVIDENCE",
+  "observations_source": "NOT_AVAILABLE",
+  "odc_batch_id": null,
+  "operational_effort": {
+    "approvals": "NOT_MEASURED",
+    "credentials_handled": "NOT_MEASURED",
+    "manual_actions": "NOT_MEASURED",
+    "systems_used": "NOT_MEASURED",
+    "time_per_environment": "NOT_MEASURED",
+    "total_release_time": "NOT_MEASURED"
+  },
+  "project_role_provenance": null,
+  "requester_id": null,
+  "result_scope": "NOT_AVAILABLE",
+  "retention_status": "VERIFIED",
+  "runtime_block_reason": "Not submitted: happy release verification and preceding mission stage are incomplete",
+  "runtime_gate_status": "BLOCKED",
+  "runtime_proven": false,
+  "runtime_result": "NOT_AVAILABLE",
+  "sample": false,
+  "schema_version": 1,
+  "status": "PARTIAL",
+  "workflow_node_identity": null
+}

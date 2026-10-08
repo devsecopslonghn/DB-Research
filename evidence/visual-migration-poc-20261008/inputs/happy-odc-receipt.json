@@ -1,0 +1,148 @@
+{
+  "approvals": [
+    {
+      "actor": "odc_poc_requester",
+      "actor_id": 10000,
+      "actor_roles": [],
+      "comment": null,
+      "native_status": "EXECUTING",
+      "node_id": 2000072,
+      "role_evidence": "native_operator_or_matching_project_candidate",
+      "timestamp": null
+    },
+    {
+      "actor": "odc_poc_requester",
+      "actor_id": 10000,
+      "actor_roles": [],
+      "comment": null,
+      "native_status": "CREATED",
+      "node_id": 2000073,
+      "role_evidence": "native_operator_or_matching_project_candidate",
+      "timestamp": null
+    }
+  ],
+  "audit_collection": "LIVE_PERSONAL_AUDIT_ONLY; only explicit taskId matches retained; create events may have no taskId",
+  "audit_events": [],
+  "audit_references": [
+    "https://oceanbase.apps.drgdevlab.com/api/v2/flow/flowInstances/2000015",
+    "https://oceanbase.apps.drgdevlab.com/api/v2/flow/flowInstances/2000015/tasks/result",
+    "https://oceanbase.apps.drgdevlab.com/api/v2/flow/flowInstances/2000015/tasks/log?logType=ALL",
+    "https://oceanbase.apps.drgdevlab.com/api/v2/audit/events"
+  ],
+  "collection_errors": [],
+  "environments": {
+    "DEV": {
+      "end": null,
+      "flow_created_at": 1791398804138,
+      "native_flow_id": 2000015,
+      "native_status": "WAIT_FOR_EXECUTION",
+      "start": null,
+      "ticket_id": 2000015
+    },
+    "MOCKPROD": {
+      "end": null,
+      "flow_created_at": 1791398804139,
+      "native_flow_id": 2000015,
+      "native_status": "WAIT_FOR_EXECUTION",
+      "start": null,
+      "ticket_id": 2000015
+    },
+    "SIT": {
+      "end": null,
+      "flow_created_at": 1791398804139,
+      "native_flow_id": 2000015,
+      "native_status": "WAIT_FOR_EXECUTION",
+      "start": null,
+      "ticket_id": 2000015
+    },
+    "UAT": {
+      "end": null,
+      "flow_created_at": 1791398804139,
+      "native_flow_id": 2000015,
+      "native_status": "WAIT_FOR_EXECUTION",
+      "start": null,
+      "ticket_id": 2000015
+    }
+  },
+  "evidence_source": "LIVE",
+  "execution_actor": "NOT_AVAILABLE: read Execute audit; task-node operator may be requester",
+  "git_commit": "848e0923f3c8e2ef854298184232352ea68ed9ce",
+  "native_log_identity": {
+    "available": true,
+    "bytes": 42,
+    "flow_instance_id": 2000015,
+    "log_batch_ids": [],
+    "native_task_ids": [],
+    "sha256": "5d50d4d56b76ab0914cbbd284da6182ba5430df92473b086a4099979dcc5545c",
+    "text": "read log failed, may be log file not exist",
+    "truncated": false,
+    "verified": false
+  },
+  "native_result_identity": {
+    "database_ids": [
+      1000069,
+      1000122,
+      1000184,
+      1000218
+    ],
+    "flow_instance_id": 2000015,
+    "flow_instance_ids": [
+      2000015
+    ],
+    "verified": true
+  },
+  "native_status": "APPROVING",
+  "observed_at": "2026-10-08T01:44:36.084233+00:00",
+  "odc_batch_id": 2000015,
+  "release_id": "REL-2026.10-DEMO01",
+  "requester_id": 10000,
+  "sql_sha256": "3ddce47b1a7675f1f02f349b21f0647437cd7693229fd560472df2a7c0338854",
+  "workflow_node_identity": {
+    "flow_instance_id": 2000015,
+    "nodes": [
+      {
+        "node_id": 2000095,
+        "node_type": "SERVICE_TASK",
+        "status": "COMPLETED",
+        "task_type": "PRE_CHECK"
+      },
+      {
+        "node_id": 2000072,
+        "node_type": "APPROVAL_TASK",
+        "status": "EXECUTING",
+        "task_type": null
+      },
+      {
+        "node_id": 2000073,
+        "node_type": "APPROVAL_TASK",
+        "status": "CREATED",
+        "task_type": null
+      },
+      {
+        "node_id": 2000100,
+        "node_type": "SERVICE_TASK",
+        "status": "CREATED",
+        "task_type": "MULTIPLE_ASYNC"
+      },
+      {
+        "node_id": 2000101,
+        "node_type": "SERVICE_TASK",
+        "status": "CREATED",
+        "task_type": "MULTIPLE_ASYNC"
+      },
+      {
+        "node_id": 2000102,
+        "node_type": "SERVICE_TASK",
+        "status": "CREATED",
+        "task_type": "MULTIPLE_ASYNC"
+      },
+      {
+        "node_id": 2000103,
+        "node_type": "SERVICE_TASK",
+        "status": "CREATED",
+        "task_type": "MULTIPLE_ASYNC"
+      }
+    ],
+    "verified": true
+  }
+}

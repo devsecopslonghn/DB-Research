@@ -1,0 +1,41 @@
+{
+  "pages": 6,
+  "pages_inspected": [
+    {
+      "page": 1,
+      "words": 216,
+      "first_text": "D ATA B A S E  M I G R AT I O N  R E P O RT  \u00b7  P O C\ncustomer-profile\nMigration release r",
+      "last_text": "t approval\nRuntime result\nNOT AVAILABLE\nObservation time\n08 Oct 2026, 01:54 UTC\n"
+    },
+    {
+      "page": 2,
+      "words": 147,
+      "first_text": "03 / SOURCE PROVENANCE\nGitHub provenance and validation\nPR and workflow observations are l",
+      "last_text": "\nINSERT \nPASS\nb82e3f24b24e6ceabad4c571d564cdf294d7059af4af40fb4b3266d6\nb0c69991\n"
+    },
+    {
+      "page": 3,
+      "words": 251,
+      "first_text": "05 / APPROVAL\nThe approval gate is still open.\nAn executing approval node is pending revie",
+      "last_text": "ed\nEND TIME\nNot finished\nOracle\nverification\nNOT AVAILABLE\nEvidence source\nLIVE\n"
+    },
+    {
+      "page": 4,
+      "words": 271,
+      "first_text": "07 / ORACLE VERIFICATION\nExecution success must be verified in Oracle.\nAcceptance checks c",
+      "last_text": "ained\n\u2713 Log retained\n\u2713 Attachment retained\n\u2713 Metadata retained\n\u2713 Audit retained\n"
+    },
+    {
+      "page": 5,
+      "words": 196,
+      "first_text": "09 / FAILURE / CORRECTION\nA correction is a new release.\nFIXTURE DEMONSTRATION \u2014 failure a",
+      "last_text": "ntion\nLIVE PASS \u00b7 historical execution evidence\nProduction Rollout\nNOT APPROVED\n"
+    },
+    {
+      "page": 6,
+      "words": 176,
+      "first_text": "11 / KNOWN LIMITATIONS\nOperating and evidence boundaries\nThis report supports the POC and ",
+      "last_text": "ne snapshot\nGenerated 08 Oct 2026, 02:23 UTC \u00b7 Evidence sources remain explicit\n"
+    }
+  ]
+}
