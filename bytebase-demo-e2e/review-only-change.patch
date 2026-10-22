@@ -1,0 +1,46 @@
+diff --git a/migrations/V1.0.0.11-review_only_missing_pk_ddl.sql b/migrations/V1.0.0.11-review_only_missing_pk_ddl.sql
+new file mode 100644
+index 0000000..984de2f
+--- /dev/null
++++ b/migrations/V1.0.0.11-review_only_missing_pk_ddl.sql
+@@ -0,0 +1,14 @@
++-- REVIEW-ONLY NEGATIVE TEST. Never merge or deploy this branch.
++-- Intentionally violates the Oracle rule requiring a table primary key.
++-- Target metadata for review: CR7ALLGOALS_APP / develop.
++CREATE TABLE BB_POC_REVIEW_20261022_A (
++    ID NUMBER DEFAULT 1 NOT NULL,
++    DEMO_LABEL VARCHAR2(40) DEFAULT 'REVIEW_ONLY' NOT NULL
++);
++
++COMMENT ON TABLE BB_POC_REVIEW_20261022_A IS
++    'Review-only synthetic POC; intentionally missing a primary key; never deploy.';
++COMMENT ON COLUMN BB_POC_REVIEW_20261022_A.ID IS
++    'Synthetic ID for the primary-key review test.';
++COMMENT ON COLUMN BB_POC_REVIEW_20261022_A.DEMO_LABEL IS
++    'Synthetic marker for an unmerged review-only negative test.';
+diff --git a/recovery/V1.0.0.11/recovery.md b/recovery/V1.0.0.11/recovery.md
+new file mode 100644
+index 0000000..f86085e
+--- /dev/null
++++ b/recovery/V1.0.0.11/recovery.md
+@@ -0,0 +1,20 @@
++# V1.0.0.11 review-only negative test
++
++Never merge or deploy this branch. It is separate from the positive V1.0.0.10
++demonstration and intentionally omits a primary key on the new
++`BB_POC_REVIEW_20261022_A` table. Only Jenkins PR SQL Review should process it.
++No Oracle DDL or DML is authorized for this negative test.
++
++Record the source SHA, PR number, Jenkins build and the actual advice code,
++severity and exit/build status. Confirm the current Oracle policy before
++claiming that the missing-primary-key rule caused failure. Other baseline
++release-validation findings must be reported separately.
++
++A failed CI check, an enforced Git merge restriction and a reviewer's choice
++not to merge are different observations. Do not infer any of them solely
++from a PR comment. Do not change policy or waive errors to obtain a result.
++
++Because this migration must remain unapplied, there is no automatic recovery
++script. If any unexpected rollout is observed, stop, record the exact target
++and Plan/task, and request DBA assessment; do not retry, delete objects or
++repair revision history.

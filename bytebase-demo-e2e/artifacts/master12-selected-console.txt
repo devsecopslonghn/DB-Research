@@ -1,0 +1,18 @@
+[2026-10-22T07:26:02.316Z] Checking out Revision a8267df4c8b097b67fa4b6e88da8bf82e8146d0c (master)
+[2026-10-22T07:26:02.333Z] Commit message: "Merge PR #9: trace V1.0.0.10 POC from Git to Oracle"
+[2026-10-22T07:26:04.833Z] 2026/10/22 07:26:04 INFO bytebase-action version 3.22.1 built at commit 044b4f04bae44043e72c018bf243c4c941229a11
+[2026-10-22T07:26:05.087Z] time=2026-10-22T07:26:05.034Z level=INFO msg="CLI version matches server version" version=3.22.1
+[2026-10-22T07:26:05.341Z] time=2026-10-22T07:26:05.107Z level=INFO msg="release created" url=https://bytebase.apps.drgdevlab.com/projects/cr7-allgoal-kvi1/releases/release_20261022-RC00
+[2026-10-22T07:26:05.341Z] time=2026-10-22T07:26:05.172Z level=INFO msg="plan created" url=https://bytebase.apps.drgdevlab.com/projects/cr7-allgoal-kvi1/plans/114
+[2026-10-22T07:26:05.341Z] time=2026-10-22T07:26:05.239Z level=INFO msg="rollout created" url=https://bytebase.apps.drgdevlab.com/projects/cr7-allgoal-kvi1/plans/114/rollout
+[2026-10-22T07:26:05.341Z] time=2026-10-22T07:26:05.239Z level=INFO msg="target stage is not specified, exiting..."
+[2026-10-22T07:26:05.341Z] time=2026-10-22T07:26:05.239Z level=INFO msg="writing output to file" file=.jenkins/bytebase-metadata.json
+[2026-10-22T07:26:05.865Z] 2026/10/22 07:26:05 INFO bytebase-action version 3.22.1 built at commit 044b4f04bae44043e72c018bf243c4c941229a11
+[2026-10-22T07:26:06.119Z] time=2026-10-22T07:26:06.049Z level=INFO msg="CLI version matches server version" version=3.22.1
+[2026-10-22T07:26:06.119Z] time=2026-10-22T07:26:06.103Z level=INFO msg="use the provided plan" url=https://bytebase.apps.drgdevlab.com/projects/cr7-allgoal-kvi1/plans/114
+[2026-10-22T07:26:06.373Z] time=2026-10-22T07:26:06.162Z level=INFO msg="rollout created" url=https://bytebase.apps.drgdevlab.com/projects/cr7-allgoal-kvi1/plans/114/rollout
+[2026-10-22T07:26:06.373Z] time=2026-10-22T07:26:06.212Z level=INFO msg="exit after the target stage is completed" targetStage=environments/develop
+[2026-10-22T07:26:06.373Z] time=2026-10-22T07:26:06.212Z level=INFO msg="the rollout has the following stages" createdStages=[environments/develop]
+[2026-10-22T07:26:06.373Z] time=2026-10-22T07:26:06.261Z level=INFO msg="running stage tasks" stage=environments/develop taskCount=1
+[2026-10-22T07:26:28.239Z] time=2026-10-22T07:26:26.553Z level=INFO msg="stage completed" stage=environments/develop
+Finished: SUCCESS

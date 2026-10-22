@@ -1,0 +1,19 @@
+# Câu chuyện slide: từ SQL đến vận hành
+
+Đã chạy một thay đổi mới: PR #9 → ecfb13f → merge a8267df → Jenkins master #12 → release_20261022-RC00 → Plan/task 114, run 113 → Oracle count 0. Toàn bộ ID đầy đủ trong [walkthrough](walkthrough.md) và [evidence-index](evidence-index.csv).
+
+1. **Source có version, target và recovery.** “Chúng ta thêm riêng bảng BB_POC_E2E_20261022_A; SQL và recovery notes cùng nằm trong PR. Version V10 được chọn sau khi kiểm tra target đã có V0–9.” Dùng [11 diff](screenshots/11-pr9-reviewed-sql-diff.png), [02 baseline revisions](screenshots/02-existing-revisions-before-change.png).
+
+2. **Review chạy trên đúng commit và trả finding thật.** “Jenkins PR-9 #2 checkout ecfb13f, gọi Bytebase check; kết quả 0 lỗi, 3 cảnh báo. FAIL_ON_ERROR hiện có cho phép cảnh báo, không có việc sửa policy cho qua.” Dùng [13b build/SHA](screenshots/13b-ci-pr9-reviewed-build.png), [14b review](screenshots/14b-pr9-reviewed-findings.png). Nêu rõ V0 checksum warning là lệch nguồn đã có sẵn.
+
+3. **Tách nền tảng và tích hợp.** “Bytebase trả findings và action ghi native summary. Jenkinsfile còn tạo bảng advice riêng với link build; GitHub hiển thị check, quản lý PR và merge.” Dùng [15b summary](screenshots/15b-pr9-bytebase-native-summary.png), [15c comment Jenkins](screenshots/15c-pr9-jenkins-advice-comment.png). Credential comment lỗi 401 vòng đầu đã được cập nhật đúng phạm vi sau khi được cho phép.
+
+4. **Quyết định merge đúng điều kiện; develop tự triển khai.** “Đúng head có hai check xanh rồi mới merge; master #12 nhận merge SHA và tự tạo Release/Plan, rollout develop. Luồng này không có bước chờ người bấm deploy được chứng minh.” Dùng [16b checks](screenshots/16b-git-reviewed-head-success.png), [18 master](screenshots/18-master12-merge-checkout.png), [19 links/stage](screenshots/19-master12-release-plan-links.png). Không gọi đây là independent approval hay required Git enforcement.
+
+5. **Bytebase giữ SQL, target, identity và trace.** “SQL trong Release trùng bản đã review từng byte, hash 706ea322… Task 114 do jenkins@service.bytebase.com thực hiện, đúng Oracle target, chỉ trace V10.” Dùng [21 SQL](screenshots/21-bytebase-release-reviewed-sql.png), [22 result](screenshots/22-bytebase-new-rollout-done.png), [23 trace](screenshots/23-bytebase-task-execution-trace.png). CI dùng service account Bytebase theo pipeline đã đọc; không kết luận DB credential không thể bị lấy lại.
+
+6. **Thành công cần đối soát và tìm lại.** “Query mới từ đúng bảng vừa tạo trả count 0; catalog có ba cột, default/comment và index. Rời execution rồi tìm lại Plan 114 từ project vẫn đọc được kết quả và revision V10.” Dùng [25 query](screenshots/25-oracle-new-object-live-query.png), [27 schema](screenshots/27-new-table-columns-and-key.png), [28 tìm lại](screenshots/28-find-new-plan-in-project-history.png), [30 revision](screenshots/30-new-migration-revision-history.png). Không đánh đồng task history với Audit Log đầy đủ.
+
+7. **Ca thiếu PK bị CI báo lỗi và giữ ngoài triển khai.** “PR #10 thiếu primary key, Bytebase trả ERROR 601, PR-10 #2 FAILURE và Git check lỗi. PR vẫn Open, không merge/deploy; Git master hiện chưa có required rule nên chưa chứng minh Git cưỡng chế cấm merge.” Dùng [80 SQL](screenshots/80-pr10-review-only-source.png), [82b finding](screenshots/82b-pr10-missing-pk-final-finding.png), [84 status](screenshots/84-pr10-git-status-failure.png).
+
+8. **Giới hạn edition và bằng chứng.** “Lab đang Community v3.22.1, UI ghi instance usage 8/10; không bật trial. Phiên này dùng admin và Jenkins service account, chưa thử tài khoản ít quyền, recovery hay Flyway.” Dùng [07 subscription/quota](screenshots/07-current-community-edition.png), [13c runtime version](screenshots/13c-ci-pr9-runtime-review-stage.png); đọc [results](results.md) trước khi kết luận so sánh.

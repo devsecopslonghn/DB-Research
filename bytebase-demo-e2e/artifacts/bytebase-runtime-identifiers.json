@@ -1,0 +1,21 @@
+{
+  "captured_at_utc": "2026-10-22T07:38:48.106Z",
+  "extraction": "Resource names read from actual browser responses; no auth headers or browser state exported",
+  "plan": "projects/cr7-allgoal-kvi1/plans/114",
+  "release": "projects/cr7-allgoal-kvi1/releases/release_20261022-RC00",
+  "task": "projects/cr7-allgoal-kvi1/plans/114/rollout/stages/develop/tasks/114",
+  "task_run": "projects/cr7-allgoal-kvi1/plans/114/rollout/stages/develop/tasks/114/taskRuns/113",
+  "creator": "users/jenkins@service.bytebase.com",
+  "sheet": "projects/cr7-allgoal-kvi1/sheets/706ea32221e2d738a88bcb6a76db2f20c0e6e53e0a3db4295f2e4ad695446dcd",
+  "sheet_equals_local_source": true,
+  "plan_check_run_response": [
+    {
+      "code": "not_found",
+      "message": "plan check run not found for plan 114"
+    },
+    {
+      "code": "not_found",
+      "message": "plan check run not found for plan 114"
+    }
+  ]
+}

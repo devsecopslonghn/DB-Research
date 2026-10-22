@@ -1,0 +1,57 @@
+{
+  "recorded_at_utc": "2026-10-22T07:32:12.006365+00:00",
+  "positive_pr": {
+    "number": 9,
+    "html_url": "https://github.com/devsecopslonghn/cr7allgoals-db/pull/9",
+    "state": "closed",
+    "merged": true,
+    "merged_at": "2026-10-22T07:25:37Z",
+    "merge_commit_sha": "a8267df4c8b097b67fa4b6e88da8bf82e8146d0c"
+  },
+  "source_sha": "ecfb13fb31a23036d7a8ee2ad9cc0c5c37039661",
+  "negative_pr": {
+    "number": 10,
+    "html_url": "https://github.com/devsecopslonghn/cr7allgoals-db/pull/10",
+    "state": "open",
+    "merged": false
+  },
+  "negative_source_sha": "743302007818e0410d3f353c326e87960115441b",
+  "builds": [
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "building": false,
+      "duration": 24904,
+      "number": 2,
+      "result": "SUCCESS",
+      "timestamp": 1792653397490,
+      "url": "https://jenkins.apps.drgdevlab.com/job/devsecopslonghn/job/cr7allgoals-db/job/PR-9/2/",
+      "checkout_sha": [
+        "ecfb13fb31a23036d7a8ee2ad9cc0c5c37039661"
+      ]
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "building": false,
+      "duration": 46571,
+      "number": 2,
+      "result": "FAILURE",
+      "timestamp": 1792653397497,
+      "url": "https://jenkins.apps.drgdevlab.com/job/devsecopslonghn/job/cr7allgoals-db/job/PR-10/2/",
+      "checkout_sha": [
+        "743302007818e0410d3f353c326e87960115441b"
+      ]
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "building": false,
+      "duration": 32707,
+      "number": 12,
+      "result": "SUCCESS",
+      "timestamp": 1792653957488,
+      "url": "https://jenkins.apps.drgdevlab.com/job/devsecopslonghn/job/cr7allgoals-db/job/master/12/",
+      "checkout_sha": [
+        "a8267df4c8b097b67fa4b6e88da8bf82e8146d0c"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "checkResults": {
+    "results": [
+      {
+        "advices": [
+          {
+            "code": 1,
+            "content": "The file \"migrations/V1.0.0.0-create_release_flow_ddl.sql\" with version \"1.0.0.0\" has already been applied to the database, but its content has been modified. Applied SHA256: 22eb453f50b9cb04b4a0b546791483ddadb98137d5f159bceaf3d20c985a15de, Release SHA256: 23a609fa5b0d0d1f9a82335142da5f2df2f06d5bfc6fd07e77770123c49040ea",
+            "status": "WARNING",
+            "title": "Applied file has been modified"
+          }
+        ],
+        "file": "migrations/V1.0.0.0-create_release_flow_ddl.sql",
+        "target": "instances/oracle-cloud-free-sge0/databases/CR7ALLGOALS_APP"
+      },
+      {
+        "advices": [
+          {
+            "code": 601,
+            "content": "Table \"CR7ALLGOALS_APP\".\"BB_POC_REVIEW_20261022_A\" requires PRIMARY KEY.",
+            "ruleType": "PARSER_BASED",
+            "startPosition": {
+              "line": 4
+            },
+            "status": "ERROR",
+            "title": "TABLE_REQUIRE_PK"
+          },
+          {
+            "code": 301,
+            "content": "\"BB_POC_REVIEW_20261022_A\" mismatches table naming convention, naming format should be \"^[a-z]+(_[a-z]+)*$\"",
+            "ruleType": "PARSER_BASED",
+            "startPosition": {
+              "line": 4
+            },
+            "status": "WARNING",
+            "title": "NAMING_TABLE"
+          }
+        ],
+        "file": "migrations/V1.0.0.11-review_only_missing_pk_ddl.sql",
+        "riskLevel": "LOW",
+        "target": "instances/oracle-cloud-free-sge0/databases/CR7ALLGOALS_APP"
+      }
+    ],
+    "riskLevel": "LOW"
+  }
+}

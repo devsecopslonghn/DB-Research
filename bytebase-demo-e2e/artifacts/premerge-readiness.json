@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-22T07:25:06.970342+00:00",
+  "head": "ecfb13fb31a23036d7a8ee2ad9cc0c5c37039661",
+  "base": "eebabe069fb0d2ff618a3c91dc3a97a47ae134d5",
+  "mergeable": true,
+  "mergeable_state": "clean",
+  "draft": false,
+  "status": "success",
+  "contexts": [
+    {
+      "context": "continuous-integration/jenkins/pr-head",
+      "state": "success",
+      "target_url": "https://jenkins.apps.drgdevlab.com/job/devsecopslonghn/job/cr7allgoals-db/job/PR-9/2/display/redirect"
+    },
+    {
+      "context": "continuous-integration/jenkins/branch",
+      "state": "success",
+      "target_url": "https://jenkins.apps.drgdevlab.com/job/devsecopslonghn/job/cr7allgoals-db/job/demo%252Fbytebase-e2e-v1.0.0.10-20261022/2/display/redirect"
+    }
+  ],
+  "reviews": [],
+  "rules": [],
+  "protected": false,
+  "files": [
+    "migrations/V1.0.0.10-create_e2e_20261022_poc_ddl.sql",
+    "recovery/V1.0.0.10/recovery.md"
+  ]
+}
