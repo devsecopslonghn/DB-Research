@@ -1,0 +1,263 @@
+1
+00:00:00,380 --> 00:00:02,725
+Đây là demo lab, trình bày từ ảnh chụp thực nghiệm.
+
+2
+00:00:02,825 --> 00:00:07,376
+Chúng ta theo dõi một thay đổi SQL mới, từ GitHub qua Jenkins và Bytebase đến Oracle.
+
+3
+00:00:07,476 --> 00:00:10,994
+Lab đang dùng bản Community, phiên bản ba chấm hai mươi hai chấm một.
+
+4
+00:00:12,013 --> 00:00:16,948
+Điểm bắt đầu là PR số chín, với một thay đổi cơ sở dữ liệu mới và ghi chú khôi phục đi kèm.
+
+5
+00:00:17,048 --> 00:00:21,575
+SQL tạo riêng một bảng POC, có khóa chính trên cột ID; không sửa bảng ứng dụng.
+
+6
+00:00:21,675 --> 00:00:25,820
+Phiên bản một chấm không chấm không chấm mười được chọn sau khi kiểm tra lịch sử của
+database.
+
+7
+00:00:26,847 --> 00:00:30,051
+Jenkins tiếp nhận bản sửa cuối của PR trong bản dựng số hai.
+
+8
+00:00:30,151 --> 00:00:34,098
+Bản dựng thành công và lưu kết quả kiểm tra vào tệp kết quả kiểm tra SQL.
+
+9
+00:00:34,198 --> 00:00:37,391
+Mã băm tại mục Revision trùng với commit nguồn đã được kiểm tra.
+
+10
+00:00:38,413 --> 00:00:44,149
+Kết quả kiểm tra của PR số chín có không lỗi và ba cảnh báo, không phải hoàn toàn không có
+phát hiện từ kiểm tra.
+
+11
+00:00:44,249 --> 00:00:47,569
+Một cảnh báo cho biết file phiên bản không đã khác bản áp dụng từ trước.
+
+12
+00:00:47,669 --> 00:00:52,325
+Hai cảnh báo còn lại liên quan tên bảng và cách quy tắc nhận diện giá trị mặc định của cột ID.
+
+13
+00:00:52,425 --> 00:00:57,092
+Cấu hình hiện có chỉ thất bại khi có lỗi. Không có việc đổi chính sách hoặc bỏ kiểm tra để chạy
+qua.
+
+14
+00:00:58,113 --> 00:01:01,306
+Kết quả từ Bytebase được action công bố thành comment tổng hợp trên PR.
+
+15
+00:01:01,406 --> 00:01:05,342
+Jenkinsfile còn tạo một bảng chi tiết riêng, có liên kết tới đúng bản dựng Jenkins.
+
+16
+00:01:05,442 --> 00:01:09,703
+Ảnh này được chụp lại sau khi gộp mã. Comment CI không phải là phê duyệt trên giao diện
+Bytebase.
+
+17
+00:01:10,713 --> 00:01:14,382
+Trước khi gộp mã, đúng commit cuối có cả hai trạng thái kiểm tra thành công.
+
+18
+00:01:14,482 --> 00:01:20,159
+Cần phân biệt kiểm tra của PR với bản dựng nhánh; một bản dựng nhánh xanh riêng lẻ
+không thay thế kiểm tra SQL.
+
+19
+00:01:20,259 --> 00:01:23,417
+Các kiểm tra xanh tự chúng chưa chứng minh Git cưỡng chế chặn gộp mã.
+
+20
+00:01:24,447 --> 00:01:28,023
+PR số chín được gộp vào master. Mã băm commit sau khi gộp được lưu lại.
+
+21
+00:01:28,123 --> 00:01:31,106
+Mã băm này là đầu mối để nối sang bản dựng triển khai tiếp theo.
+
+22
+00:01:31,206 --> 00:01:35,316
+Vì vậy, bộ bằng chứng này không được dùng để kết luận đã có phân tách trách nhiệm phê
+duyệt.
+
+23
+00:01:36,347 --> 00:01:39,203
+Webhook hiện có đưa thay đổi vào bản dựng master số mười hai.
+
+24
+00:01:39,303 --> 00:01:43,738
+Bản dựng này thành công, lấy mã nguồn đúng commit sau khi gộp mã của PR số chín.
+
+25
+00:01:43,838 --> 00:01:47,472
+Đây là bản dựng mới, không phải một lần thực thi cũ được ghép vào câu chuyện.
+
+26
+00:01:48,480 --> 00:01:52,671
+Console Jenkins ghi các liên kết thật tới bản phát hành mới và Plan một trăm mười bốn.
+
+27
+00:01:52,771 --> 00:01:56,196
+Sau khi gộp mã, quy trình hiện có tự triển khai vào môi trường develop.
+
+28
+00:01:56,296 --> 00:02:00,302
+Không có bước chờ người bấm triển khai hay phê duyệt độc lập nào được chứng minh trong
+luồng này.
+
+29
+00:02:01,313 --> 00:02:05,772
+Trong Bytebase, chi tiết bản phát hành lưu đúng file SQL phiên bản mười và mã băm nội
+dung.
+
+30
+00:02:05,872 --> 00:02:11,700
+SQL tại commit nguồn, commit sau khi gộp mã và nội dung trong bản phát hành đã được đối
+chiếu giống nhau từng byte.
+
+31
+00:02:11,800 --> 00:02:16,769
+Không thấy liên kết commit tích hợp sẵn ở màn hình này; chuỗi nguồn được nối bằng Jenkins
+và mã băm thực tế.
+
+32
+00:02:17,780 --> 00:02:22,865
+Plan một trăm mười bốn ghi trạng thái đã triển khai và một tác vụ hoàn tất trên đúng đích
+triển khai Oracle.
+
+33
+00:02:22,965 --> 00:02:26,889
+Danh tính thực thi là tài khoản dịch vụ của Jenkins, tại môi trường develop.
+
+34
+00:02:26,989 --> 00:02:30,693
+Bản phát hành có bảy file, nhưng dấu vết lần chạy này chỉ có phiên bản mười.
+
+35
+00:02:30,793 --> 00:02:33,672
+Tác vụ thành công vẫn cần được đối soát với trạng thái database.
+
+36
+00:02:34,680 --> 00:02:38,662
+Một truy vấn đọc mới được chạy trên đúng bảng POC vừa tạo, trong lược đồ đã cấp.
+
+37
+00:02:38,762 --> 00:02:41,502
+Đường truy vấn đi qua SQL Editor của Bytebase tới Oracle.
+
+38
+00:02:41,602 --> 00:02:45,283
+Kết quả đếm bằng không, với thời gian truy vấn hai trăm bốn mươi ba mili giây.
+
+39
+00:02:45,383 --> 00:02:53,649
+Bảng rỗng đúng chủ đích vì thay đổi cơ sở dữ liệu không thêm dữ liệu. Đây là đối soát bổ
+sung cho trạng thái tác vụ thành công, không phải số dòng ước tính của catalog.
+
+40
+00:02:54,680 --> 00:02:59,545
+Sau khi bản dựng kết thúc, phiên demo rời trang thực thi và quay về danh sách kế hoạch của
+dự án.
+
+41
+00:02:59,645 --> 00:03:05,299
+Plan một trăm mười bốn vẫn được tìm thấy, cùng tên bản phát hành, người tạo và kết quả
+giai đoạn develop.
+
+42
+00:03:05,399 --> 00:03:08,243
+Dấu gạch ở cột Review không chứng minh có phê duyệt của con người.
+
+43
+00:03:09,247 --> 00:03:14,936
+Từ danh sách, mở lại đúng Plan một trăm mười bốn vẫn thấy đích triển khai, danh tính và kết
+quả của tác vụ.
+
+44
+00:03:15,036 --> 00:03:19,459
+Có thể lần sang bản phát hành để đọc lại SQL, và sang Jenkins để nối với nguồn Git.
+
+45
+00:03:19,559 --> 00:03:24,900
+Không đánh đồng lịch sử tác vụ với nhật ký kiểm toán đầy đủ, hoặc với toàn bộ console của
+hệ thống CI.
+
+46
+00:03:25,913 --> 00:03:29,803
+Ca kiểm tra âm được đặt trong PR số mười, tách riêng khỏi thay đổi đã triển khai.
+
+47
+00:03:29,903 --> 00:03:33,989
+SQL cố ý khai báo bảng thiếu khóa chính để kiểm tra một quy tắc Oracle đang bật.
+
+48
+00:03:34,089 --> 00:03:37,723
+Chú thích SQL ghi rõ chỉ kiểm tra, không gộp mã và không triển khai.
+
+49
+00:03:37,823 --> 00:03:42,026
+File phiên bản mười một trên PR này không có nghĩa database đã áp dụng phiên bản đó.
+
+50
+00:03:43,047 --> 00:03:48,085
+Tệp kết quả của bản dựng PR mười, lần hai, ghi lỗi thiếu khóa chính, mã sáu trăm linh một.
+
+51
+00:03:48,185 --> 00:03:50,275
+Kết quả cuối có một lỗi và hai cảnh báo.
+
+52
+00:03:50,375 --> 00:03:56,203
+Đây là phát hiện do Bytebase trả trong bước kiểm tra của CI, chưa phải lỗi khi chạy thay đổi
+cơ sở dữ liệu trên Oracle.
+
+53
+00:03:56,303 --> 00:03:59,798
+Không đổi chính sách và không triển khai SQL vi phạm để tạo cảnh lỗi.
+
+54
+00:04:00,813 --> 00:04:05,469
+Bản dựng PR mười, lần hai, thất bại trên đúng commit chứa SQL thiếu khóa chính.
+
+55
+00:04:05,569 --> 00:04:08,564
+Jenkins vẫn giữ tệp kết quả kiểm tra để tra cứu nguyên nhân.
+
+56
+00:04:08,664 --> 00:04:12,229
+Bản dựng của PR không đi vào các giai đoạn triển khai chỉ dành cho master.
+
+57
+00:04:13,247 --> 00:04:16,695
+GitHub nhận kiểm tra lỗi của PR, trong khi bản dựng nhánh vẫn xanh.
+
+58
+00:04:16,795 --> 00:04:23,029
+Tuy nhiên, master chưa có các kiểm tra bắt buộc cưỡng chế chặn gộp mã. Không thể kết luận
+Git bắt buộc cấm gộp mã chỉ từ ảnh này.
+
+59
+00:04:23,129 --> 00:04:28,087
+Bộ demo đã nối mã nguồn, kiểm tra, lần thực thi mới, đối soát Oracle và tra cứu kết quả.
+
+60
+00:04:28,187 --> 00:04:33,017
+Những phần chưa chứng minh gồm phê duyệt độc lập, phân quyền bằng tài khoản ít quyền
+và thực nghiệm Flyway.
+
+61
+00:04:33,117 --> 00:04:37,482
+Các giới hạn này được giữ nguyên khi dùng video để so sánh quy trình thay đổi cơ sở dữ liệu.
+

@@ -1,0 +1,71 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans,40,&H00FFFFFF,&H00FFFFFF,&H00101318,&H00101318,0,0,0,0,100,100,0,0,3,10,0,2,58,58,49,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.38,0:00:02.73,Default,,0,0,0,,{\q2}Đây là demo lab, trình bày từ ảnh chụp thực nghiệm.
+Dialogue: 0,0:00:02.83,0:00:07.38,Default,,0,0,0,,{\q2}Chúng ta theo dõi một thay đổi SQL mới, từ GitHub qua Jenkins và Bytebase đến Oracle.
+Dialogue: 0,0:00:07.48,0:00:10.99,Default,,0,0,0,,{\q2}Lab đang dùng bản Community, phiên bản ba chấm hai mươi hai chấm một.
+Dialogue: 0,0:00:12.01,0:00:16.95,Default,,0,0,0,,{\q2}Điểm bắt đầu là PR số chín, với một thay đổi cơ sở dữ liệu mới và ghi chú khôi phục đi kèm.
+Dialogue: 0,0:00:17.05,0:00:21.58,Default,,0,0,0,,{\q2}SQL tạo riêng một bảng POC, có khóa chính trên cột ID; không sửa bảng ứng dụng.
+Dialogue: 0,0:00:21.68,0:00:25.82,Default,,0,0,0,,{\q2}Phiên bản một chấm không chấm không chấm mười được chọn sau khi kiểm tra lịch sử của\Ndatabase.
+Dialogue: 0,0:00:26.85,0:00:30.05,Default,,0,0,0,,{\q2}Jenkins tiếp nhận bản sửa cuối của PR trong bản dựng số hai.
+Dialogue: 0,0:00:30.15,0:00:34.10,Default,,0,0,0,,{\q2}Bản dựng thành công và lưu kết quả kiểm tra vào tệp kết quả kiểm tra SQL.
+Dialogue: 0,0:00:34.20,0:00:37.39,Default,,0,0,0,,{\q2}Mã băm tại mục Revision trùng với commit nguồn đã được kiểm tra.
+Dialogue: 0,0:00:38.41,0:00:44.15,Default,,0,0,0,,{\q2}Kết quả kiểm tra của PR số chín có không lỗi và ba cảnh báo, không phải hoàn toàn không có\Nphát hiện từ kiểm tra.
+Dialogue: 0,0:00:44.25,0:00:47.57,Default,,0,0,0,,{\q2}Một cảnh báo cho biết file phiên bản không đã khác bản áp dụng từ trước.
+Dialogue: 0,0:00:47.67,0:00:52.32,Default,,0,0,0,,{\q2}Hai cảnh báo còn lại liên quan tên bảng và cách quy tắc nhận diện giá trị mặc định của cột ID.
+Dialogue: 0,0:00:52.42,0:00:57.09,Default,,0,0,0,,{\q2}Cấu hình hiện có chỉ thất bại khi có lỗi. Không có việc đổi chính sách hoặc bỏ kiểm tra để chạy\Nqua.
+Dialogue: 0,0:00:58.11,0:01:01.31,Default,,0,0,0,,{\q2}Kết quả từ Bytebase được action công bố thành comment tổng hợp trên PR.
+Dialogue: 0,0:01:01.41,0:01:05.34,Default,,0,0,0,,{\q2}Jenkinsfile còn tạo một bảng chi tiết riêng, có liên kết tới đúng bản dựng Jenkins.
+Dialogue: 0,0:01:05.44,0:01:09.70,Default,,0,0,0,,{\q2}Ảnh này được chụp lại sau khi gộp mã. Comment CI không phải là phê duyệt trên giao diện\NBytebase.
+Dialogue: 0,0:01:10.71,0:01:14.38,Default,,0,0,0,,{\q2}Trước khi gộp mã, đúng commit cuối có cả hai trạng thái kiểm tra thành công.
+Dialogue: 0,0:01:14.48,0:01:20.16,Default,,0,0,0,,{\q2}Cần phân biệt kiểm tra của PR với bản dựng nhánh; một bản dựng nhánh xanh riêng lẻ\Nkhông thay thế kiểm tra SQL.
+Dialogue: 0,0:01:20.26,0:01:23.42,Default,,0,0,0,,{\q2}Các kiểm tra xanh tự chúng chưa chứng minh Git cưỡng chế chặn gộp mã.
+Dialogue: 0,0:01:24.45,0:01:28.02,Default,,0,0,0,,{\q2}PR số chín được gộp vào master. Mã băm commit sau khi gộp được lưu lại.
+Dialogue: 0,0:01:28.12,0:01:31.11,Default,,0,0,0,,{\q2}Mã băm này là đầu mối để nối sang bản dựng triển khai tiếp theo.
+Dialogue: 0,0:01:31.21,0:01:35.32,Default,,0,0,0,,{\q2}Vì vậy, bộ bằng chứng này không được dùng để kết luận đã có phân tách trách nhiệm phê\Nduyệt.
+Dialogue: 0,0:01:36.35,0:01:39.20,Default,,0,0,0,,{\q2}Webhook hiện có đưa thay đổi vào bản dựng master số mười hai.
+Dialogue: 0,0:01:39.30,0:01:43.74,Default,,0,0,0,,{\q2}Bản dựng này thành công, lấy mã nguồn đúng commit sau khi gộp mã của PR số chín.
+Dialogue: 0,0:01:43.84,0:01:47.47,Default,,0,0,0,,{\q2}Đây là bản dựng mới, không phải một lần thực thi cũ được ghép vào câu chuyện.
+Dialogue: 0,0:01:48.48,0:01:52.67,Default,,0,0,0,,{\q2}Console Jenkins ghi các liên kết thật tới bản phát hành mới và Plan một trăm mười bốn.
+Dialogue: 0,0:01:52.77,0:01:56.20,Default,,0,0,0,,{\q2}Sau khi gộp mã, quy trình hiện có tự triển khai vào môi trường develop.
+Dialogue: 0,0:01:56.30,0:02:00.30,Default,,0,0,0,,{\q2}Không có bước chờ người bấm triển khai hay phê duyệt độc lập nào được chứng minh trong\Nluồng này.
+Dialogue: 0,0:02:01.31,0:02:05.77,Default,,0,0,0,,{\q2}Trong Bytebase, chi tiết bản phát hành lưu đúng file SQL phiên bản mười và mã băm nội\Ndung.
+Dialogue: 0,0:02:05.87,0:02:11.70,Default,,0,0,0,,{\q2}SQL tại commit nguồn, commit sau khi gộp mã và nội dung trong bản phát hành đã được đối\Nchiếu giống nhau từng byte.
+Dialogue: 0,0:02:11.80,0:02:16.77,Default,,0,0,0,,{\q2}Không thấy liên kết commit tích hợp sẵn ở màn hình này; chuỗi nguồn được nối bằng Jenkins\Nvà mã băm thực tế.
+Dialogue: 0,0:02:17.78,0:02:22.87,Default,,0,0,0,,{\q2}Plan một trăm mười bốn ghi trạng thái đã triển khai và một tác vụ hoàn tất trên đúng đích\Ntriển khai Oracle.
+Dialogue: 0,0:02:22.97,0:02:26.89,Default,,0,0,0,,{\q2}Danh tính thực thi là tài khoản dịch vụ của Jenkins, tại môi trường develop.
+Dialogue: 0,0:02:26.99,0:02:30.69,Default,,0,0,0,,{\q2}Bản phát hành có bảy file, nhưng dấu vết lần chạy này chỉ có phiên bản mười.
+Dialogue: 0,0:02:30.79,0:02:33.67,Default,,0,0,0,,{\q2}Tác vụ thành công vẫn cần được đối soát với trạng thái database.
+Dialogue: 0,0:02:34.68,0:02:38.66,Default,,0,0,0,,{\q2}Một truy vấn đọc mới được chạy trên đúng bảng POC vừa tạo, trong lược đồ đã cấp.
+Dialogue: 0,0:02:38.76,0:02:41.50,Default,,0,0,0,,{\q2}Đường truy vấn đi qua SQL Editor của Bytebase tới Oracle.
+Dialogue: 0,0:02:41.60,0:02:45.28,Default,,0,0,0,,{\q2}Kết quả đếm bằng không, với thời gian truy vấn hai trăm bốn mươi ba mili giây.
+Dialogue: 0,0:02:45.38,0:02:53.65,Default,,0,0,0,,{\q2}Bảng rỗng đúng chủ đích vì thay đổi cơ sở dữ liệu không thêm dữ liệu. Đây là đối soát bổ\Nsung cho trạng thái tác vụ thành công, không phải số dòng ước tính của catalog.
+Dialogue: 0,0:02:54.68,0:02:59.54,Default,,0,0,0,,{\q2}Sau khi bản dựng kết thúc, phiên demo rời trang thực thi và quay về danh sách kế hoạch của\Ndự án.
+Dialogue: 0,0:02:59.64,0:03:05.30,Default,,0,0,0,,{\q2}Plan một trăm mười bốn vẫn được tìm thấy, cùng tên bản phát hành, người tạo và kết quả\Ngiai đoạn develop.
+Dialogue: 0,0:03:05.40,0:03:08.24,Default,,0,0,0,,{\q2}Dấu gạch ở cột Review không chứng minh có phê duyệt của con người.
+Dialogue: 0,0:03:09.25,0:03:14.94,Default,,0,0,0,,{\q2}Từ danh sách, mở lại đúng Plan một trăm mười bốn vẫn thấy đích triển khai, danh tính và kết\Nquả của tác vụ.
+Dialogue: 0,0:03:15.04,0:03:19.46,Default,,0,0,0,,{\q2}Có thể lần sang bản phát hành để đọc lại SQL, và sang Jenkins để nối với nguồn Git.
+Dialogue: 0,0:03:19.56,0:03:24.90,Default,,0,0,0,,{\q2}Không đánh đồng lịch sử tác vụ với nhật ký kiểm toán đầy đủ, hoặc với toàn bộ console của\Nhệ thống CI.
+Dialogue: 0,0:03:25.91,0:03:29.80,Default,,0,0,0,,{\q2}Ca kiểm tra âm được đặt trong PR số mười, tách riêng khỏi thay đổi đã triển khai.
+Dialogue: 0,0:03:29.90,0:03:33.99,Default,,0,0,0,,{\q2}SQL cố ý khai báo bảng thiếu khóa chính để kiểm tra một quy tắc Oracle đang bật.
+Dialogue: 0,0:03:34.09,0:03:37.72,Default,,0,0,0,,{\q2}Chú thích SQL ghi rõ chỉ kiểm tra, không gộp mã và không triển khai.
+Dialogue: 0,0:03:37.82,0:03:42.03,Default,,0,0,0,,{\q2}File phiên bản mười một trên PR này không có nghĩa database đã áp dụng phiên bản đó.
+Dialogue: 0,0:03:43.05,0:03:48.09,Default,,0,0,0,,{\q2}Tệp kết quả của bản dựng PR mười, lần hai, ghi lỗi thiếu khóa chính, mã sáu trăm linh một.
+Dialogue: 0,0:03:48.19,0:03:50.28,Default,,0,0,0,,{\q2}Kết quả cuối có một lỗi và hai cảnh báo.
+Dialogue: 0,0:03:50.38,0:03:56.20,Default,,0,0,0,,{\q2}Đây là phát hiện do Bytebase trả trong bước kiểm tra của CI, chưa phải lỗi khi chạy thay đổi\Ncơ sở dữ liệu trên Oracle.
+Dialogue: 0,0:03:56.30,0:03:59.80,Default,,0,0,0,,{\q2}Không đổi chính sách và không triển khai SQL vi phạm để tạo cảnh lỗi.
+Dialogue: 0,0:04:00.81,0:04:05.47,Default,,0,0,0,,{\q2}Bản dựng PR mười, lần hai, thất bại trên đúng commit chứa SQL thiếu khóa chính.
+Dialogue: 0,0:04:05.57,0:04:08.56,Default,,0,0,0,,{\q2}Jenkins vẫn giữ tệp kết quả kiểm tra để tra cứu nguyên nhân.
+Dialogue: 0,0:04:08.66,0:04:12.23,Default,,0,0,0,,{\q2}Bản dựng của PR không đi vào các giai đoạn triển khai chỉ dành cho master.
+Dialogue: 0,0:04:13.25,0:04:16.69,Default,,0,0,0,,{\q2}GitHub nhận kiểm tra lỗi của PR, trong khi bản dựng nhánh vẫn xanh.
+Dialogue: 0,0:04:16.79,0:04:23.03,Default,,0,0,0,,{\q2}Tuy nhiên, master chưa có các kiểm tra bắt buộc cưỡng chế chặn gộp mã. Không thể kết luận\NGit bắt buộc cấm gộp mã chỉ từ ảnh này.
+Dialogue: 0,0:04:23.13,0:04:28.09,Default,,0,0,0,,{\q2}Bộ demo đã nối mã nguồn, kiểm tra, lần thực thi mới, đối soát Oracle và tra cứu kết quả.
+Dialogue: 0,0:04:28.19,0:04:33.02,Default,,0,0,0,,{\q2}Những phần chưa chứng minh gồm phê duyệt độc lập, phân quyền bằng tài khoản ít quyền\Nvà thực nghiệm Flyway.
+Dialogue: 0,0:04:33.12,0:04:37.48,Default,,0,0,0,,{\q2}Các giới hạn này được giữ nguyên khi dùng video để so sánh quy trình thay đổi cơ sở dữ liệu.

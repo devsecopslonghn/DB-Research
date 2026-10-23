@@ -1,0 +1,18 @@
+00:00 Một thay đổi mới, một chuỗi bằng chứng
+00:11 PR #9: SQL và recovery cùng nằm trong Git
+00:26 PR-9 #2 nhận đúng source SHA
+00:38 Review cuối: vẫn còn 3 WARNING
+00:57 Kết quả đã được công bố lên PR
+01:10 Kiểm tra đúng head trước khi merge
+01:24 PR #9 đã merge vào master
+01:35 master #12 nhận đúng merge commit
+01:48 Console nối build với Release và Plan
+02:00 SQL trong Release khớp bản đã review
+02:17 Plan 114: tác vụ mới đã hoàn tất
+02:34 Đối soát đúng bảng vừa tạo
+02:54 Rời execution rồi tìm lại từ project
+03:08 Mở lại kết quả của cùng Plan 114
+03:25 PR #10: ca âm chỉ phục vụ review
+03:42 Rule trả ERROR 601 vì thiếu khóa chính
+04:00 PR-10 #2 thực sự thất bại
+04:12 Check lỗi chưa đồng nghĩa Git cấm merge

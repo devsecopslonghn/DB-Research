@@ -1,0 +1,674 @@
+{
+  "name": "Bytebase demo thực nghiệm",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "backup_commit": "2a6e13489d875a8547d1ee29dd4aa665f0e2ee62",
+  "voice": {
+    "engine": "piper-tts",
+    "engine_version": "1.8.0",
+    "model": "vi_VN-vais1000-medium",
+    "revision": "0c9c5d340496a47205a799eb046aab69334a88e9",
+    "sha256": "ec7c89e2c85f4d1edc24b6120c18aaf1bda614f06b511567eb9c7c0de15e2dab",
+    "length_scale": 1.04
+  },
+  "scenes": [
+    {
+      "evidence_id": "07",
+      "image": "screenshots/07-current-community-edition.png",
+      "image_sha256": "b6ecf15642ad50110a20e1fde759de83e04b8bc7886e2415a778d3d0c28b5e64",
+      "source_url": "https://bytebase.apps.drgdevlab.com/setting/subscription",
+      "platform": "Bytebase",
+      "title": "Một thay đổi mới, một chuỗi bằng chứng",
+      "tag": "Community • v3.22.1",
+      "notes": [
+        "Demo lab — trình bày từ ảnh chụp thực nghiệm",
+        "18 ảnh gốc; không ghi thao tác trực tiếp",
+        "PR #9 → Plan 114 → Oracle"
+      ],
+      "views": [
+        {
+          "roi": [
+            215,
+            58,
+            440,
+            88
+          ],
+          "at_cue": 0
+        }
+      ],
+      "cues": [
+        "Đây là demo lab, trình bày từ ảnh chụp thực nghiệm.",
+        "Chúng ta theo dõi một thay đổi SQL mới, từ GitHub qua Jenkins và Bytebase đến Oracle.",
+        "Lab đang dùng bản Community, phiên bản ba chấm hai mươi hai chấm một."
+      ]
+    },
+    {
+      "evidence_id": "11",
+      "image": "screenshots/11-pr9-reviewed-sql-diff.png",
+      "image_sha256": "cf6e54326e17f1a0f766fb57b6b130a671a6e3bb1a126be3f7723cdca275bb73",
+      "source_url": "https://github.com/devsecopslonghn/cr7allgoals-db/pull/9/files",
+      "platform": "GitHub",
+      "title": "PR #9: SQL và recovery cùng nằm trong Git",
+      "tag": "Source SHA: ecfb13f",
+      "notes": [
+        "V1.0.0.10 • bảng POC mới",
+        "BB_POC_E2E_20261022_A",
+        "2 file mới; giữ nguyên migration đã áp dụng"
+      ],
+      "views": [
+        {
+          "roi": [
+            448,
+            470,
+            1055,
+            180
+          ],
+          "at_cue": 0
+        },
+        {
+          "roi": [
+            335,
+            840,
+            1220,
+            150
+          ],
+          "at_cue": 2
+        }
+      ],
+      "cues": [
+        "Điểm bắt đầu là PR số chín, với một thay đổi cơ sở dữ liệu mới và ghi chú khôi phục đi kèm.",
+        "SQL tạo riêng một bảng POC, có khóa chính trên cột ID; không sửa bảng ứng dụng.",
+        "Phiên bản một chấm không chấm không chấm mười được chọn sau khi kiểm tra lịch sử của database."
+      ]
+    },
+    {
+      "evidence_id": "13b",
+      "image": "screenshots/13b-ci-pr9-reviewed-build.png",
+      "image_sha256": "4661dd2b4fab73f741626c1f5c840b2c454970c388c480a2148aedf0d2cdcd33",
+      "source_url": "https://jenkins.apps.drgdevlab.com/job/devsecopslonghn/job/cr7allgoals-db/job/PR-9/2/",
+      "platform": "Jenkins",
+      "title": "PR-9 #2 nhận đúng source SHA",
+      "tag": "PR-9 / build #2 • SUCCESS",
+      "notes": [
+        "ecfb13fb31a23036d7a8ee2ad9cc0c5c37039661",
+        "Artifact: sql-review.json",
+        "Build PR chỉ review; chưa rollout"
+      ],
+      "views": [
+        {
+          "roi": [
+            360,
+            0,
+            1060,
+            210
+          ],
+          "at_cue": 0
+        },
+        {
+          "roi": [
+            365,
+            300,
+            1070,
+            175
+          ],
+          "at_cue": 2
+        }
+      ],
+      "cues": [
+        "Jenkins tiếp nhận bản sửa cuối của PR trong bản dựng số hai.",
+        "Bản dựng thành công và lưu kết quả kiểm tra vào tệp kết quả kiểm tra SQL.",
+        "Mã băm tại mục Revision trùng với commit nguồn đã được kiểm tra."
+      ]
+    },
+    {
+      "evidence_id": "14b",
+      "image": "screenshots/14b-pr9-reviewed-findings.png",
+      "image_sha256": "fbfa6fb88e1017bc50ffdc0cd19471eafa3ecff16493103ff2c9e6488cf4ea20",
+      "source_url": "https://jenkins.apps.drgdevlab.com/job/devsecopslonghn/job/cr7allgoals-db/job/PR-9/2/artifact/.jenkins/sql-review.json",
+      "platform": "Bytebase → Jenkins",
+      "title": "Review cuối: vẫn còn 3 WARNING",
+      "tag": "0 ERROR • 3 WARNING • FAIL_ON_ERROR",
+      "notes": [
+        "Code 1: V0 khác bản đã áp dụng từ trước",
+        "301: naming • 420: default của ID",
+        "Không đổi policy để làm sạch kết quả"
+      ],
+      "views": [
+        {
+          "roi": [
+            0,
+            90,
+            1090,
+            180
+          ],
+          "at_cue": 0
+        },
+        {
+          "roi": [
+            0,
+            325,
+            1080,
+            405
+          ],
+          "at_cue": 2
+        }
+      ],
+      "cues": [
+        "Kết quả kiểm tra của PR số chín có không lỗi và ba cảnh báo, không phải hoàn toàn không có phát hiện từ kiểm tra.",
+        "Một cảnh báo cho biết file phiên bản không đã khác bản áp dụng từ trước.",
+        "Hai cảnh báo còn lại liên quan tên bảng và cách quy tắc nhận diện giá trị mặc định của cột ID.",
+        "Cấu hình hiện có chỉ thất bại khi có lỗi. Không có việc đổi chính sách hoặc bỏ kiểm tra để chạy qua."
+      ]
+    },
+    {
+      "evidence_id": "15b",
+      "image": "screenshots/15b-pr9-bytebase-native-summary.png",
+      "image_sha256": "1981c15ee61cd0542d1a5fb2a45167950ff6e2c61b807a8fb6d3f1e01423ea91",
+      "source_url": "https://github.com/devsecopslonghn/cr7allgoals-db/pull/9?demo-evidence=comments-final",
+      "platform": "GitHub • đầu ra CI",
+      "title": "Kết quả đã được công bố lên PR",
+      "tag": "Comment thuộc PR-9 #2; ảnh chụp lại sau merge",
+      "notes": [
+        "Native action: SQL Review Summary",
+        "Jenkinsfile: bảng advice + build URL",
+        "Comment CI không phải approval UI"
+      ],
+      "views": [
+        {
+          "roi": [
+            248,
+            98,
+            816,
+            447
+          ],
+          "at_cue": 0
+        },
+        {
+          "roi": [
+            245,
+            570,
+            830,
+            425
+          ],
+          "at_cue": 2
+        }
+      ],
+      "cues": [
+        "Kết quả từ Bytebase được action công bố thành comment tổng hợp trên PR.",
+        "Jenkinsfile còn tạo một bảng chi tiết riêng, có liên kết tới đúng bản dựng Jenkins.",
+        "Ảnh này được chụp lại sau khi gộp mã. Comment CI không phải là phê duyệt trên giao diện Bytebase."
+      ]
+    },
+    {
+      "evidence_id": "16b",
+      "image": "screenshots/16b-git-reviewed-head-success.png",
+      "image_sha256": "f2be908fb99de7f9cf95635c668930016bcb82ee82ce93159c9d19cef7e0df83",
+      "source_url": "https://github.com/devsecopslonghn/cr7allgoals-db/commit/ecfb13fb31a23036d7a8ee2ad9cc0c5c37039661",
+      "platform": "GitHub",
+      "title": "Kiểm tra đúng head trước khi merge",
+      "tag": "ecfb13f • hai status check thành công",
+      "notes": [
+        "jenkins/pr-head: success",
+        "jenkins/branch: success",
+        "Check xanh không tự chứng minh branch protection"
+      ],
+      "views": [
+        {
+          "roi": [
+            478,
+            422,
+            648,
+            180
+          ],
+          "at_cue": 0
+        }
+      ],
+      "cues": [
+        "Trước khi gộp mã, đúng commit cuối có cả hai trạng thái kiểm tra thành công.",
+        "Cần phân biệt kiểm tra của PR với bản dựng nhánh; một bản dựng nhánh xanh riêng lẻ không thay thế kiểm tra SQL.",
+        "Các kiểm tra xanh tự chúng chưa chứng minh Git cưỡng chế chặn gộp mã."
+      ]
+    },
+    {
+      "evidence_id": "17",
+      "image": "screenshots/17-pr9-merged.png",
+      "image_sha256": "107b4aa43d9d5258104a2188769487c5ef4f855c42925260244054bb480adbfa",
+      "source_url": "https://github.com/devsecopslonghn/cr7allgoals-db/pull/9?demo-evidence=merged",
+      "platform": "GitHub",
+      "title": "PR #9 đã merge vào master",
+      "tag": "Merge SHA: a8267df",
+      "notes": [
+        "a8267df4c8b097b67fa4b6e88da8bf82e8146d0c",
+        "Normal merge sau CI thành công",
+        "Chưa chứng minh approval độc lập"
+      ],
+      "views": [
+        {
+          "roi": [
+            185,
+            195,
+            1000,
+            135
+          ],
+          "at_cue": 0
+        }
+      ],
+      "cues": [
+        "PR số chín được gộp vào master. Mã băm commit sau khi gộp được lưu lại.",
+        "Mã băm này là đầu mối để nối sang bản dựng triển khai tiếp theo.",
+        "Vì vậy, bộ bằng chứng này không được dùng để kết luận đã có phân tách trách nhiệm phê duyệt."
+      ]
+    },
+    {
+      "evidence_id": "18",
+      "image": "screenshots/18-master12-merge-checkout.png",
+      "image_sha256": "76c394c0881d43550b44a74aadcfab988ab7410f53b7d5b7223421e7ce46b313",
+      "source_url": "https://jenkins.apps.drgdevlab.com/job/devsecopslonghn/job/cr7allgoals-db/job/master/12/",
+      "platform": "Jenkins",
+      "title": "master #12 nhận đúng merge commit",
+      "tag": "Build triển khai mới • SUCCESS",
+      "notes": [
+        "master #12 • checkout a8267df",
+        "Push event qua webhook có sẵn",
+        "Không dùng master #11 hoặc Plan 113 cũ"
+      ],
+      "views": [
+        {
+          "roi": [
+            360,
+            0,
+            1040,
+            180
+          ],
+          "at_cue": 0
+        },
+        {
+          "roi": [
+            365,
+            245,
+            1080,
+            215
+          ],
+          "at_cue": 2
+        }
+      ],
+      "cues": [
+        "Webhook hiện có đưa thay đổi vào bản dựng master số mười hai.",
+        "Bản dựng này thành công, lấy mã nguồn đúng commit sau khi gộp mã của PR số chín.",
+        "Đây là bản dựng mới, không phải một lần thực thi cũ được ghép vào câu chuyện."
+      ]
+    },
+    {
+      "evidence_id": "19",
+      "image": "screenshots/19-master12-release-plan-links.png",
+      "image_sha256": "a71d6cf0a263af673824881992000b91e3a20ee1203be2ef2da5e7c1695aeb56",
+      "source_url": "https://jenkins.apps.drgdevlab.com/job/devsecopslonghn/job/cr7allgoals-db/job/master/12/console",
+      "platform": "Jenkins → Bytebase",
+      "title": "Console nối build với Release và Plan",
+      "tag": "master #12 → release_20261022-RC00 → Plan 114",
+      "notes": [
+        "Plan 114 • environments/develop",
+        "Tự rollout sau merge",
+        "Không có cảnh chờ người bấm deploy"
+      ],
+      "views": [
+        {
+          "roi": [
+            378,
+            119,
+            1185,
+            225
+          ],
+          "at_cue": 0
+        },
+        {
+          "roi": [
+            378,
+            579,
+            1180,
+            240
+          ],
+          "at_cue": 2
+        }
+      ],
+      "cues": [
+        "Console Jenkins ghi các liên kết thật tới bản phát hành mới và Plan một trăm mười bốn.",
+        "Sau khi gộp mã, quy trình hiện có tự triển khai vào môi trường develop.",
+        "Không có bước chờ người bấm triển khai hay phê duyệt độc lập nào được chứng minh trong luồng này."
+      ]
+    },
+    {
+      "evidence_id": "21",
+      "image": "screenshots/21-bytebase-release-reviewed-sql.png",
+      "image_sha256": "211bab632f6b9f87e6945541e6a68e0d3df5df5663c560cf32af9cebc9f172a6",
+      "source_url": "https://bytebase.apps.drgdevlab.com/projects/cr7-allgoal-kvi1/releases/release_20261022-RC00",
+      "platform": "Bytebase",
+      "title": "SQL trong Release khớp bản đã review",
+      "tag": "V1.0.0.10 • SHA-256 bắt đầu 706ea322",
+      "notes": [
+        "932 bytes giống nhau từng byte",
+        "Source → merge → Release Sheet",
+        "Liên kết nguồn qua Jenkins + hash thật"
+      ],
+      "views": [
+        {
+          "roi": [
+            787,
+            75,
+            787,
+            125
+          ],
+          "at_cue": 0
+        },
+        {
+          "roi": [
+            789,
+            212,
+            785,
+            219
+          ],
+          "at_cue": 1
+        }
+      ],
+      "cues": [
+        "Trong Bytebase, chi tiết bản phát hành lưu đúng file SQL phiên bản mười và mã băm nội dung.",
+        "SQL tại commit nguồn, commit sau khi gộp mã và nội dung trong bản phát hành đã được đối chiếu giống nhau từng byte.",
+        "Không thấy liên kết commit tích hợp sẵn ở màn hình này; chuỗi nguồn được nối bằng Jenkins và mã băm thực tế."
+      ]
+    },
+    {
+      "evidence_id": "22",
+      "image": "screenshots/22-bytebase-new-rollout-done.png",
+      "image_sha256": "64622d869e6e15ee51c937268804230536b7018ed7ba18120b6281cfbd6a9683",
+      "source_url": "https://bytebase.apps.drgdevlab.com/projects/cr7-allgoal-kvi1/plans/114/rollout",
+      "platform": "Bytebase",
+      "title": "Plan 114: tác vụ mới đã hoàn tất",
+      "tag": "Plan 114 • task 114 • task run 113",
+      "notes": [
+        "develop → oracle-cloud-free / CR7ALLGOALS_APP",
+        "Identity: jenkins@service.bytebase.com",
+        "Trace lần này chỉ thực thi V1.0.0.10"
+      ],
+      "views": [
+        {
+          "roi": [
+            218,
+            55,
+            1040,
+            80
+          ],
+          "at_cue": 0
+        },
+        {
+          "roi": [
+            295,
+            257,
+            1233,
+            215
+          ],
+          "at_cue": 1
+        },
+        {
+          "roi": [
+            307,
+            685,
+            1215,
+            216
+          ],
+          "at_cue": 2
+        }
+      ],
+      "cues": [
+        "Plan một trăm mười bốn ghi trạng thái đã triển khai và một tác vụ hoàn tất trên đúng đích triển khai Oracle.",
+        "Danh tính thực thi là tài khoản dịch vụ của Jenkins, tại môi trường develop.",
+        "Bản phát hành có bảy file, nhưng dấu vết lần chạy này chỉ có phiên bản mười.",
+        "Tác vụ thành công vẫn cần được đối soát với trạng thái database."
+      ]
+    },
+    {
+      "evidence_id": "25",
+      "image": "screenshots/25-oracle-new-object-live-query.png",
+      "image_sha256": "81dd7cc8131ef579de53b3e9a9e173bc3ee8e47c5e4ad532c5d53eeddd43c7a3",
+      "source_url": "https://bytebase.apps.drgdevlab.com/sql-editor/projects/cr7-allgoal-kvi1/instances/oracle-cloud-free-sge0/databases/CR7ALLGOALS_APP",
+      "platform": "Oracle • qua Bytebase SQL Editor",
+      "title": "Đối soát đúng bảng vừa tạo",
+      "tag": "Truy vấn mới • 14:28:19 GMT+7 • 243 ms",
+      "notes": [
+        "CR7ALLGOALS_APP.BB_POC_E2E_20261022_A",
+        "POC_ROW_COUNT = 0",
+        "Không dùng catalog estimate thay cho query"
+      ],
+      "views": [
+        {
+          "roi": [
+            417,
+            138,
+            780,
+            95
+          ],
+          "at_cue": 0
+        },
+        {
+          "roi": [
+            409,
+            637,
+            865,
+            158
+          ],
+          "at_cue": 2
+        }
+      ],
+      "cues": [
+        "Một truy vấn đọc mới được chạy trên đúng bảng POC vừa tạo, trong lược đồ đã cấp.",
+        "Đường truy vấn đi qua SQL Editor của Bytebase tới Oracle.",
+        "Kết quả đếm bằng không, với thời gian truy vấn hai trăm bốn mươi ba mili giây.",
+        "Bảng rỗng đúng chủ đích vì thay đổi cơ sở dữ liệu không thêm dữ liệu. Đây là đối soát bổ sung cho trạng thái tác vụ thành công, không phải số dòng ước tính của catalog."
+      ]
+    },
+    {
+      "evidence_id": "28",
+      "image": "screenshots/28-find-new-plan-in-project-history.png",
+      "image_sha256": "f07d846078056ccaae8c35d5401c79b818d09fdf25136fb09d14e45411add878",
+      "source_url": "https://bytebase.apps.drgdevlab.com/projects/cr7-allgoal-kvi1/plans",
+      "platform": "Bytebase",
+      "title": "Rời execution rồi tìm lại từ project",
+      "tag": "Project Plans • chọn đúng Plan 114",
+      "notes": [
+        "114 / release_20261022-RC00 / jenkins",
+        "Stage develop đã hoàn tất",
+        "Không dùng dòng Plan 113 cũ"
+      ],
+      "views": [
+        {
+          "roi": [
+            225,
+            176,
+            1170,
+            90
+          ],
+          "at_cue": 0
+        }
+      ],
+      "cues": [
+        "Sau khi bản dựng kết thúc, phiên demo rời trang thực thi và quay về danh sách kế hoạch của dự án.",
+        "Plan một trăm mười bốn vẫn được tìm thấy, cùng tên bản phát hành, người tạo và kết quả giai đoạn develop.",
+        "Dấu gạch ở cột Review không chứng minh có phê duyệt của con người."
+      ]
+    },
+    {
+      "evidence_id": "29",
+      "image": "screenshots/29-reopened-new-plan-history.png",
+      "image_sha256": "44ae198f8b18e673c634651f02a6ebc1e10a4dad1b8251ee90e94a27af548a4b",
+      "source_url": "https://bytebase.apps.drgdevlab.com/projects/cr7-allgoal-kvi1/plans/114",
+      "platform": "Bytebase",
+      "title": "Mở lại kết quả của cùng Plan 114",
+      "tag": "Tra cứu sau execution • không chạy lại",
+      "notes": [
+        "Đúng Release, target, identity và kết quả",
+        "Có thể mở Release để đọc lại SQL",
+        "Task history khác Audit Log đầy đủ"
+      ],
+      "views": [
+        {
+          "roi": [
+            220,
+            54,
+            1060,
+            77
+          ],
+          "at_cue": 0
+        },
+        {
+          "roi": [
+            309,
+            685,
+            1200,
+            215
+          ],
+          "at_cue": 1
+        }
+      ],
+      "cues": [
+        "Từ danh sách, mở lại đúng Plan một trăm mười bốn vẫn thấy đích triển khai, danh tính và kết quả của tác vụ.",
+        "Có thể lần sang bản phát hành để đọc lại SQL, và sang Jenkins để nối với nguồn Git.",
+        "Không đánh đồng lịch sử tác vụ với nhật ký kiểm toán đầy đủ, hoặc với toàn bộ console của hệ thống CI."
+      ]
+    },
+    {
+      "evidence_id": "80",
+      "image": "screenshots/80-pr10-review-only-source.png",
+      "image_sha256": "21e2b02a57ed0bd45c1861a901f3aba4effa7e4fbedc4e52ba96f70f5935d0c6",
+      "source_url": "https://github.com/devsecopslonghn/cr7allgoals-db/blob/743302007818e0410d3f353c326e87960115441b/migrations/V1.0.0.11-review_only_missing_pk_ddl.sql",
+      "platform": "GitHub",
+      "title": "PR #10: ca âm chỉ phục vụ review",
+      "tag": "Review-only • không merge, không deploy",
+      "notes": [
+        "Source SHA: 7433020",
+        "BB_POC_REVIEW_20261022_A",
+        "Cố ý không khai báo PRIMARY KEY"
+      ],
+      "views": [
+        {
+          "roi": [
+            420,
+            350,
+            975,
+            145
+          ],
+          "at_cue": 0
+        }
+      ],
+      "cues": [
+        "Ca kiểm tra âm được đặt trong PR số mười, tách riêng khỏi thay đổi đã triển khai.",
+        "SQL cố ý khai báo bảng thiếu khóa chính để kiểm tra một quy tắc Oracle đang bật.",
+        "Chú thích SQL ghi rõ chỉ kiểm tra, không gộp mã và không triển khai.",
+        "File phiên bản mười một trên PR này không có nghĩa database đã áp dụng phiên bản đó."
+      ]
+    },
+    {
+      "evidence_id": "82b",
+      "image": "screenshots/82b-pr10-missing-pk-final-finding.png",
+      "image_sha256": "74ba63cf80a479e74eb057851e9c826d0179696dbb29c5a98fe6e85eef4d051d",
+      "source_url": "https://jenkins.apps.drgdevlab.com/job/devsecopslonghn/job/cr7allgoals-db/job/PR-10/2/artifact/.jenkins/sql-review.json",
+      "platform": "Bytebase → Jenkins",
+      "title": "Rule trả ERROR 601 vì thiếu khóa chính",
+      "tag": "1 ERROR • 2 WARNING • PR-10 #2",
+      "notes": [
+        "TABLE_REQUIRE_PK • code 601 • line 4",
+        "Target review: CR7ALLGOALS_APP",
+        "Đây là lỗi review, không phải lỗi runtime"
+      ],
+      "views": [
+        {
+          "roi": [
+            0,
+            350,
+            1080,
+            184
+          ],
+          "at_cue": 0
+        }
+      ],
+      "cues": [
+        "Tệp kết quả của bản dựng PR mười, lần hai, ghi lỗi thiếu khóa chính, mã sáu trăm linh một.",
+        "Kết quả cuối có một lỗi và hai cảnh báo.",
+        "Đây là phát hiện do Bytebase trả trong bước kiểm tra của CI, chưa phải lỗi khi chạy thay đổi cơ sở dữ liệu trên Oracle.",
+        "Không đổi chính sách và không triển khai SQL vi phạm để tạo cảnh lỗi."
+      ]
+    },
+    {
+      "evidence_id": "81",
+      "image": "screenshots/81-pr10-build2-failure.png",
+      "image_sha256": "0bf650e908aff41176ec07bb0f631dbf19f6b6e53c6402024230c0777b4b2914",
+      "source_url": "https://jenkins.apps.drgdevlab.com/job/devsecopslonghn/job/cr7allgoals-db/job/PR-10/2/",
+      "platform": "Jenkins",
+      "title": "PR-10 #2 thực sự thất bại",
+      "tag": "FAILURE • checkout 7433020",
+      "notes": [
+        "Jenkins PR-10 / build #2",
+        "Artifact review được giữ lại",
+        "PR vẫn chưa merge; không có rollout ca âm"
+      ],
+      "views": [
+        {
+          "roi": [
+            360,
+            0,
+            1080,
+            190
+          ],
+          "at_cue": 0
+        },
+        {
+          "roi": [
+            365,
+            300,
+            1080,
+            165
+          ],
+          "at_cue": 2
+        }
+      ],
+      "cues": [
+        "Bản dựng PR mười, lần hai, thất bại trên đúng commit chứa SQL thiếu khóa chính.",
+        "Jenkins vẫn giữ tệp kết quả kiểm tra để tra cứu nguyên nhân.",
+        "Bản dựng của PR không đi vào các giai đoạn triển khai chỉ dành cho master."
+      ]
+    },
+    {
+      "evidence_id": "84",
+      "image": "screenshots/84-pr10-git-status-failure.png",
+      "image_sha256": "da56c000ff3f05160ae37772765adf86c09098044ffc9f5d2e892e90a819f245",
+      "source_url": "https://github.com/devsecopslonghn/cr7allgoals-db/commit/743302007818e0410d3f353c326e87960115441b",
+      "platform": "GitHub",
+      "title": "Check lỗi chưa đồng nghĩa Git cấm merge",
+      "tag": "Giới hạn bằng chứng • đọc cùng results.md",
+      "notes": [
+        "PR-head lỗi; branch build vẫn xanh",
+        "master chưa có required checks cưỡng chế",
+        "Chưa thử user ít quyền hoặc Flyway"
+      ],
+      "views": [
+        {
+          "roi": [
+            479,
+            424,
+            647,
+            177
+          ],
+          "at_cue": 0
+        }
+      ],
+      "cues": [
+        "GitHub nhận kiểm tra lỗi của PR, trong khi bản dựng nhánh vẫn xanh.",
+        "Tuy nhiên, master chưa có các kiểm tra bắt buộc cưỡng chế chặn gộp mã. Không thể kết luận Git bắt buộc cấm gộp mã chỉ từ ảnh này.",
+        "Bộ demo đã nối mã nguồn, kiểm tra, lần thực thi mới, đối soát Oracle và tra cứu kết quả.",
+        "Những phần chưa chứng minh gồm phê duyệt độc lập, phân quyền bằng tài khoản ít quyền và thực nghiệm Flyway.",
+        "Các giới hạn này được giữ nguyên khi dùng video để so sánh quy trình thay đổi cơ sở dữ liệu."
+      ]
+    }
+  ]
+}
